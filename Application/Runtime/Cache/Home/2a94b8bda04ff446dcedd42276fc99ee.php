@@ -3,20 +3,20 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | Login</title>
+	<title>科研成果管理系统 | 登录</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-	<link rel="stylesheet" type="text/css" href="css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- UNIFORM -->
-	<link rel="stylesheet" type="text/css" href="js/uniform/css/uniform.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/uniform/css/uniform.default.min.css" />
 	<!-- ANIMATE -->
-	<link rel="stylesheet" type="text/css" href="css/animatecss/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/animatecss/animate.min.css" />
 	<!-- FONTS -->
 	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
@@ -30,7 +30,7 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div id="logo">
-								<a href="index.html"><img src="img/logo/logo-alt.png" height="40" alt="logo name" /></a>
+								<a href="index.html"><img src="/PaperManager/Public/img/logo/logo-alt.png" height="40" alt="logo name" /></a>
 							</div>
 						</div>
 					</div>
@@ -189,17 +189,17 @@
 	<!-- JAVASCRIPTS -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<!-- JQUERY -->
-	<script src="js/jquery/jquery-2.0.3.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery/jquery-2.0.3.min.js"></script>
 	<!-- JQUERY UI-->
-	<script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<script src="bootstrap-dist/js/bootstrap.min.js"></script>
+	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
 	
 	
 	<!-- UNIFORM -->
-	<script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
-	<script src="js/script.js"></script>
+	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("login");  //Set current page
