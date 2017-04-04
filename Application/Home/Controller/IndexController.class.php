@@ -21,4 +21,19 @@ class IndexController extends Controller {
     		$this->error($UserInfo->getError());
     	}
     }
+    public function login(){
+    	$login=D('User');
+    	$uname=I('Post.username');
+        $pwd=md5(I('Post.password')); 
+        $condition=array(
+			'username'=>$uname,
+			'password'=>$pwd
+		);
+		$data=$login->where($condition)->find();
+		if($data){
+			$this->success('登录成功');
+		}else{
+			$this->error('登录失败，用户名或密码错误');
+		}
+    }
 }
