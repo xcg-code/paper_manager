@@ -18,7 +18,7 @@
 	<!-- ANIMATE -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/animatecss/animate.min.css" />
 	<!-- FONTS -->
-	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body class="login">	
 	<!-- PAGE -->
@@ -44,28 +44,28 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="login-box-plain">
-								<h2 class="bigintro">Sign In</h2>
+								<h2 class="bigintro">科研成果管理系统</h2>
 								<div class="divide-40"></div>
 								<form role="form">
 								  <div class="form-group">
-									<label for="exampleInputEmail1">Email address</label>
-									<i class="fa fa-envelope"></i>
+									<label for="exampleInputEmail1">用户名</label>
+									<i class="fa fa-user"></i>
 									<input type="email" class="form-control" id="exampleInputEmail1" >
 								  </div>
 								  <div class="form-group"> 
-									<label for="exampleInputPassword1">Password</label>
+									<label for="exampleInputPassword1">密码</label>
 									<i class="fa fa-lock"></i>
 									<input type="password" class="form-control" id="exampleInputPassword1" >
 								  </div>
 								  <div class="form-actions">
-									<label class="checkbox"> <input type="checkbox" class="uniform" value=""> Remember me</label>
-									<button type="submit" class="btn btn-danger">Submit</button>
+									<label class="checkbox"> <input type="checkbox" class="uniform" value=""> 记住我</label>
+									<button type="submit" class="btn btn-danger">登录</button>
 								  </div>
 								</form>
 								<!-- SOCIAL LOGIN -->
 								<div class="divide-20"></div>
 								<div class="center">
-									<strong>Or login using your social account</strong>
+									<strong>使用第三方账号登录</strong>
 								</div>
 								<div class="divide-20"></div>
 								<div class="social-login center">
@@ -81,9 +81,8 @@
 								</div>
 								<!-- /SOCIAL LOGIN -->
 								<div class="login-helpers">
-									<a href="#" onclick="swapScreen('forgot');return false;">Forgot Password?</a> <br>
-									Don't have an account with us? <a href="#" onclick="swapScreen('register');return false;">Register
-										now!</a>
+									<a href="#" onclick="swapScreen('forgot');return false;">忘记密码?</a> <br>
+									没有账号? <a href="#" onclick="swapScreen('register');return false;">现在注册!</a>
 								</div>
 							</div>
 						</div>
@@ -97,43 +96,43 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="login-box-plain">
-								<h2 class="bigintro">Register</h2>
+								<h2 class="bigintro">科研成果管理平台</h2>
 								<div class="divide-40"></div>
 								<form role="form">
 								  <div class="form-group">
-									<label for="exampleInputName">Full Name</label>
+									<label for="exampleInputName">姓名</label>
 									<i class="fa fa-font"></i>
 									<input type="text" class="form-control" id="exampleInputName" >
 								  </div>
 								  <div class="form-group">
-									<label for="exampleInputUsername">Username</label>
+									<label for="exampleInputUsername">用户名</label>
 									<i class="fa fa-user"></i>
 									<input type="text" class="form-control" id="exampleInputUsername" >
 								  </div>
 								  <div class="form-group">
-									<label for="exampleInputEmail1">Email address</label>
+									<label for="exampleInputEmail1">电子邮件地址</label>
 									<i class="fa fa-envelope"></i>
 									<input type="email" class="form-control" id="exampleInputEmail1" >
 								  </div>
 								  <div class="form-group"> 
-									<label for="exampleInputPassword1">Password</label>
+									<label for="exampleInputPassword1">密码</label>
 									<i class="fa fa-lock"></i>
 									<input type="password" class="form-control" id="exampleInputPassword1" >
 								  </div>
 								  <div class="form-group"> 
-									<label for="exampleInputPassword2">Repeat Password</label>
+									<label for="exampleInputPassword2">重复密码</label>
 									<i class="fa fa-check-square-o"></i>
 									<input type="password" class="form-control" id="exampleInputPassword2" >
 								  </div>
 								  <div class="form-actions">
-									<label class="checkbox"> <input type="checkbox" class="uniform" value=""> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
-									<button type="submit" class="btn btn-success">Sign Up</button>
+									<label class="checkbox"> <input type="checkbox" class="uniform" value="">我同意<a href="#">团队服务</a> 与 <a href="#">隐私条款</a></label>
+									<button type="submit" class="btn btn-success">注册</button>
 								  </div>
 								</form>
 								<!-- SOCIAL REGISTER -->
 								<div class="divide-20"></div>
 								<div class="center">
-									<strong>Or register using your social account</strong>
+									<strong>使用第三方账号注册</strong>
 								</div>
 								<div class="divide-20"></div>
 								<div class="social-login center">
@@ -149,7 +148,7 @@
 								</div>
 								<!-- /SOCIAL REGISTER -->
 								<div class="login-helpers">
-									<a href="#" onclick="swapScreen('login');return false;"> Back to Login</a> <br>
+									<a href="#" onclick="swapScreen('login');return false;">回到登录</a> <br>
 								</div>
 							</div>
 						</div>
@@ -163,20 +162,20 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="login-box-plain">
-								<h2 class="bigintro">Reset Password</h2>
+								<h2 class="bigintro">重置密码</h2>
 								<div class="divide-40"></div>
 								<form role="form">
 								  <div class="form-group">
-									<label for="exampleInputEmail1">Enter your Email address</label>
+									<label for="exampleInputEmail1">请输入您的电子邮件地址</label>
 									<i class="fa fa-envelope"></i>
 									<input type="email" class="form-control" id="exampleInputEmail1" >
 								  </div>
 								  <div class="form-actions">
-									<button type="submit" class="btn btn-info">Send Me Reset Instructions</button>
+									<button type="submit" class="btn btn-info">发送重置密码邮件</button>
 								  </div>
 								</form>
 								<div class="login-helpers">
-									<a href="#" onclick="swapScreen('login');return false;">Back to Login</a> <br>
+									<a href="#" onclick="swapScreen('login');return false;">回到登录</a> <br>
 								</div>
 							</div>
 						</div>
