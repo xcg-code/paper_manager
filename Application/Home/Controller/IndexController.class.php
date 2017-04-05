@@ -2,7 +2,8 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    public function index(){
+    public function index($type="login"){
+    	$this->assign('type',$type);
         $this->display();
     }
     public function register(){
@@ -15,10 +16,10 @@ class IndexController extends Controller {
     		if($result){
     			$this->success('注册成功，返回登录页面',__ROOT__.'/index.php/Home/');
     		}else{
-    			$this->error($UserInfo->getError());
+    			$this->error($UserInfo->getError(),__ROOT__.'/index.php/Home/index.html?type=register');
     		}
     	}else{
-    		$this->error($UserInfo->getError());
+    		$this->error($UserInfo->getError(),__ROOT__.'/index.php/Home/index.html?type=register');
     	}
     }
     public function login(){

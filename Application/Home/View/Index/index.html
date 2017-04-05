@@ -204,12 +204,22 @@
 			App.setPage("login");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
+
 	</script>
 	<script type="text/javascript">
 		function swapScreen(id) {
 			jQuery('.visible').removeClass('visible animated fadeInUp');
 			jQuery('#'+id).addClass('visible animated fadeInUp');
 		}
+		
+		
+		var type="{$type}";
+		if(type=="register"){
+			$('#login .login-helpers a').click();
+		}
+		//console.log(a);
+
+
 	</script>
 	<!-- /JAVASCRIPTS -->
 </body>
