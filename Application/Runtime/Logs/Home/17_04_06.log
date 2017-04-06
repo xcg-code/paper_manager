@@ -1192,3 +1192,72 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001506s ]
 
+[ 2017-04-06T19:58:20+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001557s ]
+
+[ 2017-04-06T19:59:27+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000573s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000883s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001930s ]
+
+[ 2017-04-06T19:59:34+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+ERR: 模板不存在:./Application/Home/View/Wizard/index.html
+
+[ 2017-04-06T20:00:05+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000733s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004950s ]
+
