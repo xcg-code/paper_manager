@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,19 +8,19 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css" >
-	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/themes/default.css" id="skin-switcher" >
-	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
 	
-	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- SELECT2 -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/select2/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/select2/select2.min.css" />
 	<!-- UNIFORM -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/uniform/css/uniform.default.min.css" />
 	<!-- WIZARD -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-wizard/wizard.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-wizard/wizard.css" />
 	<!-- FONTS -->
 </head>
 <body>
@@ -30,7 +30,7 @@
 				<div class="navbar-brand">
 					<!-- COMPANY LOGO -->
 					<a href="index.html">
-						<img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+						<img src="/PaperManager/Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
 					</a>
 					<!-- /COMPANY LOGO -->
 					<!-- TEAM STATUS FOR MOBILE -->
@@ -181,7 +181,7 @@
 							</li>
 							<li>
 								<a href="#">
-									<img src="__PUBLIC__/img/avatars/avatar2.jpg" alt="" />
+									<img src="/PaperManager/Public/img/avatars/avatar2.jpg" alt="" />
 									<span class="body">
 										<span class="from">Jane Doe</span>
 										<span class="message">
@@ -197,7 +197,7 @@
 							</li>
 							<li>
 								<a href="#">
-									<img src="__PUBLIC__/img/avatars/avatar1.jpg" alt="" />
+									<img src="/PaperManager/Public/img/avatars/avatar1.jpg" alt="" />
 									<span class="body">
 										<span class="from">Vince Pelt</span>
 										<span class="message">
@@ -213,7 +213,7 @@
 							</li>
 							<li>
 								<a href="#">
-									<img src="__PUBLIC__/img/avatars/avatar8.jpg" alt="" />
+									<img src="/PaperManager/Public/img/avatars/avatar8.jpg" alt="" />
 									<span class="body">
 										<span class="from">Debby Doe</span>
 										<span class="message">
@@ -323,7 +323,7 @@
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="__PUBLIC__/img/avatars/avatar3.jpg" />
+							<img alt="" src="/PaperManager/Public/img/avatars/avatar3.jpg" />
 							<span class="username">John Doe</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
@@ -350,7 +350,7 @@
 				<li class="current">
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar3.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					You
@@ -385,7 +385,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar1.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar1.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Max Doe
@@ -420,7 +420,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar2.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar2.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Jane Doe
@@ -455,7 +455,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar4.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar4.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Ellie Doe
@@ -490,7 +490,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar5.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar5.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Lisa Doe
@@ -525,7 +525,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar6.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar6.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Kelly Doe
@@ -560,7 +560,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar7.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar7.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Jessy Doe
@@ -595,7 +595,7 @@
 				<li>
 				  <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="__PUBLIC__/img/avatars/avatar8.jpg" alt="" />
+					  <img src="/PaperManager/Public/img/avatars/avatar8.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Debby Doe
@@ -1333,38 +1333,38 @@
 	<!-- JAVASCRIPTS -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<!-- JQUERY -->
-	<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery/jquery-2.0.3.min.js"></script>
 	<!-- JQUERY UI-->
-	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
+	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
 	
 		
 	<!-- DATE RANGE PICKER -->
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
+	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 	<!-- SELECT2 -->
-	<script type="text/javascript" src="__PUBLIC__/js/select2/select2.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/select2/select2.min.js"></script>
 	<!-- UNIFORM -->
-	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
 	<!-- WIZARD -->
-	<script src="__PUBLIC__/js/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+	<script src="/PaperManager/Public/js/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 	<!-- WIZARD -->
-	<script src="__PUBLIC__/js/jquery-validate/jquery.validate.min.js"></script>
-	<script src="__PUBLIC__/js/jquery-validate/additional-methods.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery-validate/jquery.validate.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery-validate/additional-methods.min.js"></script>
 	<!-- BOOTBOX -->
-	<script type="text/javascript" src="__PUBLIC__/js/bootbox/bootbox.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/bootbox/bootbox.min.js"></script>
 	<!-- COOKIE -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
-	<script src="__PUBLIC__/js/script.js"></script>
-	<script src="__PUBLIC__/js/bootstrap-wizard/form-wizard.min.js"></script>
+	<script src="/PaperManager/Public/js/script.js"></script>
+	<script src="/PaperManager/Public/js/bootstrap-wizard/form-wizard.min.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("wizards_validations");  //Set current page
