@@ -828,3 +828,287 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003233s ]
 INFO: [ app_end ] --END-- [ RunTime:0.004099s ]
 
+[ 2017-04-06T16:51:03+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-04-06T16:51:06+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001889s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002394s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005215s ]
+
+[ 2017-04-06T16:51:10+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000645s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000989s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001784s ]
+
+[ 2017-04-06T16:53:38+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003023s ]
+
+[ 2017-04-06T16:53:43+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'jerry' AND `password` = '30035607ee5bb378c71ab434a6d05410' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2017-04-06T16:53:44+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000508s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001647s ]
+
+[ 2017-04-06T19:47:27+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002725s ]
+
+[ 2017-04-06T19:47:33+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'jerry' AND `password` = '30035607ee5bb378c71ab434a6d05410' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-04-06T19:47:34+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000630s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000853s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2017-04-06T19:49:39+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000648s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000963s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002790s ]
+
+[ 2017-04-06T19:49:52+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000698s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000973s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005646s ]
+
+[ 2017-04-06T19:50:43+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001922s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002317s ]
+
+[ 2017-04-06T19:51:05+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002708s ]
+
+[ 2017-04-06T19:51:24+08:00 ] ::1 /PaperManager/index.php/Home/Wizard/wizard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002597s ]
+
