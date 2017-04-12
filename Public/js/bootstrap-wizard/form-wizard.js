@@ -28,24 +28,42 @@ var FormWizard = function () {
                         required: true,
                         email: true
                     },
-                    password: {
-                        minlength: 3,
-                        required: true
+                    id_num: {
+                        minlength: 18,
+                        maxlength:18,
+                        required: true,
+                        number:true
                     },
-                    name: {
+                    fullname: {
                         required: true
                     },
                     gender: {
                         required: true
                     },
-                    location: {
+                    nation: {
                         required: true
                     },
-                    country: {
+                    workspace: {
                         required: true
                     },
-					phone: {
+                    job_title: {
                         required: true
+                    },
+					address: {
+                        required: true
+                    },
+                    phone: {
+                        required: true,
+                        number:true
+                    },
+                    degree: {
+                        required: true
+                    },
+                    degree_year: {
+                        minlength: 4,
+                        maxlength:4,
+                        required: true,
+                        number:true
                     },
 					
                     /* Payment Details */                  
@@ -152,7 +170,7 @@ var FormWizard = function () {
                     }
                 },
 				onTabClick: function (tab, navigation, index) {
-                    bootbox.alert('On Tab click is disabled');
+                    bootbox.alert('请按照向导操作');
                     return false;
                 },
                 onTabShow: function (tab, navigation, index) {
