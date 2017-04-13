@@ -9,6 +9,8 @@ class ProfileController extends Controller {
 		$Condition['id']=$uid;
 		$Profile=$UserModel->where($Condition)->find();
 		$this->assign('Profile', $Profile); //基本信息前端赋值
+		$PicPath="Uploads/UserPic/".$Profile['pic_save_path'];
+		$this->assign('PicPath', $PicPath); //用户头像信息前端赋值
 		$AreaModel=M('Area');
 		$AreaCondition['user_id']=$uid;
 		$AreaInfo=$AreaModel->where($AreaCondition)->count();
@@ -47,7 +49,7 @@ class ProfileController extends Controller {
     	if(!$info) {// 上传错误提示错误信息
     	    $this->error($upload->getError());
     	}else{// 上传成功
-    		$PicPath['pic_save_path']=$info['savepath'].$info['savename'];
+    		$PicPath['pic_save_path']=$info['savename'];
     	    var_dump($PicPath);
     	    $UserModel=M('User');
     	    $Condition['id']=$id;

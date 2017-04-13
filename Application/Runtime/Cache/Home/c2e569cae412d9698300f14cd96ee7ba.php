@@ -79,7 +79,7 @@
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="/PaperManager/Public/img/avatars/avatar3.jpg" />
+							<img alt="" src="/PaperManager/<?php echo ($PicPath); ?>" />
 							<span class="username"><?php echo ($Profile["fullname"]); ?></span>
 							<i class="fa fa-angle-down"></i>
 						</a>
@@ -365,7 +365,7 @@
 													<div class="col-md-3">
 														<div class="list-group">
 														  <li class="list-group-item zero-padding">
-															<img alt="" class="img-responsive" src="/PaperManager/Public/img/profile/avatar.jpg">
+															<img alt="" class="img-responsive" src="/PaperManager/<?php echo ($PicPath); ?>">
 														  </li>
 														  <div class="list-group-item profile-details">
 																<h2><?php echo ($Profile["fullname"]); ?></h2>
