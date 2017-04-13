@@ -32,9 +32,14 @@ class IndexController extends Controller {
 		);
 		$data=$login->where($condition)->find();
 		if($data){
+            session('uid',$data[id],3600);
 			$this->success('登录成功',__ROOT__.'/index.php/Home/Profile/profile');
 		}else{
 			$this->error('登录失败，用户名或密码错误');
 		}
+    }
+    public function logout(){
+        session(null); 
+        $this->success('登出成功，请重新登录！',__ROOT__);
     }
 }
