@@ -450,7 +450,7 @@
 											   
 											   <!-- EDIT ACCOUNT -->
 											   <div class="tab-pane fade" id="pro_edit">
-												  <form class="form-horizontal" action="/PaperManager/index.php/Home/Profile/edit/{vo.id}" method="post" enctype="multipart/form-data">
+												  <form class="form-horizontal" action="/PaperManager/index.php/Home/Profile/edit/id/<?php echo ($Profile["id"]); ?>" method="post" enctype="multipart/form-data">
 													<div class="row">
 														 <div class="col-md-6">
 															<div class="box border green">
@@ -545,8 +545,8 @@
 															</div>
 														 </div>
 													 </div>
+													 <div class="form-actions clearfix"> <input type="submit" value="保存" class="btn btn-primary pull-right"></div>
 												  </form>
-												  <div class="form-actions clearfix"> <input type="submit" value="保存" class="btn btn-primary pull-right"> </div>
 											   </div>
 											   <!-- /EDIT ACCOUNT -->
 											   

@@ -10,4 +10,7 @@ class ProfileController extends Controller {
 		$this->assign('Profile', $Profile); // 赋值数据集
 		$this->display();
 	}
+	public function edit($id){
+		$this->error('登录失败，用户名或密码错误');
+	}
 }
