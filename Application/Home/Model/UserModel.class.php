@@ -9,4 +9,5 @@ class UserModel extends Model{
 	array('email','require','电子邮件地址不能为空'),
 	array('username',',','该用户名已经存在！',1,'unique',1),
 	);
+	protected $EditProfileRules=array();
 }
