@@ -84,6 +84,7 @@
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
+							<li><a href="/PaperManager/index.php/Home/Profile/update_pic/id/<?php echo ($Profile["id"]); ?>"><i class="fa fa-user"></i> 更换头像</a></li>
 							<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
 							<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
 						</ul>
@@ -301,23 +302,6 @@
 				<!-- /SIDEBAR -->
 		<div id="main-content">
 			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					  <h4 class="modal-title">Box Settings</h4>
-					</div>
-					<div class="modal-body">
-					  Here goes box setting content.
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
 			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
@@ -337,7 +321,7 @@
 									<div class="clearfix">
 										<h3 class="content-title pull-left">个人主页</h3>
 									</div>
-									<div class="description">基本信息, 研究领域, 科研成果</div>
+									<div class="description">上传头像</div>
 								</div>
 							</div>
 						</div>
@@ -348,223 +332,17 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">你好，<?php echo ($Profile["fullname"]); ?></span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">上传头像</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="tabbable header-tabs user-profile">
-											<ul class="nav nav-tabs">
-												<li><a href="#pro_pic" data-toggle="tab"><i class="fa fa-picture-o"></i> <span class="hidden-inline-mobile">上传头像</span></a></li>
-											   <li><a href="#pro_edit" data-toggle="tab"><i class="fa fa-edit"></i> <span class="hidden-inline-mobile">编辑资料</span></a></li>
-											   <li class="active"><a href="#pro_overview" data-toggle="tab"><i class="fa fa-dot-circle-o"></i> <span class="hidden-inline-mobile">概述</span></a></li>
-											</ul>
-											<div class="tab-content">
-											   <!-- OVERVIEW -->
-											   <div class="tab-pane fade in active" id="pro_overview">
-												  <div class="row">
-													<!-- PROFILE PIC -->
-													<div class="col-md-3">
-														<div class="list-group">
-														  <li class="list-group-item zero-padding">
-															<img alt="" class="img-responsive" src="/PaperManager/Public/img/profile/avatar.jpg">
-														  </li>
-														  <div class="list-group-item profile-details">
-																<h2><?php echo ($Profile["fullname"]); ?></h2>
-														 </div>
-														  <a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 基本资料</a>
-														  <a href="#" class="list-group-item">
-															<span class="badge badge-red">9</span>
-															<i class="fa fa-calendar fa-fw"></i> 科研成果
-														  </a>
-														  <a href="#" class="list-group-item"><i class="fa fa-comment-o fa-fw"></i> 实验室</a>
-														  <a href="#" class="list-group-item"><i class="fa fa-picture-o fa-fw"></i> 课题组</a>
-														</div>														
-													</div>
-													<!-- /PROFILE PIC -->
-													<!-- PROFILE DETAILS -->
-													<div class="col-md-9">
-														<!-- ROW 1 -->
-														<div class="row">
-															<div class="col-md-12 profile-details">		
-																<h3>我的主要研究领域</h3>
-																<div class="row">
-																	<div class="col-md-4 text-center">
-																		<div id="pie_1" class="piechart" data-percent="100">
-																			<span class="percent"></span>
-																		</div>
-																		<div class="skill-name"><h4>人工智能</h4></div>
-																	</div>
-																	<div class="col-md-4 text-center">
-																		<div id="pie_2" class="piechart" data-percent="100">
-																			<span class="percent"></span>
-																		</div>
-																		<div class="skill-name"><h4>机器学习</h4></div>
-																	</div>
-																	<div class="col-md-4 text-center">
-																		<div id="pie_3" class="piechart" data-percent="100">
-																			<span class="percent"></span>
-																		</div>
-																		<div class="skill-name"><h4>自然语言处理</h4></div>
-																	</div>
-																</div>
-																<div class="divide-20"></div>
-																<!-- BUTTONS -->
-																<div class="row">
-																	<div class="col-md-3">
-																		<a class="btn btn-danger btn-icon input-block-level" href="javascript:void(0);">
-																			<div>期刊论文</div>
-																			<span class="label label-right label-warning">4</span>
-																		</a>
-																	</div>
-																	<div class="col-md-3">
-																		<a class="btn btn-primary btn-icon input-block-level" href="javascript:void(0);">
-																			<div>会议论文</div>
-																			<span class="label label-right label-danger">7</span>
-																		</a>
-																	</div>
-																	<div class="col-md-3">
-																		<a class="btn btn-pink btn-icon input-block-level" href="javascript:void(0);">
-																			<div>专利</div>
-																			<span class="label label-right label-info">1</span>
-																		</a>
-																	</div>
-																	<div class="col-md-3">
-																		<a class="btn btn-success btn-icon input-block-level" href="javascript:void(0);">
-																			<div>学术著作</div>
-																			<span class="label label-right label-info">1</span>
-																		</a>
-																	</div>
-
-																</div>
-																<!-- /BUTTONS -->
-															</div>
-														</div>
-														<!-- /ROW 1 -->
-														<div class="divide-20"></div>
-														<!-- ROW 2 -->
-														
-														<!-- /ROW 2 -->
-													</div>
-													<!-- /PROFILE DETAILS -->
-												  </div>
-											   </div>
-											   <!-- /OVERVIEW -->
-											   
-											   <!-- EDIT ACCOUNT -->
-											   <div class="tab-pane fade" id="pro_edit">
-												  <form class="form-horizontal" action="/PaperManager/index.php/Home/Profile/edit/id/<?php echo ($Profile["id"]); ?>" method="post">
-													<div class="row">
-														 <div class="col-md-6">
-															<div class="box border green">
-																<div class="box-title">
-																	<h4><i class="fa fa-bars"></i>基本信息</h4>
-																</div>
-																<div class="box-body big">
-																	<div class="row">
-																	 <div class="col-md-12">
-																		<h4>个人基本信息</h4>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">姓名</label> 
-																		   <div class="col-md-8"><input type="text" name="fullname" class="form-control" value="<?php echo ($Profile["fullname"]); ?>"></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">身份证号码</label> 
-																		   <div class="col-md-8"><input type="text" name="id_num" class="form-control" value="<?php echo ($Profile["id_num"]); ?>"></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">职称</label> 
-																		   <div class="col-md-8"><input type="text" name="work_title" class="form-control" value="<?php echo ($Profile["work_title"]); ?>"></div>
-																		</div>
-																		
-																		<h4>联系方式信息</h4>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">手机</label> 
-																		   <div class="col-md-8"><input type="text" name="phone" class="form-control" value="<?php echo ($Profile["phone"]); ?>"></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">电子邮箱</label> 
-																		   <div class="col-md-8"><input type="text" name="email" class="form-control" value="<?php echo ($Profile["email"]); ?>"></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">通信地址</label> 
-																		   <div class="col-md-8"><textarea name="address" class="form-control"><?php echo ($Profile["address"]); ?></textarea></div>
-																		</div>
-																	 </div>
-																  </div>
-																</div>
-															</div>
-														 </div>
-														 <div class="col-md-6 form-vertical">
-															<div class="box border green">
-																<div class="box-title">
-																	<h4><i class="fa fa-bars"></i>教育经历</h4>
-																</div>
-																<div class="box-body big">
-																	<h4>学位信息</h4>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">最高学位</label> 
-																		   <div class="col-md-8"><input type="text" name="degree" class="form-control" value="<?php echo ($Profile["degree"]); ?>"></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">授予学校</label> 
-																		   <div class="col-md-8"><input type="text" name="degree_edu" class="form-control" value="<?php echo ($Profile["degree_edu"]); ?>"></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label">授予年份(4位数字)</label> 
-																		   <div class="col-md-8"><input type="text" name="degree_year" class="form-control" value="<?php echo ($Profile["degree_year"]); ?>"></div>
-																		</div>
-																</div>
-															</div>
-														 </div>
-														 <div class="col-md-6 form-vertical">
-															<div class="box border green">
-																<div class="box-title">
-																	<h4><i class="fa fa-bars"></i>科研领域(最多填写三个)</h4>
-																</div>
-																<div class="box-body big">
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label" style="width: 20%">中文关键词</label> 
-																		   <div class="col-md-3"><input type="text" name="zh_keyword_1" class="form-control" value=""></div>
-																		   <label class="col-md-4 control-label" style="width: 20%">英文关键词</label> 
-																		   <div class="col-md-3"><input type="text" name="en_keyword_1" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label" style="width: 20%">中文关键词</label> 
-																		   <div class="col-md-3"><input type="text" name="zh_keyword_2" class="form-control" value=""></div>
-																		   <label class="col-md-4 control-label" style="width: 20%">英文关键词</label> 
-																		   <div class="col-md-3"><input type="text" name="en_keyword_2" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-4 control-label" style="width: 20%">中文关键词</label> 
-																		   <div class="col-md-3"><input type="text" name="zh_keyword_3" class="form-control" value=""></div>
-																		   <label class="col-md-4 control-label" style="width: 20%">英文关键词</label> 
-																		   <div class="col-md-3"><input type="text" name="en_keyword_3" class="form-control" value=""></div>
-																		</div>
-																</div>
-															</div>
-														 </div>
-													 </div>
-													 <div class="form-actions clearfix"> <input type="submit" value="保存" class="btn btn-primary pull-right"></div>
-												  </form>
-											   </div>
-											   <!-- /EDIT ACCOUNT -->
-											   <div class="tab-pane fade" id="pro_pic">
-												  <form class="form-horizontal" action="/PaperManager/index.php/Home/Profile/update_pic/id/<?php echo ($Profile["id"]); ?>" method="post" enctype="multipart/form-data">
-														<div class="row">
-															<div class="col-md-12">
-																<!-- BOX -->
-																	<div class="box-body">
-																		<div class="form-group">
-																		  <div class="col-md-4"><input type="file" name="picture" class="form-control" ></div>
-																		</div>
-																	</div>
-															</div>
-														</div>
-													 <div class="form-actions clearfix"> <input type="submit" value="上传" class="btn btn-primary pull-right"></div>
-												  </form>
-											   </div>
+										<form class="form-horizontal" action="/PaperManager/index.php/Home/Profile/edit/id/<?php echo ($Profile["id"]); ?>" method="post" enctype="multipart/form-data">
+											<div class="form-group">
+										   <div class="col-md-4"><input type="file" name="picture" class="form-control" ></div>
+										   <input type="submit" value="上传" class="btn btn-primary" >
 											</div>
-										</div>
-										<!-- /USER PROFILE -->
+
+										</form>
+
 									</div>
 								</div>
 							</div>
