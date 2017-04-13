@@ -32,7 +32,7 @@ class IndexController extends Controller {
 		);
 		$data=$login->where($condition)->find();
 		if($data){
-			$this->success('登录成功',__ROOT__.'/index.php/Home/Wizard/wizard');
+			$this->success('登录成功',__ROOT__.'/index.php/Home/Profile/profile');
 		}else{
 			$this->error('登录失败，用户名或密码错误');
 		}

@@ -1,8 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class WizardController extends Controller{
-	public function index(){
+class ProfileController extends Controller {
+	public function profile(){
 		$this->display();
 	}
 }
