@@ -3,6 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 class ProfileController extends Controller {
 	public function profile(){
+		parent::is_login();
 		$UserModel=M('User');
 		$uid=session('uid');
 		$Condition['id']=$uid;

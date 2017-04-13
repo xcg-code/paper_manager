@@ -302,6 +302,15 @@ abstract class Controller {
         // 执行后续操作
         Hook::listen('action_end');
     }
+
+    public function is_login(){
+        if(!isset($_SESSION[uid]))
+        {
+            $this->success('请登录！',__ROOT__);
+            exit;
+        }
+        
+    }
 }
 // 设置控制器别名 便于升级
 class_alias('Think\Controller','Think\Action');

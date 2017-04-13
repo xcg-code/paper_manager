@@ -549,10 +549,6 @@
 												  </form>
 											   </div>
 											   <!-- /EDIT ACCOUNT -->
-											   
-											   <!-- HELP -->
-											   
-											   <!-- /HELP -->
 											</div>
 										</div>
 										<!-- /USER PROFILE -->
