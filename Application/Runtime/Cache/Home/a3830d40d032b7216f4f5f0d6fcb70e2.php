@@ -247,11 +247,11 @@
 																		</div>
 																		<div class="form-group">
 																		   <label class="col-md-2 control-label">摘要</label> 
-																		   <div class="col-md-8"><textarea name="address" class="form-control"></textarea></div>
+																		   <div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
 																		</div>
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">关键词(用分号隔开)</label> 
-																		   <div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
+																		   <div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
 																		</div>
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">语言</label> 
@@ -297,6 +297,23 @@
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">引用次数(ISI)</label> 
 																		   <div class="col-md-8"><input type="text" name="refer_num" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">是否标注</label> 
+																		   <div class="col-md-8"><select class="form-control" name="mark">
+																			  <option></option>
+																			  <option>未标注</option>
+																			  <option>第一标注</option>
+																			  <option>第二标注</option>
+																			  <option>第三标注</option>
+																			  <option>第四标注</option>
+																			  <option>第五标注</option>
+																			  <option>第六标注</option>
+																			  <option>第七标注</option>
+																			  <option>第八标注</option>
+																			  <option>第九标注</option>
+																			  <option>第十标注</option>
+																			</select></div>
 																		</div>
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">卷号</label> 

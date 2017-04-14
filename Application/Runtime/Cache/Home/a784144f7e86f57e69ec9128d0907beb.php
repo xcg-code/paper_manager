@@ -240,7 +240,7 @@
 									<div class="box-body">
 										<div class="row">
 											<div class="col-md-3">
-												<a class="btn btn-primary btn-icon input-block-level" href="/PaperManager/index.php/Home/Achievement/journal_paper_add/id/<?php echo ($Profile["id"]); ?>">
+												<a class="btn btn-primary btn-icon input-block-level" href="/PaperManager/index.php/Home/Achievement/journal_paper_add/id/<?php echo (session('uid')); ?>">
 													<i class="fa fa-book fa-2x"></i>
 													<div>期刊论文</div>
 												</a>
