@@ -222,7 +222,7 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">手工录入</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">期刊论文</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
@@ -238,14 +238,84 @@
 															<div class="col-md-12">
 																	<div class="box-body">
 																		<div class="form-group">
-																		  <label class="col-md-2 control-label">选择成果类型</label> 
-																		   <div class="col-md-8"><select class="form-control" name="achievement_type">
-																			  <option>期刊论文</option>
-																			  <option>会议论文</option>
-																			  <option>3</option>
-																			  <option>4</option>
-																			  <option>5</option>
-																			</select></div>
+																		  <label class="col-md-2 control-label">标题(中文)</label> 
+																		   <div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">标题(英文)</label> 
+																		   <div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		   <label class="col-md-2 control-label">摘要</label> 
+																		   <div class="col-md-8"><textarea name="address" class="form-control"></textarea></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">关键词(用分号隔开)</label> 
+																		   <div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">语言</label> 
+																		   <div class="col-md-8">
+																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="Chinese" checked> 中文 </label> 
+												 								<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="English"> 外文 </label>
+																		   </div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">状态</label> 
+																		   <div class="col-md-8">
+																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="published" checked> 已发表 </label> 
+												 								<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="unpublished"> 已接受未发表 </label>
+																		   </div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">期刊名称</label> 
+																		   <div class="col-md-8"><input type="text" name="journal_name" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">发表日期</label> 
+																		   <div class="col-md-8"><input type="date" name="publish_date" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">DOI</label> 
+																		   <div class="col-md-8"><input type="text" name="doi" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">文章号</label> 
+																		   <div class="col-md-8"><input type="text" name="paper_num" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">收录情况</label> 
+																		   <div class="col-md-8">
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="sci"> SCI </label> 
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="ssci"> SSCI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="ei"> EI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="cssci"> CSSCI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="peking"> 北大中文核心期刊 </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="other"> 其他 </label>
+																		   </div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">引用次数(ISI)</label> 
+																		   <div class="col-md-8"><input type="text" name="refer_num" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">卷号</label> 
+																		   <div class="col-md-3"><input type="text" name="juan_num" class="form-control" value=""></div>
+																		   <label class="col-md-1 control-label">期号</label> 
+																		   <div class="col-md-3"><input type="text" name="qi_num" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">起止页码</label>
+																		  	<div class="col-md-2">
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no"> 本文章不包含起止页码 </label> 
+																		   	</div>
+																		   	<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
+																		   <label class="col-md-1 control-label">————</label> 
+																		   <div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">全文链接</label> 
+																		   <div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
 																		</div>
 																	</div>
 															</div>
