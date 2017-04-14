@@ -32,7 +32,10 @@ class IndexController extends Controller {
 		);
 		$data=$login->where($condition)->find();
 		if($data){
+            $PicPath="Uploads/UserPic/".$data['pic_save_path'];
             session('uid',$data[id],3600);
+            session('pic_path',$PicPath,3600);
+            session('fullname',$data[fullname],3600);
 			$this->success('登录成功',__ROOT__.'/index.php/Home/Profile/profile');
 		}else{
 			$this->error('登录失败，用户名或密码错误');

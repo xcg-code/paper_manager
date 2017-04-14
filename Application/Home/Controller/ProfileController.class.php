@@ -10,7 +10,6 @@ class ProfileController extends Controller {
 		$Profile=$UserModel->where($Condition)->find();
 		$this->assign('Profile', $Profile); //基本信息前端赋值
 		$PicPath="Uploads/UserPic/".$Profile['pic_save_path'];
-		$this->assign('PicPath', $PicPath); //用户头像信息前端赋值
 		$AreaModel=M('Area');
 		$AreaCondition['user_id']=$uid;
 		$AreaInfo=$AreaModel->where($AreaCondition)->count();

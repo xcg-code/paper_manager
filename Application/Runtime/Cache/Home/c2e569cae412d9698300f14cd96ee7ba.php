@@ -79,8 +79,8 @@
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="/PaperManager/<?php echo ($PicPath); ?>" />
-							<span class="username"><?php echo ($Profile["fullname"]); ?></span>
+							<img alt="" src="/PaperManager/<?php echo (session('pic_path')); ?>" />
+							<span class="username"><?php echo (session('fullname')); ?></span>
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
@@ -239,7 +239,7 @@
 													<div class="col-md-3">
 														<div class="list-group">
 														  <li class="list-group-item zero-padding">
-															<img alt="" class="img-responsive" src="/PaperManager/<?php echo ($PicPath); ?>">
+															<img alt="" class="img-responsive" src="/PaperManager/<?php echo (session('pic_path')); ?>">
 														  </li>
 														  <div class="list-group-item profile-details">
 																<h2><?php echo ($Profile["fullname"]); ?></h2>
