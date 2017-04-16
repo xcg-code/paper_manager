@@ -16,8 +16,10 @@ class AchievementController extends Controller {
 	}
 	//我的科研成果页面
 	public function my_achievement(){
-		$JournalModel=M('Journalpaper');
+		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
+		$AchievementInfo=$AchievementModel->where($Condition)->select();
+		$this->assign('AchievementInfo',$AchievementInfo);
 		$this->display();
 	}
 	public function journal_paper_add($id){

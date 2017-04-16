@@ -288,12 +288,14 @@
 													</span>
 								  				</div>
 								  				<div class="divide-20"></div>
-								  				<div class="search-results">
-									   				<h4><a href="#">科研成果名称</a></h4>
-									   				<div class="text-primary">作者信息</div>
-									   				<div class="text-danger">来源</div>
-									   				<div class="text-success">收录</div>
-												</div>
+
+								  				<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
+									   				<h4><a href="#"><?php echo ($vo["title"]); ?></a></h4>
+									   				<div class="text-primary"><?php echo ($vo["author"]); ?></div>
+									   				<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
+									   				<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
+												</div><?php endforeach; endif; else: echo "" ;endif; ?>
+								  				
 												<div>
 													<ul class='pagination'>
 										  			<li class='disabled'>
