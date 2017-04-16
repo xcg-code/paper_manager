@@ -245,7 +245,8 @@
 													<h4>相关操作</h4>
 												</div>
 
-												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改信息</a>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
 												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看该类别所有成果</a>

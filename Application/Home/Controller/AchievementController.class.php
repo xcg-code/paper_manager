@@ -73,8 +73,22 @@ class AchievementController extends Controller {
 		$JournalInfo=$JournalModel->where($Condition)->find();
 		//添加其他详细信息
 		$JournalInfo['achievement_type']='期刊论文';
+		if($JournalInfo['language']=='Chinese'){
+			$JournalInfo['language']='中文';
+		}else{
+			$JournalInfo['language']='英文';
+		}
+		if($JournalInfo['status']=='published'){
+			$JournalInfo['status']='已发表';
+		}else{
+			$JournalInfo['status']='已接受未发表';
+		}
+		if($JournalInfo['inbox_status']=='peking'){
+			$JournalInfo['inbox_status']='北大中文核心期刊';
+		}else if($JournalInfo['inbox_status']=='other'){
+			$JournalInfo['inbox_status']='其他';
+		}
 		$this->assign('JournalInfo', $JournalInfo); 
-		var_dump($JournalInfo);
 		$this->display();
 	}
 
