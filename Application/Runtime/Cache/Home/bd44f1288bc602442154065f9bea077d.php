@@ -239,24 +239,48 @@
 									</div>
 									<div class="box-body">
 										<div class="row">
-											<div class="col-md-2">
+											<div class="col-md-3">
 												<div class="list-group">
-													<li class="list-group-item zero-padding">
-														<img alt="" class="img-responsive" src="/PaperManager/<?php echo (session('pic_path')); ?>">
-													</li>
 												<div class="list-group-item profile-details">
-													<h3>成果类别</h3>
+													<h4>成果类别</h4>
 												</div>
-												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 基本资料</a>
-												<a href="#" class="list-group-item">
-												<span class="badge badge-red">9</span>
-												<i class="fa fa-calendar fa-fw"></i> 科研成果
+
+												<a href="#" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 期刊论文
 												</a>
-												<a href="#" class="list-group-item"><i class="fa fa-comment-o fa-fw"></i> 实验室</a>
-												<a href="#" class="list-group-item"><i class="fa fa-picture-o fa-fw"></i> 课题组</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 会议论文
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 学术专著
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 专利
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 会议报告
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 标准
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 软件著作权
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 科研奖励
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 人才培养
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
+												</a>
+
+												<div class="list-group-item profile-details">
+													<h4>发表年份</h4>
+												</div>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2017
+												</a>
+												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2016
+												</a>
 												</div>														
 											</div>
-											<div class="col-md-10">
+											<div class="col-md-9">
 												<div class="input-group">
 													<input class="form-control" type="text" placeholder="输入成果名称查询">
 													<span class="input-group-btn">
@@ -265,9 +289,10 @@
 								  				</div>
 								  				<div class="divide-20"></div>
 								  				<div class="search-results">
-									   				<h4><a href="#">Cloud Admin- Responsive Dashboard Template</a></h4>
-									   				<div class="url">http://www.fametaxi.com <i class="fa fa-caret-down"></i></div>
-									   				<p>Cloud Admin is a responsive admin dashboard template powered with Twitter Bootstrap Framework for admin and SaaS applications. Cloud Admin has a clean and subtle design which makes your next project look awesome and yet user friendly.</p>
+									   				<h4><a href="#">科研成果名称</a></h4>
+									   				<div class="text-primary">作者信息</div>
+									   				<div class="text-danger">来源</div>
+									   				<div class="text-success">收录</div>
 												</div>
 												<div>
 													<ul class='pagination'>
