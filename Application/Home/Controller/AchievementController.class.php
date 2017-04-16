@@ -68,6 +68,13 @@ class AchievementController extends Controller {
 
 	//查看期刊论文详细信息
 	public function journal_paper_show($achi_id){
+		$JournalModel=M('Journalpaper');
+		$Condition['id']=$achi_id;
+		$JournalInfo=$JournalModel->where($Condition)->find();
+		//添加其他详细信息
+		$JournalInfo['achievement_type']='期刊论文';
+		$this->assign('JournalInfo', $JournalInfo); 
+		var_dump($JournalInfo);
 		$this->display();
 	}
 

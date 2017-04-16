@@ -209,7 +209,7 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">期刊论文标题</h3>
+										<h3 class="content-title pull-left"><?php echo ($JournalInfo["title_zh"]); ?></h3>
 									</div>
 									<div class="description">论文详情查看及相关操作</div>
 								</div>
@@ -221,7 +221,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>期刊论文标题</h4>
+										<h4><i class="fa fa-bars"></i><?php echo ($JournalInfo["title_zh"]); ?></h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -256,7 +256,7 @@
 
 												<div class="box border blue">
 									<div class="box-title">
-										<h4><i class="fa fa-table"></i>论文标题</h4>
+										<h4><i class="fa fa-table"></i>详细信息</h4>
 										<div class="tools">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -277,75 +277,75 @@
 											<tbody>
 											  <tr>
 												<td style="width: 15%;text-align:center">成果类别</td>
-												<td>成果类别</td>
+												<td><?php echo ($JournalInfo["achievement_type"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">标题(中文)</td>
-												<td>标题(中文)</td>
+												<td><?php echo ($JournalInfo["title_zh"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">标题(英文)</td>
-												<td>标题(英文)</td>
+												<td><?php echo ($JournalInfo["title_en"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">摘要</td>
-												<td>摘要</td>
+												<td><?php echo ($JournalInfo["abstract"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">关键词</td>
-												<td>关键词</td>
+												<td><?php echo ($JournalInfo["keywords"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">语言</td>
-												<td>语言</td>
+												<td><?php echo ($JournalInfo["language"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">状态</td>
-												<td>状态</td>
+												<td><?php echo ($JournalInfo["status"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">期刊名称</td>
-												<td>期刊名称</td>
+												<td><?php echo ($JournalInfo["journal_name"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">发表日期</td>
-												<td>发表日期</td>
+												<td><?php echo ($JournalInfo["publish_date"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">DOI</td>
-												<td>发表日期</td>
+												<td><?php echo ($JournalInfo["doi"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">文章号</td>
-												<td>文章号</td>
+												<td><?php echo ($JournalInfo["paper_num"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">收录情况</td>
-												<td>收录情况</td>
+												<td><?php echo ($JournalInfo["inbox_status"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">引用次数</td>
-												<td>引用次数</td>
+												<td><?php echo ($JournalInfo["refer_num"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">期号</td>
-												<td>期号</td>
+												<td><?php echo ($JournalInfo["qi_num"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">卷号</td>
-												<td>卷号</td>
+												<td><?php echo ($JournalInfo["juan_num"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">起止页码</td>
-												<td>起止页码</td>
+												<td><?php echo ($JournalInfo["start_page"]); ?> ~ <?php echo ($JournalInfo["end_page"]); ?></td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">是否标注</td>
-												<td>是否标注	</td>
+												<td><?php echo ($JournalInfo["mark"]); ?>	</td>
 											  </tr>
 											  <tr>
 												<td style="width: 15%;text-align:center">全文链接</td>
-												<td>全文链接	</td>
+												<td><?php echo ($JournalInfo["paper_link"]); ?></td>
 											  </tr>
 											</tbody>
 										  </table>
