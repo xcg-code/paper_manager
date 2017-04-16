@@ -19,11 +19,15 @@ class AchievementController extends Controller {
 		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
 		$AchievementInfo=$AchievementModel->where($Condition)->select();
+		$AchievementCount['All']=$AchievementModel->where($Condition)->count();
+		//获取各种科研成果的数目
+		$AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
 		$this->assign('AchievementInfo',$AchievementInfo);
+		$this->assign('AchievementCount',$AchievementCount);
 		$this->display();
 	}
+
 	public function journal_paper_add($id){
-		//显示头像
 		parent::is_login();
 		$this->display();
 	}

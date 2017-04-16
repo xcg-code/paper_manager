@@ -1548,3 +1548,63 @@ function think_filter(&$value){
 function in_array_case($value,$array){
     return in_array(strtolower($value),array_map('strtolower',$array));
 }
+
+function get_achievement_count($AchievementCount,$AchievementInfo){
+        $AchievementCount['JournalPaper']=0;
+        $AchievementCount['ConferencePaper']=0;
+        $AchievementCount['Monograph']=0;
+        $AchievementCount['Patent']=0;
+        $AchievementCount['ConferenceReport']=0;
+        $AchievementCount['Standard']=0;
+        $AchievementCount['Software']=0;
+        $AchievementCount['Reward']=0;
+        $AchievementCount['Train']=0;
+        $AchievementCount['ConferenceInvolved']=0;
+        $AchievementCount['TechTrans']=0;
+        $AchievementCount['OtherAchievement']=0;
+        for($i=0;$i<(int)$AchievementCount['All'];$i++){
+            switch ($AchievementInfo[$i]['achievement_type']) {
+                case 'JournalPaper':
+                    $AchievementCount['JournalPaper']+=1;
+                    break;
+                case 'ConferencePaper':
+                    $AchievementCount['ConferencePaper']+=1;
+                    break;
+                case 'Monograph':
+                    $AchievementCount['Monograph']+=1;
+                    break;
+                case 'Patent':
+                    $AchievementCount['Patent']+=1;
+                    break;
+                case 'ConferenceReport':
+                    $AchievementCount['ConferenceReport']+=1;
+                    break;
+                case 'Standard':
+                    $AchievementCount['Standard']+=1;
+                    break;
+                case 'Software':
+                    $AchievementCount['Software']+=1;
+                    break;
+                case 'Reward':
+                    $AchievementCount['Reward']+=1;
+                    break;
+                case 'Train':
+                    $AchievementCount['Train']+=1;
+                    break;
+                case 'ConferenceInvolved':
+                    $AchievementCount['ConferenceInvolved']+=1;
+                    break;
+                case 'TechTrans':
+                    $AchievementCount['TechTrans']+=1;
+                    break;
+                case 'OtherAchievement':
+                    $AchievementCount['OtherAchievement']+=1;
+                    break;
+
+                default:
+                    
+                    break;
+            }
+        }
+        return $AchievementCount;
+}
