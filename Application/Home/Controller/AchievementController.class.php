@@ -3,7 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 class AchievementController extends Controller {
 	public function achievement_add(){
-		//显示头像
 		parent::is_login();
 		$UserModel=M('User');
 		$uid=session('uid');
@@ -31,6 +30,7 @@ class AchievementController extends Controller {
 		parent::is_login();
 		$this->display();
 	}
+
 	public function journal_paper_add_db($id){
 		$JournalModel=D('Journalpaper');
 		$AchievementModel=D('Achievement');
@@ -64,6 +64,11 @@ class AchievementController extends Controller {
 		{
 			$this->error($JournalModel->getError(),__ROOT__.'/index.php/Home/Achievement/journal_paper_add/id/'.$id);
 		}
+	}
+
+	//查看期刊论文详细信息
+	public function journal_paper_show($achi_id){
+		$this->display();
 	}
 
 }

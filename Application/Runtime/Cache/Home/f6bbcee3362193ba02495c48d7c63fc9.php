@@ -209,9 +209,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">我的科研成果</h3>
+										<h3 class="content-title pull-left">期刊论文标题</h3>
 									</div>
-									<div class="description">查看，检索</div>
+									<div class="description">论文详情查看及相关操作</div>
 								</div>
 							</div>
 						</div>
@@ -290,7 +290,7 @@
 								  				<div class="divide-20"></div>
 
 								  				<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
-									   				<h4><a href="/PaperManager/index.php/Home/Achievement/journal_paper_show/achi_id/<?php echo ($vo["achievement_id"]); ?>"><?php echo ($vo["title"]); ?></a></h4>
+									   				<h4><a href="#"><?php echo ($vo["title"]); ?></a></h4>
 									   				<div class="text-primary"><?php echo ($vo["author"]); ?></div>
 									   				<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
 									   				<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
