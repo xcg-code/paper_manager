@@ -14,6 +14,10 @@ class AchievementController extends Controller {
 		$this->assign('PicPath', $PicPath); //用户头像信息前端赋值
 		$this->display();
 	}
+	//我的科研成果页面
+	public function my_achievement(){
+		$this->display();
+	}
 	public function journal_paper_add($id){
 		//显示头像
 		parent::is_login();

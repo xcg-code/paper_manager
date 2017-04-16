@@ -209,9 +209,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果</h3>
+										<h3 class="content-title pull-left">我的科研成果</h3>
 									</div>
-									<div class="description">手动添加科研成果</div>
+									<div class="description">查看，检索</div>
 								</div>
 							</div>
 						</div>
@@ -219,135 +219,89 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<!-- BOX -->
-								<div class="box border">
+								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">期刊论文</span></h4>
+										<h4><i class="fa fa-bars"></i>我的科研成果列表</h4>
+										<div class="tools hidden-xs">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
 									</div>
 									<div class="box-body">
-										<div class="tabbable header-tabs">
-										  <ul class="nav nav-tabs">
-											 <li><a href="#box_tab3" data-toggle="tab"><i class="fa fa-circle-o"></i> <span class="hidden-inline-mobile">全文及附件</span></a></li>
-											 <li><a href="#box_tab2" data-toggle="tab"><i class="fa fa-laptop"></i> <span class="hidden-inline-mobile">作者详情</span></a></li>
-											 <li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">基本信息</span></a></li>
-										  </ul>
-										  <div class="tab-content">
-											 <div class="tab-pane fade in active" id="box_tab1">
-												<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/journal_paper_add_db/id/<?php echo (session('uid')); ?>" method="post">
-														<div class="row">
-															<div class="col-md-12">
-																	<div class="box-body">
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">标题(中文)</label> 
-																		   <div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">标题(英文)</label> 
-																		   <div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-2 control-label">摘要</label> 
-																		   <div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">关键词(用分号隔开)</label> 
-																		   <div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">语言</label> 
-																		   <div class="col-md-8">
-																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="Chinese" checked> 中文 </label> 
-												 								<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="English"> 外文 </label>
-																		   </div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">状态</label> 
-																		   <div class="col-md-8">
-																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="published" checked> 已发表 </label> 
-												 								<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="unpublished"> 已接受未发表 </label>
-																		   </div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">期刊名称</label> 
-																		   <div class="col-md-8"><input type="text" name="journal_name" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">发表日期</label> 
-																		   <div class="col-md-8"><input type="date" name="publish_date" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">DOI</label> 
-																		   <div class="col-md-8"><input type="text" name="doi" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">文章号</label> 
-																		   <div class="col-md-8"><input type="text" name="paper_num" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">收录情况</label> 
-																		   <div class="col-md-8">
-																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="sci"> SCI </label> 
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="ssci"> SSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="ei"> EI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="cssci"> CSSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="peking"> 北大中文核心期刊 </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="other"> 其他 </label>
-																		   </div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">引用次数(ISI)</label> 
-																		   <div class="col-md-8"><input type="text" name="refer_num" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">是否标注</label> 
-																		   <div class="col-md-8"><select class="form-control" name="mark">
-																			  <option></option>
-																			  <option>未标注</option>
-																			  <option>第一标注</option>
-																			  <option>第二标注</option>
-																			  <option>第三标注</option>
-																			  <option>第四标注</option>
-																			  <option>第五标注</option>
-																			  <option>第六标注</option>
-																			  <option>第七标注</option>
-																			  <option>第八标注</option>
-																			  <option>第九标注</option>
-																			  <option>第十标注</option>
-																			</select></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">卷号</label> 
-																		   <div class="col-md-3"><input type="text" name="juan_num" class="form-control" value=""></div>
-																		   <label class="col-md-1 control-label">期号</label> 
-																		   <div class="col-md-3"><input type="text" name="qi_num" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">起止页码</label>
-																		  	<div class="col-md-2">
-																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no"> 本文章不包含起止页码 </label> 
-																		   	</div>
-																		   	<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
-																		   <label class="col-md-1 control-label">————</label> 
-																		   <div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">全文链接</label> 
-																		   <div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
-																		</div>
-																	</div>
-															</div>
-														</div>
-													 <div class="form-actions clearfix"> <input type="submit" value="保存" class="btn btn-primary pull-right"></div>
-												</form>
-											 </div>
-											 <div class="tab-pane fade" id="box_tab2">
-												<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
-												<p> There were flying cantaloupes, rainbows and songs of happiness near by, I mean I was a little frightened by the flying fruit but I'll take this any day over prison inmates. I skipped closer and closer to the festivities and when I arrived I seen all my friends I had went to high school with there were holding hands and singing Kumbayah around the camp ice.. Yes It was a giant block of ice situated on three wood logs. </p>
-											 </div>
-											 <div class="tab-pane fade" id="box_tab3">
-											 </div>
-										  </div>
-									   </div>
+										<div class="row">
+											<div class="col-md-2">
+												<div class="list-group">
+													<li class="list-group-item zero-padding">
+														<img alt="" class="img-responsive" src="/PaperManager/<?php echo (session('pic_path')); ?>">
+													</li>
+												<div class="list-group-item profile-details">
+													<h3>成果类别</h3>
+												</div>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 基本资料</a>
+												<a href="#" class="list-group-item">
+												<span class="badge badge-red">9</span>
+												<i class="fa fa-calendar fa-fw"></i> 科研成果
+												</a>
+												<a href="#" class="list-group-item"><i class="fa fa-comment-o fa-fw"></i> 实验室</a>
+												<a href="#" class="list-group-item"><i class="fa fa-picture-o fa-fw"></i> 课题组</a>
+												</div>														
+											</div>
+											<div class="col-md-10">
+												<div class="input-group">
+													<input class="form-control" type="text" placeholder="输入成果名称查询">
+													<span class="input-group-btn">
+													<button class="btn btn-primary" type="button">查询 <i class="fa fa-search"></i></button>
+													</span>
+								  				</div>
+								  				<div class="divide-20"></div>
+								  				<div class="search-results">
+									   				<h4><a href="#">Cloud Admin- Responsive Dashboard Template</a></h4>
+									   				<div class="url">http://www.fametaxi.com <i class="fa fa-caret-down"></i></div>
+									   				<p>Cloud Admin is a responsive admin dashboard template powered with Twitter Bootstrap Framework for admin and SaaS applications. Cloud Admin has a clean and subtle design which makes your next project look awesome and yet user friendly.</p>
+												</div>
+												<div>
+													<ul class='pagination'>
+										  			<li class='disabled'>
+														<a href='#'>
+											  			<i class='fa fa-caret-left'></i>
+														</a>
+										  			</li>
+										  			<li class='active'>
+														<a href='#'>
+											  			1
+														</a>
+										  			</li>
+										  			<li>
+														<a href='#'>2</a>
+										  			</li>
+										  			<li>
+														<a href='#'>3</a>
+										  			</li>
+										  			<li>
+														<a href='#'>4</a>
+										  			</li>
+										  			<li>
+														<a href='#'>5</a>
+										  			</li>
+										  			<li>
+														<a href='#'>
+											  			Next <i class='fa fa-caret-right'></i>
+														</a>
+										  			</li>
+													</ul>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
