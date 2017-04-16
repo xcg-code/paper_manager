@@ -221,7 +221,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>我的科研成果列表</h4>
+										<h4><i class="fa fa-bars"></i>期刊论文标题</h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -242,91 +242,116 @@
 											<div class="col-md-3">
 												<div class="list-group">
 												<div class="list-group-item profile-details">
-													<h4>成果类别</h4>
+													<h4>相关操作</h4>
 												</div>
 
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-												</a>
-
-												<div class="list-group-item profile-details">
-													<h4>发表年份</h4>
-												</div>
-												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2017
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2016
-												</a>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改信息</a>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
+												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看该类别所有成果</a>
+												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看所属项目所有成果</a>
 												</div>														
 											</div>
 											<div class="col-md-9">
-												<div class="input-group">
-													<input class="form-control" type="text" placeholder="输入成果名称查询">
-													<span class="input-group-btn">
-													<button class="btn btn-primary" type="button">查询 <i class="fa fa-search"></i></button>
-													</span>
-								  				</div>
-								  				<div class="divide-20"></div>
 
-								  				<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
-									   				<h4><a href="#"><?php echo ($vo["title"]); ?></a></h4>
-									   				<div class="text-primary"><?php echo ($vo["author"]); ?></div>
-									   				<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
-									   				<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
-												</div><?php endforeach; endif; else: echo "" ;endif; ?>
+												<div class="box border blue">
+									<div class="box-title">
+										<h4><i class="fa fa-table"></i>论文标题</h4>
+										<div class="tools">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="box-body">
+										<table class="table table-striped">
+											<tbody>
+											  <tr>
+												<td style="width: 15%;text-align:center">成果类别</td>
+												<td>成果类别</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">标题(中文)</td>
+												<td>标题(中文)</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">标题(英文)</td>
+												<td>标题(英文)</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">摘要</td>
+												<td>摘要</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">关键词</td>
+												<td>关键词</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">语言</td>
+												<td>语言</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">状态</td>
+												<td>状态</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">期刊名称</td>
+												<td>期刊名称</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">发表日期</td>
+												<td>发表日期</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">DOI</td>
+												<td>发表日期</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">文章号</td>
+												<td>文章号</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">收录情况</td>
+												<td>收录情况</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">引用次数</td>
+												<td>引用次数</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">期号</td>
+												<td>期号</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">卷号</td>
+												<td>卷号</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">起止页码</td>
+												<td>起止页码</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">是否标注</td>
+												<td>是否标注	</td>
+											  </tr>
+											  <tr>
+												<td style="width: 15%;text-align:center">全文链接</td>
+												<td>全文链接	</td>
+											  </tr>
+											</tbody>
+										  </table>
+									</div>
+								</div>
 								  				
-												<div>
-													<ul class='pagination'>
-										  			<li class='disabled'>
-														<a href='#'>
-											  			<i class='fa fa-caret-left'></i>
-														</a>
-										  			</li>
-										  			<li class='active'>
-														<a href='#'>
-											  			1
-														</a>
-										  			</li>
-										  			<li>
-														<a href='#'>2</a>
-										  			</li>
-										  			<li>
-														<a href='#'>3</a>
-										  			</li>
-										  			<li>
-														<a href='#'>4</a>
-										  			</li>
-										  			<li>
-														<a href='#'>5</a>
-										  			</li>
-										  			<li>
-														<a href='#'>
-											  			Next <i class='fa fa-caret-right'></i>
-														</a>
-										  			</li>
-													</ul>
-												</div>
 											</div>
 										</div>
 									</div>
