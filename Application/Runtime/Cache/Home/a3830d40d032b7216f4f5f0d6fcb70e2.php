@@ -286,10 +286,10 @@
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">收录情况</label> 
 																		   <div class="col-md-8">
-																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="sci"> SCI </label> 
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="ssci"> SSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="ei"> EI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="cssci"> CSSCI </label>
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SCI"> SCI </label> 
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SSCI"> SSCI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="EI"> EI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="CSSCI"> CSSCI </label>
 																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="peking"> 北大中文核心期刊 </label>
 																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="other"> 其他 </label>
 																		   </div>
@@ -341,8 +341,41 @@
 												</form>
 											 </div>
 											 <div class="tab-pane fade" id="box_tab2">
-												<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
-												<p> There were flying cantaloupes, rainbows and songs of happiness near by, I mean I was a little frightened by the flying fruit but I'll take this any day over prison inmates. I skipped closer and closer to the festivities and when I arrived I seen all my friends I had went to high school with there were holding hands and singing Kumbayah around the camp ice.. Yes It was a giant block of ice situated on three wood logs. </p>
+												<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/journal_paper_add_db/id/<?php echo (session('uid')); ?>" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																	<div class="box-body">
+																		<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
+																		
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">文章中的作者姓名</label> 
+																		   <div class="col-md-2"><input type="text" name="juan_num" class="form-control" value=""></div>
+																		   <label class="col-md-1 control-label">作者单位</label> 
+																		   <div class="col-md-2"><input type="text" name="qi_num" class="form-control" value=""></div>
+																		   <label class="col-md-1 control-label">电子邮箱</label> 
+																		   <div class="col-md-2"><input type="text" name="qi_num" class="form-control" value=""></div>
+																		</div>
+																		<div class="form-group">
+																		  <label class="col-md-2 control-label">作者属性</label>
+																		  	<div class="col-md-2">
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no">是否通讯作者 </label> 
+																		   	</div>
+																		   	<div class="col-md-2">
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no">是否第一作者 </label> 
+																		   	</div>
+																		   	<div class="col-md-2">
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no">是否主要参与者 </label> 
+																		   	</div>
+																		   	<div class="col-md-2">
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no">是否项目承担单位 </label> 
+																		   	</div>
+																		</div>
+																		<hr style="height:3px;border:none;border-top:3px double red;" />
+																	</div>
+															</div>
+														</div>
+													 <div class="form-actions clearfix"> <input type="submit" value="保存" class="btn btn-primary pull-right"></div>
+												</form>
 											 </div>
 											 <div class="tab-pane fade" id="box_tab3">
 											 </div>
