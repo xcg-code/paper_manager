@@ -46,6 +46,9 @@ class AchievementController extends Controller {
 		}
 		for ($i=0; $i < $Count; $i++) { 
 			$Data['author_name']=I('post.author_name_'.$i);
+			if($Data['author_name']==''){
+				$this->error('作者姓名为必填项');
+			}
 			$Data['author_workplace']=I('post.author_workplace_'.$i);
 			$Data['author_email']=I('post.author_email_'.$i);
 			$Data['is_contact']=I('post.is_contact_'.$i);
@@ -64,7 +67,7 @@ class AchievementController extends Controller {
 		$AchievementModel->author=$AuthorList;
 		$AchiResult=$AchievementModel->where($Condition)->save();
 		if($Result && $AchiResult){
-			$this->success('添加作者信息成功');
+			$this->success('添加作者信息成功，请上传相关文档');
 		}else{
 			$this->success('添加作者信息失败');
 		}
