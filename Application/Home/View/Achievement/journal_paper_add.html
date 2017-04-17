@@ -329,7 +329,7 @@
 		</div>
 
 		<div id="info" hidden="true">
-			<div class="form-group">
+			<div class="form-group" id="form_one_">
 		  <label class="col-md-2 control-label">文章中的作者姓名</label> 
 		   <div class="col-md-2"><input type="text" name="author_name_" class="form-control" value=""></div>
 		   <label class="col-md-1 control-label">作者单位</label> 
@@ -337,14 +337,13 @@
 		   <label class="col-md-1 control-label">电子邮箱</label> 
 		   <div class="col-md-2"><input type="text" name="author_email_" class="form-control" value=""></div>
 		   </div>
-		   <div class="form-group">
+		   <div class="form-group" id="form_two_">
 		   		<label class="col-md-2 control-label">作者属性</label>
 		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_contact_" value="no">是否通讯作者 </label></div>
 		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_first_" value="no">是否第一作者 </label></div>
 		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_main_" value="no">是否主要参与者 </label></div>
 		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_company_" value="no">是否项目承担单位 </label></div>
 		   </div>
-		   <hr style="height:3px;border:none;border-top:3px double red;" />
 		</div>
 
 	</section>
@@ -394,10 +393,18 @@
 				i=i.replace("is_first_","is_first_"+count);
 				i=i.replace("is_main_","is_main_"+count);
 				i=i.replace("is_company_","is_company_"+count);
+				i=i.replace("form_one_","form_one_"+count);
+				i=i.replace("form_two_","form_two_"+count);
 				count++;
-				console.log(i);
-				console.log(count);
     			$("#AuthorInfo").append(i);
+    			$("#author_num").val(count);
+  			});
+  			$("#DeleteAuthor").click(function(){
+				count--;
+				if(count<0)
+					count=0;
+    			$("#form_one_"+count).remove();
+    			$("#form_two_"+count).remove();
     			$("#author_num").val(count);
   			});
 		});
