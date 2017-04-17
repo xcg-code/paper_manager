@@ -179,12 +179,12 @@
 										  </ul>
 										  <div class="tab-content">
 											 <div class="tab-pane fade in active" id="box_tab1">
-												<form class="form-horizontal" action="__URL__/journal_paper_add_db/id/{$Think.session.uid}" method="post">
+												<form class="form-horizontal" action="__URL__/journal_paper_author_add_db/achi_id/{$achi_id}" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
-																	<input type="text" name="author_num" class="form-control" id="author_num" value="0">
+																	<input type="text" name="author_num" id="author_num" value="0" hidden="true">
 																	<div id="AuthorInfo" >
 																			
 																	</div>

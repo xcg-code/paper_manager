@@ -15,6 +15,7 @@ class AchievementController extends Controller {
 	}
 	//我的科研成果页面
 	public function my_achievement(){
+		parent::is_login();
 		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
 		$AchievementInfo=$AchievementModel->where($Condition)->select();
@@ -26,11 +27,45 @@ class AchievementController extends Controller {
 		$this->display();
 	}
 
-	//保存作者信息
-	public function author_add($achi_id){
+	//显示添加作者信息页面
+	public function journal_paper_author_add($achi_id){
+		parent::is_login();
+		$this->assign('achi_id',$achi_id);
 		$this->display();
 	}
 
+	//添加作者信息数据库操作
+	public function journal_paper_author_add_db($achi_id){
+		$AuthorModel=D('Author');
+		$user_id=session('uid');
+		$Count=I('post.author_num');
+		$Result=false;
+		if($Count==0){
+			$this->error('您没有填写任何作者信息');
+		}
+		for ($i=0; $i < $Count; $i++) { 
+			$Data['author_name']=I('post.author_name_'.$i);
+			$Data['author_workplace']=I('post.author_workplace_'.$i);
+			$Data['author_email']=I('post.author_email_'.$i);
+			$Data['is_contact']=I('post.is_contact_'.$i);
+			$Data['is_first']=I('post.is_first_'.$i);
+			$Data['is_main']=I('post.is_main_'.$i);
+			$Data['is_company']=I('post.is_company_'.$i);
+			$Data['user_id']=$user_id;
+			$Data['achievement_id']=$achi_id;
+			if($AuthorModel->add($Data)){
+				$Result=true;
+			}
+		}
+		if($Result){
+			$this->success('添加作者信息成功');
+		}else{
+			$this->success('添加作者信息失败');
+		}
+		
+	}
+
+	//显示添加期刊论文信息页面
 	public function journal_paper_add($id){
 		parent::is_login();
 		$this->display();
@@ -55,18 +90,19 @@ class AchievementController extends Controller {
 			$ResultAchi=$AchievementModel->add();
 			if($ResultJournal && $ResultAchi){
 				$JournalModel->commit();
-				$this->success('添加期刊论文成功，请添加作者信息');
+				$this->success('添加期刊论文成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/journal_paper_author_add/achi_id/'.$uniq_id);
 			}else{
-				$this->error('添加期刊论文失败',__ROOT__.'/index.php/Home/Achievement/journal_paper_add/id/'.$id);
+				$this->error('添加期刊论文失败,请检查信息后重新保存');
 			}
 		}else
 		{
-			$this->error($JournalModel->getError(),__ROOT__.'/index.php/Home/Achievement/journal_paper_add/id/'.$id);
+			$this->error($JournalModel->getError());
 		}
 	}
 
 	//查看期刊论文详细信息
 	public function journal_paper_show($achi_id){
+		parent::is_login();
 		$JournalModel=M('Journalpaper');
 		$Condition['id']=$achi_id;
 		$JournalInfo=$JournalModel->where($Condition)->find();
