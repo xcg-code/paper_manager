@@ -253,15 +253,15 @@
 
 															<div class="box-body">
 																<div class="alert alert-info"><strong>上传其他附件 | 在上传附件前，请确信您已经从版权所有人得到使用该文件的授权，文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf)</strong></div>
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/file_upload_db/id/<?php echo (session('uid')); ?>" method="post">
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/file_upload_other_db/achi_id/<?php echo ($achi_id); ?>" method="post" enctype="multipart/form-data">
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">文件</label> 
-																		<div class="col-md-8"><input type="file" name="photo" /></div>
+																		<div class="col-md-8"><input type="file" name="other" /></div>
 
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">文件描述</label> 
-																		<div class="col-md-8"><textarea name="address" class="form-control"></textarea></div>
+																		<div class="col-md-8"><textarea name="description" class="form-control"></textarea></div>
 																	</div>
 
 																	<div class="form-actions clearfix"> <input type="submit" value="上传其他附件" class="btn btn-primary pull-right"></div>

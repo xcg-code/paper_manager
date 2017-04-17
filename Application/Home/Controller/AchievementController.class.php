@@ -172,9 +172,38 @@ class AchievementController extends Controller {
     	    $FileModel=M('File');
     	    $Result=$FileModel->add($FileInfo);
     	    if($Result){
-    	    	$this->success('全文电子文档上传成功',__ROOT__.'/index.php/Home/Profile/profile');
+    	    	$this->success('全文电子文档上传成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
     	    }else{
     	    	$this->error('全文电子文档上传失败');
+    	    }
+    	}
+	}
+
+	//科研成果其他相关文档上传
+	public function file_upload_other_db($achi_id){
+		$upload = new \Think\Upload();// 实例化上传类
+    	$upload->maxSize   =     20971520 ;// 设置附件上传大小 20MB
+    	$upload->exts      =     array('pdf');// 设置附件上传类型
+    	$upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+    	$upload->savePath  =     './UserOtherFile/'; // 设置附件上传（子）目录
+    	$upload->saveName = array('uniqid','');
+    	$upload->autoSub  = false;
+    	$info   =   $upload->uploadOne($_FILES['other']);
+    	if(!$info) {// 上传错误提示错误信息
+    	    $this->error($upload->getError());
+    	}else{// 上传成功
+    		$FileInfo['name']=$info['name'];
+    		$FileInfo['path']=$info['savename'];
+    		$FileInfo['description']=I('post.description');
+    		$FileInfo['upload_time']=date("Y-m-d H:i:s");
+    		$FileInfo['type']='Other';
+    		$FileInfo['achievement_id']=$achi_id;
+    	    $FileModel=M('File');
+    	    $Result=$FileModel->add($FileInfo);
+    	    if($Result){
+    	    	$this->success('文档上传成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
+    	    }else{
+    	    	$this->error('文档上传失败');
     	    }
     	}
 	}
