@@ -1608,3 +1608,12 @@ function get_achievement_count($AchievementCount,$AchievementInfo){
         }
         return $AchievementCount;
 }
+
+function get_main_file_path($achi_id){
+    $FileModel=M('File');
+    $Condition['achievement_id']=$achi_id;
+    $Condition['type']='Main';
+    $FileInfo=$FileModel->where($Condition)->find();
+    $FilePath="Uploads/UserMainFile/".$FileInfo['path'];
+    return $FilePath;
+}

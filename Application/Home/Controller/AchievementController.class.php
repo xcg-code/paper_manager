@@ -133,6 +133,9 @@ class AchievementController extends Controller {
 			$JournalInfo['inbox_status']='其他';
 		}
 		$this->assign('JournalInfo', $JournalInfo); 
+		//获取全文电子文档路径信息
+		$FilePath=get_main_file_path($achi_id);
+		$this->assign('FilePath', $FilePath); 
 		$this->display();
 	}
 
