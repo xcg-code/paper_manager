@@ -49,7 +49,6 @@ class ProfileController extends Controller {
     	    $this->error($upload->getError());
     	}else{// 上传成功
     		$PicPath['pic_save_path']=$info['savename'];
-    	    var_dump($PicPath);
     	    $UserModel=M('User');
     	    $Condition['id']=$id;
     	    $Result=$UserModel->where($Condition)->save($PicPath);

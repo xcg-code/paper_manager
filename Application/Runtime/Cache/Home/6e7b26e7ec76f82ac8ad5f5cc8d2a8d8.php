@@ -238,12 +238,12 @@
 																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/file_upload_main_db/achi_id/<?php echo ($achi_id); ?>" method="post" enctype="multipart/form-data">
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">文件</label> 
-																		<div class="col-md-8"><input type="file" name="photo" /></div>
+																		<div class="col-md-8"><input type="file" name="main" /></div>
 
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">文件描述</label> 
-																		<div class="col-md-8"><textarea name="address" class="form-control"></textarea></div>
+																		<div class="col-md-8"><textarea name="description" class="form-control"></textarea></div>
 																	</div>
 
 																	<div class="form-actions clearfix"> <input type="submit" value="上传全文电子文档" class="btn btn-primary pull-right"></div>
@@ -282,25 +282,13 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<tr>
-																					<td>Mark</td>
-																					<td>Otto</td>
-																					<td>@mdo</td>
+																				<?php if(is_array($FileInfo)): $i = 0; $__LIST__ = $FileInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																					<td><?php echo ($vo["name"]); ?></td>
+																					<td><?php echo ($vo["description"]); ?></td>
+																					<td><?php echo ($vo["upload_time"]); ?></td>
 																					<td><button class="btn btn-xs btn-success">下载</button><button class="btn btn-xs btn-danger">删除</button></td>
-																					
-																				</tr>
-																				<tr>
-																					<td>Jacob</td>
-																					<td>Thornton</td>
-																					<td>@fat</td>
-																					<td>@mdo</td>
-																				</tr>
-																				<tr>
-																					<td>Larry</td>
-																					<td>the Bird</td>
-																					<td>@twitter</td>
-																					<td>@mdo</td>
-																				</tr>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																				
 																			</tbody>
 																		</table>
 																	</div>
