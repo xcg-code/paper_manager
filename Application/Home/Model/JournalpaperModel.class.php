@@ -3,6 +3,6 @@ namespace Home\Model;
 use Think\Model;
 class JournalpaperModel extends Model{
 	protected $_validate=array(
-	array('title_zh','require','姓名不能为空')
+	array('title_zh','require','论文标题不能为空')
 	);
 }

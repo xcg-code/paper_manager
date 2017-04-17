@@ -26,6 +26,11 @@ class AchievementController extends Controller {
 		$this->display();
 	}
 
+	//保存作者信息
+	public function author_add($achi_id){
+		$this->display();
+	}
+
 	public function journal_paper_add($id){
 		parent::is_login();
 		$this->display();
@@ -56,7 +61,7 @@ class AchievementController extends Controller {
 			$AchievementModel->publish_time=$JouranlInfo['publish_date'];
 			$ResultAchi=$AchievementModel->add();//添加科研成果信息
 			if($Result && $ResultAchi){
-				$this->success('添加期刊论文成功');
+				$this->success('添加期刊论文成功，请添加作者信息');
 			}else{
 				$this->error('添加期刊论文失败',__ROOT__.'/index.php/Home/Achievement/journal_paper_add/id/'.$id);
 			}

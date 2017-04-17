@@ -170,123 +170,35 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">期刊论文</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">作者详情</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 										  <ul class="nav nav-tabs">
-											 <li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">基本信息</span></a></li>
+											 <li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">作者详情</span></a></li>
 										  </ul>
 										  <div class="tab-content">
 											 <div class="tab-pane fade in active" id="box_tab1">
 												<form class="form-horizontal" action="__URL__/journal_paper_add_db/id/{$Think.session.uid}" method="post">
 														<div class="row">
 															<div class="col-md-12">
-																	<div class="box-body">
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">标题(中文)</label> 
-																		   <div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">标题(英文)</label> 
-																		   <div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		   <label class="col-md-2 control-label">摘要</label> 
-																		   <div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">关键词(用分号隔开)</label> 
-																		   <div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">语言</label> 
-																		   <div class="col-md-8">
-																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="Chinese" checked> 中文 </label> 
-												 								<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="English"> 外文 </label>
-																		   </div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">状态</label> 
-																		   <div class="col-md-8">
-																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="published" checked> 已发表 </label> 
-												 								<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="unpublished"> 已接受未发表 </label>
-																		   </div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">期刊名称</label> 
-																		   <div class="col-md-8"><input type="text" name="journal_name" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">发表日期</label> 
-																		   <div class="col-md-8"><input type="date" name="publish_date" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">DOI</label> 
-																		   <div class="col-md-8"><input type="text" name="doi" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">文章号</label> 
-																		   <div class="col-md-8"><input type="text" name="paper_num" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">收录情况</label> 
-																		   <div class="col-md-8">
-																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SCI"> SCI </label> 
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SSCI"> SSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="EI"> EI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="CSSCI"> CSSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="peking"> 北大中文核心期刊 </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="other"> 其他 </label>
-																		   </div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">引用次数(ISI)</label> 
-																		   <div class="col-md-8"><input type="text" name="refer_num" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">是否标注</label> 
-																		   <div class="col-md-8"><select class="form-control" name="mark">
-																			  <option></option>
-																			  <option>未标注</option>
-																			  <option>第一标注</option>
-																			  <option>第二标注</option>
-																			  <option>第三标注</option>
-																			  <option>第四标注</option>
-																			  <option>第五标注</option>
-																			  <option>第六标注</option>
-																			  <option>第七标注</option>
-																			  <option>第八标注</option>
-																			  <option>第九标注</option>
-																			  <option>第十标注</option>
-																			</select></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">卷号</label> 
-																		   <div class="col-md-3"><input type="text" name="juan_num" class="form-control" value=""></div>
-																		   <label class="col-md-1 control-label">期号</label> 
-																		   <div class="col-md-3"><input type="text" name="qi_num" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">起止页码</label>
-																		  	<div class="col-md-2">
-																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no"> 本文章不包含起止页码 </label> 
-																		   	</div>
-																		   	<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
-																		   <label class="col-md-1 control-label">————</label> 
-																		   <div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
-																		</div>
-																		<div class="form-group">
-																		  <label class="col-md-2 control-label">全文链接</label> 
-																		   <div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
-																		</div>
+																<div class="box-body">
+																	<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
+																	<input type="text" name="author_num" class="form-control" id="author_num" value="0">
+																	<div id="AuthorInfo" >
+																			
 																	</div>
+																</div>
 															</div>
 														</div>
-													 <div class="form-actions clearfix"> <input type="submit" value="保存并下一步" class="btn btn-primary pull-right"></div>
+														
+													 <div class="form-actions clearfix"> 
+													 <button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
+													 <button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
+													 <input type="submit" value="保存" class="btn btn-primary pull-right">
+													 </div>
 												</form>
 											 </div>
-											 
 										  </div>
 									   </div>
 									</div>
@@ -302,6 +214,24 @@
 					</div><!-- /CONTENT-->
 				</div>
 			</div>
+		</div>
+
+		<div id="info" hidden="true">
+			<div class="form-group" id="form_one_">
+		  <label class="col-md-2 control-label">文章中的作者姓名</label> 
+		   <div class="col-md-2"><input type="text" name="author_name_" class="form-control" value=""></div>
+		   <label class="col-md-1 control-label">作者单位</label> 
+		   <div class="col-md-2"><input type="text" name="author_workplace_" class="form-control" value=""></div>
+		   <label class="col-md-1 control-label">电子邮箱</label> 
+		   <div class="col-md-2"><input type="text" name="author_email_" class="form-control" value=""></div>
+		   </div>
+		   <div class="form-group" id="form_two_">
+		   		<label class="col-md-2 control-label">作者属性</label>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_contact_" value="yes">是否通讯作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_first_" value="yes">是否第一作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_main_" value="yes">是否主要参与者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_company_" value="yes">是否项目承担单位 </label></div>
+		   </div>
 		</div>
 
 	</section>
@@ -342,6 +272,29 @@
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
+			$("#AddAuthor").click(function(){
+				var i=$("#info").html().replace('true','false');
+				i=i.replace("author_name_","author_name_"+count);
+				i=i.replace("author_workplace_","author_workplace_"+count);
+				i=i.replace("author_email_","author_email_"+count);
+				i=i.replace("is_contact_","is_contact_"+count);
+				i=i.replace("is_first_","is_first_"+count);
+				i=i.replace("is_main_","is_main_"+count);
+				i=i.replace("is_company_","is_company_"+count);
+				i=i.replace("form_one_","form_one_"+count);
+				i=i.replace("form_two_","form_two_"+count);
+				count++;
+    			$("#AuthorInfo").append(i);
+    			$("#author_num").val(count);
+  			});
+  			$("#DeleteAuthor").click(function(){
+				count--;
+				if(count<0)
+					count=0;
+    			$("#form_one_"+count).remove();
+    			$("#form_two_"+count).remove();
+    			$("#author_num").val(count);
+  			});
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->
