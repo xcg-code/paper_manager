@@ -139,7 +139,13 @@ class AchievementController extends Controller {
 	//显示成果文档上传页面
 	public function file_upload($achi_id){
 		parent::is_login();
+		$this->assign('achi_id', $achi_id); 
 		$this->display();
+	}
+
+	//全文电子文档上传
+	public function file_upload_main_db($achi_id){
+
 	}
 
 }
