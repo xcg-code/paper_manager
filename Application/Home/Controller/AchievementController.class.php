@@ -40,27 +40,21 @@ class AchievementController extends Controller {
 		$JournalModel=D('Journalpaper');
 		$AchievementModel=D('Achievement');
 		if($JournalModel->create()){
-			//添加用户id
 			$JournalModel->user_id=$id;
-			$Result=$JournalModel->add();//添加信息到期刊论文数据表
-			//获取刚刚插入的期刊论文表ID值
-			$condition=array(
-			'user_id'=>$id,
-			'title_zh'=>I('post.title_zh'),
-			'journal_name'=>I('post.journal_name')
-			);
-			$JouranlInfo=$JournalModel->where($condition)->find();
-			var_dump($condition);
-			var_dump($JouranlInfo);
-			//赋值成果模型类
+			$uniq_id=uniqid();
+			$JournalModel->id=$uniq_id;
+			$AchievementModel->achievement_id=$uniq_id;
 			$AchievementModel->user_id=$id;
-			$AchievementModel->achievement_id=$JouranlInfo['id'];
 			$AchievementModel->achievement_type='JournalPaper';
-			$AchievementModel->title=$JouranlInfo['title_zh'];
-			$AchievementModel->institute_name=$JouranlInfo['journal_name'];
-			$AchievementModel->publish_time=$JouranlInfo['publish_date'];
-			$ResultAchi=$AchievementModel->add();//添加科研成果信息
-			if($Result && $ResultAchi){
+			$AchievementModel->title=$JournalModel->title_zh;
+			$AchievementModel->institute_name=$JournalModel->journal_name;
+			$AchievementModel->publish_time=$JournalModel->publish_date;
+			//sql事务
+			$JournalModel->startTrans();
+			$ResultJournal=$JournalModel->add();//添加信息到期刊论文数据表
+			$ResultAchi=$AchievementModel->add();
+			if($ResultJournal && $ResultAchi){
+				$JournalModel->commit();
 				$this->success('添加期刊论文成功，请添加作者信息');
 			}else{
 				$this->error('添加期刊论文失败',__ROOT__.'/index.php/Home/Achievement/journal_paper_add/id/'.$id);
