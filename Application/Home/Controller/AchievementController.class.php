@@ -136,4 +136,10 @@ class AchievementController extends Controller {
 		$this->display();
 	}
 
+	//显示成果文档上传页面
+	public function file_upload($achi_id){
+		parent::is_login();
+		$this->display();
+	}
+
 }

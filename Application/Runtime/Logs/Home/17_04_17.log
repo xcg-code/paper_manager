@@ -3574,3 +3574,861 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000637s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
 
+[ 2017-04-17T16:45:00+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000457s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2017-04-17T16:45:31+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002572s ]
+
+[ 2017-04-17T16:46:47+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001756s ]
+
+[ 2017-04-17T16:49:32+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000781s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001583s ]
+
+[ 2017-04-17T16:51:31+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004264s ]
+
+[ 2017-04-17T16:52:10+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
+[ 2017-04-17T16:54:15+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_area` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_area` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000929s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2017-04-17T16:55:02+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000535s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006208s ]
+
+[ 2017-04-17T16:56:04+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007923s ]
+
+[ 2017-04-17T16:59:36+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2017-04-17T17:00:51+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2017-04-17T17:02:05+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002165s ]
+
+[ 2017-04-17T17:04:02+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000491s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001506s ]
+
+[ 2017-04-17T17:04:32+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2017-04-17T17:05:08+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload_db/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+ERR: 非法操作:file_upload_db
+
+[ 2017-04-17T17:05:37+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001927s ]
+
+[ 2017-04-17T17:06:06+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2017-04-17T17:06:39+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2017-04-17T17:12:53+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001389s ]
+
+[ 2017-04-17T17:13:19+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2017-04-17T17:13:31+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/img/loaders/12.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-04-17T17:13:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2017-04-17T17:14:52+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000532s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2017-04-17T17:16:52+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006355s ]
+
+[ 2017-04-17T17:18:00+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000486s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2017-04-17T17:18:22+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002562s ]
+
+[ 2017-04-17T17:18:27+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006097s ]
+
+[ 2017-04-17T17:19:09+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001687s ]
+
+[ 2017-04-17T17:19:59+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2017-04-17T17:20:17+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2017-04-17T17:23:18+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2017-04-17T17:23:36+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002348s ]
+
+[ 2017-04-17T17:23:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000532s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001524s ]
+
+[ 2017-04-17T17:23:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003268s ]
+
+[ 2017-04-17T17:24:03+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002158s ]
+
+[ 2017-04-17T17:24:11+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001829s ]
+
+[ 2017-04-17T17:25:52+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2017-04-17T17:28:23+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001533s ]
+
+[ 2017-04-17T17:29:18+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2017-04-17T17:29:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002114s ]
+
+[ 2017-04-17T17:29:56+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2017-04-17T17:32:42+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000495s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000931s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014368s ]
+
