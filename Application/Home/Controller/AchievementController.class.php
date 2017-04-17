@@ -40,6 +40,7 @@ class AchievementController extends Controller {
 		$user_id=session('uid');
 		$Count=I('post.author_num');
 		$Result=false;
+		$AuthorList='';
 		if($Count==0){
 			$this->error('您没有填写任何作者信息');
 		}
@@ -55,9 +56,14 @@ class AchievementController extends Controller {
 			$Data['achievement_id']=$achi_id;
 			if($AuthorModel->add($Data)){
 				$Result=true;
+				$AuthorList=$AuthorList.$Data['author_name'].';';//合并作者名字
 			}
 		}
-		if($Result){
+		$Condition['achievement_id']=$achi_id;
+		$AchievementModel=M('Achievement');
+		$AchievementModel->author=$AuthorList;
+		$AchiResult=$AchievementModel->where($Condition)->save();
+		if($Result && $AchiResult){
 			$this->success('添加作者信息成功');
 		}else{
 			$this->success('添加作者信息失败');
