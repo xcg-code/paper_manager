@@ -139,6 +139,12 @@ class AchievementController extends Controller {
 		$this->display();
 	}
 
+	//显示期刊论文基本信息修改页面
+	public function journal_paper_edit($achi_id){
+		parent::is_login();
+		$this->display();
+	}
+
 	//显示成果文档上传页面
 	public function file_upload($achi_id){
 		parent::is_login();
