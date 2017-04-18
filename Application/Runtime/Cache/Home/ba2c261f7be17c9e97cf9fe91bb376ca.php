@@ -280,10 +280,10 @@
 		   </div>
 		   <div class="form-group" id="form_two_">
 		   		<label class="col-md-2 control-label">作者属性</label>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_contact_" value="yes">是否通讯作者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_first_" value="yes">是否第一作者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_main_" value="yes">是否主要参与者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_company_" value="yes">是否项目承担单位 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="yes">是否通讯作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="yes">是否第一作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="yes">是否主要参与者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="yes">是否项目承担单位 </label></div>
 		   </div>
 		</div>
 
