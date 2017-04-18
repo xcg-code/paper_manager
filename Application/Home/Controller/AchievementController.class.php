@@ -100,7 +100,7 @@ class AchievementController extends Controller {
 			$AchievementModel->institute_name=$JournalModel->journal_name;
 			$AchievementModel->publish_time=$JournalModel->publish_date;
 
-			sql事务
+			//sql事务
 			$JournalModel->startTrans();
 			$ResultJournal=$JournalModel->add();//添加信息到期刊论文数据表
 			$ResultAchi=$AchievementModel->add();
@@ -124,21 +124,6 @@ class AchievementController extends Controller {
 		$JournalInfo=$JournalModel->where($Condition)->find();
 		//添加其他详细信息
 		$JournalInfo['achievement_type']='期刊论文';
-		if($JournalInfo['language']=='Chinese'){
-			$JournalInfo['language']='中文';
-		}else{
-			$JournalInfo['language']='英文';
-		}
-		if($JournalInfo['status']=='published'){
-			$JournalInfo['status']='已发表';
-		}else{
-			$JournalInfo['status']='已接受未发表';
-		}
-		if($JournalInfo['inbox_status']=='peking'){
-			$JournalInfo['inbox_status']='北大中文核心期刊';
-		}else if($JournalInfo['inbox_status']=='other'){
-			$JournalInfo['inbox_status']='其他';
-		}
 		$this->assign('JournalInfo', $JournalInfo); 
 		//获取全文电子文档路径信息
 		$FilePath=get_main_file_path($achi_id);
@@ -149,6 +134,10 @@ class AchievementController extends Controller {
 	//显示期刊论文基本信息修改页面
 	public function journal_paper_edit($achi_id){
 		parent::is_login();
+		$JournalModel=D('Journalpaper');
+		$Condition['id']=$achi_id;
+		$JournalInfo=$JournalModel->where($Condition)->find();
+		$this->assign('JournalInfo', $JournalInfo);
 		$this->display();
 	}
 

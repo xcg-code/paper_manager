@@ -157,9 +157,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果</h3>
+										<h3 class="content-title pull-left">修改科研成果信息</h3>
 									</div>
-									<div class="description">手动添加科研成果</div>
+									<div class="description">修改期刊论文基本信息</div>
 								</div>
 							</div>
 						</div>
@@ -185,19 +185,19 @@
 																<div class="box-body">
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">标题(中文)</label> 
-																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value="{$JournalInfo.title_zh}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">标题(英文)</label> 
-																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value="{$JournalInfo.title_en}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">摘要</label> 
-																		<div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
+																		<div class="col-md-8"><textarea name="abstract" class="form-control">{$JournalInfo.abstract}</textarea></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">关键词(用分号隔开)</label> 
-																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value="{$JournalInfo.keywords}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">语言</label> 
@@ -215,19 +215,19 @@
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">期刊名称</label> 
-																		<div class="col-md-8"><input type="text" name="journal_name" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="journal_name" class="form-control" value="{$JournalInfo.journal_name}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">发表日期</label> 
-																		<div class="col-md-8"><input type="date" name="publish_date" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="date" name="publish_date" class="form-control" value="{$JournalInfo.publish_date}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">DOI</label> 
-																		<div class="col-md-8"><input type="text" name="doi" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="doi" class="form-control" value="{$JournalInfo.doi}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">文章号</label> 
-																		<div class="col-md-8"><input type="text" name="paper_num" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="paper_num" class="form-control" value="{$JournalInfo.paper_num}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">收录情况</label> 
@@ -242,7 +242,7 @@
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">引用次数(ISI)</label> 
-																		<div class="col-md-8"><input type="text" name="refer_num" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="refer_num" class="form-control" value="{$JournalInfo.refer_num}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">是否标注</label> 
@@ -263,22 +263,22 @@
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">卷号</label> 
-																		<div class="col-md-3"><input type="text" name="juan_num" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="juan_num" class="form-control" value="{$JournalInfo.juan_num}"></div>
 																		<label class="col-md-1 control-label">期号</label> 
-																		<div class="col-md-3"><input type="text" name="qi_num" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="qi_num" class="form-control" value="{$JournalInfo.qi_num}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">起止页码</label>
 																		<div class="col-md-2">
 																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no"> 本文章不包含起止页码 </label> 
 																		</div>
-																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
+																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value="{$JournalInfo.start_page}"></div>
 																		<label class="col-md-1 control-label">————</label> 
-																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
+																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value="{$JournalInfo.end_page}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">全文链接</label> 
-																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value="{$JournalInfo.paper_link}"></div>
 																	</div>
 																</div>
 															</div>
