@@ -254,15 +254,15 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">语言</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="Chinese" checked> 中文 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="English"> 外文 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="中文" <?php if($JournalInfo["language"] == 中文): ?>checked<?php endif; ?>> 中文 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="英文" <?php if($JournalInfo["language"] == 英文): ?>checked<?php endif; ?>> 英文 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">状态</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="published" checked> 已发表 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="unpublished"> 已接受未发表 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已发表" <?php if($JournalInfo["status"] == 已发表): ?>checked<?php endif; ?>> 已发表 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已接受未发表" <?php if($JournalInfo["status"] == 已接受未发表): ?>checked<?php endif; ?>> 已接受未发表 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
@@ -288,8 +288,8 @@
 																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SSCI"> SSCI </label>
 																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="EI"> EI </label>
 																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="CSSCI"> CSSCI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="peking"> 北大中文核心期刊 </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="other"> 其他 </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="北大中文核心期刊"> 北大中文核心期刊 </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="其他"> 其他 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
@@ -322,7 +322,7 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">起止页码</label>
 																		<div class="col-md-2">
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no"> 本文章不包含起止页码 </label> 
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no" <?php if($JournalInfo["not_have_page"] == no): ?>checked<?php endif; ?>> 本文章不包含起止页码 </label> 
 																		</div>
 																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value="<?php echo ($JournalInfo["start_page"]); ?>"></div>
 																		<label class="col-md-1 control-label">————</label> 
