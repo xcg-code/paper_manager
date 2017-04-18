@@ -28,14 +28,14 @@ class AchievementController extends Controller {
 	}
 
 	//显示添加作者信息页面
-	public function journal_paper_author_add($achi_id){
+	public function author_add($achi_id){
 		parent::is_login();
 		$this->assign('achi_id',$achi_id);
 		$this->display();
 	}
 
 	//添加作者信息数据库操作
-	public function journal_paper_author_add_db($achi_id){
+	public function author_add_db($achi_id){
 		$AuthorModel=D('Author');
 		$user_id=session('uid');
 		$Count=I('post.author_num');

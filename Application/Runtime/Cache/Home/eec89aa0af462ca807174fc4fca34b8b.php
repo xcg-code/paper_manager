@@ -231,12 +231,12 @@
 										  </ul>
 										  <div class="tab-content">
 											 <div class="tab-pane fade in active" id="box_tab1">
-												<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/journal_paper_add_db/id/<?php echo (session('uid')); ?>" method="post">
+												<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
-																	<input type="text" name="author_num" class="form-control" id="author_num" value="0">
+																	<input type="text" name="author_num" id="author_num" value="0" hidden="true">
 																	<div id="AuthorInfo" >
 																			
 																	</div>
@@ -247,7 +247,8 @@
 													 <div class="form-actions clearfix"> 
 													 <button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
 													 <button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
-													 <input type="submit" value="保存" class="btn btn-primary pull-right">
+													 <button type="button" id="NoAuthor" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($achi_id); ?>'">暂不添加，下一步</button>
+													 <input type="submit" value="保存并下一步" class="btn btn-primary pull-right">
 													 </div>
 												</form>
 											 </div>
@@ -279,10 +280,10 @@
 		   </div>
 		   <div class="form-group" id="form_two_">
 		   		<label class="col-md-2 control-label">作者属性</label>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_contact_" value="yes">是否通讯作者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_first_" value="yes">是否第一作者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_main_" value="yes">是否主要参与者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="is_company_" value="yes">是否项目承担单位 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="yes">是否通讯作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="yes">是否第一作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="yes">是否主要参与者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="yes">是否项目承担单位 </label></div>
 		   </div>
 		</div>
 
