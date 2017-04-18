@@ -299,18 +299,18 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">是否标注</label> 
 																		<div class="col-md-8"><select class="form-control" name="mark">
-																			<option></option>
-																			<option>未标注</option>
-																			<option>第一标注</option>
-																			<option>第二标注</option>
-																			<option>第三标注</option>
-																			<option>第四标注</option>
-																			<option>第五标注</option>
-																			<option>第六标注</option>
-																			<option>第七标注</option>
-																			<option>第八标注</option>
-																			<option>第九标注</option>
-																			<option>第十标注</option>
+																			<option ></option>
+																			<option <?php if($JournalInfo["mark"] == 未标注): ?>selected="selected"<?php endif; ?>>未标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第一标注): ?>selected="selected"<?php endif; ?>>第一标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第二标注): ?>selected="selected"<?php endif; ?>>第二标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第三标注): ?>selected="selected"<?php endif; ?>>第三标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第四标注): ?>selected="selected"<?php endif; ?>>第四标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第五标注): ?>selected="selected"<?php endif; ?>>第五标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第六标注): ?>selected="selected"<?php endif; ?>>第六标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第七标注): ?>selected="selected"<?php endif; ?>>第七标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第八标注): ?>selected="selected"<?php endif; ?>>第八标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第九标注): ?>selected="selected"<?php endif; ?>>第九标注</option>
+																			<option <?php if($JournalInfo["mark"] == 第十标注): ?>selected="selected"<?php endif; ?>>第十标注</option>
 																		</select></div>
 																	</div>
 																	<div class="form-group">
