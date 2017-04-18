@@ -1607,3 +1607,1103 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001716s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002018s ]
 
+[ 2017-04-18T11:34:05+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2017-04-18T11:34:07+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.224955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005607s ]
+
+[ 2017-04-18T11:35:19+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001554s ]
+
+[ 2017-04-18T11:36:10+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.247682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.247907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005843s ]
+
+[ 2017-04-18T11:36:30+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000558s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.229540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.229780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002321s ]
+
+[ 2017-04-18T11:37:19+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2017-04-18T11:39:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.234673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.234908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006202s ]
+
+[ 2017-04-18T11:39:52+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2017-04-18T11:42:42+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+
+[ 2017-04-18T11:44:41+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004309s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000667s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.224185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.224424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002277s ]
+
+[ 2017-04-18T11:48:15+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2017-04-18T11:49:50+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000496s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000828s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.236604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003637s ]
+
+[ 2017-04-18T11:51:03+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 4 C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1637 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.274136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.274394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002622s ]
+
+[ 2017-04-18T11:51:15+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2017-04-18T11:52:12+08:00 ] ::1 /PaperManager/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-04-18T11:52:13+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004667s ]
+
+[ 2017-04-18T15:06:22+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'jerry' AND `password` = '30035607ee5bb378c71ab434a6d05410' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2017-04-18T15:06:23+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_area` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_area` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2017-04-18T15:06:26+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/achievement_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2017-04-18T15:06:28+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000510s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.236411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005264s ]
+
+[ 2017-04-18T15:06:30+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_show/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58f4677334f83' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2017-04-18T15:06:31+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005145s ]
+
+[ 2017-04-18T15:11:46+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2017-04-18T15:11:47+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2017-04-18T15:11:48+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-04-18T15:11:49+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-04-18T15:11:52+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000363s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2017-04-18T15:11:53+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001617s ]
+
+[ 2017-04-18T15:13:00+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: count C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1638 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.231039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.231319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003462s ]
+
+[ 2017-04-18T15:14:04+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.221100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.221345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2017-04-18T15:19:29+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2017-04-18T15:22:10+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2017-04-18T15:22:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2017-04-18T15:22:55+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2017-04-18T15:23:27+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000598s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.236321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002968s ]
+
+[ 2017-04-18T15:24:34+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2017-04-18T15:27:15+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2017-04-18T15:28:02+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2017-04-18T15:30:03+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 287 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2017-04-18T15:31:57+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/58f4677334f83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f4677334f83' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000394s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 257 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 258 行.
+NOTIC: [8] Use of undefined constant 已发表 - assumed '已发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 264 行.
+NOTIC: [8] Use of undefined constant 已接受未发表 - assumed '已接受未发表' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 265 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 287 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 288 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 289 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 290 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 291 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 292 行.
+NOTIC: [8] Use of undefined constant no - assumed 'no' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\80c02c2e505a5742046052737765e88a.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.255892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.256166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002418s ]
+

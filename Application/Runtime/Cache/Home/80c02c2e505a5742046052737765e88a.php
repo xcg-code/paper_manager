@@ -284,12 +284,12 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">收录情况</label> 
 																		<div class="col-md-8">
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SCI"> SCI </label> 
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SSCI"> SSCI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="EI"> EI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="CSSCI"> CSSCI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="北大中文核心期刊"> 北大中文核心期刊 </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="其他"> 其他 </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="SCI" <?php if($Content["sci"] == Y): ?>checked<?php endif; ?>> SCI </label> 
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="SSCI" <?php if($Content["ssci"] == Y): ?>checked<?php endif; ?>> SSCI </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="EI" <?php if($Content["ei"] == Y): ?>checked<?php endif; ?>> EI </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="CSSCI" <?php if($Content["cssci"] == Y): ?>checked<?php endif; ?>> CSSCI </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="北大中文核心期刊" <?php if($Content["peking"] == Y): ?>checked<?php endif; ?>> 北大中文核心期刊 </label>
+																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="其他" <?php if($Content["other"] == Y): ?>checked<?php endif; ?>> 其他 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">

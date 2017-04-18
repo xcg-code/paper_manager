@@ -1549,6 +1549,7 @@ function in_array_case($value,$array){
     return in_array(strtolower($value),array_map('strtolower',$array));
 }
 
+//获取不同科研成果类型数量函数
 function get_achievement_count($AchievementCount,$AchievementInfo){
         $AchievementCount['JournalPaper']=0;
         $AchievementCount['ConferencePaper']=0;
@@ -1609,6 +1610,7 @@ function get_achievement_count($AchievementCount,$AchievementInfo){
         return $AchievementCount;
 }
 
+//获取某一科研成果全文电子文档路径
 function get_main_file_path($achi_id){
     $FileModel=M('File');
     $Condition['achievement_id']=$achi_id;
@@ -1616,4 +1618,51 @@ function get_main_file_path($achi_id){
     $FileInfo=$FileModel->where($Condition)->find();
     $FilePath="Uploads/UserMainFile/".$FileInfo['path'];
     return $FilePath;
+}
+
+//将带有分号的字符串进行切割，获取分号间内容到数组
+function get_sub_content($long_string){
+    $start=0;
+    $end=0;
+    $position=array();//存放分号位置
+    for($i=0;$i<strlen($long_string);$i++){
+        $SingleChar=substr($long_string, $i,1);
+        if($SingleChar==';'){
+            $end=$i;
+            $Content=substr($long_string, $start,$end-$start);
+            $position[]=$Content;
+            $start=$end+1;
+        }
+    }
+    return $position;
+}
+
+function get_inbox_status($Content){
+    $position=array("sci"=>"","ssci"=>"","ei"=>"","cssci"=>"","peking"=>"","other"=>"");
+    for($i=0;$i<count($Content);$i++){
+        switch ($Content[$i]) {
+            case 'SCI':
+                $position['sci']="Y";
+                break;
+            case 'SSCI':
+                $position['ssci']="Y";
+                break;
+            case 'EI':
+                $position['ei']="Y";
+                break;
+            case 'CSSCI':
+                $position['cssci']="Y";
+                break;
+            case '北大中文核心期刊':
+                $position['peking']="Y";
+                break;
+            case '其他':
+                $position['other']="Y";
+                break;
+            default:
+                # code...
+                break;
+        }
+    }
+    return $position;
 }

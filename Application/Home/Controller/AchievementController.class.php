@@ -137,6 +137,9 @@ class AchievementController extends Controller {
 		$JournalModel=D('Journalpaper');
 		$Condition['id']=$achi_id;
 		$JournalInfo=$JournalModel->where($Condition)->find();
+		$Content=get_sub_content($JournalInfo['inbox_status']);//获取拆分后内容
+		$Content=get_inbox_status($Content);//获取收录情况数组
+		$this->assign('Content', $Content);
 		$this->assign('JournalInfo', $JournalInfo);
 		$this->display();
 	}
