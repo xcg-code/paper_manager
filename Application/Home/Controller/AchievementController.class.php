@@ -87,13 +87,20 @@ class AchievementController extends Controller {
 			$JournalModel->user_id=$id;
 			$uniq_id=uniqid();
 			$JournalModel->id=$uniq_id;
+			$Inclu='';//收录情况
+			foreach ($JournalModel->inbox_status as $value) {
+				$Inclu=$Inclu.$value.';';
+			}
+			$JournalModel->inbox_status=$Inclu;
+			//赋值成果汇总模型类
 			$AchievementModel->achievement_id=$uniq_id;
 			$AchievementModel->user_id=$id;
 			$AchievementModel->achievement_type='JournalPaper';
 			$AchievementModel->title=$JournalModel->title_zh;
 			$AchievementModel->institute_name=$JournalModel->journal_name;
 			$AchievementModel->publish_time=$JournalModel->publish_date;
-			//sql事务
+
+			sql事务
 			$JournalModel->startTrans();
 			$ResultJournal=$JournalModel->add();//添加信息到期刊论文数据表
 			$ResultAchi=$AchievementModel->add();

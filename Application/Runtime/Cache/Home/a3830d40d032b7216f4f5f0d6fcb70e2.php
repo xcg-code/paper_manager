@@ -284,12 +284,12 @@
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">收录情况</label> 
 																		   <div class="col-md-8">
-																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SCI"> SCI </label> 
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="SSCI"> SSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="EI"> EI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="CSSCI"> CSSCI </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="peking"> 北大中文核心期刊 </label>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status" value="other"> 其他 </label>
+																		   		<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="SCI"> SCI </label> 
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="SSCI"> SSCI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="EI"> EI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="CSSCI"> CSSCI </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="北大中文核心期刊"> 北大中文核心期刊 </label>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="其他"> 其他 </label>
 																		   </div>
 																		</div>
 																		<div class="form-group">
