@@ -247,7 +247,7 @@
 													 <div class="form-actions clearfix"> 
 													 <button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
 													 <button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
-													 <button type="button" id="NoAuthor" class="btn btn-primary">暂不添加，下一步</button>
+													 <button type="button" id="NoAuthor" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($achi_id); ?>'">暂不添加，下一步</button>
 													 <input type="submit" value="保存并下一步" class="btn btn-primary pull-right">
 													 </div>
 												</form>
