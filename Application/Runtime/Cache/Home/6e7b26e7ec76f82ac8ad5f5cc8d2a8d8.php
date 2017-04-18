@@ -293,6 +293,7 @@
 																		</table>
 																	</div>
 																</div>
+																<div class="form-actions clearfix"> <button type="button" id="NextStep" class="btn btn-primary pull-right" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($achi_id); ?>'">下一步</button></div>
 															</div>
 														</div>
 													</div>
