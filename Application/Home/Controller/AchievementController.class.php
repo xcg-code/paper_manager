@@ -251,4 +251,9 @@ class AchievementController extends Controller {
     	}
 	}
 
+	//显示查看作者页面
+	public function author_show($achi_id){
+		parent::is_login();
+		$this->display();
+	}
 }

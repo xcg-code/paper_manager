@@ -247,7 +247,7 @@
 
 												<a href="/PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
-												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改作者信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改所属项目信息</a>
 												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
 												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
