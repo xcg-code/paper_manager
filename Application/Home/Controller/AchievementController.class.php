@@ -254,6 +254,16 @@ class AchievementController extends Controller {
 	//显示查看作者页面
 	public function author_show($achi_id){
 		parent::is_login();
+		$AuthorModel=M('Author');
+		$Condition['achievement_id']=$achi_id;
+		$AuthorInfo=$AuthorModel->where($Condition)->select();
+		for($i=0;$i<count($AuthorInfo);$i++){
+			if($AuthorInfo[$i]['is_contact']!='是'){$AuthorInfo[$i]['is_contact']='否';}
+			if($AuthorInfo[$i]['is_main']!='是'){$AuthorInfo[$i]['is_main']='否';}
+			if($AuthorInfo[$i]['is_first']!='是'){$AuthorInfo[$i]['is_first']='否';}
+			if($AuthorInfo[$i]['is_company']!='是'){$AuthorInfo[$i]['is_company']='否';}
+		}
+		$this->assign('AuthorInfo',$AuthorInfo);
 		$this->display();
 	}
 }

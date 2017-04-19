@@ -209,9 +209,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果</h3>
+										<h3 class="content-title pull-left">作者信息</h3>
 									</div>
-									<div class="description">手动添加科研成果</div>
+									<div class="description">查看、修改</div>
 								</div>
 							</div>
 						</div>
@@ -235,10 +235,43 @@
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
-																	<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
+																	<div class="box border blue">
+																	<div class="box-title">
+																	<h4><i class="fa fa-file"></i>当前作者信息</h4>
+																	</div>
+																	<div class="box-body">
+																		<table class="table table-striped">
+																			<thead>
+																				<tr>
+																					<th style="width: 10%">姓名</th>
+																					<th>工作单位</th>
+																					<th style="width: 18%">电子邮件</th>
+																					<th style="width: 10%">是否通讯作者</th>
+																					<th style="width: 10%">是否第一作者</th>
+																					<th style="width: 10%">是否主要参与者</th>
+																					<th style="width: 12%">是否项目承担单位</th>
+																					<th style="width: 10%">操作</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<?php if(is_array($AuthorInfo)): $i = 0; $__LIST__ = $AuthorInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																					<td><?php echo ($vo["author_name"]); ?></td>
+																					<td><?php echo ($vo["author_workplace"]); ?></td>
+																					<td><?php echo ($vo["author_email"]); ?></td>
+																					<td><?php echo ($vo["is_contact"]); ?></td>
+																					<td><?php echo ($vo["is_first"]); ?></td>
+																					<td><?php echo ($vo["is_main"]); ?></td>
+																					<td><?php echo ($vo["is_company"]); ?></td>
+																					<td><button class="btn btn-xs btn-success">修改</button><button class="btn btn-xs btn-danger">删除</button></td>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																				
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
 																	<input type="text" name="author_num" id="author_num" value="0" hidden="true">
 																	<div id="AuthorInfo" >
-																		
+
 																	</div>
 																</div>
 															</div>
@@ -247,8 +280,7 @@
 														<div class="form-actions clearfix"> 
 															<button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
 															<button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
-															<button type="button" id="NoAuthor" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($achi_id); ?>'">暂不添加，下一步</button>
-															<input type="submit" value="保存并下一步" class="btn btn-primary pull-right">
+															<input type="submit" value="保存修改" class="btn btn-primary pull-right">
 														</div>
 													</form>
 												</div>
@@ -280,10 +312,10 @@
 			</div>
 			<div class="form-group" id="form_two_">
 				<label class="col-md-2 control-label">作者属性</label>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="yes">是否通讯作者 </label></div>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="yes">是否第一作者 </label></div>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="yes">是否主要参与者 </label></div>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="yes">是否项目承担单位 </label></div>
+				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="是">是否通讯作者 </label></div>
+				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="是">是否第一作者 </label></div>
+				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="是">是否主要参与者 </label></div>
+				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="是">是否项目承担单位 </label></div>
 			</div>
 		</div>
 
@@ -298,7 +330,7 @@
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
 	
-	
+
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
