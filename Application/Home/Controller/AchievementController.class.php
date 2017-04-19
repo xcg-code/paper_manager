@@ -19,9 +19,13 @@ class AchievementController extends Controller {
 		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
 		$AchievementInfo=$AchievementModel->where($Condition)->select();
-		$AchievementCount['All']=$AchievementModel->where($Condition)->count();
+		$AchievementCount['All']=count($AchievementInfo);
 		//获取各种科研成果的数目
 		$AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
+		//获取作者姓名字符串
+		for($i=0;$i<count($AchievementInfo);$i++){
+			$AchievementInfo[$i]['author']=get_author_list($AchievementInfo[$i]['achievement_id']);
+		}
 		$this->assign('AchievementInfo',$AchievementInfo);
 		$this->assign('AchievementCount',$AchievementCount);
 		$this->display();

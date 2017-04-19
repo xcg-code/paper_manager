@@ -1637,6 +1637,7 @@ function get_sub_content($long_string){
     return $position;
 }
 
+//返回科研成果收录情况
 function get_inbox_status($Content){
     $position=array("sci"=>"","ssci"=>"","ei"=>"","cssci"=>"","peking"=>"","other"=>"");
     for($i=0;$i<count($Content);$i++){
@@ -1665,4 +1666,16 @@ function get_inbox_status($Content){
         }
     }
     return $position;
+}
+
+//获取科研成果作者信息合并之后的字符串
+function get_author_list($achi_id){
+    $AuthorModel=M('Author');
+    $Condition['$achievement_id']=$achi_id;
+    $AuthorInfo=$AuthorModel->where($Condition)->select();
+    $AuthorList='';
+    for($i=0;$i<count($AuthorInfo);$i++){
+        $AuthorList=$AuthorList.$AuthorInfo[$i]['author_name'].';';
+    }
+    return $AuthorList;
 }
