@@ -265,4 +265,10 @@ class AchievementController extends Controller {
 		$this->assign('achi_id',$achi_id);
 		$this->display();
 	}
+
+	//显示修改作者页面
+	public function author_edit($author_id){
+		parent::is_login();
+		$this->display();
+	}
 }
