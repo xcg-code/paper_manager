@@ -275,4 +275,22 @@ class AchievementController extends Controller {
 		$this->assign('AuthorInfo',$AuthorInfo);
 		$this->display();
 	}
+
+	//修改作者信息数据库操作
+	public function author_edit_db($author_id,$achi_id){
+		$AuthorModel=D('Author');
+		if($AuthorModel->create()){
+			$Condition['id']=$author_id;
+			$Result=$AuthorModel->where($Condition)->save();
+			if($Result==0){
+				$this->error('您没有修改任何信息');
+			}elseif ($Result>0) {
+				$this->success('修改作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
+			}else{
+				$this->error($AuthorModel->getError());
+			}
+		}else{
+			$this->error($AuthorModel->getError());
+		}
+	}
 }

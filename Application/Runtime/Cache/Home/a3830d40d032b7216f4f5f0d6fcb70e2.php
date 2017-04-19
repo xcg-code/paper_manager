@@ -254,15 +254,15 @@
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">语言</label> 
 																		   <div class="col-md-8">
-																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="Chinese" checked> 中文 </label> 
-												 								<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="English"> 外文 </label>
+																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="中文" checked> 中文 </label> 
+												 								<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="英文"> 英文 </label>
 																		   </div>
 																		</div>
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">状态</label> 
 																		   <div class="col-md-8">
-																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="published" checked> 已发表 </label> 
-												 								<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="unpublished"> 已接受未发表 </label>
+																		   		<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已发表" checked> 已发表 </label> 
+												 								<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已接受未发表"> 已接受未发表 </label>
 																		   </div>
 																		</div>
 																		<div class="form-group">

@@ -231,7 +231,7 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_edit_db/author_id/<?php echo ($AuthorInfo["id"]); ?>" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_edit_db/author_id/<?php echo ($AuthorInfo["id"]); ?>/achi_id/<?php echo ($AuthorInfo["achievement_id"]); ?>" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
