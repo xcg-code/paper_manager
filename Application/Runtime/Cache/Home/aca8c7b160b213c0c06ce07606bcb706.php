@@ -209,9 +209,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果</h3>
+										<h3 class="content-title pull-left">修改作者信息</h3>
 									</div>
-									<div class="description">手动添加科研成果</div>
+									<div class="description">修改作者信息</div>
 								</div>
 							</div>
 						</div>
@@ -231,24 +231,33 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_edit_db/author_id/<?php echo ($AuthorInfo["id"]); ?>" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
-																	<div class="alert alert-info"><strong>请按照成果中的作者顺序填写人员信息！</strong></div>
-																	<input type="text" name="author_num" id="author_num" value="0" hidden="true">
-																	<div id="AuthorInfo" >
-																		
+																	<div id="info">
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">作者姓名</label> 
+																			<div class="col-md-2"><input type="text" name="author_name" class="form-control" value="<?php echo ($AuthorInfo["author_name"]); ?>"></div>
+																			<label class="col-md-1 control-label">作者单位</label> 
+																			<div class="col-md-2"><input type="text" name="author_workplace" class="form-control" value="<?php echo ($AuthorInfo["author_workplace"]); ?>"></div>
+																			<label class="col-md-1 control-label">电子邮箱</label> 
+																			<div class="col-md-2"><input type="text" name="author_email" class="form-control" value="<?php echo ($AuthorInfo["author_email"]); ?>"></div>
+																		</div>
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">作者属性</label>
+																			<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact" value="是" <?php if($AuthorInfo["is_contact"] == 是): ?>checked<?php endif; ?>>是否通讯作者 </label></div>
+																			<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first" value="是" <?php if($AuthorInfo["is_first"] == 是): ?>checked<?php endif; ?>>是否第一作者 </label></div>
+																			<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main" value="是" <?php if($AuthorInfo["is_main"] == 是): ?>checked<?php endif; ?>>是否主要参与者 </label></div>
+																			<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company" value="是" <?php if($AuthorInfo["is_company"] == 是): ?>checked<?php endif; ?>>是否项目承担单位 </label></div>
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 														
 														<div class="form-actions clearfix"> 
-															<button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
-															<button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
-															<button type="button" id="NoAuthor" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($achi_id); ?>'">暂不添加，下一步</button>
-															<input type="submit" value="保存并下一步" class="btn btn-primary pull-right">
+															<input type="submit" value="保存修改" class="btn btn-primary pull-right">
 														</div>
 													</form>
 												</div>
@@ -269,23 +278,7 @@
 			</div>
 		</div>
 
-		<div id="info" hidden="true">
-			<div class="form-group" id="form_one_">
-				<label class="col-md-2 control-label">文章中的作者姓名</label> 
-				<div class="col-md-2"><input type="text" name="author_name_" class="form-control" value=""></div>
-				<label class="col-md-1 control-label">作者单位</label> 
-				<div class="col-md-2"><input type="text" name="author_workplace_" class="form-control" value=""></div>
-				<label class="col-md-1 control-label">电子邮箱</label> 
-				<div class="col-md-2"><input type="text" name="author_email_" class="form-control" value=""></div>
-			</div>
-			<div class="form-group" id="form_two_">
-				<label class="col-md-2 control-label">作者属性</label>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="是">是否通讯作者 </label></div>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="是">是否第一作者 </label></div>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="是">是否主要参与者 </label></div>
-				<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="是">是否项目承担单位 </label></div>
-			</div>
-		</div>
+		
 
 	</section>
 	<!--/PAGE -->
@@ -298,7 +291,7 @@
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
 	
-	
+
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
@@ -325,29 +318,7 @@
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
-			$("#AddAuthor").click(function(){
-				var i=$("#info").html().replace('true','false');
-				i=i.replace("author_name_","author_name_"+count);
-				i=i.replace("author_workplace_","author_workplace_"+count);
-				i=i.replace("author_email_","author_email_"+count);
-				i=i.replace("is_contact_","is_contact_"+count);
-				i=i.replace("is_first_","is_first_"+count);
-				i=i.replace("is_main_","is_main_"+count);
-				i=i.replace("is_company_","is_company_"+count);
-				i=i.replace("form_one_","form_one_"+count);
-				i=i.replace("form_two_","form_two_"+count);
-				count++;
-				$("#AuthorInfo").append(i);
-				$("#author_num").val(count);
-			});
-			$("#DeleteAuthor").click(function(){
-				count--;
-				if(count<0)
-					count=0;
-				$("#form_one_"+count).remove();
-				$("#form_two_"+count).remove();
-				$("#author_num").val(count);
-			});
+			
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->

@@ -269,6 +269,10 @@ class AchievementController extends Controller {
 	//显示修改作者页面
 	public function author_edit($author_id){
 		parent::is_login();
+		$AuthorModel=M('Author');
+		$Condition['id']=$author_id;
+		$AuthorInfo=$AuthorModel->where($Condition)->find();
+		$this->assign('AuthorInfo',$AuthorInfo);
 		$this->display();
 	}
 }
