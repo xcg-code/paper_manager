@@ -13,7 +13,8 @@ class AchievementController extends Controller {
 		$this->assign('PicPath', $PicPath); //用户头像信息前端赋值
 		$this->display();
 	}
-	//我的科研成果页面
+
+	//显示我的科研成果页面
 	public function my_achievement(){
 		parent::is_login();
 		$AchievementModel=M('Achievement');
@@ -70,114 +71,6 @@ class AchievementController extends Controller {
 			$this->success('添加作者信息失败');
 		}
 		
-	}
-
-	//显示添加期刊论文信息页面
-	public function journal_paper_add($id){
-		parent::is_login();
-		$this->display();
-	}
-
-	public function journal_paper_add_db($id){
-		$JournalModel=D('Journalpaper');
-		$AchievementModel=D('Achievement');
-		if($JournalModel->create()){
-			$JournalModel->user_id=$id;
-			$uniq_id=uniqid();
-			$JournalModel->id=$uniq_id;
-			$Inclu='';//收录情况
-			foreach ($JournalModel->inbox_status as $value) {
-				$Inclu=$Inclu.$value.';';
-			}
-			$JournalModel->inbox_status=$Inclu;
-			//赋值成果汇总模型类
-			$AchievementModel->achievement_id=$uniq_id;
-			$AchievementModel->user_id=$id;
-			$AchievementModel->achievement_type='JournalPaper';
-			$AchievementModel->title=$JournalModel->title_zh;
-			$AchievementModel->institute_name=$JournalModel->journal_name;
-			$AchievementModel->publish_time=$JournalModel->publish_date;
-
-			//sql事务
-			$JournalModel->startTrans();
-			$ResultJournal=$JournalModel->add();//添加信息到期刊论文数据表
-			$ResultAchi=$AchievementModel->add();
-			if($ResultJournal && $ResultAchi){
-				$JournalModel->commit();
-				$this->success('添加期刊论文成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/journal_paper_author_add/achi_id/'.$uniq_id);
-			}else{
-				$JournalModel->rollback();
-				$this->error('添加期刊论文失败,请检查信息后重新保存');
-			}
-		}else
-		{
-			$this->error($JournalModel->getError());
-		}
-	}
-
-	//查看期刊论文详细信息
-	public function journal_paper_show($achi_id){
-		parent::is_login();
-		$JournalModel=M('Journalpaper');
-		$Condition['id']=$achi_id;
-		$JournalInfo=$JournalModel->where($Condition)->find();
-		//添加其他详细信息
-		$JournalInfo['achievement_type']='期刊论文';
-		$this->assign('JournalInfo', $JournalInfo); 
-		//获取全文电子文档路径信息
-		$FilePath=get_main_file_path($achi_id);
-		$this->assign('FilePath', $FilePath); 
-		$this->display();
-	}
-
-	//显示期刊论文基本信息修改页面
-	public function journal_paper_edit($achi_id){
-		parent::is_login();
-		$JournalModel=D('Journalpaper');
-		$Condition['id']=$achi_id;
-		$JournalInfo=$JournalModel->where($Condition)->find();
-		$Content=get_sub_content($JournalInfo['inbox_status']);//获取拆分后内容
-		$Content=get_inbox_status($Content);//获取收录情况数组
-		$this->assign('Content', $Content);
-		$this->assign('JournalInfo', $JournalInfo);
-		$this->display();
-	}
-
-	//期刊论文基本信息修改数据库操作
-	public function journal_paper_edit_db($achi_id){
-		$JournalModel=D('Journalpaper');
-		$AchievementModel=D('Achievement');
-		if($JournalModel->create()){
-			$JournalModel->user_id=session('uid');
-			$Inclu='';//收录情况
-			foreach ($JournalModel->inbox_status as $value) {
-				$Inclu=$Inclu.$value.';';
-			}
-			$JournalModel->inbox_status=$Inclu;
-			//赋值成果汇总表模型类
-			$AchievementModel->achievement_id=$achi_id;
-			$AchievementModel->user_id=session('uid');
-			$AchievementModel->achievement_type='JournalPaper';
-			$AchievementModel->title=$JournalModel->title_zh;
-			$AchievementModel->institute_name=$JournalModel->journal_name;
-			$AchievementModel->publish_time=$JournalModel->publish_date;
-			$ConditionJ['id']=$achi_id;
-			$ConditionA['achievement_id']=$achi_id;
-			//SQL操作
-			$ResultJournal=$JournalModel->where($ConditionJ)->save();
-			$ResultAchi=$AchievementModel->where($ConditionA)->save();
-			if($ResultJournal>0){
-				$this->success('论文信息修改成功');
-			}
-			else if($ResultJournal==0){
-				$this->error('您没有修改任何信息');
-			}
-			else{
-				$this->error('论文信息修改失败');
-			}
-		}else{
-			$this->error($JournalModel->getError());
-		}
 	}
 
 	//显示成果文档上传页面
@@ -291,6 +184,127 @@ class AchievementController extends Controller {
 			}
 		}else{
 			$this->error($AuthorModel->getError());
+		}
+	}
+
+	//删除作者信息数据库操作
+	public function author_delete($author_id,$achi_id){
+		$AuthorModel=D('Author');
+		$Condition['id']=$author_id;
+		$Result=$AuthorModel->where($Condition)->delete();
+		if($Result){
+			$this->success('删除作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
+		}else{
+			$this->error($AuthorModel->getError());
+		}
+	}
+
+	//显示添加期刊论文信息页面
+	public function journal_paper_add($id){
+		parent::is_login();
+		$this->display();
+	}
+
+	//添加期刊论文数据库操作
+	public function journal_paper_add_db($id){
+		$JournalModel=D('Journalpaper');
+		$AchievementModel=D('Achievement');
+		if($JournalModel->create()){
+			$JournalModel->user_id=$id;
+			$uniq_id=uniqid();
+			$JournalModel->id=$uniq_id;
+			$Inclu='';//收录情况
+			foreach ($JournalModel->inbox_status as $value) {
+				$Inclu=$Inclu.$value.';';
+			}
+			$JournalModel->inbox_status=$Inclu;
+			//赋值成果汇总模型类
+			$AchievementModel->achievement_id=$uniq_id;
+			$AchievementModel->user_id=$id;
+			$AchievementModel->achievement_type='JournalPaper';
+			$AchievementModel->title=$JournalModel->title_zh;
+			$AchievementModel->institute_name=$JournalModel->journal_name;
+			$AchievementModel->publish_time=$JournalModel->publish_date;
+
+			//sql事务
+			$JournalModel->startTrans();
+			$ResultJournal=$JournalModel->add();//添加信息到期刊论文数据表
+			$ResultAchi=$AchievementModel->add();
+			if($ResultJournal && $ResultAchi){
+				$JournalModel->commit();
+				$this->success('添加期刊论文成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/journal_paper_author_add/achi_id/'.$uniq_id);
+			}else{
+				$JournalModel->rollback();
+				$this->error('添加期刊论文失败,请检查信息后重新保存');
+			}
+		}else
+		{
+			$this->error($JournalModel->getError());
+		}
+	}
+
+	//查看期刊论文详细信息
+	public function journal_paper_show($achi_id){
+		parent::is_login();
+		$JournalModel=M('Journalpaper');
+		$Condition['id']=$achi_id;
+		$JournalInfo=$JournalModel->where($Condition)->find();
+		//添加其他详细信息
+		$JournalInfo['achievement_type']='期刊论文';
+		$this->assign('JournalInfo', $JournalInfo); 
+		//获取全文电子文档路径信息
+		$FilePath=get_main_file_path($achi_id);
+		$this->assign('FilePath', $FilePath); 
+		$this->display();
+	}
+
+	//显示期刊论文基本信息修改页面
+	public function journal_paper_edit($achi_id){
+		parent::is_login();
+		$JournalModel=D('Journalpaper');
+		$Condition['id']=$achi_id;
+		$JournalInfo=$JournalModel->where($Condition)->find();
+		$Content=get_sub_content($JournalInfo['inbox_status']);//获取拆分后内容
+		$Content=get_inbox_status($Content);//获取收录情况数组
+		$this->assign('Content', $Content);
+		$this->assign('JournalInfo', $JournalInfo);
+		$this->display();
+	}
+
+	//期刊论文基本信息修改数据库操作
+	public function journal_paper_edit_db($achi_id){
+		$JournalModel=D('Journalpaper');
+		$AchievementModel=D('Achievement');
+		if($JournalModel->create()){
+			$JournalModel->user_id=session('uid');
+			$Inclu='';//收录情况
+			foreach ($JournalModel->inbox_status as $value) {
+				$Inclu=$Inclu.$value.';';
+			}
+			$JournalModel->inbox_status=$Inclu;
+			//赋值成果汇总表模型类
+			$AchievementModel->achievement_id=$achi_id;
+			$AchievementModel->user_id=session('uid');
+			$AchievementModel->achievement_type='JournalPaper';
+			$AchievementModel->title=$JournalModel->title_zh;
+			$AchievementModel->institute_name=$JournalModel->journal_name;
+			$AchievementModel->publish_time=$JournalModel->publish_date;
+			$ConditionJ['id']=$achi_id;
+			$ConditionA['achievement_id']=$achi_id;
+			//SQL操作
+			$ResultJournal=$JournalModel->where($ConditionJ)->save();
+			$ResultAchi=$AchievementModel->where($ConditionA)->save();
+			if($ResultJournal>0){
+				$this->success('论文信息修改成功');
+			}
+			else if($ResultJournal==0){
+				$this->error('您没有修改任何信息');
+			}
+			else{
+				$this->error('论文信息修改失败');
+			}
+		}else{
+			$this->error($JournalModel->getError());
 		}
 	}
 }

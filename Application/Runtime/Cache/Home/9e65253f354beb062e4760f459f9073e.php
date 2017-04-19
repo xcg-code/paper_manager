@@ -262,7 +262,7 @@
 																					<td><?php echo ($vo["is_first"]); ?></td>
 																					<td><?php echo ($vo["is_main"]); ?></td>
 																					<td><?php echo ($vo["is_company"]); ?></td>
-																					<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/author_edit/author_id/<?php echo ($vo["id"]); ?>'">修改</button><button class="btn btn-xs btn-danger">删除</button></td>
+																					<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/author_edit/author_id/<?php echo ($vo["id"]); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/author_delete/author_id/<?php echo ($vo["id"]); ?>/achi_id/<?php echo ($achi_id); ?>" onclick="return confirm('确定要删除这个作者吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																				
 																			</tbody>
