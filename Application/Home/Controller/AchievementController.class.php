@@ -236,6 +236,9 @@ class AchievementController extends Controller {
     //显示添加项目信息页面
     public function project_add($achi_id){
     	parent::is_login();
+        $TypeModel=M('Project_type');
+        $TypeInfo=$TypeModel->select();
+        $this->assign('TypeInfo',$TypeInfo);
     	$this->display();
     }
 
