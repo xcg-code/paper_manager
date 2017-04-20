@@ -32,47 +32,6 @@ class AchievementController extends Controller {
 		$this->display();
 	}
 
-	//显示添加作者信息页面
-	public function author_add($achi_id){
-		parent::is_login();
-		$this->assign('achi_id',$achi_id);
-		$this->display();
-	}
-
-	//添加作者信息数据库操作
-	public function author_add_db($achi_id){
-		$AuthorModel=D('Author');
-		$user_id=session('uid');
-		$Count=I('post.author_num');
-		$Result=false;
-		if($Count==0){
-			$this->error('您没有填写任何作者信息');
-		}
-		for ($i=0; $i < $Count; $i++) { 
-			$Data['author_name']=I('post.author_name_'.$i);
-			if($Data['author_name']==''){
-				$this->error('作者姓名为必填项');
-			}
-			$Data['author_workplace']=I('post.author_workplace_'.$i);
-			$Data['author_email']=I('post.author_email_'.$i);
-			$Data['is_contact']=I('post.is_contact_'.$i);
-			$Data['is_first']=I('post.is_first_'.$i);
-			$Data['is_main']=I('post.is_main_'.$i);
-			$Data['is_company']=I('post.is_company_'.$i);
-			$Data['user_id']=$user_id;
-			$Data['achievement_id']=$achi_id;
-			if($AuthorModel->add($Data)){
-				$Result=true;
-			}
-		}
-		if($Result){
-			$this->success('添加作者信息成功');
-		}else{
-			$this->success('添加作者信息失败');
-		}
-		
-	}
-
 	//显示成果文档上传页面
 	public function file_upload($achi_id){
 		parent::is_login();
@@ -95,7 +54,7 @@ class AchievementController extends Controller {
     	$upload->autoSub  = false;
     	$info   =   $upload->uploadOne($_FILES['main']);
     	if(!$info) {// 上传错误提示错误信息
-    	    $this->error($upload->getError());
+    		$this->error($upload->getError());
     	}else{// 上传成功
     		$FileInfo['name']=$info['name'];
     		$FileInfo['path']=$info['savename'];
@@ -103,18 +62,18 @@ class AchievementController extends Controller {
     		$FileInfo['upload_time']=date("Y-m-d H:i:s");
     		$FileInfo['type']='Main';
     		$FileInfo['achievement_id']=$achi_id;
-    	    $FileModel=M('File');
-    	    $Result=$FileModel->add($FileInfo);
-    	    if($Result){
-    	    	$this->success('全文电子文档上传成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
-    	    }else{
-    	    	$this->error('全文电子文档上传失败');
-    	    }
+    		$FileModel=M('File');
+    		$Result=$FileModel->add($FileInfo);
+    		if($Result){
+    			$this->success('全文电子文档上传成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
+    		}else{
+    			$this->error('全文电子文档上传失败');
+    		}
     	}
-	}
+    }
 
 	//科研成果其他相关文档上传
-	public function file_upload_other_db($achi_id){
+    public function file_upload_other_db($achi_id){
 		$upload = new \Think\Upload();// 实例化上传类
     	$upload->maxSize   =     20971520 ;// 设置附件上传大小 20MB
     	$upload->exts      =     array('pdf');// 设置附件上传类型
@@ -124,7 +83,7 @@ class AchievementController extends Controller {
     	$upload->autoSub  = false;
     	$info   =   $upload->uploadOne($_FILES['other']);
     	if(!$info) {// 上传错误提示错误信息
-    	    $this->error($upload->getError());
+    		$this->error($upload->getError());
     	}else{// 上传成功
     		$FileInfo['name']=$info['name'];
     		$FileInfo['path']=$info['savename'];
@@ -132,87 +91,161 @@ class AchievementController extends Controller {
     		$FileInfo['upload_time']=date("Y-m-d H:i:s");
     		$FileInfo['type']='Other';
     		$FileInfo['achievement_id']=$achi_id;
-    	    $FileModel=M('File');
-    	    $Result=$FileModel->add($FileInfo);
-    	    if($Result){
-    	    	$this->success('文档上传成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
-    	    }else{
-    	    	$this->error('文档上传失败');
-    	    }
+    		$FileModel=M('File');
+    		$Result=$FileModel->add($FileInfo);
+    		if($Result){
+    			$this->success('文档上传成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
+    		}else{
+    			$this->error('文档上传失败');
+    		}
     	}
-	}
+    }
+
+	//显示添加作者信息页面
+    public function author_add($achi_id){
+    	parent::is_login();
+    	$this->assign('achi_id',$achi_id);
+    	$this->display();
+    }
+
+	//添加作者信息数据库操作
+    public function author_add_db($achi_id){
+    	$AuthorModel=D('Author');
+    	$user_id=session('uid');
+    	$Count=I('post.author_num');
+    	$Result=false;
+    	if($Count==0){
+    		$this->error('您没有填写任何作者信息');
+    	}
+    	for ($i=0; $i < $Count; $i++) { 
+    		$Data['author_name']=I('post.author_name_'.$i);
+    		if($Data['author_name']==''){
+    			$this->error('作者姓名为必填项');
+    		}
+    		$Data['author_workplace']=I('post.author_workplace_'.$i);
+    		$Data['author_email']=I('post.author_email_'.$i);
+    		$Data['is_contact']=I('post.is_contact_'.$i);
+    		$Data['is_first']=I('post.is_first_'.$i);
+    		$Data['is_main']=I('post.is_main_'.$i);
+    		$Data['is_company']=I('post.is_company_'.$i);
+    		$Data['user_id']=$user_id;
+    		$Data['achievement_id']=$achi_id;
+    		if($AuthorModel->add($Data)){
+    			$Result=true;
+    		}
+    	}
+    	if($Result){
+    		$this->success('添加作者信息成功');
+    	}else{
+    		$this->success('添加作者信息失败');
+    	}
+
+    }
 
 	//显示查看作者页面
-	public function author_show($achi_id){
-		parent::is_login();
-		$AuthorModel=M('Author');
-		$Condition['achievement_id']=$achi_id;
-		$AuthorInfo=$AuthorModel->where($Condition)->select();
-		for($i=0;$i<count($AuthorInfo);$i++){
-			if($AuthorInfo[$i]['is_contact']!='是'){$AuthorInfo[$i]['is_contact']='否';}
-			if($AuthorInfo[$i]['is_main']!='是'){$AuthorInfo[$i]['is_main']='否';}
-			if($AuthorInfo[$i]['is_first']!='是'){$AuthorInfo[$i]['is_first']='否';}
-			if($AuthorInfo[$i]['is_company']!='是'){$AuthorInfo[$i]['is_company']='否';}
-		}
-		$this->assign('AuthorInfo',$AuthorInfo);
-		$this->assign('achi_id',$achi_id);
-		$this->display();
-	}
+    public function author_show($achi_id){
+    	parent::is_login();
+    	$AuthorModel=M('Author');
+    	$Condition['achievement_id']=$achi_id;
+    	$AuthorInfo=$AuthorModel->where($Condition)->select();
+    	for($i=0;$i<count($AuthorInfo);$i++){
+    		if($AuthorInfo[$i]['is_contact']!='是'){$AuthorInfo[$i]['is_contact']='否';}
+    		if($AuthorInfo[$i]['is_main']!='是'){$AuthorInfo[$i]['is_main']='否';}
+    		if($AuthorInfo[$i]['is_first']!='是'){$AuthorInfo[$i]['is_first']='否';}
+    		if($AuthorInfo[$i]['is_company']!='是'){$AuthorInfo[$i]['is_company']='否';}
+    	}
+    	$this->assign('AuthorInfo',$AuthorInfo);
+    	$this->assign('achi_id',$achi_id);
+    	$this->display();
+    }
 
 	//显示修改作者页面
-	public function author_edit($author_id){
-		parent::is_login();
-		$AuthorModel=M('Author');
-		$Condition['id']=$author_id;
-		$AuthorInfo=$AuthorModel->where($Condition)->find();
-		$this->assign('AuthorInfo',$AuthorInfo);
-		$this->display();
-	}
+    public function author_edit($author_id){
+    	parent::is_login();
+    	$AuthorModel=M('Author');
+    	$Condition['id']=$author_id;
+    	$AuthorInfo=$AuthorModel->where($Condition)->find();
+    	$this->assign('AuthorInfo',$AuthorInfo);
+    	$this->display();
+    }
 
 	//修改作者信息数据库操作
-	public function author_edit_db($author_id,$achi_id){
-		$AuthorModel=D('Author');
-		if($AuthorModel->create()){
-			$Condition['id']=$author_id;
-			$Result=$AuthorModel->where($Condition)->save();
-			if($Result==0){
-				$this->error('您没有修改任何信息');
-			}elseif ($Result>0) {
-				$this->success('修改作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
-			}else{
-				$this->error($AuthorModel->getError());
-			}
-		}else{
-			$this->error($AuthorModel->getError());
-		}
-	}
+    public function author_edit_db($author_id,$achi_id){
+    	$AuthorModel=D('Author');
+    	if($AuthorModel->create()){
+    		$Condition['id']=$author_id;
+    		$Result=$AuthorModel->where($Condition)->save();
+    		if($Result==0){
+    			$this->error('您没有修改任何信息');
+    		}elseif ($Result>0) {
+    			$this->success('修改作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
+    		}else{
+    			$this->error($AuthorModel->getError());
+    		}
+    	}else{
+    		$this->error($AuthorModel->getError());
+    	}
+    }
 
 	//删除作者信息数据库操作
-	public function author_delete($author_id,$achi_id){
-		$AuthorModel=D('Author');
-		$Condition['id']=$author_id;
-		$Result=$AuthorModel->where($Condition)->delete();
-		if($Result){
-			$this->success('删除作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
-		}else{
-			$this->error($AuthorModel->getError());
-		}
-	}
+    public function author_delete($author_id,$achi_id){
+    	$AuthorModel=D('Author');
+    	$Condition['id']=$author_id;
+    	$Result=$AuthorModel->where($Condition)->delete();
+    	if($Result){
+    		$this->success('删除作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
+    	}else{
+    		$this->error($AuthorModel->getError());
+    	}
+    }
+
+    //显示添加项目类别页面
+    public function project_type(){
+    	parent::is_login();
+        $TypeModel=M('Project_type');
+        $TypeInfo=$TypeModel->select();
+        $this->assign('TypeInfo',$TypeInfo);
+    	$this->display();
+    }
+
+    //添加项目类别数据库操作
+    public function project_type_add(){
+        $TypeModel=M('Project_type');
+        if($TypeModel->create()){
+            $Result=$TypeModel->add();
+            if($Result){
+                $this->success('新增项目类别信息成功');
+            }
+        }else{
+            $this->error($TypeModel->getError());
+        }
+    }
+
+    //显示添加项目信息页面
+    public function project_add($achi_id){
+    	parent::is_login();
+    	$this->display();
+    }
+
+    //添加项目类别信息数据库操作
+    public function project_add_db(){
+
+    }
 
 	//显示添加期刊论文信息页面
-	public function journal_paper_add($id){
-		parent::is_login();
-		$this->display();
-	}
+    public function journal_paper_add($id){
+    	parent::is_login();
+    	$this->display();
+    }
 
 	//添加期刊论文数据库操作
-	public function journal_paper_add_db($id){
-		$JournalModel=D('Journalpaper');
-		$AchievementModel=D('Achievement');
-		if($JournalModel->create()){
-			$JournalModel->user_id=$id;
-			$uniq_id=uniqid();
-			$JournalModel->id=$uniq_id;
+    public function journal_paper_add_db($id){
+    	$JournalModel=D('Journalpaper');
+    	$AchievementModel=D('Achievement');
+    	if($JournalModel->create()){
+    		$JournalModel->user_id=$id;
+    		$uniq_id=uniqid();
+    		$JournalModel->id=$uniq_id;
 			$Inclu='';//收录情况
 			foreach ($JournalModel->inbox_status as $value) {
 				$Inclu=$Inclu.$value.';';
