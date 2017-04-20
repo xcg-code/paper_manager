@@ -210,7 +210,7 @@ class AchievementController extends Controller {
 
     //添加项目类别数据库操作
     public function project_type_add(){
-        $TypeModel=M('Project_type');
+        $TypeModel=D('Project_type');
         if($TypeModel->create()){
             $Result=$TypeModel->add();
             if($Result){

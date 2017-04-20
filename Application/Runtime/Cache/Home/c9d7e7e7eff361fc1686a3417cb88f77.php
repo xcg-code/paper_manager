@@ -166,6 +166,7 @@
 								<ul class="sub">
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
 								</ul>
 							</li>
 						</ul>
@@ -234,7 +235,7 @@
 													<div class="row">
 														<div class="col-md-12">
 															<div class="box-body">
-																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请点击“新增项目类别”按钮，保存后重新选择</strong></div>
+																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请点击左侧导航栏“项目类别管理”按钮，添加后重新选择</strong></div>
 																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
 																	<div class="row">
 																		<div class="col-md-12">
@@ -254,7 +255,6 @@
 																	</div>
 
 																	<div class="form-actions clearfix">
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_type'">新增项目类别</button> 
 																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
 																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属作者信息</button>
 																		<button type="button" id="NoAuthor" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($achi_id); ?>'">暂不添加，完成</button>
