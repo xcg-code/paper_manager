@@ -259,6 +259,16 @@ class AchievementController extends Controller {
         $this->success('新增科研成果所属项目信息成功');
     }
 
+    //显示查看修改成功所属项目信息页面
+    public function project_show($achi_id){
+        parent::is_login();
+        $TypeModel=M('Project_type');
+        $TypeInfo=$TypeModel->select();
+        $this->assign('TypeInfo',$TypeInfo);
+        $this->assign('achi_id',$achi_id);
+        $this->display();
+    }
+
 	//显示添加期刊论文信息页面
     public function journal_paper_add($id){
     	parent::is_login();
