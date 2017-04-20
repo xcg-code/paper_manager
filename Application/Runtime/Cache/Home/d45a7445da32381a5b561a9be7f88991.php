@@ -210,9 +210,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">当前科研成果所属项目信息</h3>
+										<h3 class="content-title pull-left">编辑科研成果所属项目信息</h3>
 									</div>
-									<div class="description">查看，修改</div>
+									<div class="description">基金，项目号</div>
 								</div>
 							</div>
 						</div>
@@ -223,7 +223,7 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">当前科研成果所属项目信息</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">编辑科研成果所属项目信息</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
@@ -235,49 +235,33 @@
 													<div class="row">
 														<div class="col-md-12">
 															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>已添加的科研成果所属项目信息</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>项目类别名称</th>
-																					<th>项目号</th>
-																					<th>备注</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($ProjectInfo)): $i = 0; $__LIST__ = $ProjectInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["type_name"]); ?></td>
-																						<td><?php echo ($vo["project_num"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_type_delete/type_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个类别吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
 																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请点击左侧导航栏“项目类别管理”按钮，添加后重新选择</strong></div>
 																
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
-																	<input type="text" name="num" id="num" value="0" hidden="true">
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_edit_db/project_id/<?php echo ($ProjectInfo["id"]); ?>/achi_id/<?php echo ($ProjectInfo["achievement_id"]); ?>" method="post">
+																	
 																	<div class="row">
 																		<div class="col-md-12">
 																			<div class="box-body">
-																				<div id="AuthorInfo" >
-																					
+																				<div class="form-group" id="form_one_">
+																					<label class="col-md-2 control-label">所属项目类别</label> 
+																					<div class="col-md-3"><select class="form-control" name="type_name" id="type">
+																						<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if(($vo["type_name"]) == $ProjectInfo["type_name"]): ?>selected="selected"<?php endif; ?>><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+
+																					</select></div>
+																					<label class="col-md-2 control-label">所属项目号(分号隔开)</label> 
+																					<div class="col-md-4"><input type="text" name="project_num" class="form-control" value="<?php echo ($ProjectInfo["project_num"]); ?>"></div>
+																				</div>
+																				<div class="form-group" id="form_two_">
+																					<label class="col-md-2 control-label">备注</label> 
+																					<div class="col-md-9"><textarea name="content" class="form-control"><?php echo ($ProjectInfo["content"]); ?></textarea></div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 
 																	<div class="form-actions clearfix">
-																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
-																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属项目信息</button>
-																		<input type="submit" value="添加" class="btn btn-primary pull-right">
+																		
+																		<input type="submit" value="保存修改" class="btn btn-primary pull-right">
 																	</div>
 																</form>
 															</div>
@@ -300,22 +284,6 @@
 						</div>
 					</div><!-- /CONTENT-->
 				</div>
-			</div>
-		</div>
-
-		<div id="info" hidden="true">
-			<div class="form-group" id="form_one_">
-				<label class="col-md-2 control-label">所属项目类别</label> 
-				<div class="col-md-3"><select class="form-control" name="type_name_">
-					<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-
-				</select></div>
-				<label class="col-md-2 control-label">所属项目号(分号隔开)</label> 
-				<div class="col-md-4"><input type="text" name="project_num_" class="form-control" value=""></div>
-			</div>
-			<div class="form-group" id="form_two_">
-				<label class="col-md-2 control-label">备注</label> 
-				<div class="col-md-9"><textarea name="content_" class="form-control"></textarea></div>
 			</div>
 		</div>
 
@@ -357,25 +325,7 @@
 		jQuery(document).ready(function() {		
 		App.setPage("user_profile");  //Set current page
 		App.init(); //Initialise plugins and elements
-		$("#AddAuthor").click(function(){
-			var i=$("#info").html().replace('true','false');
-			i=i.replace("type_name_","type_name_"+count);
-			i=i.replace("project_num_","project_num_"+count);
-			i=i.replace("content_","content_"+count);
-			i=i.replace("form_one_","form_one_"+count);
-			i=i.replace("form_two_","form_two_"+count);
-			count++;
-			$("#AuthorInfo").append(i);
-			$("#num").val(count);
-		});
-		$("#DeleteAuthor").click(function(){
-			count--;
-			if(count<0)
-				count=0;
-			$("#form_one_"+count).remove();
-			$("#form_two_"+count).remove();
-			$("#num").val(count);
-		});
+		
 	});
 </script>
 <!-- /JAVASCRIPTS -->
