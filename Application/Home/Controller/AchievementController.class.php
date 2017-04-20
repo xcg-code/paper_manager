@@ -221,6 +221,18 @@ class AchievementController extends Controller {
         }
     }
 
+    //删除项目类别信息数据库操作
+    public function project_type_delete($type_id){
+        $TypeModel=M('Project_type');
+        $Condition['id']=$type_id;
+        $Result=$TypeModel->where($Condition)->delete();
+        if($Result){
+            $this->success('删除项目类别信息成功');
+        }else{
+            $this->error('删除项目类别信息失败');
+        }
+    }
+
     //显示添加项目信息页面
     public function project_add($achi_id){
     	parent::is_login();
