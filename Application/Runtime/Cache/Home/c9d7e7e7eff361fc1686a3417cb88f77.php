@@ -236,8 +236,9 @@
 														<div class="col-md-12">
 															<div class="box-body">
 																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请点击左侧导航栏“项目类别管理”按钮，添加后重新选择</strong></div>
-																<input type="text" name="project_num" id="project_num" value="0" hidden="true">
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
+																
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
+																	<input type="text" name="num" id="num" value="0" hidden="true">
 																	<div class="row">
 																		<div class="col-md-12">
 																			<div class="box-body">
@@ -340,7 +341,7 @@
 			i=i.replace("form_two_","form_two_"+count);
 			count++;
 			$("#AuthorInfo").append(i);
-			$("#project_num").val(count);
+			$("#num").val(count);
 		});
 		$("#DeleteAuthor").click(function(){
 			count--;
@@ -348,7 +349,7 @@
 				count=0;
 			$("#form_one_"+count).remove();
 			$("#form_two_"+count).remove();
-			$("#project_num").val(count);
+			$("#num").val(count);
 		});
 	});
 </script>

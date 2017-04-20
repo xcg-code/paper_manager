@@ -239,12 +239,24 @@ class AchievementController extends Controller {
         $TypeModel=M('Project_type');
         $TypeInfo=$TypeModel->select();
         $this->assign('TypeInfo',$TypeInfo);
+        $this->assign('achi_id',$achi_id);
     	$this->display();
     }
 
     //添加项目类别信息数据库操作
-    public function project_add_db(){
-
+    public function project_add_db($achi_id){
+        $ProjectModel=D('Project');
+        $user_id=session('uid');
+        $Count=I('post.num');
+        for($i=0;$i<$Count;$i++){
+            $Data['type_name']=I('post.type_name_'.$i);
+            $Data['project_num']=I('post.project_num_'.$i).';';
+            $Data['content']=I('post.content_'.$i);
+            $Data['user_id']=$user_id;
+            $Data['achievement_id']=$achi_id;
+            $ProjectModel->add($Data);
+        }
+        $this->success('新增科研成果所属项目信息成功');
     }
 
 	//显示添加期刊论文信息页面
