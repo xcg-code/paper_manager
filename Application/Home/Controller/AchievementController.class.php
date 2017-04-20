@@ -23,9 +23,10 @@ class AchievementController extends Controller {
 		$AchievementCount['All']=count($AchievementInfo);
 		//获取各种科研成果的数目
 		$AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
-		//获取作者姓名字符串
+		//获取作者姓名字符串和详情链接
 		for($i=0;$i<count($AchievementInfo);$i++){
 			$AchievementInfo[$i]['author']=get_author_list($AchievementInfo[$i]['achievement_id']);
+            $AchievementInfo[$i]['detail_link']=get_detail_link($AchievementInfo[$i]);
 		}
 		$this->assign('AchievementInfo',$AchievementInfo);
 		$this->assign('AchievementCount',$AchievementCount);
