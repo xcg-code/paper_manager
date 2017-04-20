@@ -291,7 +291,7 @@ class AchievementController extends Controller {
         $this->display();
     }
 
-    //编程成果所属信息数据库操作
+    //编辑成果所属信息数据库操作
     public function project_edit_db($project_id,$achi_id){
         $ProjectModel=D('Project');
         if($ProjectModel->create()){
@@ -304,6 +304,18 @@ class AchievementController extends Controller {
             }
         }else{
             $this->error($ProjectModel->getError());
+        }
+    }
+
+    //删除成果所属信息数据库操作
+    public function project_delete($project_id){
+        $ProjectModel=M('Project');
+        $Condition['id']=$project_id;
+        $Result=$ProjectModel->where($Condition)->delete();
+        if($Result){
+            $this->success('删除所属项目信息成功');
+        }else{
+            $this->error('删除所属项目信息失败');
         }
     }
 
