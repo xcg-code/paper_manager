@@ -1671,7 +1671,7 @@ function get_inbox_status($Content){
 //获取科研成果作者信息合并之后的字符串
 function get_author_list($achi_id){
     $AuthorModel=M('Author');
-    $Condition['$achievement_id']=$achi_id;
+    $Condition['achievement_id']=$achi_id;
     $AuthorInfo=$AuthorModel->where($Condition)->select();
     $AuthorList='';
     for($i=0;$i<count($AuthorInfo);$i++){
