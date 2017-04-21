@@ -235,7 +235,8 @@
 																					<td>{$vo.name}</td>
 																					<td>{$vo.description}</td>
 																					<td>{$vo.upload_time}</td>
-																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='__ROOT__/{$vo.path}'">下载</button><button class="btn btn-xs btn-danger">删除</button></td>
+																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='__ROOT__/{$vo.path}'">下载</button>
+																					<a href="__URL__/file_delete/id/{$vo.id}/file_type/{$vo.type}" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr>
 																				</volist>
 																				

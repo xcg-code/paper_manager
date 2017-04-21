@@ -287,7 +287,8 @@
 																					<td><?php echo ($vo["name"]); ?></td>
 																					<td><?php echo ($vo["description"]); ?></td>
 																					<td><?php echo ($vo["upload_time"]); ?></td>
-																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/<?php echo ($vo["path"]); ?>'">下载</button><button class="btn btn-xs btn-danger">删除</button></td>
+																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/<?php echo ($vo["path"]); ?>'">下载</button>
+																					<a href="/PaperManager/index.php/Home/Achievement/file_delete/id/<?php echo ($vo["id"]); ?>/file_type/<?php echo ($vo["type"]); ?>" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																				
 																			</tbody>

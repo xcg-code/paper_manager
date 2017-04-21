@@ -106,6 +106,30 @@ class AchievementController extends Controller {
     	}
     }
 
+    //删除已上传文件操作
+    public function file_delete($id,$file_type){
+        $FileModel=M('File');
+        $Condition['id']=$id;
+        $FileInfo=$FileModel->where($Condition)->find();
+        $FilePath=$FileInfo['path'];
+        //拼接物理地址
+        if($file_type=='Main'){
+            $FilePath=substr(THINK_PATH, 0,-9).'Uploads/UserMainFile/'.$FilePath;
+        }else{
+            $FilePath=substr(THINK_PATH, 0,-9).'Uploads/UserOtherFile/'.$FilePath;
+        }
+        
+        //删除物理文件
+        $ResultDel=unlink($FilePath);
+        //删除数据库信息
+        $ResultDb=$FileModel->where($Condition)->delete();
+        if($ResultDel && $ResultDb){
+            $this->success('删除文件成功');
+        }else{
+            $this->error('删除文件失败');
+        }
+    }
+
 	//显示添加作者信息页面
     public function author_add($achi_id){
     	parent::is_login();
