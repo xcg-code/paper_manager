@@ -244,9 +244,9 @@
 																		<table class="table table-striped">
 																			<thead>
 																				<tr>
-																					<th style="width: 10%">姓名</th>
+																					<th style="width: 13%">姓名</th>
 																					<th>工作单位</th>
-																					<th style="width: 18%">电子邮件</th>
+																					<th style="width: 17%">电子邮件</th>
 																					<th style="width: 10%">是否通讯作者</th>
 																					<th style="width: 10%">是否第一作者</th>
 																					<th style="width: 10%">是否主要参与者</th>
@@ -263,7 +263,8 @@
 																					<td><?php echo ($vo["is_first"]); ?></td>
 																					<td><?php echo ($vo["is_main"]); ?></td>
 																					<td><?php echo ($vo["is_company"]); ?></td>
-																					<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/author_edit/author_id/<?php echo ($vo["id"]); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/author_delete/author_id/<?php echo ($vo["id"]); ?>/achi_id/<?php echo ($achi_id); ?>" onclick="return confirm('确定要删除这个作者吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																					<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/author_edit/author_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button>
+																					<a href="/PaperManager/index.php/Home/Achievement/author_delete/author_id/<?php echo ($vo["id"]); ?>/achi_id/<?php echo ($achi_id); ?>" onclick="return confirm('确定要删除这个作者吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																				
 																			</tbody>
@@ -281,6 +282,7 @@
 														<div class="form-actions clearfix"> 
 															<button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
 															<button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
+															<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/'+'<?php echo ($page_type); ?>'+'/achi_id/<?php echo ($achi_id); ?>'">返回科研成果详情页</button>
 															<input type="submit" value="保存修改" class="btn btn-primary pull-right">
 														</div>
 													</form>

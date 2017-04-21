@@ -212,7 +212,7 @@
 									<div class="clearfix">
 										<h3 class="content-title pull-left"><?php echo ($JournalInfo["title_zh"]); ?></h3>
 									</div>
-									<div class="description">论文详情查看及相关操作</div>
+									<div class="description">科研成果详情查看及相关操作</div>
 								</div>
 							</div>
 						</div>
@@ -248,7 +248,7 @@
 
 												<a href="/PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($JournalInfo["id"]); ?>/page_type/journal_paper_show" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
 												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
 												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
 												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>

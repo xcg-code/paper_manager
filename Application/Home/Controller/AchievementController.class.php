@@ -149,7 +149,7 @@ class AchievementController extends Controller {
     }
 
 	//显示查看作者页面
-    public function author_show($achi_id){
+    public function author_show($achi_id,$page_type){
     	parent::is_login();
     	$AuthorModel=M('Author');
     	$Condition['achievement_id']=$achi_id;
@@ -162,21 +162,23 @@ class AchievementController extends Controller {
     	}
     	$this->assign('AuthorInfo',$AuthorInfo);
     	$this->assign('achi_id',$achi_id);
+        $this->assign('page_type',$page_type);
     	$this->display();
     }
 
 	//显示修改作者页面
-    public function author_edit($author_id){
+    public function author_edit($author_id,$page_type){
     	parent::is_login();
     	$AuthorModel=M('Author');
     	$Condition['id']=$author_id;
     	$AuthorInfo=$AuthorModel->where($Condition)->find();
     	$this->assign('AuthorInfo',$AuthorInfo);
+        $this->assign('page_type',$page_type);
     	$this->display();
     }
 
 	//修改作者信息数据库操作
-    public function author_edit_db($author_id,$achi_id){
+    public function author_edit_db($author_id,$achi_id,$page_type){
     	$AuthorModel=D('Author');
     	if($AuthorModel->create()){
     		$Condition['id']=$author_id;
@@ -184,7 +186,7 @@ class AchievementController extends Controller {
     		if($Result==0){
     			$this->error('您没有修改任何信息');
     		}elseif ($Result>0) {
-    			$this->success('修改作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
+    			$this->success('修改作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id.'/page_type/'.$page_type);
     		}else{
     			$this->error($AuthorModel->getError());
     		}
@@ -199,7 +201,7 @@ class AchievementController extends Controller {
     	$Condition['id']=$author_id;
     	$Result=$AuthorModel->where($Condition)->delete();
     	if($Result){
-    		$this->success('删除作者信息成功',__ROOT__.'/index.php/Home/Achievement/author_show/achi_id/'.$achi_id);
+    		$this->success('删除作者信息成功');
     	}else{
     		$this->error($AuthorModel->getError());
     	}
