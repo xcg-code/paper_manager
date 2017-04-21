@@ -254,7 +254,7 @@
 																						<td><?php echo ($vo["type_name"]); ?></td>
 																						<td><?php echo ($vo["project_num"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个类别吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个类别吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>
@@ -277,6 +277,7 @@
 																	<div class="form-actions clearfix">
 																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
 																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属项目信息</button>
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/'+'<?php echo ($page_type); ?>'+'/achi_id/<?php echo ($achi_id); ?>'">返回科研成果详情页</button>
 																		<input type="submit" value="添加" class="btn btn-primary pull-right">
 																	</div>
 																</form>

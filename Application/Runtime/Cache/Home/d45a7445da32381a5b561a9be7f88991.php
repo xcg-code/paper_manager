@@ -237,7 +237,7 @@
 															<div class="box-body">
 																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请点击左侧导航栏“项目类别管理”按钮，添加后重新选择</strong></div>
 																
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_edit_db/project_id/<?php echo ($ProjectInfo["id"]); ?>/achi_id/<?php echo ($ProjectInfo["achievement_id"]); ?>" method="post">
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_edit_db/project_id/<?php echo ($ProjectInfo["id"]); ?>/achi_id/<?php echo ($ProjectInfo["achievement_id"]); ?>/page_type/<?php echo ($page_type); ?>" method="post">
 																	
 																	<div class="row">
 																		<div class="col-md-12">

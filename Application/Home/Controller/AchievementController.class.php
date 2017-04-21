@@ -256,6 +256,9 @@ class AchievementController extends Controller {
         $ProjectModel=D('Project');
         $user_id=session('uid');
         $Count=I('post.num');
+        if($Count==0){
+            $this->error('您未添加任何信息');
+        }
         for($i=0;$i<$Count;$i++){
             $Data['type_name']=I('post.type_name_'.$i);
             $Data['project_num']=I('post.project_num_'.$i).';';
@@ -272,7 +275,7 @@ class AchievementController extends Controller {
     }
 
     //显示查看修改成果所属项目信息页面
-    public function project_show($achi_id){
+    public function project_show($achi_id,$page_type){
         parent::is_login();
         //获取项目类别信息
         $TypeModel=M('Project_type');
@@ -284,11 +287,12 @@ class AchievementController extends Controller {
         $Condition['achievement_id']=$achi_id;
         $ProjectInfo=$ProjectModel->where($Condition)->select();
         $this->assign('ProjectInfo',$ProjectInfo);
+        $this->assign('page_type',$page_type);
         $this->display();
     }
 
     //显示编辑成果所属项目信息页面
-    public function project_edit($project_id){
+    public function project_edit($project_id,$page_type){
         parent::is_login();
         //获取项目类别信息
         $TypeModel=M('Project_type');
@@ -300,17 +304,18 @@ class AchievementController extends Controller {
         $Condition['id']=$project_id;
         $ProjectInfo=$ProjectModel->where($Condition)->find();
         $this->assign('ProjectInfo',$ProjectInfo);
+        $this->assign('page_type',$page_type);
         $this->display();
     }
 
     //编辑成果所属信息数据库操作
-    public function project_edit_db($project_id,$achi_id){
+    public function project_edit_db($project_id,$achi_id,$page_type){
         $ProjectModel=D('Project');
         if($ProjectModel->create()){
             $Condition['id']=$project_id;
             $Result=$ProjectModel->where($Condition)->save();
             if($Result){
-                $this->success('修改所属项目信息成功',__ROOT__.'/index.php/Home/Achievement/project_show/achi_id/'.$achi_id);
+                $this->success('修改所属项目信息成功',__ROOT__.'/index.php/Home/Achievement/project_show/achi_id/'.$achi_id.'/page_type/'.$page_type);
             }else{
                 $this->error($ProjectModel->getError());
             }
