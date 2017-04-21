@@ -287,7 +287,7 @@
 																					<td><?php echo ($vo["name"]); ?></td>
 																					<td><?php echo ($vo["description"]); ?></td>
 																					<td><?php echo ($vo["upload_time"]); ?></td>
-																					<td><button class="btn btn-xs btn-success">下载</button><button class="btn btn-xs btn-danger">删除</button></td>
+																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/<?php echo ($vo["path"]); ?>'">下载</button><button class="btn btn-xs btn-danger">删除</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																				
 																			</tbody>

@@ -1725,3 +1725,13 @@ function get_detail_link($AchievementInfo){
     }
     return $detail_link;
 }
+
+//获取文件列表下载路径
+function get_file_path($FileInfo){
+    if($FileInfo['type']=='Main'){
+        $FilePath="Uploads/UserMainFile/".$FileInfo['path'];
+    }else{
+        $FilePath="Uploads/UserOtherFile/".$FileInfo['path'];
+    }
+    return $FilePath;
+}

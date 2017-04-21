@@ -39,6 +39,10 @@ class AchievementController extends Controller {
 		$FileModel=M('File');
 		$Condition['achievement_id']=$achi_id;
 		$FileInfo=$FileModel->where($Condition)->select();
+        //获取文件下载路径
+        for($i=0;$i<count($FileInfo);$i++){
+            $FileInfo[$i]['path']=get_file_path($FileInfo[$i]);
+        }
 		$this->assign('achi_id', $achi_id); 
 		$this->assign('FileInfo', $FileInfo); 
 		$this->display();
