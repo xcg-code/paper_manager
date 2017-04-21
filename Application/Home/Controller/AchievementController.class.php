@@ -472,4 +472,14 @@ class AchievementController extends Controller {
 			$this->error($JournalModel->getError());
 		}
 	}
+
+    //删除期刊论文成果信息
+    public function journal_paper_delete($achi_id){
+        $JournalModel=M('Journalpaper');
+        $Condition['id']=$achi_id;
+        $JournalModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
 }

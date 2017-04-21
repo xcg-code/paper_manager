@@ -1735,3 +1735,33 @@ function get_file_path($FileInfo){
     }
     return $FilePath;
 }
+
+//删除科研成果对应的作者，文件，所属项目，成果汇总信息
+function delete_all_info($achi_id){
+    //删除作者信息
+    $AuthorModel=M('Author');
+    $Condition['achievement_id']=$achi_id;
+    $AuthorModel->where($Condition)->delete();
+    //删除已上传文件及数据
+    $FileModel=M('File');
+    $FileInfo=$FileModel->where($Condition)->select();
+    for($i=0;$i<count($FileInfo);$i++){
+        $FilePath=$FileInfo[$i]['path'];
+        //拼接物理地址
+        if($FileInfo[$i]['type']=='Main'){
+            $FilePath=substr(THINK_PATH, 0,-9).'Uploads/UserMainFile/'.$FilePath;
+        }else{
+            $FilePath=substr(THINK_PATH, 0,-9).'Uploads/UserOtherFile/'.$FilePath;
+        }
+        //删除物理文件
+        unlink($FilePath);
+        //删除数据库信息
+        $FileModel->where($Condition)->delete();
+    }
+    //删除所属项目信息
+    $ProjectModel=M('Project');
+    $ProjectModel->where($Condition)->delete();
+    //删除成果汇总表信息
+    $AchievementModel=M('Achievement');
+    $AchievementModel->where($Condition)->delete();
+}

@@ -247,7 +247,7 @@
 												</div>
 
 												<a href="/PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
-												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/journal_paper_delete/achi_id/<?php echo ($JournalInfo["id"]); ?>" onclick="return confirm('确定要删除该成果吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
 												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($JournalInfo["id"]); ?>/page_type/journal_paper_show" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
 												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($JournalInfo["id"]); ?>/page_type/journal_paper_show" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
 												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
