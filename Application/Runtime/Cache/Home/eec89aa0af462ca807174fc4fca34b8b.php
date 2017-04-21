@@ -166,6 +166,7 @@
 								<ul class="sub">
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
 								</ul>
 							</li>
 						</ul>
@@ -231,7 +232,7 @@
 										  </ul>
 										  <div class="tab-content">
 											 <div class="tab-pane fade in active" id="box_tab1">
-												<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_add_db/achi_id/<?php echo ($achi_id); ?>" method="post">
+												<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/author_add_db/achi_id/<?php echo ($achi_id); ?>/type/1" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
@@ -271,7 +272,7 @@
 
 		<div id="info" hidden="true">
 			<div class="form-group" id="form_one_">
-		  <label class="col-md-2 control-label">文章中的作者姓名</label> 
+		  <label class="col-md-2 control-label">作者姓名</label> 
 		   <div class="col-md-2"><input type="text" name="author_name_" class="form-control" value=""></div>
 		   <label class="col-md-1 control-label">作者单位</label> 
 		   <div class="col-md-2"><input type="text" name="author_workplace_" class="form-control" value=""></div>
@@ -280,10 +281,10 @@
 		   </div>
 		   <div class="form-group" id="form_two_">
 		   		<label class="col-md-2 control-label">作者属性</label>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="yes">是否通讯作者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="yes">是否第一作者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="yes">是否主要参与者 </label></div>
-		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="yes">是否项目承担单位 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_contact_" value="是">是否通讯作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox"  name="is_first_" value="是">是否第一作者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_main_" value="是">是否主要参与者 </label></div>
+		   		<div class="col-md-2"><label class="checkbox-inline"> <input type="checkbox" name="is_company_" value="是">是否项目承担单位 </label></div>
 		   </div>
 		</div>
 

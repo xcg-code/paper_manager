@@ -37,7 +37,7 @@ class AchievementController extends Controller {
 	public function file_upload($achi_id){
 		parent::is_login();
 		$FileModel=M('File');
-		$Condition['$achievement_id']=$achi_id;
+		$Condition['achievement_id']=$achi_id;
 		$FileInfo=$FileModel->where($Condition)->select();
 		$this->assign('achi_id', $achi_id); 
 		$this->assign('FileInfo', $FileInfo); 
@@ -110,7 +110,7 @@ class AchievementController extends Controller {
     }
 
 	//添加作者信息数据库操作
-    public function author_add_db($achi_id){
+    public function author_add_db($achi_id,$type){
     	$AuthorModel=D('Author');
     	$user_id=session('uid');
     	$Count=I('post.author_num');
@@ -136,7 +136,12 @@ class AchievementController extends Controller {
     		}
     	}
     	if($Result){
-    		$this->success('添加作者信息成功');
+            if($type==1){
+                $this->success('添加作者信息成功',__ROOT__.'/index.php/Home/Achievement/file_upload/achi_id/'.$achi_id);
+            }else{
+                $this->success('添加作者信息成功');
+            }
+    		
     	}else{
     		$this->success('添加作者信息失败');
     	}
@@ -245,7 +250,7 @@ class AchievementController extends Controller {
     }
 
     //添加项目类别信息数据库操作
-    public function project_add_db($achi_id){
+    public function project_add_db($achi_id,$type){
         $ProjectModel=D('Project');
         $user_id=session('uid');
         $Count=I('post.num');
@@ -257,7 +262,11 @@ class AchievementController extends Controller {
             $Data['achievement_id']=$achi_id;
             $ProjectModel->add($Data);
         }
-        $this->success('新增科研成果所属项目信息成功');
+        if($type==1){
+            $this->success('您可以在我的科研成果列表查看该成果了',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+        }else{
+            $this->success('新增科研成果所属项目信息成功');
+        }
     }
 
     //显示查看修改成果所属项目信息页面
@@ -353,7 +362,7 @@ class AchievementController extends Controller {
 			$ResultAchi=$AchievementModel->add();
 			if($ResultJournal && $ResultAchi){
 				$JournalModel->commit();
-				$this->success('添加期刊论文成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/journal_paper_author_add/achi_id/'.$uniq_id);
+				$this->success('添加期刊论文成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
 			}else{
 				$JournalModel->rollback();
 				$this->error('添加期刊论文失败,请检查信息后重新保存');
@@ -416,7 +425,7 @@ class AchievementController extends Controller {
 			$ResultJournal=$JournalModel->where($ConditionJ)->save();
 			$ResultAchi=$AchievementModel->where($ConditionA)->save();
 			if($ResultJournal>0){
-				$this->success('论文信息修改成功');
+				$this->success('论文信息修改成功',__ROOT__.'/index.php/Home/Achievement/journal_paper_show/achi_id/'.$achi_id);
 			}
 			else if($ResultJournal==0){
 				$this->error('您没有修改任何信息');
