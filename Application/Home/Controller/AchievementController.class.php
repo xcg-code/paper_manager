@@ -712,4 +712,14 @@ class AchievementController extends Controller {
             $this->error($MonographModel->getError());
         }
     }
+
+    //学术专著删除
+    public function monograph_delete($achi_id){
+        $MonographModel=M('Monograph');
+        $Condition['id']=$achi_id;
+        $MonographModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
 }
