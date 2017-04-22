@@ -207,27 +207,57 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">状态</label> 
+																	<label class="col-md-2 control-label">类型</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已发表" checked> 已发表 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已接受未发表"> 已接受未发表 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="邀请会议论文" checked> 邀请会议论文 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="推荐会议论文"> 推荐会议论文 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="其他会议论文"> 其他会议论文 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">期刊名称</label> 
-																		<div class="col-md-8"><input type="text" name="journal_name" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">会议名称</label> 
+																		<div class="col-md-3"><input type="text" name="conference_name" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">会议地址</label> 
+																		<div class="col-md-4"><input type="text" name="conference_address" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议组织者</label> 
+																		<div class="col-md-8"><input type="text" name="organizer" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议开始日期</label> 
+																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">会议结束日期</label> 
+																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
+																		
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">发表日期</label> 
-																		<div class="col-md-8"><input type="date" name="publish_date" class="form-control" value=""></div>
+																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">起止页码</label>
+																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">————</label> 
+																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">论文类别</label> 
+																		<div class="col-md-4">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="特邀报告" checked> 特邀报告 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="分组报告"> 分组报告 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="墙报展示"> 墙报展示 </label>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">国家或地区</label> 
+																		<div class="col-md-3"><input type="text" name="country" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">城市</label> 
+																		<div class="col-md-4"><input type="text" name="city" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">DOI</label> 
-																		<div class="col-md-8"><input type="text" name="doi" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">文章号</label> 
-																		<div class="col-md-8"><input type="text" name="paper_num" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="doi" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">文章号</label> 
+																		<div class="col-md-4"><input type="text" name="paper_num" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">收录情况</label> 
@@ -262,19 +292,8 @@
 																		</select></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">卷号</label> 
-																		<div class="col-md-3"><input type="text" name="juan_num" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">期号</label> 
-																		<div class="col-md-3"><input type="text" name="qi_num" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">起止页码</label>
-																		<div class="col-md-2">
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="not_have_page" value="no"> 本文章不包含起止页码 </label> 
-																		</div>
-																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">————</label> 
-																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">备注</label> 
+																		<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">全文链接</label> 
@@ -286,7 +305,7 @@
 														<div class="form-actions clearfix"> <input type="submit" value="保存并下一步" class="btn btn-primary pull-right"></div>
 													</form>
 												</div>
-												
+
 											</div>
 										</div>
 									</div>
@@ -315,7 +334,7 @@
 	<!-- BOOTSTRAP -->
 	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
 	
-	
+
 	<!-- DATE RANGE PICKER -->
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
