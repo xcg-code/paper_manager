@@ -246,16 +246,16 @@
 													<h4>相关操作</h4>
 												</div>
 
-												<a href="/PaperManager/index.php/Home/Achievement/journal_paper_edit/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/journal_paper_delete/achi_id/<?php echo ($JournalInfo["id"]); ?>" onclick="return confirm('确定要删除该成果吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($JournalInfo["id"]); ?>/page_type/journal_paper_show" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($JournalInfo["id"]); ?>/page_type/journal_paper_show" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/<?php echo ($edit); ?>/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/<?php echo ($delete); ?>/achi_id/<?php echo ($id); ?>" onclick="return confirm('确定要删除该成果吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
 												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
-												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($JournalInfo["id"]); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
+												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
 												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看该类别所有成果</a>
 												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看所属项目所有成果</a>
-												</div>														
+												</div>			
 											</div>
 											<div class="col-md-9">
 

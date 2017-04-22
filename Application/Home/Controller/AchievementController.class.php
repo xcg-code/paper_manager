@@ -416,7 +416,13 @@ class AchievementController extends Controller {
 		$JournalInfo=$JournalModel->where($Condition)->find();
 		//添加其他详细信息
 		$JournalInfo['achievement_type']='期刊论文';
-		$this->assign('JournalInfo', $JournalInfo); 
+		$this->assign('JournalInfo', $JournalInfo);
+        //添加相关操作信息
+        $this->assign('id', $JournalInfo['id']);
+        $this->assign('edit','journal_paper_edit');
+        $this->assign('delete','journal_paper_delete');
+        $this->assign('show','journal_paper_show');
+
 		//获取全文电子文档路径信息
 		$FilePath=get_main_file_path($achi_id);
 		$this->assign('FilePath', $FilePath); 
