@@ -494,4 +494,15 @@ class AchievementController extends Controller {
         parent::is_login();
         $this->display();
     }
+
+    //添加会议论文基本信息数据库操作
+    public function conference_paper_add_db(){
+        $ConferenceModel=D('Conferencepaper');
+        $AchievementModel=D('Achievement');
+        if($ConferenceModel->create()){
+
+        }else{
+            $this->error($ConferenceModel->getError());
+        }
+    }
 }

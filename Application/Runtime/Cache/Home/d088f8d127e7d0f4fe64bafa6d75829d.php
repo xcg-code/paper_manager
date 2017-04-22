@@ -232,7 +232,7 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/journal_paper_add_db/id/<?php echo (session('uid')); ?>" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/conference_paper_add_db" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
