@@ -255,14 +255,14 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">语言</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="中文" checked> 中文 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="中文"> 中文 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="英文"> 英文 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
 																	<label class="col-md-2 control-label">类型</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="邀请会议论文" checked> 邀请会议论文 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="邀请会议论文"> 邀请会议论文 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="推荐会议论文"> 推荐会议论文 </label>
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="其他会议论文"> 其他会议论文 </label>
 																		</div>
@@ -295,7 +295,7 @@
 																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
 																		<label class="col-md-1 control-label">论文类别</label> 
 																		<div class="col-md-4">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="特邀报告" checked> 特邀报告 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="特邀报告"> 特邀报告 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="分组报告"> 分组报告 </label>
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="墙报展示"> 墙报展示 </label>
 																		</div>

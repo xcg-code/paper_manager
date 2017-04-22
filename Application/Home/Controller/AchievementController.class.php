@@ -284,9 +284,12 @@ class AchievementController extends Controller {
         $ProjectModel=D('Project');
         $user_id=session('uid');
         $Count=I('post.num');
-        if($Count==0){
-            $this->error('您未添加任何信息');
+        if($type==2){
+            if($Count==0){
+                $this->error('您未添加任何信息');
+            }
         }
+        
         for($i=0;$i<$Count;$i++){
             $Data['type_name']=I('post.type_name_'.$i);
             $Data['project_num']=I('post.project_num_'.$i).';';
@@ -500,7 +503,33 @@ class AchievementController extends Controller {
         $ConferenceModel=D('Conferencepaper');
         $AchievementModel=D('Achievement');
         if($ConferenceModel->create()){
+            $ConferenceModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $ConferenceModel->id=$uniq_id;
+            $Inclu='';//收录情况
+            foreach ($ConferenceModel->inbox_status as $value) {
+                $Inclu=$Inclu.$value.';';
+            }
+            $ConferenceModel->inbox_status=$Inclu;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='ConferencePaper';
+            $AchievementModel->title=$ConferenceModel->title_zh;
+            $AchievementModel->institute_name=$ConferenceModel->conference_name;
+            $AchievementModel->publish_time=$ConferenceModel->publish_date;
 
+            //sql事务
+            $ConferenceModel->startTrans();
+            $ResultConference=$ConferenceModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultConference && $ResultAchi){
+                $ConferenceModel->commit();
+                $this->success('添加会议论文成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $ConferenceModel->rollback();
+                $this->error('添加会议论文失败,请检查信息后重新保存');
+            }
         }else{
             $this->error($ConferenceModel->getError());
         }
