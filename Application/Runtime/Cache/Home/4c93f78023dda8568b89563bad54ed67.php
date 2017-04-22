@@ -232,7 +232,7 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/conference_paper_add_db" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/monograph_add_db" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
@@ -246,11 +246,11 @@
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">书名</label> 
-																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="book_name" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">丛书名称</label> 
-																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="books_name" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">语言</label> 
@@ -262,16 +262,16 @@
 																	<div class="form-group">
 																	<label class="col-md-2 control-label">状态</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="已出版"> 已出版 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="待出版"> 待出版 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已出版"> 已出版 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="待出版"> 待出版 </label>
 																			
 																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">ISBN号</label> 
-																		<div class="col-md-3"><input type="text" name="conference_name" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="isbn" class="form-control" value=""></div>
 																		<label class="col-md-1 control-label">编辑</label> 
-																		<div class="col-md-4"><input type="text" name="conference_address" class="form-control" value=""></div>
+																		<div class="col-md-4"><input type="text" name="editor" class="form-control" value=""></div>
 																	</div>
 																	
 																	<div class="form-group">
@@ -286,18 +286,18 @@
 																		<label class="col-md-1 control-label">————</label> 
 																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
 																		<label class="col-md-1 control-label">总字数</label> 
-																		<div class="col-md-4"><input type="text" name="conference_address" class="form-control" value=""></div>
+																		<div class="col-md-4"><input type="text" name="words_num" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">出版社</label> 
-																		<div class="col-md-2"><input type="text" name="conference_address" class="form-control" value=""></div>
+																		<div class="col-md-2"><input type="text" name="publisher" class="form-control" value=""></div>
 																		<label class="col-md-2 control-label">出版时间(按版权页填写)</label> 
-																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
+																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value=""></div>
 																		
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">与项目的关系</label> 
-																		<div class="col-md-2"><input type="text" name="publish_date" class="form-control" value=""></div>
+																		<div class="col-md-2"><input type="text" name="relationship" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">备注</label> 

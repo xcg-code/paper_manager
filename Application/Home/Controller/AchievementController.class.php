@@ -619,4 +619,36 @@ class AchievementController extends Controller {
         parent::is_login();
         $this->display();
     }
+
+    //添加学术专著信息数据库操作
+    public function monograph_add_db(){
+        $MonographModel=D('Monograph');
+        $AchievementModel=D('Achievement');
+        if($MonographModel->create()){
+            $MonographModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $MonographModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='Monograph';
+            $AchievementModel->title=$MonographModel->title_zh;
+            $AchievementModel->institute_name=$MonographModel->publisher;
+            $AchievementModel->publish_time=$MonographModel->publish_date;
+
+            //sql事务
+            $MonographModel->startTrans();
+            $ResultMonograph=$MonographModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultMonograph && $ResultAchi){
+                $MonographModel->commit();
+                $this->success('添加学术专著成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $MonographModel->rollback();
+                $this->error('添加学术专著失败');
+            }
+        }else{
+            $this->error($MonographModel->getError());
+        }
+    }
 }
