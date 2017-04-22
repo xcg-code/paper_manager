@@ -223,7 +223,7 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">学术专著</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">专利</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
@@ -232,72 +232,72 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/monograph_add_db" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/patent_add_db" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">专著题目(中文)</label> 
+																		<label class="col-md-2 control-label">专利国家</label> 
+																		<div class="col-md-8">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="中国专利" checked="checked"> 中国专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="美国专利"> 美国专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="欧洲专利"> 欧洲专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="WIPO专利"> WIPO专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="日本专利"> 日本专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="其他国家专利"> 其他国家专利 </label> 
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">专利名称(中文)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">专著题目(英文)</label> 
+																		<label class="col-md-2 control-label">专利名称(英文)</label> 
 																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">书名</label> 
+																		<label class="col-md-2 control-label">申请(专利)号</label> 
 																		<div class="col-md-8"><input type="text" name="book_name" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">丛书名称</label> 
+																		<label class="col-md-2 control-label">摘要</label> 
+																		<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">关键词(用分号间隔)</label> 
 																		<div class="col-md-8"><input type="text" name="books_name" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">语言</label> 
-																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="中文"> 中文 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="英文"> 英文 </label>
-																		</div>
+																		<label class="col-md-2 control-label">专利权人</label> 
+																		<div class="col-md-8"><input type="text" name="books_name" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">状态</label> 
-																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="已出版"> 已出版 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="待出版"> 待出版 </label>
-																			
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">ISBN号</label> 
+																		<label class="col-md-2 control-label">主(IPC)号</label> 
 																		<div class="col-md-3"><input type="text" name="isbn" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">编辑</label> 
+																		<label class="col-md-1 control-label">CPC号</label> 
 																		<div class="col-md-4"><input type="text" name="editor" class="form-control" value=""></div>
 																	</div>
 																	
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">国家或地区</label> 
+																		<label class="col-md-2 control-label">申请人</label> 
 																		<div class="col-md-3"><input type="text" name="country" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">城市</label> 
+																		<label class="col-md-1 control-label">发证单位</label> 
 																		<div class="col-md-4"><input type="text" name="city" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">起始页码</label>
-																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">————</label> 
-																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">总字数</label> 
-																		<div class="col-md-4"><input type="text" name="words_num" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">专利类别</label> 
+																		<div class="col-md-8">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 发明专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="实用专利"> 实用专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="外观设计"> 外观设计 </label> 
+																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">出版社</label> 
-																		<div class="col-md-2"><input type="text" name="publisher" class="form-control" value=""></div>
-																		<label class="col-md-2 control-label">出版时间(按版权页填写)</label> 
-																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value=""></div>
-																		
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">与项目的关系</label> 
-																		<div class="col-md-2"><input type="text" name="relationship" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">专利状态</label> 
+																		<div class="col-md-8">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="申请"> 申请 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="授权"> 授权 </label> 
+																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">备注</label> 
