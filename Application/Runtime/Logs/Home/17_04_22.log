@@ -4150,3 +4150,250 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001857s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002148s ]
 
+[ 2017-04-22T20:15:29+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_add_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_monograph` (`title_zh`,`title_en`,`book_name`,`books_name`,`language`,`status`,`isbn`,`editor`,`country`,`city`,`start_page`,`end_page`,`words_num`,`publisher`,`publish_date`,`relationship`,`content`,`paper_link`,`user_id`,`id`) VALUES ('测试专著','qwe','测试专著测试专著测试专著','测试专著','中文','已出版',' qwe','张维刚','中国','威海','1','100','100000','人民出版社','2017-04-22','关系关系关系关系','备注测试备注测试备注测试','','2','58fb4960ebb93') [ RunTime:0.0090s ]
+SQL: INSERT INTO `think_achievement` (`achievement_id`,`user_id`,`achievement_type`,`title`,`institute_name`,`publish_time`) VALUES ('58fb4960ebb93','2','Monograph','测试专著','人民出版社','2017-04-22') [ RunTime:0.0084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2017-04-22T20:15:30+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/author_add/achi_id/58fb4960ebb93
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2017-04-22T20:15:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fb20e80fb39'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fb4960ebb93'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001776s ]
+
+[ 2017-04-22T20:15:43+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_show/achi_id/58fb20e80fb39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `think_monograph` WHERE `id` = '58fb20e80fb39' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fb20e80fb39' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000984s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001685s ]
+
+[ 2017-04-22T20:15:45+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_edit/achi_id/58fb20e80fb39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_monograph` WHERE `id` = '58fb20e80fb39' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000581s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 258 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 259 行.
+NOTIC: [8] Use of undefined constant 已出版 - assumed '已出版' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 265 行.
+NOTIC: [8] Use of undefined constant 待出版 - assumed '待出版' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002816s ]
+
+[ 2017-04-22T20:15:48+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_edit_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009964s ]
+ERR: 参数错误或者未定义:achi_id
+
+[ 2017-04-22T20:16:31+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_edit_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+ERR: 参数错误或者未定义:achi_id
+
+[ 2017-04-22T20:16:34+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_edit/achi_id/58fb20e80fb39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_monograph` WHERE `id` = '58fb20e80fb39' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Use of undefined constant 中文 - assumed '中文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 258 行.
+NOTIC: [8] Use of undefined constant 英文 - assumed '英文' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 259 行.
+NOTIC: [8] Use of undefined constant 已出版 - assumed '已出版' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 265 行.
+NOTIC: [8] Use of undefined constant 待出版 - assumed '待出版' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\d0dc63a05fa16c6aaa571b309bd9129c.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002244s ]
+
+[ 2017-04-22T20:16:35+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_edit_db/achi_id/58fb20e80fb39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003618s ]
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_monograph` SET `title_zh`='测试专著',`title_en`='qwe',`book_name`='测试专著',`books_name`='测试专著',`language`='中文',`status`='已出版',`isbn`=' qwe',`editor`='张维刚',`country`='中国',`city`='威海',`start_page`='1',`end_page`='100',`words_num`='100000',`publisher`='人民出版社',`publish_date`='2017-04-22',`relationship`='关系',`content`='备注测试',`paper_link`='' WHERE `id` = '58fb20e80fb39' [ RunTime:0.0039s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fb20e80fb39',`title`='测试专著',`institute_name`='人民出版社',`publish_time`='2017-04-22' WHERE `achievement_id` = '58fb20e80fb39' [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-04-22T20:16:45+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_edit_db/achi_id/58fb20e80fb39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_monograph` SET `title_zh`='测试专著',`title_en`='qwe',`book_name`='测试专著',`books_name`='测试专著测试专著测试专著',`language`='英文',`status`='待出版',`isbn`=' qwe',`editor`='张维刚',`country`='中国',`city`='威海',`start_page`='1',`end_page`='100',`words_num`='100000',`publisher`='人民出版社',`publish_date`='2017-04-22',`relationship`='关系',`content`='备注测试',`paper_link`='' WHERE `id` = '58fb20e80fb39' [ RunTime:0.0007s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fb20e80fb39',`title`='测试专著',`institute_name`='人民出版社',`publish_time`='2017-04-22' WHERE `achievement_id` = '58fb20e80fb39' [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-04-22T20:16:47+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/monograph_show/achi_id/58fb20e80fb39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_monograph` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `think_monograph` WHERE `id` = '58fb20e80fb39' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fb20e80fb39' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+

@@ -232,7 +232,7 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/monograph_add_db" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/monograph_edit_db/achi_id/<?php echo ($MonographInfo["id"]); ?>" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
@@ -310,7 +310,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="form-actions clearfix"> <input type="submit" value="保存并下一步" class="btn btn-primary pull-right"></div>
+														<div class="form-actions clearfix"> <input type="submit" value="保存修改" class="btn btn-primary pull-right"></div>
 													</form>
 												</div>
 

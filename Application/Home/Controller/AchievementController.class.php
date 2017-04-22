@@ -683,4 +683,33 @@ class AchievementController extends Controller {
         $this->assign('MonographInfo', $MonographInfo);
         $this->display();
     }
+
+    //学术专著编辑数据库操作
+    public function monograph_edit_db($achi_id){
+        $MonographModel=D('Monograph');
+        $AchievementModel=D('Achievement');
+        if($MonographModel->create()){
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$MonographModel->title_zh;
+            $AchievementModel->institute_name=$MonographModel->publisher;
+            $AchievementModel->publish_time=$MonographModel->publish_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$MonographModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/monograph_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($MonographModel->getError());
+        }
+    }
 }
