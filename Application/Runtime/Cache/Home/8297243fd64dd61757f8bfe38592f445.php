@@ -210,7 +210,7 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($JournalInfo["title_zh"]); ?></h3>
+										<h3 class="content-title pull-left"><?php echo ($ConferenceInfo["title_zh"]); ?></h3>
 									</div>
 									<div class="description">科研成果详情查看及相关操作</div>
 								</div>
@@ -222,7 +222,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i><?php echo ($JournalInfo["title_zh"]); ?></h4>
+										<h4><i class="fa fa-bars"></i><?php echo ($ConferenceInfo["title_zh"]); ?></h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>

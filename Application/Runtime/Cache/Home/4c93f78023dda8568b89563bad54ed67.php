@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,15 +8,15 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css" >
-	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/themes/default.css" id="skin-switcher" >
-	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
 	
-	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- UNIFORM -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/uniform/css/uniform.default.min.css" />
 	<!-- FONTS -->
 </head>
 <body>
@@ -26,7 +26,7 @@
 			<div class="navbar-brand">
 				<!-- COMPANY LOGO -->
 				<a href="index.html">
-					<img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+					<img src="/PaperManager/Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
 				</a>
 				<!-- /COMPANY LOGO -->
 				<!-- TEAM STATUS FOR MOBILE -->
@@ -45,20 +45,47 @@
 				<!-- /SIDEBAR COLLAPSE -->
 			</div>
 			<!-- NAVBAR LEFT -->
-			<include file="./Public/tpl/header.html" />
+			<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
+	<li class="dropdown">
+		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
+			<i class="fa fa-users"></i>
+			<span class="name">Team Status</span>
+			<i class="fa fa-angle-down"></i>
+		</a>
+	</li>
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-cog"></i>
+			<span class="name">Skins</span>
+			<i class="fa fa-angle-down"></i>
+		</a>
+		<ul class="dropdown-menu skins">
+			<li class="dropdown-title">
+				<span><i class="fa fa-leaf"></i> Theme Skins</span>
+			</li>
+			<li><a href="#" data-skin="default">Subtle (default)</a></li>
+			<li><a href="#" data-skin="night">Night</a></li>
+			<li><a href="#" data-skin="earth">Earth</a></li>
+			<li><a href="#" data-skin="utopia">Utopia</a></li>
+			<li><a href="#" data-skin="nature">Nature</a></li>
+			<li><a href="#" data-skin="graphite">Graphite</a></li>
+		 </ul>
+	</li>
+</ul>
+
 			<!-- /NAVBAR LEFT -->
 			<!-- BEGIN TOP NAVIGATION MENU -->		
 			<ul class="nav navbar-nav pull-right">				
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<li class="dropdown user" id="header-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<img alt="" src="__ROOT__/{$Think.session.pic_path}" />
-						<span class="username">{$Think.session.fullname}</span>
+						<img alt="" src="/PaperManager/<?php echo (session('pic_path')); ?>" />
+						<span class="username"><?php echo (session('fullname')); ?></span>
 						<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu">
 						<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
-						<li><a href="__ROOT__/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
+						<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
 					</ul>
 				</li>
 				<!-- END USER LOGIN DROPDOWN -->
@@ -77,7 +104,7 @@
 					<li class="current">
 						<a href="javascript:void(0);">
 							<span class="image">
-								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
+								<img src="/PaperManager/Public/img/avatars/avatar3.jpg" alt="" />
 							</span>
 							<span class="title">
 								You
@@ -119,7 +146,33 @@
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
-		<include file="./Public/tpl/navbar.html" />
+		<div id="sidebar" class="sidebar">
+					<div class="sidebar-menu nav-collapse">
+						<div class="divide-20"></div>
+						
+						<!-- SIDEBAR MENU -->
+						<ul>
+							<li>
+								<a href="/PaperManager/index.php/Home/Profile/profile">
+								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">个人主页</span>
+								<span class="selected"></span>
+								</a>					
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研成果<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- /SIDEBAR MENU -->
+					</div>
+				</div>
 		<!-- /SIDEBAR -->
 		<div id="main-content">
 			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
@@ -170,7 +223,7 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">会议论文</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">学术专著</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
@@ -179,24 +232,24 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="__URL__/conference_paper_add_db" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/conference_paper_add_db" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">标题(中文)</label> 
+																		<label class="col-md-2 control-label">专著题目(中文)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">标题(英文)</label> 
+																		<label class="col-md-2 control-label">专著题目(英文)</label> 
 																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">摘要</label> 
-																		<div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
+																		<label class="col-md-2 control-label">书名</label> 
+																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">关键词(用分号隔开)</label> 
+																		<label class="col-md-2 control-label">丛书名称</label> 
 																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
@@ -207,46 +260,20 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">类型</label> 
+																	<label class="col-md-2 control-label">状态</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="邀请会议论文"> 邀请会议论文 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="推荐会议论文"> 推荐会议论文 </label>
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="其他会议论文"> 其他会议论文 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="已出版"> 已出版 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="待出版"> 待出版 </label>
+																			
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议名称</label> 
+																		<label class="col-md-2 control-label">ISBN号</label> 
 																		<div class="col-md-3"><input type="text" name="conference_name" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">会议地址</label> 
+																		<label class="col-md-1 control-label">编辑</label> 
 																		<div class="col-md-4"><input type="text" name="conference_address" class="form-control" value=""></div>
 																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议组织者</label> 
-																		<div class="col-md-8"><input type="text" name="organizer" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议开始日期</label> 
-																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
-																		<label class="col-md-2 control-label">会议结束日期</label> 
-																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
-																		
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">发表日期</label> 
-																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">起止页码</label>
-																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">————</label> 
-																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">论文类别</label> 
-																		<div class="col-md-4">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="特邀报告"> 特邀报告 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="分组报告"> 分组报告 </label>
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="sub_type" value="墙报展示"> 墙报展示 </label>
-																		</div>
-																	</div>
+																	
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">国家或地区</label> 
 																		<div class="col-md-3"><input type="text" name="country" class="form-control" value=""></div>
@@ -254,42 +281,23 @@
 																		<div class="col-md-4"><input type="text" name="city" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">DOI</label> 
-																		<div class="col-md-3"><input type="text" name="doi" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">文章号</label> 
-																		<div class="col-md-4"><input type="text" name="paper_num" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">起始页码</label>
+																		<div class="col-md-1"><input type="text" name="start_page" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">————</label> 
+																		<div class="col-md-1"><input type="text" name="end_page" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">总字数</label> 
+																		<div class="col-md-4"><input type="text" name="conference_address" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">收录情况</label> 
-																		<div class="col-md-8">
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="SCI"> SCI </label> 
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="SSCI"> SSCI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="EI"> EI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="CSSCI"> CSSCI </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="北大中文核心期刊"> 北大中文核心期刊 </label>
-																			<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="inbox_status[]" value="其他"> 其他 </label>
-																		</div>
+																		<label class="col-md-2 control-label">出版社</label> 
+																		<div class="col-md-2"><input type="text" name="conference_address" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">出版时间(按版权页填写)</label> 
+																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
+																		
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">引用次数(ISI)</label> 
-																		<div class="col-md-8"><input type="text" name="refer_num" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">是否标注</label> 
-																		<div class="col-md-8"><select class="form-control" name="mark">
-																			<option></option>
-																			<option>未标注</option>
-																			<option>第一标注</option>
-																			<option>第二标注</option>
-																			<option>第三标注</option>
-																			<option>第四标注</option>
-																			<option>第五标注</option>
-																			<option>第六标注</option>
-																			<option>第七标注</option>
-																			<option>第八标注</option>
-																			<option>第九标注</option>
-																			<option>第十标注</option>
-																		</select></div>
+																		<label class="col-md-2 control-label">与项目的关系</label> 
+																		<div class="col-md-2"><input type="text" name="publish_date" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">备注</label> 
@@ -328,34 +336,34 @@
 	<!-- JAVASCRIPTS -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<!-- JQUERY -->
-	<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery/jquery-2.0.3.min.js"></script>
 	<!-- JQUERY UI-->
-	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
+	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
 	
 
 	<!-- DATE RANGE PICKER -->
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
+	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 	<!-- EASY PIE CHART -->
-	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
+	<script src="/PaperManager/Public/js/jquery-easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/easypiechart/jquery.easypiechart.min.js"></script>
 	<!-- SPARKLINES -->
-	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/sparklines/jquery.sparkline.min.js"></script>
 	<!-- UNIFORM -->
-	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
 	<!-- COOKIE -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
-	<script src="__PUBLIC__/js/script.js"></script>
+	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
 		var count=0;
 		jQuery(document).ready(function() {		

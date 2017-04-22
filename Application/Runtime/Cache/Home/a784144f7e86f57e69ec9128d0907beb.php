@@ -253,7 +253,7 @@
 												</a>
 											</div>
 											<div class="col-md-3">
-												<a class="btn btn-primary btn-icon input-block-level" href="javascript:void(0);">
+												<a class="btn btn-primary btn-icon input-block-level" href="/PaperManager/index.php/Home/Achievement/monograph_add">
 													<i class="fa fa-book fa-2x"></i>
 													<div>学术专著</div>
 												</a>
