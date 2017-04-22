@@ -672,4 +672,15 @@ class AchievementController extends Controller {
         $this->assign('FilePath', $FilePath); 
         $this->display();
     }
+
+    //显示学术专著编辑页面
+    public function monograph_edit($achi_id)
+    {
+        parent::is_login();
+        $MonographModel=D('Monograph');
+        $Condition['id']=$achi_id;
+        $MonographInfo=$MonographModel->where($Condition)->find();
+        $this->assign('MonographInfo', $MonographInfo);
+        $this->display();
+    }
 }
