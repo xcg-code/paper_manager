@@ -722,4 +722,10 @@ class AchievementController extends Controller {
         delete_all_info($achi_id);
         $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
     }
+
+    //显示专利添加页面
+    public function patent_add(){
+        parent::is_login();
+        $this->display();
+    }
 }
