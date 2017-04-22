@@ -651,4 +651,25 @@ class AchievementController extends Controller {
             $this->error($MonographModel->getError());
         }
     }
+
+    //显示学术专著详情页面
+    public function monograph_show($achi_id){
+        parent::is_login();
+        $MonographModel=M('Monograph');
+        $Condition['id']=$achi_id;
+        $MonographInfo=$MonographModel->where($Condition)->find();
+        //添加其他详细信息
+        $MonographInfo['achievement_type']='学术专著';
+        $this->assign('MonographInfo', $MonographInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $MonographInfo['id']);
+        $this->assign('edit','monograph_edit');
+        $this->assign('delete','monograph_delete');
+        $this->assign('show','monograph_show');
+
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
 }
