@@ -534,4 +534,25 @@ class AchievementController extends Controller {
             $this->error($ConferenceModel->getError());
         }
     }
+
+    //显示会议论文详情页
+    public function conference_paper_show($achi_id){
+        parent::is_login();
+        $ConferenceModel=M('Conferencepaper');
+        $Condition['id']=$achi_id;
+        $ConferenceInfo=$ConferenceModel->where($Condition)->find();
+        //添加其他详细信息
+        $ConferenceInfo['achievement_type']='会议论文';
+        $this->assign('ConferenceInfo', $ConferenceInfo);
+        //添加相关操作信息
+        $this->assign('id', $ConferenceInfo['id']);
+        $this->assign('edit','conference_paper_edit');
+        $this->assign('delete','conference_paper_delete');
+        $this->assign('show','conference_paper_show');
+
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
 }
