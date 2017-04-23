@@ -157,9 +157,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果</h3>
+										<h3 class="content-title pull-left">修改科研成果</h3>
 									</div>
-									<div class="description">手动添加科研成果</div>
+									<div class="description">修改科研成果</div>
 								</div>
 							</div>
 						</div>
@@ -179,77 +179,77 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="__URL__/conference_report_add_db" method="post">
+													<form class="form-horizontal" action="__URL__/conference_report_edit_db/achi_id/{$ReportInfo.id}" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
 																	<label class="col-md-2 control-label">报告类型</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="特邀报告"> 特邀报告 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="分组报告"> 分组报告 </label>
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="墙报展示"> 墙报展示 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="特邀报告" <if condition="$ReportInfo.report_type eq 特邀报告">checked</if>> 特邀报告 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="分组报告" <if condition="$ReportInfo.report_type eq 分组报告">checked</if>> 分组报告 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="墙报展示" <if condition="$ReportInfo.report_type eq 墙报展示">checked</if>> 墙报展示 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
 																	<label class="col-md-2 control-label">会议类型</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国际学术会议"> 国际学术会议 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国内学术会议"> 国内学术会议 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国际学术会议" <if condition="$ReportInfo.conference_type eq 国际学术会议">checked</if>> 国际学术会议 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国内学术会议" <if condition="$ReportInfo.conference_type eq 国内学术会议">checked</if>> 国内学术会议 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">报告名称(中文)</label> 
-																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value="{$ReportInfo.title_zh}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">报告名称(英文)</label> 
-																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value="{$ReportInfo.title_en}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">报告摘要</label> 
-																		<div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
+																		<div class="col-md-8"><textarea name="abstract" class="form-control">{$ReportInfo.abstract}</textarea></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">关键词(用分号隔开)</label> 
-																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value="{$ReportInfo.keywords}"></div>
 																	</div>
 																	
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">会议名称(中文)</label> 
-																		<div class="col-md-3"><input type="text" name="conference_zh" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="conference_zh" class="form-control" value="{$ReportInfo.conference_zh}"></div>
 																		<label class="col-md-1 control-label">会议名称(英文)</label> 
-																		<div class="col-md-4"><input type="text" name="conference_en" class="form-control" value=""></div>
+																		<div class="col-md-4"><input type="text" name="conference_en" class="form-control" value="{$ReportInfo.conference_en}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">会议地址</label> 
-																		<div class="col-md-8"><input type="text" name="address" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="address" class="form-control" value="{$ReportInfo.address}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">国家或地区</label> 
-																		<div class="col-md-3"><input type="text" name="country" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="country" class="form-control" value="{$ReportInfo.country}"></div>
 																		<label class="col-md-1 control-label">城市</label> 
-																		<div class="col-md-4"><input type="text" name="city" class="form-control" value=""></div>
+																		<div class="col-md-4"><input type="text" name="city" class="form-control" value="{$ReportInfo.city}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">会议开始日期</label> 
-																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
+																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value="{$ReportInfo.start_date}"></div>
 																		<label class="col-md-2 control-label">会议结束日期</label> 
-																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
+																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value="{$ReportInfo.end_date}"></div>
 																		
 																	</div>									
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">备注</label> 
-																		<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
+																		<div class="col-md-8"><textarea name="content" class="form-control">{$ReportInfo.content}</textarea></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">全文链接</label> 
-																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
+																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value="{$ReportInfo.paper_link}"></div>
 																	</div>
 																</div>
 															</div>
 														</div>
-														<div class="form-actions clearfix"> <input type="submit" value="保存并下一步" class="btn btn-primary pull-right"></div>
+														<div class="form-actions clearfix"> <input type="submit" value="保存修改" class="btn btn-primary pull-right"></div>
 													</form>
 												</div>
 

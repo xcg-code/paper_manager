@@ -4064,3 +4064,1730 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
 
+[ 2017-04-23T17:22:54+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2017-04-23T17:23:49+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/achievement_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2017-04-23T17:23:51+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2017-04-23T17:24:01+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001433s ]
+
+[ 2017-04-23T17:28:14+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2017-04-23T17:29:22+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+ERR: 非法操作:conference_report_add_db
+
+[ 2017-04-23T17:29:39+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+ERR: 非法操作:conference_report_add_db
+
+[ 2017-04-23T17:29:59+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_add_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_conferencereport` (`report_type`,`conference_type`,`title_zh`,`title_en`,`abstract`,`keywords`,`conference_zh`,`conference_en`,`address`,`country`,`city`,`start_date`,`end_date`,`content`,`paper_link`,`user_id`,`id`) VALUES ('特邀报告','国际学术会议','测试报告','reportTest','Report Abstract','关键词','IEEE中国会议','IEEE中国会议English','No.2 West Wenhua Road,, Harbin Institute of Technology, 山东省威海市环翠区文化西路2号哈工大第九公寓115室','中国','Weihai','2017-04-04','2017-04-23','备注','链接','2','58fc7417e0c24') [ RunTime:0.0008s ]
+SQL: INSERT INTO `think_achievement` (`achievement_id`,`user_id`,`achievement_type`,`title`,`institute_name`,`publish_time`) VALUES ('58fc7417e0c24','2','ConferenceReport','测试报告',NULL,'2017-04-04') [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2017-04-23T17:30:01+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/author_add/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2017-04-23T17:30:03+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/author_add_db/achi_id/58fc7417e0c24/type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-04-23T17:30:09+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+
+[ 2017-04-23T17:30:11+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/project_add/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003166s ]
+
+[ 2017-04-23T17:30:13+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/project_add_db/achi_id/58fc7417e0c24/type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001502s ]
+
+[ 2017-04-23T17:30:14+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2017-04-23T17:30:22+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+ERR: 非法操作:conference_report_show
+
+[ 2017-04-23T17:30:55+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+ERR: 非法操作:conference_report_show
+
+[ 2017-04-23T17:32:07+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/patent_show/achi_id/58fc23e9199ef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_patent` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `think_patent` WHERE `id` = '58fc23e9199ef' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc23e9199ef' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000747s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002539s ]
+
+[ 2017-04-23T17:34:10+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.337220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.337582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008402s ]
+
+[ 2017-04-23T17:34:59+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.348999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.349233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2017-04-23T17:35:14+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.155346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.155497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2017-04-23T17:35:56+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2017-04-23T17:35:59+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001724s ]
+
+[ 2017-04-23T17:36:13+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.183865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.184069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003581s ]
+
+[ 2017-04-23T17:36:14+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002312s ]
+
+[ 2017-04-23T17:36:15+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001569s ]
+
+[ 2017-04-23T17:36:16+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2017-04-23T17:36:20+08:00 ] ::1 /PaperManager/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-04-23T17:36:21+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2017-04-23T17:36:30+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'wgzhang' AND `password` = '1a224d6875ff953e9d9b9d0258c371e3' LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2017-04-23T17:36:31+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_area` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_area` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002102s ]
+
+[ 2017-04-23T17:36:34+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001596s ]
+
+[ 2017-04-23T17:36:35+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 213 行.
+NOTIC: [8] Undefined variable: ReportInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 225 行.
+NOTIC: [8] Undefined variable: edit C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 249 行.
+NOTIC: [8] Undefined variable: delete C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 250 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 251 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: show C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 252 行.
+NOTIC: [8] Undefined variable: FilePath C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 253 行.
+NOTIC: [8] Undefined variable: id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 254 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2017-04-23T17:36:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/patent_show/achi_id/58fc23e9199ef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_patent` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_patent` WHERE `id` = '58fc23e9199ef' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc23e9199ef' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000581s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2017-04-23T17:37:01+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 285 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 289 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 293 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 297 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 301 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 305 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 309 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 313 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 317 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 321 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 325 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 329 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 333 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 337 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 341 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 345 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 349 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 353 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 357 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 361 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 365 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 370 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 374 行.
+NOTIC: [8] Undefined variable: ConferenceInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\1922f748c5b037655c1837c1ed8a2e84.php 第 378 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001709s ]
+
+[ 2017-04-23T17:41:02+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2017-04-23T17:41:39+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2017-04-23T17:44:21+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004202s ]
+
+[ 2017-04-23T17:45:20+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.176298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.176538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007626s ]
+
+[ 2017-04-23T17:46:54+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2017-04-23T17:47:25+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2017-04-23T17:53:14+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2017-04-23T17:53:32+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit_db/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_conferencereport` SET `report_type`='分组报告',`conference_type`='国内学术会议',`title_zh`='测试报告',`title_en`='reportTest',`abstract`='Report Abstract',`keywords`='关键词',`conference_zh`='IEEE中国会议',`conference_en`='IEEE中国会议English',`address`='No.2 West Wenhua Road,, Harbin Institute of Technology, 山东省威海市环翠区文化西路2号哈工大第九公寓115室',`country`='中国',`city`='Weihai',`start_date`='2017-04-04',`end_date`='2017-04-23',`content`='备注修改',`paper_link`='链接修改' WHERE `id` = '58fc7417e0c24' [ RunTime:0.0010s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fc7417e0c24',`title`='测试报告',`institute_name`='IEEE中国会议',`publish_time`='2017-04-04' WHERE `achievement_id` = '58fc7417e0c24' [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002357s ]
+
+[ 2017-04-23T17:53:34+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000598s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2017-04-23T17:53:44+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2017-04-23T17:53:55+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.191686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014005s ]
+
+[ 2017-04-23T17:54:00+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2017-04-23T17:54:05+08:00 ] ::1 /PaperManager/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2017-04-23T17:54:06+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000676s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006858s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.169183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2017-04-23T19:09:42+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019804s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'wgzhang' AND `password` = '1a224d6875ff953e9d9b9d0258c371e3' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011225s ]
+
+[ 2017-04-23T19:09:43+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_area` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_area` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-04-23T19:09:46+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0716s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.258054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.258322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2017-04-23T19:09:48+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.247755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.249486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023148s ]
+
+[ 2017-04-23T19:09:50+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_edit/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+NOTIC: [8] Use of undefined constant 特邀报告 - assumed '特邀报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 242 行.
+NOTIC: [8] Use of undefined constant 分组报告 - assumed '分组报告' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 243 行.
+NOTIC: [8] Use of undefined constant 墙报展示 - assumed '墙报展示' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 244 行.
+NOTIC: [8] Use of undefined constant 国际学术会议 - assumed '国际学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 250 行.
+NOTIC: [8] Use of undefined constant 国内学术会议 - assumed '国内学术会议' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\e81c5b2bd8327dadab8c9bc5a0bf9b3a.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.249757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.250169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002789s ]
+
+[ 2017-04-23T19:09:55+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/no_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-04-23T19:10:01+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/author_show/achi_id/58fc7417e0c24/page_type/conference_report_show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000593s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2017-04-23T19:11:23+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_show/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2017-04-23T19:11:26+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/conference_report_delete/achi_id/58fc7417e0c24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `think_conferencereport` [ RunTime:0.0033s ]
+SQL: DELETE FROM `think_conferencereport` WHERE `id` = '58fc7417e0c24' [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0026s ]
+SQL: DELETE FROM `think_author` WHERE `achievement_id` = '58fc7417e0c24' [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fc7417e0c24'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0027s ]
+SQL: DELETE FROM `think_project` WHERE `achievement_id` = '58fc7417e0c24' [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0018s ]
+SQL: DELETE FROM `think_achievement` WHERE `achievement_id` = '58fc7417e0c24' [ RunTime:0.0058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2017-04-23T19:11:27+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000994s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2017-04-23T19:11:29+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+

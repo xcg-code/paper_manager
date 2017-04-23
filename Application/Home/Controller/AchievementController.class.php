@@ -840,4 +840,111 @@ class AchievementController extends Controller {
         delete_all_info($achi_id);
         $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
     }
+
+    //显示会议报告添加功能
+    public function confernece_report_add(){
+        parent::is_login();
+        $this->display();
+    }
+
+    public function conference_report_add_db(){
+        $ConferencereportModel=D('Conferencereport');
+        $AchievementModel=D('Achievement');
+        if($ConferencereportModel->create()){
+            $ConferencereportModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $ConferencereportModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='ConferenceReport';
+            $AchievementModel->title=$ConferencereportModel->title_zh;
+            $AchievementModel->institute_name=$ConferencereportModel->conference_zh;
+            $AchievementModel->publish_time=$ConferencereportModel->start_date;
+
+            //sql事务
+            $ConferencereportModel->startTrans();
+            $ResultConferencereport=$ConferencereportModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultConferencereport && $ResultAchi){
+                $ConferencereportModel->commit();
+                $this->success('添加会议报告成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $ConferencereportModel->rollback();
+                $this->error('添加会议报告失败');
+            }
+        }else{
+            $this->error($ConferencereportModel->getError());
+        }
+    }
+
+    //显示会议报告详情页面
+    public function conference_report_show($achi_id){
+        parent::is_login();
+        $ConferencereportModel=M('Conferencereport');
+        $Condition['id']=$achi_id;
+        $ReportInfo=$ConferencereportModel->where($Condition)->find();
+        //添加其他详细信息
+        $ReportInfo['achievement_type']='专利';
+        $this->assign('ReportInfo', $ReportInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $ReportInfo['id']);
+        $this->assign('edit','conference_report_edit');
+        $this->assign('delete','conference_report_delete');
+        $this->assign('show','conference_report_show');
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
+
+    //显示会议报告修改页面
+    public function conference_report_edit($achi_id){
+        parent::is_login();
+        $ConferencereportModel=D('Conferencereport');
+        $Condition['id']=$achi_id;
+        $ReportInfo=$ConferencereportModel->where($Condition)->find();
+        $this->assign('ReportInfo', $ReportInfo);
+        $this->display();
+    }
+
+    //会议报告修改数据库操作
+    public function conference_report_edit_db($achi_id){
+        $ConferencereportModel=D('Conferencereport');
+        $AchievementModel=D('Achievement');
+        if($ConferencereportModel->create()){
+
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$ConferencereportModel->title_zh;
+            $AchievementModel->institute_name=$ConferencereportModel->conference_zh;
+            $AchievementModel->publish_time=$ConferencereportModel->start_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$ConferencereportModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/conference_report_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($ConferencereportModel->getError());
+        }
+    }
+
+    //会议报告删除
+    public function conference_report_delete($achi_id){
+        $ConferencereportModel=M('Conferencereport');
+        $Condition['id']=$achi_id;
+        $ConferencereportModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
 }

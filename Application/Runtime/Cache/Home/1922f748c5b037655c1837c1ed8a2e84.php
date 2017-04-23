@@ -210,9 +210,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果</h3>
+										<h3 class="content-title pull-left"><?php echo ($ReportInfo["title_zh"]); ?></h3>
 									</div>
-									<div class="description">手动添加科研成果</div>
+									<div class="description">科研成果详情查看及相关操作</div>
 								</div>
 							</div>
 						</div>
@@ -220,90 +220,133 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<!-- BOX -->
-								<div class="box border">
+								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">会议报告</span></h4>
+										<h4><i class="fa fa-bars"></i><?php echo ($ReportInfo["title_zh"]); ?></h4>
+										<div class="tools hidden-xs">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
 									</div>
 									<div class="box-body">
-										<div class="tabbable header-tabs">
-											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">基本信息</span></a></li>
-											</ul>
-											<div class="tab-content">
-												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/conference_report_add_db" method="post">
-														<div class="row">
-															<div class="col-md-12">
-																<div class="box-body">
-																	<div class="form-group">
-																	<label class="col-md-2 control-label">报告类型</label> 
-																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="特邀报告"> 特邀报告 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="分组报告"> 分组报告 </label>
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="墙报展示"> 墙报展示 </label>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																	<label class="col-md-2 control-label">会议类型</label> 
-																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国际学术会议"> 国际学术会议 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国内学术会议"> 国内学术会议 </label>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">报告名称(中文)</label> 
-																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">报告名称(英文)</label> 
-																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">报告摘要</label> 
-																		<div class="col-md-8"><textarea name="abstract" class="form-control"></textarea></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">关键词(用分号隔开)</label> 
-																		<div class="col-md-8"><input type="text" name="keywords" class="form-control" value=""></div>
-																	</div>
-																	
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议名称(中文)</label> 
-																		<div class="col-md-3"><input type="text" name="conference_zh" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">会议名称(英文)</label> 
-																		<div class="col-md-4"><input type="text" name="conference_en" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议地址</label> 
-																		<div class="col-md-8"><input type="text" name="address" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">国家或地区</label> 
-																		<div class="col-md-3"><input type="text" name="country" class="form-control" value=""></div>
-																		<label class="col-md-1 control-label">城市</label> 
-																		<div class="col-md-4"><input type="text" name="city" class="form-control" value=""></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议开始日期</label> 
-																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
-																		<label class="col-md-2 control-label">会议结束日期</label> 
-																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
-																		
-																	</div>									
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">备注</label> 
-																		<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">全文链接</label> 
-																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
-																	</div>
-																</div>
-															</div>
+										<div class="row">
+											<div class="col-md-3">
+												<div class="list-group">
+												<div class="list-group-item profile-details">
+													<h4>相关操作</h4>
+												</div>
+
+												<a href="/PaperManager/index.php/Home/Achievement/<?php echo ($edit); ?>/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/<?php echo ($delete); ?>/achi_id/<?php echo ($id); ?>" onclick="return confirm('确定要删除该成果吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
+												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
+												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
+												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
+												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
+												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看该类别所有成果</a>
+												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看所属项目所有成果</a>
+												</div>			
+											</div>
+											<div class="col-md-9">
+
+												<div class="box border blue">
+													<div class="box-title">
+														<h4><i class="fa fa-table"></i>详细信息</h4>
+														<div class="tools">
+															<a href="#box-config" data-toggle="modal" class="config">
+																<i class="fa fa-cog"></i>
+															</a>
+															<a href="javascript:;" class="reload">
+																<i class="fa fa-refresh"></i>
+															</a>
+															<a href="javascript:;" class="collapse">
+																<i class="fa fa-chevron-up"></i>
+															</a>
+															<a href="javascript:;" class="remove">
+																<i class="fa fa-times"></i>
+															</a>
 														</div>
-														<div class="form-actions clearfix"> <input type="submit" value="保存并下一步" class="btn btn-primary pull-right"></div>
-													</form>
+													</div>
+													<div class="box-body">
+														<table class="table table-striped">
+															<tbody>
+																<tr>
+																	<td style="width: 15%;text-align:center">成果类别</td>
+																	<td><?php echo ($ReportInfo["achievement_type"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">报告类型</td>
+																	<td><?php echo ($ReportInfo["report_type"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">会议类型</td>
+																	<td><?php echo ($ReportInfo["conference_type"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">标题(中文)</td>
+																	<td><?php echo ($ReportInfo["title_zh"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">标题(英文)</td>
+																	<td><?php echo ($ReportInfo["title_en"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">摘要</td>
+																	<td><?php echo ($ReportInfo["abstract"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">关键词</td>
+																	<td><?php echo ($ReportInfo["keywords"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">会议名称(中文)</td>
+																	<td><?php echo ($ReportInfo["conference_zh"]); ?></td>
+																</tr>
+																<tr>
+																<td style="width: 15%;text-align:center">会议名称(英文)</td>
+																	<td><?php echo ($ReportInfo["conference_en"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">会议地址</td>
+																	<td><?php echo ($ReportInfo["address"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">国家或地区</td>
+																	<td><?php echo ($ReportInfo["country"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">城市</td>
+																	<td><?php echo ($ReportInfo["city"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">会议开始日期</td>
+																	<td><?php echo ($ReportInfo["start_date"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">会议结束日期</td>
+																	<td><?php echo ($ReportInfo["end_date"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">备注</td>
+																	<td><?php echo ($ReportInfo["content"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">全文链接</td>
+																	<td><?php echo ($ReportInfo["paper_link"]); ?></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 												</div>
 
 											</div>
@@ -322,7 +365,6 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -357,7 +399,6 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
-		var count=0;
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
