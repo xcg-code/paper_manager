@@ -760,4 +760,25 @@ class AchievementController extends Controller {
             $this->error($PatentModel->getError());
         }
     }
+
+    //显示专利详情页面
+    public function patent_show($achi_id){
+        parent::is_login();
+        $PatentModel=M('Patent');
+        $Condition['id']=$achi_id;
+        $PatentInfo=$PatentModel->where($Condition)->find();
+        //添加其他详细信息
+        $PatentInfo['achievement_type']='专利';
+        $this->assign('PatentInfo', $PatentInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $PatentInfo['id']);
+        $this->assign('edit','patent_edit');
+        $this->assign('delete','patent_delete');
+        $this->assign('show','patent_show');
+
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
 }
