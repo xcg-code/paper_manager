@@ -239,12 +239,12 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">专利国家</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="中国专利" checked="checked"> 中国专利 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="美国专利"> 美国专利 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="欧洲专利"> 欧洲专利 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="WIPO专利"> WIPO专利 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="日本专利"> 日本专利 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="其他国家专利"> 其他国家专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="中国专利" checked="checked" id="chinese"> 中国专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="美国专利" id="usa"> 美国专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="欧洲专利" id="europe"> 欧洲专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="WIPO专利" id="wipo"> WIPO专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="日本专利" id="japan"> 日本专利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="其他国家专利" id="other_country"> 其他国家专利 </label> 
 																		</div>
 																	</div>
 																	<div class="form-group">
@@ -284,7 +284,7 @@
 																		<label class="col-md-1 control-label">发证单位</label> 
 																		<div class="col-md-4"><input type="text" name="city" class="form-control" value=""></div>
 																	</div>
-																	<div class="form-group">
+																	<div class="form-group" id="patent_type">
 																		<label class="col-md-2 control-label">专利类别</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 发明专利 </label> 
@@ -331,6 +331,44 @@
 			</div>
 		</div>
 
+		<div class="form-group" id="chinese_info" hidden="true">
+			<label class="col-md-2 control-label">专利类别</label> 
+			<div class="col-md-8">
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 发明专利 </label> 
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="实用专利"> 实用专利 </label> 
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="外观设计"> 外观设计 </label> 
+			</div>
+		</div>
+
+		<div class="form-group" id="usa_info" hidden="true">
+			<label class="col-md-2 control-label">专利类别</label> 
+			<div class="col-md-8">
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 发明专利 </label> 
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="实用专利"> 外观设计 </label> 
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="外观设计"> 植物专利 </label> 
+			</div>
+		</div>
+
+		<div class="form-group" id="europe_info" hidden="true">
+			<label class="col-md-2 control-label">专利类别</label> 
+			<div class="col-md-8">
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 发明专利 </label> 
+			</div>
+		</div>
+
+		<div class="form-group" id="wipo_info" hidden="true">
+			<label class="col-md-2 control-label">专利类别</label> 
+			<div class="col-md-8">
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 发明专利 </label> 
+				<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="发明专利"> 实用新型 </label> 
+			</div>
+		</div>
+
+		<div class="form-group" id="other_info" hidden="true">
+			<label class="col-md-2 control-label">专利类别</label> 
+			<div class="col-md-4"><input type="text" name="isbn" class="form-control" value=""></div>
+		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -369,6 +407,36 @@
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
+			$("#chinese").click(function(){
+				x=document.getElementById("patent_type");  // 找到元素
+				var i=$("#chinese_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+  			});
+			$("#usa").click(function(){
+				x=document.getElementById("patent_type");  // 找到元素
+				var i=$("#usa_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+  			});
+  			$("#europe").click(function(){
+				x=document.getElementById("patent_type");  // 找到元素
+				var i=$("#europe_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+  			});
+  			$("#wipo").click(function(){
+				x=document.getElementById("patent_type");  // 找到元素
+				var i=$("#wipo_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+  			});
+  			$("#japan").click(function(){
+				x=document.getElementById("patent_type");  // 找到元素
+				var i=$("#chinese_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+  			});
+  			$("#other_country").click(function(){
+				x=document.getElementById("patent_type");  // 找到元素
+				var i=$("#other_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+  			});
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->
