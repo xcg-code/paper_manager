@@ -806,7 +806,7 @@ class AchievementController extends Controller {
             $AchievementModel->achievement_id=$achi_id;
             $AchievementModel->title=$PatentModel->title_zh;
             $AchievementModel->institute_name=$PatentModel->publisher;
-            $AchievementModel->publish_time=$PatentModel->publish_date;
+            $AchievementModel->publish_time=$PatentModel->apply_date;
             $ConditionJ['id']=$achi_id;
             $ConditionA['achievement_id']=$achi_id;
             //SQL操作
@@ -824,5 +824,15 @@ class AchievementController extends Controller {
         }else{
             $this->error($PatentModel->getError());
         }
+    }
+
+    //专利信息删除功能
+    public function patent_delete($achi_id){
+        $PatentModel=M('Patent');
+        $Condition['id']=$achi_id;
+        $PatentModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
     }
 }
