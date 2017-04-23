@@ -1617,6 +1617,9 @@ function get_main_file_path($achi_id){
     $Condition['type']='Main';
     $FileInfo=$FileModel->where($Condition)->find();
     $FilePath="Uploads/UserMainFile/".$FileInfo['path'];
+    if($FilePath=="Uploads/UserMainFile/"){
+        $FilePath="index.php/Home/Achievement/no_file";
+    }
     return $FilePath;
 }
 

@@ -130,6 +130,11 @@ class AchievementController extends Controller {
         }
     }
 
+    //无文件错误页面显示
+    public function no_file(){
+        $this->error('未上传全文电子文档');
+    }
+
 	//显示添加作者信息页面
     public function author_add($achi_id){
     	parent::is_login();
