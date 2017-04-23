@@ -728,4 +728,36 @@ class AchievementController extends Controller {
         parent::is_login();
         $this->display();
     }
+
+    //添加专利信息数据库操作
+    public function patent_add_db(){
+        $PatentModel=D('Patent');
+        $AchievementModel=D('Achievement');
+        if($PatentModel->create()){
+            $PatentModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $PatentModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='Patent';
+            $AchievementModel->title=$PatentModel->title_zh;
+            $AchievementModel->institute_name=$PatentModel->publisher;
+            $AchievementModel->publish_time=$PatentModel->apply_date;
+
+            //sql事务
+            $PatentModel->startTrans();
+            $ResultPatent=$PatentModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultPatent && $ResultAchi){
+                $PatentModel->commit();
+                $this->success('添加专利成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $PatentModel->rollback();
+                $this->error('添加专利失败');
+            }
+        }else{
+            $this->error($PatentModel->getError());
+        }
+    }
 }
