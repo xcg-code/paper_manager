@@ -979,7 +979,7 @@ class AchievementController extends Controller {
                 $this->success('添加标准成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
             }else{
                 $StandardModel->rollback();
-                $this->error('添加标准报告失败');
+                $this->error('添加标准失败');
             }
         }else{
             $this->error($StandardModel->getError());
@@ -1054,6 +1054,113 @@ class AchievementController extends Controller {
         $StandardModel=M('Standard');
         $Condition['id']=$achi_id;
         $StandardModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
+
+    //显示软件著作权新增页面
+    public function software_add(){
+        parent::is_login();
+        $this->display();
+    }
+
+    //新增软件著作权数据库操作
+    public function software_add_db(){
+        $SoftwareModel=D('Software');
+        $AchievementModel=D('Achievement');
+        if($SoftwareModel->create()){
+            $SoftwareModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $SoftwareModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='Software';
+            $AchievementModel->title=$SoftwareModel->title_zh;
+            $AchievementModel->institute_name=$SoftwareModel->reg_num;
+            $AchievementModel->publish_time=$SoftwareModel->over_date;
+
+            //sql事务
+            $SoftwareModel->startTrans();
+            $ResultSoftware=$SoftwareModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultSoftware && $ResultAchi){
+                $SoftwareModel->commit();
+                $this->success('添加软件著作权成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $SoftwareModel->rollback();
+                $this->error('添加软件著作权失败');
+            }
+        }else{
+            $this->error($SoftwareModel->getError());
+        }
+    }
+
+    //软件著作权详情显示
+    public function software_show($achi_id){
+        parent::is_login();
+        $SoftwareModel=M('Software');
+        $Condition['id']=$achi_id;
+        $SoftwareInfo=$SoftwareModel->where($Condition)->find();
+        //添加其他详细信息
+        $SoftwareInfo['achievement_type']='软件著作权';
+        $this->assign('SoftwareInfo', $SoftwareInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $SoftwareInfo['id']);
+        $this->assign('edit','software_edit');
+        $this->assign('delete','software_delete');
+        $this->assign('show','software_show');
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
+
+    //软件著作权编辑页面
+    public function software_edit($achi_id){
+        parent::is_login();
+        $SoftwareModel=D('Software');
+        $Condition['id']=$achi_id;
+        $SoftwareInfo=$SoftwareModel->where($Condition)->find();
+        $this->assign('SoftwareInfo', $SoftwareInfo);
+        $this->display();
+    }
+
+    //软件著作权修改页面
+    public function software_edit_db($achi_id){
+        $SoftwareModel=D('Software');
+        $AchievementModel=D('Achievement');
+        if($SoftwareModel->create()){
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$SoftwareModel->title_zh;
+            $AchievementModel->institute_name=$SoftwareModel->reg_num;
+            $AchievementModel->publish_time=$SoftwareModel->over_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$SoftwareModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/software_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($SoftwareModel->getError());
+        }
+    }
+
+    //软件著作权删除
+    public function software_delete($achi_id){
+        $SoftwareModel=M('Software');
+        $Condition['id']=$achi_id;
+        $SoftwareModel->where($Condition)->delete();
         //删除相关作者，文件，所属项目，成果汇总信息
         delete_all_info($achi_id);
         $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');

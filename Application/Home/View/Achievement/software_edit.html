@@ -157,9 +157,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">{$StandardInfo.title_zh}</h3>
+										<h3 class="content-title pull-left">修改科研成果</h3>
 									</div>
-									<div class="description">科研成果详情查看及相关操作</div>
+									<div class="description">修改科研成果</div>
 								</div>
 							</div>
 						</div>
@@ -167,95 +167,72 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>{$StandardInfo.title_zh}</h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">软件著作权</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<include file="./Public/tpl/sub_nav.html" />	
-											</div>
-											<div class="col-md-9">
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">基本信息</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<form class="form-horizontal" action="__URL__/software_edit_db/achi_id/{$SoftwareInfo.id}" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">软件名称(中文)</label> 
+																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value="{$SoftwareInfo.title_zh}"></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">软件名称(英文)</label> 
+																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value="{$SoftwareInfo.title_en}"></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">登记号</label> 
+																		<div class="col-md-8"><input type="text" name="reg_num" class="form-control" value="{$SoftwareInfo.reg_num}"></div>
+																	</div>
+																	<div class="form-group">
+																	<label class="col-md-2 control-label">权利获得方式</label> 
+																		<div class="col-md-8">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="get_type" value="原始取得" <if condition="$SoftwareInfo.get_type eq 原始取得">checked</if>> 原始取得 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="get_type" value="继受取得" <if condition="$SoftwareInfo.get_type eq 继受取得">checked</if>> 继受取得 </label>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																	<label class="col-md-2 control-label">权利范围</label> 
+																		<div class="col-md-8">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="right_type" value="全部权利" <if condition="$SoftwareInfo.right_type eq 全部权利">checked</if>> 全部权利 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="right_type" value="部分权利" <if condition="$SoftwareInfo.right_type eq 部分权利">checked</if>> 部分权利 </label>
+																		</div>
+																	</div>
+																	
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">请注明</label> 
+																		<div class="col-md-8"><input type="text" name="specific" class="form-control" value="{$SoftwareInfo.specific}"></div>
+																	</div>
 
-												<div class="box border blue">
-													<div class="box-title">
-														<h4><i class="fa fa-table"></i>详细信息</h4>
-														<div class="tools">
-															<a href="#box-config" data-toggle="modal" class="config">
-																<i class="fa fa-cog"></i>
-															</a>
-															<a href="javascript:;" class="reload">
-																<i class="fa fa-refresh"></i>
-															</a>
-															<a href="javascript:;" class="collapse">
-																<i class="fa fa-chevron-up"></i>
-															</a>
-															<a href="javascript:;" class="remove">
-																<i class="fa fa-times"></i>
-															</a>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">开发完成时间</label> 
+																		<div class="col-md-2"><input type="date" name="over_date" class="form-control" value="{$SoftwareInfo.over_date}"></div>
+																		
+																	</div>									
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">备注</label> 
+																		<div class="col-md-8"><textarea name="content" class="form-control">{$SoftwareInfo.content}</textarea></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">全文链接</label> 
+																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value="{$SoftwareInfo.paper_link}"></div>
+																	</div>
+																</div>
+															</div>
 														</div>
-													</div>
-													<div class="box-body">
-														<table class="table table-striped">
-															<tbody>
-																<tr>
-																	<td style="width: 15%;text-align:center">成果类别</td>
-																	<td>{$StandardInfo.achievement_type}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标准类型</td>
-																	<td>{$StandardInfo.country}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标题(中文)</td>
-																	<td>{$StandardInfo.title_zh}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标题(英文)</td>
-																	<td>{$StandardInfo.title_en}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标准号</td>
-																	<td>{$StandardInfo.standard_num}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标准类型</td>
-																	<td>{$StandardInfo.standard_type}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标准公布机构</td>
-																	<td>{$StandardInfo.institute}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">发布时间</td>
-																	<td>{$StandardInfo.publish_date}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">备注</td>
-																	<td>{$StandardInfo.content}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">全文链接</td>
-																	<td>{$StandardInfo.paper_link}</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
+														<div class="form-actions clearfix"> <input type="submit" value="保存修改" class="btn btn-primary pull-right"></div>
+													</form>
 												</div>
 
 											</div>
@@ -274,6 +251,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -308,6 +286,7 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
