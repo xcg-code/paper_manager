@@ -242,9 +242,12 @@
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">专利状态</label> 
 																		<div class="col-md-8">
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="申请"> 申请 </label> 
-																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="授权"> 授权 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="申请" id="apply"> 申请 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="授权" id="auth"> 授权 </label> 
 																		</div>
+																	</div>
+																	<div id="PatentInfo">
+																		
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">备注</label> 
@@ -316,6 +319,33 @@
 			<div class="col-md-4"><input type="text" name="isbn" class="form-control" value=""></div>
 		</div>
 
+		<div id="apply_info" hidden="true">
+			<div class="form-group" >
+				<label class="col-md-2 control-label">申请日期</label> 
+				<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
+			</div>
+		</div>
+
+		<div id="auth_info" hidden="true">
+			<div class="form-group" >
+				<label class="col-md-2 control-label">授权日期</label> 
+				<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 control-label">成果转化状态</label> 
+				<div class="col-md-4">
+					<label class="radio-inline"> <input type="radio" name="country" value="发明专利"> 转让 </label> 
+					<label class="radio-inline"> <input type="radio" name="country" value="发明专利"> 许可 </label> 
+					<label class="radio-inline"> <input type="radio" name="country" value="发明专利"> 作价投资 </label> 
+					<label class="radio-inline"> <input type="radio" name="country" value="发明专利"> 其他 </label> 
+					<label class="radio-inline"> <input type="radio" name="country" value="发明专利"> 无 </label> 
+				</div>
+				<label class="col-md-2 control-label">交易金额(万元)</label> 
+				<div class="col-md-2"><input type="text" name="city" class="form-control" value=""></div>
+			</div>
+		</div>
+		
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -358,32 +388,42 @@
 				x=document.getElementById("patent_type");  // 找到元素
 				var i=$("#chinese_info").html().replace('true','false');
 				x.innerHTML=i;    // 改变内容
-  			});
+			});
 			$("#usa").click(function(){
 				x=document.getElementById("patent_type");  // 找到元素
 				var i=$("#usa_info").html().replace('true','false');
 				x.innerHTML=i;    // 改变内容
-  			});
-  			$("#europe").click(function(){
+			});
+			$("#europe").click(function(){
 				x=document.getElementById("patent_type");  // 找到元素
 				var i=$("#europe_info").html().replace('true','false');
 				x.innerHTML=i;    // 改变内容
-  			});
-  			$("#wipo").click(function(){
+			});
+			$("#wipo").click(function(){
 				x=document.getElementById("patent_type");  // 找到元素
 				var i=$("#wipo_info").html().replace('true','false');
 				x.innerHTML=i;    // 改变内容
-  			});
-  			$("#japan").click(function(){
+			});
+			$("#japan").click(function(){
 				x=document.getElementById("patent_type");  // 找到元素
 				var i=$("#chinese_info").html().replace('true','false');
 				x.innerHTML=i;    // 改变内容
-  			});
-  			$("#other_country").click(function(){
+			});
+			$("#other_country").click(function(){
 				x=document.getElementById("patent_type");  // 找到元素
 				var i=$("#other_info").html().replace('true','false');
 				x.innerHTML=i;    // 改变内容
-  			});
+			});
+			$("#apply").click(function(){
+				x=document.getElementById("PatentInfo");  // 找到元素
+				var i=$("#apply_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+			});
+			$("#auth").click(function(){
+				x=document.getElementById("PatentInfo");  // 找到元素
+				var i=$("#auth_info").html().replace('true','false');
+				x.innerHTML=i;    // 改变内容
+			});
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->
