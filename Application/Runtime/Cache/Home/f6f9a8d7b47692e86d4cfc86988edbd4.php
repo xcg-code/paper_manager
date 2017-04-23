@@ -343,7 +343,7 @@
 																</tr>
 																<tr>
 																	<td style="width: 15%;text-align:center">成果转化状态</td>
-																	<td><?php echo ($PatentInfo["trans_status"]); ?></td>
+																	<td><?php echo ($PatentInfo["tran_status"]); ?></td>
 																</tr>
 																<tr>
 																	<td style="width: 15%;text-align:center">交易金额(万元)</td>

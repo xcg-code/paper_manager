@@ -781,4 +781,48 @@ class AchievementController extends Controller {
         $this->assign('FilePath', $FilePath); 
         $this->display();
     }
+
+    //显示专利修改页面
+    public function patent_edit($achi_id){
+        parent::is_login();
+        $PatentModel=D('Patent');
+        $Condition['id']=$achi_id;
+        $PatentInfo=$PatentModel->where($Condition)->find();
+        $this->assign('PatentInfo', $PatentInfo);
+        $this->display();
+    }
+
+    //专利信息修改数据库操作
+    public function patent_edit_db($achi_id){
+        $PatentModel=D('Patent');
+        $AchievementModel=D('Achievement');
+        if($PatentModel->create()){
+            //检测成果转化状态是否变化
+            if($PatentModel->status=='申请'){
+                $PatentModel->tran_status='';
+                $PatentModel->price=null;
+            }
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$PatentModel->title_zh;
+            $AchievementModel->institute_name=$PatentModel->publisher;
+            $AchievementModel->publish_time=$PatentModel->publish_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$PatentModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/patent_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($PatentModel->getError());
+        }
+    }
 }
