@@ -600,3 +600,45 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
 
+[ 2017-04-23T11:24:49+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/patent_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000594s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2017-04-23T11:31:19+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/patent_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001751s ]
+
