@@ -947,4 +947,115 @@ class AchievementController extends Controller {
         delete_all_info($achi_id);
         $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
     }
+
+    //显示标准添加页面
+    public function standard_add(){
+        parent::is_login();
+        $this->display();
+    }
+
+    //标准添加数据库操作
+    public function standard_add_db(){
+        $StandardModel=D('Standard');
+        $AchievementModel=D('Achievement');
+        if($StandardModel->create()){
+            $StandardModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $StandardModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='Standard';
+            $AchievementModel->title=$StandardModel->title_zh;
+            $AchievementModel->institute_name=$StandardModel->institute;
+            $AchievementModel->publish_time=$StandardModel->publish_date;
+
+            //sql事务
+            $StandardModel->startTrans();
+            $ResultStandard=$StandardModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultStandard && $ResultAchi){
+                $StandardModel->commit();
+                $this->success('添加标准成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $StandardModel->rollback();
+                $this->error('添加标准报告失败');
+            }
+        }else{
+            $this->error($StandardModel->getError());
+        }
+    }
+
+    //显示标准详情
+    public function standard_show($achi_id){
+        parent::is_login();
+        $StandardModel=M('Standard');
+        $Condition['id']=$achi_id;
+        $StandardInfo=$StandardModel->where($Condition)->find();
+        //添加其他详细信息
+        $StandardInfo['achievement_type']='标准';
+        $this->assign('StandardInfo', $StandardInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $StandardInfo['id']);
+        $this->assign('edit','standard_edit');
+        $this->assign('delete','standard_delete');
+        $this->assign('show','standard_show');
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
+
+    //显示标准修改页面
+    public function standard_edit($achi_id){
+        parent::is_login();
+        $StandardModel=D('Standard');
+        $Condition['id']=$achi_id;
+        $StandardInfo=$StandardModel->where($Condition)->find();
+        $this->assign('StandardInfo', $StandardInfo);
+        $this->display();
+    }
+
+    //标准修改数据库操作
+    public function standard_edit_db($achi_id){
+        $StandardModel=D('Standard');
+        $AchievementModel=D('Achievement');
+        if($StandardModel->create()){
+            //如果为国际标准，清空标准类型
+            if($StandardModel->country=='国际标准'){
+                $StandardModel->standard_type=null;
+            }
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$StandardModel->title_zh;
+            $AchievementModel->institute_name=$StandardModel->institute;
+            $AchievementModel->publish_time=$StandardModel->publish_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$StandardModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/standard_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($StandardModel->getError());
+        }
+    }
+
+    //删除标准信息
+    public function standard_delete($achi_id){
+        $StandardModel=M('Standard');
+        $Condition['id']=$achi_id;
+        $StandardModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
 }
