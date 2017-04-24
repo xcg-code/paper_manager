@@ -269,16 +269,18 @@
 																		<table class="table table-striped">
 																			<thead>
 																				<tr>
-																					<th>项目类别名称</th>
-																					<th>项目号</th>
+																					<th style="width: 15%">项目类别</th>
+																					<th style="width: 15%">项目号</th>
+																					<th>项目名称</th>
 																					<th>备注</th>
-																					<th>操作</th>
+																					<th style="width: 10%">操作</th>
 																				</tr>
 																			</thead>
 																			<tbody>
 																				<?php if(is_array($ProjectInfo)): $i = 0; $__LIST__ = $ProjectInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 																						<td><?php echo ($vo["type_name"]); ?></td>
 																						<td><?php echo ($vo["project_num"]); ?></td>
+																						<td><?php echo ($vo["project_name"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
 																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个类别吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -286,7 +288,7 @@
 																		</table>
 																	</div>
 																</div>
-																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请点击左侧导航栏“项目类别管理”按钮，添加后重新选择</strong></div>
+																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请进入左侧导航栏“科研项目->项目类别管理”界面，添加类别信息后重新选择</strong></div>
 																
 																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_add_db/achi_id/<?php echo ($achi_id); ?>/type/2" method="post">
 																	<input type="text" name="num" id="num" value="0" hidden="true">
@@ -333,12 +335,16 @@
 		<div id="info" hidden="true">
 			<div class="form-group" id="form_one_">
 				<label class="col-md-2 control-label">所属项目类别</label> 
-				<div class="col-md-3"><select class="form-control" name="type_name_">
+				<div class="col-md-4"><select class="form-control" name="type_name_">
 					<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 
 				</select></div>
-				<label class="col-md-2 control-label">所属项目号(分号隔开)</label> 
+				<label class="col-md-1 control-label">项目号</label> 
 				<div class="col-md-4"><input type="text" name="project_num_" class="form-control" value=""></div>
+			</div>
+			<div class="form-group" id="form_three_">
+				<label class="col-md-2 control-label">项目名称</label> 
+				<div class="col-md-9"><input type="text" name="project_num_" class="form-control" value=""></div>
 			</div>
 			<div class="form-group" id="form_two_">
 				<label class="col-md-2 control-label">备注</label> 
@@ -391,6 +397,7 @@
 			i=i.replace("content_","content_"+count);
 			i=i.replace("form_one_","form_one_"+count);
 			i=i.replace("form_two_","form_two_"+count);
+			i=i.replace("form_three_","form_three_"+count);
 			count++;
 			$("#AuthorInfo").append(i);
 			$("#num").val(count);
@@ -401,6 +408,7 @@
 				count=0;
 			$("#form_one_"+count).remove();
 			$("#form_two_"+count).remove();
+			$("#form_three_"+count).remove();
 			$("#num").val(count);
 		});
 	});
