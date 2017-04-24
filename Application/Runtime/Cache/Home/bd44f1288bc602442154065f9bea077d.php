@@ -322,36 +322,10 @@
 									   				<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
 									   				<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
 												</div><?php endforeach; endif; else: echo "" ;endif; ?>
-								  				
+
 												<div>
 													<ul class='pagination'>
-										  			<li class='disabled'>
-														<a href='#'>
-											  			<i class='fa fa-caret-left'></i>
-														</a>
-										  			</li>
-										  			<li class='active'>
-														<a href='#'>
-											  			1
-														</a>
-										  			</li>
-										  			<li>
-														<a href='#'>2</a>
-										  			</li>
-										  			<li>
-														<a href='#'>3</a>
-										  			</li>
-										  			<li>
-														<a href='#'>4</a>
-										  			</li>
-										  			<li>
-														<a href='#'>5</a>
-										  			</li>
-										  			<li>
-														<a href='#'>
-											  			Next <i class='fa fa-caret-right'></i>
-														</a>
-										  			</li>
+										  			<?php echo ($page); ?>
 													</ul>
 												</div>
 											</div>
