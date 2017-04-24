@@ -1634,7 +1634,19 @@ function get_achievement_year(){
             }
         }
     }
-    return $YearList;
+    //转化为二维数组
+    $NewYearList = array();
+    foreach ($YearList as $key => $value){
+        $NewYearList[]=Array('num'=>$key,'year'=>$value);
+    }
+    for($i=0;$i<count($NewYearList);$i++){
+        $start_year=$NewYearList[$i]['year'].'-01-01';
+        $end_year=$NewYearList[$i]['year'].'-12-31';
+        $Condition['publish_time']=array(array('egt',$start_year),array('elt',$end_year));
+        $Info=$AModel->where($Condition)->count();
+        $NewYearList[$i]['num']=$Info;
+    }
+    return $NewYearList;
 }
 
 //获取某一科研成果全文电子文档路径

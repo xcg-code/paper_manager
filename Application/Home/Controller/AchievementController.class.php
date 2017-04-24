@@ -36,7 +36,6 @@ class AchievementController extends Controller {
 		$this->assign('AchievementInfo',$AchievementInfo);
 		$this->assign('AchievementCount',$AchievementCount);
         $this->assign('AchievementYear',$AchievementYear);
-        var_dump($AchievementYear);
         $this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}
