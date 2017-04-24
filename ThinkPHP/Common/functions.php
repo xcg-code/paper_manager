@@ -1623,17 +1623,10 @@ function get_achievement_year(){
     $Info=$AModel->distinct(true)->field('publish_time')->order('publish_time desc')->where($Condition)->select();
     $YearList=array();
     for($i=0;$i<count($Info);$i++){
-        $TempString=substr($Info[$i]['publish_time'], 0,4);//取年份
-        if(count($YearList)==0){
-            $YearList[]=$TempString;
-        }
-        for($j=0;$j<count($YearList);$j++)
-        {
-            if($TempString!=$YearList[$j]){
-                $YearList[]=$TempString;
-            }
-        }
+        $TempString=substr($Info[$i]['publish_time'], 0,4);//取4位年份
+        $YearList[]=$TempString;
     }
+    $YearList=array_unique($YearList);//去重处理
     //转化为二维数组
     $NewYearList = array();
     foreach ($YearList as $key => $value){
