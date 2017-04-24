@@ -1165,4 +1165,115 @@ class AchievementController extends Controller {
         delete_all_info($achi_id);
         $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
     }
+
+    //显示新增科研奖励页面
+    public function reward_add(){
+        parent::is_login();
+        $this->display();
+    }
+
+    //新增科研奖励数据库操作
+    public function reward_add_db(){
+        $RewardModel=D('Reward');
+        $AchievementModel=D('Achievement');
+        if($RewardModel->create()){
+            $RewardModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $RewardModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='Reward';
+            $AchievementModel->title=$RewardModel->title_zh;
+            $AchievementModel->institute_name=$RewardModel->institute;
+            $AchievementModel->publish_time=$RewardModel->publish_date;
+
+            //sql事务
+            $RewardModel->startTrans();
+            $ResultReward=$RewardModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultReward && $ResultAchi){
+                $RewardModel->commit();
+                $this->success('添加科研奖励成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $RewardModel->rollback();
+                $this->error('添加科研奖励失败');
+            }
+        }else{
+            $this->error($RewardModel->getError());
+        }
+    }
+
+    //显示科研奖励详情
+    public function reward_show($achi_id){
+        parent::is_login();
+        $RewardModel=M('Reward');
+        $Condition['id']=$achi_id;
+        $RewardInfo=$RewardModel->where($Condition)->find();
+        //添加其他详细信息
+        $RewardInfo['achievement_type']='科研奖励';
+        $this->assign('RewardInfo', $RewardInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $RewardInfo['id']);
+        $this->assign('edit','reward_edit');
+        $this->assign('delete','reward_delete');
+        $this->assign('show','reward_show');
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
+
+    //显示科研奖励编辑页面
+    public function reward_edit($achi_id){
+        parent::is_login();
+        $RewardModel=D('Reward');
+        $Condition['id']=$achi_id;
+        $RewardInfo=$RewardModel->where($Condition)->find();
+        $this->assign('RewardInfo', $RewardInfo);
+        $this->display();
+    }
+
+    //科研奖励编辑数据库操作
+    public function reward_edit_db($achi_id){
+        $RewardModel=D('Reward');
+        $AchievementModel=D('Achievement');
+        if($RewardModel->create()){
+            //如果类型从其他改为别的，清空注明信息
+            if($RewardModel->reward_type!='其他'){
+                $RewardModel->specific=null;
+            }
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$RewardModel->title_zh;
+            $AchievementModel->institute_name=$RewardModel->institute;
+            $AchievementModel->publish_time=$RewardModel->publish_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$RewardModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/reward_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($RewardModel->getError());
+        }
+    }
+
+    //科研奖励删除
+    public function reward_delete($achi_id){
+        $RewardModel=M('Reward');
+        $Condition['id']=$achi_id;
+        $RewardModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
 }

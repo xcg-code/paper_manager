@@ -1,0 +1,655 @@
+[ 2017-04-24T09:10:56+08:00 ] ::1 /PaperManager/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.059007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.059311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.367318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.367591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023536s ]
+
+[ 2017-04-24T09:10:56+08:00 ] ::1 /PaperManager/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2017-04-24T09:11:21+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'wgzhang' AND `password` = '1a224d6875ff953e9d9b9d0258c371e3' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-04-24T09:11:22+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_area` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_area` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2017-04-24T09:11:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fcb061534ad'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2017-04-24T09:11:39+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_show/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fcb061534ad' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.175210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2017-04-24T09:11:41+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004473s ]
+
+[ 2017-04-24T09:13:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001587s ]
+
+[ 2017-04-24T09:13:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2017-04-24T09:14:16+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001860s ]
+
+[ 2017-04-24T09:15:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2017-04-24T09:18:53+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit_db/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `think_software` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_software` SET `title_zh`='科研成果',`title_en`='reward',`specific`=NULL,`content`='备注',`paper_link`='链接' WHERE `id` = '58fcb061534ad' [ RunTime:0.0005s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fcb061534ad',`title`='科研成果',`institute_name`=NULL,`publish_time`=NULL WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-04-24T09:19:06+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001826s ]
+
+[ 2017-04-24T09:19:16+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit_db/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007299s ]
+SQL: SHOW COLUMNS FROM `think_software` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_software` SET `title_zh`='科研成果',`title_en`='reward',`specific`=NULL,`content`='备注',`paper_link`='链接' WHERE `id` = '58fcb061534ad' [ RunTime:0.0009s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fcb061534ad',`title`='科研成果',`institute_name`=NULL,`publish_time`=NULL WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+
+[ 2017-04-24T09:20:01+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit_db/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_reward` SET `title_zh`='科研成果',`title_en`='reward',`abstract`='摘要摘要',`keywords`='关键词',`reward_type`='科技进步',`specific`=NULL,`reward_level`='国际学术奖',`institute`='哈工大',`publish_date`='2017-04-23',`reward_num`='123adsfsd',`relationship`='很大的关系',`content`='备注',`paper_link`='链接' WHERE `id` = '58fcb061534ad' [ RunTime:0.0017s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fcb061534ad',`title`='科研成果',`institute_name`='哈工大',`publish_time`='2017-04-23' WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-04-24T09:20:02+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_show/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fcb061534ad' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2017-04-24T09:20:07+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2017-04-24T09:20:22+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit_db/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_reward` SET `title_zh`='科研成果',`title_en`='reward',`abstract`='摘要摘要',`keywords`='关键词',`reward_type`='科技进步',`reward_level`='国际学术奖',`institute`='哈工大',`publish_date`='2017-04-23',`reward_num`='123adsfsd',`relationship`='很大的关系',`content`='备注',`paper_link`='链接',`specific`=NULL WHERE `id` = '58fcb061534ad' [ RunTime:0.0005s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fcb061534ad',`title`='科研成果',`institute_name`='哈工大',`publish_time`='2017-04-23' WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-04-24T09:23:13+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant 自然科学 - assumed '自然科学' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 259 行.
+NOTIC: [8] Use of undefined constant 科技进步 - assumed '科技进步' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 260 行.
+NOTIC: [8] Use of undefined constant 发明 - assumed '发明' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 261 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 262 行.
+NOTIC: [8] Use of undefined constant 国际学术奖 - assumed '国际学术奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 274 行.
+NOTIC: [8] Use of undefined constant 国家一等奖 - assumed '国家一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 275 行.
+NOTIC: [8] Use of undefined constant 国家二等奖 - assumed '国家二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 276 行.
+NOTIC: [8] Use of undefined constant 省部一等奖 - assumed '省部一等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 277 行.
+NOTIC: [8] Use of undefined constant 省部二等奖 - assumed '省部二等奖' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 278 行.
+NOTIC: [8] Use of undefined constant 其他 - assumed '其他' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\a47526e16a36c019569481f9acedee58.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.157405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001709s ]
+
+[ 2017-04-24T09:23:19+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_edit_db/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_reward` SET `title_zh`='科研成果',`title_en`='reward',`abstract`='摘要摘要',`keywords`='关键词',`reward_type`='科技进步',`reward_level`='国际学术奖',`institute`='哈工大',`publish_date`='2017-04-23',`reward_num`='123adsfsd',`relationship`='很大的关系很大的关系',`content`='备注很大的关系',`paper_link`='链接很大的关系',`specific`=NULL WHERE `id` = '58fcb061534ad' [ RunTime:0.0006s ]
+SQL: UPDATE `think_achievement` SET `achievement_id`='58fcb061534ad',`title`='科研成果',`institute_name`='哈工大',`publish_time`='2017-04-23' WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-04-24T09:23:20+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_show/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fcb061534ad' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2017-04-24T09:24:38+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_show/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_reward` WHERE `id` = '58fcb061534ad' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fcb061534ad' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2017-04-24T09:24:46+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/reward_delete/achi_id/58fcb061534ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `think_reward` [ RunTime:0.0009s ]
+SQL: DELETE FROM `think_reward` WHERE `id` = '58fcb061534ad' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0007s ]
+SQL: DELETE FROM `think_author` WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fcb061534ad'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: DELETE FROM `think_project` WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0010s ]
+SQL: DELETE FROM `think_achievement` WHERE `achievement_id` = '58fcb061534ad' [ RunTime:0.0101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2017-04-24T09:24:47+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001566s ]
+
