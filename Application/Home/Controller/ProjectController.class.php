@@ -10,14 +10,21 @@ class ProjectController extends Controller {
 		$TypeInfo=get_project_num($TypeInfo);
 		//获取项目总个数
 		$AllCount=get_all_project_num($TypeInfo);
-		//获取项目详细信息
+		//获取检索条件
 		$ProjectModel=M('Project');
 		$Condition['user_id']=session('uid');
-		$ProjectInfo=$ProjectModel->where($Condition)->select();
-		//var_dump($ProjectInfo);
+		//获取记录数
+		$ProjectCount=$ProjectModel->where($Condition)->count();
+		//分页数据获取
+        $Page= get_page($ProjectCount,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $show= $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $ProjectInfo=$ProjectModel->where($Condition)->limit($Page->firstRow.','.$Page->listRows)->select();
+
 		$this->assign('TypeInfo',$TypeInfo);
 		$this->assign('AllCount',$AllCount);
 		$this->assign('ProjectInfo',$ProjectInfo);
+		$this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}
 }
