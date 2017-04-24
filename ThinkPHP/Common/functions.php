@@ -1688,40 +1688,40 @@ function get_detail_link($AchievementInfo){
     $detail_link='';
     switch ($AchievementInfo['achievement_type']) {
         case 'JournalPaper':
-        $detail_link='journal_paper_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/journal_paper_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'ConferencePaper':
-        $detail_link='conference_paper_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/conference_paper_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'Monograph':
-        $detail_link='monograph_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/monograph_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'Patent':
-        $detail_link='patent_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/patent_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'ConferenceReport':
-        $detail_link='conference_report_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/conference_report_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'Standard':
-        $detail_link='standard_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/standard_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'Software':
-        $detail_link='software_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/software_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'Reward':
-        $detail_link='reward_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/reward_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'Train':
-        $detail_link='train_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/train_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'ConferenceInvolved':
-        $detail_link='conference_involved_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/conference_involved_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'TechTrans':
-        $detail_link='tech_trans_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/tech_trans_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         case 'OtherAchievement':
-        $detail_link='other_achievement_show/achi_id/'.$AchievementInfo['achievement_id'];
+        $detail_link=__ROOT__.'/index.php/Home/Achievement/other_achievement_show/achi_id/'.$AchievementInfo['achievement_id'];
         break;
         default:
         break;
