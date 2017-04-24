@@ -19,18 +19,22 @@ class AchievementController extends Controller {
 		parent::is_login();
 		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
+        $SearchAction='';
         if($achi_type!=''){
             $Condition['achievement_type']=$achi_type;
+            $SearchAction='achi_type/'.$achi_type;
         }
         if($achi_year!=''){
             $start_date=$achi_year.'-01-01';
             $end_date=$achi_year.'-12-31';
             $Condition['publish_time']=array(array('egt',$start_date),array('elt',$end_date));
+            $SearchAction='achi_year/'.$achi_year;
         }
-        //获取记录数
-        $AchievementYearCount=$AchievementModel->where($Condition)->count();
         //获取搜索栏内容
         $Search=I('post.search');
+        $Condition['title']=array('like','%'.$Search.'%');
+        //获取记录数
+        $AchievementYearCount=$AchievementModel->where($Condition)->count();
         //获取各种科研成果的数目
         $AchievementCount=get_achievement_count();
         //获取不同年份科研成果的数量
@@ -48,6 +52,7 @@ class AchievementController extends Controller {
 		$this->assign('AchievementInfo',$AchievementInfo);
 		$this->assign('AchievementCount',$AchievementCount);
         $this->assign('AchievementYear',$AchievementYear);
+        $this->assign('SearchAction',$SearchAction);
         $this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}

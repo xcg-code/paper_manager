@@ -306,7 +306,7 @@
 												</div>														
 											</div>
 											<div class="col-md-9">
-												<form action="/PaperManager/index.php/Home/Achievement/my_achievement" method="post">
+												<form action="/PaperManager/index.php/Home/Achievement/my_achievement/<?php echo ($SearchAction); ?>" method="post">
 													<div class="input-group">
 														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
 														<span class="input-group-btn">
