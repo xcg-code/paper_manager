@@ -23,29 +23,29 @@
 	<!-- HEADER -->
 	<header class="navbar clearfix" id="header">
 		<div class="container">
-				<div class="navbar-brand">
-					<!-- COMPANY LOGO -->
-					<a href="index.html">
-						<img src="/PaperManager/Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+			<div class="navbar-brand">
+				<!-- COMPANY LOGO -->
+				<a href="index.html">
+					<img src="/PaperManager/Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+				</a>
+				<!-- /COMPANY LOGO -->
+				<!-- TEAM STATUS FOR MOBILE -->
+				<div class="visible-xs">
+					<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
+						<i class="fa fa-users"></i>
 					</a>
-					<!-- /COMPANY LOGO -->
-					<!-- TEAM STATUS FOR MOBILE -->
-					<div class="visible-xs">
-						<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
-							<i class="fa fa-users"></i>
-						</a>
-					</div>
-					<!-- /TEAM STATUS FOR MOBILE -->
-					<!-- SIDEBAR COLLAPSE -->
-					<div id="sidebar-collapse" class="sidebar-collapse btn">
-						<i class="fa fa-bars" 
-							data-icon1="fa fa-bars" 
-							data-icon2="fa fa-bars" ></i>
-					</div>
-					<!-- /SIDEBAR COLLAPSE -->
 				</div>
-				<!-- NAVBAR LEFT -->
-				<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
+				<!-- /TEAM STATUS FOR MOBILE -->
+				<!-- SIDEBAR COLLAPSE -->
+				<div id="sidebar-collapse" class="sidebar-collapse btn">
+					<i class="fa fa-bars" 
+					data-icon1="fa fa-bars" 
+					data-icon2="fa fa-bars" ></i>
+				</div>
+				<!-- /SIDEBAR COLLAPSE -->
+			</div>
+			<!-- NAVBAR LEFT -->
+			<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
@@ -73,80 +73,80 @@
 	</li>
 </ul>
 
-				<!-- /NAVBAR LEFT -->
-				<!-- BEGIN TOP NAVIGATION MENU -->		
-				<ul class="nav navbar-nav pull-right">				
-					<!-- BEGIN USER LOGIN DROPDOWN -->
-					<li class="dropdown user" id="header-user">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="/PaperManager/<?php echo (session('pic_path')); ?>" />
-							<span class="username"><?php echo (session('fullname')); ?></span>
-							<i class="fa fa-angle-down"></i>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
-							<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
-						</ul>
-					</li>
-					<!-- END USER LOGIN DROPDOWN -->
-				</ul>			
-				<!-- END TOP NAVIGATION MENU -->
+			<!-- /NAVBAR LEFT -->
+			<!-- BEGIN TOP NAVIGATION MENU -->		
+			<ul class="nav navbar-nav pull-right">				
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<li class="dropdown user" id="header-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img alt="" src="/PaperManager/<?php echo (session('pic_path')); ?>" />
+						<span class="username"><?php echo (session('fullname')); ?></span>
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
+						<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+			</ul>			
+			<!-- END TOP NAVIGATION MENU -->
 		</div>
 		
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
-		  <div id="scrollbar">
-			<div class="handle">
+			<div id="scrollbar">
+				<div class="handle">
+				</div>
 			</div>
-		  </div>
-		  <div id="teamslider">
-			  <ul class="team-list">
-				<li class="current">
-				  <a href="javascript:void(0);">
-				  <span class="image">
-					  <img src="/PaperManager/Public/img/avatars/avatar3.jpg" alt="" />
-				  </span>
-				  <span class="title">
-					You
-				  </span>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-success" style="width: 35%">
-						<span class="sr-only">35% Complete (success)</span>
-					  </div>
-					  <div class="progress-bar progress-bar-warning" style="width: 20%">
-						<span class="sr-only">20% Complete (warning)</span>
-					  </div>
-					  <div class="progress-bar progress-bar-danger" style="width: 10%">
-						<span class="sr-only">10% Complete (danger)</span>
-					  </div>
-					</div>
-					<span class="status">
-						<div class="field">
-							<span class="badge badge-green">6</span> completed
-							<span class="pull-right fa fa-check"></span>
-						</div>
-						<div class="field">
-							<span class="badge badge-orange">3</span> in-progress
-							<span class="pull-right fa fa-adjust"></span>
-						</div>
-						<div class="field">
-							<span class="badge badge-red">1</span> pending
-							<span class="pull-right fa fa-list-ul"></span>
-						</div>
-				    </span>
-				  </a>
-				</li>
-			  </ul>
+			<div id="teamslider">
+				<ul class="team-list">
+					<li class="current">
+						<a href="javascript:void(0);">
+							<span class="image">
+								<img src="/PaperManager/Public/img/avatars/avatar3.jpg" alt="" />
+							</span>
+							<span class="title">
+								You
+							</span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" style="width: 35%">
+									<span class="sr-only">35% Complete (success)</span>
+								</div>
+								<div class="progress-bar progress-bar-warning" style="width: 20%">
+									<span class="sr-only">20% Complete (warning)</span>
+								</div>
+								<div class="progress-bar progress-bar-danger" style="width: 10%">
+									<span class="sr-only">10% Complete (danger)</span>
+								</div>
+							</div>
+							<span class="status">
+								<div class="field">
+									<span class="badge badge-green">6</span> completed
+									<span class="pull-right fa fa-check"></span>
+								</div>
+								<div class="field">
+									<span class="badge badge-orange">3</span> in-progress
+									<span class="pull-right fa fa-adjust"></span>
+								</div>
+								<div class="field">
+									<span class="badge badge-red">1</span> pending
+									<span class="pull-right fa fa-list-ul"></span>
+								</div>
+							</span>
+						</a>
+					</li>
+				</ul>
 			</div>
-		  </div>
+		</div>
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
 	
 	<!-- PAGE -->
 	<section id="page">
-				<!-- SIDEBAR -->
-				<div id="sidebar" class="sidebar">
+		<!-- SIDEBAR -->
+		<div id="sidebar" class="sidebar">
 					<div class="sidebar-menu nav-collapse">
 						<div class="divide-20"></div>
 						
@@ -199,26 +199,26 @@
 						<!-- /SIDEBAR MENU -->
 					</div>
 				</div>
-				<!-- /SIDEBAR -->
+		<!-- /SIDEBAR -->
 		<div id="main-content">
 			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					  <h4 class="modal-title">Box Settings</h4>
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Box Settings</h4>
+						</div>
+						<div class="modal-body">
+							Here goes box setting content.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
 					</div>
-					<div class="modal-body">
-					  Here goes box setting content.
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				  </div>
 				</div>
-			  </div>
+			</div>
 			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
@@ -268,62 +268,65 @@
 										<div class="row">
 											<div class="col-md-3">
 												<div class="list-group">
-												<div class="list-group-item profile-details">
-													<h4>成果类别</h4>
-												</div>
+													<div class="list-group-item profile-details">
+														<h4>成果类别</h4>
+													</div>
 
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-												</a>
-												<a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_type/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-												</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
+													</a>
+													<a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
+													</a>
 
-												<div class="list-group-item profile-details">
-													<h4>发表年份</h4>
-												</div>
-												<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Achievement/my_achievement_by_year/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
-													</a><?php endforeach; endif; else: echo "" ;endif; ?>
+													<div class="list-group-item profile-details">
+														<h4>发表年份</h4>
+													</div>
+													<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Achievement/my_achievement/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
+														</a><?php endforeach; endif; else: echo "" ;endif; ?>
 												</div>														
 											</div>
 											<div class="col-md-9">
-												<div class="input-group">
-													<input class="form-control" type="text" placeholder="输入成果名称查询">
-													<span class="input-group-btn">
-													<button class="btn btn-primary" type="button">查询 <i class="fa fa-search"></i></button>
-													</span>
-								  				</div>
-								  				<div class="divide-20"></div>
+												<form action="/PaperManager/index.php/Home/Achievement/my_achievement" method="post">
+													<div class="input-group">
+														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
+														<span class="input-group-btn">
+														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
+														</span>
+													</div>
+												</form>
+												
+												<div class="divide-20"></div>
 
-								  				<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
-									   				<h4><a href="<?php echo ($vo["detail_link"]); ?>"><?php echo ($vo["title"]); ?></a></h4>
-									   				<div class="text-primary"><?php echo ($vo["author"]); ?></div>
-									   				<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
-									   				<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
+												<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
+														<h4><a href="<?php echo ($vo["detail_link"]); ?>"><?php echo ($vo["title"]); ?></a></h4>
+														<div class="text-primary"><?php echo ($vo["author"]); ?></div>
+														<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
+														<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
 													</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 												<div>
 													<ul class='pagination'>
-										  			<?php echo ($page); ?>
+														<?php echo ($page); ?>
 													</ul>
 												</div>
 											</div>
@@ -353,7 +356,7 @@
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
 	
-		
+
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
