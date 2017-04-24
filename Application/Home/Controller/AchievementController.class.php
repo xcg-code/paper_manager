@@ -41,7 +41,28 @@ class AchievementController extends Controller {
 
     //根据左侧科研成果类型显示科研成果列表
     public function my_achievement_by_type($achi_type){
-
+        parent::is_login();
+        $AchievementModel=M('Achievement');
+        $Condition['user_id']=session('uid');
+        $Condition['achievement_type']=$achi_type;
+        $AchievementInfo=$AchievementModel->where($Condition)->select();
+        $AchievementCount['All']=count($AchievementInfo);
+        //获取各种科研成果的数目
+        $AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
+        //分页数据获取
+        $Page= get_page(count($AchievementInfo),10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $show= $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        //获取作者姓名字符串和详情链接
+        for($i=0;$i<count($AchievementInfo);$i++){
+            $AchievementInfo[$i]['author']=get_author_list($AchievementInfo[$i]['achievement_id']);
+            $AchievementInfo[$i]['detail_link']=get_detail_link($AchievementInfo[$i]);
+        }
+        $this->assign('AchievementInfo',$AchievementInfo);
+        $this->assign('AchievementCount',$AchievementCount);
+        $this->assign('page',$show);// 赋值分页输出
+        $this->display('my_achievement');
     }
 
 	//显示成果文档上传页面
