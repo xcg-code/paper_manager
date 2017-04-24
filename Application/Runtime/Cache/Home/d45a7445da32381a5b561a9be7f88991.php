@@ -274,8 +274,12 @@
 																						<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if(($vo["type_name"]) == $ProjectInfo["type_name"]): ?>selected="selected"<?php endif; ?>><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 
 																					</select></div>
-																					<label class="col-md-2 control-label">所属项目号(分号隔开)</label> 
+																					<label class="col-md-2 control-label">所属项目号</label>
 																					<div class="col-md-4"><input type="text" name="project_num" class="form-control" value="<?php echo ($ProjectInfo["project_num"]); ?>"></div>
+																				</div>
+																				<div class="form-group" id="form_two_">
+																					<label class="col-md-2 control-label">项目名称</label>
+																					<div class="col-md-9"><input type="text" name="project_name" class="form-control" value="<?php echo ($ProjectInfo["project_name"]); ?>"></div>
 																				</div>
 																				<div class="form-group" id="form_two_">
 																					<label class="col-md-2 control-label">备注</label> 

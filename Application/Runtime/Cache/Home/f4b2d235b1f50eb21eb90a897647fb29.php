@@ -335,11 +335,11 @@
 		<div id="info" hidden="true">
 			<div class="form-group" id="form_one_">
 				<label class="col-md-2 control-label">所属项目类别</label> 
-				<div class="col-md-4"><select class="form-control" name="type_name_">
+				<div class="col-md-3"><select class="form-control" name="type_name_">
 					<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 
 				</select></div>
-				<label class="col-md-1 control-label">项目号</label> 
+				<label class="col-md-2 control-label">所属项目号</label> 
 				<div class="col-md-4"><input type="text" name="project_num_" class="form-control" value=""></div>
 			</div>
 			<div class="form-group" id="form_three_">
