@@ -160,7 +160,7 @@
 							</li>
 							<li class="has-sub">
 								<a href="javascript:;" class="">
-								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研成果<span class="badge pull-right"></span></span>
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研成果管理<span class="badge pull-right"></span></span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">

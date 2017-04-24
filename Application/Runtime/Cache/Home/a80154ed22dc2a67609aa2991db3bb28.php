@@ -160,7 +160,18 @@
 							</li>
 							<li class="has-sub">
 								<a href="javascript:;" class="">
-								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研成果<span class="badge pull-right"></span></span>
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研成果管理<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研项目管理<span class="badge pull-right"></span></span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
