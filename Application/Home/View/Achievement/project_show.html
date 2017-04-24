@@ -190,11 +190,11 @@
 																		<table class="table table-striped">
 																			<thead>
 																				<tr>
-																					<th style="width: 15%">项目类别</th>
-																					<th style="width: 15%">项目号</th>
+																					<th>项目类别</th>
+																					<th>项目号</th>
 																					<th>项目名称</th>
 																					<th>备注</th>
-																					<th style="width: 10%">操作</th>
+																					<th>操作</th>
 																				</tr>
 																			</thead>
 																			<tbody>
@@ -269,7 +269,7 @@
 			</div>
 			<div class="form-group" id="form_three_">
 				<label class="col-md-2 control-label">项目名称</label> 
-				<div class="col-md-9"><input type="text" name="project_num_" class="form-control" value=""></div>
+				<div class="col-md-9"><input type="text" name="project_name_" class="form-control" value=""></div>
 			</div>
 			<div class="form-group" id="form_two_">
 				<label class="col-md-2 control-label">备注</label> 
@@ -319,6 +319,7 @@
 			var i=$("#info").html().replace('true','false');
 			i=i.replace("type_name_","type_name_"+count);
 			i=i.replace("project_num_","project_num_"+count);
+			i=i.replace("project_name_","project_name_"+count);
 			i=i.replace("content_","content_"+count);
 			i=i.replace("form_one_","form_one_"+count);
 			i=i.replace("form_two_","form_two_"+count);
