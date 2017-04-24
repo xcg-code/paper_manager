@@ -19,12 +19,10 @@ class AchievementController extends Controller {
 		parent::is_login();
 		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
-		$AchievementInfo=$AchievementModel->where($Condition)->select();
-		$AchievementCount['All']=count($AchievementInfo);
         //获取各种科研成果的数目
-        $AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
+        $AchievementCount=get_achievement_count();
         //分页数据获取
-        $Page= get_page(count($AchievementInfo),10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $Page= get_page($AchievementCount['All'],10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show= $Page->show();// 分页显示输出
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
@@ -45,12 +43,10 @@ class AchievementController extends Controller {
         $AchievementModel=M('Achievement');
         $Condition['user_id']=session('uid');
         $Condition['achievement_type']=$achi_type;
-        $AchievementInfo=$AchievementModel->where($Condition)->select();
-        $AchievementCount['All']=count($AchievementInfo);
         //获取各种科研成果的数目
-        $AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
+        $AchievementCount=get_achievement_count();
         //分页数据获取
-        $Page= get_page(count($AchievementInfo),10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $Page= get_page($AchievementCount[$achi_type],10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show= $Page->show();// 分页显示输出
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
