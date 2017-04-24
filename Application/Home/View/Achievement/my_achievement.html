@@ -222,10 +222,10 @@
 												<div class="list-group-item profile-details">
 													<h4>发表年份</h4>
 												</div>
-												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2017
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2016
-												</a>
+												<volist name="AchievementYear" id="vo">
+								  					<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> {$vo}
+													</a>
+								  				</volist>
 												</div>														
 											</div>
 											<div class="col-md-9">
@@ -243,7 +243,7 @@
 									   				<div class="text-primary">{$vo.author}</div>
 									   				<div class="text-danger">{$vo.institute_name}</div>
 									   				<div class="text-success">{$vo.publish_time}</div>
-												</div>
+													</div>
 								  				</volist>
 
 												<div>

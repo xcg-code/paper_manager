@@ -301,10 +301,8 @@
 												<div class="list-group-item profile-details">
 													<h4>发表年份</h4>
 												</div>
-												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2017
-												</a>
-												<a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> 2016
-												</a>
+												<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="#" class="list-group-item"><span class="badge badge-red">9</span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo); ?>
+													</a><?php endforeach; endif; else: echo "" ;endif; ?>
 												</div>														
 											</div>
 											<div class="col-md-9">
@@ -321,7 +319,7 @@
 									   				<div class="text-primary"><?php echo ($vo["author"]); ?></div>
 									   				<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
 									   				<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
-												</div><?php endforeach; endif; else: echo "" ;endif; ?>
+													</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 												<div>
 													<ul class='pagination'>

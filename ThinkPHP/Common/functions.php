@@ -1616,6 +1616,27 @@ function get_achievement_count(){
     return $AchievementCount;
 }
 
+//获取不同年份科研成果数量
+function get_achievement_year(){
+    $AModel=M('Achievement');
+    $Condition['user_id']=session('uid');
+    $Info=$AModel->distinct(true)->field('publish_time')->order('publish_time desc')->where($Condition)->select();
+    $YearList=array();
+    for($i=0;$i<count($Info);$i++){
+        $TempString=substr($Info[$i]['publish_time'], 0,4);//取年份
+        if(count($YearList)==0){
+            $YearList[]=$TempString;
+        }
+        for($j=0;$j<count($YearList);$j++)
+        {
+            if($TempString!=$YearList[$j]){
+                $YearList[]=$TempString;
+            }
+        }
+    }
+    return $YearList;
+}
+
 //获取某一科研成果全文电子文档路径
 function get_main_file_path($achi_id){
     $FileModel=M('File');
