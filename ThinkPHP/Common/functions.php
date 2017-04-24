@@ -1851,3 +1851,8 @@ function get_all_project_num($TypeInfo){
     }
     return $Count;
 }
+
+//处理项目信息
+function renew_project_info($ProjectInfo){
+    
+}

@@ -212,12 +212,11 @@
 												
 												<div class="divide-20"></div>
 
-												<volist name="AchievementInfo" id="vo">
+												<volist name="ProjectInfo" id="vo">
 													<div class="search-results">
-														<h4><a href="{$vo.detail_link}">{$vo.title}</a></h4>
-														<div class="text-primary">{$vo.author}</div>
-														<div class="text-danger">{$vo.institute_name}</div>
-														<div class="text-success">{$vo.publish_time}</div>
+														<h4><a href="{$vo.detail_link}">{$vo.project_num}</a></h4>
+														<div class="text-danger">{$vo.type_name}</div>
+														<div class="text-success">{$vo.content}</div>
 													</div>
 												</volist>
 
