@@ -248,7 +248,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>我的科研成果列表</h4>
+										<h4><i class="fa fa-bars"></i>我的科研项目列表</h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -269,40 +269,10 @@
 											<div class="col-md-3">
 												<div class="list-group">
 													<div class="list-group-item profile-details">
-														<h4>成果类别</h4>
+														<h4>项目类别</h4>
 													</div>
-
-													<a href="/PaperManager/index.php/Home/Project/my_achievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-													</a>
-													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-													</a>
-
-													<div class="list-group-item profile-details">
-														<h4>发表年份</h4>
-													</div>
-													<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
-														</a><?php endforeach; endif; else: echo "" ;endif; ?>
+													<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">666</span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["type_name"]); ?>
+													</a><?php endforeach; endif; else: echo "" ;endif; ?>
 												</div>														
 											</div>
 											<div class="col-md-9">
