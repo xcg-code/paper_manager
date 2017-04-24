@@ -19,7 +19,7 @@ class AchievementController extends Controller {
 		parent::is_login();
 		$AchievementModel=M('Achievement');
 		$Condition['user_id']=session('uid');
-		$AchievementInfo=$AchievementModel->where($Condition)->select();
+		$AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->select();
 		$AchievementCount['All']=count($AchievementInfo);
 		//获取各种科研成果的数目
 		$AchievementCount=get_achievement_count($AchievementCount,$AchievementInfo);
@@ -32,6 +32,11 @@ class AchievementController extends Controller {
 		$this->assign('AchievementCount',$AchievementCount);
 		$this->display();
 	}
+
+    //根据左侧科研成果类型显示科研成果列表
+    public function my_achievement_by_type($achi_type){
+
+    }
 
 	//显示成果文档上传页面
 	public function file_upload($achi_id){
