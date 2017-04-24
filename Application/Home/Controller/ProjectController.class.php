@@ -14,8 +14,6 @@ class ProjectController extends Controller {
 		$ProjectModel=M('Project');
 		$Condition['user_id']=session('uid');
 		$ProjectInfo=$ProjectModel->where($Condition)->select();
-		//处理项目信息
-		$ProjectInfo=renew_project_info($ProjectInfo);
 		//var_dump($ProjectInfo);
 		$this->assign('TypeInfo',$TypeInfo);
 		$this->assign('AllCount',$AllCount);

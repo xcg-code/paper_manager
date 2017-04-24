@@ -1823,22 +1823,10 @@ function get_project_num($TypeInfo){
     }
     //获取每个项目类别的项目号汇总
     $ProjectModel=M('Project');
-    $RealProjectNum=array();
     for($i=0;$i<count($TypeName);$i++){
-        $ProjectNum='';//存放项目号
         $Condition['type_name']=$TypeName[$i];
-        $ProjectInfo=$ProjectModel->where($Condition)->select();
-        for($j=0;$j<count($ProjectInfo);$j++){
-            $ProjectNum=$ProjectNum.$ProjectInfo[$j]['project_num'];     
-        }
-        //分离字符串内容，获取项目号进数组
-        $ProjectNum=get_sub_content($ProjectNum);
-        //项目号去重
-        $ProjectNum=array_unique($ProjectNum);
-        //获取去重后的项目号个数
-        $ProjectNum=count($ProjectNum);
-        //添加数据到TypeInfo中
-        $TypeInfo[$i]['num']=$ProjectNum;
+        $Count=$ProjectModel->where($Condition)->count();
+        $TypeInfo[$i]['num']=$Count;
     }
     return $TypeInfo;
 }
@@ -1850,9 +1838,4 @@ function get_all_project_num($TypeInfo){
         $Count+=$TypeInfo[$i]['num'];
     }
     return $Count;
-}
-
-//处理项目信息
-function renew_project_info($ProjectInfo){
-    
 }
