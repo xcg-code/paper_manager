@@ -192,9 +192,11 @@
 													<div class="list-group-item profile-details">
 														<h4>项目类别</h4>
 													</div>
-													<volist name="TypeInfo" id="vo">
-														<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">666</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+													<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
 													</a>
+													<volist name="TypeInfo" id="vo">
+														<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+														</a>
 													</volist>
 												</div>														
 											</div>

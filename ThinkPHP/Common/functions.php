@@ -1813,3 +1813,41 @@ function get_page($count, $pagesize = 10){
     $p->lastSuffix = false;//最后一页不显示为总页数
     return $p;
 }
+
+//获取不同类别项目个数
+function get_project_num($TypeInfo){
+    //提取项目类别名
+    $TypeName=array();
+    for($i=0;$i<count($TypeInfo);$i++){
+        $TypeName[]=$TypeInfo[$i]['type_name'];
+    }
+    //获取每个项目类别的项目号汇总
+    $ProjectModel=M('Project');
+    $RealProjectNum=array();
+    for($i=0;$i<count($TypeName);$i++){
+        $ProjectNum='';//存放项目号
+        $Condition['type_name']=$TypeName[$i];
+        $ProjectInfo=$ProjectModel->where($Condition)->select();
+        for($j=0;$j<count($ProjectInfo);$j++){
+            $ProjectNum=$ProjectNum.$ProjectInfo[$j]['project_num'];     
+        }
+        //分离字符串内容，获取项目号进数组
+        $ProjectNum=get_sub_content($ProjectNum);
+        //项目号去重
+        $ProjectNum=array_unique($ProjectNum);
+        //获取去重后的项目号个数
+        $ProjectNum=count($ProjectNum);
+        //添加数据到TypeInfo中
+        $TypeInfo[$i]['num']=$ProjectNum;
+    }
+    return $TypeInfo;
+}
+
+//获取项目总数量
+function get_all_project_num($TypeInfo){
+    $Count=0;
+    for($i=0;$i<count($TypeInfo);$i++){
+        $Count+=$TypeInfo[$i]['num'];
+    }
+    return $Count;
+}

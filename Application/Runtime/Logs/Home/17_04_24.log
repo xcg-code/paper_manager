@@ -19050,3 +19050,1424 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001862s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002122s ]
 
+[ 2017-04-24T19:56:36+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: type_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2017-04-24T19:58:01+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0037s ]
+NOTIC: [8] Undefined index: type_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001640s ]
+
+[ 2017-04-24T19:58:37+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2017-04-24T19:58:54+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: type_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 10 行.
+NOTIC: [8] Undefined index: type_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-04-24T20:01:08+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001883s ]
+
+[ 2017-04-24T20:06:13+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1834) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1834) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1834) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001631s ]
+
+[ 2017-04-24T20:08:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001673s ]
+
+[ 2017-04-24T20:09:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001664s ]
+
+[ 2017-04-24T20:09:46+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000705s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1835) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1835) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1835) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2017-04-24T20:10:56+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1835) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1835) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1835) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2017-04-24T20:12:32+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1836) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1836) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php:1836) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2017-04-24T20:13:50+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002501s ]
+
+[ 2017-04-24T20:16:14+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001902s ]
+
+[ 2017-04-24T20:19:01+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1831 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1831 行.
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0004s ]
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1831 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1831 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1831 行.
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001647s ]
+
+[ 2017-04-24T20:20:32+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2017-04-24T20:22:24+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001664s ]
+
+[ 2017-04-24T20:24:27+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001661s ]
+
+[ 2017-04-24T20:27:28+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000620s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000925s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001617s ]
+
+[ 2017-04-24T20:28:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined index: type_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 274 行.
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php:11) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php:11) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php:11) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001735s ]
+
+[ 2017-04-24T20:29:58+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016171s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php:11) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php:11) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php:11) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001578s ]
+
+[ 2017-04-24T20:30:35+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 279 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 290 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2017-04-24T20:30:37+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+ERR: 非法操作:my_achievement
+
+[ 2017-04-24T20:31:42+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/achievement_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2017-04-24T20:31:43+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001970s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 ORDER BY publish_time desc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND ( `publish_time` >= '2013-01-01' AND `publish_time` <= '2013-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd641163494'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd63080c811'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd65342c1f6'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd65f822434'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd671deef65'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd6826e4014'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000504s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002306s ]
+
+[ 2017-04-24T20:31:46+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined variable: vo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 274 行.
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002043s ]
+
+[ 2017-04-24T20:35:13+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2017-04-24T20:35:14+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2017-04-24T20:35:15+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2017-04-24T20:35:16+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2017-04-24T20:35:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001795s ]
+
+[ 2017-04-24T20:35:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-04-24T20:35:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2017-04-24T20:35:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2017-04-24T20:35:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2017-04-24T20:35:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001483s ]
+
+[ 2017-04-24T20:35:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-04-24T20:35:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2017-04-24T20:35:20+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-04-24T20:35:20+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2017-04-24T20:35:20+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家自然科学基金项目'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '863计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '973计划课题'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '国家重点研发计划课题'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他国家级纵向项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '省自然科学基金项目'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '其他省部级纵向项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `type_name` = '产学研横向合作项目'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: SearchAction C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 281 行.
+NOTIC: [8] Undefined variable: AchievementInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 292 行.
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3262da1018e6d08f96882c4389ffebc8.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+

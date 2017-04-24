@@ -271,8 +271,10 @@
 													<div class="list-group-item profile-details">
 														<h4>项目类别</h4>
 													</div>
-													<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">666</span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["type_name"]); ?>
-													</a><?php endforeach; endif; else: echo "" ;endif; ?>
+													<a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AllCount); ?></span><i class="fa fa-calendar fa-fw"></i> 所有项目
+													</a>
+													<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["type_name"]); ?>
+														</a><?php endforeach; endif; else: echo "" ;endif; ?>
 												</div>														
 											</div>
 											<div class="col-md-9">
