@@ -92,4 +92,36 @@ class ProjectController extends Controller {
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->display();
 	}
+
+	//显示科研项目编辑页面
+	public function project_edit($id){
+		parent::is_login();
+		//获取项目类别信息
+        $TypeModel=M('Project_type');
+        $TypeInfo=$TypeModel->select();
+        $this->assign('TypeInfo',$TypeInfo);
+        $this->assign('achi_id',$achi_id);
+        //获取项目信息
+		$ProjectModel=M('Project');
+		$Condition['id']=$id;
+		$ProjectInfo=$ProjectModel->where($Condition)->find();
+		$this->assign('ProjectInfo',$ProjectInfo);
+		$this->display();
+	}
+
+	//科研项目编辑数据库操作
+	public function project_edit_db($project_id){
+		$ProjectModel=D('Project');
+        if($ProjectModel->create()){
+            $Condition['id']=$project_id;
+            $Result=$ProjectModel->where($Condition)->save();
+            if($Result){
+                $this->success('修改所属项目信息成功',__ROOT__.'/index.php/Home/Project/project_show/id/'.$project_id);
+            }else{
+                $this->error($ProjectModel->getError());
+            }
+        }else{
+            $this->error($ProjectModel->getError());
+        }
+	}
 }

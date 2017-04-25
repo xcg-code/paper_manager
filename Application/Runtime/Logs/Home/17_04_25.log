@@ -6588,3 +6588,1311 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001459s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001702s ]
 
+[ 2017-04-25T14:34:47+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15/achi_type/JournalPaper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `achievement_type` = 'JournalPaper' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `achievement_type` = 'JournalPaper' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001756s ]
+
+[ 2017-04-25T14:41:43+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15/achi_type/JournalPaper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `achievement_type` = 'JournalPaper' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `achievement_type` = 'JournalPaper' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000615s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.375145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.375423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2017-04-25T14:42:32+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15/achi_type/JournalPaper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `achievement_type` = 'JournalPaper' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `achievement_type` = 'JournalPaper' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-04-25T14:44:27+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 ORDER BY publish_time desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND ( `publish_time` >= '2013-01-01' AND `publish_time` <= '2013-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd641163494'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f96959eb233'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fac5cbc8938'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd63080c811'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fc23e9199ef'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd65342c1f6'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd65f822434'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd671deef65'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58fd6826e4014'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000464s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2017-04-25T14:44:40+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_show/achi_id/58fd63080c811
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58fd63080c811' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58fd63080c811' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2017-04-25T14:44:42+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/project_show/achi_id/58fd63080c811/page_type/journal_paper_show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `achievement_id` = '58fd63080c811'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000620s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001781s ]
+
+[ 2017-04-25T14:44:48+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_show/achi_id/58f9c79111910
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '58f9c79111910' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '58f9c79111910' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2017-04-25T14:44:52+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/project_show/achi_id/58f9c79111910/page_type/journal_paper_show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2017-04-25T14:45:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2017-04-25T14:45:04+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/project_edit/project_id/15/page_type/journal_paper_show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\AchievementController.class.php 第 362 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2017-04-25T14:45:24+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000593s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001590s ]
+
+[ 2017-04-25T14:47:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0033s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2017-04-25T14:47:05+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.391817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.392074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003684s ]
+
+[ 2017-04-25T14:47:10+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+
+[ 2017-04-25T14:47:33+08:00 ] ::1 /PaperManager/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-04-25T14:47:34+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002042s ]
+
+[ 2017-04-25T14:47:35+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/project_show/achi_id/58f9c79111910/page_type/journal_paper_show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-04-25T14:47:36+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2017-04-25T15:14:12+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'wgzhang' AND `password` = '1a224d6875ff953e9d9b9d0258c371e3' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010409s ]
+
+[ 2017-04-25T15:14:13+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_area` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_area` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2017-04-25T15:14:16+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001721s ]
+
+[ 2017-04-25T15:14:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000578s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.357564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.357829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2017-04-25T15:21:26+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001299s ]
+
+[ 2017-04-25T15:21:27+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+ERR: 参数错误或者未定义:project_id
+
+[ 2017-04-25T15:21:48+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined variable: page_type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\b9f8e67070a4c7d66dc024e49fd99091.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005496s ]
+
+[ 2017-04-25T15:23:52+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004428s ]
+
+[ 2017-04-25T15:24:00+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2017-04-25T15:24:03+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit_db/project_id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_project` SET `type_name`='863计划课题',`project_num`='61025011',`project_name`='基于内容的视频处理与编码',`content`='其他项目相关信息' WHERE `id` = 15 [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2017-04-25T15:24:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2017-04-25T15:24:12+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001698s ]
+
+[ 2017-04-25T15:24:15+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project/project_type/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND `type_name` = '863计划课题' AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND `type_name` = '863计划课题' AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001307s ]
+
+[ 2017-04-25T15:24:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project/project_type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND `type_name` = '国家自然科学基金项目' AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND `type_name` = '国家自然科学基金项目' AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2017-04-25T15:24:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project/project_type/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND `type_name` = '863计划课题' AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND `type_name` = '863计划课题' AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003431s ]
+
+[ 2017-04-25T15:24:22+08:00 ] ::1 /PaperManager/index.php/Home/Project/my_project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '863计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '973计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家科技支撑计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '国家重点研发计划课题' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他国家级纵向项目' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '中国博士后科学基金资助' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '省自然科学基金项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '其他省部级纵向项目' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `type_name` = '产学研横向合作项目' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_project` WHERE `user_id` = 2 AND ( `project_name` LIKE '%%' OR `project_num` LIKE '%%' ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000547s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2017-04-25T15:24:26+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.364209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.364454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001921s ]
+
+[ 2017-04-25T15:24:29+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2017-04-25T15:25:15+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002260s ]
+
+[ 2017-04-25T15:25:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit_db/project_id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_project` SET `type_name`='国家自然科学基金项目',`project_num`='61025011',`project_name`='基于内容的视频处理与编码',`content`='其他项目相关信息' WHERE `id` = 15 [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2017-04-25T15:25:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+ERR: 非法操作:id
+
+[ 2017-04-25T15:25:32+08:00 ] ::1 /PaperManager/index.php/Home/Project/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003285s ]
+ERR: 非法操作:id
+
+[ 2017-04-25T15:25:38+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit_db/project_id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_project` SET `type_name`='863计划课题',`project_num`='61025011',`project_name`='基于内容的视频处理与编码',`content`='其他项目相关信息' WHERE `id` = 15 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-04-25T15:25:39+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001570s ]
+
+[ 2017-04-25T15:25:43+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002783s ]
+
+[ 2017-04-25T15:25:46+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit_db/project_id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002266s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_project` SET `type_name`='国家自然科学基金项目',`project_num`='61025011',`project_name`='基于内容的视频处理与编码',`content`='其他项目相关信息' WHERE `id` = 15 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002436s ]
+
+[ 2017-04-25T15:25:47+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0032s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2017-04-25T15:26:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: achi_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001872s ]
+
+[ 2017-04-25T15:26:09+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_edit_db/project_id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_project` SET `type_name`='国家自然科学基金项目',`project_num`='61025011',`project_name`='基于内容的视频处理与编码',`content`='其他项目相关信息,其他项目相关信息' WHERE `id` = 15 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-04-25T15:26:10+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_show/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_project` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910'  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' ORDER BY publish_time desc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND ( `publish_time` >= '2014-01-01' AND `publish_time` <= '2014-12-31'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2 AND `achievement_id` = '58f9c79111910' AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '58f9c79111910'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002202s ]
+

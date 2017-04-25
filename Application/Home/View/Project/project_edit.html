@@ -157,9 +157,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果所属项目信息</h3>
+										<h3 class="content-title pull-left">编辑项目信息</h3>
 									</div>
-									<div class="description">基金，项目号</div>
+									<div class="description">编辑项目信息</div>
 								</div>
 							</div>
 						</div>
@@ -170,7 +170,7 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">新增科研成果所属项目信息</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">编辑项目信息</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
@@ -184,22 +184,37 @@
 															<div class="box-body">
 																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请进入左侧导航栏“科研项目->项目类别管理”界面，添加类别信息后重新选择</strong></div>
 																
-																<form class="form-horizontal" action="__URL__/project_add_db/achi_id/{$achi_id}/type/1" method="post">
-																	<input type="text" name="num" id="num" value="0" hidden="true">
+																<form class="form-horizontal" action="__URL__/project_edit_db/project_id/{$ProjectInfo.id}" method="post">
+																	
 																	<div class="row">
 																		<div class="col-md-12">
 																			<div class="box-body">
-																				<div id="AuthorInfo" >
-																					
+																				<div class="form-group" id="form_one_">
+																					<label class="col-md-2 control-label">所属项目类别</label> 
+																					<div class="col-md-3"><select class="form-control" name="type_name" id="type">
+																						<volist name="TypeInfo" id="vo">
+																							<option <eq name="vo.type_name" value="$ProjectInfo.type_name">selected="selected"</eq>>{$vo.type_name}</option>
+																						</volist>
+
+																					</select></div>
+																					<label class="col-md-2 control-label">所属项目号</label>
+																					<div class="col-md-4"><input type="text" name="project_num" class="form-control" value="{$ProjectInfo.project_num}"></div>
+																				</div>
+																				<div class="form-group" id="form_two_">
+																					<label class="col-md-2 control-label">项目名称</label>
+																					<div class="col-md-9"><input type="text" name="project_name" class="form-control" value="{$ProjectInfo.project_name}"></div>
+																				</div>
+																				<div class="form-group" id="form_two_">
+																					<label class="col-md-2 control-label">备注</label> 
+																					<div class="col-md-9"><textarea name="content" class="form-control">{$ProjectInfo.content}</textarea></div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 
 																	<div class="form-actions clearfix">
-																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
-																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属项目信息</button>
-																		<input type="submit" value="完成" class="btn btn-primary pull-right">
+																		
+																		<input type="submit" value="保存修改" class="btn btn-primary pull-right">
 																	</div>
 																</form>
 															</div>
@@ -222,28 +237,6 @@
 						</div>
 					</div><!-- /CONTENT-->
 				</div>
-			</div>
-		</div>
-
-		<div id="info" hidden="true">
-			<div class="form-group" id="form_one_">
-				<label class="col-md-2 control-label">所属项目类别</label> 
-				<div class="col-md-3"><select class="form-control" name="type_name_">
-					<volist name="TypeInfo" id="vo">
-						<option>{$vo.type_name}</option>
-					</volist>
-
-				</select></div>
-				<label class="col-md-2 control-label">所属项目号</label> 
-				<div class="col-md-4"><input type="text" name="project_num_" class="form-control" value=""></div>
-			</div>
-			<div class="form-group" id="form_three_">
-				<label class="col-md-2 control-label">项目名称</label> 
-				<div class="col-md-9"><input type="text" name="project_name_" class="form-control" value=""></div>
-			</div>
-			<div class="form-group" id="form_two_">
-				<label class="col-md-2 control-label">备注</label> 
-				<div class="col-md-9"><textarea name="content_" class="form-control"></textarea></div>
 			</div>
 		</div>
 
@@ -285,28 +278,7 @@
 		jQuery(document).ready(function() {		
 		App.setPage("user_profile");  //Set current page
 		App.init(); //Initialise plugins and elements
-		$("#AddAuthor").click(function(){
-			var i=$("#info").html().replace('true','false');
-			i=i.replace("type_name_","type_name_"+count);
-			i=i.replace("project_num_","project_num_"+count);
-			i=i.replace("project_name_","project_name_"+count);
-			i=i.replace("content_","content_"+count);
-			i=i.replace("form_one_","form_one_"+count);
-			i=i.replace("form_two_","form_two_"+count);
-			i=i.replace("form_three_","form_three_"+count);
-			count++;
-			$("#AuthorInfo").append(i);
-			$("#num").val(count);
-		});
-		$("#DeleteAuthor").click(function(){
-			count--;
-			if(count<0)
-				count=0;
-			$("#form_one_"+count).remove();
-			$("#form_two_"+count).remove();
-			$("#form_three_"+count).remove();
-			$("#num").val(count);
-		});
+		
 	});
 </script>
 <!-- /JAVASCRIPTS -->

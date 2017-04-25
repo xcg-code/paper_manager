@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-	
+
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -92,7 +92,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
+
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -142,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	
+
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -228,17 +228,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-									
+
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-										
+
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($ProjectInfo["project_name"]); ?></h3>
+										<h3 class="content-title pull-left">编辑项目信息</h3>
 									</div>
-									<div class="description">查看，检索该项目下科研成果</div>
+									<div class="description">编辑项目信息</div>
 								</div>
 							</div>
 						</div>
@@ -246,128 +246,67 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i><?php echo ($ProjectInfo["project_name"]); ?></h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">编辑项目信息</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-													<div class="list-group-item profile-details">
-														<h4>相关操作</h4>
-													</div>
-													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 编辑成果</a>
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 删除成果</a>
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 加入收藏</a>
-													<div class="list-group-item profile-details">
-														<h4>成果类别</h4>
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目信息</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<div class="row">
+														<div class="col-md-12">
+															<div class="box-body">
+																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请进入左侧导航栏“科研项目->项目类别管理”界面，添加类别信息后重新选择</strong></div>
+																
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/project_edit_db/project_id/<?php echo ($ProjectInfo["id"]); ?>" method="post">
+																	
+																	<div class="row">
+																		<div class="col-md-12">
+																			<div class="box-body">
+																				<div class="form-group" id="form_one_">
+																					<label class="col-md-2 control-label">所属项目类别</label> 
+																					<div class="col-md-3"><select class="form-control" name="type_name" id="type">
+																						<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if(($vo["type_name"]) == $ProjectInfo["type_name"]): ?>selected="selected"<?php endif; ?>><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+
+																					</select></div>
+																					<label class="col-md-2 control-label">所属项目号</label>
+																					<div class="col-md-4"><input type="text" name="project_num" class="form-control" value="<?php echo ($ProjectInfo["project_num"]); ?>"></div>
+																				</div>
+																				<div class="form-group" id="form_two_">
+																					<label class="col-md-2 control-label">项目名称</label>
+																					<div class="col-md-9"><input type="text" name="project_name" class="form-control" value="<?php echo ($ProjectInfo["project_name"]); ?>"></div>
+																				</div>
+																				<div class="form-group" id="form_two_">
+																					<label class="col-md-2 control-label">备注</label> 
+																					<div class="col-md-9"><textarea name="content" class="form-control"><?php echo ($ProjectInfo["content"]); ?></textarea></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="form-actions clearfix">
+																		
+																		<input type="submit" value="保存修改" class="btn btn-primary pull-right">
+																	</div>
+																</form>
+															</div>
+														</div>
 													</div>
 
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<?php if(($AchievementCount["JournalPaper"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-														</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferencePaper"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
-														</a><?php endif; ?>
-													<?php if(($AchievementCount["Monograph"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Patent"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
-														</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferenceReport"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Standard"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Software"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Reward"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Train"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferenceInvolved"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["TechTrans"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["OtherAchievement"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-													</a><?php endif; ?>
-													<div class="list-group-item profile-details">
-														<h4>发表年份</h4>
-													</div>
-													<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
-														</a><?php endforeach; endif; else: echo "" ;endif; ?>
-												</div>														
-											</div>
-											<div class="col-md-9">
-												<div class="box border blue">
-													<div class="box-title">
-														<h4><i class="fa fa-table"></i>项目详细信息</h4>
-													</div>
-													<div class="box-body">
-														<table class="table table-striped">
-															<tbody>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目类别</td>
-																	<td><?php echo ($ProjectInfo["type_name"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目名称</td>
-																	<td><?php echo ($ProjectInfo["project_name"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目号</td>
-																	<td><?php echo ($ProjectInfo["project_num"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">备注</td>
-																	<td><?php echo ($ProjectInfo["content"]); ?></td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
 												</div>
-												<form action="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/<?php echo ($SearchAction); ?>" method="post">
-													<div class="input-group">
-														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
-														<span class="input-group-btn">
-														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
-														</span>
-													</div>
-												</form>
-												
-												<div class="divide-20"></div>
 
-												<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
-														<h4><a href="<?php echo ($vo["detail_link"]); ?>"><?php echo ($vo["title"]); ?></a></h4>
-														<div class="text-primary"><?php echo ($vo["author"]); ?></div>
-														<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
-														<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
-													</div><?php endforeach; endif; else: echo "" ;endif; ?>
-
-												<div>
-													<ul class='pagination'>
-														<?php echo ($page); ?>
-													</ul>
-												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -377,6 +316,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -387,11 +327,11 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-	
+
 
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
+
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -411,11 +351,13 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
-			App.setPage("user_profile");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
-	<!-- /JAVASCRIPTS -->
+		App.setPage("user_profile");  //Set current page
+		App.init(); //Initialise plugins and elements
+		
+	});
+</script>
+<!-- /JAVASCRIPTS -->
 </body>
 </html>
