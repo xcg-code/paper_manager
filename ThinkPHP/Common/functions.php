@@ -1621,9 +1621,13 @@ function get_achievement_count($achi_id=''){
 }
 
 //获取不同年份科研成果数量
-function get_achievement_year(){
+function get_achievement_year($achi_id=''){
     $AModel=M('Achievement');
     $Condition['user_id']=session('uid');
+    //添加项目号条件
+    if($achi_id!=''){
+        $Condition['achievement_id']=$achi_id;
+    }
     $Info=$AModel->distinct(true)->field('publish_time')->order('publish_time desc')->where($Condition)->select();
     $YearList=array();
     for($i=0;$i<count($Info);$i++){

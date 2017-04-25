@@ -73,7 +73,7 @@ class ProjectController extends Controller {
         //获取各种科研成果的数目
         $AchievementCount=get_achievement_count($ProjectInfo['achievement_id']);
         //获取不同年份科研成果的数量
-        $AchievementYear=get_achievement_year();
+        $AchievementYear=get_achievement_year($ProjectInfo['achievement_id']);
         //分页数据获取
         $Page= get_page($AchievementYearCount,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show= $Page->show();// 分页显示输出
