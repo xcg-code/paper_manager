@@ -4,15 +4,15 @@ use Think\Controller;
 class ProfileController extends Controller {
 	public function profile(){
 		parent::is_login();
+		//获取用户基本信息
 		$UserModel=M('User');
 		$uid=session('uid');
 		$Condition['id']=$uid;
 		$Profile=$UserModel->where($Condition)->find();
+		//获取科研成果分布百分比情况
+		$AchiPercent=get_achi_percent($uid);
 		$this->assign('Profile', $Profile); //基本信息前端赋值
-		$PicPath="Uploads/UserPic/".$Profile['pic_save_path'];
-		$AreaModel=M('Area');
-		$AreaCondition['user_id']=$uid;
-		$AreaInfo=$AreaModel->where($AreaCondition)->count();
+		$this->assign('AchiPercent', $AchiPercent); 
 		$this->display();
 	}
 	public function edit($id){

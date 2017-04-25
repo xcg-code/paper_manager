@@ -170,7 +170,7 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">你好，{$Profile.fullname}</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">{$Profile.fullname}</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs user-profile">
@@ -207,25 +207,25 @@
 														<!-- ROW 1 -->
 														<div class="row">
 															<div class="col-md-12 profile-details">		
-																<h3>我的主要研究领域</h3>
+																<h3>科研成果分布</h3>
 																<div class="row">
 																	<div class="col-md-4 text-center">
-																		<div id="pie_1" class="piechart" data-percent="100">
+																		<div id="pie_1" class="piechart" data-percent="{$AchiPercent.JournalPaper}">
 																			<span class="percent"></span>
 																		</div>
-																		<div class="skill-name"><h4>人工智能</h4></div>
+																		<div class="skill-name"><h4>期刊论文</h4></div>
 																	</div>
 																	<div class="col-md-4 text-center">
-																		<div id="pie_2" class="piechart" data-percent="100">
+																		<div id="pie_2" class="piechart" data-percent="{$AchiPercent.ConferencePaper}">
 																			<span class="percent"></span>
 																		</div>
-																		<div class="skill-name"><h4>机器学习</h4></div>
+																		<div class="skill-name"><h4>会议论文</h4></div>
 																	</div>
 																	<div class="col-md-4 text-center">
-																		<div id="pie_3" class="piechart" data-percent="100">
+																		<div id="pie_3" class="piechart" data-percent="{$AchiPercent.Remain}">
 																			<span class="percent"></span>
 																		</div>
-																		<div class="skill-name"><h4>自然语言处理</h4></div>
+																		<div class="skill-name"><h4>其他</h4></div>
 																	</div>
 																</div>
 																<div class="divide-20"></div>

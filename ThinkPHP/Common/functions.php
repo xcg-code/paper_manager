@@ -1847,3 +1847,27 @@ function get_all_project_num($TypeInfo){
     }
     return $Count;
 }
+
+//获取科研成果分配百分比
+function get_achi_percent($user_id){
+    $AchiModel=M('Achievement');
+    $Condition['user_id']=$user_id;
+    $TypeInfo=$AchiModel->field('achievement_type')->where($Condition)->select();
+    $TypeNum['All']=count($TypeInfo);
+    $TypeNum['JournalPaper']=0;
+    $TypeNum['ConferencePaper']=0;
+    for($i=0;$i<count($TypeInfo);$i++){
+        if($TypeInfo[$i]['achievement_type']=='JournalPaper'){
+            $TypeNum['JournalPaper']+=1;
+        }
+        if($TypeInfo[$i]['achievement_type']=='ConferencePaper'){
+            $TypeNum['ConferencePaper']+=1;
+        }
+    }
+    $TypeNum['Remain']=$TypeNum['All']-$TypeNum['JournalPaper']-$TypeNum['ConferencePaper'];
+    
+    $TypePercent['JournalPaper']=round($TypeNum['JournalPaper']/$TypeNum['All'] * 100 , 0) . "％";
+    $TypePercent['ConferencePaper']=round($TypeNum['ConferencePaper']/$TypeNum['All'] * 100 , 0) . "％";
+    $TypePercent['Remain']=round($TypeNum['Remain']/$TypeNum['All'] * 100 , 0) . "％";
+    return $TypePercent;
+}
