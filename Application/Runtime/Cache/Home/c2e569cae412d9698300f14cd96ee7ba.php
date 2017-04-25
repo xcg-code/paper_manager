@@ -271,13 +271,16 @@
 														  <div class="list-group-item profile-details">
 																<h2><?php echo ($Profile["fullname"]); ?></h2>
 														 </div>
-														  <a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 基本资料</a>
-														  <a href="#" class="list-group-item">
-															<span class="badge badge-red">9</span>
+														  <a  class="list-group-item"><i class="fa fa-user fa-fw"></i> <?php echo ($Profile["work_title"]); ?></a>
+														  <a  class="list-group-item"><i class="fa fa-user fa-fw"></i> <?php echo ($Profile["degree_edu"]); ?></a>
+														  <a href="/PaperManager/index.php/Home/Achievement/my_achievement" class="list-group-item">
+															<span class="badge badge-red"><?php echo ($AchiNum); ?></span>
 															<i class="fa fa-calendar fa-fw"></i> 科研成果
 														  </a>
-														  <a href="#" class="list-group-item"><i class="fa fa-comment-o fa-fw"></i> 实验室</a>
-														  <a href="#" class="list-group-item"><i class="fa fa-picture-o fa-fw"></i> 课题组</a>
+														  <a href="/PaperManager/index.php/Home/Project/my_project" class="list-group-item">
+															<span class="badge badge-red"><?php echo ($ProjectNum); ?></span>
+															<i class="fa fa-calendar fa-fw"></i> 科研项目
+														  </a>
 														</div>														
 													</div>
 													<!-- /PROFILE PIC -->

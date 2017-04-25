@@ -11,8 +11,16 @@ class ProfileController extends Controller {
 		$Profile=$UserModel->where($Condition)->find();
 		//获取科研成果分布百分比情况
 		$AchiPercent=get_achi_percent($uid);
+		//获取科研成果总数
+		$AchiNum=get_achievement_count();
+		//获取科研项目总数
+		$ProjectModel=M('Project');
+		$ConditionPro['user_id']=$uid;
+		$ProjectNum=$ProjectModel->where($ConditionPro)->count();
 		$this->assign('Profile', $Profile); //基本信息前端赋值
 		$this->assign('AchiPercent', $AchiPercent); 
+		$this->assign('AchiNum', $AchiNum['All']);
+		$this->assign('ProjectNum', $ProjectNum);
 		$this->display();
 	}
 	public function edit($id){
