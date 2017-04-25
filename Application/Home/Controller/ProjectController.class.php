@@ -71,7 +71,7 @@ class ProjectController extends Controller {
         //获取记录数
         $AchievementYearCount=$AchievementModel->where($Condition)->count();
         //获取各种科研成果的数目
-        $AchievementCount=get_achievement_count();
+        $AchievementCount=get_achievement_count($ProjectInfo['achievement_id']);
         //获取不同年份科研成果的数量
         $AchievementYear=get_achievement_year();
         //分页数据获取
