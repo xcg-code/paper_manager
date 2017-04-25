@@ -279,8 +279,6 @@
 												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
 												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
 												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
-												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看该类别所有成果</a>
-												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看所属项目所有成果</a>
 												</div>			
 											</div>
 											<div class="col-md-9">
