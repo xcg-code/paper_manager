@@ -273,29 +273,29 @@
 													</div>
 
 													<a href="/PaperManager/index.php/Home/Project/my_achievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<?php if(($AchievementCount["JournalPaper"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
+													<?php if(($AchievementCount["JournalPaper"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
 														</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferencePaper"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
+													<?php if(($AchievementCount["ConferencePaper"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
 														</a><?php endif; ?>
-													<?php if(($AchievementCount["Monograph"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
+													<?php if(($AchievementCount["Monograph"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["Patent"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
+													<?php if(($AchievementCount["Patent"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
 														</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferenceReport"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
+													<?php if(($AchievementCount["ConferenceReport"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["Standard"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
+													<?php if(($AchievementCount["Standard"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["Software"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
+													<?php if(($AchievementCount["Software"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["Reward"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
+													<?php if(($AchievementCount["Reward"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["Train"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
+													<?php if(($AchievementCount["Train"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferenceInvolved"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
+													<?php if(($AchievementCount["ConferenceInvolved"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["TechTrans"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
+													<?php if(($AchievementCount["TechTrans"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
 													</a><?php endif; ?>
-													<?php if(($AchievementCount["OtherAchievement"]) != "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
+													<?php if(($AchievementCount["OtherAchievement"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
 													</a><?php endif; ?>
 													<div class="list-group-item profile-details">
 														<h4>发表年份</h4>
