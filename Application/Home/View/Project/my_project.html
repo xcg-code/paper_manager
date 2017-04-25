@@ -192,18 +192,18 @@
 													<div class="list-group-item profile-details">
 														<h4>项目类别</h4>
 													</div>
-													<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
+													<a href="__URL__/my_project" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
 													</a>
 													<volist name="TypeInfo" id="vo">
-														<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+														<a href="__URL__/my_project/project_type/{$vo.id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
 														</a>
 													</volist>
 												</div>														
 											</div>
 											<div class="col-md-9">
-												<form action="__URL__/my_achievement/{$SearchAction}" method="post">
+												<form action="__URL__/my_project/{$SearchAction}" method="post">
 													<div class="input-group">
-														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
+														<input class="form-control" type="text" placeholder="输入项目名称或者项目号查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
 														<span class="input-group-btn">
 														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
 														</span>

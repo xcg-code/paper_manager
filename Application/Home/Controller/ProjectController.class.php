@@ -2,7 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class ProjectController extends Controller {
-	public function my_project(){
+	public function my_project($project_type=''){
 		parent::is_login();
 		//获取项目类别信息
 		$TypeModel=M('Project_type');
@@ -13,6 +13,14 @@ class ProjectController extends Controller {
 		//获取检索条件
 		$ProjectModel=M('Project');
 		$Condition['user_id']=session('uid');
+		if($project_type!=''){
+			for($i=0;$i<count($TypeInfo);$i++){
+				if($project_type==$TypeInfo[$i]['id']){
+					$Condition['type_name']=$TypeInfo[$i]['type_name'];
+					break;
+				}
+			}		
+		}
 		//获取记录数
 		$ProjectCount=$ProjectModel->where($Condition)->count();
 		//分页数据获取
