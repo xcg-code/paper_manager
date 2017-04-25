@@ -124,4 +124,16 @@ class ProjectController extends Controller {
             $this->error($ProjectModel->getError());
         }
 	}
+
+	//科研项目删除功能
+	public function project_delete($project_id){
+		$ProjectModel=M('Project');
+        $Condition['id']=$project_id;
+        $Result=$ProjectModel->where($Condition)->delete();
+        if($Result){
+            $this->success('删除所属项目信息成功');
+        }else{
+            $this->error('删除所属项目信息失败');
+        }
+	}
 }
