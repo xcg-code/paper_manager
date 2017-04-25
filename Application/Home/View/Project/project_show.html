@@ -194,31 +194,54 @@
 													</div>
 
 													<a href="__URL__/my_achievement" class="list-group-item"><span class="badge badge-red">{$AchievementCount.All}</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文
+													<neq name="AchievementCount.JournalPaper" value="0">
+														<a href="__URL__/my_achievement/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文
+														</a>
+													</neq>
+													<neq name="AchievementCount.ConferencePaper" value="0">
+														<a href="__URL__/my_achievement/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文
+														</a>
+													</neq>
+													<neq name="AchievementCount.Monograph" value="0">
+														<a href="__URL__/my_achievement/achi_type/Monograph" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著
 													</a>
-													<a href="__URL__/my_achievement/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文
+													</neq>
+													<neq name="AchievementCount.Patent" value="0">
+														<a href="__URL__/my_achievement/achi_type/Patent" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利
+														</a>
+													</neq>
+													<neq name="AchievementCount.ConferenceReport" value="0">
+														<a href="__URL__/my_achievement/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告
 													</a>
-													<a href="__URL__/my_achievement/achi_type/Monograph" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著
+													</neq>
+													<neq name="AchievementCount.Standard" value="0">
+														<a href="__URL__/my_achievement/achi_type/Standard" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准
 													</a>
-													<a href="__URL__/my_achievement/achi_type/Patent" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利
+													</neq>
+													<neq name="AchievementCount.Software" value="0">
+														<a href="__URL__/my_achievement/achi_type/Software" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权
 													</a>
-													<a href="__URL__/my_achievement/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告
+													</neq>
+													<neq name="AchievementCount.Reward" value="0">
+														<a href="__URL__/my_achievement/achi_type/Reward" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励
 													</a>
-													<a href="__URL__/my_achievement/achi_type/Standard" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准
+													</neq>
+													<neq name="AchievementCount.Train" value="0">
+														<a href="__URL__/my_achievement/achi_type/Train" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Train}</span><i class="fa fa-calendar fa-fw"></i> 人才培养
 													</a>
-													<a href="__URL__/my_achievement/achi_type/Software" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权
+													</neq>
+													<neq name="AchievementCount.ConferenceInvolved" value="0">
+														<a href="__URL__/my_achievement/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
 													</a>
-													<a href="__URL__/my_achievement/achi_type/Reward" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励
+													</neq>
+													<neq name="AchievementCount.TechTrans" value="0">
+														<a href="__URL__/my_achievement/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red">{$AchievementCount.TechTrans}</span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
 													</a>
-													<a href="__URL__/my_achievement/achi_type/Train" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Train}</span><i class="fa fa-calendar fa-fw"></i> 人才培养
+													</neq>
+													<neq name="AchievementCount.OtherAchievement" value="0">
+														<a href="__URL__/my_achievement/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red">{$AchievementCount.OtherAchievement}</span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
 													</a>
-													<a href="__URL__/my_achievement/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-													</a>
-													<a href="__URL__/my_achievement/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red">{$AchievementCount.TechTrans}</span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-													</a>
-													<a href="__URL__/my_achievement/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red">{$AchievementCount.OtherAchievement}</span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-													</a>
-
+													</neq>
 													<div class="list-group-item profile-details">
 														<h4>发表年份</h4>
 													</div>
