@@ -300,7 +300,7 @@
 													<div class="list-group-item profile-details">
 														<h4>发表年份</h4>
 													</div>
-													<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/my_achievement/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
+													<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
 														</a><?php endforeach; endif; else: echo "" ;endif; ?>
 												</div>														
 											</div>
