@@ -1301,4 +1301,62 @@ class AchievementController extends Controller {
         delete_all_info($achi_id);
         $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
     }
+
+    //显示举办或参加学术会议添加页面
+    public function conference_involved_add(){
+        parent::is_login();
+        $this->display();
+    }
+
+    //举办或参加学术会议添加数据库操作
+    public function conference_involved_add_db(){
+        $ConModel=D('Conferenceinvolved');
+        $AchievementModel=D('Achievement');
+        if($ConModel->create()){
+            $ConModel->user_id=session('uid');
+            $uniq_id=uniqid();
+            $ConModel->id=$uniq_id;
+            //赋值成果汇总模型类
+            $AchievementModel->achievement_id=$uniq_id;
+            $AchievementModel->user_id=session('uid');
+            $AchievementModel->achievement_type='ConferenceInvolved';
+            $AchievementModel->title=$ConModel->title_zh;
+            $AchievementModel->institute_name=$ConModel->institute;
+            $AchievementModel->publish_time=$ConModel->start_date;
+
+            //sql事务
+            $ConModel->startTrans();
+            $ResultCon=$ConModel->add();//添加信息到期刊论文数据表
+            $ResultAchi=$AchievementModel->add();
+            if($ResultCon && $ResultAchi){
+                $ConModel->commit();
+                $this->success('添加举办或参加学术会议成功，请添加作者信息',__ROOT__.'/index.php/Home/Achievement/author_add/achi_id/'.$uniq_id);
+            }else{
+                $ConModel->rollback();
+                $this->error('添加举办或参加学术会议失败');
+            }
+        }else{
+            $this->error($ConModel->getError());
+        }
+    }
+
+    //显示举办或参加学术会议详情页面
+    public function conference_involved_show($achi_id){
+        parent::is_login();
+        $ConModel=M('Conferenceinvolved');
+        $Condition['id']=$achi_id;
+        $ConInfo=$ConModel->where($Condition)->find();
+        //添加其他详细信息
+        $ConInfo['achievement_type']='举办或参加学术会议';
+        $this->assign('ConInfo', $ConInfo);
+        //添加相关操作信息参数
+        $this->assign('id', $ConInfo['id']);
+        $this->assign('edit','conference_involved_edit');
+        $this->assign('delete','conference_involved_delete');
+        $this->assign('show','conference_involved_show');
+        //获取全文电子文档路径信息
+        $FilePath=get_main_file_path($achi_id);
+        $this->assign('FilePath', $FilePath); 
+        $this->display();
+    }
 }

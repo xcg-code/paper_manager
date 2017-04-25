@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-
+	
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -92,7 +92,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-
+		
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -142,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-
+	
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -228,17 +228,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-
+									
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-
+										
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">新增科研成果所属项目信息</h3>
+										<h3 class="content-title pull-left">新增科研成果</h3>
 									</div>
-									<div class="description">基金，项目号</div>
+									<div class="description">手动添加科研成果</div>
 								</div>
 							</div>
 						</div>
@@ -249,42 +249,72 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">新增科研成果所属项目信息</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">举办或参加学术会议</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目信息</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">基本信息</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<div class="row">
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请进入左侧导航栏“科研项目->项目类别管理”界面，添加类别信息后重新选择</strong></div>
-																
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_add_db/achi_id/<?php echo ($achi_id); ?>/type/1" method="post">
-																	<input type="text" name="num" id="num" value="0" hidden="true">
-																	<div class="row">
-																		<div class="col-md-12">
-																			<div class="box-body">
-																				<div id="AuthorInfo" >
-																					
-																				</div>
-																			</div>
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/conference_involved_add_db" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">学术会议类型</label> 
+																		<div class="col-md-8">
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="举办国际学术会议"> 举办国际学术会议 </label> 
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="举办国内学术会议"> 举办国内学术会议 </label>
+																			<label class="radio-inline"> <input type="radio" class="uniform" name="type" value="参加国际学术会议"> 参加国际学术会议 </label>
 																		</div>
 																	</div>
-
-																	<div class="form-actions clearfix">
-																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
-																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属项目信息</button>
-																		<input type="submit" value="完成" class="btn btn-primary pull-right">
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议名称(中文)</label> 
+																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
 																	</div>
-																</form>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议名称(英文)</label> 
+																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议地点</label> 
+																		<div class="col-md-8"><input type="text" name="address" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议开始日期</label> 
+																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value=""></div>
+																		<label class="col-md-2 control-label">会议结束日期</label> 
+																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value=""></div>
+																		
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">主办单位</label> 
+																		<div class="col-md-8"><input type="text" name="institute" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">会议负责人</label> 
+																		<div class="col-md-8"><input type="text" name="holder" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">参会人数</label> 
+																		<div class="col-md-3"><input type="text" name="people_num" class="form-control" value=""></div>
+																		
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">备注</label> 
+																		<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">全文链接</label> 
+																		<div class="col-md-8"><input type="text" name="paper_link" class="form-control" value=""></div>
+																	</div>
+																</div>
 															</div>
 														</div>
-													</div>
-
+														<div class="form-actions clearfix"> <input type="submit" value="保存并下一步" class="btn btn-primary pull-right"></div>
+													</form>
 												</div>
 
 											</div>
@@ -293,7 +323,7 @@
 								</div>
 							</div>
 						</div>
-
+						
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -301,26 +331,6 @@
 						</div>
 					</div><!-- /CONTENT-->
 				</div>
-			</div>
-		</div>
-
-		<div id="info" hidden="true">
-			<div class="form-group" id="form_one_">
-				<label class="col-md-2 control-label">所属项目类别</label> 
-				<div class="col-md-3"><select class="form-control" name="type_name_">
-					<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-
-				</select></div>
-				<label class="col-md-2 control-label">所属项目号</label> 
-				<div class="col-md-4"><input type="text" name="project_num_" class="form-control" value=""></div>
-			</div>
-			<div class="form-group" id="form_three_">
-				<label class="col-md-2 control-label">项目名称</label> 
-				<div class="col-md-9"><input type="text" name="project_name_" class="form-control" value=""></div>
-			</div>
-			<div class="form-group" id="form_two_">
-				<label class="col-md-2 control-label">备注</label> 
-				<div class="col-md-9"><textarea name="content_" class="form-control"></textarea></div>
 			</div>
 		</div>
 
@@ -334,11 +344,11 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-
+	
 
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-
+	
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -360,32 +370,10 @@
 	<script>
 		var count=0;
 		jQuery(document).ready(function() {		
-		App.setPage("user_profile");  //Set current page
-		App.init(); //Initialise plugins and elements
-		$("#AddAuthor").click(function(){
-			var i=$("#info").html().replace('true','false');
-			i=i.replace("type_name_","type_name_"+count);
-			i=i.replace("project_num_","project_num_"+count);
-			i=i.replace("project_name_","project_name_"+count);
-			i=i.replace("content_","content_"+count);
-			i=i.replace("form_one_","form_one_"+count);
-			i=i.replace("form_two_","form_two_"+count);
-			i=i.replace("form_three_","form_three_"+count);
-			count++;
-			$("#AuthorInfo").append(i);
-			$("#num").val(count);
+			App.setPage("user_profile");  //Set current page
+			App.init(); //Initialise plugins and elements
 		});
-		$("#DeleteAuthor").click(function(){
-			count--;
-			if(count<0)
-				count=0;
-			$("#form_one_"+count).remove();
-			$("#form_two_"+count).remove();
-			$("#form_three_"+count).remove();
-			$("#num").val(count);
-		});
-	});
-</script>
-<!-- /JAVASCRIPTS -->
+	</script>
+	<!-- /JAVASCRIPTS -->
 </body>
 </html>
