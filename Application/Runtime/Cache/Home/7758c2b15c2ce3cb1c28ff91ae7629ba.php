@@ -306,6 +306,33 @@
 												</div>														
 											</div>
 											<div class="col-md-9">
+												<div class="box border blue">
+													<div class="box-title">
+														<h4><i class="fa fa-table"></i>项目详细信息</h4>
+													</div>
+													<div class="box-body">
+														<table class="table table-striped">
+															<tbody>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目类别</td>
+																	<td><?php echo ($ProjectInfo["type_name"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目名称</td>
+																	<td><?php echo ($ProjectInfo["project_name"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目号</td>
+																	<td><?php echo ($ProjectInfo["project_num"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">备注</td>
+																	<td><?php echo ($ProjectInfo["content"]); ?></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
 												<form action="/PaperManager/index.php/Home/Project/my_achievement/<?php echo ($SearchAction); ?>" method="post">
 													<div class="input-group">
 														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">

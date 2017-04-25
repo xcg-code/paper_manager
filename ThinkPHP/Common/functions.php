@@ -1550,7 +1550,7 @@ function in_array_case($value,$array){
 }
 
 //获取不同科研成果类型数量函数
-function get_achievement_count(){
+function get_achievement_count($project_type=''){
     $AchievementModel=M('Achievement');
     $Condition['user_id']=session('uid');
     $AchievementInfo=$AchievementModel->where($Condition)->select();
