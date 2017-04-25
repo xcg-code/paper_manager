@@ -41,4 +41,14 @@ class ProjectController extends Controller {
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}
+
+	//显示项目详情页面
+	public function project_show($id){
+		parent::is_login();
+		$ProjectModel=M('Project');
+		$Condition['id']=$id;
+		$ProjectInfo=$ProjectModel->where($Condition)->find();
+		$this->assign('ProjectInfo',$ProjectInfo);
+		$this->display();
+	}
 }
