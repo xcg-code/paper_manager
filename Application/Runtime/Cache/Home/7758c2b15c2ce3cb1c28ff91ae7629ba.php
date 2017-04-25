@@ -332,7 +332,7 @@
 														</table>
 													</div>
 												</div>
-												<form action="/PaperManager/index.php/Home/Project/my_achievement/<?php echo ($SearchAction); ?>" method="post">
+												<form action="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/<?php echo ($SearchAction); ?>" method="post">
 													<div class="input-group">
 														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
 														<span class="input-group-btn">
