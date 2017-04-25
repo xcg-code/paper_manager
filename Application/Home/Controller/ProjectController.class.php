@@ -13,14 +13,19 @@ class ProjectController extends Controller {
 		//获取检索条件
 		$ProjectModel=M('Project');
 		$Condition['user_id']=session('uid');
+		$SearchAction='';
 		if($project_type!=''){
 			for($i=0;$i<count($TypeInfo);$i++){
 				if($project_type==$TypeInfo[$i]['id']){
 					$Condition['type_name']=$TypeInfo[$i]['type_name'];
 					break;
 				}
-			}		
+			}
+			$SearchAction='project_type/'.$project_type;	
 		}
+		//获取搜索栏内容
+		$Search=I('post.search');
+        $Condition['project_name|project_num']=array('like','%'.$Search.'%');
 		//获取记录数
 		$ProjectCount=$ProjectModel->where($Condition)->count();
 		//分页数据获取
@@ -32,6 +37,7 @@ class ProjectController extends Controller {
 		$this->assign('TypeInfo',$TypeInfo);
 		$this->assign('AllCount',$AllCount);
 		$this->assign('ProjectInfo',$ProjectInfo);
+		$this->assign('SearchAction',$SearchAction);
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}
