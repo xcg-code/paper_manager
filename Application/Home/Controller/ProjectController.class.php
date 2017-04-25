@@ -43,7 +43,7 @@ class ProjectController extends Controller {
 	}
 
 	//显示项目详情页面
-	public function project_show($id){
+	public function project_show($id,$achi_type='',$achi_year=''){
 		parent::is_login();
 		//获取项目信息
 		$ProjectModel=M('Project');
