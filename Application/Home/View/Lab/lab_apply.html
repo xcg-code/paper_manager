@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,15 +8,15 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
-	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
-	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/themes/default.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
 
-	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- UNIFORM -->
-	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/uniform/css/uniform.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
 	<!-- FONTS -->
 </head>
 <body>
@@ -26,7 +26,7 @@
 			<div class="navbar-brand">
 				<!-- COMPANY LOGO -->
 				<a href="index.html">
-					<img src="/PaperManager/Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+					<img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
 				</a>
 				<!-- /COMPANY LOGO -->
 				<!-- TEAM STATUS FOR MOBILE -->
@@ -45,47 +45,20 @@
 				<!-- /SIDEBAR COLLAPSE -->
 			</div>
 			<!-- NAVBAR LEFT -->
-			<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
-	<li class="dropdown">
-		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
-			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
-			<i class="fa fa-angle-down"></i>
-		</a>
-	</li>
-	<li class="dropdown">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
-			<i class="fa fa-angle-down"></i>
-		</a>
-		<ul class="dropdown-menu skins">
-			<li class="dropdown-title">
-				<span><i class="fa fa-leaf"></i> Theme Skins</span>
-			</li>
-			<li><a href="#" data-skin="default">Subtle (default)</a></li>
-			<li><a href="#" data-skin="night">Night</a></li>
-			<li><a href="#" data-skin="earth">Earth</a></li>
-			<li><a href="#" data-skin="utopia">Utopia</a></li>
-			<li><a href="#" data-skin="nature">Nature</a></li>
-			<li><a href="#" data-skin="graphite">Graphite</a></li>
-		 </ul>
-	</li>
-</ul>
-
+			<include file="./Public/tpl/header.html" />
 			<!-- /NAVBAR LEFT -->
 			<!-- BEGIN TOP NAVIGATION MENU -->		
 			<ul class="nav navbar-nav pull-right">				
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<li class="dropdown user" id="header-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<img alt="" src="/PaperManager/<?php echo (session('pic_path')); ?>" />
-						<span class="username"><?php echo (session('fullname')); ?></span>
+						<img alt="" src="__ROOT__/{$Think.session.pic_path}" />
+						<span class="username">{$Think.session.fullname}</span>
 						<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu">
 						<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
-						<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
+						<li><a href="__ROOT__/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
 					</ul>
 				</li>
 				<!-- END USER LOGIN DROPDOWN -->
@@ -104,7 +77,7 @@
 					<li class="current">
 						<a href="javascript:void(0);">
 							<span class="image">
-								<img src="/PaperManager/Public/img/avatars/avatar3.jpg" alt="" />
+								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
 							</span>
 							<span class="title">
 								You
@@ -146,58 +119,7 @@
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
-		<div id="sidebar" class="sidebar">
-					<div class="sidebar-menu nav-collapse">
-						<div class="divide-20"></div>
-						
-						<!-- SIDEBAR MENU -->
-						<ul>
-							<li>
-								<a href="/PaperManager/index.php/Home/Profile/profile">
-								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">个人主页</span>
-								<span class="selected"></span>
-								</a>					
-							</li>
-							<li class="has-sub">
-								<a href="javascript:;" class="">
-								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研成果<span class="badge pull-right"></span></span>
-								<span class="arrow"></span>
-								</a>
-								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
-								</ul>
-							</li>
-							<li class="has-sub">
-								<a href="javascript:;" class="">
-								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研项目<span class="badge pull-right"></span></span>
-								<span class="arrow"></span>
-								</a>
-								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
-								</ul>
-							</li>
-							<li class="has-sub">
-								<a href="javascript:;" class="">
-								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">实验室<span class="badge pull-right"></span></span>
-								<span class="arrow"></span>
-								</a>
-								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Lab/lab_apply"><span class="sub-menu-text">加入实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">我的实验室</span></a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="/PaperManager/index.php/Home/Profile/profile">
-								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">我的收藏</span>
-								<span class="selected"></span>
-								</a>					
-							</li>
-						</ul>
-						<!-- /SIDEBAR MENU -->
-					</div>
-				</div>
+		<include file="./Public/tpl/navbar.html" />
 		<!-- /SIDEBAR -->
 		<div id="main-content">
 			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
@@ -276,20 +198,22 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<?php if(is_array($ProjectInfo)): $i = 0; $__LIST__ = $ProjectInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["type_name"]); ?></td>
-																						<td><?php echo ($vo["project_num"]); ?></td>
-																						<td><?php echo ($vo["project_name"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个项目吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																				<volist name="ProjectInfo" id="vo">
+																					<tr>
+																						<td>{$vo.type_name}</td>
+																						<td>{$vo.project_num}</td>
+																						<td>{$vo.project_name}</td>
+																						<td>{$vo.content}</td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/project_edit/project_id/{$vo.id}/page_type/{$page_type}'">修改</button><a href="__URL__/project_delete/project_id/{$vo.id}" onclick="return confirm('确定要删除这个项目吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																					</tr>
+																				</volist>
 																			</tbody>
 																		</table>
 																	</div>
 																</div>
 																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请进入左侧导航栏“科研项目->项目类别管理”界面，添加类别信息后重新选择</strong></div>
 																
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_add_db/achi_id/<?php echo ($achi_id); ?>/type/2" method="post">
+																<form class="form-horizontal" action="__URL__/project_add_db/achi_id/{$achi_id}/type/2" method="post">
 																	<input type="text" name="num" id="num" value="0" hidden="true">
 																	<div class="row">
 																		<div class="col-md-12">
@@ -304,7 +228,7 @@
 																	<div class="form-actions clearfix">
 																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
 																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属项目信息</button>
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/'+'<?php echo ($page_type); ?>'+'/achi_id/<?php echo ($achi_id); ?>'">返回科研成果详情页</button>
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/'+'{$page_type}'+'/achi_id/{$achi_id}'">返回科研成果详情页</button>
 																		<input type="submit" value="添加" class="btn btn-primary pull-right">
 																	</div>
 																</form>
@@ -335,7 +259,9 @@
 			<div class="form-group" id="form_one_">
 				<label class="col-md-2 control-label">所属项目类别</label> 
 				<div class="col-md-3"><select class="form-control" name="type_name_">
-					<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+					<volist name="TypeInfo" id="vo">
+						<option>{$vo.type_name}</option>
+					</volist>
 
 				</select></div>
 				<label class="col-md-2 control-label">所属项目号</label> 
@@ -356,34 +282,34 @@
 	<!-- JAVASCRIPTS -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<!-- JQUERY -->
-	<script src="/PaperManager/Public/js/jquery/jquery-2.0.3.min.js"></script>
+	<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
 	<!-- JQUERY UI-->
-	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
 
 
 	<!-- DATE RANGE PICKER -->
-	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
+	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
 
-	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 	<!-- EASY PIE CHART -->
-	<script src="/PaperManager/Public/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="/PaperManager/Public/js/easypiechart/jquery.easypiechart.min.js"></script>
+	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
 	<!-- SPARKLINES -->
-	<script type="text/javascript" src="/PaperManager/Public/js/sparklines/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
 	<!-- UNIFORM -->
-	<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
 	<!-- COOKIE -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
-	<script src="/PaperManager/Public/js/script.js"></script>
+	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
 		var count=0;
 		jQuery(document).ready(function() {		

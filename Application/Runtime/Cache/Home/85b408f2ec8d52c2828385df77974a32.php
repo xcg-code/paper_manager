@@ -281,7 +281,7 @@
 																						<td><?php echo ($vo["project_num"]); ?></td>
 																						<td><?php echo ($vo["project_name"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个项目吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button><a href="/PaperManager/index.php/Home/Lab/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个项目吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>
@@ -289,7 +289,7 @@
 																</div>
 																<div class="alert alert-info"><strong>如果下拉列表中无对应类别信息，请进入左侧导航栏“科研项目->项目类别管理”界面，添加类别信息后重新选择</strong></div>
 																
-																<form class="form-horizontal" action="/PaperManager/index.php/Home/Achievement/project_add_db/achi_id/<?php echo ($achi_id); ?>/type/2" method="post">
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Lab/project_add_db/achi_id/<?php echo ($achi_id); ?>/type/2" method="post">
 																	<input type="text" name="num" id="num" value="0" hidden="true">
 																	<div class="row">
 																		<div class="col-md-12">
@@ -304,7 +304,7 @@
 																	<div class="form-actions clearfix">
 																		<button type="button" id="AddAuthor" class="btn btn-primary">添加所属项目信息</button>
 																		<button type="button" id="DeleteAuthor" class="btn btn-primary">删除所属项目信息</button>
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/'+'<?php echo ($page_type); ?>'+'/achi_id/<?php echo ($achi_id); ?>'">返回科研成果详情页</button>
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Lab/'+'<?php echo ($page_type); ?>'+'/achi_id/<?php echo ($achi_id); ?>'">返回科研成果详情页</button>
 																		<input type="submit" value="添加" class="btn btn-primary pull-right">
 																	</div>
 																</form>
