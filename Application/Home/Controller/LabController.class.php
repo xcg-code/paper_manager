@@ -97,8 +97,11 @@ class LabController extends Controller {
         $NumInfo['apply']=$UserModel->where($ConApply)->count();
         //读取实验室信息
         $LabModel=M('Lab');
+        $ConLab['id']=$UserInfo['lab_id'];
+        $LabInfo=$LabModel->where($ConLab)->find();
         $this->assign('UserInfo',$UserInfo);
         $this->assign('NumInfo',$NumInfo);
+        $this->assign('LabInfo',$LabInfo);
         $this->display();
     }
 
