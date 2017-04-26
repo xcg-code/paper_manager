@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | User Profile</title>
+	<title>Cloud Admin | Gallery</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -15,9 +15,12 @@
 	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
-	<!-- UNIFORM -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+	<!-- ANIMATE -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/animatecss/animate.min.css" />
+	<!-- COLORBOX -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/colorbox/colorbox.min.css" />
 	<!-- FONTS -->
+
 </head>
 <body>
 	<!-- HEADER -->
@@ -65,7 +68,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
+
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -159,18 +162,32 @@
 									<div class="clearfix">
 										<h3 class="content-title pull-left">{$UserInfo.lab_name}</h3>
 									</div>
-									<div class="description">查看，检索实验室人员信息</div>
+									<div class="description">我的实验室</div>
 								</div>
 							</div>
 						</div>
 						<!-- /PAGE HEADER -->
-						<!-- USER PROFILE -->
+						<!-- GALLERY -->
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-3">
+								<div class="list-group">
+									<div class="list-group-item profile-details">
+										<h4>项目类别</h4>
+									</div>
+									<a href="__URL__/my_project" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
+									</a>
+									<volist name="TypeInfo" id="vo">
+										<a href="__URL__/my_project/project_type/{$vo.id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+										</a>
+									</volist>
+								</div>														
+							</div>
+							<div class="col-md-9">
+								<!-- BOX -->
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>{$UserInfo.lab_name}</h4>
-										<div class="tools hidden-xs">
+										<h4><i class="fa fa-bars"></i>实验室人员</h4>
+										<div class="tools">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
 											</a>
@@ -185,53 +202,144 @@
 											</a>
 										</div>
 									</div>
-									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-													<div class="list-group-item profile-details">
-														<h4>项目类别</h4>
-													</div>
-													<a href="__URL__/my_project" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
-													</a>
-													<volist name="TypeInfo" id="vo">
-														<a href="__URL__/my_project/project_type/{$vo.id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
-														</a>
-													</volist>
-												</div>														
+									<div class="box-body clearfix">
+										<div id="filter-controls" class="btn-group">
+											<div class="hidden-xs">
+												<a href="#" class="btn btn-default" data-filter="*">所有人员</a>
+												<a href="#" class="btn btn-info" data-filter=".category_1">教授</a>
+												<a href="#" class="btn btn-danger" data-filter=".category_2">博士后</a>
+												<a href="#" class="btn btn-danger" data-filter=".category_2">博士生</a>
+												<a href="#" class="btn btn-success" data-filter=".category_3">硕士生</a>
+												<a href="#" class="btn btn-warning" data-filter=".category_4">本科生</a>
 											</div>
-											<div class="col-md-9">
-												<form action="__URL__/my_project/{$SearchAction}" method="post">
-													<div class="input-group">
-														<input class="form-control" type="text" placeholder="输入项目名称或者项目号查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
-														<span class="input-group-btn">
-														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
-														</span>
-													</div>
-												</form>
-												
-												<div class="divide-20"></div>
+											<div class="visible-xs">
+												<select id="e1" class="form-control">
+													<option value="*">All</option>
+													<option value=".category_1">Android Apps</option>
+													<option value=".category_2">iPhone Apps</option>
+													<option value=".category_3">Windows Apps</option>
+													<option value=".category_4">Web Apps</option>
+												</select>
+											</div>
+										</div>
+										<div id="filter-items" class="row">
+											<div class="col-md-3 category_1 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/1.png" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
 
-												<volist name="ProjectInfo" id="vo">
-													<div class="search-results">
-														<h4><a href="__ROOT__/index.php/Home/Project/project_show/id/{$vo.id}">{$vo.project_name}</a></h4>
-														<div class="text-danger">{$vo.type_name} | {$vo.project_num}</div>
-														<div class="text-success">{$vo.content}</div>
 													</div>
-												</volist>
-
-												<div>
-													<ul class='pagination'>
-														{$page}
-													</ul>
+												</div>
+											</div>
+											<div class="col-md-3 category_2 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/2.jpg" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/2.jpg" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 category_3 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/3.png" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/3.png" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 category_4 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/4.png" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/4.png" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 category_1 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/5.png" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/5.png" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 category_2 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/8.png" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/8.png" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 category_4 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/7.jpg" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/7.jpg" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 category_4 item">
+												<div class="filter-content">
+													<img src="__PUBLIC__/img/gallery/2.jpg" alt="" class="img-responsive" />
+													<div class="hover-content">
+														<h4>Image Title</h4>
+														<a class="btn btn-success hover-link">
+															<i class="fa fa-edit fa-1x"></i>
+														</a>
+														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/2.jpg" title="Image Title">
+															<i class="fa fa-search-plus fa-1x"></i>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<!-- /BOX -->
 							</div>
 						</div>
-						
+						<!-- /GALLERY -->
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -251,32 +359,25 @@
 	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
-	
-
 	<!-- DATE RANGE PICKER -->
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
 	
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
 	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- EASY PIE CHART -->
-	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
-	<!-- SPARKLINES -->
-	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
-	<!-- UNIFORM -->
-	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+	<!-- ISOTOPE -->
+	<script type="text/javascript" src="__PUBLIC__/js/isotope/jquery.isotope.min.js"></script>
+	<!-- COLORBOX -->
+	<script type="text/javascript" src="__PUBLIC__/js/colorbox/jquery.colorbox.min.js"></script>
 	<!-- COOKIE -->
 	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
 	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
-			App.setPage("user_profile");  //Set current page
+			App.setPage("gallery");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
 	</script>
