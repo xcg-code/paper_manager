@@ -291,132 +291,96 @@
 											<div class="hidden-xs">
 												<a href="#" class="btn btn-default" data-filter="*">所有人员</a>
 												<a href="#" class="btn btn-info" data-filter=".category_1">教授</a>
-												<a href="#" class="btn btn-danger" data-filter=".category_2">博士后</a>
-												<a href="#" class="btn btn-danger" data-filter=".category_2">博士生</a>
-												<a href="#" class="btn btn-success" data-filter=".category_3">硕士生</a>
-												<a href="#" class="btn btn-warning" data-filter=".category_4">本科生</a>
+												<a href="#" class="btn btn-info" data-filter=".category_2">副教授</a>
+												<a href="#" class="btn btn-danger" data-filter=".category_3">博士后</a>
+												<a href="#" class="btn btn-danger" data-filter=".category_4">博士生</a>
+												<a href="#" class="btn btn-success" data-filter=".category_5">硕士生</a>
+												<a href="#" class="btn btn-warning" data-filter=".category_6">本科生</a>
 											</div>
 											<div class="visible-xs">
 												<select id="e1" class="form-control">
-													<option value="*">All</option>
-													<option value=".category_1">Android Apps</option>
-													<option value=".category_2">iPhone Apps</option>
-													<option value=".category_3">Windows Apps</option>
-													<option value=".category_4">Web Apps</option>
+													<option value="*">所有人员</option>
+													<option value=".category_1">教授</option>
+													<option value=".category_2">副教授</option>
+													<option value=".category_3">博士后</option>
+													<option value=".category_4">博士生</option>
+													<option value=".category_5">硕士生</option>
+													<option value=".category_6">本科生</option>
 												</select>
 											</div>
 										</div>
 										<div id="filter-items" class="row">
-											<div class="col-md-3 category_1 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/1.png" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
+											<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo["work_title"]) == "教授"): ?><div class="col-md-3 category_1 item">
+														<div class="filter-content">
+															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
+															<div class="hover-content">
+																<h4><?php echo ($vo["fullname"]); ?></h4>
+																<a class="btn btn-success hover-link">
+																	<i class="fa fa-edit fa-1x"></i>
+																</a>
 
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_2 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/2.jpg" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/2.jpg" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_3 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/3.png" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/3.png" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_4 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/4.png" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/4.png" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_1 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/5.png" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/5.png" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_2 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/8.png" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/8.png" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_4 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/7.jpg" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/7.jpg" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3 category_4 item">
-												<div class="filter-content">
-													<img src="/PaperManager/Public/img/gallery/2.jpg" alt="" class="img-responsive" />
-													<div class="hover-content">
-														<h4>Image Title</h4>
-														<a class="btn btn-success hover-link">
-															<i class="fa fa-edit fa-1x"></i>
-														</a>
-														<a class="btn btn-warning hover-link colorbox-button" href="img/gallery/2.jpg" title="Image Title">
-															<i class="fa fa-search-plus fa-1x"></i>
-														</a>
-													</div>
-												</div>
-											</div>
+															</div>
+														</div>
+													</div><?php endif; ?>
+												<?php if(($vo["work_title"]) == "副教授"): ?><div class="col-md-3 category_2 item">
+														<div class="filter-content">
+															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
+															<div class="hover-content">
+																<h4><?php echo ($vo["fullname"]); ?></h4>
+																<a class="btn btn-success hover-link">
+																	<i class="fa fa-edit fa-1x"></i>
+																</a>
+
+															</div>
+														</div>
+													</div><?php endif; ?>
+												<?php if(($vo["work_title"]) == "博士后"): ?><div class="col-md-3 category_3 item">
+														<div class="filter-content">
+															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
+															<div class="hover-content">
+																<h4><?php echo ($vo["fullname"]); ?></h4>
+																<a class="btn btn-success hover-link">
+																	<i class="fa fa-edit fa-1x"></i>
+																</a>
+
+															</div>
+														</div>
+													</div><?php endif; ?>
+												<?php if(($vo["work_title"]) == "博士生"): ?><div class="col-md-3 category_4 item">
+														<div class="filter-content">
+															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
+															<div class="hover-content">
+																<h4><?php echo ($vo["fullname"]); ?></h4>
+																<a class="btn btn-success hover-link">
+																	<i class="fa fa-edit fa-1x"></i>
+																</a>
+
+															</div>
+														</div>
+													</div><?php endif; ?>
+												<?php if(($vo["work_title"]) == "硕士生"): ?><div class="col-md-3 category_5 item">
+														<div class="filter-content">
+															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
+															<div class="hover-content">
+																<h4><?php echo ($vo["fullname"]); ?></h4>
+																<a class="btn btn-success hover-link">
+																	<i class="fa fa-edit fa-1x"></i>
+																</a>
+
+															</div>
+														</div>
+													</div><?php endif; ?>
+												<?php if(($vo["work_title"]) == "本科生"): ?><div class="col-md-3 category_6 item">
+														<div class="filter-content">
+															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
+															<div class="hover-content">
+																<h4><?php echo ($vo["fullname"]); ?></h4>
+																<a class="btn btn-success hover-link">
+																	<i class="fa fa-edit fa-1x"></i>
+																</a>
+															</div>
+														</div>
+													</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 										</div>
 									</div>
 								</div>

@@ -107,12 +107,15 @@ class LabController extends Controller {
         $NumInfo['project_num']=get_lab_project_num($MemberID);
         //获取实验室人员数量
         $NumInfo['num']=count($MemberInfo);
+        //获取不同类别实验室人员信息
+
         //读取实验室信息
         $LabModel=M('Lab');
         $ConLab['id']=$UserInfo['lab_id'];
         $LabInfo=$LabModel->where($ConLab)->find();
         $this->assign('UserInfo',$UserInfo);
         $this->assign('NumInfo',$NumInfo);
+        $this->assign('MemberInfo',$MemberInfo);
         $this->assign('LabInfo',$LabInfo);
         $this->display();
     }
