@@ -235,9 +235,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">加入实验室</h3>
+										<h3 class="content-title pull-left">审核申请</h3>
 									</div>
-									<div class="description">查看，申请</div>
+									<div class="description">查看，审核</div>
 								</div>
 							</div>
 						</div>
@@ -248,72 +248,42 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">加入实验室</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">审核申请</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">实验室信息</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">审核申请</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
 													<div class="row">
+														
 														<div class="col-md-12">
 															<div class="box-body">
 																<div class="box border blue">
 																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>实验室列表</h4>
+																		<h4><i class="fa fa-table"></i>待审核申请</h4>
 																	</div>
 																	<div class="box-body">
 																		<table class="table table-striped">
 																			<thead>
 																				<tr>
-																					<th>实验室名称</th>
-																					<th>所属科研单位</th>
-																					<th>负责人</th>
-																					<th>备注</th>
+																					<th>姓名</th>
+																					<th>职称</th>
+																					<th>电子邮件</th>
+																					<th>手机号码</th>
 																					<th>操作</th>
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<?php if(is_array($LabInfo)): $i = 0; $__LIST__ = $LabInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["name"]); ?></td>
-																						<td><?php echo ($vo["institute"]); ?></td>
-																						<td><?php echo ($vo["holder"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/sub_apply/lab_id/<?php echo ($vo["id"]); ?>'">申请加入</button></td>
+																				<?php if(is_array($ApplyInfo)): $i = 0; $__LIST__ = $ApplyInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																						<td><?php echo ($vo["fullname"]); ?></td>
+																						<td><?php echo ($vo["work_title"]); ?></td>
+																						<td><?php echo ($vo["email"]); ?></td>
+																						<td><?php echo ($vo["phone"]); ?></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/no'">驳回</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-																	<div class="form-actions clearfix">
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Lab/lab_add'">创建实验室</button>
-																	</div>
-																
-															</div>
-														</div>
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>我的申请</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>实验室名称</th>
-																					<th>状态</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				
-																					<tr>
-																						<td><?php echo ($UserInfo["lab_name"]); ?></td>
-																						<td><?php echo ($UserInfo["state"]); ?></td>
-																					</tr>
-																				
 																			</tbody>
 																		</table>
 																	</div>

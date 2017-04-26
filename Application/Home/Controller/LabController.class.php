@@ -101,4 +101,32 @@ class LabController extends Controller {
         $this->assign('NumInfo',$NumInfo);
         $this->display();
     }
+
+    //显示审核申请页面
+    public function check_apply($lab_id){
+        parent::is_login();
+        $UserModel=M('User');
+        $Condition['lab_id']=$lab_id;
+        $Condition['lab_status']=0;
+        $ApplyInfo=$UserModel->where($Condition)->select();
+        $this->assign('ApplyInfo',$ApplyInfo);
+        $this->display();
+    }
+
+    //审核申请数据库操作
+    public function check_apply_db($user_id,$type){
+        $UserModel=M('User');
+        $Condition['id']=$user_id;
+        if($type=='yes'){
+            $UserModel->lab_status=1;
+        }else if($type=='no'){
+            $UserModel->lab_status=2;
+        }
+        $Result=$UserModel->where($Condition)->save();
+        if($Result){
+            $this->success('审核操作成功');
+        }else{
+            $this->error('审核操作失败');
+        }
+    }
 }
