@@ -256,7 +256,7 @@
 									</a>
 									<?php if(($LabInfo["holder_id"]) == $UserInfo["id"]): ?><a href="/PaperManager/index.php/Home/Lab/check_apply/lab_id/<?php echo ($UserInfo["lab_id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["apply"]); ?></span><i class="fa fa-calendar fa-fw"></i> 申请审核
 										</a>
-										<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 人员管理
+										<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人员管理
 										</a><?php endif; ?>
 									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 科研成果
 									</a>
