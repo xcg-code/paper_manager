@@ -235,9 +235,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">审核申请</h3>
+										<h3 class="content-title pull-left">实验室人员管理</h3>
 									</div>
-									<div class="description">查看，审核</div>
+									<div class="description">查看，编辑</div>
 								</div>
 							</div>
 						</div>
@@ -248,12 +248,12 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">审核申请</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">实验室人员管理</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">审核申请</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">实验室人员管理</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
@@ -263,7 +263,7 @@
 															<div class="box-body">
 																<div class="box border blue">
 																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>待审核申请</h4>
+																		<h4><i class="fa fa-table"></i>当前实验室人员信息</h4>
 																	</div>
 																	<div class="box-body">
 																		<table class="table table-striped">
@@ -272,17 +272,19 @@
 																					<th>姓名</th>
 																					<th>职称</th>
 																					<th>电子邮件</th>
-																					<th>手机号码</th>
+																					<th>科研成果数</th>
+																					<th>科研项目数</th>
 																					<th>操作</th>
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<?php if(is_array($ApplyInfo)): $i = 0; $__LIST__ = $ApplyInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																				<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 																						<td><?php echo ($vo["fullname"]); ?></td>
 																						<td><?php echo ($vo["work_title"]); ?></td>
 																						<td><?php echo ($vo["email"]); ?></td>
-																						<td><?php echo ($vo["phone"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/no'">驳回</button></td>
+																						<td><?php echo ($vo["achi_num"]); ?></td>
+																						<td><?php echo ($vo["project_num"]); ?></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>

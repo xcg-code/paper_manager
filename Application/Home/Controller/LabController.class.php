@@ -151,6 +151,16 @@ class LabController extends Controller {
     //显示人员管理页面
     public function member($lab_id){
         parent::is_login();
+        $UserModel=M('User');
+        $Condition['lab_id']=$lab_id;
+        $Condition['lab_status']=1;
+        $MemberInfo=$UserModel->where($Condition)->select();
+        //获取每个成员科研成果数和科研项目数量
+        for($i=0;$i<count($MemberInfo);$i++){
+            $MemberInfo[$i]['achi_num']=get_single_member_achi_num($MemberInfo[$i]['id']);
+            $MemberInfo[$i]['project_num']=get_single_member_project_num($MemberInfo[$i]['id']);
+        }
+        $this->assign('MemberInfo',$MemberInfo);
         $this->display();
     }
 }

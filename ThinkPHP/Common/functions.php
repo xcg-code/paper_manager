@@ -1896,3 +1896,19 @@ function get_lab_project_num($MemberID){
     $ProjNum=$ProjectModel->where($Condition)->count();
     return $ProjNum;
 }
+
+//获取单个用户科研成果数量
+function get_single_member_achi_num($user_id){
+    $AchiModel=M('Achievement');
+    $Condition['user_id']=$user_id;
+    $AchiNum=$AchiModel->where($Condition)->count();
+    return $AchiNum;
+}
+
+//获取单个用户科研项目数量
+function get_single_member_project_num($user_id){
+    $ProjectModel=M('Project');
+    $Condition['user_id']=$user_id;
+    $ProjNum=$ProjectModel->where($Condition)->count();
+    return $ProjNum;
+}
