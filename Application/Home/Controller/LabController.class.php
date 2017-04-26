@@ -80,4 +80,20 @@ class LabController extends Controller {
             $this->success('提交加入实验室申请失败');
         }
     }
+
+    //显示我的实验室页面
+    public function my_lab(){
+        parent::is_login();
+        //没有实验室报错
+        $UserModel=M('User');
+        $ConUser['id']=session('uid');
+        $UserInfo=$UserModel->where($ConUser)->find();
+        if($UserInfo['lab_status']!=1){
+            $this->error('您未加入任何实验室');
+        }
+        //读取实验室信息
+        $LabModel=M('Lab');
+        $this->assign('UserInfo',$UserInfo);
+        $this->display();
+    }
 }
