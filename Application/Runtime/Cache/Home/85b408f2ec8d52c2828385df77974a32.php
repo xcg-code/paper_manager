@@ -293,6 +293,34 @@
 																
 															</div>
 														</div>
+														<div class="col-md-12">
+															<div class="box-body">
+																<div class="box border blue">
+																	<div class="box-title">
+																		<h4><i class="fa fa-table"></i>我的申请</h4>
+																	</div>
+																	<div class="box-body">
+																		<table class="table table-striped">
+																			<thead>
+																				<tr>
+																					<th>实验室名称</th>
+																					<th>状态</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				
+																					<tr>
+																						<td><?php echo ($UserInfo["lab_name"]); ?></td>
+																						<td><?php echo ($UserInfo["state"]); ?></td>
+																					</tr>
+																				
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																
+															</div>
+														</div>
 													</div>
 
 												</div>

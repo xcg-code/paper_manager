@@ -14,7 +14,15 @@ class LabController extends Controller {
         //读取实验室列表
         $LabModel=M('Lab');
         $LabInfo=$LabModel->select();
+        //获取申请状态
+        if($UserInfo['lab_status']==0 && $UserInfo['lab_id']!=''){
+            $UserInfo['state']='待审核';
+        }
+        if($UserInfo['lab_status']==2){
+            $UserInfo['state']='被驳回';
+        }
         $this->assign('LabInfo',$LabInfo);
+        $this->assign('UserInfo',$UserInfo);
         $this->display();
     }
 
