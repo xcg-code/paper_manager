@@ -258,11 +258,11 @@
 										</a>
 										<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人员管理
 										</a><?php endif; ?>
-									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 科研成果
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["achi_num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研成果
 									</a>
-									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 科研项目
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["project_num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研项目
 									</a>
-									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 退出实验室
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-calendar fa-fw"></i> 退出实验室
 									</a>
 								</div>														
 							</div>

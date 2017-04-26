@@ -95,10 +95,18 @@ class LabController extends Controller {
         $ConApply['lab_id']=$UserInfo['lab_id'];
         $ConApply['lab_status']=0;
         $NumInfo['apply']=$UserModel->where($ConApply)->count();
-        //获取实验室人员数量
+        //获取实验室人员信息
         $ConNum['lab_id']=$UserInfo['lab_id'];
         $ConNum['lab_status']=1;
-        $NumInfo['num']=$UserModel->where($ConNum)->count();
+        $MemberInfo=$UserModel->where($ConNum)->select(); //实验室人员信息
+        //获取实验室人员用户ID
+        $MemberID=get_lab_user_id($MemberInfo);
+        //获取实验室科研成果数量
+        $NumInfo['achi_num']=get_lab_achi_num($MemberID);
+        //获取实验室科研项目数量
+        $NumInfo['project_num']=get_lab_project_num($MemberID);
+        //获取实验室人员数量
+        $NumInfo['num']=count($MemberInfo);
         //读取实验室信息
         $LabModel=M('Lab');
         $ConLab['id']=$UserInfo['lab_id'];

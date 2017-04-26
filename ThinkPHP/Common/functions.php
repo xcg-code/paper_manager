@@ -1871,3 +1871,28 @@ function get_achi_percent($user_id){
     $TypePercent['Remain']=round($TypeNum['Remain']/$TypeNum['All'] * 100 , 0) . "％";
     return $TypePercent;
 }
+
+//获取实验室人员用户ID值
+function get_lab_user_id($MemberInfo){
+    $UserID=array();
+    for($i=0;$i<count($MemberInfo);$i++){
+        $UserID[]=$MemberInfo[$i]['id'];
+    }
+    return $UserID;
+}
+
+//获取实验室科研成果数量
+function get_lab_achi_num($MemberID){
+    $AchiModel=M('Achievement');
+    $Condition['user_id']  = array('in',$MemberID);
+    $AchiNum=$AchiModel->where($Condition)->count();
+    return $AchiNum;
+}
+
+//获取实验室科研项目数量
+function get_lab_project_num($MemberID){
+    $ProjectModel=M('Project');
+    $Condition['user_id']  = array('in',$MemberID);
+    $ProjNum=$ProjectModel->where($Condition)->count();
+    return $ProjNum;
+}

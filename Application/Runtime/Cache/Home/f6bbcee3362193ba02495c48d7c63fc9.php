@@ -184,9 +184,8 @@
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">申请实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">加入实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">我的实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/lab_apply"><span class="sub-menu-text">加入实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
 								</ul>
 							</li>
 							<li>
