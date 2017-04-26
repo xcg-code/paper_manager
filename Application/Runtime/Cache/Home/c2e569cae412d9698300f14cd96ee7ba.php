@@ -370,12 +370,20 @@
 																		   <div class="col-md-8"><input type="text" name="fullname" class="form-control" value="<?php echo ($Profile["fullname"]); ?>"></div>
 																		</div>
 																		<div class="form-group">
-																		   <label class="col-md-4 control-label">身份证号码</label> 
-																		   <div class="col-md-8"><input type="text" name="id_num" class="form-control" value="<?php echo ($Profile["id_num"]); ?>"></div>
+																		   <label class="col-md-4 control-label">科研单位</label> 
+																		   <div class="col-md-8"><input type="text" name="id_num" class="form-control" value="<?php echo ($Profile["institute"]); ?>"></div>
 																		</div>
 																		<div class="form-group">
 																		   <label class="col-md-4 control-label">职称</label> 
-																		   <div class="col-md-8"><input type="text" name="work_title" class="form-control" value="<?php echo ($Profile["work_title"]); ?>"></div>
+																		   <div class="col-md-8"><select class="form-control" name="work_title">
+																			<option></option>
+																			<option <?php if($Profile["work_title"] == 教授): ?>selected="selected"<?php endif; ?>>教授</option>
+																			<option <?php if($Profile["work_title"] == 副教授): ?>selected="selected"<?php endif; ?>>副教授</option>
+																			<option <?php if($Profile["work_title"] == 博士后): ?>selected="selected"<?php endif; ?>>博士后</option>
+																			<option <?php if($Profile["work_title"] == 博士生): ?>selected="selected"<?php endif; ?>>博士生</option>
+																			<option <?php if($Profile["work_title"] == 硕士生): ?>selected="selected"<?php endif; ?>>硕士生</option>
+																			<option <?php if($Profile["work_title"] == 本科生): ?>selected="selected"<?php endif; ?>>本科生</option>
+																			</select></div>
 																		</div>
 																		
 																		<h4>联系方式信息</h4>
