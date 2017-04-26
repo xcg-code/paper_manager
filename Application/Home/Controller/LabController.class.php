@@ -8,7 +8,7 @@ class LabController extends Controller {
         $UserModel=M('User');
         $Condition['id']=session('uid');
         $UserInfo=$UserModel->where($Condition)->find();
-        if($UserInfo['lab_id']!=''){
+        if($UserInfo['lab_id']!='' && $UserInfo['lab_status']==1){
             $this->error('您已加入一个实验室');
         }
         //读取实验室列表
@@ -50,6 +50,26 @@ class LabController extends Controller {
             }
         }else{
             $this->error($LabModel->getError());
+        }
+    }
+
+    //申请加入实验室
+    public function sub_apply($lab_id){
+        //获取实验室信息
+        $LabModel=M('Lab');
+        $ConditionLab['id']=$lab_id;
+        $LabInfo=$LabModel->where($ConditionLab)->find();
+        //填充用户实验室信息
+        $UserModel=M('User');
+        $Condition['id']=session('uid');
+        $UserModel->lab_id=$lab_id;
+        $UserModel->lab_name=$LabInfo['name'];
+        $UserModel->lab_status=0;//申请为待审核状态
+        $Result=$UserModel->where($Condition)->save();
+        if($Result){
+            $this->success('提交加入实验室申请成功，请等待审核');
+        }else{
+            $this->success('提交加入实验室申请失败');
         }
     }
 }

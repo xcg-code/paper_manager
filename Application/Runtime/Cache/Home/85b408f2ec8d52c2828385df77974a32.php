@@ -281,7 +281,7 @@
 																						<td><?php echo ($vo["institute"]); ?></td>
 																						<td><?php echo ($vo["holder"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">申请加入</button></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/sub_apply/lab_id/<?php echo ($vo["id"]); ?>'">申请加入</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>
