@@ -250,12 +250,19 @@
 							<div class="col-md-3">
 								<div class="list-group">
 									<div class="list-group-item profile-details">
-										<h4>项目类别</h4>
+										<h4><?php echo ($UserInfo["lab_name"]); ?></h4>
 									</div>
-									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($AllCount); ?></span><i class="fa fa-calendar fa-fw"></i> 所有项目
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 申请审核
 									</a>
-									<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Lab/my_project/project_type/<?php echo ($vo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["type_name"]); ?>
-										</a><?php endforeach; endif; else: echo "" ;endif; ?>
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 人员管理
+									</a>
+
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 科研成果
+									</a>
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 科研项目
+									</a>
+									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red">0</span><i class="fa fa-calendar fa-fw"></i> 退出实验室
+									</a>
 								</div>														
 							</div>
 							<div class="col-md-9">
