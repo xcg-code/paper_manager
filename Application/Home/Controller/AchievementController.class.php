@@ -1359,4 +1359,53 @@ class AchievementController extends Controller {
         $this->assign('FilePath', $FilePath); 
         $this->display();
     }
+
+    //显示举办或参加学术会议修改页面
+    public function conference_involved_edit($achi_id){
+        parent::is_login();
+        $ConModel=D('Conferenceinvolved');
+        $Condition['id']=$achi_id;
+        $ConInfo=$ConModel->where($Condition)->find();
+        $this->assign('ConInfo', $ConInfo);
+        $this->display();
+    }
+
+    //举办或参加学术会议修改数据库操作
+    public function conference_involved_edit_db($achi_id){
+        $ConModel=D('Conferenceinvolved');
+        $AchievementModel=D('Achievement');
+        if($ConModel->create()){
+            //赋值成果汇总表模型类
+            $AchievementModel->achievement_id=$achi_id;
+            $AchievementModel->title=$ConModel->title_zh;
+            $AchievementModel->institute_name=$ConModel->institute;
+            $AchievementModel->publish_time=$ConModel->start_date;
+            $ConditionJ['id']=$achi_id;
+            $ConditionA['achievement_id']=$achi_id;
+            //SQL操作
+            $Result=$ConModel->where($ConditionJ)->save();
+            $AchievementModel->where($ConditionA)->save();
+            if($Result>0){
+                $this->success('信息修改成功',__ROOT__.'/index.php/Home/Achievement/conference_involved_show/achi_id/'.$achi_id);
+            }
+            else if($Result==0){
+                $this->error('您没有修改任何信息');
+            }
+            else{
+                $this->error('信息修改失败');
+            }
+        }else{
+            $this->error($ConModel->getError());
+        }
+    }
+
+    //删除举办或参加学术会议信息
+    public function conference_involved_delete($achi_id){
+        $ConModel=M('Conferenceinvolved');
+        $Condition['id']=$achi_id;
+        $ConModel->where($Condition)->delete();
+        //删除相关作者，文件，所属项目，成果汇总信息
+        delete_all_info($achi_id);
+        $this->success('删除该科研成果成功',__ROOT__.'/index.php/Home/Achievement/my_achievement');
+    }
 }
