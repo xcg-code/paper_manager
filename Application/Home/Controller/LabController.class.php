@@ -4,6 +4,14 @@ use Think\Controller;
 class LabController extends Controller {
     public function lab_apply(){
     	parent::is_login();
+        //检测是否已经有实验室
+        $UserModel=M('User');
+        $Condition['id']=session('uid');
+        $UserInfo=$UserModel->where($Condition)->find();
+        if($UserInfo['lab_id']!=''){
+            $this->error('您已加入一个实验室');
+        }
+        //读取实验室列表
         $LabModel=M('Lab');
         $LabInfo=$LabModel->select();
         $this->assign('LabInfo',$LabInfo);

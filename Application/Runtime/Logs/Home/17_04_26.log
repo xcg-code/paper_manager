@@ -1775,3 +1775,127 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
 
+[ 2017-04-26T11:01:32+08:00 ] ::1 /PaperManager/index.php/Home/Lab/lab_apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-04-26T11:01:48+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0008s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001561s ]
+
+[ 2017-04-26T11:01:51+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0022s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000670s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2017-04-26T11:01:53+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0015s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-04-26T11:02:27+08:00 ] ::1 /PaperManager/index.php/Home/Lab/lab_apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+
