@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-
+	
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -92,7 +92,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-
+		
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -142,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-
+	
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -227,17 +227,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-
+									
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-
+										
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">加入实验室</h3>
+										<h3 class="content-title pull-left">修改作者信息</h3>
 									</div>
-									<div class="description">查看，申请</div>
+									<div class="description">修改作者信息</div>
 								</div>
 							</div>
 						</div>
@@ -248,62 +248,48 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">加入实验室</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">作者详情</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">实验室信息</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">作者详情</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<div class="row">
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>实验室列表</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>实验室名称</th>
-																					<th>所属科研单位</th>
-																					<th>负责人</th>
-																					<th>备注</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($LabInfo)): $i = 0; $__LIST__ = $LabInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["name"]); ?></td>
-																						<td><?php echo ($vo["institute"]); ?></td>
-																						<td><?php echo ($vo["holder"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">申请加入</button></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																			</tbody>
-																		</table>
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Lab/lab_add_db" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div id="info">
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">实验室名称</label> 
+																			<div class="col-md-3"><input type="text" name="name" class="form-control" value=""></div>
+																			<label class="col-md-2 control-label">所属科研单位</label> 
+																			<div class="col-md-3"><input type="text" name="institute" class="form-control" value=""></div>
+																			
+																		</div>
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">备注</label> 
+																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
+																		</div>
 																	</div>
 																</div>
-																	<div class="form-actions clearfix">
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Lab/lab_add'">创建实验室</button>
-																	</div>
-																
 															</div>
 														</div>
-													</div>
-
+														
+														<div class="form-actions clearfix"> 
+															<input type="submit" value="创建" class="btn btn-primary pull-right">
+														</div>
+													</form>
 												</div>
-
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
+						
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -313,6 +299,8 @@
 				</div>
 			</div>
 		</div>
+
+		
 
 	</section>
 	<!--/PAGE -->
@@ -324,11 +312,11 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-
+	
 
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-
+	
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -350,10 +338,11 @@
 	<script>
 		var count=0;
 		jQuery(document).ready(function() {		
-		App.setPage("user_profile");  //Set current page
-		App.init(); //Initialise plugins and elements
-	});
-</script>
-<!-- /JAVASCRIPTS -->
+			App.setPage("user_profile");  //Set current page
+			App.init(); //Initialise plugins and elements
+			
+		});
+	</script>
+	<!-- /JAVASCRIPTS -->
 </body>
 </html>
