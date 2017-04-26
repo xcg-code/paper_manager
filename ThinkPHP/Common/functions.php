@@ -1550,9 +1550,13 @@ function in_array_case($value,$array){
 }
 
 //获取不同科研成果类型数量函数
-function get_achievement_count($achi_id=''){
+function get_achievement_count($achi_id='',$user_id){
     $AchievementModel=M('Achievement');
-    $Condition['user_id']=session('uid');
+    if($user_id==''){
+        $Condition['user_id']=session('uid');
+    }else{
+        $Condition['user_id']=$user_id;
+    }
     //添加项目号条件
     if($achi_id!=''){
         $Condition['achievement_id']=$achi_id;
@@ -1621,9 +1625,14 @@ function get_achievement_count($achi_id=''){
 }
 
 //获取不同年份科研成果数量
-function get_achievement_year($achi_id=''){
+function get_achievement_year($achi_id='',$user_id){
     $AModel=M('Achievement');
-    $Condition['user_id']=session('uid');
+    if($user_id==''){
+        $Condition['user_id']=session('uid');
+    }else{
+        $Condition['user_id']=$user_id;
+    }
+    
     //添加项目号条件
     if($achi_id!=''){
         $Condition['achievement_id']=$achi_id;

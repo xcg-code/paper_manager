@@ -284,7 +284,7 @@
 																						<td><?php echo ($vo["email"]); ?></td>
 																						<td><?php echo ($vo["achi_num"]); ?></td>
 																						<td><?php echo ($vo["project_num"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button></td>
+																						<td><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/yes'">删除</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>
