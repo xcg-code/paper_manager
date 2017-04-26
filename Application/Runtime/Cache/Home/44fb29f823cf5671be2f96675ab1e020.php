@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-	
+
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -92,7 +92,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
+
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -142,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	
+
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -227,17 +227,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-									
+
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-										
+
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($ConferenceInfo["title_zh"]); ?></h3>
+										<h3 class="content-title pull-left">审核申请</h3>
 									</div>
-									<div class="description">科研成果详情查看及相关操作</div>
+									<div class="description">查看，审核</div>
 								</div>
 							</div>
 						</div>
@@ -245,164 +245,54 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i><?php echo ($ConferenceInfo["title_zh"]); ?></h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">审核申请</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-												<div class="list-group-item profile-details">
-													<h4>相关操作</h4>
-												</div>
-
-												<a href="/PaperManager/index.php/Home/Achievement/<?php echo ($edit); ?>/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 修改成果信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/<?php echo ($delete); ?>/achi_id/<?php echo ($id); ?>" onclick="return confirm('确定要删除该成果吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 删除成果信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/author_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改作者信息</a>
-												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
-												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
-												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
-												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
-												</div>			
-											</div>
-											<div class="col-md-9">
-
-												<div class="box border blue">
-													<div class="box-title">
-														<h4><i class="fa fa-table"></i>详细信息</h4>
-														<div class="tools">
-															<a href="#box-config" data-toggle="modal" class="config">
-																<i class="fa fa-cog"></i>
-															</a>
-															<a href="javascript:;" class="reload">
-																<i class="fa fa-refresh"></i>
-															</a>
-															<a href="javascript:;" class="collapse">
-																<i class="fa fa-chevron-up"></i>
-															</a>
-															<a href="javascript:;" class="remove">
-																<i class="fa fa-times"></i>
-															</a>
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">审核申请</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<div class="row">
+														
+														<div class="col-md-12">
+															<div class="box-body">
+																<div class="box border blue">
+																	<div class="box-title">
+																		<h4><i class="fa fa-table"></i>待审核申请</h4>
+																	</div>
+																	<div class="box-body">
+																		<table class="table table-striped">
+																			<thead>
+																				<tr>
+																					<th>姓名</th>
+																					<th>职称</th>
+																					<th>电子邮件</th>
+																					<th>手机号码</th>
+																					<th>操作</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<?php if(is_array($ApplyInfo)): $i = 0; $__LIST__ = $ApplyInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																						<td><?php echo ($vo["fullname"]); ?></td>
+																						<td><?php echo ($vo["work_title"]); ?></td>
+																						<td><?php echo ($vo["email"]); ?></td>
+																						<td><?php echo ($vo["phone"]); ?></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Lab/check_apply_db/user_id/<?php echo ($vo["id"]); ?>/type/no'">驳回</button></td>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																
+															</div>
 														</div>
 													</div>
-													<div class="box-body">
-														<table class="table table-striped">
-															<tbody>
-																<tr>
-																	<td style="width: 15%;text-align:center">成果类别</td>
-																	<td><?php echo ($ConferenceInfo["achievement_type"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标题(中文)</td>
-																	<td><?php echo ($ConferenceInfo["title_zh"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">标题(英文)</td>
-																	<td><?php echo ($ConferenceInfo["title_en"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">摘要</td>
-																	<td><?php echo ($ConferenceInfo["abstract"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">关键词</td>
-																	<td><?php echo ($ConferenceInfo["keywords"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">语言</td>
-																	<td><?php echo ($ConferenceInfo["language"]); ?></td>
-																</tr>
-																<tr>
-																<td style="width: 15%;text-align:center">类型</td>
-																	<td><?php echo ($ConferenceInfo["type"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">会议名称</td>
-																	<td><?php echo ($ConferenceInfo["conference_name"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">会议地址</td>
-																	<td><?php echo ($ConferenceInfo["conference_address"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">会议组织者</td>
-																	<td><?php echo ($ConferenceInfo["organizer"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">会议开始日期</td>
-																	<td><?php echo ($ConferenceInfo["start_date"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">会议结束日期</td>
-																	<td><?php echo ($ConferenceInfo["end_date"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">发表日期</td>
-																	<td><?php echo ($ConferenceInfo["publis_date"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">起止页码</td>
-																	<td><?php echo ($ConferenceInfo["start_page"]); ?> ~ <?php echo ($ConferenceInfo["end_page"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">论文类别</td>
-																	<td><?php echo ($ConferenceInfo["sub_type"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">国家或地区</td>
-																	<td><?php echo ($ConferenceInfo["country"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">城市</td>
-																	<td><?php echo ($ConferenceInfo["city"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">DOI</td>
-																	<td><?php echo ($ConferenceInfo["doi"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">文章号</td>
-																	<td><?php echo ($ConferenceInfo["doi"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">收录情况</td>
-																	<td><?php echo ($ConferenceInfo["inbox_status"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">引用次数</td>
-																	<td><?php echo ($ConferenceInfo["refer_num"]); ?></td>
-																</tr>
 
-																<tr>
-																	<td style="width: 15%;text-align:center">是否标注</td>
-																	<td><?php echo ($ConferenceInfo["mark"]); ?>	</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">备注</td>
-																	<td><?php echo ($ConferenceInfo["content"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">全文链接</td>
-																	<td><?php echo ($ConferenceInfo["paper_link"]); ?></td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
 												</div>
 
 											</div>
@@ -411,7 +301,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -421,6 +311,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -431,11 +322,11 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-	
+
 
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
+
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -455,11 +346,12 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
-			App.setPage("user_profile");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
-	<!-- /JAVASCRIPTS -->
+		App.setPage("user_profile");  //Set current page
+		App.init(); //Initialise plugins and elements
+	});
+</script>
+<!-- /JAVASCRIPTS -->
 </body>
 </html>

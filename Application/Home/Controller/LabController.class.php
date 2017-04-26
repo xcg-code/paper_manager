@@ -147,4 +147,10 @@ class LabController extends Controller {
             $this->error('审核操作失败');
         }
     }
+
+    //显示人员管理页面
+    public function member($lab_id){
+        parent::is_login();
+        $this->display();
+    }
 }
