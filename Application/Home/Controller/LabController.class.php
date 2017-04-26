@@ -91,9 +91,14 @@ class LabController extends Controller {
         if($UserInfo['lab_status']!=1){
             $this->error('您未加入任何实验室');
         }
+        //获取实验室申请数量
+        $ConApply['lab_id']=$UserInfo['lab_id'];
+        $ConApply['lab_status']=0;
+        $NumInfo['apply']=$UserModel->where($ConApply)->count();
         //读取实验室信息
         $LabModel=M('Lab');
         $this->assign('UserInfo',$UserInfo);
+        $this->assign('NumInfo',$NumInfo);
         $this->display();
     }
 }
