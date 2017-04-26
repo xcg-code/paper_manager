@@ -315,7 +315,7 @@
 															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
 															<div class="hover-content">
 																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a class="btn btn-success hover-link">
+																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
 																	<i class="fa fa-edit fa-1x"></i>
 																</a>
 
@@ -327,7 +327,7 @@
 															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
 															<div class="hover-content">
 																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a class="btn btn-success hover-link">
+																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
 																	<i class="fa fa-edit fa-1x"></i>
 																</a>
 
@@ -339,7 +339,7 @@
 															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
 															<div class="hover-content">
 																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a class="btn btn-success hover-link">
+																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
 																	<i class="fa fa-edit fa-1x"></i>
 																</a>
 
@@ -351,7 +351,7 @@
 															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
 															<div class="hover-content">
 																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a class="btn btn-success hover-link">
+																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
 																	<i class="fa fa-edit fa-1x"></i>
 																</a>
 
@@ -363,7 +363,7 @@
 															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
 															<div class="hover-content">
 																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a class="btn btn-success hover-link">
+																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
 																	<i class="fa fa-edit fa-1x"></i>
 																</a>
 
@@ -375,7 +375,7 @@
 															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
 															<div class="hover-content">
 																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a class="btn btn-success hover-link">
+																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
 																	<i class="fa fa-edit fa-1x"></i>
 																</a>
 															</div>

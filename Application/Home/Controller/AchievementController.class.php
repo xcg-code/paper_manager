@@ -15,10 +15,14 @@ class AchievementController extends Controller {
 	}
 
 	//显示我的科研成果页面
-	public function my_achievement($achi_type='',$achi_year=''){
+	public function my_achievement($achi_type='',$achi_year='',$user_id=''){
 		parent::is_login();
 		$AchievementModel=M('Achievement');
-		$Condition['user_id']=session('uid');
+        if($user_id==''){
+            $Condition['user_id']=session('uid');
+        }else{
+            $Condition['user_id']=$user_id;
+        }
         $SearchAction='';
         if($achi_type!=''){
             $Condition['achievement_type']=$achi_type;
