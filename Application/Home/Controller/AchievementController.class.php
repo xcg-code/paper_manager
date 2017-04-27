@@ -53,7 +53,6 @@ class AchievementController extends Controller {
 			$AchievementInfo[$i]['author']=get_author_list($AchievementInfo[$i]['achievement_id']);
             $AchievementInfo[$i]['detail_link']=get_detail_link($AchievementInfo[$i]);
 		}
-        var_dump($user_id);
 		$this->assign('AchievementInfo',$AchievementInfo);
 		$this->assign('AchievementCount',$AchievementCount);
         $this->assign('AchievementYear',$AchievementYear);
