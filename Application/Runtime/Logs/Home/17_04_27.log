@@ -2947,3 +2947,357 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
 
+[ 2017-04-27T17:14:48+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000448s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 390 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 391 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 392 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 393 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 394 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 395 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026406s ]
+
+[ 2017-04-27T17:15:17+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0005s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 390 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 391 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 392 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 393 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 394 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 395 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2017-04-27T17:15:43+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000623s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 390 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 391 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 392 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 393 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 394 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 395 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004188s ]
+
+[ 2017-04-27T17:16:03+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0012s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006793s ]
+
+[ 2017-04-27T17:16:24+08:00 ] ::1 /PaperManager/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2017-04-27T17:16:25+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2017-04-27T17:16:29+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'wgzhang' AND `password` = '1a224d6875ff953e9d9b9d0258c371e3' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-04-27T17:16:30+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0007s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2017-04-27T17:17:02+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0008s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+
+[ 2017-04-27T17:17:26+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2017-04-27T17:22:08+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php 第 21 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 2  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000485s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002367s ]
+

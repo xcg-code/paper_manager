@@ -17,9 +17,12 @@ class ProfileController extends Controller {
 		$ProjectModel=M('Project');
 		$ConditionPro['user_id']=$uid;
 		$ProjectNum=$ProjectModel->where($ConditionPro)->count();
+		//获取不同类别科研成果数
+		$AchievementCount=get_achievement_count('',$user_id);
 		$this->assign('Profile', $Profile); //基本信息前端赋值
 		$this->assign('AchiPercent', $AchiPercent); 
 		$this->assign('AchiNum', $AchiNum['All']);
+		$this->assign('AchievementCount', $AchievementCount);
 		$this->assign('ProjectNum', $ProjectNum);
 		$this->display();
 	}
