@@ -402,6 +402,18 @@ class AchievementController extends Controller {
         }
     }
 
+    //添加科研成果收藏
+    public function add_favorite($achi_id){
+        $FavModel=D('Favorite');
+        $FavModel->user_id=session('uid');
+        $FavModel->achievement_id=$achi_id;
+        $FavModel->type='Achievement';
+        $Result=$FavModel->add();
+        if($Result){
+            $this->success('加入我的收藏成功');
+        }
+    }
+
 	//显示添加期刊论文信息页面
     public function journal_paper_add($id){
     	parent::is_login();
