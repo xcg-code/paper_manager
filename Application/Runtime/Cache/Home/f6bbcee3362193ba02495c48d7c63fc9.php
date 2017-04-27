@@ -188,7 +188,7 @@
 									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
 								</ul>
 							</li>
-							<li>
+							<li class="has-sub">
 								<a href="javascript:;" class="">
 								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>
 								<span class="arrow"></span>
