@@ -163,4 +163,19 @@ class LabController extends Controller {
         $this->assign('MemberInfo',$MemberInfo);
         $this->display();
     }
+
+    //退出实验室
+    public function quit_lab(){
+        $UserModel=M('User');
+        $Condition['id']=session('uid');
+        $UserModel->lab_id=null;
+        $UserModel->lab_name=null;
+        $UserModel->lab_status=null;
+        $Result=$UserModel->where($Condition)->save();
+        if($Result){
+            $this->success('退出实验室成功',__ROOT__.'/index.php/Home/Profile/profile');
+        }else{
+            $this->error('退出实验室失败');
+        }
+    }
 }
