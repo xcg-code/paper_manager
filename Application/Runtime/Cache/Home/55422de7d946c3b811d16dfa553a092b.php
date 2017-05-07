@@ -49,14 +49,14 @@
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
+			<span class="name">团队情况</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
+			<span class="name">界面皮肤</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 		<ul class="dropdown-menu skins">
