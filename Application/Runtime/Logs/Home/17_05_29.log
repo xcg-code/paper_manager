@@ -5037,3 +5037,1840 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002075s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002367s ]
 ERR: 非法操作:lab_add
 
+[ 2017-05-29T15:58:02+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003602s ]
+
+[ 2017-05-29T16:00:35+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001685s ]
+
+[ 2017-05-29T16:00:54+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2017-05-29T16:01:12+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2017-05-29T16:02:22+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001839s ]
+
+[ 2017-05-29T16:02:28+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002394s ]
+
+[ 2017-05-29T16:02:56+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001701s ]
+
+[ 2017-05-29T16:04:21+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+ERR: Could not open /PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:04:35+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: Could not open /PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:04:45+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000691s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2017-05-29T16:04:46+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004160s ]
+
+[ 2017-05-29T16:05:19+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+ERR: Could not open /PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:07:27+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001887s ]
+
+[ 2017-05-29T16:07:44+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004742s ]
+
+[ 2017-05-29T16:08:24+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Undefined variable: file_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ExcelController.class.php 第 45 行.
+ERR: Could not open  for reading! File does not exist.
+
+[ 2017-05-29T16:08:39+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+NOTIC: [8] Undefined variable: file_name C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ExcelController.class.php 第 45 行.
+ERR: Could not open  for reading! File does not exist.
+
+[ 2017-05-29T16:09:09+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+ERR: Could not open /PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:09:10+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+ERR: Could not open /PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:10:38+08:00 ] ::1 /PaperManager/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-05-29T16:10:39+08:00 ] ::1 /PaperManager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000720s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003778s ]
+
+[ 2017-05-29T16:12:29+08:00 ] ::1 /PaperManager/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030034s ]
+
+[ 2017-05-29T16:12:35+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+ERR: Could not open /PaperManager../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:12:38+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+ERR: Could not open /PaperManager../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:12:44+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'jerry' AND `password` = '30035607ee5bb378c71ab434a6d05410' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2017-05-29T16:12:45+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0029s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php 第 21 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000677s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2017-05-29T16:12:48+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+ERR: Could not open /PaperManager../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:13:09+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+ERR: Could not open ./../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:13:10+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003511s ]
+ERR: Could not open ./../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:14:22+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003045s ]
+ERR: Could not open ./../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:14:25+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003054s ]
+ERR: Could not open ./../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:14:54+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+ERR: Could not open /PaperManager./../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:15:09+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+ERR: Could not open /PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:17:50+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+ERR: Could not open ../../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:17:51+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001603s ]
+ERR: Could not open ../../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:17:52+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+ERR: Could not open ../../Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:20:44+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+ERR: Could not open http://localhost/PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:21:05+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/my_achievement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 1 AND `title` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `publish_time` FROM `think_achievement` WHERE `user_id` = 1 ORDER BY publish_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_achievement` WHERE `user_id` = 1 AND ( `publish_time` >= '2017-01-01' AND `publish_time` <= '2017-12-31'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1 AND `title` LIKE '%%' ORDER BY publish_time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_author` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_author` WHERE `achievement_id` = '590080c758b8e'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000648s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-05-29T16:21:07+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/journal_paper_show/achi_id/590080c758b8e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_journalpaper` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `think_journalpaper` WHERE `id` = '590080c758b8e' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '590080c758b8e' AND `type` = 'Main' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2017-05-29T16:21:08+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/no_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-05-29T16:21:16+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/590080c758b8e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '590080c758b8e'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001492s ]
+
+[ 2017-05-29T16:21:23+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload_main_db/achi_id/590080c758b8e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0011s ]
+SQL: INSERT INTO `think_file` (`name`,`path`,`description`,`upload_time`,`type`,`achievement_id`) VALUES ('祝贺信.pdf','592bda030a40d.pdf','','2017-05-29 16:21:23','Main','590080c758b8e') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2017-05-29T16:21:24+08:00 ] ::1 /PaperManager/index.php/Home/Achievement/file_upload/achi_id/590080c758b8e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_file` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `think_file` WHERE `achievement_id` = '590080c758b8e'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002022s ]
+
+[ 2017-05-29T16:22:15+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'jerry' AND `password` = '30035607ee5bb378c71ab434a6d05410' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-05-29T16:22:16+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0007s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php 第 21 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 432 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 433 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2017-05-29T16:22:26+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+ERR: Could not open http://localhost/PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:22:27+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+ERR: Could not open http://localhost/PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:22:29+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+ERR: Could not open http://localhost/PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:22:29+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+ERR: Could not open http://localhost/PaperManager/Uploads/Excel/592bd10f654b7.xlsx for reading! File does not exist.
+
+[ 2017-05-29T16:23:08+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2017-05-29T16:23:10+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000381s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003298s ]
+
+[ 2017-05-29T16:24:41+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004117s ]
+
+[ 2017-05-29T16:25:15+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002044s ]
+
+[ 2017-05-29T16:25:28+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000487s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005906s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ExcelController.class.php:49) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ExcelController.class.php:49) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ExcelController.class.php:49) C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002185s ]
+
+[ 2017-05-29T16:25:48+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001710s ]
+
+[ 2017-05-29T16:26:31+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002301s ]
+
+[ 2017-05-29T16:26:33+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002480s ]
+
+[ 2017-05-29T16:28:39+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005745s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001308s ]
+NOTIC: [8] Undefined variable: LabInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006743s ]
+
+[ 2017-05-29T16:29:50+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Undefined variable: data_file C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003997s ]
+
+[ 2017-05-29T16:29:52+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: data_file C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\f13e5c0d8272ed8977a0523cbdf70c2d.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2017-05-29T16:30:08+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003675s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001669s ]
+
+[ 2017-05-29T16:30:47+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001705s ]
+
+[ 2017-05-29T16:30:49+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004110s ]
+
+[ 2017-05-29T16:30:51+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002279s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003435s ]
+
+[ 2017-05-29T16:31:38+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003460s ]
+
+[ 2017-05-29T16:34:18+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+
+[ 2017-05-29T16:34:58+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001368s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001804s ]
+
+[ 2017-05-29T16:35:01+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002454s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000763s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001956s ]
+
+[ 2017-05-29T16:36:36+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003215s ]
+
+[ 2017-05-29T16:37:09+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001539s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2017-05-29T16:37:12+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004224s ]
+
+[ 2017-05-29T16:40:27+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002082s ]
+
+[ 2017-05-29T16:42:47+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+
+[ 2017-05-29T16:43:07+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+
+[ 2017-05-29T16:43:43+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002978s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+
+[ 2017-05-29T16:43:53+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+
+[ 2017-05-29T16:44:32+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+
+[ 2017-05-29T16:45:32+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000861s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2017-05-29T16:45:56+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002155s ]
+
+[ 2017-05-29T16:45:57+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001862s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001902s ]
+
+[ 2017-05-29T16:46:32+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2017-05-29T16:46:34+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_upload_check/filename/592bd10f654b7.xlsx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Settings.php 第 384 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003491s ]
+

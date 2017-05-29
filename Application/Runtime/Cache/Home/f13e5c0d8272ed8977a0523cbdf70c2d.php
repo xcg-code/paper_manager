@@ -279,11 +279,11 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<?php if(is_array($LabInfo)): $i = 0; $__LIST__ = $LabInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["name"]); ?></td>
-																						<td><?php echo ($vo["institute"]); ?></td>
-																						<td><?php echo ($vo["holder"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
+																				<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																						<td><?php echo ($vo["title"]); ?></td>
+																						<td><?php echo ($vo["achievement_type"]); ?></td>
+																						<td><?php echo ($vo["institute_name"]); ?></td>
+																						<td><?php echo ($vo["publish_time"]); ?></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>

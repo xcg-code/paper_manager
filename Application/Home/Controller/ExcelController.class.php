@@ -35,6 +35,30 @@ class ExcelController extends Controller {
     }
 
     public function achi_upload_check($filename){
+        $filename=substr(THINK_PATH, 0,-9).'Uploads/Excel/'.$filename;
+        vendor("PHPExcel.PHPExcel");
+        $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));//判断导入表格后缀格式
+        
+        if ($extension == 'xlsx') {
+            $objReader =\PHPExcel_IOFactory::createReader('Excel2007');
+            $objPHPExcel =$objReader->load($filename, $encode = 'utf-8');
+        } else if ($extension == 'xls'){
+            $objReader =\PHPExcel_IOFactory::createReader('Excel5');
+            $objPHPExcel =$objReader->load($filename, $encode = 'utf-8');
+        }
+        $sheet =$objPHPExcel->getSheet(0);
+        $highestRow = $sheet->getHighestRow();//取得总行数
+        $highestColumn =$sheet->getHighestColumn(); //取得总列数
+        $data_file=array();
+        for ($i = 2; $i <= $highestRow; $i++) {
+            $data=array();
+            $data['title'] =$objPHPExcel->getActiveSheet()->getCell("A" . $i)->getValue();
+            $data['achievement_type'] =$objPHPExcel->getActiveSheet()->getCell("B" .$i)->getValue();
+            $data['institute_name'] =$objPHPExcel->getActiveSheet()->getCell("C" .$i)->getValue();
+            $data['publish_time'] = date('Y-m-d', \PHPExcel_Shared_Date::ExcelToPHP($objPHPExcel->getActiveSheet()->getCell("D" .$i)->getValue()));
+            $data_file[]=$data;
+        }
+        $this->assign('result',$data_file);
         $this->display();
     }
 }
