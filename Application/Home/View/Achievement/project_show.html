@@ -193,6 +193,9 @@
 																					<th>项目类别</th>
 																					<th>项目号</th>
 																					<th>项目名称</th>
+																					<th>负责人</th>
+																					<th>依托单位</th>
+																					<th>资助金额(万元)</th>
 																					<th>备注</th>
 																					<th>操作</th>
 																				</tr>
@@ -203,6 +206,9 @@
 																						<td>{$vo.type_name}</td>
 																						<td>{$vo.project_num}</td>
 																						<td>{$vo.project_name}</td>
+																						<td>{$vo.owner}</td>
+																						<td>{$vo.institute}</td>
+																						<td>{$vo.money}</td>
 																						<td>{$vo.content}</td>
 																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/project_edit/project_id/{$vo.id}/page_type/{$page_type}'">修改</button><a href="__URL__/project_delete/project_id/{$vo.id}" onclick="return confirm('确定要删除这个项目吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr>

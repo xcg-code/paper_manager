@@ -275,6 +275,9 @@
 																					<th>项目类别</th>
 																					<th>项目号</th>
 																					<th>项目名称</th>
+																					<th>负责人</th>
+																					<th>依托单位</th>
+																					<th>资助金额(万元)</th>
 																					<th>备注</th>
 																					<th>操作</th>
 																				</tr>
@@ -284,6 +287,9 @@
 																						<td><?php echo ($vo["type_name"]); ?></td>
 																						<td><?php echo ($vo["project_num"]); ?></td>
 																						<td><?php echo ($vo["project_name"]); ?></td>
+																						<td><?php echo ($vo["owner"]); ?></td>
+																						<td><?php echo ($vo["institute"]); ?></td>
+																						<td><?php echo ($vo["money"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
 																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Achievement/project_edit/project_id/<?php echo ($vo["id"]); ?>/page_type/<?php echo ($page_type); ?>'">修改</button><a href="/PaperManager/index.php/Home/Achievement/project_delete/project_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个项目吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
