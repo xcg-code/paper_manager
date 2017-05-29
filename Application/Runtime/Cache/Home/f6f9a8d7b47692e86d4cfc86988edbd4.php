@@ -49,14 +49,14 @@
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
+			<span class="name">团队情况</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
+			<span class="name">界面皮肤</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 		<ul class="dropdown-menu skins">
@@ -174,7 +174,7 @@
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研项目</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
 								</ul>
 							</li>
@@ -184,16 +184,19 @@
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">申请实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">加入实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">我的实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/lab_apply"><span class="sub-menu-text">加入实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
 								</ul>
 							</li>
-							<li>
-								<a href="/PaperManager/index.php/Home/Profile/profile">
-								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">我的收藏</span>
-								<span class="selected"></span>
-								</a>					
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Favorite/fav_achi"><span class="sub-menu-text">科研成果收藏</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">科研项目收藏</span></a></li>
+								</ul>					
 							</li>
 						</ul>
 						<!-- /SIDEBAR MENU -->
@@ -278,9 +281,7 @@
 												<a href="/PaperManager/index.php/Home/Achievement/project_show/achi_id/<?php echo ($id); ?>/page_type/<?php echo ($show); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看、修改所属项目信息</a>
 												<a href="/PaperManager/<?php echo ($FilePath); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 查看全文</a>
 												<a href="/PaperManager/index.php/Home/Achievement/file_upload/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 浏览该成果相关文档资料</a>
-												<a href="#" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
-												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看该类别所有成果</a>
-												<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 查看所属项目所有成果</a>
+												<a href="/PaperManager/index.php/Home/Achievement/add_favorite/achi_id/<?php echo ($id); ?>" class="list-group-item"><i class="fa fa-user fa-fw"></i> 加入我的收藏</a>
 												</div>			
 											</div>
 											<div class="col-md-9">
