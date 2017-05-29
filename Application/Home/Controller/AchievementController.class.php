@@ -329,6 +329,9 @@ class AchievementController extends Controller {
             $Data['project_num']=I('post.project_num_'.$i);
             $Data['project_name']=I('post.project_name_'.$i);
             $Data['content']=I('post.content_'.$i);
+            $Data['institute']=I('post.institute_'.$i);
+            $Data['owner']=I('post.owner_'.$i);
+            $Data['money']=I('post.money_'.$i);
             $Data['user_id']=$user_id;
             $Data['achievement_id']=$achi_id;
             $ProjectModel->add($Data);

@@ -352,7 +352,7 @@
 				<div class="col-md-3"><input type="text" name="project_name_" class="form-control" value=""></div>
 				<label class="col-md-1 control-label">负责人(*)</label> 
 				<div class="col-md-2"><input type="text" name="owner_" class="form-control" value=""></div>
-				<label class="col-md-1 control-label">资助经费</label> 
+				<label class="col-md-1 control-label">资助经费(万元)</label> 
 				<div class="col-md-2"><input type="text" name="money_" class="form-control" value=""></div>
 			</div>
 			<div class="form-group" id="form_two_">
