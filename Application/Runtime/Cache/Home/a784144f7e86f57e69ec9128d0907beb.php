@@ -342,7 +342,7 @@
 												</a>
 											</div>
 											<div class="col-md-3">
-												<a class="btn btn-danger btn-icon input-block-level" href="/PaperManager/index.php/Home/ExcelImport/index">
+												<a class="btn btn-danger btn-icon input-block-level" href="/PaperManager/index.php/Home/Excel/add_achi">
 													<i class="fa fa-book fa-2x"></i>
 													<div>批量导入</div>
 												</a>
