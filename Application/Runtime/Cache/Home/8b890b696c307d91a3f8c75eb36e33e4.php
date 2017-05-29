@@ -279,7 +279,7 @@
 
 														</div>
 														<div class="form-actions clearfix">
-															<button type="button" class="btn btn-primary">Excel导入模板</button>
+															<button type="button" class="btn btn-primary" onclick="javascript:window.location.href='/PaperManager/Public/AchiImportTpl.xlsx' ">Excel导入模板</button>
 															<input type="submit" value="上传" class="btn btn-primary pull-right"></div>
 														</form>
 													</div>
