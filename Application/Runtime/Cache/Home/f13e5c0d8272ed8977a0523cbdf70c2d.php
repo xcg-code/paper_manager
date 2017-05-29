@@ -291,7 +291,7 @@
 																</div>
 																	<div class="form-actions clearfix">
 																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Excel/add_achi'">数据有误，重新上传</button>
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Excel/lab_add'">数据无误，批量导入</button>
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Excel/add_achi_db/filename/<?php echo ($filename); ?>'">数据无误，批量导入</button>
 																	</div>
 																
 															</div>
