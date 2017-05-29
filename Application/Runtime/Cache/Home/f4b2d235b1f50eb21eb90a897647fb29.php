@@ -337,17 +337,23 @@
 
 		<div id="info" hidden="true">
 			<div class="form-group" id="form_one_">
-				<label class="col-md-2 control-label">所属项目类别</label> 
+				<label class="col-md-2 control-label">所属项目类别(*)</label> 
 				<div class="col-md-3"><select class="form-control" name="type_name_">
 					<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 
 				</select></div>
-				<label class="col-md-2 control-label">所属项目号</label> 
-				<div class="col-md-4"><input type="text" name="project_num_" class="form-control" value=""></div>
+				<label class="col-md-1 control-label">项目号(*)</label> 
+				<div class="col-md-2"><input type="text" name="project_num_" class="form-control" value=""></div>
+				<label class="col-md-1 control-label">依托单位</label> 
+				<div class="col-md-2"><input type="text" name="institute_" class="form-control" value=""></div>
 			</div>
 			<div class="form-group" id="form_three_">
-				<label class="col-md-2 control-label">项目名称</label> 
-				<div class="col-md-9"><input type="text" name="project_name_" class="form-control" value=""></div>
+				<label class="col-md-2 control-label">项目名称(*)</label> 
+				<div class="col-md-3"><input type="text" name="project_name_" class="form-control" value=""></div>
+				<label class="col-md-1 control-label">负责人(*)</label> 
+				<div class="col-md-2"><input type="text" name="owner_" class="form-control" value=""></div>
+				<label class="col-md-1 control-label">资助经费</label> 
+				<div class="col-md-2"><input type="text" name="money_" class="form-control" value=""></div>
 			</div>
 			<div class="form-group" id="form_two_">
 				<label class="col-md-2 control-label">备注</label> 
@@ -399,6 +405,9 @@
 			i=i.replace("project_num_","project_num_"+count);
 			i=i.replace("project_name_","project_name_"+count);
 			i=i.replace("content_","content_"+count);
+			i=i.replace("institute_","institute_"+count);
+			i=i.replace("owner_","owner_"+count);
+			i=i.replace("money_","money_"+count);
 			i=i.replace("form_one_","form_one_"+count);
 			i=i.replace("form_two_","form_two_"+count);
 			i=i.replace("form_three_","form_three_"+count);
