@@ -49,14 +49,14 @@
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
+			<span class="name">团队情况</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
+			<span class="name">界面皮肤</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 		<ul class="dropdown-menu skins">
@@ -166,8 +166,37 @@
 								<ul class="sub">
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研项目<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
 								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">实验室<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/lab_apply"><span class="sub-menu-text">加入实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Favorite/fav_achi"><span class="sub-menu-text">科研成果收藏</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">科研项目收藏</span></a></li>
+								</ul>					
 							</li>
 						</ul>
 						<!-- /SIDEBAR MENU -->
@@ -238,7 +267,7 @@
 																<div class="box-body">
 																	<div id="info">
 																		<div class="form-group">
-																			<label class="col-md-2 control-label">作者姓名</label> 
+																			<label class="col-md-2 control-label">作者姓名(*)</label> 
 																			<div class="col-md-2"><input type="text" name="author_name" class="form-control" value="<?php echo ($AuthorInfo["author_name"]); ?>"></div>
 																			<label class="col-md-1 control-label">作者单位</label> 
 																			<div class="col-md-2"><input type="text" name="author_workplace" class="form-control" value="<?php echo ($AuthorInfo["author_workplace"]); ?>"></div>
