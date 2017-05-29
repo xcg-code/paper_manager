@@ -272,6 +272,10 @@
 											<div class="col-md-3">
 												<div class="list-group">
 													<div class="list-group-item profile-details">
+														<h4>成果操作</h4>
+													</div>
+													<a href="/PaperManager/index.php/Home/Excel/achi_export<?php echo ($SearchAction); ?>/user_id/<?php echo ($user_id); ?>" class="list-group-item"><i class="fa fa-file fa-fw"></i> 导出当前所检索科研信息</a>
+													<div class="list-group-item profile-details">
 														<h4>成果类别</h4>
 													</div>
 

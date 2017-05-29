@@ -272,4 +272,32 @@ class ExcelController extends Controller {
     public function OtherAchievement($data,$user_id,$uniq_id){
         var_dump($uniq_id);
     }
+
+    //导出我的科研成果信息
+    public function achi_export($achi_type='',$achi_year='',$user_id=''){
+        $AchievementModel=M('Achievement');
+        if($user_id==''){
+            $Condition['user_id']=session('uid');
+        }else{
+            $Condition['user_id']=$user_id;
+        }
+        $SearchAction='/';
+        if($achi_type!=''){
+            $Condition['achievement_type']=$achi_type;
+            $SearchAction=$SearchAction.'achi_type/'.$achi_type;   
+        }
+        if($achi_year!=''){
+            $start_date=$achi_year.'-01-01';
+            $end_date=$achi_year.'-12-31';
+            $Condition['publish_time']=array(array('egt',$start_date),array('elt',$end_date));
+            $SearchAction=$SearchAction.'achi_year/'.$achi_year;
+        }
+        //从session获取搜索栏内容
+        $Search=I('post.search');
+        $Condition['title']=array('like','%'.$Search.'%');
+        //数据获取
+        $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->select();
+        
+        //数据导出
+    }
 }
