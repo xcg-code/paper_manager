@@ -49,14 +49,14 @@
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
+			<span class="name">团队情况</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
+			<span class="name">界面皮肤</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 		<ul class="dropdown-menu skins">
@@ -188,11 +188,15 @@
 									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
 								</ul>
 							</li>
-							<li>
-								<a href="/PaperManager/index.php/Home/Profile/profile">
-								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">我的收藏</span>
-								<span class="selected"></span>
-								</a>					
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Favorite/fav_achi"><span class="sub-menu-text">科研成果收藏</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">科研项目收藏</span></a></li>
+								</ul>					
 							</li>
 						</ul>
 						<!-- /SIDEBAR MENU -->
@@ -268,17 +272,23 @@
 																		<div class="col-md-12">
 																			<div class="box-body">
 																				<div class="form-group" id="form_one_">
-																					<label class="col-md-2 control-label">所属项目类别</label> 
+																					<label class="col-md-2 control-label">所属项目类别(*)</label> 
 																					<div class="col-md-3"><select class="form-control" name="type_name" id="type">
 																						<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if(($vo["type_name"]) == $ProjectInfo["type_name"]): ?>selected="selected"<?php endif; ?>><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 
 																					</select></div>
-																					<label class="col-md-2 control-label">所属项目号</label>
-																					<div class="col-md-4"><input type="text" name="project_num" class="form-control" value="<?php echo ($ProjectInfo["project_num"]); ?>"></div>
+																					<label class="col-md-1 control-label">项目号(*)</label>
+																					<div class="col-md-2"><input type="text" name="project_num" class="form-control" value="<?php echo ($ProjectInfo["project_num"]); ?>"></div>
+																					<label class="col-md-1 control-label">依托单位</label>
+																					<div class="col-md-2"><input type="text" name="project_num" class="form-control" value="<?php echo ($ProjectInfo["institute"]); ?>"></div>
 																				</div>
 																				<div class="form-group" id="form_two_">
-																					<label class="col-md-2 control-label">项目名称</label>
-																					<div class="col-md-9"><input type="text" name="project_name" class="form-control" value="<?php echo ($ProjectInfo["project_name"]); ?>"></div>
+																					<label class="col-md-2 control-label">项目名称(*)</label>
+																					<div class="col-md-3"><input type="text" name="project_name" class="form-control" value="<?php echo ($ProjectInfo["project_name"]); ?>"></div>
+																					<label class="col-md-1 control-label">负责人(*)</label>
+																					<div class="col-md-2"><input type="text" name="project_name" class="form-control" value="<?php echo ($ProjectInfo["owner"]); ?>"></div>
+																					<label class="col-md-1 control-label">资助金额(万元)</label>
+																					<div class="col-md-2"><input type="text" name="project_name" class="form-control" value="<?php echo ($ProjectInfo["money"]); ?>"></div>
 																				</div>
 																				<div class="form-group" id="form_two_">
 																					<label class="col-md-2 control-label">备注</label> 

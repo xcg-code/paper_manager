@@ -131,7 +131,7 @@ class ProjectController extends Controller {
         $Condition['id']=$project_id;
         $Result=$ProjectModel->where($Condition)->delete();
         if($Result){
-            $this->success('删除所属项目信息成功');
+            $this->success('删除所属项目信息成功',__ROOT__.'/index.php/Home/Project/my_project');
         }else{
             $this->error('删除所属项目信息失败');
         }

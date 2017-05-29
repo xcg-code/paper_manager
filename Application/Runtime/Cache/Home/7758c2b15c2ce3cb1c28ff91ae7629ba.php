@@ -274,8 +274,8 @@
 													<div class="list-group-item profile-details">
 														<h4>相关操作</h4>
 													</div>
-													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 编辑成果</a>
-													<a href="/PaperManager/index.php/Home/Project/project_delete/project_id/<?php echo ($ProjectInfo["id"]); ?>" onclick="return confirm('确定要删除这个项目吗？')" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 删除成果</a>
+													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 编辑项目</a>
+													<a href="/PaperManager/index.php/Home/Project/project_delete/project_id/<?php echo ($ProjectInfo["id"]); ?>" onclick="return confirm('确定要删除这个项目吗？')" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 删除项目</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 加入收藏</a>
 													<div class="list-group-item profile-details">
 														<h4>成果类别</h4>

@@ -190,19 +190,25 @@
 																		<div class="col-md-12">
 																			<div class="box-body">
 																				<div class="form-group" id="form_one_">
-																					<label class="col-md-2 control-label">所属项目类别</label> 
+																					<label class="col-md-2 control-label">所属项目类别(*)</label> 
 																					<div class="col-md-3"><select class="form-control" name="type_name" id="type">
 																						<volist name="TypeInfo" id="vo">
 																							<option <eq name="vo.type_name" value="$ProjectInfo.type_name">selected="selected"</eq>>{$vo.type_name}</option>
 																						</volist>
 
 																					</select></div>
-																					<label class="col-md-2 control-label">所属项目号</label>
-																					<div class="col-md-4"><input type="text" name="project_num" class="form-control" value="{$ProjectInfo.project_num}"></div>
+																					<label class="col-md-1 control-label">项目号(*)</label>
+																					<div class="col-md-2"><input type="text" name="project_num" class="form-control" value="{$ProjectInfo.project_num}"></div>
+																					<label class="col-md-1 control-label">依托单位</label>
+																					<div class="col-md-2"><input type="text" name="project_num" class="form-control" value="{$ProjectInfo.institute}"></div>
 																				</div>
 																				<div class="form-group" id="form_two_">
-																					<label class="col-md-2 control-label">项目名称</label>
-																					<div class="col-md-9"><input type="text" name="project_name" class="form-control" value="{$ProjectInfo.project_name}"></div>
+																					<label class="col-md-2 control-label">项目名称(*)</label>
+																					<div class="col-md-3"><input type="text" name="project_name" class="form-control" value="{$ProjectInfo.project_name}"></div>
+																					<label class="col-md-1 control-label">负责人(*)</label>
+																					<div class="col-md-2"><input type="text" name="project_name" class="form-control" value="{$ProjectInfo.owner}"></div>
+																					<label class="col-md-1 control-label">资助金额(万元)</label>
+																					<div class="col-md-2"><input type="text" name="project_name" class="form-control" value="{$ProjectInfo.money}"></div>
 																				</div>
 																				<div class="form-group" id="form_two_">
 																					<label class="col-md-2 control-label">备注</label> 
