@@ -184,7 +184,7 @@
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">专利国家</label> 
+																		<label class="col-md-2 control-label">专利国家(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="中国专利" id="chinese" <if condition="$PatentInfo.country eq 中国专利">checked</if>> 中国专利 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="美国专利" id="usa" <if condition="$PatentInfo.country eq 美国专利">checked</if>> 美国专利 </label> 
@@ -195,7 +195,7 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">专利名称(中文)</label> 
+																		<label class="col-md-2 control-label">专利名称(中文)(*)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value="{$PatentInfo.title_zh}"></div>
 																	</div>
 																	<div class="form-group">
@@ -203,7 +203,7 @@
 																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value="{$PatentInfo.title_en}"></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">申请(专利)号</label> 
+																		<label class="col-md-2 control-label">申请(专利)号(*)</label> 
 																		<div class="col-md-8"><input type="text" name="patent_num" class="form-control" value="{$PatentInfo.patent_num}"></div>
 																	</div>
 																	<div class="form-group">
@@ -232,7 +232,7 @@
 																		<div class="col-md-4"><input type="text" name="publisher" class="form-control" value="{$PatentInfo.publisher}"></div>
 																	</div>
 																	<div class="form-group" id="patent_type">
-																		<label class="col-md-2 control-label">专利类别</label> 
+																		<label class="col-md-2 control-label">专利类别(*)</label> 
 																		<eq name="PatentInfo.country" value="中国专利">
 																			<div class="col-md-8">
 																				<label class="radio-inline"> <input type="radio" name="patent_type" value="发明专利" <if condition="$PatentInfo.patent_type eq 发明专利">checked</if>> 发明专利 </label> 
@@ -271,7 +271,7 @@
 																		</eq>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">专利状态</label> 
+																		<label class="col-md-2 control-label">专利状态(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="申请" id="apply" <if condition="$PatentInfo.status eq 申请">checked</if>> 申请 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="status" value="授权" id="auth" <if condition="$PatentInfo.status eq 授权">checked</if>> 授权 </label> 
@@ -280,13 +280,13 @@
 																	<div id="PatentInfo">
 																		<eq name="PatentInfo.status" value="申请">
 																			<div class="form-group" >
-																				<label class="col-md-2 control-label">申请日期</label> 
+																				<label class="col-md-2 control-label">申请日期(*)</label> 
 																				<div class="col-md-2"><input type="date" name="apply_date" class="form-control" value="{$PatentInfo.apply_date}"></div>
 																			</div>
 																		</eq>
 																		<eq name="PatentInfo.status" value="授权">
 																			<div class="form-group" >
-																				<label class="col-md-2 control-label">授权日期</label> 
+																				<label class="col-md-2 control-label">授权日期(*)</label> 
 																				<div class="col-md-2"><input type="date" name="apply_date" class="form-control" value="{$PatentInfo.apply_date}"></div>
 																			</div>
 																			<div class="form-group">

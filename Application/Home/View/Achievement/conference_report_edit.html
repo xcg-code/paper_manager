@@ -184,7 +184,7 @@
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">报告类型</label> 
+																	<label class="col-md-2 control-label">报告类型(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="特邀报告" <if condition="$ReportInfo.report_type eq 特邀报告">checked</if>> 特邀报告 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="report_type" value="分组报告" <if condition="$ReportInfo.report_type eq 分组报告">checked</if>> 分组报告 </label>
@@ -192,14 +192,14 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">会议类型</label> 
+																	<label class="col-md-2 control-label">会议类型(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国际学术会议" <if condition="$ReportInfo.conference_type eq 国际学术会议">checked</if>> 国际学术会议 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="conference_type" value="国内学术会议" <if condition="$ReportInfo.conference_type eq 国内学术会议">checked</if>> 国内学术会议 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">报告名称(中文)</label> 
+																		<label class="col-md-2 control-label">报告名称(中文)(*)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value="{$ReportInfo.title_zh}"></div>
 																	</div>
 																	<div class="form-group">
@@ -216,7 +216,7 @@
 																	</div>
 																	
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议名称(中文)</label> 
+																		<label class="col-md-2 control-label">会议名称(中文)(*)</label> 
 																		<div class="col-md-3"><input type="text" name="conference_zh" class="form-control" value="{$ReportInfo.conference_zh}"></div>
 																		<label class="col-md-1 control-label">会议名称(英文)</label> 
 																		<div class="col-md-4"><input type="text" name="conference_en" class="form-control" value="{$ReportInfo.conference_en}"></div>
@@ -232,9 +232,9 @@
 																		<div class="col-md-4"><input type="text" name="city" class="form-control" value="{$ReportInfo.city}"></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">会议开始日期</label> 
+																		<label class="col-md-2 control-label">会议开始日期(*)</label> 
 																		<div class="col-md-2"><input type="date" name="start_date" class="form-control" value="{$ReportInfo.start_date}"></div>
-																		<label class="col-md-2 control-label">会议结束日期</label> 
+																		<label class="col-md-2 control-label">会议结束日期(*)</label> 
 																		<div class="col-md-2"><input type="date" name="end_date" class="form-control" value="{$ReportInfo.end_date}"></div>
 																		
 																	</div>									

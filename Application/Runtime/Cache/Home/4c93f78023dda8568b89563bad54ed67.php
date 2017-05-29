@@ -49,14 +49,14 @@
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
+			<span class="name">团队情况</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
+			<span class="name">界面皮肤</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 		<ul class="dropdown-menu skins">
@@ -166,8 +166,37 @@
 								<ul class="sub">
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/achievement_add"><span class="sub-menu-text">添加科研成果</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研成果</span></a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">科研项目<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
 								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">实验室<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/lab_apply"><span class="sub-menu-text">加入实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Favorite/fav_achi"><span class="sub-menu-text">科研成果收藏</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">科研项目收藏</span></a></li>
+								</ul>					
 							</li>
 						</ul>
 						<!-- /SIDEBAR MENU -->
@@ -237,7 +266,7 @@
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">专著题目(中文)</label> 
+																		<label class="col-md-2 control-label">专著题目(中文)(*)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
@@ -253,7 +282,7 @@
 																		<div class="col-md-8"><input type="text" name="books_name" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">语言</label> 
+																		<label class="col-md-2 control-label">语言(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="中文"> 中文 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="language" value="英文"> 英文 </label>
@@ -268,7 +297,7 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">ISBN号</label> 
+																		<label class="col-md-2 control-label">ISBN号(*)</label> 
 																		<div class="col-md-3"><input type="text" name="isbn" class="form-control" value=""></div>
 																		<label class="col-md-1 control-label">编辑</label> 
 																		<div class="col-md-4"><input type="text" name="editor" class="form-control" value=""></div>
@@ -289,9 +318,9 @@
 																		<div class="col-md-4"><input type="text" name="words_num" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">出版社</label> 
+																		<label class="col-md-2 control-label">出版社(*)</label> 
 																		<div class="col-md-2"><input type="text" name="publisher" class="form-control" value=""></div>
-																		<label class="col-md-2 control-label">出版时间(按版权页填写)</label> 
+																		<label class="col-md-2 control-label">出版时间(按版权页填写)(*)</label> 
 																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value=""></div>
 																		
 																	</div>

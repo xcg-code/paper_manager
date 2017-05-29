@@ -49,14 +49,14 @@
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
-			<span class="name">Team Status</span>
+			<span class="name">团队情况</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-cog"></i>
-			<span class="name">Skins</span>
+			<span class="name">界面皮肤</span>
 			<i class="fa fa-angle-down"></i>
 		</a>
 		<ul class="dropdown-menu skins">
@@ -174,7 +174,7 @@
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">我的科研项目</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
 								</ul>
 							</li>
@@ -184,16 +184,19 @@
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/my_achievement"><span class="sub-menu-text">申请实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">加入实验室</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">我的实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/lab_apply"><span class="sub-menu-text">加入实验室</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
 								</ul>
 							</li>
-							<li>
-								<a href="/PaperManager/index.php/Home/Profile/profile">
-								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">我的收藏</span>
-								<span class="selected"></span>
-								</a>					
+							<li class="has-sub">
+								<a href="javascript:;" class="">
+								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>
+								<span class="arrow"></span>
+								</a>
+								<ul class="sub">
+									<li><a class="" href="/PaperManager/index.php/Home/Favorite/fav_achi"><span class="sub-menu-text">科研成果收藏</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">科研项目收藏</span></a></li>
+								</ul>					
 							</li>
 						</ul>
 						<!-- /SIDEBAR MENU -->
@@ -263,14 +266,14 @@
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">标准类型</label> 
+																	<label class="col-md-2 control-label">标准类型(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="国际标准" checked="checked" id="international"> 国际标准 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="country" value="中国标准" id="chinese"> 中国标准 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">标准名称(中文)</label> 
+																		<label class="col-md-2 control-label">标准名称(中文)(*)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
@@ -281,15 +284,15 @@
 
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">标准号</label> 
+																		<label class="col-md-2 control-label">标准号(*)</label> 
 																		<div class="col-md-8"><input type="text" name="standard_num" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label" id="institute">标准公布机构</label> 
+																		<label class="col-md-2 control-label" id="institute">标准公布机构(*)</label> 
 																		<div class="col-md-8"><input type="text" name="institute" class="form-control" value=""></div>
 																	</div>									
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">发布时间</label> 
+																		<label class="col-md-2 control-label">发布时间(*)</label> 
 																		<div class="col-md-3"><input type="date" name="publish_date" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">

@@ -266,7 +266,7 @@
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">软件名称(中文)</label> 
+																		<label class="col-md-2 control-label">软件名称(中文)(*)</label> 
 																		<div class="col-md-8"><input type="text" name="title_zh" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
@@ -274,18 +274,18 @@
 																		<div class="col-md-8"><input type="text" name="title_en" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">登记号</label> 
+																		<label class="col-md-2 control-label">登记号(*)</label> 
 																		<div class="col-md-8"><input type="text" name="reg_num" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">权利获得方式</label> 
+																	<label class="col-md-2 control-label">权利获得方式(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="get_type" value="原始取得"> 原始取得 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="get_type" value="继受取得"> 继受取得 </label>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">权利范围</label> 
+																	<label class="col-md-2 control-label">权利范围(*)</label> 
 																		<div class="col-md-8">
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="right_type" value="全部权利"> 全部权利 </label> 
 																			<label class="radio-inline"> <input type="radio" class="uniform" name="right_type" value="部分权利"> 部分权利 </label>
@@ -298,7 +298,7 @@
 																	</div>
 
 																	<div class="form-group">
-																		<label class="col-md-2 control-label">开发完成时间</label> 
+																		<label class="col-md-2 control-label">开发完成时间(*)</label> 
 																		<div class="col-md-2"><input type="date" name="over_date" class="form-control" value=""></div>
 																		
 																	</div>									
