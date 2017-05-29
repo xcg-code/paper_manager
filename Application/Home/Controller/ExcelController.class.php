@@ -27,10 +27,14 @@ class ExcelController extends Controller {
             $FileModel=M('Excel');
             $Result=$FileModel->add($FileInfo);
             if($Result){
-                $this->success('文档上传成功');
+                $this->success('上传文档成功，请检查信息是否正确！',__ROOT__.'/index.php/Home/Excel/achi_upload_check/filename/'.$info['savename']);
             }else{
                 $this->error('文档上传失败');
             }
         }
+    }
+
+    public function achi_upload_check($filename){
+        $this->display();
     }
 }
