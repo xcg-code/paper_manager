@@ -272,9 +272,9 @@
 											<div class="col-md-12">
 												<div class="box-body">
 													<div class="alert alert-info"><strong>请先下载科研成果批量导入Excel模板文件，填写完成后上传</strong></div>
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Excel/file_upload_main_db/achi_id/<?php echo ($achi_id); ?>" method="post" enctype="multipart/form-data">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Excel/upload_file" method="post" enctype="multipart/form-data">
 														<div class="form-group">
-															<label class="col-md-2 control-label">文件</label> 
+															<label class="col-md-2 control-label">待上传文件</label> 
 															<div class="col-md-8"><input type="file" name="main" /></div>
 
 														</div>
