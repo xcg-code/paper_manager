@@ -334,6 +334,18 @@
 																	<td><?php echo ($ProjectInfo["project_num"]); ?></td>
 																</tr>
 																<tr>
+																	<td style="width: 15%;text-align:center">项目负责人</td>
+																	<td><?php echo ($ProjectInfo["owner"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">依托单位</td>
+																	<td><?php echo ($ProjectInfo["institute"]); ?></td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">资助金额</td>
+																	<td><?php echo ($ProjectInfo["money"]); ?></td>
+																</tr>
+																<tr>
 																	<td style="width: 15%;text-align:center">备注</td>
 																	<td><?php echo ($ProjectInfo["content"]); ?></td>
 																</tr>
