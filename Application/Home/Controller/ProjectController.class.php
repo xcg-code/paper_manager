@@ -214,6 +214,10 @@ class ProjectController extends Controller {
 
 	//某协作科研项目详情页面
 	public function project_git_show($git_id){
+		//获取项目信息
+		$ProjectModel=M('Git');
+		$ProjectInfo=$ProjectModel->where("id='%s'",$git_id)->find();
+		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->display();
 	}
 }

@@ -157,9 +157,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">{$ProjectInfo.project_name}</h3>
+										<h3 class="content-title pull-left">{$ProjectInfo.name}</h3>
 									</div>
-									<div class="description">查看，检索该项目下科研成果</div>
+									<div class="description">协作开发项目</div>
 								</div>
 							</div>
 						</div>
@@ -169,7 +169,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>{$ProjectInfo.project_name}</h4>
+										<h4><i class="fa fa-bars"></i>{$ProjectInfo.name}</h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -197,66 +197,7 @@
 													<a href="__URL__/project_show/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 加入收藏</a>
 													<a href="__ROOT__/index.php/Home/Excel/project_achi_export/id/{$ProjectInfo.id}/{$SearchAction}" class="list-group-item"><i class="fa fa-file fa-fw"></i> 导出该项目下科研成果信息
 													</a>
-													<div class="list-group-item profile-details">
-														<h4>成果类别</h4>
-													</div>
-
-													<a href="__URL__/project_show/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.All}</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<egt name="AchievementCount.JournalPaper" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-														</a>
-													</egt>
-													<egt name="AchievementCount.ConferencePaper" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文
-														</a>
-													</egt>
-													<egt name="AchievementCount.Monograph" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Monograph" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著
-													</a>
-													</egt>
-													<egt name="AchievementCount.Patent" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Patent" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利
-														</a>
-													</egt>
-													<egt name="AchievementCount.ConferenceReport" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告
-													</a>
-													</egt>
-													<egt name="AchievementCount.Standard" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Standard" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准
-													</a>
-													</egt>
-													<egt name="AchievementCount.Software" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Software" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-													</a>
-													</egt>
-													<egt name="AchievementCount.Reward" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Reward" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-													</a>
-													</egt>
-													<egt name="AchievementCount.Train" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Train" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Train}</span><i class="fa fa-calendar fa-fw"></i> 人才培养
-													</a>
-													</egt>
-													<egt name="AchievementCount.ConferenceInvolved" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-													</a>
-													</egt>
-													<egt name="AchievementCount.TechTrans" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red">{$AchievementCount.TechTrans}</span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-													</a>
-													</egt>
-													<egt name="AchievementCount.OtherAchievement" value="0">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red">{$AchievementCount.OtherAchievement}</span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-													</a>
-													</egt>
-													<div class="list-group-item profile-details">
-														<h4>发表年份</h4>
-													</div>
-													<volist name="AchievementYear" id="vo">
-														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_year/{$vo.year}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.year}
-														</a>
-													</volist>
+													
 												</div>														
 											</div>
 											<div class="col-md-9">
@@ -265,59 +206,96 @@
 														<h4><i class="fa fa-table"></i>项目详细信息</h4>
 													</div>
 													<div class="box-body">
-														<table class="table table-striped">
-															<tbody>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目类别</td>
-																	<td>{$ProjectInfo.type_name}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目名称</td>
-																	<td>{$ProjectInfo.project_name}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目号</td>
-																	<td>{$ProjectInfo.project_num}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目负责人</td>
-																	<td>{$ProjectInfo.owner}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">依托单位</td>
-																	<td>{$ProjectInfo.institute}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">资助金额</td>
-																	<td>{$ProjectInfo.money}</td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">备注</td>
-																	<td>{$ProjectInfo.content}</td>
-																</tr>
-															</tbody>
-														</table>
+														
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-check btn btn-info"></i>
+																	<a class="user" href="#"> John Doe </a>
+																	accepted your connection request.
+																	<br>
+																	<a href="#">View profile</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
+																	<a class="user" href="#"> Jack Doe </a>
+																	uploaded a new photo.
+																	<br>
+																	<a href="#">Take a look</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
+																	<a class="user" href="#"> Jess Doe </a>
+																	edited their skills.
+																	<br>
+																	<a href="#">Endorse them</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
+																	<a class="user" href="#"> Divine Doe </a>
+																	made a bitcoin payment.
+																	<br>
+																	<a href="#">Check your financials</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	6 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
+																	<a class="user" href="#"> Lisbon Doe </a>
+																	saved a new document to Dropbox.
+																	<br>
+																	<a href="#">Download</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	1 day ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
+																	<a class="user" href="#"> Bob Doe </a>
+																	pinned a new photo to Pinterest.
+																	<br>
+																	<a href="#">Take a look</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	2 days ago
+																</div>
+															</div>
+														
 													</div>
 												</div>
-												<form action="__URL__/project_show/id/{$ProjectInfo.id}/{$SearchAction}" method="post">
-													<div class="input-group">
-														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
-														<span class="input-group-btn">
-														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
-														</span>
-													</div>
-												</form>
 												
 												<div class="divide-20"></div>
-
-												<volist name="AchievementInfo" id="vo">
-													<div class="search-results">
-														<h4><a href="{$vo.detail_link}">{$vo.title}</a></h4>
-														<div class="text-primary">{$vo.author}</div>
-														<div class="text-danger">{$vo.institute_name}</div>
-														<div class="text-success">{$vo.publish_time}</div>
-													</div>
-												</volist>
 
 												<div>
 													<ul class='pagination'>

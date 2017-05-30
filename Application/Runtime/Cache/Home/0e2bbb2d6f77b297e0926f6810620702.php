@@ -241,9 +241,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($ProjectInfo["project_name"]); ?></h3>
+										<h3 class="content-title pull-left"><?php echo ($ProjectInfo["name"]); ?></h3>
 									</div>
-									<div class="description">查看，检索该项目下科研成果</div>
+									<div class="description">协作开发项目</div>
 								</div>
 							</div>
 						</div>
@@ -253,7 +253,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i><?php echo ($ProjectInfo["project_name"]); ?></h4>
+										<h4><i class="fa fa-bars"></i><?php echo ($ProjectInfo["name"]); ?></h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -281,40 +281,7 @@
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 加入收藏</a>
 													<a href="/PaperManager/index.php/Home/Excel/project_achi_export/id/<?php echo ($ProjectInfo["id"]); ?>/<?php echo ($SearchAction); ?>" class="list-group-item"><i class="fa fa-file fa-fw"></i> 导出该项目下科研成果信息
 													</a>
-													<div class="list-group-item profile-details">
-														<h4>成果类别</h4>
-													</div>
-
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["All"]); ?></span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<?php if(($AchievementCount["JournalPaper"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["JournalPaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-														</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferencePaper"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferencePaper"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议论文
-														</a><?php endif; ?>
-													<?php if(($AchievementCount["Monograph"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Monograph" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Monograph"]); ?></span><i class="fa fa-calendar fa-fw"></i> 学术专著
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Patent"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Patent" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Patent"]); ?></span><i class="fa fa-calendar fa-fw"></i> 专利
-														</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferenceReport"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceReport"]); ?></span><i class="fa fa-calendar fa-fw"></i> 会议报告
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Standard"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Standard" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Standard"]); ?></span><i class="fa fa-calendar fa-fw"></i> 标准
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Software"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Software" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Software"]); ?></span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Reward"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Reward" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Reward"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["Train"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/Train" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["Train"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人才培养
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["ConferenceInvolved"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["ConferenceInvolved"]); ?></span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["TechTrans"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["TechTrans"]); ?></span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-													</a><?php endif; ?>
-													<?php if(($AchievementCount["OtherAchievement"]) >= "0"): ?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red"><?php echo ($AchievementCount["OtherAchievement"]); ?></span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-													</a><?php endif; ?>
-													<div class="list-group-item profile-details">
-														<h4>发表年份</h4>
-													</div>
-													<?php if(is_array($AchievementYear)): $i = 0; $__LIST__ = $AchievementYear;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/achi_year/<?php echo ($vo["year"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($vo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> <?php echo ($vo["year"]); ?>
-														</a><?php endforeach; endif; else: echo "" ;endif; ?>
+													
 												</div>														
 											</div>
 											<div class="col-md-9">
@@ -323,57 +290,96 @@
 														<h4><i class="fa fa-table"></i>项目详细信息</h4>
 													</div>
 													<div class="box-body">
-														<table class="table table-striped">
-															<tbody>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目类别</td>
-																	<td><?php echo ($ProjectInfo["type_name"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目名称</td>
-																	<td><?php echo ($ProjectInfo["project_name"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目号</td>
-																	<td><?php echo ($ProjectInfo["project_num"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">项目负责人</td>
-																	<td><?php echo ($ProjectInfo["owner"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">依托单位</td>
-																	<td><?php echo ($ProjectInfo["institute"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">资助金额</td>
-																	<td><?php echo ($ProjectInfo["money"]); ?></td>
-																</tr>
-																<tr>
-																	<td style="width: 15%;text-align:center">备注</td>
-																	<td><?php echo ($ProjectInfo["content"]); ?></td>
-																</tr>
-															</tbody>
-														</table>
+														
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-check btn btn-info"></i>
+																	<a class="user" href="#"> John Doe </a>
+																	accepted your connection request.
+																	<br>
+																	<a href="#">View profile</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
+																	<a class="user" href="#"> Jack Doe </a>
+																	uploaded a new photo.
+																	<br>
+																	<a href="#">Take a look</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
+																	<a class="user" href="#"> Jess Doe </a>
+																	edited their skills.
+																	<br>
+																	<a href="#">Endorse them</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
+																	<a class="user" href="#"> Divine Doe </a>
+																	made a bitcoin payment.
+																	<br>
+																	<a href="#">Check your financials</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	6 hours ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
+																	<a class="user" href="#"> Lisbon Doe </a>
+																	saved a new document to Dropbox.
+																	<br>
+																	<a href="#">Download</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	1 day ago
+																</div>
+															</div>
+															<div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
+																	<a class="user" href="#"> Bob Doe </a>
+																	pinned a new photo to Pinterest.
+																	<br>
+																	<a href="#">Take a look</a>
+
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	2 days ago
+																</div>
+															</div>
+														
 													</div>
 												</div>
-												<form action="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>/<?php echo ($SearchAction); ?>" method="post">
-													<div class="input-group">
-														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
-														<span class="input-group-btn">
-														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
-														</span>
-													</div>
-												</form>
 												
 												<div class="divide-20"></div>
-
-												<?php if(is_array($AchievementInfo)): $i = 0; $__LIST__ = $AchievementInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="search-results">
-														<h4><a href="<?php echo ($vo["detail_link"]); ?>"><?php echo ($vo["title"]); ?></a></h4>
-														<div class="text-primary"><?php echo ($vo["author"]); ?></div>
-														<div class="text-danger"><?php echo ($vo["institute_name"]); ?></div>
-														<div class="text-success"><?php echo ($vo["publish_time"]); ?></div>
-													</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 												<div>
 													<ul class='pagination'>
