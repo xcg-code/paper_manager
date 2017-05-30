@@ -139,6 +139,30 @@ class ProjectController extends Controller {
 
 	//科研项目协作页面
 	public function project_git(){
+		$GitMemModel=M('GitMember');
+		$Condition['user_id']=session('uid');
+		$GitId=$GitMemModel->field('git_id')->where($Condition)->select();
+		$GitIdList='';
+		for($i=0;$i<count($GitId);$i++){
+			if($i==count($GitId)-1){
+				$GitIdList.=$GitId[$i]['git_id'];
+				break;
+			}
+			$GitIdList.=$GitId[$i]['git_id'].',';	
+		}
+		//查询已参与的协作科研项目
+		$GitModel=M('Git');
+		$map['id']=array('in',$GitIdList);
+		$GitInfo=$GitModel->where($map)->select();
+		for($i=0;$i<count($GitInfo);$i++){
+			if($GitInfo[$i]['state']==0){
+				$GitInfo[$i]['state']='进行中';
+			}else{
+				$GitInfo[$i]['state']='已完成';
+			}
+			
+		}
+		$this->assign('GitInfo',$GitInfo);
 		$this->display();
 	}
 
@@ -179,7 +203,7 @@ class ProjectController extends Controller {
 
 			$Result=$GitModel->add();//导入协作科研项目信息到数据库
 			if($Result){
-				$this->success('创建协作科研项目成功');
+				$this->success('创建协作科研项目成功',__ROOT__.'/index.php/Home/Project/project_git');
 			}else{
 				$this->error($GitModel->getError());
 			}

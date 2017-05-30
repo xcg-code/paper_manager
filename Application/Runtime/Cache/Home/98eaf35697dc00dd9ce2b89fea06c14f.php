@@ -274,8 +274,9 @@
 																		<table class="table table-striped">
 																			<thead>
 																				<tr>
-																					<th>科研项目名称</th>
-																					<th>科研项目类别</th>
+																					<th>项目类别</th>
+																					<th>项目号</th>
+																					<th>项目名称</th>
 																					<th>负责人</th>
 																					<th>依托单位</th>
 																					<th>项目资金(万元)</th>
@@ -284,13 +285,14 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<?php if(is_array($LabInfo)): $i = 0; $__LIST__ = $LabInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																				<?php if(is_array($GitInfo)): $i = 0; $__LIST__ = $GitInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																						<td><?php echo ($vo["type"]); ?></td>
+																						<td><?php echo ($vo["project_num"]); ?></td>
 																						<td><?php echo ($vo["name"]); ?></td>
+																						<td><?php echo ($vo["owner"]); ?></td>
 																						<td><?php echo ($vo["institute"]); ?></td>
-																						<td><?php echo ($vo["holder"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
+																						<td><?php echo ($vo["money"]); ?></td>
+																						<td><?php echo ($vo["state"]); ?></td>
 																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/sub_apply/lab_id/<?php echo ($vo["id"]); ?>'">进入项目</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
