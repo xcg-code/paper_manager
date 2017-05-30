@@ -1842,6 +1842,7 @@ function get_project_num($TypeInfo){
     $ProjectModel=M('Project');
     for($i=0;$i<count($TypeName);$i++){
         $Condition['type_name']=$TypeName[$i];
+        $Condition['user_id']=session('uid');
         $Count=$ProjectModel->where($Condition)->count();
         $TypeInfo[$i]['num']=$Count;
     }
