@@ -272,6 +272,11 @@
 											<div class="col-md-3">
 												<div class="list-group">
 													<div class="list-group-item profile-details">
+														<h4>项目操作</h4>
+													</div>
+													<a href="/PaperManager/index.php/Home/Excel/project_export/<?php echo ($SearchAction); ?>" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 导出当前检索科研项目信息
+													</a>
+													<div class="list-group-item profile-details">
 														<h4>项目类别</h4>
 													</div>
 													<a href="/PaperManager/index.php/Home/Project/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($AllCount); ?></span><i class="fa fa-calendar fa-fw"></i> 所有项目

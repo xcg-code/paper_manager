@@ -100,56 +100,56 @@ class ExcelController extends Controller {
             $achi_type='';
             switch ($data_file[$i]['achievement_type']) {
                 case '期刊论文':
-                    $this->JournalPaper($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='JournalPaper';
-                    break;
+                $this->JournalPaper($data_file[$i],$user_id,$uniq_id);
+                $achi_type='JournalPaper';
+                break;
                 case '会议论文':
-                    $this->ConferencePaper($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='ConferencePaper';
-                    break;
+                $this->ConferencePaper($data_file[$i],$user_id,$uniq_id);
+                $achi_type='ConferencePaper';
+                break;
                 case '学术专著':
-                    $this->Monograph($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='Monograph';
-                    break;
+                $this->Monograph($data_file[$i],$user_id,$uniq_id);
+                $achi_type='Monograph';
+                break;
                 case '专利':
-                    $this->Patent($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='Patent';
-                    break;
+                $this->Patent($data_file[$i],$user_id,$uniq_id);
+                $achi_type='Patent';
+                break;
                 case '会议报告':
-                    $this->ConferenceReport($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='ConferenceReport';
-                    break;
+                $this->ConferenceReport($data_file[$i],$user_id,$uniq_id);
+                $achi_type='ConferenceReport';
+                break;
                 case '标准':
-                    $this->Standard($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='Standard';
-                    break;
+                $this->Standard($data_file[$i],$user_id,$uniq_id);
+                $achi_type='Standard';
+                break;
                 case '软件著作权':
-                    $this->Software($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='Software';
-                    break;
+                $this->Software($data_file[$i],$user_id,$uniq_id);
+                $achi_type='Software';
+                break;
                 case '科研奖励':
-                    $this->Reward($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='Reward';
-                    break;
+                $this->Reward($data_file[$i],$user_id,$uniq_id);
+                $achi_type='Reward';
+                break;
                 case '人才培养':
-                    $this->Train($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='Train';
-                    break;
+                $this->Train($data_file[$i],$user_id,$uniq_id);
+                $achi_type='Train';
+                break;
                 case '举办或参加学术会议':
-                    $this->ConferenceInvolved($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='ConferenceInvolved';
-                    break;
+                $this->ConferenceInvolved($data_file[$i],$user_id,$uniq_id);
+                $achi_type='ConferenceInvolved';
+                break;
                 case '成果技术转移':
-                    $this->TechTrans($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='TechTrans';
-                    break;
+                $this->TechTrans($data_file[$i],$user_id,$uniq_id);
+                $achi_type='TechTrans';
+                break;
                 case '其他重要研究成果':
-                    $this->OtherAchievement($data_file[$i],$user_id,$uniq_id);
-                    $achi_type='OtherAchievement';
-                    break;
+                $this->OtherAchievement($data_file[$i],$user_id,$uniq_id);
+                $achi_type='OtherAchievement';
+                break;
                 
                 default:
-                    break;
+                break;
             }
             //添加科研成果汇总表
             $this->add_all_achi($data_file[$i],$user_id,$uniq_id,$achi_type);
@@ -313,31 +313,31 @@ class ExcelController extends Controller {
 
     private function getExcel($fileName,$headArr,$data){
             //对数据进行检验
-            if(empty($data) || !is_array($data)){
-                die("data must be a array");
-            }
+        if(empty($data) || !is_array($data)){
+            die("data must be a array");
+        }
             //检查文件名
-            if(empty($fileName)){
-                exit;
-            }
+        if(empty($fileName)){
+            exit;
+        }
 
-            $date = date("Y_m_d",time());
-            $fileName .= "_{$date}.xls";
+        $date = date("Y_m_d",time());
+        $fileName .= "_{$date}.xls";
 
             //创建PHPExcel对象，注意，不能少了\
-            $objPHPExcel = new \PHPExcel();
-            $objProps = $objPHPExcel->getProperties();
-            
+        $objPHPExcel = new \PHPExcel();
+        $objProps = $objPHPExcel->getProperties();
+
             //设置表头
-            $key = ord("A");
-            foreach($headArr as $v){
-                $colum = chr($key);
-                $objPHPExcel->setActiveSheetIndex(0) ->setCellValue($colum.'1', $v);
-                $key += 1;
-            }
-            
-            $column = 2;
-            $objActSheet = $objPHPExcel->getActiveSheet();
+        $key = ord("A");
+        foreach($headArr as $v){
+            $colum = chr($key);
+            $objPHPExcel->setActiveSheetIndex(0) ->setCellValue($colum.'1', $v);
+            $key += 1;
+        }
+
+        $column = 2;
+        $objActSheet = $objPHPExcel->getActiveSheet();
             foreach($data as $key => $rows){ //行写入
                 $span = ord("A");
                 foreach($rows as $keyName=>$value){// 列写入
@@ -361,4 +361,25 @@ class ExcelController extends Controller {
             $objWriter->save('php://output'); //文件通过浏览器下载
             exit;
         }
+
+    //导出科研项目信息
+    public function project_export($project_type=''){
+        //获取项目类别信息
+        $TypeModel=M('Project_type');
+        $TypeInfo=$TypeModel->select();
+        //获取检索条件
+        $ProjectModel=M('Project');
+        $Condition['user_id']=session('uid');
+        if($project_type!=''){
+            for($i=0;$i<count($TypeInfo);$i++){
+                if($project_type==$TypeInfo[$i]['id']){
+                    $Condition['type_name']=$TypeInfo[$i]['type_name'];
+                    break;
+                }
+            }  
+        }
+
+        $ProjectInfo=$ProjectModel->where($Condition)->select();
+        var_dump($ProjectInfo);
+    }
 }
