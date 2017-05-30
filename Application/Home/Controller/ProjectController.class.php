@@ -141,4 +141,13 @@ class ProjectController extends Controller {
 	public function project_git(){
 		$this->display();
 	}
+
+	//创建新的协作科研项目页面
+	public function project_create(){
+		//获取项目类别信息
+		$TypeModel=M('Project_type');
+		$TypeInfo=$TypeModel->select();
+		$this->assign('TypeInfo',$TypeInfo);
+		$this->display();
+	}
 }

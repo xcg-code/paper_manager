@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-
+	
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -92,7 +92,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-
+		
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -142,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-
+	
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -233,17 +233,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-
+									
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-
+										
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">科研项目跟踪与协作</h3>
+										<h3 class="content-title pull-left">创建科研协作项目</h3>
 									</div>
-									<div class="description">缺陷跟踪、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理</div>
+									<div class="description">创建科研协作项目</div>
 								</div>
 							</div>
 						</div>
@@ -254,67 +254,58 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">跟踪与协作控制台</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">创建科研协作项目</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">控制台</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">创建科研协作项目</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<div class="row">
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>已参与协作项目</h4>
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/lab_add_db" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div class="alert alert-info"><strong>创建新科研项目，表明您为该项目的负责人</strong></div>
+																	<div class="form-group" id="form_one_">
+																		<label class="col-md-2 control-label">所属项目类别(*)</label> 
+																		<div class="col-md-3"><select class="form-control" name="type_name_">
+																			<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+																		</select></div>
+																		<label class="col-md-1 control-label">项目号(*)</label> 
+																		<div class="col-md-2"><input type="text" name="project_num" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">依托单位</label> 
+																		<div class="col-md-2"><input type="text" name="institute" class="form-control" value=""></div>
 																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>科研项目名称</th>
-																					<th>科研项目类别</th>
-																					<th>负责人</th>
-																					<th>依托单位</th>
-																					<th>项目资金(万元)</th>
-																					<th>项目状态</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($LabInfo)): $i = 0; $__LIST__ = $LabInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["name"]); ?></td>
-																						<td><?php echo ($vo["institute"]); ?></td>
-																						<td><?php echo ($vo["holder"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/sub_apply/lab_id/<?php echo ($vo["id"]); ?>'">进入项目</button></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																			</tbody>
-																		</table>
+																	<div class="form-group" id="form_three_">
+																		<label class="col-md-2 control-label">项目名称(*)</label> 
+																		<div class="col-md-3"><input type="text" name="project_name" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">负责人(*)</label> 
+																		<div class="col-md-2"><input type="text" name="owner" class="form-control" value=""></div>
+																		<label class="col-md-1 control-label">资助经费(万元)</label> 
+																		<div class="col-md-2"><input type="text" name="money" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group" id="form_two_">
+																		<label class="col-md-2 control-label">备注</label> 
+																		<div class="col-md-9"><textarea name="content" class="form-control"></textarea></div>
 																	</div>
 																</div>
-																	<div class="form-actions clearfix">
-																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_create'">创建新的协作科研项目</button>
-																	</div>
-																
 															</div>
 														</div>
 														
-													</div>
-
+														<div class="form-actions clearfix"> 
+															<input type="submit" value="创建新科研协作项目" class="btn btn-primary pull-right">
+														</div>
+													</form>
 												</div>
-
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
+						
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -324,6 +315,8 @@
 				</div>
 			</div>
 		</div>
+
+		
 
 	</section>
 	<!--/PAGE -->
@@ -335,11 +328,11 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-
+	
 
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-
+	
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -361,10 +354,11 @@
 	<script>
 		var count=0;
 		jQuery(document).ready(function() {		
-		App.setPage("user_profile");  //Set current page
-		App.init(); //Initialise plugins and elements
-	});
-</script>
-<!-- /JAVASCRIPTS -->
+			App.setPage("user_profile");  //Set current page
+			App.init(); //Initialise plugins and elements
+			
+		});
+	</script>
+	<!-- /JAVASCRIPTS -->
 </body>
 </html>
