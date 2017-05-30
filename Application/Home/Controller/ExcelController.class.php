@@ -459,7 +459,7 @@ class ExcelController extends Controller {
             $SearchAction='achi_year/'.$achi_year;
         }
 
-        $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->select();
-        var_dump($AchievementInfo);
+        $AchievementInfo=$AchievementModel->field('title,achievement_type,institute_name,publish_time')->where($Condition)->order('publish_time desc')->select();
+        $this->out($AchievementInfo);
     }
 }
