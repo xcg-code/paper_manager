@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | Gallery</title>
+	<title>Cloud Admin | User Profile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -11,16 +11,13 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-	
+
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
-	<!-- ANIMATE -->
-	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/animatecss/animate.min.css" />
-	<!-- COLORBOX -->
-	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/colorbox/colorbox.min.css" />
+	<!-- UNIFORM -->
+	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/uniform/css/uniform.default.min.css" />
 	<!-- FONTS -->
-
 </head>
 <body>
 	<!-- HEADER -->
@@ -145,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	
+
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -179,7 +176,7 @@
 								<ul class="sub">
 									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
-									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目跟踪与协作</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Project/project_git"><span class="sub-menu-text">项目跟踪与协作</span></a></li>
 								</ul>
 							</li>
 							<li class="has-sub">
@@ -236,164 +233,88 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-									
+
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-										
+
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($UserInfo["lab_name"]); ?></h3>
+										<h3 class="content-title pull-left">科研项目跟踪与协作</h3>
 									</div>
-									<div class="description">我的实验室</div>
+									<div class="description">缺陷跟踪、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理</div>
 								</div>
 							</div>
 						</div>
 						<!-- /PAGE HEADER -->
-						<!-- GALLERY -->
+						<!-- USER PROFILE -->
 						<div class="row">
-							<div class="col-md-3">
-								<div class="list-group">
-									<div class="list-group-item profile-details">
-										<h4><?php echo ($UserInfo["lab_name"]); ?></h4>
-									</div>
-									<a class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-calendar fa-fw"></i> 负责人：<?php echo ($LabInfo["holder"]); ?>
-									</a>
-									<?php if(($LabInfo["holder_id"]) == $UserInfo["id"]): ?><a href="/PaperManager/index.php/Home/Lab/check_apply/lab_id/<?php echo ($UserInfo["lab_id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["apply"]); ?></span><i class="fa fa-calendar fa-fw"></i> 申请审核
-										</a>
-										<a href="/PaperManager/index.php/Home/Lab/member/lab_id/<?php echo ($LabInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 人员管理
-										</a><?php endif; ?>
-									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["achi_num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研成果
-									</a>
-									<a href="/PaperManager/index.php/Home/Lab/my_project" class="list-group-item"><span class="badge badge-red"><?php echo ($NumInfo["project_num"]); ?></span><i class="fa fa-calendar fa-fw"></i> 科研项目
-									</a>
-									<a href="/PaperManager/index.php/Home/Lab/quit_lab" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-calendar fa-fw"></i> 退出实验室
-									</a>
-								</div>														
-							</div>
-							<div class="col-md-9">
+							<div class="col-md-12">
 								<!-- BOX -->
-								<div class="box">
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>实验室人员</h4>
-										<div class="tools">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">跟踪与协作控制台</span></h4>
 									</div>
-									<div class="box-body clearfix">
-										<div id="filter-controls" class="btn-group">
-											<div class="hidden-xs">
-												<a href="#" class="btn btn-danger" data-filter="*">所有人员</a>
-												<a href="#" class="btn btn-info" data-filter=".category_1">教授</a>
-												<a href="#" class="btn btn-info" data-filter=".category_2">副教授</a>
-												<a href="#" class="btn btn-info" data-filter=".category_3">博士后</a>
-												<a href="#" class="btn btn-info" data-filter=".category_4">博士生</a>
-												<a href="#" class="btn btn-info" data-filter=".category_5">硕士生</a>
-												<a href="#" class="btn btn-info" data-filter=".category_6">本科生</a>
+									<div class="box-body">
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">控制台</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<div class="row">
+														<div class="col-md-12">
+															<div class="box-body">
+																<div class="box border blue">
+																	<div class="box-title">
+																		<h4><i class="fa fa-table"></i>已参与协作项目</h4>
+																	</div>
+																	<div class="box-body">
+																		<table class="table table-striped">
+																			<thead>
+																				<tr>
+																					<th>科研项目名称</th>
+																					<th>科研项目类别</th>
+																					<th>负责人</th>
+																					<th>依托单位</th>
+																					<th>项目资金(万元)</th>
+																					<th>项目状态</th>
+																					<th>操作</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<?php if(is_array($LabInfo)): $i = 0; $__LIST__ = $LabInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																						<td><?php echo ($vo["name"]); ?></td>
+																						<td><?php echo ($vo["institute"]); ?></td>
+																						<td><?php echo ($vo["holder"]); ?></td>
+																						<td><?php echo ($vo["content"]); ?></td>
+																						<td><?php echo ($vo["content"]); ?></td>
+																						<td><?php echo ($vo["content"]); ?></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/sub_apply/lab_id/<?php echo ($vo["id"]); ?>'">进入项目</button></td>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																	<div class="form-actions clearfix">
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/lab_add'">创建实验室</button>
+																	</div>
+																
+															</div>
+														</div>
+														
+													</div>
+
+												</div>
+
 											</div>
-											<div class="visible-xs">
-												<select id="e1" class="form-control">
-													<option value="*">所有人员</option>
-													<option value=".category_1">教授</option>
-													<option value=".category_2">副教授</option>
-													<option value=".category_3">博士后</option>
-													<option value=".category_4">博士生</option>
-													<option value=".category_5">硕士生</option>
-													<option value=".category_6">本科生</option>
-												</select>
-											</div>
-										</div>
-										<div id="filter-items" class="row">
-											<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo["work_title"]) == "教授"): ?><div class="col-md-3 category_1 item">
-														<div class="filter-content">
-															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
-															<div class="hover-content">
-																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
-																	<i class="fa fa-edit fa-1x"></i>
-																</a>
-
-															</div>
-														</div>
-													</div><?php endif; ?>
-												<?php if(($vo["work_title"]) == "副教授"): ?><div class="col-md-3 category_2 item">
-														<div class="filter-content">
-															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
-															<div class="hover-content">
-																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
-																	<i class="fa fa-edit fa-1x"></i>
-																</a>
-
-															</div>
-														</div>
-													</div><?php endif; ?>
-												<?php if(($vo["work_title"]) == "博士后"): ?><div class="col-md-3 category_3 item">
-														<div class="filter-content">
-															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
-															<div class="hover-content">
-																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
-																	<i class="fa fa-edit fa-1x"></i>
-																</a>
-
-															</div>
-														</div>
-													</div><?php endif; ?>
-												<?php if(($vo["work_title"]) == "博士生"): ?><div class="col-md-3 category_4 item">
-														<div class="filter-content">
-															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
-															<div class="hover-content">
-																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
-																	<i class="fa fa-edit fa-1x"></i>
-																</a>
-
-															</div>
-														</div>
-													</div><?php endif; ?>
-												<?php if(($vo["work_title"]) == "硕士生"): ?><div class="col-md-3 category_5 item">
-														<div class="filter-content">
-															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
-															<div class="hover-content">
-																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
-																	<i class="fa fa-edit fa-1x"></i>
-																</a>
-
-															</div>
-														</div>
-													</div><?php endif; ?>
-												<?php if(($vo["work_title"]) == "本科生"): ?><div class="col-md-3 category_6 item">
-														<div class="filter-content">
-															<img src="/PaperManager/Uploads/UserPic/<?php echo ($vo["pic_save_path"]); ?>" alt="" class="img-responsive" />
-															<div class="hover-content">
-																<h4><?php echo ($vo["fullname"]); ?></h4>
-																<a href="/PaperManager/index.php/Home/Achievement/my_achievement/user_id/<?php echo ($vo["id"]); ?>" class="btn btn-success hover-link">
-																	<i class="fa fa-edit fa-1x"></i>
-																</a>
-															</div>
-														</div>
-													</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 										</div>
 									</div>
 								</div>
-								<!-- /BOX -->
 							</div>
 						</div>
-						<!-- /GALLERY -->
+
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -403,6 +324,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -413,28 +335,36 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
+
+
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
+
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<!-- SLIMSCROLL -->
+	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- ISOTOPE -->
-	<script type="text/javascript" src="/PaperManager/Public/js/isotope/jquery.isotope.min.js"></script>
-	<!-- COLORBOX -->
-	<script type="text/javascript" src="/PaperManager/Public/js/colorbox/jquery.colorbox.min.js"></script>
+	<!-- EASY PIE CHART -->
+	<script src="/PaperManager/Public/js/jquery-easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="/PaperManager/Public/js/easypiechart/jquery.easypiechart.min.js"></script>
+	<!-- SPARKLINES -->
+	<script type="text/javascript" src="/PaperManager/Public/js/sparklines/jquery.sparkline.min.js"></script>
+	<!-- UNIFORM -->
+	<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
 	<!-- COOKIE -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
 	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
-			App.setPage("gallery");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
-	<!-- /JAVASCRIPTS -->
+		App.setPage("user_profile");  //Set current page
+		App.init(); //Initialise plugins and elements
+	});
+</script>
+<!-- /JAVASCRIPTS -->
 </body>
 </html>

@@ -136,4 +136,9 @@ class ProjectController extends Controller {
             $this->error('删除所属项目信息失败');
         }
 	}
+
+	//科研项目协作页面
+	public function project_git(){
+		$this->display();
+	}
 }
