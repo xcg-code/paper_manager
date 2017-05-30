@@ -363,23 +363,76 @@ class ExcelController extends Controller {
         }
 
     //导出科研项目信息
-    public function project_export($project_type=''){
+        public function project_export($project_type=''){
         //获取项目类别信息
-        $TypeModel=M('Project_type');
-        $TypeInfo=$TypeModel->select();
+            $TypeModel=M('Project_type');
+            $TypeInfo=$TypeModel->select();
         //获取检索条件
-        $ProjectModel=M('Project');
-        $Condition['user_id']=session('uid');
-        if($project_type!=''){
-            for($i=0;$i<count($TypeInfo);$i++){
-                if($project_type==$TypeInfo[$i]['id']){
-                    $Condition['type_name']=$TypeInfo[$i]['type_name'];
-                    break;
-                }
-            }  
-        }
+            $ProjectModel=M('Project');
+            $Condition['user_id']=session('uid');
+            if($project_type!=''){
+                for($i=0;$i<count($TypeInfo);$i++){
+                    if($project_type==$TypeInfo[$i]['id']){
+                        $Condition['type_name']=$TypeInfo[$i]['type_name'];
+                        break;
+                    }
+                }  
+            }
+        //获取待导出科研项目信息
+            $ProjectInfo=$ProjectModel->field('type_name,project_name,project_num,owner,institute,money,content')->where($Condition)->select();
+        //导出数据操作
+        //导入PHPExcel类库，因为PHPExcel没有用命名空间，只能inport导入
+            vendor("PHPExcel.PHPExcel");
 
-        $ProjectInfo=$ProjectModel->where($Condition)->select();
-        var_dump($ProjectInfo);
+            $fileName="ImportFile";
+            $headArr=array("科研项目类别","科研项目名称","科研项目号","负责人","依托单位","项目资金(万元)","备注");
+            //对数据进行检验
+            if(empty($ProjectInfo) || !is_array($ProjectInfo)){
+                die("data must be a array");
+            }
+            //检查文件名
+            if(empty($fileName)){
+                exit;
+            }
+
+            $date = date("Y_m_d",time());
+            $fileName .= "_{$date}.xls";
+
+            //创建PHPExcel对象，注意，不能少了\
+            $objPHPExcel = new \PHPExcel();
+            $objProps = $objPHPExcel->getProperties();
+
+            //设置表头
+            $key = ord("A");
+            foreach($headArr as $v){
+                $colum = chr($key);
+                $objPHPExcel->setActiveSheetIndex(0) ->setCellValue($colum.'1', $v);
+                $key += 1;
+            }
+
+            $column = 2;
+            $objActSheet = $objPHPExcel->getActiveSheet();
+            foreach($ProjectInfo as $key => $rows){ //行写入
+                $span = ord("A");
+                foreach($rows as $keyName=>$value){// 列写入
+                    $j = chr($span);
+                    $objActSheet->setCellValue($j.$column, $value);
+                    $span++;
+                }
+                $column++;
+            }
+
+            $fileName = iconv("utf-8", "gb2312", $fileName);
+            //重命名表
+            // $objPHPExcel->getActiveSheet()->setTitle('test');
+            //设置活动单指数到第一个表,所以Excel打开这是第一个表
+            $objPHPExcel->setActiveSheetIndex(0);
+            header('Content-Type: application/vnd.ms-excel');
+            header("Content-Disposition: attachment;filename=\"$fileName\"");
+            header('Cache-Control: max-age=0');
+
+            $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+            $objWriter->save('php://output'); //文件通过浏览器下载
+            exit;
+        }
     }
-}
