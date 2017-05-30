@@ -195,6 +195,8 @@
 													<a href="__URL__/project_edit/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 编辑项目</a>
 													<a href="__URL__/project_delete/project_id/{$ProjectInfo.id}" onclick="return confirm('确定要删除这个项目吗？')" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 删除项目</a>
 													<a href="__URL__/project_show/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 加入收藏</a>
+													<a href="__ROOT__/index.php/Home/Excel/project_achi_export/id/{$ProjectInfo.id}/{$SearchAction}" class="list-group-item"><i class="fa fa-file fa-fw"></i> 导出该项目下科研成果信息
+													</a>
 													<div class="list-group-item profile-details">
 														<h4>成果类别</h4>
 													</div>
