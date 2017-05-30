@@ -229,4 +229,16 @@ class ProjectController extends Controller {
 		$this->assign('IsAdmin',$IsAdmin);
 		$this->display();
 	}
+
+	//完成协作科研项目
+	public function  git_finish($git_id){
+		$ProjectModel=M('Git');
+		$ProjectModel->state=1;
+		$Result=$ProjectModel->where("id='%s'",$git_id)->save();
+		if($Result){
+			$this->success('该协作项目已完成',__ROOT__.'/index.php/Home/Project/project_git');
+		}else{
+			$this->error($ProjectModel->getError());
+		}
+	}
 }
