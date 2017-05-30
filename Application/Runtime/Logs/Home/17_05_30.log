@@ -7281,3 +7281,356 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
 
+[ 2017-05-30T20:31:33+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0007s ]
+SQL: SELECT `git_id` FROM `think_git_member` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git` WHERE `id` IN ('592d33218ee9f','592d3ad0a3aab')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2017-05-30T20:31:35+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( lab_id='59000c1939530' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002276s ]
+
+[ 2017-05-30T20:32:44+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( lab_id='59000c1939530' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001868s ]
+
+[ 2017-05-30T20:33:21+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('1','592d669139e0e') [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('2','592d669139e0e') [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('3','592d669139e0e') [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('4','592d669139e0e') [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('5','592d669139e0e') [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('6','592d669139e0e') [ RunTime:0.0003s ]
+ERR: 1364:Field 'owner' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`) VALUES ('国家自然科学基金项目','1234567890','哈尔滨工业大学','科研成果在线管理系统','132','123','592d669139e0e')
+ERR: 1364:Field 'owner' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`) VALUES ('国家自然科学基金项目','1234567890','哈尔滨工业大学','科研成果在线管理系统','132','123','592d669139e0e')
+
+[ 2017-05-30T20:34:30+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('1','592d66d64f235') [ RunTime:0.0005s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('2','592d66d64f235') [ RunTime:0.0007s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('3','592d66d64f235') [ RunTime:0.0010s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('4','592d66d64f235') [ RunTime:0.0006s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('5','592d66d64f235') [ RunTime:0.0006s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('6','592d66d64f235') [ RunTime:0.0005s ]
+ERR: 1364:Field 'owner' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`) VALUES ('国家自然科学基金项目','1234567890','哈尔滨工业大学','科研成果在线管理系统','132','123','592d66d64f235')
+ERR: 1364:Field 'owner' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`) VALUES ('国家自然科学基金项目','1234567890','哈尔滨工业大学','科研成果在线管理系统','132','123','592d66d64f235')
+
+[ 2017-05-30T20:35:28+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('1','592d671058846') [ RunTime:0.0008s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('2','592d671058846') [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('3','592d671058846') [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('4','592d671058846') [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('5','592d671058846') [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('6','592d671058846') [ RunTime:0.0004s ]
+SQL: INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`,`owner`) VALUES ('国家自然科学基金项目','1234567890','哈尔滨工业大学','科研成果在线管理系统','132','123','592d671058846','2') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-05-30T20:35:29+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0007s ]
+SQL: SELECT `git_id` FROM `think_git_member` WHERE `user_id` = 2  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `think_git` WHERE `id` IN ('592d669139e0e','592d66d64f235','592d671058846')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2017-05-30T20:42:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( lab_id='59000c1939530' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001569s ]
+
+[ 2017-05-30T20:42:30+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('1','592d68b65a9c1') [ RunTime:0.0005s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('2','592d68b65a9c1') [ RunTime:0.0005s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('3','592d68b65a9c1') [ RunTime:0.0005s ]
+SQL: INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`,`owner`) VALUES ('国家自然科学基金项目','1234567890','哈尔滨工业大学','excel','132','','592d68b65a9c1','张维刚') [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2017-05-30T20:42:31+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0007s ]
+SQL: SELECT `git_id` FROM `think_git_member` WHERE `user_id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `think_git` WHERE `id` IN ('592d669139e0e','592d66d64f235','592d671058846','592d68b65a9c1')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000623s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2017-05-30T20:42:35+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d68b65a9c1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d68b65a9c1' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 392 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2017-05-30T20:43:07+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `think_project_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_project_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( lab_id='59000c1939530' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001601s ]
+
+[ 2017-05-30T20:43:55+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_create_db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('1','592d690be3bf0') [ RunTime:0.0005s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('2','592d690be3bf0') [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('3','592d690be3bf0') [ RunTime:0.0011s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('4','592d690be3bf0') [ RunTime:0.0006s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('5','592d690be3bf0') [ RunTime:0.0009s ]
+SQL: INSERT INTO `think_git_member` (`user_id`,`git_id`) VALUES ('6','592d690be3bf0') [ RunTime:0.0007s ]
+SQL: INSERT INTO `think_git` (`type`,`project_num`,`institute`,`name`,`money`,`content`,`id`,`owner`) VALUES ('国家自然科学基金项目','61202325','哈尔滨工业大学','科研成果在线管理系统','132','毕业设计题目','592d690be3bf0','张维刚') [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2017-05-30T20:43:57+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0010s ]
+SQL: SELECT `git_id` FROM `think_git_member` WHERE `user_id` = 2  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `think_git` WHERE `id` IN ('592d690be3bf0')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+

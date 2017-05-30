@@ -189,11 +189,13 @@ class ProjectController extends Controller {
 		//添加协作项目基本信息
 		$GitModel=M('Git');
 		$GitMember=M('GitMember');
+
 		if($GitModel->create()){
 			//生成协作科研项目ID
 			$uniq_id=uniqid();
 			$MemberID=I('post.member');//获取项目成员ID数组
 			$GitModel->id=$uniq_id;
+			$GitModel->owner=session('fullname');
 			//导入项目成员信息到数据库
 			for($i=0;$i<count($MemberID);$i++){
 				$GitMember->user_id=$MemberID[$i];
@@ -217,6 +219,7 @@ class ProjectController extends Controller {
 		//获取项目信息
 		$ProjectModel=M('Git');
 		$ProjectInfo=$ProjectModel->where("id='%s'",$git_id)->find();
+		//判断当前用户是否为项目负责人
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->display();
 	}
