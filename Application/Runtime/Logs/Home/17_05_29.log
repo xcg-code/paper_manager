@@ -11496,3 +11496,13 @@ INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
 SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0026s ]
 SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1 AND `title` LIKE '%%' ORDER BY publish_time desc  [ RunTime:0.0008s ]
 
+[ 2017-05-29T21:48:58+08:00 ] ::1 /PaperManager/index.php/Home/Excel/achi_export//user_id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1 AND `title` LIKE '%%' ORDER BY publish_time desc  [ RunTime:0.0004s ]
+

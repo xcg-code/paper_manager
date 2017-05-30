@@ -296,24 +296,19 @@ class ExcelController extends Controller {
         $Search=I('post.search');
         $Condition['title']=array('like','%'.$Search.'%');
         //数据获取
-        $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->select();
+        $AchievementInfo=$AchievementModel->field('title,achievement_type,institute_name,publish_time')->where($Condition)->order('publish_time desc')->select();
         
         //数据导出
         $this->out($AchievementInfo);
     }
 
     public function out($AchievementInfo){
-        $data=array(
-            array('username'=>'测试一下','password'=>"测试一下"),
-            array('username'=>'测试一下','password'=>"测试一下"),
-            array('username'=>'测试一下','password'=>"测试一下"),
-            );
         //导入PHPExcel类库，因为PHPExcel没有用命名空间，只能inport导入
         vendor("PHPExcel.PHPExcel");
 
-        $filename="test_excel";
-        $headArr=array("用户名","密码");
-        $this->getExcel($filename,$headArr,$data);
+        $filename="ImportFile";
+        $headArr=array("科研成果名称","科研成果类型","期刊名称(会议名称，发表机构)","发表时间");
+        $this->getExcel($filename,$headArr,$AchievementInfo);
     }
 
     private function getExcel($fileName,$headArr,$data){
@@ -351,7 +346,7 @@ class ExcelController extends Controller {
                     $span++;
                 }
                 $column++;
-        }
+            }
 
             $fileName = iconv("utf-8", "gb2312", $fileName);
             //重命名表
