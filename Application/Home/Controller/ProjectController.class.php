@@ -241,4 +241,9 @@ class ProjectController extends Controller {
 			$this->error($ProjectModel->getError());
 		}
 	}
+
+	//申请项目开支页面
+	public function git_apply_cost($git_id){
+		$this->display();
+	}
 }
