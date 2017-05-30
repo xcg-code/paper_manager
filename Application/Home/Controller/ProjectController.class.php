@@ -170,7 +170,14 @@ class ProjectController extends Controller {
 			$uniq_id=uniqid();
 			$MemberID=I('post.member');//获取项目成员ID数组
 			$GitModel->id=$uniq_id;
-			$Result=$GitModel->add();
+			//导入项目成员信息到数据库
+			for($i=0;$i<count($MemberID);$i++){
+				$GitMember->user_id=$MemberID[$i];
+				$GitMember->git_id=$uniq_id;
+				$GitMember->add();
+			}
+
+			$Result=$GitModel->add();//导入协作科研项目信息到数据库
 			if($Result){
 				$this->success('创建协作科研项目成功');
 			}else{
