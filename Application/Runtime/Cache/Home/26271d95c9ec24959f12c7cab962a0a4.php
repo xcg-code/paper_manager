@@ -263,14 +263,14 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/lab_add_db" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/project_create_db" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div class="alert alert-info"><strong>创建新科研项目，表明您为该项目的负责人</strong></div>
-																	<div class="form-group" id="form_one_">
+																	<div class="form-group" >
 																		<label class="col-md-2 control-label">所属项目类别(*)</label> 
-																		<div class="col-md-3"><select class="form-control" name="type_name_">
+																		<div class="col-md-3"><select class="form-control" name="type">
 																			<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 																		</select></div>
 																		<label class="col-md-1 control-label">项目号(*)</label> 
@@ -280,7 +280,7 @@
 																	</div>
 																	<div class="form-group" id="form_three_">
 																		<label class="col-md-2 control-label">项目名称(*)</label> 
-																		<div class="col-md-3"><input type="text" name="project_name" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" name="name" class="form-control" value=""></div>
 																		<label class="col-md-1 control-label">负责人(*)</label> 
 																		<div class="col-md-2"><input type="text" name="owner" class="form-control" value=""></div>
 																		<label class="col-md-1 control-label">资助经费(万元)</label> 
@@ -289,7 +289,7 @@
 																	<div class="form-group">
 																	<label class="col-md-2 control-label">项目成员</label> 
 																		<div class="col-md-8">
-																			<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="<?php echo ($vo["fullname"]); ?>"> <?php echo ($vo["fullname"]); ?> </label><?php endforeach; endif; else: echo "" ;endif; ?>	
+																			<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="<?php echo ($vo["id"]); ?>"> <?php echo ($vo["fullname"]); ?> </label><?php endforeach; endif; else: echo "" ;endif; ?>	
 																		</div>
 																	</div>
 																	<div class="form-group" id="form_two_">

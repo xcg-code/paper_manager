@@ -159,4 +159,25 @@ class ProjectController extends Controller {
 		$this->assign('MemberInfo',$MemberInfo);
 		$this->display();
 	}
+
+	//创建新的协作科研项目数据库操作()
+	public function project_create_db(){
+		//添加协作项目基本信息
+		$GitModel=M('Git');
+		$GitMember=M('GitMember');
+		if($GitModel->create()){
+			//生成协作科研项目ID
+			$uniq_id=uniqid();
+			$MemberID=I('post.member');//获取项目成员ID数组
+			$GitModel->id=$uniq_id;
+			$Result=$GitModel->add();
+			if($Result){
+				$this->success('创建协作科研项目成功');
+			}else{
+				$this->error($GitModel->getError());
+			}
+		}else{
+			$this->error($GitModel->getError());
+		}
+	}
 }
