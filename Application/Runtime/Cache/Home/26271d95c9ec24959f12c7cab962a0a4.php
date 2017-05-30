@@ -286,6 +286,12 @@
 																		<label class="col-md-1 control-label">资助经费(万元)</label> 
 																		<div class="col-md-2"><input type="text" name="money" class="form-control" value=""></div>
 																	</div>
+																	<div class="form-group">
+																	<label class="col-md-2 control-label">项目成员</label> 
+																		<div class="col-md-8">
+																			<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="<?php echo ($vo["fullname"]); ?>"> <?php echo ($vo["fullname"]); ?> </label><?php endforeach; endif; else: echo "" ;endif; ?>	
+																		</div>
+																	</div>
 																	<div class="form-group" id="form_two_">
 																		<label class="col-md-2 control-label">备注</label> 
 																		<div class="col-md-9"><textarea name="content" class="form-control"></textarea></div>

@@ -147,7 +147,16 @@ class ProjectController extends Controller {
 		//获取项目类别信息
 		$TypeModel=M('Project_type');
 		$TypeInfo=$TypeModel->select();
+		//获取实验室ID
+		$MemberModel=M('User');
+		$MemberCondi['id']=session('uid');
+		$LabId=$MemberModel->where($MemberCondi)->find();
+		$LabId=$LabId['lab_id'];
+		//获取该实验室下所有人员信息
+		$MemberInfo=$MemberModel->where("lab_id='%s'",$LabId)->select();
+
 		$this->assign('TypeInfo',$TypeInfo);
+		$this->assign('MemberInfo',$MemberInfo);
 		$this->display();
 	}
 }

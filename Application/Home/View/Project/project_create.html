@@ -204,6 +204,14 @@
 																		<label class="col-md-1 control-label">资助经费(万元)</label> 
 																		<div class="col-md-2"><input type="text" name="money" class="form-control" value=""></div>
 																	</div>
+																	<div class="form-group">
+																	<label class="col-md-2 control-label">项目成员</label> 
+																		<div class="col-md-8">
+																			<volist name='MemberInfo' id='vo'>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="{$vo.fullname}"> {$vo.fullname} </label>
+																			</volist>	
+																		</div>
+																	</div>
 																	<div class="form-group" id="form_two_">
 																		<label class="col-md-2 control-label">备注</label> 
 																		<div class="col-md-9"><textarea name="content" class="form-control"></textarea></div>
