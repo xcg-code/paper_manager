@@ -220,7 +220,13 @@ class ProjectController extends Controller {
 		$ProjectModel=M('Git');
 		$ProjectInfo=$ProjectModel->where("id='%s'",$git_id)->find();
 		//判断当前用户是否为项目负责人
+		if(session('fullname')!=$ProjectInfo['owner']){
+			$IsAdmin=0;//0表示当前用户不是项目负责人
+		}else{
+			$IsAdmin=1;//0表示当前用户是项目负责人
+		}
 		$this->assign('ProjectInfo',$ProjectInfo);
+		$this->assign('IsAdmin',$IsAdmin);
 		$this->display();
 	}
 }
