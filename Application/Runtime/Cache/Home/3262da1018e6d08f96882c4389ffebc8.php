@@ -176,6 +176,7 @@
 								<ul class="sub">
 									<li><a class="" href="/PaperManager/index.php/Home/Project/my_project"><span class="sub-menu-text">我的科研项目</span></a></li>
 									<li><a class="" href="/PaperManager/index.php/Home/Achievement/project_type"><span class="sub-menu-text">项目类别管理</span></a></li>
+									<li><a class="" href="/PaperManager/index.php/Home/Project/project_git"><span class="sub-menu-text">项目跟踪与协作</span></a></li>
 								</ul>
 							</li>
 							<li class="has-sub">
@@ -188,6 +189,7 @@
 									<li><a class="" href="/PaperManager/index.php/Home/Lab/my_lab"><span class="sub-menu-text">我的实验室</span></a></li>
 								</ul>
 							</li>
+
 							<li class="has-sub">
 								<a href="javascript:;" class="">
 								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">我的收藏<span class="badge pull-right"></span></span>

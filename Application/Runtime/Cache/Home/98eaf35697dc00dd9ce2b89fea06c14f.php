@@ -293,7 +293,7 @@
 																						<td><?php echo ($vo["institute"]); ?></td>
 																						<td><?php echo ($vo["money"]); ?></td>
 																						<td><?php echo ($vo["state"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/sub_apply/lab_id/<?php echo ($vo["id"]); ?>'">进入项目</button></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($vo["id"]); ?>'">进入项目</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</tbody>
 																		</table>

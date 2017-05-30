@@ -211,4 +211,9 @@ class ProjectController extends Controller {
 			$this->error($GitModel->getError());
 		}
 	}
+
+	//某协作科研项目详情页面
+	public function project_git_show($git_id){
+		$this->display();
+	}
 }

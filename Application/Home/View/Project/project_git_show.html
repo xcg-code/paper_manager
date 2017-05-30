@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Cloud Admin | User Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/themes/default.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
+	
+	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- DATE RANGE PICKER -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<!-- UNIFORM -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+	<!-- FONTS -->
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="navbar clearfix" id="header">
+		<div class="container">
+			<div class="navbar-brand">
+				<!-- COMPANY LOGO -->
+				<a href="index.html">
+					<img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+				</a>
+				<!-- /COMPANY LOGO -->
+				<!-- TEAM STATUS FOR MOBILE -->
+				<div class="visible-xs">
+					<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
+						<i class="fa fa-users"></i>
+					</a>
+				</div>
+				<!-- /TEAM STATUS FOR MOBILE -->
+				<!-- SIDEBAR COLLAPSE -->
+				<div id="sidebar-collapse" class="sidebar-collapse btn">
+					<i class="fa fa-bars" 
+					data-icon1="fa fa-bars" 
+					data-icon2="fa fa-bars" ></i>
+				</div>
+				<!-- /SIDEBAR COLLAPSE -->
+			</div>
+			<!-- NAVBAR LEFT -->
+			<include file="./Public/tpl/header.html" />
+			<!-- /NAVBAR LEFT -->
+			<!-- BEGIN TOP NAVIGATION MENU -->		
+			<ul class="nav navbar-nav pull-right">				
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<li class="dropdown user" id="header-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img alt="" src="__ROOT__/{$Think.session.pic_path}" />
+						<span class="username">{$Think.session.fullname}</span>
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
+						<li><a href="__ROOT__/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+			</ul>			
+			<!-- END TOP NAVIGATION MENU -->
+		</div>
+		
+		<!-- TEAM STATUS -->
+		<div class="container team-status" id="team-status">
+			<div id="scrollbar">
+				<div class="handle">
+				</div>
+			</div>
+			<div id="teamslider">
+				<ul class="team-list">
+					<li class="current">
+						<a href="javascript:void(0);">
+							<span class="image">
+								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
+							</span>
+							<span class="title">
+								You
+							</span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" style="width: 35%">
+									<span class="sr-only">35% Complete (success)</span>
+								</div>
+								<div class="progress-bar progress-bar-warning" style="width: 20%">
+									<span class="sr-only">20% Complete (warning)</span>
+								</div>
+								<div class="progress-bar progress-bar-danger" style="width: 10%">
+									<span class="sr-only">10% Complete (danger)</span>
+								</div>
+							</div>
+							<span class="status">
+								<div class="field">
+									<span class="badge badge-green">6</span> completed
+									<span class="pull-right fa fa-check"></span>
+								</div>
+								<div class="field">
+									<span class="badge badge-orange">3</span> in-progress
+									<span class="pull-right fa fa-adjust"></span>
+								</div>
+								<div class="field">
+									<span class="badge badge-red">1</span> pending
+									<span class="pull-right fa fa-list-ul"></span>
+								</div>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /TEAM STATUS -->
+	</header>
+	<!--/HEADER -->
+	
+	<!-- PAGE -->
+	<section id="page">
+		<!-- SIDEBAR -->
+		<include file="./Public/tpl/navbar.html" />
+		<!-- /SIDEBAR -->
+		<div id="main-content">
+			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Box Settings</h4>
+						</div>
+						<div class="modal-body">
+							Here goes box setting content.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
+			<div class="container">
+				<div class="row">
+					<div id="content" class="col-lg-12">
+						<!-- PAGE HEADER-->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+									<!-- STYLER -->
+									
+									<!-- /STYLER -->
+									<!-- BREADCRUMBS -->
+									<ul class="breadcrumb">
+										
+									</ul>
+									<!-- /BREADCRUMBS -->
+									<div class="clearfix">
+										<h3 class="content-title pull-left">{$ProjectInfo.project_name}</h3>
+									</div>
+									<div class="description">查看，检索该项目下科研成果</div>
+								</div>
+							</div>
+						</div>
+						<!-- /PAGE HEADER -->
+						<!-- USER PROFILE -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="box">
+									<div class="box-title">
+										<h4><i class="fa fa-bars"></i>{$ProjectInfo.project_name}</h4>
+										<div class="tools hidden-xs">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="box-body">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="list-group">
+													<div class="list-group-item profile-details">
+														<h4>相关操作</h4>
+													</div>
+													<a href="__URL__/project_edit/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 编辑项目</a>
+													<a href="__URL__/project_delete/project_id/{$ProjectInfo.id}" onclick="return confirm('确定要删除这个项目吗？')" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 删除项目</a>
+													<a href="__URL__/project_show/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 加入收藏</a>
+													<a href="__ROOT__/index.php/Home/Excel/project_achi_export/id/{$ProjectInfo.id}/{$SearchAction}" class="list-group-item"><i class="fa fa-file fa-fw"></i> 导出该项目下科研成果信息
+													</a>
+													<div class="list-group-item profile-details">
+														<h4>成果类别</h4>
+													</div>
+
+													<a href="__URL__/project_show/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.All}</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
+													<egt name="AchievementCount.JournalPaper" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/JournalPaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文
+														</a>
+													</egt>
+													<egt name="AchievementCount.ConferencePaper" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/ConferencePaper" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文
+														</a>
+													</egt>
+													<egt name="AchievementCount.Monograph" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Monograph" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著
+													</a>
+													</egt>
+													<egt name="AchievementCount.Patent" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Patent" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利
+														</a>
+													</egt>
+													<egt name="AchievementCount.ConferenceReport" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/ConferenceReport" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告
+													</a>
+													</egt>
+													<egt name="AchievementCount.Standard" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Standard" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准
+													</a>
+													</egt>
+													<egt name="AchievementCount.Software" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Software" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权
+													</a>
+													</egt>
+													<egt name="AchievementCount.Reward" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Reward" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励
+													</a>
+													</egt>
+													<egt name="AchievementCount.Train" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/Train" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Train}</span><i class="fa fa-calendar fa-fw"></i> 人才培养
+													</a>
+													</egt>
+													<egt name="AchievementCount.ConferenceInvolved" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/ConferenceInvolved" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
+													</a>
+													</egt>
+													<egt name="AchievementCount.TechTrans" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/TechTrans" class="list-group-item"><span class="badge badge-red">{$AchievementCount.TechTrans}</span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
+													</a>
+													</egt>
+													<egt name="AchievementCount.OtherAchievement" value="0">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_type/OtherAchievement" class="list-group-item"><span class="badge badge-red">{$AchievementCount.OtherAchievement}</span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
+													</a>
+													</egt>
+													<div class="list-group-item profile-details">
+														<h4>发表年份</h4>
+													</div>
+													<volist name="AchievementYear" id="vo">
+														<a href="__URL__/project_show/id/{$ProjectInfo.id}/achi_year/{$vo.year}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.year}
+														</a>
+													</volist>
+												</div>														
+											</div>
+											<div class="col-md-9">
+												<div class="box border blue">
+													<div class="box-title">
+														<h4><i class="fa fa-table"></i>项目详细信息</h4>
+													</div>
+													<div class="box-body">
+														<table class="table table-striped">
+															<tbody>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目类别</td>
+																	<td>{$ProjectInfo.type_name}</td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目名称</td>
+																	<td>{$ProjectInfo.project_name}</td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目号</td>
+																	<td>{$ProjectInfo.project_num}</td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">项目负责人</td>
+																	<td>{$ProjectInfo.owner}</td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">依托单位</td>
+																	<td>{$ProjectInfo.institute}</td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">资助金额</td>
+																	<td>{$ProjectInfo.money}</td>
+																</tr>
+																<tr>
+																	<td style="width: 15%;text-align:center">备注</td>
+																	<td>{$ProjectInfo.content}</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<form action="__URL__/project_show/id/{$ProjectInfo.id}/{$SearchAction}" method="post">
+													<div class="input-group">
+														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
+														<span class="input-group-btn">
+														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
+														</span>
+													</div>
+												</form>
+												
+												<div class="divide-20"></div>
+
+												<volist name="AchievementInfo" id="vo">
+													<div class="search-results">
+														<h4><a href="{$vo.detail_link}">{$vo.title}</a></h4>
+														<div class="text-primary">{$vo.author}</div>
+														<div class="text-danger">{$vo.institute_name}</div>
+														<div class="text-success">{$vo.publish_time}</div>
+													</div>
+												</volist>
+
+												<div>
+													<ul class='pagination'>
+														{$page}
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="footer-tools">
+							<span class="go-top">
+								<i class="fa fa-chevron-up"></i> Top
+							</span>
+						</div>
+					</div><!-- /CONTENT-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/PAGE -->
+	<!-- JAVASCRIPTS -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- JQUERY -->
+	<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
+	<!-- JQUERY UI-->
+	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
+	
+
+	<!-- DATE RANGE PICKER -->
+	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
+	
+	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<!-- SLIMSCROLL -->
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+	<!-- SLIMSCROLL -->
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<!-- BLOCK UI -->
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<!-- EASY PIE CHART -->
+	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
+	<!-- SPARKLINES -->
+	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
+	<!-- UNIFORM -->
+	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+	<!-- COOKIE -->
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<!-- CUSTOM SCRIPT -->
+	<script src="__PUBLIC__/js/script.js"></script>
+	<script>
+		jQuery(document).ready(function() {		
+			App.setPage("user_profile");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
+	<!-- /JAVASCRIPTS -->
+</body>
+</html>
