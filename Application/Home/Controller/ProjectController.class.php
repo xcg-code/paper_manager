@@ -244,6 +244,24 @@ class ProjectController extends Controller {
 
 	//申请项目开支页面
 	public function git_apply_cost($git_id){
+		$this->assign('git_id',$git_id);
 		$this->display();
+	}
+
+	//申请项目开支数据库操作
+	public function git_apply_cost_db($git_id){
+		$GitModel=M('GitCost');
+		if($GitModel->create()){
+			$GitModel->git_id=$git_id;
+			$GitModel->user_id=session('uid');
+			$Result=$GitModel->add();
+			if($Result){
+				$this->success('提交经费申请，等待审核',__ROOT__.'/index.php/Home/Project/git_apply_cost/git_id/'.$git_id);
+			}else{
+				$this->error($ProjectModel->getError());
+			}
+		}else{
+			$this->error($GitModel->getError());
+		}
 	}
 }

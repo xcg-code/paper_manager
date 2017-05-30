@@ -179,16 +179,16 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="__URL__/git" method="post">
+													<form class="form-horizontal" action="__URL__/git_apply_cost_db/git_id/{$git_id}" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div id="info">
 																		<div class="form-group">
-																			<label class="col-md-2 control-label">经费用途</label> 
-																			<div class="col-md-4"><input type="text" name="name" class="form-control" value=""></div>
-																			<label class="col-md-1 control-label">申请经费</label> 
-																			<div class="col-md-3"><input type="text" name="institute" class="form-control" value=""></div>
+																			<label class="col-md-2 control-label">经费用途(*)</label> 
+																			<div class="col-md-3"><input type="text" name="title" class="form-control" value=""></div>
+																			<label class="col-md-2 control-label">申请经费(元)(*)</label> 
+																			<div class="col-md-3"><input type="text" name="cost" class="form-control" value=""></div>
 																			
 																		</div>
 																		<div class="form-group">
