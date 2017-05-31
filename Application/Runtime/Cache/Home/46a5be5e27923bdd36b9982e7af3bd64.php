@@ -241,9 +241,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">申请项目开支</h3>
+										<h3 class="content-title pull-left">发布项目组通知</h3>
 									</div>
-									<div class="description">申请，查看审核</div>
+									<div class="description">发布项目组通知</div>
 								</div>
 							</div>
 						</div>
@@ -254,29 +254,27 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">申请项目开支</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">发布项目组通知</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">申请项目开支</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">发布项目组通知</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/git_apply_cost_db/git_id/<?php echo ($git_id); ?>" method="post">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/git_notice_db/git_id/<?php echo ($git_id); ?>" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
 																	<div id="info">
 																		<div class="form-group">
-																			<label class="col-md-2 control-label">经费用途(*)</label> 
-																			<div class="col-md-3"><input type="text" name="title" class="form-control" value=""></div>
-																			<label class="col-md-2 control-label">申请经费(元)(*)</label> 
-																			<div class="col-md-3"><input type="text" name="cost" class="form-control" value=""></div>
+																			<label class="col-md-2 control-label">通知标题(*)</label> 
+																			<div class="col-md-8"><input type="text" name="title" class="form-control" value=""></div>
 																			
 																		</div>
 																		<div class="form-group">
-																			<label class="col-md-2 control-label">备注</label> 
+																			<label class="col-md-2 control-label">通知内容(*)</label> 
 																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
 																		</div>
 																	</div>
@@ -286,49 +284,11 @@
 														
 														
 														<div class="form-actions clearfix"> 
-															<input type="submit" value="申请经费" class="btn btn-primary pull-right">
+															<input type="submit" value="发布通知" class="btn btn-primary pull-right">
 														</div>
 													</form>
-													<div class="row">
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>我的经费申请</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>经费用途</th>
-																					<th>申请金额</th>
-																					<th>申请日期</th>
-																					<th>备注</th>
-																					<th>申请状态</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($CostInfo)): $i = 0; $__LIST__ = $CostInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["title"]); ?></td>
-																						<td><?php echo ($vo["cost"]); ?></td>
-																						<td><?php echo ($vo["time"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><?php echo ($vo["state"]); ?></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																					
-																				
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</div>
-													<div class="form-actions clearfix"> 
-														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
-															
-														</div>
+													
+													
 												</div>
 
 											</div>

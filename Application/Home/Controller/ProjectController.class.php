@@ -384,6 +384,26 @@ class ProjectController extends Controller {
 
 	//显示发布通知页面
 	public function git_notice($git_id){
+		$this->assign('git_id',$git_id);
 		$this->display();
+	}
+
+	//发布通知数据库操作
+	public function git_notice_db($git_id){
+		$GitModel=M('GitNotice');
+		if($GitModel->create()){
+			$GitModel->user_id=session('uid');
+			$GitModel->name=session('fullname');
+			$GitModel->git_id=$git_id;
+			$GitModel->time=date("Y-m-d H:i:s");
+			$Result=$GitModel->add();
+			if($Result){
+    			$this->success('通知发布成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
+    		}else{
+    			$this->error('通知发布失败');
+    		}
+		}else{
+			$this->error($GitModel->getError());
+		}
 	}
 }
