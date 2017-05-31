@@ -230,7 +230,7 @@ class ProjectController extends Controller {
 			$CountInfo['CostCheck']=$CostModel->where('state=0')->count();
 		}
 		//获取我的经费申请未通过数量
-		$CountInfo['CostApply']=$CostModel->where('state!=1')->count();
+		$CountInfo['CostApply']=$CostModel->where('state=0')->count();
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->assign('IsAdmin',$IsAdmin);
 		$this->assign('CountInfo',$CountInfo);
@@ -306,9 +306,33 @@ class ProjectController extends Controller {
 		for($i=0;$i<count($CostInfo);$i++){
 			$UserName=$UserModel->where('id=%d',$CostInfo[$i]['user_id'])->find();
 			$CostInfo[$i]['name']=$UserName['fullname'];
+			if($CostInfo[$i]['state']==1){
+				$CostInfo[$i]['state']='已通过';
+			}else{
+				$CostInfo[$i]['state']='已驳回';
+			}
 		}
+
 		$this->assign('CostCheckInfo',$CostCheckInfo);
 		$this->assign('CostInfo',$CostInfo);
+		$this->assign('git_id',$git_id);
 		$this->display();
+	}
+
+	//项目开支审核操作
+	public function git_cost_operation($cost_id,$type,$git_id){
+		$GitModel=M('GitCost');
+		if($type=="yes"){
+			$GitModel->state=1;
+			$Result=$GitModel->where("id='%s'",$cost_id)->save();
+		}else if($type=="no"){
+			$GitModel->state=2;
+			$Result=$GitModel->where("id='%s'",$cost_id)->save();
+		}
+		if($Result){
+			$this->success('审核操作成功',__ROOT__.'/index.php/Home/Project/git_cost_check/git_id/'.$git_id);
+		}else{
+			$this->error($GitModel->getError());
+		}
 	}
 }

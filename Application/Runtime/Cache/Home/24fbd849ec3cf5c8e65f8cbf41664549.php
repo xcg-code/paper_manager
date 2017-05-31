@@ -289,7 +289,7 @@
 																						<td><?php echo ($vo["name"]); ?></td>
 																						<td><?php echo ($vo["time"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/no'">驳回</button></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/yes/git_id/<?php echo ($git_id); ?>'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/no/git_id/<?php echo ($git_id); ?>'">驳回</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																					
 																				
@@ -339,7 +339,10 @@
 															</div>
 														</div>
 													</div>
-
+													<div class="form-actions clearfix"> 
+														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
+															
+														</div>
 												</div>
 
 											</div>

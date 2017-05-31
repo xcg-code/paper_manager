@@ -325,7 +325,10 @@
 															</div>
 														</div>
 													</div>
-
+													<div class="form-actions clearfix"> 
+														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
+															
+														</div>
 												</div>
 
 											</div>
