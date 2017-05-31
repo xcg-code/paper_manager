@@ -279,7 +279,7 @@
 																				</div>
 																				<div id="collapseOne" class="panel-collapse collapse in">
 																					<div class="panel-body"><?php echo ($NoticeInfo[0]['content']); ?> 
-																					<?php if(($$NoticeInfo[0]['id']) != ""): ?><button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[0]['id']); ?>'">置为已读</button><?php endif; ?>
+																					<?php if(($NoticeInfo[0]['id']) != ""): ?><button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[0]['id']); ?>'">置为已读</button><?php endif; ?>
 																					
 																					</div>
 																				</div>
