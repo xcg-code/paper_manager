@@ -2755,3 +2755,118 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002319s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003037s ]
 
+[ 2017-05-31T13:47:03+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: GitInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2017-05-31T13:47:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined variable: GitInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2017-05-31T13:47:13+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: DocInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2017-05-31T13:47:14+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8] Undefined variable: DocInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2017-05-31T13:47:29+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+

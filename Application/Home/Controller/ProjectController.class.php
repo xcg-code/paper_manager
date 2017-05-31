@@ -338,6 +338,10 @@ class ProjectController extends Controller {
 
 	//显示项目文档管理页面
 	public function git_doc($git_id){
+		//获取当前协作项目文档信息
+		$GitModel=M('GitDoc');
+		$DocInfo=$GitModel->where("git_id='%s'",$git_id)->select();
+		$this->assign('DocInfo',$DocInfo);
 		$this->assign('git_id',$git_id);
 		$this->display();
 	}

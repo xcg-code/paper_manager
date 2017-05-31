@@ -209,15 +209,17 @@
 																				<tr>
 																					<th>文件名称</th>
 																					<th>文件描述</th>
+																					<th>上传者</th>
 																					<th>上传日期</th>
 																					<th>操作</th>
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<volist name="FileInfo" id="vo">
+																				<volist name="DocInfo" id="vo">
 																					<tr>
-																					<td>{$vo.name}</td>
+																					<td>{$vo.title}</td>
 																					<td>{$vo.description}</td>
+																					<td>{$vo.author}</td>
 																					<td>{$vo.upload_time}</td>
 																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='__ROOT__/{$vo.path}'">下载</button>
 																					<a href="__URL__/file_delete/id/{$vo.id}/file_type/{$vo.type}" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
