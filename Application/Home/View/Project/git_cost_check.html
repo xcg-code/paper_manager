@@ -203,10 +203,10 @@
 																					<tr>
 																						<td>{$vo.title}</td>
 																						<td>{$vo.cost}</td>
-																						<td>{$vo.cost}</td>
+																						<td>{$vo.name}</td>
 																						<td>{$vo.time}</td>
 																						<td>{$vo.content}</td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/project_git_show/git_id/{$vo.id}'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='__URL__/project_git_show/git_id/{$vo.id}'">驳回</button></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/git_cost_operation/cost_id/{$vo.id}/type/yes'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='__URL__/git_cost_operation/cost_id/{$vo.id}/type/no'">驳回</button></td>
 																					</tr>
 																				</volist>
 																					
@@ -243,7 +243,7 @@
 																					<tr>
 																						<td>{$vo.title}</td>
 																						<td>{$vo.cost}</td>
-																						<td>{$vo.cost}</td>
+																						<td>{$vo.name}</td>
 																						<td>{$vo.time}</td>
 																						<td>{$vo.content}</td>
 																						<td>{$vo.state}</td>

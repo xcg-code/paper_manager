@@ -286,10 +286,10 @@
 																				<?php if(is_array($CostCheckInfo)): $i = 0; $__LIST__ = $CostCheckInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 																						<td><?php echo ($vo["title"]); ?></td>
 																						<td><?php echo ($vo["cost"]); ?></td>
-																						<td><?php echo ($vo["cost"]); ?></td>
+																						<td><?php echo ($vo["name"]); ?></td>
 																						<td><?php echo ($vo["time"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($vo["id"]); ?>'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($vo["id"]); ?>'">驳回</button></td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/yes'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/no'">驳回</button></td>
 																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 																					
 																				
@@ -324,7 +324,7 @@
 																				<?php if(is_array($CostInfo)): $i = 0; $__LIST__ = $CostInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 																						<td><?php echo ($vo["title"]); ?></td>
 																						<td><?php echo ($vo["cost"]); ?></td>
-																						<td><?php echo ($vo["cost"]); ?></td>
+																						<td><?php echo ($vo["name"]); ?></td>
 																						<td><?php echo ($vo["time"]); ?></td>
 																						<td><?php echo ($vo["content"]); ?></td>
 																						<td><?php echo ($vo["state"]); ?></td>
