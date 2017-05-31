@@ -194,7 +194,9 @@
 																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">{$NoticeInfo[0]['title']}</a> </h3>
 																				</div>
 																				<div id="collapseOne" class="panel-collapse collapse in">
-																					<div class="panel-body">{$NoticeInfo[0]['content']} </div>
+																					<div class="panel-body">{$NoticeInfo[0]['content']} 
+																					<button type="button" class="btn-primary" onclick="window.location.href='__URL__/git_notice_read/notice_id/{$NoticeInfo[0]['id']}'">置为已读</button>
+																					</div>
 																				</div>
 																			</div>
 																			<div class="panel panel-default">
@@ -202,7 +204,8 @@
 																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">{$NoticeInfo[1]['title']}</a> </h3>
 																				</div>
 																				<div id="collapseTwo" class="panel-collapse collapse">
-																					<div class="panel-body">{$NoticeInfo[1]['content']}</div>
+																					<div class="panel-body">{$NoticeInfo[1]['content']}
+																					<button type="button" class="btn-primary" onclick="window.location.href='__URL__/git_notice_read/notice_id/{$NoticeInfo[1]['id']}'">置为已读</button></div>
 																				</div>
 																			</div>
 																			<div class="panel panel-default">
@@ -210,7 +213,8 @@
 																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">{$NoticeInfo[2]['title']}</a> </h3>
 																				</div>
 																				<div id="collapseThree" class="panel-collapse collapse">
-																					<div class="panel-body">{$NoticeInfo[2]['content']}</div>
+																					<div class="panel-body">{$NoticeInfo[2]['content']}
+																					<button type="button" class="btn-primary" onclick="window.location.href='__URL__/git_notice_read/notice_id/{$NoticeInfo[2]['id']}'">置为已读</button></div>
 																				</div>
 																			</div>
 																		</div>
@@ -223,6 +227,7 @@
 
 													<div class="form-actions clearfix"> 
 														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">返回科研详情页</button>
+														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">将所有通知置为已读</button>
 														<ul class='pagination'>
 															{$page}
 														</ul>

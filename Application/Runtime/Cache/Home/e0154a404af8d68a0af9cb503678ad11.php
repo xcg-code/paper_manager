@@ -278,7 +278,9 @@
 																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><?php echo ($NoticeInfo[0]['title']); ?></a> </h3>
 																				</div>
 																				<div id="collapseOne" class="panel-collapse collapse in">
-																					<div class="panel-body"><?php echo ($NoticeInfo[0]['content']); ?> </div>
+																					<div class="panel-body"><?php echo ($NoticeInfo[0]['content']); ?> 
+																					<button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[0]['id']); ?>'">置为已读</button>
+																					</div>
 																				</div>
 																			</div>
 																			<div class="panel panel-default">
@@ -286,7 +288,8 @@
 																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><?php echo ($NoticeInfo[1]['title']); ?></a> </h3>
 																				</div>
 																				<div id="collapseTwo" class="panel-collapse collapse">
-																					<div class="panel-body"><?php echo ($NoticeInfo[1]['content']); ?></div>
+																					<div class="panel-body"><?php echo ($NoticeInfo[1]['content']); ?>
+																					<button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[1]['id']); ?>'">置为已读</button></div>
 																				</div>
 																			</div>
 																			<div class="panel panel-default">
@@ -294,7 +297,8 @@
 																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><?php echo ($NoticeInfo[2]['title']); ?></a> </h3>
 																				</div>
 																				<div id="collapseThree" class="panel-collapse collapse">
-																					<div class="panel-body"><?php echo ($NoticeInfo[2]['content']); ?></div>
+																					<div class="panel-body"><?php echo ($NoticeInfo[2]['content']); ?>
+																					<button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[2]['id']); ?>'">置为已读</button></div>
 																				</div>
 																			</div>
 																		</div>
@@ -307,6 +311,7 @@
 
 													<div class="form-actions clearfix"> 
 														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
+														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">将所有通知置为已读</button>
 														<ul class='pagination'>
 															<?php echo ($page); ?>
 														</ul>
