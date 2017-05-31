@@ -234,6 +234,9 @@ class ProjectController extends Controller {
 		//获取项目文档数量
 		$DocModel=M('GitDoc');
 		$CountInfo['Doc']=$DocModel->where("git_id='%s'",$git_id)->count();
+		//获取未读通知数量
+		$NoticeModel=M('GitNotice');
+		$CountInfo['Notice']=$NoticeModel->where("git_id='%s' and user_id=%d",$git_id,session('uid'))->count();
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->assign('IsAdmin',$IsAdmin);
 		$this->assign('CountInfo',$CountInfo);
