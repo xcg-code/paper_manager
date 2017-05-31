@@ -277,6 +277,12 @@
 																			<label class="col-md-2 control-label">通知内容(*)</label> 
 																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
 																		</div>
+																		<div class="form-group">
+																	<label class="col-md-2 control-label">通知成员</label> 
+																		<div class="col-md-8">
+																			<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="<?php echo ($vo["id"]); ?>" checked="checked"> <?php echo ($vo["fullname"]); ?> </label><?php endforeach; endif; else: echo "" ;endif; ?>	
+																		</div>
+																	</div>
 																	</div>
 																</div>
 															</div>

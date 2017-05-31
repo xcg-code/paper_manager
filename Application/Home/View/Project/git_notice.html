@@ -193,6 +193,14 @@
 																			<label class="col-md-2 control-label">通知内容(*)</label> 
 																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
 																		</div>
+																		<div class="form-group">
+																	<label class="col-md-2 control-label">通知成员</label> 
+																		<div class="col-md-8">
+																			<volist name='MemberInfo' id='vo'>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="{$vo.id}" checked="checked"> {$vo.fullname} </label>
+																			</volist>	
+																		</div>
+																	</div>
 																	</div>
 																</div>
 															</div>

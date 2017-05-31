@@ -384,7 +384,15 @@ class ProjectController extends Controller {
 
 	//显示发布通知页面
 	public function git_notice($git_id){
+		//获取实验室ID
+		$MemberModel=M('User');
+		$MemberCondi['id']=session('uid');
+		$LabId=$MemberModel->where($MemberCondi)->find();
+		$LabId=$LabId['lab_id'];
+		//获取该实验室下所有人员信息
+		$MemberInfo=$MemberModel->where("lab_id='%s'",$LabId)->select();
 		$this->assign('git_id',$git_id);
+		$this->assign('MemberInfo',$MemberInfo);
 		$this->display();
 	}
 
@@ -392,16 +400,19 @@ class ProjectController extends Controller {
 	public function git_notice_db($git_id){
 		$GitModel=M('GitNotice');
 		if($GitModel->create()){
-			$GitModel->user_id=session('uid');
-			$GitModel->name=session('fullname');
-			$GitModel->git_id=$git_id;
-			$GitModel->time=date("Y-m-d H:i:s");
-			$Result=$GitModel->add();
-			if($Result){
-    			$this->success('通知发布成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
-    		}else{
-    			$this->error('通知发布失败');
-    		}
+			$MemberInfo=I('post.member');
+			for($i=0;$i<count($MemberInfo);$i++){
+				$GitModel->user_id=$MemberInfo[$i];
+				$GitModel->name=session('fullname');
+				$GitModel->git_id=$git_id;
+				$GitModel->time=date("Y-m-d H:i:s");
+				$GitModel->state='未读';
+				$GitModel->title=I('post.title');
+				$GitModel->content=I('post.content');
+				$GitModel->add();
+			}
+			$this->success('发布项目组通知成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
+			
 		}else{
 			$this->error($GitModel->getError());
 		}
