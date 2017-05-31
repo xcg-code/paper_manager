@@ -195,7 +195,10 @@
 																				</div>
 																				<div id="collapseOne" class="panel-collapse collapse in">
 																					<div class="panel-body">{$NoticeInfo[0]['content']} 
-																					<button type="button" class="btn-primary" onclick="window.location.href='__URL__/git_notice_read/notice_id/{$NoticeInfo[0]['id']}'">置为已读</button>
+																					<neq name="$NoticeInfo[0]['id']" value="">
+																						<button type="button" class="btn-primary" onclick="window.location.href='__URL__/git_notice_read/notice_id/{$NoticeInfo[0]['id']}'">置为已读</button>
+																					</neq>
+																					
 																					</div>
 																				</div>
 																			</div>
@@ -227,7 +230,7 @@
 
 													<div class="form-actions clearfix"> 
 														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">返回科研详情页</button>
-														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">将所有通知置为已读</button>
+														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/git_all_notice_read/git_id/{$git_id}'">将所有通知置为已读</button>
 														<ul class='pagination'>
 															{$page}
 														</ul>

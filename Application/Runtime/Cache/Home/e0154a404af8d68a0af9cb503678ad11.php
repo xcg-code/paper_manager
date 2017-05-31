@@ -279,7 +279,8 @@
 																				</div>
 																				<div id="collapseOne" class="panel-collapse collapse in">
 																					<div class="panel-body"><?php echo ($NoticeInfo[0]['content']); ?> 
-																					<button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[0]['id']); ?>'">置为已读</button>
+																					<?php if(($$NoticeInfo[0]['id']) != ""): ?><button type="button" class="btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_notice_read/notice_id/<?php echo ($NoticeInfo[0]['id']); ?>'">置为已读</button><?php endif; ?>
+																					
 																					</div>
 																				</div>
 																			</div>
@@ -311,7 +312,7 @@
 
 													<div class="form-actions clearfix"> 
 														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
-														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">将所有通知置为已读</button>
+														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_all_notice_read/git_id/<?php echo ($git_id); ?>'">将所有通知置为已读</button>
 														<ul class='pagination'>
 															<?php echo ($page); ?>
 														</ul>

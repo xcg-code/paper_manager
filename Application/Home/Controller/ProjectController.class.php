@@ -444,4 +444,14 @@ class ProjectController extends Controller {
 		$GitModel->where($Condition)->save();
 		$this->success('置该通知为已读成功');
 	}
+
+	//将所有通知置为已读
+	public function git_all_notice_read($git_id){
+		$GitModel=M('GitNotice');
+		$Condition['git_id']=$git_id;
+		$Condition['user_id']=session('uid');
+		$GitModel->state='已读';
+		$GitModel->where($Condition)->save();
+		$this->success('置所有通知为已读成功');
+	}
 }
