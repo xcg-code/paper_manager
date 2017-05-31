@@ -340,7 +340,7 @@ class ProjectController extends Controller {
 	public function git_doc($git_id){
 		//获取当前协作项目文档信息
 		$GitModel=M('GitDoc');
-		$DocInfo=$GitModel->where("git_id='%s'",$git_id)->select();
+		$DocInfo=$GitModel->where("git_id='%s'",$git_id)->order('upload_time desc')->select();
 		for($i=0;$i<count($DocInfo);$i++){
 			$DocInfo[$i]['path']="Uploads/GitFile/".$DocInfo[$i]['path'];
 		}

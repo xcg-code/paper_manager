@@ -285,7 +285,7 @@
 																</form>
 																<div class="box border blue">
 																	<div class="box-title">
-																	<h4><i class="fa fa-file"></i>已上传项目文件</h4>
+																		<h4><i class="fa fa-file"></i>已上传项目文件</h4>
 																	</div>
 																	<div class="box-body">
 																		<table class="table table-striped">
@@ -300,78 +300,82 @@
 																			</thead>
 																			<tbody>
 																				<?php if(is_array($DocInfo)): $i = 0; $__LIST__ = $DocInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																					<td><?php echo ($vo["title"]); ?></td>
-																					<td><?php echo ($vo["description"]); ?></td>
-																					<td><?php echo ($vo["author"]); ?></td>
-																					<td><?php echo ($vo["upload_time"]); ?></td>
-																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/<?php echo ($vo["path"]); ?>'">下载</button>
-																					<a href="/PaperManager/index.php/Home/Project/file_delete/id/<?php echo ($vo["id"]); ?>/file_type/<?php echo ($vo["type"]); ?>" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																				
-																			</tbody>
-																		</table>
+																						<td><?php echo ($vo["title"]); ?></td>
+																						<td><?php echo ($vo["description"]); ?></td>
+																						<td><?php echo ($vo["author"]); ?></td>
+																						<td><?php echo ($vo["upload_time"]); ?></td>
+																						<td><button class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/<?php echo ($vo["path"]); ?>'">下载</button>
+																							<a href="/PaperManager/index.php/Home/Project/file_delete/id/<?php echo ($vo["id"]); ?>/file_type/<?php echo ($vo["type"]); ?>" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																					
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="form-actions clearfix"> 
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
+																		
 																	</div>
 																</div>
-																
 															</div>
+															
 														</div>
+
 													</div>
 
 												</div>
-
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="footer-tools">
-							<span class="go-top">
-								<i class="fa fa-chevron-up"></i> Top
-							</span>
-						</div>
-					</div><!-- /CONTENT-->
+							
+							<div class="footer-tools">
+								<span class="go-top">
+									<i class="fa fa-chevron-up"></i> Top
+								</span>
+							</div>
+						</div><!-- /CONTENT-->
+					</div>
 				</div>
 			</div>
-		</div>
 
-	</section>
-	<!--/PAGE -->
-	<!-- JAVASCRIPTS -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!-- JQUERY -->
-	<script src="/PaperManager/Public/js/jquery/jquery-2.0.3.min.js"></script>
-	<!-- JQUERY UI-->
-	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
-	<!-- BOOTSTRAP -->
-	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-	
+		</section>
+		<!--/PAGE -->
+		<!-- JAVASCRIPTS -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- JQUERY -->
+		<script src="/PaperManager/Public/js/jquery/jquery-2.0.3.min.js"></script>
+		<!-- JQUERY UI-->
+		<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<!-- BOOTSTRAP -->
+		<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
+		
 
-	<!-- DATE RANGE PICKER -->
-	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
-	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
-	<!-- BLOCK UI -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- EASY PIE CHART -->
-	<script src="/PaperManager/Public/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="/PaperManager/Public/js/easypiechart/jquery.easypiechart.min.js"></script>
-	<!-- SPARKLINES -->
-	<script type="text/javascript" src="/PaperManager/Public/js/sparklines/jquery.sparkline.min.js"></script>
-	<!-- UNIFORM -->
-	<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
-	<!-- COOKIE -->
-	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-Cookie/jquery.cookie.min.js"></script>
-	<!-- CUSTOM SCRIPT -->
-	<script src="/PaperManager/Public/js/script.js"></script>
-	<script>
-		var count=0;
-		jQuery(document).ready(function() {		
+		<!-- DATE RANGE PICKER -->
+		<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
+		
+		<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+		<!-- SLIMSCROLL -->
+		<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+		<!-- SLIMSCROLL -->
+		<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+		<!-- BLOCK UI -->
+		<script type="text/javascript" src="/PaperManager/Public/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+		<!-- EASY PIE CHART -->
+		<script src="/PaperManager/Public/js/jquery-easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="/PaperManager/Public/js/easypiechart/jquery.easypiechart.min.js"></script>
+		<!-- SPARKLINES -->
+		<script type="text/javascript" src="/PaperManager/Public/js/sparklines/jquery.sparkline.min.js"></script>
+		<!-- UNIFORM -->
+		<script type="text/javascript" src="/PaperManager/Public/js/uniform/jquery.uniform.min.js"></script>
+		<!-- COOKIE -->
+		<script type="text/javascript" src="/PaperManager/Public/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+		<!-- CUSTOM SCRIPT -->
+		<script src="/PaperManager/Public/js/script.js"></script>
+		<script>
+			var count=0;
+			jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});

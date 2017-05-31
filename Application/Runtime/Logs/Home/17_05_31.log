@@ -2970,3 +2970,190 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
 
+[ 2017-05-31T15:46:25+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2017-05-31T15:47:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000577s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2017-05-31T15:47:05+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002988s ]
+
+[ 2017-05-31T15:48:00+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2017-05-31T15:48:09+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001515s ]
+
+[ 2017-05-31T15:48:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2017-05-31T15:48:22+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001706s ]
+
+[ 2017-05-31T15:48:25+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000617s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+

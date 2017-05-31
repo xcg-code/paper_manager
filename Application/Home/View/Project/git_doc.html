@@ -201,7 +201,7 @@
 																</form>
 																<div class="box border blue">
 																	<div class="box-title">
-																	<h4><i class="fa fa-file"></i>已上传项目文件</h4>
+																		<h4><i class="fa fa-file"></i>已上传项目文件</h4>
 																	</div>
 																	<div class="box-body">
 																		<table class="table table-striped">
@@ -217,79 +217,83 @@
 																			<tbody>
 																				<volist name="DocInfo" id="vo">
 																					<tr>
-																					<td>{$vo.title}</td>
-																					<td>{$vo.description}</td>
-																					<td>{$vo.author}</td>
-																					<td>{$vo.upload_time}</td>
-																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='__ROOT__/{$vo.path}'">下载</button>
-																					<a href="__URL__/file_delete/id/{$vo.id}/file_type/{$vo.type}" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
-																					</tr>
-																				</volist>
-																				
-																			</tbody>
-																		</table>
+																						<td>{$vo.title}</td>
+																						<td>{$vo.description}</td>
+																						<td>{$vo.author}</td>
+																						<td>{$vo.upload_time}</td>
+																						<td><button class="btn btn-xs btn-success" onclick="window.location.href='__ROOT__/{$vo.path}'">下载</button>
+																							<a href="__URL__/file_delete/id/{$vo.id}/file_type/{$vo.type}" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																						</tr>
+																					</volist>
+																					
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="form-actions clearfix"> 
+																		<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">返回科研详情页</button>
+																		
 																	</div>
 																</div>
-																
 															</div>
+															
 														</div>
+
 													</div>
 
 												</div>
-
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="footer-tools">
-							<span class="go-top">
-								<i class="fa fa-chevron-up"></i> Top
-							</span>
-						</div>
-					</div><!-- /CONTENT-->
+							
+							<div class="footer-tools">
+								<span class="go-top">
+									<i class="fa fa-chevron-up"></i> Top
+								</span>
+							</div>
+						</div><!-- /CONTENT-->
+					</div>
 				</div>
 			</div>
-		</div>
 
-	</section>
-	<!--/PAGE -->
-	<!-- JAVASCRIPTS -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!-- JQUERY -->
-	<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
-	<!-- JQUERY UI-->
-	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
-	<!-- BOOTSTRAP -->
-	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
-	
+		</section>
+		<!--/PAGE -->
+		<!-- JAVASCRIPTS -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- JQUERY -->
+		<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
+		<!-- JQUERY UI-->
+		<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<!-- BOOTSTRAP -->
+		<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
+		
 
-	<!-- DATE RANGE PICKER -->
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
-	<!-- BLOCK UI -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- EASY PIE CHART -->
-	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
-	<!-- SPARKLINES -->
-	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
-	<!-- UNIFORM -->
-	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
-	<!-- COOKIE -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
-	<!-- CUSTOM SCRIPT -->
-	<script src="__PUBLIC__/js/script.js"></script>
-	<script>
-		var count=0;
-		jQuery(document).ready(function() {		
+		<!-- DATE RANGE PICKER -->
+		<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
+		
+		<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+		<!-- SLIMSCROLL -->
+		<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+		<!-- SLIMSCROLL -->
+		<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+		<!-- BLOCK UI -->
+		<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+		<!-- EASY PIE CHART -->
+		<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
+		<!-- SPARKLINES -->
+		<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
+		<!-- UNIFORM -->
+		<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+		<!-- COOKIE -->
+		<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+		<!-- CUSTOM SCRIPT -->
+		<script src="__PUBLIC__/js/script.js"></script>
+		<script>
+			var count=0;
+			jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
