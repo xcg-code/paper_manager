@@ -241,9 +241,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($ProjectInfo["name"]); ?></h3>
+										<h3 class="content-title pull-left">新增科研成果</h3>
 									</div>
-									<div class="description">协作开发项目</div>
+									<div class="description">手动添加科研成果</div>
 								</div>
 							</div>
 						</div>
@@ -251,149 +251,88 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i><?php echo ($ProjectInfo["name"]); ?></h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">上传文档及附件</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-													<?php if(($IsAdmin) == "1"): ?><div class="list-group-item profile-details">
-															<h4>负责人操作</h4>
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">上传文档及附件</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<div class="row">
+														<div class="col-md-12">
+															<div class="box-body">
+																<div class="alert alert-info"><strong>全文电子文档 | 在上传附件前，请确信您已经从版权所有人得到使用该文件的授权，文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf)</strong></div>
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/file_upload_main_db/achi_id/<?php echo ($achi_id); ?>" method="post" enctype="multipart/form-data">
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">文件</label> 
+																		<div class="col-md-8"><input type="file" name="main" /></div>
+
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">文件描述</label> 
+																		<div class="col-md-8"><textarea name="description" class="form-control"></textarea></div>
+																	</div>
+
+																	<div class="form-actions clearfix"> <input type="submit" value="上传全文电子文档" class="btn btn-primary pull-right"></div>
+																</form>
+
+															</div>
+
+															<div class="box-body">
+																<div class="alert alert-info"><strong>上传其他附件 | 在上传附件前，请确信您已经从版权所有人得到使用该文件的授权，文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf)</strong></div>
+																<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/file_upload_other_db/achi_id/<?php echo ($achi_id); ?>" method="post" enctype="multipart/form-data">
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">文件</label> 
+																		<div class="col-md-8"><input type="file" name="other" /></div>
+
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">文件描述</label> 
+																		<div class="col-md-8"><textarea name="description" class="form-control"></textarea></div>
+																	</div>
+
+																	<div class="form-actions clearfix"> <input type="submit" value="上传其他附件" class="btn btn-primary pull-right"></div>
+
+																</form>
+																<div class="box border blue">
+																	<div class="box-title">
+																	<h4><i class="fa fa-file"></i>已上传文件</h4>
+																	</div>
+																	<div class="box-body">
+																		<table class="table table-striped">
+																			<thead>
+																				<tr>
+																					<th style="width: 25%">文件名称</th>
+																					<th>文件描述</th>
+																					<th style="width: 15%">上传日期</th>
+																					<th style="width: 10%">操作</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<?php if(is_array($FileInfo)): $i = 0; $__LIST__ = $FileInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																					<td><?php echo ($vo["name"]); ?></td>
+																					<td><?php echo ($vo["description"]); ?></td>
+																					<td><?php echo ($vo["upload_time"]); ?></td>
+																					<td><button class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/<?php echo ($vo["path"]); ?>'">下载</button>
+																					<a href="/PaperManager/index.php/Home/Project/file_delete/id/<?php echo ($vo["id"]); ?>/file_type/<?php echo ($vo["type"]); ?>" onclick="return confirm('确定要删除该文件吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																				
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																<div class="form-actions clearfix"> <button type="button" id="NextStep" class="btn btn-primary pull-right" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_add/achi_id/<?php echo ($achi_id); ?>'">下一步</button></div>
+															</div>
 														</div>
-														<a href="/PaperManager/index.php/Home/Project/git_finish/git_id/<?php echo ($ProjectInfo["id"]); ?>" onclick="return confirm('确定要完成这个项目吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 完成项目</a>
-														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 导出未完成事务</a>
-														<a href="/PaperManager/index.php/Home/Project/git_cost_check/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostCheck"]); ?></span><i class="fa fa-user fa-fw"></i> 项目开支管理</a>
-														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 发布项目组通知</a><?php endif; ?>
-													
-													<div class="list-group-item profile-details">
-														<h4>协同操作</h4>
 													</div>
-													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目详情</a>
-													<a href="/PaperManager/index.php/Home/Project/git_doc/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目文档管理</a>
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目组通知</a>
-													<a href="/PaperManager/index.php/Home/Project/git_apply_cost/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostApply"]); ?></span><i class="fa fa-user fa-fw"></i> 申请开支</a>
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 分配事务</a>
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 我的待完成事务</a>													
-												</div>														
-											</div>
-											<div class="col-md-9">
-												<div class="box border blue">
-													<div class="box-title">
-														<h4><i class="fa fa-table"></i>项目动态</h4>
-													</div>
-													<div class="box-body">
-														
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-check btn btn-info"></i>
-																<a class="user" href="#"> John Doe </a>
-																accepted your connection request.
-																<br>
-																<a href="#">View profile</a>
 
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
-																<a class="user" href="#"> Jack Doe </a>
-																uploaded a new photo.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
-																<a class="user" href="#"> Jess Doe </a>
-																edited their skills.
-																<br>
-																<a href="#">Endorse them</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
-																<a class="user" href="#"> Divine Doe </a>
-																made a bitcoin payment.
-																<br>
-																<a href="#">Check your financials</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																6 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
-																<a class="user" href="#"> Lisbon Doe </a>
-																saved a new document to Dropbox.
-																<br>
-																<a href="#">Download</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																1 day ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
-																<a class="user" href="#"> Bob Doe </a>
-																pinned a new photo to Pinterest.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																2 days ago
-															</div>
-														</div>
-														
-													</div>
 												</div>
-												
-												<div class="divide-20"></div>
 
-												<div>
-													<ul class='pagination'>
-														<?php echo ($page); ?>
-													</ul>
-												</div>
 											</div>
 										</div>
 									</div>
@@ -410,6 +349,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -444,6 +384,7 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements

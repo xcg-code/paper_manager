@@ -335,4 +335,9 @@ class ProjectController extends Controller {
 			$this->error($GitModel->getError());
 		}
 	}
+
+	//显示项目文档管理页面
+	public function git_doc($git_id){
+		$this->display();
+	}
 }
