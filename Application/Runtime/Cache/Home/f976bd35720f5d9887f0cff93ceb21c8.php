@@ -302,18 +302,20 @@
 																				<tr>
 																					<th>经费用途</th>
 																					<th>申请金额</th>
+																					<th>申请日期</th>
 																					<th>备注</th>
 																					<th>申请状态</th>
 																				</tr>
 																			</thead>
 																			<tbody>
-																				
-																					<tr>
-																						<td><?php echo ($UserInfo["lab_name"]); ?></td>
-																						<td><?php echo ($UserInfo["state"]); ?></td>
-																						<td><?php echo ($UserInfo["state"]); ?></td>
-																						<td><?php echo ($UserInfo["state"]); ?></td>
-																					</tr>
+																				<?php if(is_array($CostInfo)): $i = 0; $__LIST__ = $CostInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																						<td><?php echo ($vo["title"]); ?></td>
+																						<td><?php echo ($vo["cost"]); ?></td>
+																						<td><?php echo ($vo["time"]); ?></td>
+																						<td><?php echo ($vo["content"]); ?></td>
+																						<td><?php echo ($vo["state"]); ?></td>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																					
 																				
 																			</tbody>
 																		</table>

@@ -218,18 +218,22 @@
 																				<tr>
 																					<th>经费用途</th>
 																					<th>申请金额</th>
+																					<th>申请日期</th>
 																					<th>备注</th>
 																					<th>申请状态</th>
 																				</tr>
 																			</thead>
 																			<tbody>
-																				
+																				<volist name='CostInfo' id='vo'>
 																					<tr>
-																						<td>{$UserInfo.lab_name}</td>
-																						<td>{$UserInfo.state}</td>
-																						<td>{$UserInfo.state}</td>
-																						<td>{$UserInfo.state}</td>
+																						<td>{$vo.title}</td>
+																						<td>{$vo.cost}</td>
+																						<td>{$vo.time}</td>
+																						<td>{$vo.content}</td>
+																						<td>{$vo.state}</td>
 																					</tr>
+																				</volist>
+																					
 																				
 																			</tbody>
 																		</table>

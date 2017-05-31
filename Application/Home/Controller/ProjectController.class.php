@@ -244,7 +244,23 @@ class ProjectController extends Controller {
 
 	//申请项目开支页面
 	public function git_apply_cost($git_id){
+		//显示申请信息
+		$GitModel=M('GitCost');
+		$Condition['user_id']=session('uid');
+		$Condition['git_id']=$git_id;
+		$CostInfo=$GitModel->where($Condition)->order('time desc')->select();
+		//审核状态显示
+		for($i=0;$i<count($CostInfo);$i++){
+			if($CostInfo[$i]['state']==0){
+				$CostInfo[$i]['state']='待审核';
+			}else if($CostInfo[$i]['state']==1){
+				$CostInfo[$i]['state']='已通过';
+			}else{
+				$CostInfo[$i]['state']='已驳回';
+			}
+		}
 		$this->assign('git_id',$git_id);
+		$this->assign('CostInfo',$CostInfo);
 		$this->display();
 	}
 
@@ -254,6 +270,7 @@ class ProjectController extends Controller {
 		if($GitModel->create()){
 			$GitModel->git_id=$git_id;
 			$GitModel->user_id=session('uid');
+			$GitModel->time=date("Y-m-d");
 			$Result=$GitModel->add();
 			if($Result){
 				$this->success('提交经费申请，等待审核',__ROOT__.'/index.php/Home/Project/git_apply_cost/git_id/'.$git_id);
