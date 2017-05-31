@@ -435,4 +435,13 @@ class ProjectController extends Controller {
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}
+
+	//将某条通知置为已读
+	public function git_notice_read($notice_id){
+		$GitModel=M('GitNotice');
+		$GitModel->state='已读';
+		$Condition['id']=$notice_id;
+		$GitModel->where($Condition)->save();
+		$this->success('置该通知为已读成功');
+	}
 }
