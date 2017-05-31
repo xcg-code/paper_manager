@@ -291,6 +291,14 @@ class ProjectController extends Controller {
 
 	//项目开支审核页面
 	public function git_cost_check($git_id){
+		//获取开支信息
+		$GitModel=M('GitCost');
+		//待审核开支申请
+		$CostCheckInfo=$GitModel->where("git_id='%s' and state=0",$git_id)->select();
+		//已审核开支申请
+		$CostInfo=$GitModel->where("git_id='%s' and state!=0",$git_id)->select();
+		$this->assign('CostCheckInfo',$CostCheckInfo);
+		$this->assign('CostInfo',$CostInfo);
 		$this->display();
 	}
 }

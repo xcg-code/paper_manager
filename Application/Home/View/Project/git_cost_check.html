@@ -199,14 +199,14 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<volist name='CostInfo' id='vo'>
+																				<volist name='CostCheckInfo' id='vo'>
 																					<tr>
 																						<td>{$vo.title}</td>
 																						<td>{$vo.cost}</td>
 																						<td>{$vo.cost}</td>
 																						<td>{$vo.time}</td>
 																						<td>{$vo.content}</td>
-																						<td>{$vo.state}</td>
+																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/project_git_show/git_id/{$vo.id}'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='__URL__/project_git_show/git_id/{$vo.id}'">驳回</button></td>
 																					</tr>
 																				</volist>
 																					
