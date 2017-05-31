@@ -381,4 +381,9 @@ class ProjectController extends Controller {
     		}
     	}
 	}
+
+	//显示发布通知页面
+	public function git_notice($git_id){
+		$this->display();
+	}
 }
