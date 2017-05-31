@@ -216,6 +216,8 @@ class ProjectController extends Controller {
 
 	//某协作科研项目详情页面
 	public function project_git_show($git_id){
+		$CountInfo=array();//各种数量数组
+		$CostModel=M('GitCost');
 		//获取项目信息
 		$ProjectModel=M('Git');
 		$ProjectInfo=$ProjectModel->where("id='%s'",$git_id)->find();
@@ -224,14 +226,14 @@ class ProjectController extends Controller {
 			$IsAdmin=0;//0表示当前用户不是项目负责人
 		}else{
 			$IsAdmin=1;//0表示当前用户是项目负责人
+			//获取待审核经费申请数量
+			$CountInfo['CostCheck']=$CostModel->where('state=0')->count();
 		}
 		//获取我的经费申请未通过数量
-		$CostModel=M('GitCost');
-		$CostCount=$CostModel->where('state!=1')->count();
-
+		$CountInfo['CostApply']=$CostModel->where('state!=1')->count();
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->assign('IsAdmin',$IsAdmin);
-		$this->assign('CostCount',$CostCount);
+		$this->assign('CountInfo',$CountInfo);
 		$this->display();
 	}
 

@@ -278,7 +278,7 @@
 														</div>
 														<a href="/PaperManager/index.php/Home/Project/git_finish/git_id/<?php echo ($ProjectInfo["id"]); ?>" onclick="return confirm('确定要完成这个项目吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 完成项目</a>
 														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 导出未完成事务</a>
-														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目开支管理</a>
+														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostCheck"]); ?></span><i class="fa fa-user fa-fw"></i> 项目开支管理</a>
 														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 发布项目组通知</a><?php endif; ?>
 													
 													<div class="list-group-item profile-details">
@@ -287,7 +287,7 @@
 													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目详情</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目文档管理</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目组通知</a>
-													<a href="/PaperManager/index.php/Home/Project/git_apply_cost/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CostCount); ?></span><i class="fa fa-user fa-fw"></i> 申请开支</a>
+													<a href="/PaperManager/index.php/Home/Project/git_apply_cost/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostApply"]); ?></span><i class="fa fa-user fa-fw"></i> 申请开支</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 分配事务</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 我的待完成事务</a>													
 												</div>														
