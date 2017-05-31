@@ -225,8 +225,13 @@ class ProjectController extends Controller {
 		}else{
 			$IsAdmin=1;//0表示当前用户是项目负责人
 		}
+		//获取我的经费申请未通过数量
+		$CostModel=M('GitCost');
+		$CostCount=$CostModel->where('state!=1')->count();
+
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->assign('IsAdmin',$IsAdmin);
+		$this->assign('CostCount',$CostCount);
 		$this->display();
 	}
 
