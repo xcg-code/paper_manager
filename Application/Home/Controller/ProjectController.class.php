@@ -338,6 +338,37 @@ class ProjectController extends Controller {
 
 	//显示项目文档管理页面
 	public function git_doc($git_id){
+		$this->assign('git_id',$git_id);
 		$this->display();
+	}
+
+	//协作项目文件上传
+	public function git_file_upload($git_id){
+		$upload = new \Think\Upload();// 实例化上传类
+    	$upload->maxSize   =     20971520 ;// 设置附件上传大小 20MB
+    	$upload->exts      =     array('pdf','doc','docx','ppt','pptx','xls','xlsx');// 设置附件上传类型
+    	$upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+    	$upload->savePath  =     './GitFile/'; // 设置附件上传（子）目录
+    	$upload->saveName = array('uniqid','');
+    	$upload->autoSub  = false;
+    	$info   =   $upload->uploadOne($_FILES['main']);
+    	if(!$info) {// 上传错误提示错误信息
+    		$this->error($upload->getError());
+    	}else{// 上传成功
+    		$FileInfo['title']=$info['name'];
+    		$FileInfo['path']=$info['savename'];
+    		$FileInfo['description']=I('post.description');
+    		$FileInfo['upload_time']=date("Y-m-d H:i:s");
+    		$FileInfo['user_id']=session('uid');
+    		$FileInfo['author']=session('fullname');
+    		$FileInfo['git_id']=$git_id;
+    		$FileModel=M('GitDoc');
+    		$Result=$FileModel->add($FileInfo);
+    		if($Result){
+    			$this->success('文档上传成功',__ROOT__.'/index.php/Home/Project/git_doc/git_id/'.$git_id);
+    		}else{
+    			$this->error('文档上传失败');
+    		}
+    	}
 	}
 }

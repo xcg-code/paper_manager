@@ -181,9 +181,11 @@
 												<div class="tab-pane fade in active" id="box_tab1">
 													<div class="row">
 														<div class="col-md-12">
+															
+
 															<div class="box-body">
-																<div class="alert alert-info"><strong>全文电子文档 | 在上传附件前，请确信您已经从版权所有人得到使用该文件的授权，文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf)</strong></div>
-																<form class="form-horizontal" action="__URL__/file_upload_main_db/achi_id/{$achi_id}" method="post" enctype="multipart/form-data">
+																<div class="alert alert-info"><strong>在上传项目文件前，请确信您已经从版权所有人得到使用该文件的授权，文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf,*.doc,*docx,*.ppt,*pptx,*xls,*xlsx)</strong></div>
+																<form class="form-horizontal" action="__URL__/git_file_upload/git_id/{$git_id}" method="post" enctype="multipart/form-data">
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">文件</label> 
 																		<div class="col-md-8"><input type="file" name="main" /></div>
@@ -194,39 +196,21 @@
 																		<div class="col-md-8"><textarea name="description" class="form-control"></textarea></div>
 																	</div>
 
-																	<div class="form-actions clearfix"> <input type="submit" value="上传全文电子文档" class="btn btn-primary pull-right"></div>
-																</form>
-
-															</div>
-
-															<div class="box-body">
-																<div class="alert alert-info"><strong>上传其他附件 | 在上传附件前，请确信您已经从版权所有人得到使用该文件的授权，文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf)</strong></div>
-																<form class="form-horizontal" action="__URL__/file_upload_other_db/achi_id/{$achi_id}" method="post" enctype="multipart/form-data">
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">文件</label> 
-																		<div class="col-md-8"><input type="file" name="other" /></div>
-
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-2 control-label">文件描述</label> 
-																		<div class="col-md-8"><textarea name="description" class="form-control"></textarea></div>
-																	</div>
-
-																	<div class="form-actions clearfix"> <input type="submit" value="上传其他附件" class="btn btn-primary pull-right"></div>
+																	<div class="form-actions clearfix"> <input type="submit" value="上传文件" class="btn btn-primary pull-right"></div>
 
 																</form>
 																<div class="box border blue">
 																	<div class="box-title">
-																	<h4><i class="fa fa-file"></i>已上传文件</h4>
+																	<h4><i class="fa fa-file"></i>已上传项目文件</h4>
 																	</div>
 																	<div class="box-body">
 																		<table class="table table-striped">
 																			<thead>
 																				<tr>
-																					<th style="width: 25%">文件名称</th>
+																					<th>文件名称</th>
 																					<th>文件描述</th>
-																					<th style="width: 15%">上传日期</th>
-																					<th style="width: 10%">操作</th>
+																					<th>上传日期</th>
+																					<th>操作</th>
 																				</tr>
 																			</thead>
 																			<tbody>
@@ -244,7 +228,7 @@
 																		</table>
 																	</div>
 																</div>
-																<div class="form-actions clearfix"> <button type="button" id="NextStep" class="btn btn-primary pull-right" onclick="window.location.href='__URL__/project_add/achi_id/{$achi_id}'">下一步</button></div>
+																
 															</div>
 														</div>
 													</div>
