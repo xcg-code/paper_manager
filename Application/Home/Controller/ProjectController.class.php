@@ -417,4 +417,9 @@ class ProjectController extends Controller {
 			$this->error($GitModel->getError());
 		}
 	}
+
+	//显示通知查看页面
+	public function git_my_notice($git_id){
+		$this->display();
+	}
 }
