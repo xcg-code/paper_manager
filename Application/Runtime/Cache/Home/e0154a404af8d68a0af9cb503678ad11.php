@@ -241,9 +241,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">项目经费开支管理</h3>
+										<h3 class="content-title pull-left">项目组通知</h3>
 									</div>
-									<div class="description">审核、管理、查看</div>
+									<div class="description">管理、查看</div>
 								</div>
 							</div>
 						</div>
@@ -254,95 +254,64 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">项目经费开支管理</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">项目组通知</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目经费开支管理</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目组通知</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
+													
 													<div class="row">
 														<div class="col-md-12">
 															<div class="box-body">
 																<div class="box border blue">
 																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>待审核经费申请</h4>
+																		<h4><i class="fa fa-table"></i>我的未读项目组通知</h4>
 																	</div>
 																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>经费用途</th>
-																					<th>申请金额</th>
-																					<th>申请人</th>
-																					<th>申请日期</th>
-																					<th>备注</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($CostCheckInfo)): $i = 0; $__LIST__ = $CostCheckInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["title"]); ?></td>
-																						<td><?php echo ($vo["cost"]); ?></td>
-																						<td><?php echo ($vo["name"]); ?></td>
-																						<td><?php echo ($vo["time"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/yes/git_id/<?php echo ($git_id); ?>'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='/PaperManager/index.php/Home/Project/git_cost_operation/cost_id/<?php echo ($vo["id"]); ?>/type/no/git_id/<?php echo ($git_id); ?>'">驳回</button></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																					
-																				
-																			</tbody>
-																		</table>
+																		<div class="panel-group" id="accordion">
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><?php echo ($NoticeInfo[0]['title']); ?></a> </h3>
+																				</div>
+																				<div id="collapseOne" class="panel-collapse collapse in">
+																					<div class="panel-body"><?php echo ($NoticeInfo[0]['content']); ?> </div>
+																				</div>
+																			</div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><?php echo ($NoticeInfo[1]['title']); ?></a> </h3>
+																				</div>
+																				<div id="collapseTwo" class="panel-collapse collapse">
+																					<div class="panel-body"><?php echo ($NoticeInfo[1]['content']); ?></div>
+																				</div>
+																			</div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><?php echo ($NoticeInfo[2]['title']); ?></a> </h3>
+																				</div>
+																				<div id="collapseThree" class="panel-collapse collapse">
+																					<div class="panel-body"><?php echo ($NoticeInfo[2]['content']); ?></div>
+																				</div>
+																			</div>
+																		</div>
 																	</div>
 																</div>
 																
 															</div>
 														</div>
 													</div>
-													<div class="row">
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>已处理经费申请</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>经费用途</th>
-																					<th>申请金额</th>
-																					<th>申请人</th>
-																					<th>申请日期</th>
-																					<th>备注</th>
-																					<th>申请状态</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($CostInfo)): $i = 0; $__LIST__ = $CostInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																						<td><?php echo ($vo["title"]); ?></td>
-																						<td><?php echo ($vo["cost"]); ?></td>
-																						<td><?php echo ($vo["name"]); ?></td>
-																						<td><?php echo ($vo["time"]); ?></td>
-																						<td><?php echo ($vo["content"]); ?></td>
-																						<td><?php echo ($vo["state"]); ?></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																					
-																				
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</div>
+
 													<div class="form-actions clearfix"> 
 														<button type="button" class="btn btn-primary" onclick="window.location.href='/PaperManager/index.php/Home/Project/project_git_show/git_id/<?php echo ($git_id); ?>'">返回科研详情页</button>
-															
-														</div>
+														<ul class='pagination'>
+															<?php echo ($page); ?>
+														</ul>
+
+													</div>
 												</div>
 
 											</div>

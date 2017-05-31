@@ -420,6 +420,19 @@ class ProjectController extends Controller {
 
 	//显示通知查看页面
 	public function git_my_notice($git_id){
+		$GitModel=M('GitNotice');
+		$Condition['git_id']=$git_id;
+		$Condition['user_id']=session('uid');
+		$Condition['state']='未读';
+		$NoticeCount=$GitModel->where($Condition)->count();
+		//分页数据获取
+        $Page= get_page($NoticeCount,3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
+        $show= $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $NoticeInfo=$GitModel->where($Condition)->order('time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$this->assign('git_id',$git_id);
+		$this->assign('NoticeInfo',$NoticeInfo);
+		$this->assign('page',$show);// 赋值分页输出
 		$this->display();
 	}
 }

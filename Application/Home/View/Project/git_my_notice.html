@@ -157,9 +157,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">项目经费开支管理</h3>
+										<h3 class="content-title pull-left">项目组通知</h3>
 									</div>
-									<div class="description">审核、管理、查看</div>
+									<div class="description">管理、查看</div>
 								</div>
 							</div>
 						</div>
@@ -170,99 +170,64 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">项目经费开支管理</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">项目组通知</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目经费开支管理</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目组通知</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
+													
 													<div class="row">
 														<div class="col-md-12">
 															<div class="box-body">
 																<div class="box border blue">
 																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>待审核经费申请</h4>
+																		<h4><i class="fa fa-table"></i>我的未读项目组通知</h4>
 																	</div>
 																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>经费用途</th>
-																					<th>申请金额</th>
-																					<th>申请人</th>
-																					<th>申请日期</th>
-																					<th>备注</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<volist name='CostCheckInfo' id='vo'>
-																					<tr>
-																						<td>{$vo.title}</td>
-																						<td>{$vo.cost}</td>
-																						<td>{$vo.name}</td>
-																						<td>{$vo.time}</td>
-																						<td>{$vo.content}</td>
-																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/git_cost_operation/cost_id/{$vo.id}/type/yes/git_id/{$git_id}'">通过</button><button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='__URL__/git_cost_operation/cost_id/{$vo.id}/type/no/git_id/{$git_id}'">驳回</button></td>
-																					</tr>
-																				</volist>
-																					
-																				
-																			</tbody>
-																		</table>
+																		<div class="panel-group" id="accordion">
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">{$NoticeInfo[0]['title']}</a> </h3>
+																				</div>
+																				<div id="collapseOne" class="panel-collapse collapse in">
+																					<div class="panel-body">{$NoticeInfo[0]['content']} </div>
+																				</div>
+																			</div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">{$NoticeInfo[1]['title']}</a> </h3>
+																				</div>
+																				<div id="collapseTwo" class="panel-collapse collapse">
+																					<div class="panel-body">{$NoticeInfo[1]['content']}</div>
+																				</div>
+																			</div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">{$NoticeInfo[2]['title']}</a> </h3>
+																				</div>
+																				<div id="collapseThree" class="panel-collapse collapse">
+																					<div class="panel-body">{$NoticeInfo[2]['content']}</div>
+																				</div>
+																			</div>
+																		</div>
 																	</div>
 																</div>
 																
 															</div>
 														</div>
 													</div>
-													<div class="row">
-														<div class="col-md-12">
-															<div class="box-body">
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>已处理经费申请</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>经费用途</th>
-																					<th>申请金额</th>
-																					<th>申请人</th>
-																					<th>申请日期</th>
-																					<th>备注</th>
-																					<th>申请状态</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<volist name='CostInfo' id='vo'>
-																					<tr>
-																						<td>{$vo.title}</td>
-																						<td>{$vo.cost}</td>
-																						<td>{$vo.name}</td>
-																						<td>{$vo.time}</td>
-																						<td>{$vo.content}</td>
-																						<td>{$vo.state}</td>
-																					</tr>
-																				</volist>
-																					
-																				
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</div>
+
 													<div class="form-actions clearfix"> 
 														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">返回科研详情页</button>
-															
-														</div>
+														<ul class='pagination'>
+															{$page}
+														</ul>
+
+													</div>
 												</div>
 
 											</div>
