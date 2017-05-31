@@ -3157,3 +3157,138 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
 
+[ 2017-05-31T15:51:15+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2017-05-31T15:51:33+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000621s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002238s ]
+
+[ 2017-05-31T15:51:44+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001445s ]
+
+[ 2017-05-31T15:51:46+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_doc/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) ORDER BY upload_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: type C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\3b658af8a5e0c6bdb3b6e06ff405c04e.php 第 308 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-05-31T15:52:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+

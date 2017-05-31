@@ -231,6 +231,9 @@ class ProjectController extends Controller {
 		}
 		//获取我的经费申请未通过数量
 		$CountInfo['CostApply']=$CostModel->where('state=0')->count();
+		//获取项目文档数量
+		$DocModel=M('GitDoc');
+		$CountInfo['Doc']=$DocModel->where("git_id='%s'",$git_id)->count();
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->assign('IsAdmin',$IsAdmin);
 		$this->assign('CountInfo',$CountInfo);

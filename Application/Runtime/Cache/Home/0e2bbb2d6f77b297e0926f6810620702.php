@@ -285,7 +285,7 @@
 														<h4>协同操作</h4>
 													</div>
 													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目详情</a>
-													<a href="/PaperManager/index.php/Home/Project/git_doc/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目文档管理</a>
+													<a href="/PaperManager/index.php/Home/Project/git_doc/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["Doc"]); ?></span><i class="fa fa-user fa-fw"></i> 项目文档管理</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目组通知</a>
 													<a href="/PaperManager/index.php/Home/Project/git_apply_cost/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostApply"]); ?></span><i class="fa fa-user fa-fw"></i> 申请开支</a>
 													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 分配事务</a>
