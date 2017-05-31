@@ -341,6 +341,9 @@ class ProjectController extends Controller {
 		//获取当前协作项目文档信息
 		$GitModel=M('GitDoc');
 		$DocInfo=$GitModel->where("git_id='%s'",$git_id)->select();
+		for($i=0;$i<count($DocInfo);$i++){
+			$DocInfo[$i]['path']="Uploads/GitFile/".$DocInfo[$i]['path'];
+		}
 		$this->assign('DocInfo',$DocInfo);
 		$this->assign('git_id',$git_id);
 		$this->display();
