@@ -288,4 +288,9 @@ class ProjectController extends Controller {
 			$this->error($GitModel->getError());
 		}
 	}
+
+	//项目开支审核页面
+	public function git_cost_check($git_id){
+		$this->display();
+	}
 }

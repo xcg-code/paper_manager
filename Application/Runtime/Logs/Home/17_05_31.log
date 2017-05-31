@@ -681,3 +681,226 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
 
+[ 2017-05-31T09:32:11+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state!=1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001735s ]
+
+[ 2017-05-31T09:32:13+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 266 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2017-05-31T09:33:24+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 266 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2017-05-31T09:34:26+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000552s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 266 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2017-05-31T09:34:34+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 266 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006158s ]
+
+[ 2017-05-31T09:34:55+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008928s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001909s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002183s ]
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 286 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003180s ]
+
+[ 2017-05-31T09:35:09+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 285 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2017-05-31T09:36:12+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 285 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002316s ]
+
+[ 2017-05-31T09:37:25+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 286 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2017-05-31T09:37:54+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_cost_check/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 286 行.
+NOTIC: [8] Undefined variable: CostInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\24fbd849ec3cf5c8e65f8cbf41664549.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004139s ]
+
