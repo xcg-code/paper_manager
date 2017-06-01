@@ -339,14 +339,36 @@ class ProjectController extends Controller {
 
 	//项目开支审核操作
 	public function git_cost_operation($cost_id,$type,$git_id){
+		//获取申请经费信息
+		$CostModel=M('GitCost');
+		$Condi['id']=$cost_id;
+		$CostInfo=$CostModel->where($Condi)->find();
+		//修改状态
 		$GitModel=M('GitCost');
 		if($type=="yes"){
 			$GitModel->state=1;
 			$Result=$GitModel->where("id='%s'",$cost_id)->save();
+			//保存日志
+    		$ActivityModel=M('GitActivity');
+    		$ActivityModel->git_id=$git_id;
+    		$ActivityModel->person_a_name=session('fullname');
+    		$ActivityModel->activity='批准项目经费:'.$CostInfo['title'];
+    		$ActivityModel->type='批准经费';
+    		$ActivityModel->time=date("Y-m-d H:i:s");
+    		$ActivityModel->add();
 		}else if($type=="no"){
 			$GitModel->state=2;
 			$Result=$GitModel->where("id='%s'",$cost_id)->save();
+			//保存日志
+    		$ActivityModel=M('GitActivity');
+    		$ActivityModel->git_id=$git_id;
+    		$ActivityModel->person_a_name=session('fullname');
+    		$ActivityModel->activity='驳回项目经费:'.$CostInfo['title'];
+    		$ActivityModel->type='驳回经费';
+    		$ActivityModel->time=date("Y-m-d H:i:s");
+    		$ActivityModel->add();
 		}
+		
 		if($Result){
 			$this->success('审核操作成功',__ROOT__.'/index.php/Home/Project/git_cost_check/git_id/'.$git_id);
 		}else{
