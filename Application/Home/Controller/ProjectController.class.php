@@ -381,6 +381,14 @@ class ProjectController extends Controller {
     		$FileInfo['git_id']=$git_id;
     		$FileModel=M('GitDoc');
     		$Result=$FileModel->add($FileInfo);
+    		//保存日志
+    		$ActivityModel=M('GitActivity');
+    		$ActivityModel->git_id=$git_id;
+    		$ActivityModel->person_a_name=session('fullname');
+    		$ActivityModel->activity='上传了新的文档:'.$info['name'];
+    		$ActivityModel->type='上传文档';
+    		$ActivityModel->time=date("Y-m-d H:i:s");
+    		$ActivityModel->add();
     		if($Result){
     			$this->success('文档上传成功',__ROOT__.'/index.php/Home/Project/git_doc/git_id/'.$git_id);
     		}else{

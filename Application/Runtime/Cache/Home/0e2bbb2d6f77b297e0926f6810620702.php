@@ -301,15 +301,14 @@
 														<?php if(is_array($ActivityInfo)): $i = 0; $__LIST__ = $ActivityInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="feed-activity clearfix">
 																<div>
 																	<i class="pull-left roundicon fa fa-check btn btn-info"></i>
-																	<a class="user" href="#"> John Doe </a>
-																	accepted your connection request.
+																	<a class="user" > <?php echo ($vo["person_a_name"]); ?> </a>
+																	<?php echo ($vo["activity"]); ?>
 																	<br>
-																	<a href="#">View profile</a>
 
 																</div>
 																<div class="time">
 																	<i class="fa fa-clock-o"></i>
-																	5 hours ago
+																	<?php echo ($vo["time"]); ?>
 																</div>
 															</div><?php endforeach; endif; else: echo "" ;endif; ?>	
 													</div>
