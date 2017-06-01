@@ -457,4 +457,10 @@ class ProjectController extends Controller {
 		$GitModel->where($Condition)->save();
 		$this->success('置所有通知为已读成功');
 	}
+
+	//显示分配事务问题
+	public function git_arrange_bug($git_id){
+		$this->assign('git_id',$git_id);
+		$this->display();
+	}
 }

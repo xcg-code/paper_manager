@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
-	
+
 	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -65,7 +65,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
+
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -115,7 +115,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	
+
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -149,17 +149,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-									
+
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-										
+
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">{$ProjectInfo.name}</h3>
+										<h3 class="content-title pull-left">发布项目组通知</h3>
 									</div>
-									<div class="description">协作开发项目</div>
+									<div class="description">发布项目组通知</div>
 								</div>
 							</div>
 						</div>
@@ -167,158 +167,61 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>{$ProjectInfo.name}</h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">发布项目组通知</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-													<eq name='IsAdmin' value='1'>
-														<div class="list-group-item profile-details">
-															<h4>负责人操作</h4>
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">发布项目组通知</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<form class="form-horizontal" action="__URL__/git_notice_db/git_id/{$git_id}" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div id="info">
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">通知标题(*)</label> 
+																			<div class="col-md-8"><input type="text" name="title" class="form-control" value=""></div>
+																			
+																		</div>
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">通知内容(*)</label> 
+																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
+																		</div>
+																		<div class="form-group">
+																	<label class="col-md-2 control-label">通知成员</label> 
+																		<div class="col-md-8">
+																			<volist name='MemberInfo' id='vo'>
+																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="{$vo.id}" checked="checked"> {$vo.fullname} </label>
+																			</volist>	
+																		</div>
+																	</div>
+																	</div>
+																</div>
+															</div>
 														</div>
-														<a href="__URL__/git_finish/git_id/{$ProjectInfo.id}" onclick="return confirm('确定要完成这个项目吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 完成项目</a>
-														<a href="__URL__/project_edit/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 导出未完成事务</a>
-														<a href="__URL__/git_cost_check/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$CountInfo.CostCheck}</span><i class="fa fa-user fa-fw"></i> 项目开支管理</a>
-														<a href="__URL__/git_notice/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 发布项目组通知</a>
-													</eq>
+														
+														
+														<div class="form-actions clearfix"> 
+															<input type="submit" value="发布通知" class="btn btn-primary pull-right">
+														</div>
+													</form>
 													
-													<div class="list-group-item profile-details">
-														<h4>协同操作</h4>
-													</div>
-													<a href="__URL__/project_edit/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目详情</a>
-													<a href="__URL__/git_doc/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$CountInfo.Doc}</span><i class="fa fa-user fa-fw"></i> 项目文档管理</a>
-													<a href="__URL__/git_my_notice/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$CountInfo.Notice}</span><i class="fa fa-user fa-fw"></i> 项目组通知</a>
-													<a href="__URL__/git_apply_cost/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$CountInfo.CostApply}</span><i class="fa fa-user fa-fw"></i> 申请开支</a>
-													<a href="__URL__/git_apply_cost/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 分配事务</a>
-													<a href="__URL__/project_show/id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 我的待完成事务</a>													
-												</div>														
-											</div>
-											<div class="col-md-9">
-												<div class="box border blue">
-													<div class="box-title">
-														<h4><i class="fa fa-table"></i>项目动态</h4>
-													</div>
-													<div class="box-body">
-														
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-check btn btn-info"></i>
-																<a class="user" href="#"> John Doe </a>
-																accepted your connection request.
-																<br>
-																<a href="#">View profile</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
-																<a class="user" href="#"> Jack Doe </a>
-																uploaded a new photo.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
-																<a class="user" href="#"> Jess Doe </a>
-																edited their skills.
-																<br>
-																<a href="#">Endorse them</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
-																<a class="user" href="#"> Divine Doe </a>
-																made a bitcoin payment.
-																<br>
-																<a href="#">Check your financials</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																6 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
-																<a class="user" href="#"> Lisbon Doe </a>
-																saved a new document to Dropbox.
-																<br>
-																<a href="#">Download</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																1 day ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
-																<a class="user" href="#"> Bob Doe </a>
-																pinned a new photo to Pinterest.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																2 days ago
-															</div>
-														</div>
-														
-													</div>
+													
 												</div>
-												
-												<div class="divide-20"></div>
 
-												<div>
-													<ul class='pagination'>
-														{$page}
-													</ul>
-												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -328,6 +231,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -338,11 +242,11 @@
 	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
-	
+
 
 	<!-- DATE RANGE PICKER -->
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
+
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -362,11 +266,12 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
-			App.setPage("user_profile");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
-	<!-- /JAVASCRIPTS -->
+		App.setPage("user_profile");  //Set current page
+		App.init(); //Initialise plugins and elements
+	});
+</script>
+<!-- /JAVASCRIPTS -->
 </body>
 </html>
