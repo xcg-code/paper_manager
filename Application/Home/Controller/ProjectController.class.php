@@ -460,7 +460,46 @@ class ProjectController extends Controller {
 
 	//显示分配事务问题
 	public function git_arrange_bug($git_id){
+		//获取实验室ID
+		$MemberModel=M('User');
+		$MemberCondi['id']=session('uid');
+		$LabId=$MemberModel->where($MemberCondi)->find();
+		$LabId=$LabId['lab_id'];
+		//获取该实验室下所有人员信息
+		$MemberInfo=$MemberModel->where("lab_id='%s'",$LabId)->select();
 		$this->assign('git_id',$git_id);
+		$this->assign('MemberInfo',$MemberInfo);
 		$this->display();
 	}
+
+	//分配问题数据操作
+	public function git_arrange_bug_db($git_id){
+		$GitModel=M('GitBug');
+		$UserModel=M('User');
+		if($GitModel->create()){
+			$GitModel->git_id=$git_id;
+			$GitModel->creator=session('fullname');
+			$UserInfo=$UserModel->where("fullname='%s'",session('fullname'))->find();
+			$GitModel->creator_id=$UserInfo['id'];
+			$UserInfo=$UserModel->where("fullname='%s'",I('post.receiver'))->find();
+			$GitModel->receiver_id=$UserInfo['id'];
+			$GitModel->create_time=date("Y-m-d H:i:s");
+			$GitModel->state='未完成';
+			if(I('post.level')=='一般'){
+				$GitModel->level_id=1;
+			}else if(I('post.level')=='严重'){
+				$GitModel->level_id=2;
+			}else {
+				$GitModel->level_id=3;
+			}
+			$Result=$GitModel->add();
+			if($Result){
+				$this->success('分配事务成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
+			}else{
+				$this->error($GitModel->getError());
+			}
+		}else{
+			$this->error($GitModel->getError());
+		}
+	}		
 }

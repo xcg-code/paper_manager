@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
-	
+
 	<link href="/PaperManager/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
@@ -92,7 +92,7 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
+
 		<!-- TEAM STATUS -->
 		<div class="container team-status" id="team-status">
 			<div id="scrollbar">
@@ -142,7 +142,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	
+
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
@@ -233,17 +233,17 @@
 							<div class="col-sm-12">
 								<div class="page-header">
 									<!-- STYLER -->
-									
+
 									<!-- /STYLER -->
 									<!-- BREADCRUMBS -->
 									<ul class="breadcrumb">
-										
+
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left"><?php echo ($ProjectInfo["name"]); ?></h3>
+										<h3 class="content-title pull-left">分配事务</h3>
 									</div>
-									<div class="description">协作开发项目</div>
+									<div class="description">分配事务</div>
 								</div>
 							</div>
 						</div>
@@ -251,156 +251,66 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i><?php echo ($ProjectInfo["name"]); ?></h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">分配事务</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-													<?php if(($IsAdmin) == "1"): ?><div class="list-group-item profile-details">
-															<h4>负责人操作</h4>
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">分配事务</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/git_arrange_bug_db/git_id/<?php echo ($git_id); ?>" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div id="info">
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">事务标题(*)</label> 
+																			<div class="col-md-8"><input type="text" name="title" class="form-control" value=""></div>
+																			
+																		</div>
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">事务内容(*)</label> 
+																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
+																		</div>
+																		<div class="form-group">
+																			<label class="col-md-2 control-label">经办成员(*)</label> 
+																			<div class="col-md-3"><select class="form-control" name="receiver">
+																				<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["fullname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+
+																			</select></div>
+																			<label class="col-md-2 control-label">优先级</label> 
+																			<div class="col-md-3"><select class="form-control" name="level">
+																				<option>一般</option>
+																				<option>严重</option>
+																				<option>紧急</option>
+																			</select></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
 														</div>
-														<a href="/PaperManager/index.php/Home/Project/git_finish/git_id/<?php echo ($ProjectInfo["id"]); ?>" onclick="return confirm('确定要完成这个项目吗？')" class="list-group-item"><i class="fa fa-user fa-fw"></i> 完成项目</a>
-														<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 导出未完成事务</a>
-														<a href="/PaperManager/index.php/Home/Project/git_cost_check/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostCheck"]); ?></span><i class="fa fa-user fa-fw"></i> 项目开支管理</a>
-														<a href="/PaperManager/index.php/Home/Project/git_notice/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 发布项目组通知</a><?php endif; ?>
+														
+														
+														<div class="form-actions clearfix"> 
+															<input type="submit" value="分配该事务" class="btn btn-primary pull-right">
+														</div>
+													</form>
 													
-													<div class="list-group-item profile-details">
-														<h4>协同操作</h4>
-													</div>
-													<a href="/PaperManager/index.php/Home/Project/project_edit/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 项目详情</a>
-													<a href="/PaperManager/index.php/Home/Project/git_doc/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["Doc"]); ?></span><i class="fa fa-user fa-fw"></i> 项目文档管理</a>
-													<a href="/PaperManager/index.php/Home/Project/git_my_notice/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["Notice"]); ?></span><i class="fa fa-user fa-fw"></i> 项目组通知</a>
-													<a href="/PaperManager/index.php/Home/Project/git_apply_cost/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"><?php echo ($CountInfo["CostApply"]); ?></span><i class="fa fa-user fa-fw"></i> 申请开支</a>
-													<a href="/PaperManager/index.php/Home/Project/git_arrange_bug/git_id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 分配事务</a>
-													<a href="/PaperManager/index.php/Home/Project/project_show/id/<?php echo ($ProjectInfo["id"]); ?>" class="list-group-item"><span class="badge badge-red"></span><i class="fa fa-user fa-fw"></i> 我的待完成事务</a>													
-												</div>														
-											</div>
-											<div class="col-md-9">
-												<div class="box border blue">
-													<div class="box-title">
-														<h4><i class="fa fa-table"></i>项目动态</h4>
-													</div>
-													<div class="box-body">
-														
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-check btn btn-info"></i>
-																<a class="user" href="#"> John Doe </a>
-																accepted your connection request.
-																<br>
-																<a href="#">View profile</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
-																<a class="user" href="#"> Jack Doe </a>
-																uploaded a new photo.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
-																<a class="user" href="#"> Jess Doe </a>
-																edited their skills.
-																<br>
-																<a href="#">Endorse them</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
-																<a class="user" href="#"> Divine Doe </a>
-																made a bitcoin payment.
-																<br>
-																<a href="#">Check your financials</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																6 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
-																<a class="user" href="#"> Lisbon Doe </a>
-																saved a new document to Dropbox.
-																<br>
-																<a href="#">Download</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																1 day ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
-																<a class="user" href="#"> Bob Doe </a>
-																pinned a new photo to Pinterest.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																2 days ago
-															</div>
-														</div>
-														
-													</div>
+													
 												</div>
-												
-												<div class="divide-20"></div>
 
-												<div>
-													<ul class='pagination'>
-														<?php echo ($page); ?>
-													</ul>
-												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
@@ -410,6 +320,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -420,11 +331,11 @@
 	<script src="/PaperManager/Public/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="/PaperManager/Public/bootstrap-dist/js/bootstrap.min.js"></script>
-	
+
 
 	<!-- DATE RANGE PICKER -->
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
+
 	<script src="/PaperManager/Public/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="/PaperManager/Public/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
@@ -444,11 +355,12 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="/PaperManager/Public/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
-			App.setPage("user_profile");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
-	<!-- /JAVASCRIPTS -->
+		App.setPage("user_profile");  //Set current page
+		App.init(); //Initialise plugins and elements
+	});
+</script>
+<!-- /JAVASCRIPTS -->
 </body>
 </html>
