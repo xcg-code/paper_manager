@@ -242,10 +242,16 @@ class ProjectController extends Controller {
 		$CountInfo['Bug']=$BugModel->where("git_id='%s' and receiver_id=%d and state!='%s'",$git_id,session('uid'),'已解决')->count();
 		//获取项目组活动日志
 		$GitModel=M('GitActivity');
-		$ActivityInfo=$GitModel->where("git_id='%s'",$git_id)->order('time desc')->select();
+		$ActivityCount=$GitModel->where("git_id='%s'",$git_id)->order('time desc')->count();
+		//分页数据获取
+        $Page= get_page($ActivityCount,6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $show= $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $ActivityInfo=$GitModel->where("git_id='%s'",$git_id)->order('time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 		$this->assign('ProjectInfo',$ProjectInfo);
 		$this->assign('ActivityInfo',$ActivityInfo);
 		$this->assign('IsAdmin',$IsAdmin);
+		$this->assign('page',$show);
 		$this->assign('CountInfo',$CountInfo);
 		$this->display();
 	}
