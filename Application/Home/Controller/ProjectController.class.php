@@ -237,6 +237,9 @@ class ProjectController extends Controller {
 		//获取未读通知数量
 		$NoticeModel=M('GitNotice');
 		$CountInfo['Notice']=$NoticeModel->where("git_id='%s' and user_id=%d",$git_id,session('uid'))->count();
+		//获取未完成事务数量
+		$BugModel=M('GitBug');
+		$CountInfo['Bug']=$BugModel->where("git_id='%s' and receiver_id=%d and state!='%s'",$git_id,session('uid'),'已解决')->count();
 		//获取项目组活动日志
 		$GitModel=M('GitActivity');
 		$ActivityInfo=$GitModel->where("git_id='%s'",$git_id)->order('time desc')->select();
