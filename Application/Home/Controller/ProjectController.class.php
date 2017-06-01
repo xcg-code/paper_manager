@@ -635,5 +635,63 @@ class ProjectController extends Controller {
 		}else{
 			$this->error($GitModel->getError());
 		}
+	}
+
+	//导出所有事务
+	public function git_bug_export($git_id){
+		//获取所有事务
+		$GitModel=M('GitBug');
+		$BugInfo=$GitModel->field('id,creator,receiver,title,content,create_time,state,level')->where("git_id='%s'",$git_id)->order('create_time desc')->select();
+		//导出到Excel
+		vendor("PHPExcel.PHPExcel");
+
+        $fileName="ImportFile";
+        $headArr=array("事务ID","事务创建者","事务经办人","事务标题","事务内容","事务创建时间","状态","优先级");
+        //对数据进行检验
+        if(empty($BugInfo) || !is_array($BugInfo)){
+            die("data must be a array");
+        }
+        //检查文件名
+        if(empty($fileName)){
+        	exit;
+        }
+
+        $date = date("Y_m_d",time());
+        $fileName .= "_{$date}.xls";
+ 		//创建PHPExcel对象，注意，不能少了\
+        $objPHPExcel = new \PHPExcel();
+        $objProps = $objPHPExcel->getProperties();
+
+            //设置表头
+        $key = ord("A");
+        foreach($headArr as $v){
+        	$colum = chr($key);
+        	$objPHPExcel->setActiveSheetIndex(0) ->setCellValue($colum.'1', $v);
+        	$key += 1;
+        }
+        $column = 2;
+        $objActSheet = $objPHPExcel->getActiveSheet();
+        foreach($BugInfo as $key => $rows){ //行写入
+            $span = ord("A");
+            foreach($rows as $keyName=>$value){// 列写入
+                $j = chr($span);
+                $objActSheet->setCellValue($j.$column, $value);
+                $span++;
+            }
+            $column++;
+        }
+
+        $fileName = iconv("utf-8", "gb2312", $fileName);
+        //重命名表
+        // $objPHPExcel->getActiveSheet()->setTitle('test');
+        //设置活动单指数到第一个表,所以Excel打开这是第一个表
+        $objPHPExcel->setActiveSheetIndex(0);
+        header('Content-Type: application/vnd.ms-excel');
+        header("Content-Disposition: attachment;filename=\"$fileName\"");
+        header('Cache-Control: max-age=0');
+        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        $objWriter->save('php://output'); //文件通过浏览器下载
+        exit;
+
 	}	
 }
