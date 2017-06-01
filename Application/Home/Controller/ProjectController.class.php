@@ -456,6 +456,14 @@ class ProjectController extends Controller {
 				$GitModel->content=I('post.content');
 				$GitModel->add();
 			}
+			//保存日志
+    		$ActivityModel=M('GitActivity');
+    		$ActivityModel->git_id=$git_id;
+    		$ActivityModel->person_a_name=session('fullname');
+    		$ActivityModel->activity='发布了新的项目组通知:'.I('post.title');
+    		$ActivityModel->type='发布通知';
+    		$ActivityModel->time=date("Y-m-d H:i:s");
+    		$ActivityModel->add();
 			$this->success('发布项目组通知成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
 			
 		}else{
