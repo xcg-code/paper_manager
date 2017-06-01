@@ -539,5 +539,32 @@ class ProjectController extends Controller {
 		$this->assign('MemberInfo',$MemberInfo);
 		$this->assign('git_id',$git_id);
 		$this->display();
+	}
+
+	//我的事务数据库操作
+	public function git_bug_operation($git_id,$bug_id){
+		$GitModel=M('GitBug');
+		if($GitModel->create()){
+			//获取经办人id
+			$UserModel=M('User');
+			$UserInfo=$UserModel->where("fullname='%s'",I('post.receiver'))->find();
+			$GitModel->receiver_id=$UserInfo['id'];
+			$GitModel->id=$bug_id;
+			if(I('post.level')=='一般'){
+				$GitModel->level_id=1;
+			}elseif(I('post.level')=='严重'){
+				$GitModel->level_id=2;
+			}else{
+				$GitModel->level_id=3;
+			}
+			$Result=$GitModel->save();
+			if($Result){
+				$this->success('提交事务操作成功');
+			}else{
+				$this->error('提交事务操作失败');
+			}
+		}else{
+			$this->error($GitModel->getError());
+		}
 	}	
 }

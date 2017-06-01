@@ -303,7 +303,7 @@
 																		<h4><i class="fa fa-bars"></i>事务详情</h4>
 																	</div>
 																	<div class="box-body">
-																		<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/project_type_add" method="post">
+																		<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/git_bug_operation/git_id/<?php echo ($git_id); ?>/bug_id/<?php echo ($BugDetail["id"]); ?>" method="post">
 																			<div class="form-group">
 																				<label class="col-md-3 control-label" >事务标题</label> 
 																				<div class="col-md-8"><input type="text" name="title" class="form-control" value="<?php echo ($BugDetail["title"]); ?>"></div>
@@ -316,24 +316,24 @@
 																			
 																			<label class="col-md-3 control-label">优先级</label> 
 																			<div class="col-md-8"><select class="form-control" name="level">
-																				<option>一般</option>
-																				<option>严重</option>
-																				<option>紧急</option>
+																				<option <?php if(($BugDetail["level"]) == "一般"): ?>selected="selected"<?php endif; ?>>一般</option>
+																				<option <?php if(($BugDetail["level"]) == "严重"): ?>selected="selected"<?php endif; ?>>严重</option>
+																				<option <?php if(($BugDetail["level"]) == "紧急"): ?>selected="selected"<?php endif; ?>>紧急</option>
 																			</select></div>
 																			</div>
 
 																			<div class="form-group">
 																			
 																			<label class="col-md-3 control-label">经办人</label> 
-																			<div class="col-md-8"><select class="form-control" name="level">
-																				<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if($vo["name"] == $BugDetail.receiver): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+																			<div class="col-md-8"><select class="form-control" name="receiver">
+																				<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if(($vo["name"]) == $BugDetail["receiver"]): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 																			</select></div>
 																			</div>
 
 																			<div class="form-group">
 																			
 																			<label class="col-md-3 control-label">事务状态</label> 
-																			<div class="col-md-8"><select class="form-control" name="level">
+																			<div class="col-md-8"><select class="form-control" name="state">
 																				<option <?php if($BugDetail["state"] == 未完成): ?>selected="selected"<?php endif; ?>>未完成</option>
 																				<option <?php if($BugDetail["state"] == 开始解决): ?>selected="selected"<?php endif; ?>>开始解决</option>
 																				<option <?php if($BugDetail["state"] == 已解决): ?>selected="selected"<?php endif; ?>>已解决</option>
@@ -341,7 +341,7 @@
 																			</div>
 
 
-																			<input type="submit" value="保存" class="btn btn-primary">
+																			<input type="submit" value="提交" class="btn btn-primary">
 
 																		</form>
 																	</div>
