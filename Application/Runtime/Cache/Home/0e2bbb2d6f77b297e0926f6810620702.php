@@ -298,92 +298,20 @@
 														<h4><i class="fa fa-table"></i>项目动态</h4>
 													</div>
 													<div class="box-body">
-														
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-check btn btn-info"></i>
-																<a class="user" href="#"> John Doe </a>
-																accepted your connection request.
-																<br>
-																<a href="#">View profile</a>
+														<?php if(is_array($ActivityInfo)): $i = 0; $__LIST__ = $ActivityInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="feed-activity clearfix">
+																<div>
+																	<i class="pull-left roundicon fa fa-check btn btn-info"></i>
+																	<a class="user" href="#"> John Doe </a>
+																	accepted your connection request.
+																	<br>
+																	<a href="#">View profile</a>
 
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
-																<a class="user" href="#"> Jack Doe </a>
-																uploaded a new photo.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
-																<a class="user" href="#"> Jess Doe </a>
-																edited their skills.
-																<br>
-																<a href="#">Endorse them</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																5 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
-																<a class="user" href="#"> Divine Doe </a>
-																made a bitcoin payment.
-																<br>
-																<a href="#">Check your financials</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																6 hours ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
-																<a class="user" href="#"> Lisbon Doe </a>
-																saved a new document to Dropbox.
-																<br>
-																<a href="#">Download</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																1 day ago
-															</div>
-														</div>
-														<div class="feed-activity clearfix">
-															<div>
-																<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
-																<a class="user" href="#"> Bob Doe </a>
-																pinned a new photo to Pinterest.
-																<br>
-																<a href="#">Take a look</a>
-
-															</div>
-															<div class="time">
-																<i class="fa fa-clock-o"></i>
-																2 days ago
-															</div>
-														</div>
-														
+																</div>
+																<div class="time">
+																	<i class="fa fa-clock-o"></i>
+																	5 hours ago
+																</div>
+															</div><?php endforeach; endif; else: echo "" ;endif; ?>	
 													</div>
 												</div>
 												
