@@ -501,5 +501,10 @@ class ProjectController extends Controller {
 		}else{
 			$this->error($GitModel->getError());
 		}
-	}		
+	}	
+
+	//显示我的事务页面
+	public function git_my_bug($git_id){
+		$this->display();
+	}	
 }
