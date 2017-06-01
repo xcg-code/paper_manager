@@ -507,7 +507,7 @@ class ProjectController extends Controller {
 	public function git_my_bug($git_id){
 		$GitModel=M('GitBug');
 		$Condition['git_id']=$git_id;
-		$Condition['state']='未完成';
+		$Condition['state']=array(array('eq','未完成'),array('eq','开始解决'), 'or');
 		$Condition['receiver_id']=session('uid');
 		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
 		$this->assign('BugInfo',$BugInfo);
@@ -520,7 +520,7 @@ class ProjectController extends Controller {
 		//获取所有问题
 		$GitModel=M('GitBug');
 		$Condition['git_id']=$git_id;
-		$Condition['state']='未完成';
+		$Condition['state']=array(array('eq','未完成'),array('eq','开始解决'), 'or');
 		$Condition['receiver_id']=session('uid');
 		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
 		//获取当前问题详情

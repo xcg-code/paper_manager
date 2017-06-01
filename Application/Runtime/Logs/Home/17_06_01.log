@@ -4467,3 +4467,785 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
 
+[ 2017-06-01T14:55:25+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2017-06-01T14:55:26+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_arrange_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( lab_id='59000c1939530' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-06-01T14:55:58+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_arrange_bug_db/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `think_user` WHERE ( fullname='武秉文' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( fullname='张维刚' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `think_git_bug` (`title`,`content`,`receiver`,`level`,`git_id`,`creator`,`creator_id`,`receiver_id`,`create_time`,`state`,`level_id`) VALUES ('购买服务器','购买服务器','张维刚','紧急','592d690be3bf0','武秉文','1','2','2017-06-01 14:55:58','未完成','3') [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-06-01T14:55:59+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003025s ]
+
+[ 2017-06-01T14:56:01+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001640s ]
+
+[ 2017-06-01T14:57:51+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` IN ('未完成，开始解决') AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2017-06-01T14:58:11+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001971s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` IN ('未完成，开始解决') AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2017-06-01T14:58:23+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000707s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2017-06-01T14:58:58+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001492s ]
+
+[ 2017-06-01T14:59:00+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2017-06-01T14:59:03+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001162s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2017-06-01T14:59:05+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2017-06-01T14:59:10+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2017-06-01T14:59:14+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_bug_operation/git_id/592d690be3bf0/bug_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE ( fullname='武秉文' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `think_git_bug` SET `title`='购买服务器',`content`='购买服务器',`level`='紧急',`receiver`='武秉文',`state`='开始解决',`receiver_id`='1',`level_id`='3' WHERE `id` = 3 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002862s ]
+
+[ 2017-06-01T14:59:16+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2017-06-01T14:59:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2017-06-01T14:59:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2017-06-01T14:59:54+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` IN ('未完成，开始解决') AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2017-06-01T14:59:55+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` IN ('未完成，开始解决') AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2017-06-01T15:02:56+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND ( `state` = '未完成' OR `state` = '开始解决' ) AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000524s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2017-06-01T15:02:59+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND ( `state` = '未完成' OR `state` = '开始解决' ) AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2017-06-01T15:03:13+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2017-06-01T15:03:16+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_bug_operation/git_id/592d690be3bf0/bug_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE ( fullname='武秉文' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `think_git_bug` SET `title`='购买服务器',`content`='购买服务器',`level`='紧急',`receiver`='武秉文',`state`='未完成',`receiver_id`='1',`level_id`='3' WHERE `id` = 3 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-06-01T15:03:17+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001763s ]
+
+[ 2017-06-01T15:03:22+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_bug_operation/git_id/592d690be3bf0/bug_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE ( fullname='武秉文' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `think_git_bug` SET `title`='购买服务器',`content`='购买服务器',`level`='紧急',`receiver`='武秉文',`state`='已解决',`receiver_id`='1',`level_id`='3' WHERE `id` = 3 [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2017-06-01T15:03:23+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002508s ]
+
+[ 2017-06-01T15:04:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/3/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND ( `state` = '未完成' OR `state` = '开始解决' ) AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2017-06-01T15:04:03+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000552s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-06-01T15:04:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND ( `state` = '未完成' OR `state` = '开始解决' ) AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
