@@ -505,6 +505,12 @@ class ProjectController extends Controller {
 
 	//显示我的事务页面
 	public function git_my_bug($git_id){
+		$GitModel=M('GitBug');
+		$Condition['git_id']=$git_id;
+		$Condition['state']='未完成';
+		$Condition['receiver_id']=session('uid');
+		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
+		$this->assign('BugInfo',$BugInfo);
 		$this->display();
 	}	
 }

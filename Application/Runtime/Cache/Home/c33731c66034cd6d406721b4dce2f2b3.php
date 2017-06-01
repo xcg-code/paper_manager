@@ -241,7 +241,7 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">项目类别信息</h3>
+										<h3 class="content-title pull-left">我的事务管理</h3>
 									</div>
 									<div class="description">查看、修改</div>
 								</div>
@@ -254,18 +254,49 @@
 								<!-- BOX -->
 								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">项目类别信息</span></h4>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">我的事务管理</span></h4>
 									</div>
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">项目类别信息</span></a></li>
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">我的事务管理</span></a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
 													<div class="box-body">
 														<div class="row">
 															<div class="col-md-5">
+
+																<div class="box border blue">
+																	<div class="box-title">
+																		<h4><i class="fa fa-table"></i>我的待完成事务列表</h4>
+																	</div>
+																	<div class="box-body">
+																		<table class="table table-striped">
+																			<thead>
+																				<tr>
+																					<th>事务编号</th>
+																					<th>事务标题</th>
+																					<th>创建者</th>
+																					<th>优先级</th>
+																					<th>操作</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<?php if(is_array($BugInfo)): $i = 0; $__LIST__ = $BugInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+																					<td><?php echo ($vo["id"]); ?></td>
+																					<td><?php echo ($vo["title"]); ?></td>
+																					<td><?php echo ($vo["creator"]); ?></td>
+																					<td><?php echo ($vo["level"]); ?></td>
+																					<td><a href="/PaperManager/index.php/Home/Project/project_type_delete/type_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个类别吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+
+															</div>
+															<div class="col-md-7">
 
 																<div class="box border blue">
 																	<div class="box-title">
@@ -285,31 +316,7 @@
 																</div>	
 
 															</div>
-															<div class="col-md-7">
-
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>当前项目类别信息</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>项目类别名称</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<?php if(is_array($TypeInfo)): $i = 0; $__LIST__ = $TypeInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-																					<td><?php echo ($vo["type_name"]); ?></td>
-																					<td><a href="/PaperManager/index.php/Home/Project/project_type_delete/type_id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除这个类别吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
-																					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-
-															</div>
+															
 														</div>
 													</div>
 												</div>
