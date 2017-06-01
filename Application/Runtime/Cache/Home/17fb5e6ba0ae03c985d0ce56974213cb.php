@@ -303,7 +303,47 @@
 																		<h4><i class="fa fa-bars"></i>事务详情</h4>
 																	</div>
 																	<div class="box-body">
-																		
+																		<form class="form-horizontal" action="/PaperManager/index.php/Home/Project/project_type_add" method="post">
+																			<div class="form-group">
+																				<label class="col-md-3 control-label" >事务标题</label> 
+																				<div class="col-md-8"><input type="text" name="title" class="form-control" value="<?php echo ($BugDetail["title"]); ?>"></div>
+																			</div>
+																			<div class="form-group">
+																				<label class="col-md-3 control-label" >事务详情</label> 
+																				<div class="col-md-8"><textarea name="content" class="form-control"><?php echo ($BugDetail["content"]); ?></textarea></div>
+																			</div>
+																			<div class="form-group">
+																			
+																			<label class="col-md-3 control-label">优先级</label> 
+																			<div class="col-md-8"><select class="form-control" name="level">
+																				<option>一般</option>
+																				<option>严重</option>
+																				<option>紧急</option>
+																			</select></div>
+																			</div>
+
+																			<div class="form-group">
+																			
+																			<label class="col-md-3 control-label">经办人</label> 
+																			<div class="col-md-8"><select class="form-control" name="level">
+																				<?php if(is_array($MemberInfo)): $i = 0; $__LIST__ = $MemberInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if($vo["name"] == $BugDetail.receiver): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+																			</select></div>
+																			</div>
+
+																			<div class="form-group">
+																			
+																			<label class="col-md-3 control-label">事务状态</label> 
+																			<div class="col-md-8"><select class="form-control" name="level">
+																				<option <?php if($BugDetail["state"] == 未完成): ?>selected="selected"<?php endif; ?>>未完成</option>
+																				<option <?php if($BugDetail["state"] == 开始解决): ?>selected="selected"<?php endif; ?>>开始解决</option>
+																				<option <?php if($BugDetail["state"] == 已解决): ?>selected="selected"<?php endif; ?>>已解决</option>
+																			</select></div>
+																			</div>
+
+
+																			<input type="submit" value="保存" class="btn btn-primary">
+
+																		</form>
 																	</div>
 																</div>	
 

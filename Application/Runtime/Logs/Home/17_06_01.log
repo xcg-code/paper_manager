@@ -1891,3 +1891,1625 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001673s ]
 
+[ 2017-06-01T13:29:41+08:00 ] ::1 /PaperManager/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004553s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004732s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009686s ]
+
+[ 2017-06-01T13:29:53+08:00 ] ::1 /PaperManager/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'jerry' AND `password` = '30035607ee5bb378c71ab434a6d05410' LIMIT 1   [ RunTime:0.0104s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant fullname - assumed 'fullname' C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2017-06-01T13:29:55+08:00 ] ::1 /PaperManager/index.php/Home/Profile/profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Library\Think\Controller.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_achievement` [ RunTime:0.0065s ]
+SQL: SELECT `achievement_type` FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for get_achievement_count(), called in C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php on line 15 and defined C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1553 行.
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\ThinkPHP\Common\functions.php 第 1555 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_project` [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_project` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0062s ]
+NOTIC: [8] Undefined variable: user_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProfileController.class.php 第 21 行.
+SQL: SELECT * FROM `think_achievement` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Use of undefined constant 教授 - assumed '教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 434 行.
+NOTIC: [8] Use of undefined constant 副教授 - assumed '副教授' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 435 行.
+NOTIC: [8] Use of undefined constant 博士后 - assumed '博士后' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 436 行.
+NOTIC: [8] Use of undefined constant 博士生 - assumed '博士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 437 行.
+NOTIC: [8] Use of undefined constant 硕士生 - assumed '硕士生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 438 行.
+NOTIC: [8] Use of undefined constant 本科生 - assumed '本科生' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c2e569cae412d9698300f14cd96ee7ba.php 第 439 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2017-06-01T13:29:58+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012301s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0149s ]
+SQL: SELECT `git_id` FROM `think_git_member` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `think_git` WHERE `id` IN ('592d690be3bf0')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.041742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042125s ]
+
+[ 2017-06-01T13:30:00+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0158s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-06-01T13:30:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2017-06-01T13:30:56+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2017-06-01T13:31:20+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2017-06-01T13:31:38+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2017-06-01T13:32:06+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2017-06-01T13:32:07+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/bug_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+ERR: 参数错误或者未定义:git_id
+
+[ 2017-06-01T13:33:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\c33731c66034cd6d406721b4dce2f2b3.php 第 322 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2017-06-01T13:33:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+ERR: 参数错误或者未定义:git_id
+
+[ 2017-06-01T13:33:26+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2017-06-01T13:33:27+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-06-01T13:33:28+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-06-01T13:33:54+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2017-06-01T13:34:39+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2017-06-01T13:34:46+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001661s ]
+
+[ 2017-06-01T13:35:20+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2017-06-01T13:37:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2017-06-01T13:38:55+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2017-06-01T13:53:53+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003057s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000573s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000991s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003227s ]
+
+[ 2017-06-01T13:56:59+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+
+[ 2017-06-01T13:58:20+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003360s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000553s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002439s ]
+
+[ 2017-06-01T13:58:22+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000803s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001437s ]
+NOTIC: [8] Undefined variable: BugInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 286 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004702s ]
+
+[ 2017-06-01T13:59:24+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002398s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000682s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004648s ]
+
+[ 2017-06-01T13:59:29+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined variable: BugInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 286 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2017-06-01T14:02:02+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 AND `git_id` = '592d690be3bf0' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000508s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001044s ]
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 287 行.
+NOTIC: [2] Illegal string offset 'title' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 288 行.
+NOTIC: [2] Illegal string offset 'creator' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 289 行.
+NOTIC: [2] Illegal string offset 'level' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 290 行.
+NOTIC: [2] Illegal string offset 'id' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002567s ]
+
+[ 2017-06-01T14:03:11+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000900s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007841s ]
+
+[ 2017-06-01T14:05:55+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+
+[ 2017-06-01T14:05:56+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002885s ]
+
+[ 2017-06-01T14:06:12+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002376s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001492s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002366s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005136s ]
+
+[ 2017-06-01T14:08:38+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002367s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000796s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001250s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004220s ]
+
+[ 2017-06-01T14:08:52+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002834s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000639s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001594s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007674s ]
+
+[ 2017-06-01T14:09:04+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000839s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001575s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004199s ]
+
+[ 2017-06-01T14:10:24+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002306s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000394s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002695s ]
+
+[ 2017-06-01T14:10:38+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000563s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005079s ]
+
+[ 2017-06-01T14:11:11+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002605s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001177s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004379s ]
+
+[ 2017-06-01T14:14:12+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003469s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001006s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004368s ]
+
+[ 2017-06-01T14:14:29+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002401s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000671s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001145s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 334 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004768s ]
+
+[ 2017-06-01T14:16:18+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2017-06-01T14:16:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 291 行.
+NOTIC: [8] Undefined variable: git_id C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2017-06-01T14:16:25+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+ERR: 参数错误或者未定义:git_id
+
+[ 2017-06-01T14:16:37+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+ERR: 参数错误或者未定义:git_id
+
+[ 2017-06-01T14:16:39+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+ERR: 参数错误或者未定义:git_id
+
+[ 2017-06-01T14:16:43+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2017-06-01T14:16:44+08:00 ] ::1 /PaperManager/index.php/Home/Project/project_git_show/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `think_git_cost` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_git` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git` WHERE ( id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_cost` WHERE ( state=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_git_doc` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_doc` WHERE ( git_id='592d690be3bf0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_notice` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_git_notice` WHERE ( git_id='592d690be3bf0' and user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined variable: page C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\0e2bbb2d6f77b297e0926f6810620702.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-06-01T14:16:48+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2017-06-01T14:16:50+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-06-01T14:16:53+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2017-06-01T14:25:06+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: MemberModel C:\Mess\Applications\wamp64\www\PaperManager\Application\Home\Controller\ProjectController.class.php 第 531 行.
+
+[ 2017-06-01T14:25:36+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001362s ]
+
+[ 2017-06-01T14:25:56+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2017-06-01T14:27:59+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: MemberInfo C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2017-06-01T14:28:23+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2017-06-01T14:30:12+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001582s ]
+
+[ 2017-06-01T14:30:13+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2017-06-01T14:30:19+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2017-06-01T14:30:42+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2017-06-01T14:30:44+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000562s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002794s ]
+
+[ 2017-06-01T14:31:59+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2017-06-01T14:32:00+08:00 ] ::1 /PaperManager/index.php/Home/Project/git_my_bug_show/bug_id/2/git_id/592d690be3bf0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `think_git_bug` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `git_id` = '592d690be3bf0' AND `state` = '未完成' AND `receiver_id` = 1 ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_git_bug` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_git_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_git_member` WHERE ( git_id='592d690be3bf0' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant receiver - assumed 'receiver' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Array to string conversion C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 329 行.
+NOTIC: [8] Use of undefined constant 未完成 - assumed '未完成' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 337 行.
+NOTIC: [8] Use of undefined constant 开始解决 - assumed '开始解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 338 行.
+NOTIC: [8] Use of undefined constant 已解决 - assumed '已解决' C:\Mess\Applications\wamp64\www\PaperManager\Application\Runtime\Cache\Home\17fb5e6ba0ae03c985d0ce56974213cb.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+

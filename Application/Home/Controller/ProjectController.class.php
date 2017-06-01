@@ -511,6 +511,33 @@ class ProjectController extends Controller {
 		$Condition['receiver_id']=session('uid');
 		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
 		$this->assign('BugInfo',$BugInfo);
+		$this->assign('git_id',$git_id);
+		$this->display();
+	}
+
+	//显示我的事务详情页面
+	public function git_my_bug_show($bug_id,$git_id){
+		//获取所有问题
+		$GitModel=M('GitBug');
+		$Condition['git_id']=$git_id;
+		$Condition['state']='未完成';
+		$Condition['receiver_id']=session('uid');
+		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
+		//获取当前问题详情
+		$Condi['id']=$bug_id;
+		$BugDetail=$GitModel->where($Condi)->find();
+		//获取项目组人员信息
+		$GitMemModel=M('GitMember');
+		$MemberInfo=$GitMemModel->where("git_id='%s'",$git_id)->select();
+		$UserModel=M('User');
+		for($i=0;$i<count($MemberInfo);$i++){
+			$UserInfo=$UserModel->where('id=%d',$MemberInfo[$i]['user_id'])->find();
+			$MemberInfo[$i]['name']=$UserInfo['fullname'];
+		}
+		$this->assign('BugInfo',$BugInfo);
+		$this->assign('BugDetail',$BugDetail);
+		$this->assign('MemberInfo',$MemberInfo);
+		$this->assign('git_id',$git_id);
 		$this->display();
 	}	
 }
