@@ -289,6 +289,14 @@ class ProjectController extends Controller {
 			$GitModel->user_id=session('uid');
 			$GitModel->time=date("Y-m-d");
 			$Result=$GitModel->add();
+			//保存日志
+    		$ActivityModel=M('GitActivity');
+    		$ActivityModel->git_id=$git_id;
+    		$ActivityModel->person_a_name=session('fullname');
+    		$ActivityModel->activity='申请项目经费:'.I('post.title');
+    		$ActivityModel->type='申请经费';
+    		$ActivityModel->time=date("Y-m-d H:i:s");
+    		$ActivityModel->add();
 			if($Result){
 				$this->success('提交经费申请，等待审核',__ROOT__.'/index.php/Home/Project/git_apply_cost/git_id/'.$git_id);
 			}else{
