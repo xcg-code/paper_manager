@@ -3,11 +3,11 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | User Profile</title>
+	<title>个人主页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="/PaperManager/Public/js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
 	<link rel="stylesheet" type="text/css" href="/PaperManager/Public/css/cloud-admin.css" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/themes/default.css" id="skin-switcher" >
 	<link rel="stylesheet" type="text/css"  href="/PaperManager/Public/css/responsive.css" >
@@ -25,9 +25,7 @@
 		<div class="container">
 				<div class="navbar-brand">
 					<!-- COMPANY LOGO -->
-					<a href="index.html">
 						<img src="/PaperManager/Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
-					</a>
 					<!-- /COMPANY LOGO -->
 					<!-- TEAM STATUS FOR MOBILE -->
 					<div class="visible-xs">
@@ -45,7 +43,7 @@
 					<!-- /SIDEBAR COLLAPSE -->
 				</div>
 				<!-- NAVBAR LEFT -->
-				<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
+				<!--<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
 	<li class="dropdown">
 		<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggtooltip" title="Toggle Team View">
 			<i class="fa fa-users"></i>
@@ -72,21 +70,21 @@
 		 </ul>
 	</li>
 </ul>
-
+-->
 				<!-- /NAVBAR LEFT -->
 				<!-- BEGIN TOP NAVIGATION MENU -->		
 				<ul class="nav navbar-nav pull-right">				
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="/PaperManager/<?php echo (session('pic_path')); ?>" />
 							<span class="username"><?php echo (session('fullname')); ?></span>
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
-							<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
+							<li><a href="/PaperManager/index.php/Home/Profile/changePwd.html"><i class="fa fa-cog"></i> 修改密码</a></li>
+							<li><a href="/PaperManager/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>退出系统</a></li>
 						</ul>
+
 					</li>
 					<!-- END USER LOGIN DROPDOWN -->
 				</ul>			
@@ -259,7 +257,7 @@
 									<div class="box-body">
 										<div class="tabbable header-tabs user-profile">
 											<ul class="nav nav-tabs">
-												<li><a href="#pro_pic" data-toggle="tab"><i class="fa fa-picture-o"></i> <span class="hidden-inline-mobile">上传头像</span></a></li>
+												<!--<li><a href="#pro_pic" data-toggle="tab"><i class="fa fa-picture-o"></i> <span class="hidden-inline-mobile">上传头像</span></a></li>-->
 											   <li><a href="#pro_edit" data-toggle="tab"><i class="fa fa-edit"></i> <span class="hidden-inline-mobile">编辑资料</span></a></li>
 											   <li class="active"><a href="#pro_overview" data-toggle="tab"><i class="fa fa-dot-circle-o"></i> <span class="hidden-inline-mobile">概述</span></a></li>
 											</ul>
@@ -512,21 +510,6 @@
 												  </form>
 											   </div>
 											   <!-- /EDIT ACCOUNT -->
-											   <div class="tab-pane fade" id="pro_pic">
-												  <form class="form-horizontal" action="/PaperManager/index.php/Home/Profile/update_pic/id/<?php echo ($Profile["id"]); ?>" method="post" enctype="multipart/form-data">
-														<div class="row">
-															<div class="col-md-12">
-																<!-- BOX -->
-																	<div class="box-body">
-																		<div class="form-group">
-																		  <div class="col-md-4"><input type="file" name="picture" class="form-control" ></div>
-																		</div>
-																	</div>
-															</div>
-														</div>
-													 <div class="form-actions clearfix"> <input type="submit" value="上传" class="btn btn-primary pull-right"></div>
-												  </form>
-											   </div>
 											</div>
 										</div>
 										<!-- /USER PROFILE -->
