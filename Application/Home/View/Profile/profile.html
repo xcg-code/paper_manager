@@ -123,7 +123,6 @@
                                 <div class="box-body">
                                     <div class="tabbable header-tabs user-profile">
                                         <ul class="nav nav-tabs">
-                                            <li><a href="#pro_pic" data-toggle="tab"><i class="fa fa-picture-o"></i> <span class="hidden-inline-mobile">上传头像</span></a></li>
                                             <li><a href="#pro_edit" data-toggle="tab"><i class="fa fa-edit"></i> <span
                                                     class="hidden-inline-mobile">编辑资料</span></a></li>
                                             <li class="active"><a href="#pro_overview" data-toggle="tab"><i
@@ -137,10 +136,6 @@
                                                     <!-- PROFILE PIC -->
                                                     <div class="col-md-3">
                                                         <div class="list-group">
-                                                            <li class="list-group-item zero-padding">
-                                                                <img alt="" class="img-responsive"
-                                                                     src="__ROOT__/{$Think.session.pic_path}">
-                                                            </li>
                                                             <div class="list-group-item profile-details">
                                                                 <h2>{$Profile.fullname}</h2>
                                                             </div>
@@ -231,13 +226,6 @@
                                                                     <div class="col-md-3">
                                                                         <a class="btn btn-info btn-icon input-block-level"
                                                                            href="javascript:void(0);">
-                                                                            <div>标准</div>
-                                                                            <span class="label label-right label-danger">{$AchievementCount.Standard}</span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <a class="btn btn-info btn-icon input-block-level"
-                                                                           href="javascript:void(0);">
                                                                             <div>软件著作权</div>
                                                                             <span class="label label-right label-danger">{$AchievementCount.Software}</span>
                                                                         </a>
@@ -249,35 +237,6 @@
                                                                             <span class="label label-right label-danger">{$AchievementCount.Reward}</span>
                                                                         </a>
                                                                     </div>
-                                                                    <div class="col-md-3">
-                                                                        <a class="btn btn-info btn-icon input-block-level"
-                                                                           href="javascript:void(0);">
-                                                                            <div>人才培养</div>
-                                                                            <span class="label label-right label-danger">{$AchievementCount.Train}</span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <a class="btn btn-info btn-icon input-block-level"
-                                                                           href="javascript:void(0);">
-                                                                            <div>举办或参加学术会议</div>
-                                                                            <span class="label label-right label-danger">{$AchievementCount.ConferenceInvolved}</span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <a class="btn btn-info btn-icon input-block-level"
-                                                                           href="javascript:void(0);">
-                                                                            <div>成果技术转移</div>
-                                                                            <span class="label label-right label-danger">{$AchievementCount.TechTrans}</span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <a class="btn btn-info btn-icon input-block-level"
-                                                                           href="javascript:void(0);">
-                                                                            <div>其他重要研究成果</div>
-                                                                            <span class="label label-right label-danger">{$AchievementCount.OtherAchievement}</span>
-                                                                        </a>
-                                                                    </div>
-
                                                                 </div>
                                                                 <!-- /BUTTONS -->
                                                             </div>

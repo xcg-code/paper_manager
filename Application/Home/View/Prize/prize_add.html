@@ -77,7 +77,9 @@
 <!-- PAGE -->
 <section id="page">
     <!-- SIDEBAR -->
-    <?php include session(sidebar_path); ?>
+    <?php
+        include session(sidebar_path);
+    ?>
     <!-- /SIDEBAR -->
     <div id="main-content">
         <!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
@@ -168,11 +170,13 @@
                                                             </div>
                                                             <div>
                                                                 <label class="col-md-2 control-label">证书上传</label>
-                                                                <input type="file" name="prize_file" id="prize_file">                                                            </div>
+                                                                <input type="file" name="prize_file" id="prize_file">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-actions clearfix">
-                                                        <input type="submit" value="保存" class="btn btn-primary pull-right">
+                                                        <input type="submit" value="保存"
+                                                               class="btn btn-primary pull-right">
                                                     </div>
                                                 </form>
                                             </div>

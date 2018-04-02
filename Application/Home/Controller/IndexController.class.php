@@ -8,6 +8,10 @@
 	{
 		public function index($type = "login")
 		{
+			if($_SESSION['uid']!=null){
+				$this->redirect('/Home/Profile/profile');
+				return;
+			}
 			$this->assign('type', $type);
 			$this->display();
 		}
@@ -36,6 +40,8 @@
 
 		public function login()
 		{
+			session_destroy();
+			session_start();
 			$login = D('User');
 			$uname = I('Post.username');
 			$pwd = md5(I('Post.password'));
@@ -45,13 +51,13 @@
 			);
 			$data = $login->where($condition)->find();
 			if ($data) {
-				session('user', $data, 3600);
-				session('uid', $data[id], 3600);
-				session('fullname', $data[fullname], 3600);
+				$_SESSION['user']=$data;
+				$_SESSION['uid']= $data[id];
+				$_SESSION['fullname']=$data[fullname];
 				if($data[position]==0){
-					session("sidebar_path","./Public/tpl/navbar.html");
+					$_SESSION['sidebar_path']="./Public/tpl/navbar.html";
 				}else{
-					session("sidebar_path","./Public/tpl/navbar2.html");
+					$_SESSION['sidebar_path']="./Public/tpl/navbar2.html";
 				}
 				$this->redirect('/Home/Profile/profile');
 			} else {
@@ -61,7 +67,7 @@
 
 		public function logout()
 		{
-			session(null);
+			session_destroy();
 			$this->success('登出成功，请重新登录！', __ROOT__);
 		}
 
