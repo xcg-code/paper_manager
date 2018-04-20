@@ -47,7 +47,7 @@
             <!-- BEGIN USER LOGIN DROPDOWN -->
             <li class="dropdown user" id="header-user">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <span class="username">{$Think.session.fullname}</span>
+                    <span class="username">{$Think.session.name}</span>
                     <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
@@ -118,7 +118,7 @@
                             <div class="box border">
                                 <div class="box-title">
                                     <h4><i class="fa fa-user"></i><span
-                                            class="hidden-inline-mobile">{$Profile.fullname}</span></h4>
+                                            class="hidden-inline-mobile">{$Profile.name}</span></h4>
                                 </div>
                                 <div class="box-body">
                                     <div class="tabbable header-tabs user-profile">
@@ -137,7 +137,7 @@
                                                     <div class="col-md-3">
                                                         <div class="list-group">
                                                             <div class="list-group-item profile-details">
-                                                                <h2>{$Profile.fullname}</h2>
+                                                                <h2>{$Profile.name}</h2>
                                                             </div>
                                                             <a class="list-group-item"><i class="fa fa-user fa-fw"></i>
                                                                 {$Profile.work_title}</a>
@@ -269,9 +269,9 @@
                                                                             <div class="form-group">
                                                                                 <label class="col-md-4 control-label">姓名</label>
                                                                                 <div class="col-md-8"><input type="text"
-                                                                                                             name="fullname"
+                                                                                                             name="name"
                                                                                                              class="form-control"
-                                                                                                             value="{$Profile.fullname}">
+                                                                                                             value="{$Profile.name}">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group">

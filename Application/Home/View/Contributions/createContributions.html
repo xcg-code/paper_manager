@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | User Profile</title>
+	<title>投稿审批</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -52,7 +52,6 @@
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<li class="dropdown user" id="header-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<img alt="" src="__ROOT__/{$Think.session.pic_path}" />
 						<span class="username">{$Think.session.fullname}</span>
 						<i class="fa fa-angle-down"></i>
 					</a>
@@ -157,9 +156,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">我收藏的科研成果</h3>
+										<h3 class="content-title pull-left">创建论文投稿审批</h3>
 									</div>
-									<div class="description">查看，检索</div>
+									<div class="description">创建论文投稿审批</div>
 								</div>
 							</div>
 						</div>
@@ -167,92 +166,55 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<div class="box">
+								<!-- BOX -->
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>我收藏的科研成果</h4>
-										<div class="tools hidden-xs">
-											<a href="#box-config" data-toggle="modal" class="config">
-												<i class="fa fa-cog"></i>
-											</a>
-											<a href="javascript:;" class="reload">
-												<i class="fa fa-refresh"></i>
-											</a>
-											<a href="javascript:;" class="collapse">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a href="javascript:;" class="remove">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
+										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">创建论文投稿审批</span></h4>
 									</div>
 									<div class="box-body">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="list-group">
-													<div class="list-group-item profile-details">
-														<h4>成果类别</h4>
-													</div>
-
-													<a href="__URL__/my_achievement/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.All}</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
-													<a href="__URL__/my_achievement/achi_type/JournalPaper/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文
-													</a>
-													<a href="__URL__/my_achievement/achi_type/ConferencePaper/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文
-													</a>
-													<a href="__URL__/my_achievement/achi_type/Monograph/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著
-													</a>
-													<a href="__URL__/my_achievement/achi_type/Patent/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利
-													</a>
-													<a href="__URL__/my_achievement/achi_type/ConferenceReport/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告
-													</a>
-													<a href="__URL__/my_achievement/achi_type/Standard/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准
-													</a>
-													<a href="__URL__/my_achievement/achi_type/Software/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权
-													</a>
-													<a href="__URL__/my_achievement/achi_type/Reward/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励
-													</a>
-													<a href="__URL__/my_achievement/achi_type/Train/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Train}</span><i class="fa fa-calendar fa-fw"></i> 人才培养
-													</a>
-													<a href="__URL__/my_achievement/achi_type/ConferenceInvolved/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议
-													</a>
-													<a href="__URL__/my_achievement/achi_type/TechTrans/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.TechTrans}</span><i class="fa fa-calendar fa-fw"></i> 成果技术转移
-													</a>
-													<a href="__URL__/my_achievement/achi_type/OtherAchievement/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.OtherAchievement}</span><i class="fa fa-calendar fa-fw"></i> 其他重要研究成果
-													</a>
-
-													<div class="list-group-item profile-details">
-														<h4>发表年份</h4>
-													</div>
-													<volist name="AchievementYear" id="vo">
-														<a href="__URL__/my_achievement/achi_year/{$vo.year}/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.year}
-														</a>
-													</volist>
-												</div>														
-											</div>
-											<div class="col-md-9">
-												<form action="__URL__/my_achievement{$SearchAction}/user_id/{$user_id}" method="post">
-													<div class="input-group">
-														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
-														<span class="input-group-btn">
-														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
-														</span>
-													</div>
-												</form>
-												
-												<div class="divide-20"></div>
-
-												<volist name="FavInfo" id="vo">
-													<div class="search-results">
-														<h4><a href="{$vo.detail_link}">{$vo.title}</a></h4>
-														<div class="text-primary">{$vo.author}</div>
-														<div class="text-danger">{$vo.institute_name}</div>
-														<div class="text-success">{$vo.publish_time}</div>
-													</div>
-												</volist>
-
-												<div>
-													<ul class='pagination'>
-														{$page}
-													</ul>
+										<div class="tabbable header-tabs">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">审批流程</span></a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="box_tab1">
+													<form class="form-horizontal" action="__URL__/project_create_db" enctype="multipart/form-data" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="box-body">
+																	<div class="alert alert-info"><strong>创建论文审批，表明您为该稿件的作者</strong></div>
+																	<div class="form-group" >
+																		<label class="col-md-2 control-label">稿件类别</label>
+																		<div class="col-md-3"><select class="form-control" name="type">
+																			<option></option>
+																			<option>期刊论文</option>
+																			<option>会议论文</option>
+																			<option>学术专著</option>
+																			<option>会议报告</option>
+																			<option>专利</option>
+																			<option>标准</option>
+																			<option>其他</option>
+																		</select></div>
+																	</div>
+																	<div class="form-group" id="form_three_">
+																		<label class="col-md-2 control-label">稿件名称</label>
+																		<div class="col-md-3"><input type="text" name="name" class="form-control" value=""></div>
+																	</div>
+																	<div class="form-group" id="form_two_">
+																		<label class="col-md-2 control-label">稿件简介</label>
+																		<div class="col-md-9"><textarea name="content" class="form-control"></textarea></div>
+																	</div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 control-label">稿件上传</label>
+                                                                        <input type="file" name="filePath" id="filePath">
+                                                                    </div>
+																</div>
+															</div>
+														</div>
+														<div class="form-actions clearfix">
+															<input type="submit" value="提交一级审批" class="btn btn-primary pull-right">
+														</div>
+													</form>
 												</div>
 											</div>
 										</div>
@@ -270,6 +232,9 @@
 				</div>
 			</div>
 		</div>
+
+		
+
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -304,9 +269,11 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
+		var count=0;
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
+			
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->

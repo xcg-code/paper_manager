@@ -417,16 +417,17 @@ class AchievementController extends Controller {
         }
     }
 
-	//显示添加期刊论文信息页面
-    public function journal_paper_add($id){
-    	parent::is_login();
-    	$this->display();
-    }
+//	//显示添加期刊论文信息页面
+//    public function journal_paper_add(){
+//    	parent::is_login();
+//    	$this->display();
+//    }
 
 	//添加期刊论文数据库操作
-    public function journal_paper_add_db($id){
+    public function journal_paper_add_db(){
     	$JournalModel=D('Journalpaper');
     	$AchievementModel=D('Achievement');
+    	$id=session("uid");
     	if($JournalModel->create()){
     		$JournalModel->user_id=$id;
     		$uniq_id=uniqid();

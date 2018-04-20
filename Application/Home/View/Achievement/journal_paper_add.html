@@ -18,6 +18,12 @@
 	<!-- UNIFORM -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
 	<!-- FONTS -->
+
+	<!--choose data-->
+	<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+	<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jqueryui/style.css">
 </head>
 <body>
 	<!-- HEADER -->
@@ -52,7 +58,6 @@
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="__ROOT__/{$Think.session.pic_path}" />
 							<span class="username">{$Think.session.fullname}</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
@@ -179,7 +184,7 @@
 										  </ul>
 										  <div class="tab-content">
 											 <div class="tab-pane fade in active" id="box_tab1">
-												<form class="form-horizontal" action="__URL__/journal_paper_add_db/id/{$Think.session.uid}" method="post">
+												<form class="form-horizontal" action="__MODULE__/JournalPaper/journal_paper_add_db" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																	<div class="box-body">
@@ -218,8 +223,8 @@
 																		   <div class="col-md-8"><input type="text" name="journal_name" class="form-control" value=""></div>
 																		</div>
 																		<div class="form-group">
-																		  <label class="col-md-2 control-label">发表日期(*)</label> 
-																		   <div class="col-md-8"><input type="date" name="publish_date" class="form-control" value=""></div>
+																		  <label class="col-md-2 control-label">发表日期(*)</label>
+																		   <div class="col-md-2"><input type="text" id="publish_date" name="publish_date" class="form-control" value=""></div>
 																		</div>
 																		<div class="form-group">
 																		  <label class="col-md-2 control-label">DOI</label> 
@@ -343,6 +348,15 @@
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
+	</script>
+	<script>
+        $(function () {
+            $("#publish_date").datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#publish_date").datepicker("option", "dateFormat", "yy-mm-dd");
+        });
 	</script>
 	<!-- /JAVASCRIPTS -->
 </body>

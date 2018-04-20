@@ -52,7 +52,7 @@
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="__ROOT__/{$Think.session.pic_path}" />
+							<!--<img alt="" src="__ROOT__/{$Think.session.pic_path}" />-->
 							<span class="username">{$Think.session.fullname}</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
@@ -188,7 +188,7 @@
 									<div class="box-body">
 										<div class="row">
 											<div class="col-md-3">
-												<a class="btn btn-primary btn-icon input-block-level" href="__URL__/journal_paper_add/id/{$Think.session.uid}">
+												<a class="btn btn-primary btn-icon input-block-level" href="__URL__/journal_paper_add">
 													<i class="fa fa-book fa-2x"></i>
 													<div>期刊论文</div>
 												</a>
@@ -236,33 +236,9 @@
 												</a>
 											</div>
 											<div class="col-md-3">
-												<a class="btn btn-primary btn-icon input-block-level" href="javascript:void(0);">
-													<i class="fa fa-book fa-2x"></i>
-													<div>人才培养</div>
-												</a>
-											</div>
-											<div class="col-md-3">
 												<a class="btn btn-primary btn-icon input-block-level" href="__URL__/conference_involved_add">
 													<i class="fa fa-book fa-2x"></i>
 													<div>举办或参加学术会议</div>
-												</a>
-											</div>
-											<div class="col-md-3">
-												<a class="btn btn-primary btn-icon input-block-level" href="javascript:void(0);">
-													<i class="fa fa-book fa-2x"></i>
-													<div>成果技术转移</div>
-												</a>
-											</div>
-											<div class="col-md-3">
-												<a class="btn btn-primary btn-icon input-block-level" href="javascript:void(0);">
-													<i class="fa fa-book fa-2x"></i>
-													<div>其他重要研究成果</div>
-												</a>
-											</div>
-											<div class="col-md-3">
-												<a class="btn btn-danger btn-icon input-block-level" href="__ROOT__/index.php/Home/Excel/add_achi">
-													<i class="fa fa-book fa-2x"></i>
-													<div>批量导入</div>
 												</a>
 											</div>
 										</div>

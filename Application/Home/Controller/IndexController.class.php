@@ -43,20 +43,20 @@
 			session_destroy();
 			session_start();
 			$login = D('User');
-			$uname = I('Post.username');
+			$user_number = I('Post.userNumber');
 			$pwd = md5(I('Post.password'));
 			$condition = array(
-				'username' => $uname,
+				'username' => $user_number,
 				'password' => $pwd
 			);
 			$data = $login->where($condition)->find();
 			if ($data) {
 				$_SESSION['user']=$data;
 				$_SESSION['uid']= $data[id];
-				$_SESSION['fullname']=$data[fullname];
-				if($data[position]==0){
+				$_SESSION['name']=$data[name];
+				if($data[position]==1){//教师角色
 					$_SESSION['sidebar_path']="./Public/tpl/navbar.html";
-				}else{
+				}else if($data[position]==2){//学生角色
 					$_SESSION['sidebar_path']="./Public/tpl/navbar2.html";
 				}
 				$this->redirect('/Home/Profile/profile');
