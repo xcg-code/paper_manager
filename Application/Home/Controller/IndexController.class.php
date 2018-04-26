@@ -8,7 +8,7 @@
 	{
 		public function index($type = "login")
 		{
-			if($_SESSION['uid']!=null){
+			if ($_SESSION['uid'] != null) {
 				$this->redirect('/Home/Profile/profile');
 				return;
 			}
@@ -43,21 +43,24 @@
 			session_destroy();
 			session_start();
 			$login = D('User');
-			$user_number = I('Post.userNumber');
-			$pwd = md5(I('Post.password'));
+			$user_number = $_POST["userNumber"];
+			$pwd = md5($_POST["password"]);
 			$condition = array(
-				'username' => $user_number,
+				'user_number' => $user_number,
 				'password' => $pwd
 			);
 			$data = $login->where($condition)->find();
 			if ($data) {
-				$_SESSION['user']=$data;
-				$_SESSION['uid']= $data[id];
-				$_SESSION['name']=$data[name];
-				if($data[position]==1){//教师角色
-					$_SESSION['sidebar_path']="./Public/tpl/navbar.html";
-				}else if($data[position]==2){//学生角色
-					$_SESSION['sidebar_path']="./Public/tpl/navbar2.html";
+				session('user', $data);
+				session('uid', $data['id']);
+				session('userNum', $data['user_number']);
+				session('name', $data['user_name']);
+				if ($data['position'] == 0) {//管理员角色
+					session('sidebar_path', "./Public/tpl/navbar.html");
+				} else if ($data['position'] == 1) {//教师角色
+					session('sidebar_path', "./Public/tpl/navbar.html");
+				} else if ($data['position'] == 2) {//学生角色
+					session('sidebar_path', "./Public/tpl/navbar2.html");
 				}
 				$this->redirect('/Home/Profile/profile');
 			} else {
