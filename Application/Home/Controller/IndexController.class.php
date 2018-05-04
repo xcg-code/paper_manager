@@ -56,7 +56,7 @@
 				session('userNum', $data['user_number']);
 				session('name', $data['user_name']);
 				if ($data['position'] == 0) {//管理员角色
-					session('sidebar_path', "./Public/tpl/navbar.html");
+					session('sidebar_path', "./Public/tpl/navbar3.html");
 				} else if ($data['position'] == 1) {//教师角色
 					session('sidebar_path', "./Public/tpl/navbar.html");
 				} else if ($data['position'] == 2) {//学生角色

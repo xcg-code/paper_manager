@@ -24,13 +24,13 @@
 				if ($filePath != "") {
 					$contribution->filePath = $filePath;
 				}
-				$UserModel=M("User");
-				$condition['user_number']=$contribution->user_number;
-				$approval_first=$UserModel->where($condition)->getField('teacher_id');
-				$contribution->approval_first=$approval_first;
-				$condition2['position']=0;
-				$approval_second=$UserModel->where($condition2)->getField('user_number');
-				$contribution->approval_second=$approval_second;
+				$UserModel = M("User");
+				$condition['user_number'] = $contribution->user_number;
+				$approval_first = $UserModel->where($condition)->getField('teacher_id');
+				$contribution->approval_first = $approval_first;
+				$condition2['position'] = 0;
+				$approval_second = $UserModel->where($condition2)->getField('user_number');
+				$contribution->approval_second = $approval_second;
 				$result = $contribution->add();
 				if ($result) {
 					$this->redirect('/Home/Contributions/myContributions');
@@ -46,7 +46,7 @@
 		{
 			$upload = new Upload();// 实例化上传类
 			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
-			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx','rar','zip','7z');// 设置附件上传类型
+			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx', 'rar', 'zip', '7z');// 设置附件上传类型
 			$upload->rootPath = './Uploads/'; // 设置附件上传根目录,
 			$upload->savePath = 'Contributions/'; // 设置附件上传（子）目录
 			$upload->saveName = array('uniqid', '');
@@ -113,19 +113,157 @@
 		{
 			parent::is_login();
 			$contributions = M('Contributions');
-			$list = $contributions->join('INNER JOIN think_user ON think_contributions.user_number=think_user.user_number')->where("approval_first='%s'", session('userNum'))->order('time desc')->select();
+			$condition['approval_first'] = session('userNum');
+			$condition['status'] = 0;
+			$list = $contributions->join('INNER JOIN think_user ON think_contributions.user_number=think_user.user_number')
+				->where($condition)
+				->Field('think_contributions.*,think_user.*,think_contributions.id as cid')
+				->order('time desc')
+				->select();
+			$this->assign("list", $list);
+			$this->display();
+		}
+		public function approval_process_second()
+		{
+			parent::is_login();
+			$contributions = M('Contributions');
+//			$condition['approval_second'] = session('userNum');
+			$condition['status'] = 1;
+			$list = $contributions->join('INNER JOIN think_user ON think_contributions.user_number=think_user.user_number')
+				->where($condition)
+				->Field('think_contributions.*,think_user.*,think_contributions.id as cid')
+				->order('time desc')
+				->select();
 			$this->assign("list", $list);
 			$this->display();
 		}
 
-		public function approval_process_detail($con_id){
+		//审批详情
+		public function approval_process_detail($con_id)
+		{
 			parent::is_login();
-			$ConModel=M('Contributions');
-			$Condition['think_contributions.id']=$con_id;
-			$con=$ConModel->join('INNER JOIN think_user ON think_contributions.user_number=think_user.user_number')->where($Condition)->find();
-			$this->assign("con",$con);
-			$this->display();
+			$this->getFeedback($con_id);
+//			$this->display();
 		}
 
+		public function detail($con_id)
+		{
+			$ConModel = M('Contributions');
+			$Condition['think_contributions.id'] = $con_id;
+			$con = $ConModel->join('INNER JOIN think_user ON think_contributions.user_number=think_user.user_number')
+				->where($Condition)
+				->Field('think_contributions.*,think_user.*,think_contributions.id as cid')
+				->find();
+			$this->assign("con", $con);
+		}
+
+		public function downloadFile($con_id)
+		{
+			parent::is_login();
+			if ($con_id == '') {
+				$this->ajaxReturn('下载失败');
+				return;
+			}
+			$ConModel = M('Contributions');
+			$condition['id'] = $con_id;
+			$url = $ConModel->where($condition)->getField("filePath");
+			$FileModel = M('File');
+			$condition2['path'] = $url;
+			$file = $FileModel->where($condition2)->find();
+			if ($file == false) {
+				$this->ajaxReturn('文件未找到!');
+			} else {
+				$name = $file['name'];
+				$fileName = urlencode($name);
+				$filePath = './' . $file['path'];
+				import('ORG.Net.Http');
+				$http = new \Org\Net\Http;
+				$http->download($filePath, $fileName);
+			}
+		}
+
+		//审批反馈
+		public function approval_process_feedback($con_id)
+		{
+			parent::is_login();
+			$this->getFeedback($con_id);
+		}
+
+		public function feedback($id)
+		{
+			$status = $_POST['result'];
+			$feedback_content = $_POST['feedback_content'];
+//			echo "id=".$id." status=".$status." content=".$feedback_content;
+			$FeedModel = D('Feedback');
+			$ConModel = M('Contributions');
+			$UserModel = M('User');
+			$stuNum = $ConModel->where('id="%d"', $id)->getField('user_number');
+			$teacher_id = $UserModel->where('user_number="%d"', $stuNum)->getField("teacher_id");
+			$admin_id = $UserModel->where('position=0')->getField('user_number');
+			if ($FeedModel->create()) {
+				$FeedModel->teacher_number = session('userNum');
+				$FeedModel->affair_type = 'Contributions';
+				$FeedModel->affair_id = $id;
+				$FeedModel->feedback_content = $feedback_content;
+				$FeedModel->time = date("Y-m-d H:i:s");
+				if($status==1||$status==2){
+					$FeedModel->level=1;
+				}else{
+					$FeedModel->level=2;
+				}
+				$result = $FeedModel->add();
+				if ($result) {
+					$condition['id'] = $id;
+					if ($teacher_id == $admin_id && $status == 1) {//如果导师是admin则直接无需二审
+						$ConModel->where($condition)->setField('status', 3);
+					} else {
+						$ConModel->where($condition)->setField('status', $status);
+					}
+					$this->redirect('/Home/Contributions/approval_process');
+				} else {
+					$this->error('提交数据库错误');
+				}
+			} else {
+				$this->error('数据库错误!');
+			}
+		}
+		public function getTeacherByConId($con_id){
+			$UserModel = M('User');
+			$ConModel=M('Contributions');
+			$stuNum = $ConModel->where('id="%d"', $con_id)->getField('user_number');
+			$teacher_id = $UserModel->where('user_number="%d"', $stuNum)->getField("teacher_id");
+			$teacher_name=$UserModel->where('user_number=%d',$teacher_id)->getField('user_name');
+			return $teacher_name;
+		}
+
+		public function getFeedback($id)
+		{
+			$this->detail($id);
+			$FeedbackModel=M('Feedback');
+			$condition['affair_type']='Contributions';
+			$condition['affair_id']=$id;
+			$con=$this->getContributionsById($id);
+			if($con['status']==1||$con['status']==2){
+				$condition['level']=1;
+			}else{
+				$condition['level']=2;
+			}
+			$feedback=$FeedbackModel->where($condition)->find();
+			$this->assign("feedback",$feedback);
+			$teacher=$this->getTeacherByConId($id);
+			$this->assign("teacher",$teacher);
+			$this->display();
+
+		}
+		public function getContributionsById($id){
+			$ContributionsModel=M("Contributions");
+			$condition['id']=$id;
+			$con=$ContributionsModel->where($condition)->find();
+			return $con;
+		}
+		//论文投递记录
+		public function deliver_record($id){
+
+		}
 
 	}

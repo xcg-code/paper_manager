@@ -156,7 +156,7 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">我的事务审批</h3>
+										<h3 class="content-title pull-left">学生投稿审批</h3>
 									</div>
 									<div class="description">查看学生投稿信息,回复相关结果</div>
 								</div>
@@ -213,16 +213,28 @@
 																				<td>稿件简介</td>
 																				<td>{$con.content}</td>
 																			</tr>
+																			<if condition="$con.status eq 1">
+																				<tr>
+																					<td>一审教师</td>
+																					<td>{$teacher}</td>
+																				</tr>
+																				<tr>
+																					<td>一审意见</td>
+																					<td>{$feedback.feedback_content}</td>
+																				</tr>
+																			</if>
 																			<tr>
 																				<td>稿件查看</td>
 																				<td>
-																					<button type="button" class="btn btn-primary" onclick="window.location.href=''">下载</button>
+                                                                                    <form action="__URL__/downloadFile/con_id/{$con.cid}" method="get">
+                                                                                        <button type="submit" class="btn btn-xs btn-success">下载</button>
+                                                                                    </form>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>操作</td>
 																				<td>
-																					<button type="button" class="btn btn-primary" onclick="window.location.href=''">处理</button>
+																					<button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/approval_process_feedback/con_id/{$con.cid}'">处理</button>
 																				</td>
 																			</tr>
 																			</tbody>
@@ -246,7 +258,7 @@
 															
 														</div>
 														<div class="form-actions clearfix"> 
-														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">返回科研详情页</button>
+														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/approval_process_second'">返回审批列表</button>
 															
 														</div>
 													</div>

@@ -126,24 +126,6 @@
     <!-- /SIDEBAR -->
     <div id="main-content">
         <!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-        <div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Box Settings</h4>
-                    </div>
-                    <div class="modal-body">
-                        Here goes box setting content.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
         <div class="container">
             <div class="row">
@@ -161,103 +143,82 @@
                                 </ul>
                                 <!-- /BREADCRUMBS -->
                                 <div class="clearfix">
-                                    <h3 class="content-title pull-left">我的投稿</h3>
+                                    <h3 class="content-title pull-left">审批详情</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- /PAGE HEADER -->
                     <!-- USER PROFILE -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- BOX -->
-                            <div class="box border">
-                                <div class="box-title">
-                                    <h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">已提交投稿</span></h4>
-                                </div>
-                                <div class="box-body">
-                                    <div class="tabbable header-tabs">
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#box_tab1" data-toggle="tab"><i
-                                                    class="fa fa-calendar-o"></i> <span
-                                                    class="hidden-inline-mobile">控制台</span></a></li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade in active" id="box_tab1">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="box-body">
-                                                            <div class="box border blue">
-                                                                <div class="box-body">
-                                                                    <table class="table table-striped">
-                                                                        <thead>
-                                                                        <tr>
-                                                                            <th>投稿类别</th>
-                                                                            <th>投稿名称</th>
-                                                                            <th>投稿人</th>
-                                                                            <th>申请时间</th>
-                                                                            <th>审核状态</th>
-                                                                            <th>操作</th>
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                        <volist name="list" id="con">
-                                                                            <tr>
-                                                                                <td>{$con.type}</td>
-                                                                                <td>{$con.name}</td>
-                                                                                <td>{$userName}</td>
-                                                                                <td>{$con.time}</td>
-                                                                                <td>
-                                                                                    <if condition="$con.status eq 0 ">
-                                                                                        待审核
-                                                                                        <elseif condition="$con.status eq 1 "/>
-                                                                                        已通过一审,待二审
-                                                                                        <elseif condition="$con.status eq 2 "/>
-                                                                                        未通过一审
-                                                                                        <elseif condition="$con.status eq 3 "/>
-                                                                                        已通过二审
-                                                                                        <else/>
-                                                                                        未通过二审
-                                                                                    </if>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <if condition="$con.status eq 0 ">
-                                                                                        <button type="button"
-                                                                                                class="btn btn-xs btn-success"
-                                                                                                onclick="window.location.href='__URL__/con_delete/id/{$con.id}'">
-                                                                                            撤销
-                                                                                        </button>
-                                                                                        <else/>
-                                                                                        <button type="button"
-                                                                                                class="btn btn-xs btn-success"
-                                                                                                onclick="window.location.href='__URL__/getFeedback/id/{$con.id}'">
-                                                                                            查看详情
-                                                                                        </button>
-                                                                                    </if>
-                                                                                </td>
-
-                                                                            </tr>
-                                                                        </volist>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-md-12">
+                        <!-- BOX -->
+                        <div class="box border">
+                            <div class="box-title">
+                                <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">稿件审批详情</span></h4>
+                            </div>
+                            <div>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                        <tr>
+                                            <th align="left">属性</th>
+                                            <th align="left">描述</th>
+                                        </tr>
+                                        <tr>
+                                            <td>学号</td>
+                                            <td>{$con.user_number}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>姓名</td>
+                                            <td>{$con.user_name}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>稿件类型</td>
+                                            <td>{$con.type}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>稿件名称</td>
+                                            <td>{$con.name}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>稿件审批状态</td>
+                                            <td>
+                                                <if condition="$con.status eq 1 ">
+                                                已通过一审,待二审
+                                                <elseif condition="$con.status eq 2 "/>
+                                                未通过一审
+                                                <elseif condition="$con.status eq 3 "/>
+                                                已通过二审
+                                                <else/>
+                                                未通过二审
+                                                </if>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>审批意见</td>
+                                            <td>{$feedback.feedback_content}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>审批时间</td>
+                                            <td>{$feedback.time}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                             </div>
                         </div>
+                        <div class="form-actions clearfix">
+                            <if condition="$con.status eq 3 ">
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/deliver_record/id/$feedback.affair_id'">
+                                    进入论文投递流程
+                                </button>
+                                <else/>
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/myContributions'">
+                                    返回
+                                </button>
+                            </if>
+                        </div>
+                        <!-- /BOX -->
                     </div>
 
-                    <div class="footer-tools">
-							<span class="go-top">
-								<i class="fa fa-chevron-up"></i> Top
-							</span>
-                    </div>
                 </div><!-- /CONTENT-->
             </div>
         </div>
@@ -298,8 +259,8 @@
 <!-- CUSTOM SCRIPT -->
 <script src="__PUBLIC__/js/script.js"></script>
 <script>
-    var count = 0;
-    jQuery(document).ready(function () {
+    var count=0;
+    jQuery(document).ready(function() {
         App.setPage("user_profile");  //Set current page
         App.init(); //Initialise plugins and elements
     });
