@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>我的投稿</title>
+    <title>稿件发表</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -161,8 +161,9 @@
                                 </ul>
                                 <!-- /BREADCRUMBS -->
                                 <div class="clearfix">
-                                    <h3 class="content-title pull-left">我的投稿</h3>
+                                    <h3 class="content-title pull-left">稿件发表过程记录</h3>
                                 </div>
+                                <div class="description">记录已投递稿件的发表过程</div>
                             </div>
                         </div>
                     </div>
@@ -173,7 +174,7 @@
                             <!-- BOX -->
                             <div class="box border">
                                 <div class="box-title">
-                                    <h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">已提交投稿</span></h4>
+                                    <h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">已投递稿件</span></h4>
                                 </div>
                                 <div class="box-body">
                                     <div class="tabbable header-tabs">
@@ -195,8 +196,6 @@
                                                                             <th>投稿类别</th>
                                                                             <th>投稿名称</th>
                                                                             <th>投稿人</th>
-                                                                            <th>申请时间</th>
-                                                                            <th>审核状态</th>
                                                                             <th>操作</th>
                                                                         </tr>
                                                                         </thead>
@@ -206,34 +205,12 @@
                                                                                 <td>{$con.type}</td>
                                                                                 <td>{$con.name}</td>
                                                                                 <td>{$userName}</td>
-                                                                                <td>{$con.time}</td>
                                                                                 <td>
-                                                                                    <if condition="$con.status eq 0 ">
-                                                                                        待审核
-                                                                                        <elseif condition="$con.status eq 1 "/>
-                                                                                        已通过一审,待二审
-                                                                                        <elseif condition="$con.status eq 2 "/>
-                                                                                        未通过一审
-                                                                                        <elseif condition="$con.status eq 3 "/>
-                                                                                        已通过二审
-                                                                                        <elseif condition="$con.status eq 4"/>
-                                                                                        未通过二审
-                                                                                    </if>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <if condition="$con.status eq 0 ">
-                                                                                        <button type="button"
-                                                                                                class="btn btn-xs btn-success"
-                                                                                                onclick="window.location.href='__URL__/con_delete/id/{$con.id}'">
-                                                                                            撤销
-                                                                                        </button>
-                                                                                        <else/>
-                                                                                        <button type="button"
-                                                                                                class="btn btn-xs btn-success"
-                                                                                                onclick="window.location.href='__URL__/getFeedback/id/{$con.id}'">
-                                                                                            查看详情
-                                                                                        </button>
-                                                                                    </if>
+                                                                                    <button type="button"
+                                                                                            class="btn btn-xs btn-success"
+                                                                                            onclick="window.location.href='__URL__/deliver_record/id/{$con.id}'">
+                                                                                        进度记录
+                                                                                    </button>
                                                                                 </td>
 
                                                                             </tr>

@@ -2,6 +2,7 @@
 
 	namespace Home\Controller;
 
+	use Org\Util\Date;
 	use Think\Controller;
 	use Think\Upload;
 
@@ -20,9 +21,9 @@
 			if ($contribution->create()) {
 				$contribution->user_number = session("userNum");
 				$contribution->time = date("Y-m-d H:i:s");
-				$filePath = $this->uploadFile();
-				if ($filePath != "") {
-					$contribution->filePath = $filePath;
+				$file_id = $this->uploadFile();
+				if ($file_id != 0) {
+					$contribution->file_id = $file_id;
 				}
 				$UserModel = M("User");
 				$condition['user_number'] = $contribution->user_number;
@@ -42,7 +43,7 @@
 			}
 		}
 
-		public function uploadFile()
+		public function uploadFile($id = '')
 		{
 			$upload = new Upload();// 实例化上传类
 			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
@@ -51,25 +52,30 @@
 			$upload->savePath = 'Contributions/'; // 设置附件上传（子）目录
 			$upload->saveName = array('uniqid', '');
 			$upload->autoSub = false;
-			$info = $upload->uploadOne($_FILES['filePath']);
-			$baseURL = "";
-			// 上传文件
-			if (!$info) {// 上传错误提示错误信息
-				$this->error($upload->getError());
-			} else {// 上传成功,保存文件信息
-				$FileInfo['name'] = $info['name'];
-				$FileInfo['path'] = 'Uploads/' . $info['savepath'] . $info['savename'];
-				$FileInfo['upload_time'] = date("Y-m-d H:i:s");
-				$FileInfo['user_number'] = session('userNum');
-				$FileInfo['type'] = 'Contributions';
-				$FileModel = M('File');
-				$Result = $FileModel->add($FileInfo);
-				if (!$Result) {
-					$this->error('文档上传失败');
+			$file_id = "";
+			if ($_FILES['filePath']['name']) {
+				$info = $upload->uploadOne($_FILES['filePath']);
+				// 上传文件
+				if (!$info) {// 上传错误提示错误信息
+					$this->error($upload->getError());
+				} else {// 上传成功,保存文件信息
+					if ($id != '') {
+						$FileInfo['achievement_id'] = $id;
+					}
+					$FileInfo['name'] = $info['name'];
+					$FileInfo['path'] = 'Uploads/' . $info['savepath'] . $info['savename'];
+					$FileInfo['upload_time'] = date("Y-m-d H:i:s");
+					$FileInfo['user_number'] = session('userNum');
+					$FileInfo['type'] = 'Contributions';
+					$FileModel = M('File');
+					$Result = $FileModel->add($FileInfo);
+					if (!$Result) {
+						$this->error('文档上传失败');
+					}
+					$file_id = $Result;
 				}
-				$baseURL = 'Uploads/' . $info['savepath'] . $info['savename'];
 			}
-			return $baseURL;
+			return $file_id;
 		}
 
 		//我的投稿
@@ -77,7 +83,7 @@
 		{
 			parent::is_login();
 			$contributions = M('Contributions');
-			$list = $contributions->where("user_number='%s'", session('userNum'))->order('time desc')->select();
+			$list = $contributions->where("user_number='%s' and status<5", session('userNum'))->order('time desc')->select();
 			$userName = session('name');
 			$this->assign("list", $list);
 			$this->assign('userName', $userName);
@@ -89,18 +95,19 @@
 		{
 			$conModel = M('Contributions');
 			$Condition['id'] = $id;
-			$path = $conModel->where($Condition)->getField('filePath');
+			$file_id = $conModel->where($Condition)->getField('file_id');
 			$conModel->where($Condition)->delete();
-			$this->file_delete($path);
+			$this->file_delete($file_id);
 			$this->Redirect('Home/Contributions/myContributions');
 		}
 
 		//删除已上传文件操作
-		public function file_delete($path)
+		public function file_delete($file_id)
 		{
 			$FileModel = M('File');
-			$Condition['path'] = $path;
+			$Condition['id'] = $file_id;
 			//删除数据库信息
+			$path = $FileModel->where($Condition)->getField('path');
 			$FileModel->where($Condition)->delete();
 			//物理地址
 			$FilePath = substr(THINK_PATH, 0, -9) . $path;
@@ -123,6 +130,7 @@
 			$this->assign("list", $list);
 			$this->display();
 		}
+
 		public function approval_process_second()
 		{
 			parent::is_login();
@@ -166,9 +174,9 @@
 			}
 			$ConModel = M('Contributions');
 			$condition['id'] = $con_id;
-			$url = $ConModel->where($condition)->getField("filePath");
+			$file_id = $ConModel->where($condition)->getField("file_id");
 			$FileModel = M('File');
-			$condition2['path'] = $url;
+			$condition2['id'] = $file_id;
 			$file = $FileModel->where($condition2)->find();
 			if ($file == false) {
 				$this->ajaxReturn('文件未找到!');
@@ -206,10 +214,10 @@
 				$FeedModel->affair_id = $id;
 				$FeedModel->feedback_content = $feedback_content;
 				$FeedModel->time = date("Y-m-d H:i:s");
-				if($status==1||$status==2){
-					$FeedModel->level=1;
-				}else{
-					$FeedModel->level=2;
+				if ($status == 1 || $status == 2) {
+					$FeedModel->level = 1;
+				} else {
+					$FeedModel->level = 2;
 				}
 				$result = $FeedModel->add();
 				if ($result) {
@@ -227,43 +235,139 @@
 				$this->error('数据库错误!');
 			}
 		}
-		public function getTeacherByConId($con_id){
+
+		public function getTeacherByConId($con_id)
+		{
 			$UserModel = M('User');
-			$ConModel=M('Contributions');
+			$ConModel = M('Contributions');
 			$stuNum = $ConModel->where('id="%d"', $con_id)->getField('user_number');
 			$teacher_id = $UserModel->where('user_number="%d"', $stuNum)->getField("teacher_id");
-			$teacher_name=$UserModel->where('user_number=%d',$teacher_id)->getField('user_name');
+			$teacher_name = $UserModel->where('user_number=%d', $teacher_id)->getField('user_name');
 			return $teacher_name;
 		}
 
 		public function getFeedback($id)
 		{
 			$this->detail($id);
-			$FeedbackModel=M('Feedback');
-			$condition['affair_type']='Contributions';
-			$condition['affair_id']=$id;
-			$con=$this->getContributionsById($id);
-			if($con['status']==1||$con['status']==2){
-				$condition['level']=1;
-			}else{
-				$condition['level']=2;
+			$FeedbackModel = M('Feedback');
+			$condition['affair_type'] = 'Contributions';
+			$condition['affair_id'] = $id;
+			$con = $this->getContributionsById($id);
+			if ($con['status'] == 1 || $con['status'] == 2) {
+				$condition['level'] = 1;
+			} else {
+				$condition['level'] = 2;
 			}
-			$feedback=$FeedbackModel->where($condition)->find();
-			$this->assign("feedback",$feedback);
-			$teacher=$this->getTeacherByConId($id);
-			$this->assign("teacher",$teacher);
+			$feedback = $FeedbackModel->where($condition)->find();
+			$this->assign("feedback", $feedback);
+			$teacher = $this->getTeacherByConId($id);
+			$this->assign("teacher", $teacher);
 			$this->display();
 
 		}
-		public function getContributionsById($id){
-			$ContributionsModel=M("Contributions");
-			$condition['id']=$id;
-			$con=$ContributionsModel->where($condition)->find();
+
+		public function getContributionsById($id)
+		{
+			$ContributionsModel = M("Contributions");
+			$condition['id'] = $id;
+			$con = $ContributionsModel->where($condition)->find();
 			return $con;
 		}
-		//论文投递记录
-		public function deliver_record($id){
 
+		//论文投递记录
+		public function deliver_record($id)
+		{
+			$ConModel = M('Contributions');
+			//状态为5表示处于投递状态
+			$ConModel->where('id=%d', $id)->setField("status", 5);
+			$con = $ConModel->where('id=%d', $id)->find();
+			$list = $this->getRecord($id);
+			if ($list) {
+				$this->assign("RecordInfo", $list);
+			}
+			$this->assign("con", $con);
+			$this->display();
+		}
+
+		public function getRecord($id)
+		{
+			$DeliverModel = D('DeliverRecord');
+			$list = $DeliverModel->join('LEFT JOIN think_file ON think_deliver_record.file_id=think_file.id')
+				->where("think_deliver_record.con_id=%d", $id)
+				->Field('think_deliver_record.*,think_file.name')
+				->order('time desc')
+				->select();
+			return $list;
+		}
+
+		//正在投递的稿件
+		public function myDeliver()
+		{
+			parent::is_login();
+			$contributions = M('Contributions');
+			$list = $contributions->where("user_number='%s' and status=5", session('userNum'))->order('time desc')->select();
+			$userName = session('name');
+			$this->assign("list", $list);
+			$this->assign('userName', $userName);
+			$this->display();
+		}
+
+		public function upload_record($id)
+		{
+			$DeliverModel = D('DeliverRecord');
+			if ($DeliverModel->create()) {
+				$DeliverModel->user_number = session(userNum);
+				$DeliverModel->con_id = $id;
+				$DeliverModel->time = date("Y-m-d H:i:s");
+				$file_id = $this->uploadFile($id);
+				if ($file_id != 0) {
+					$DeliverModel->file_id = $file_id;
+				}
+				$result = $DeliverModel->add();
+				if ($result) {
+					$this->redirect('/Home/Contributions/deliver_record/id/' . $id);
+				} else {
+					$this->error('提交数据库错误');
+				}
+			} else {
+				$this->error("创建数据错误");
+			}
+
+		}
+
+		//删除record
+		public function record_delete($id)
+		{
+			$conModel = M('DeliverRecord');
+			$Condition['id'] = $id;
+			$file_id = $conModel->where($Condition)->getField('file_id');
+			$con_id = $conModel->where($Condition)->getField('con_id');
+			$conModel->where($Condition)->delete();
+			if(!empty($file_id)){
+				$this->file_delete($file_id);
+			}
+			$this->Redirect('Home/Contributions/deliver_record/id/' . $con_id);
+		}
+
+		//下载record上传的文件
+		public function download($id)
+		{
+			$conModel = M('DeliverRecord');
+			$Condition['id'] = $id;
+			$file_id = $conModel->where($Condition)->getField('file_id');
+			$FileModel = M('File');
+			$condition2['id'] = $file_id;
+			$file = $FileModel->where($condition2)->find();
+			if ($file == false) {
+				$this->ajaxReturn('文件未找到!');
+			} else {
+				$name = $file['name'];
+				$fileName = urlencode($name);
+				$filePath = './' . $file['path'];
+				import('ORG.Net.Http');
+				$http = new \Org\Net\Http;
+				$http->download($filePath, $fileName);
+			}
 		}
 
 	}

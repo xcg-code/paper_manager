@@ -188,7 +188,7 @@
                                                 未通过一审
                                                 <elseif condition="$con.status eq 3 "/>
                                                 已通过二审
-                                                <else/>
+                                                <elseif condition="$con.status eq 4" />
                                                 未通过二审
                                                 </if>
                                             </td>
@@ -207,7 +207,7 @@
                         </div>
                         <div class="form-actions clearfix">
                             <if condition="$con.status eq 3 ">
-                                <button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/deliver_record/id/$feedback.affair_id'">
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/deliver_record/id/{$con.cid}'">
                                     进入论文投递流程
                                 </button>
                                 <else/>
