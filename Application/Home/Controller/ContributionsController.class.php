@@ -47,7 +47,7 @@
 		{
 			$upload = new Upload();// 实例化上传类
 			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
-			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx', 'rar', 'zip', '7z');// 设置附件上传类型
+			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx', 'rar', 'zip', '7z','txt');// 设置附件上传类型
 			$upload->rootPath = './Uploads/'; // 设置附件上传根目录,
 			$upload->savePath = 'Contributions/'; // 设置附件上传（子）目录
 			$upload->saveName = array('uniqid', '');
@@ -308,10 +308,13 @@
 			$list = $contributions->where("user_number='%s' and status=5", session('userNum'))->order('time desc')->select();
 			$userName = session('name');
 			$this->assign("list", $list);
+			$over_list = $contributions->where("user_number='%s' and status=6", session('userNum'))->order('time desc')->select();
+			$this->assign("over_list", $over_list);
 			$this->assign('userName', $userName);
 			$this->display();
 		}
 
+		//上传记录
 		public function upload_record($id)
 		{
 			$DeliverModel = D('DeliverRecord');
@@ -370,4 +373,38 @@
 			}
 		}
 
+		//成功发表，记录科研成果
+		public function deliver_success($id){
+			$ConModel=M('Contributions');
+			$condition['id']=$id;
+			$ConModel->where($condition)->setField('status', 6);
+			$type=$ConModel->where($condition)->getField('type');
+			if($type=='期刊论文'){
+				$this->Redirect('/Home/Achievement/journal_paper_add');
+			}else if($type=='会议论文'){
+				$this->Redirect('/Home/Achievement/conference_paper_add');
+			}else if($type=='学术专著'){
+				$this->Redirect('/Home/Achievement/monograph_add');
+			}else if($type=='标准'){
+				$this->Redirect('/Home/Achievement/standard_add');
+			}else if($type=='专利'){
+				$this->Redirect('/Home/Achievement/patent_add');
+			}else if($type=='会议报告'){
+				$this->Redirect('/Home/Achievement/conference_report_add');
+			}else{
+				$this->Redirect('/Home/Achievement/achievement_add');
+			}
+		}
+
+		//查看提交记录
+		public  function check_record($id){
+			$ConModel = M('Contributions');
+			$con = $ConModel->where('id=%d', $id)->find();
+			$list = $this->getRecord($id);
+			if ($list) {
+				$this->assign("RecordInfo", $list);
+			}
+			$this->assign("con", $con);
+			$this->display();
+		}
 	}
