@@ -171,14 +171,9 @@ class ProjectController extends Controller {
 		//获取项目类别信息
 		$TypeModel=M('Project_type');
 		$TypeInfo=$TypeModel->select();
-		//获取实验室ID
-		$MemberModel=M('User');
-		$MemberCondi['id']=session('uid');
-		$LabId=$MemberModel->where($MemberCondi)->find();
-		$LabId=$LabId['lab_id'];
 		//获取该实验室下所有人员信息
-		$MemberInfo=$MemberModel->where("lab_id='%s'",$LabId)->select();
-
+		$MemberModel=M('User');
+		$MemberInfo=$MemberModel->select();
 		$this->assign('TypeInfo',$TypeInfo);
 		$this->assign('MemberInfo',$MemberInfo);
 		$this->display();
@@ -186,32 +181,40 @@ class ProjectController extends Controller {
 
 	//创建新的协作科研项目数据库操作()
 	public function project_create_db(){
-		//添加协作项目基本信息
-		$GitModel=M('Git');
-		$GitMember=M('GitMember');
-
-		if($GitModel->create()){
-			//生成协作科研项目ID
-			$uniq_id=uniqid();
-			$MemberID=I('post.member');//获取项目成员ID数组
-			$GitModel->id=$uniq_id;
-			$GitModel->owner=session('fullname');
-			//导入项目成员信息到数据库
-			for($i=0;$i<count($MemberID);$i++){
-				$GitMember->user_id=$MemberID[$i];
-				$GitMember->git_id=$uniq_id;
-				$GitMember->add();
-			}
-
-			$Result=$GitModel->add();//导入协作科研项目信息到数据库
-			if($Result){
-				$this->success('创建协作科研项目成功',__ROOT__.'/index.php/Home/Project/project_git');
-			}else{
-				$this->error($GitModel->getError());
-			}
-		}else{
-			$this->error($GitModel->getError());
+		$ap="";
+		$temp_x=$_POST['member'];
+		for($i=0;$i<count($temp_x);$i++){
+			$ap=$ap.$temp_x[$i].",";
 		}
+		//获取项目成员
+		$member=substr($ap,0,-1);//去除末尾单引号职位分类
+		echo $member,$_POST['type'];
+//		//添加协作项目基本信息
+//		$GitModel=M('Git');
+//		$GitMember=M('GitMember');
+//
+//		if($GitModel->create()){
+//			//生成协作科研项目ID
+//			$uniq_id=uniqid();
+//			$MemberID=I('post.member');//获取项目成员ID数组
+//			$GitModel->id=$uniq_id;
+//			$GitModel->owner=session('fullname');
+//			//导入项目成员信息到数据库
+//			for($i=0;$i<count($MemberID);$i++){
+//				$GitMember->user_id=$MemberID[$i];
+//				$GitMember->git_id=$uniq_id;
+//				$GitMember->add();
+//			}
+//
+//			$Result=$GitModel->add();//导入协作科研项目信息到数据库
+//			if($Result){
+//				$this->success('创建协作科研项目成功',__ROOT__.'/index.php/Home/Project/project_git');
+//			}else{
+//				$this->error($GitModel->getError());
+//			}
+//		}else{
+//			$this->error($GitModel->getError());
+//		}
 	}
 
 	//某协作科研项目详情页面

@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | User Profile</title>
+	<title>科研项目</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -17,6 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- UNIFORM -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+    <!-- SELECT2 -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/select2/select2.min.css" />
 	<!-- FONTS -->
 </head>
 <body>
@@ -203,13 +205,20 @@
 																		<div class="col-md-2"><input type="text" name="money" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
-																	<label class="col-md-2 control-label">项目成员</label> 
-																		<div class="col-md-8">
-																			<volist name='MemberInfo' id='vo'>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="{$vo.id}"> {$vo.fullname} </label>
-																			</volist>	
+																		<label class="col-md-2 control-label" for="e2">项目成员(内部)</label>
+																		<div class="col-md-10">
+																			<select id="e2" class="col-md-12" name="member[]" multiple>
+                                                                                <option></option>
+                                                                                <volist name="MemberInfo" id="info">
+                                                                                    <option value="{$info.user_number}">{$info.user_name}</option>
+                                                                                </volist>
+																			</select>
 																		</div>
 																	</div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 control-label">项目成员(外部)</label>
+                                                                        <div class="col-md-10"><input type="text" name="outer_member" class="form-control">(输入姓名以逗号隔开)</div>
+                                                                    </div>
 																	<div class="form-group" id="form_two_">
 																		<label class="col-md-2 control-label">备注</label> 
 																		<div class="col-md-9"><textarea name="content" class="form-control"></textarea></div>
@@ -219,7 +228,7 @@
 														</div>
 														
 														<div class="form-actions clearfix"> 
-															<input type="submit" value="创建新科研协作项目" class="btn btn-primary pull-right">
+															<input type="submit" value="创建新科研协作项目" class="btn btn-primary pull-right" onclick="return checkselect();">
 														</div>
 													</form>
 												</div>
@@ -252,37 +261,50 @@
 	<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
-	
 
-	<!-- DATE RANGE PICKER -->
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
-	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
-	<!-- BLOCK UI -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- EASY PIE CHART -->
-	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
-	<!-- SPARKLINES -->
-	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
-	<!-- UNIFORM -->
-	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
-	<!-- COOKIE -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
-	<!-- CUSTOM SCRIPT -->
-	<script src="__PUBLIC__/js/script.js"></script>
-	<script>
-		var count=0;
-		jQuery(document).ready(function() {		
-			App.setPage("user_profile");  //Set current page
-			App.init(); //Initialise plugins and elements
-			
-		});
-	</script>
+    <!-- DATE RANGE PICKER -->
+    <script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
+
+    <script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+    <!-- SLIMSCROLL -->
+    <script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+    <!-- BLOCK UI -->
+    <script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+    <!-- TYPEHEAD -->
+    <script type="text/javascript" src="__PUBLIC__/js/typeahead/typeahead.min.js"></script>
+    <!-- AUTOSIZE -->
+    <script type="text/javascript" src="__PUBLIC__/js/autosize/jquery.autosize.min.js"></script>
+    <!-- COUNTABLE -->
+    <script type="text/javascript" src="__PUBLIC__/js/countable/jquery.simplyCountable.min.js"></script>
+    <!-- INPUT MASK -->
+    <script type="text/javascript" src="__PUBLIC__/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+    <!-- FILE UPLOAD -->
+    <script type="text/javascript" src="__PUBLIC__/js/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+    <!-- SELECT2 -->
+    <script type="text/javascript" src="__PUBLIC__/js/select2/select2.min.js"></script>
+    <!-- UNIFORM -->
+    <script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+    <!-- The main application script -->
+    <script src="__PUBLIC__/js/jquery-upload/js/main.js"></script>
+    <!-- COOKIE -->
+    <script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="__PUBLIC__/js/script.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            App.setPage("forms");  //Set current page
+            App.init(); //Initialise plugins and elements
+        });
+    </script>
+    <script language="JavaScript">
+        function checkselect(){
+            Obj= document.getElementById('e2');
+            if (Obj!= -1) {
+                for (i=0;i<ObjID.length; i++)
+                    Obj.options[i].selected = true;
+            }
+        }
+    </script>
 	<!-- /JAVASCRIPTS -->
 </body>
 </html>

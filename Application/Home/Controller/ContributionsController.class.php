@@ -25,18 +25,28 @@
 				if ($file_id != 0) {
 					$contribution->file_id = $file_id;
 				}
-				$UserModel = M("User");
-				$condition['user_number'] = $contribution->user_number;
-				$approval_first = $UserModel->where($condition)->getField('teacher_id');
-				$contribution->approval_first = $approval_first;
-				$condition2['position'] = 0;
-				$approval_second = $UserModel->where($condition2)->getField('user_number');
-				$contribution->approval_second = $approval_second;
-				$result = $contribution->add();
-				if ($result) {
-					$this->redirect('/Home/Contributions/myContributions');
-				} else {
-					$this->error('提交数据库错误');
+				if(session('position')==2){//学生提交稿件
+					$UserModel = M("User");
+					$condition['user_number'] = $contribution->user_number;
+					$approval_first = $UserModel->where($condition)->getField('teacher_id');
+					$contribution->approval_first = $approval_first;
+					$condition2['position'] = 0;
+					$approval_second = $UserModel->where($condition2)->getField('user_number');
+					$contribution->approval_second = $approval_second;
+					$result = $contribution->add();
+					if ($result) {
+						$this->redirect('/Home/Contributions/myContributions');
+					} else {
+						$this->error('提交数据库错误');
+					}
+				}else{//教师提交稿件
+					$contribution->status=5;
+					$result = $contribution->add();
+					if ($result) {
+						$this->redirect('/Home/Contributions/deliver_record/id/'.$result);
+					} else {
+						$this->error('提交数据库错误');
+					}
 				}
 			} else {
 				$this->error('创建失败');
@@ -407,4 +417,6 @@
 			$this->assign("con", $con);
 			$this->display();
 		}
+
+
 	}

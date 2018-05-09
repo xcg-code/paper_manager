@@ -18,9 +18,10 @@
     <!-- DATE RANGE PICKER -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
     <!-- DATA TABLES -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/media/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/media/assets/css/datatables.min.css" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/extras/TableTools/media/css/TableTools.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/media/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/media/assets/css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="__PUBLIC__/js/datatables/extras/TableTools/media/css/TableTools.min.css"/>
     <!-- UNIFORM -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css"/>
     <!-- FONTS -->
@@ -246,37 +247,34 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="box-body">
-                                                            <div class="box border blue">
-                                                                <div class="box-body">
-                                                                    <table id="datatable1" cellpadding="0" cellspacing="0" border="0" class="datatable table table-striped table-bordered table-hover">
-                                                                        <thead>
-                                                                        <tr>
-                                                                            <th>投稿类别</th>
-                                                                            <th>投稿名称</th>
-                                                                            <th>投稿人</th>
-                                                                            <th>操作</th>
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                        <volist name="over_list" id="info">
-                                                                            <tr>
-                                                                                <td>{$info.type}</td>
-                                                                                <td>{$info.name}</td>
-                                                                                <td>{$userName}</td>
-                                                                                <td>
-                                                                                    <button type="button"
-                                                                                            class="btn btn-xs btn-success"
-                                                                                            onclick="window.location.href='__URL__/check_record/id/{$info.id}'">
-                                                                                        查看记录
-                                                                                    </button>
-                                                                                </td>
+                                                            <table id="datatable1"
+                                                                   class="datatable table table-striped table-bordered table-hover">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>投稿类别</th>
+                                                                    <th>投稿名称</th>
+                                                                    <th>投稿人</th>
+                                                                    <th>操作</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <volist name="over_list" id="info">
+                                                                    <tr>
+                                                                        <td>{$info.type}</td>
+                                                                        <td>{$info.name}</td>
+                                                                        <td>{$userName}</td>
+                                                                        <td>
+                                                                            <button type="button"
+                                                                                    class="btn btn-xs btn-success"
+                                                                                    onclick="window.location.href='__URL__/check_record/id/{$info.id}'">
+                                                                                查看记录
+                                                                            </button>
+                                                                        </td>
 
-                                                                            </tr>
-                                                                        </volist>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
+                                                                    </tr>
+                                                                </volist>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -338,7 +336,7 @@
 <!-- CUSTOM SCRIPT -->
 <script src="__PUBLIC__/js/script.js"></script>
 <script>
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         App.setPage("dynamic_table");  //Set current page
         App.init(); //Initialise plugins and elements
     });

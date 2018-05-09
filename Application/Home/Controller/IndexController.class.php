@@ -55,6 +55,7 @@
 				session('uid', $data['id']);
 				session('userNum', $data['user_number']);
 				session('name', $data['user_name']);
+				session('position', $data['position']);
 				if ($data['position'] == 0) {//管理员角色
 					session('sidebar_path', "./Public/tpl/navbar3.html");
 				} else if ($data['position'] == 1) {//教师角色
