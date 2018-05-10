@@ -1,7 +1,99 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Model;
+
 class ProjectController extends Controller {
+	//科研项目协作页面
+	public function project_git(){
+		$ProjectMemberModel = M('ProjectMember');
+		$ProjectInfo = $ProjectMemberModel->join('INNER JOIN think_project ON think_project_member.project_id=think_project.id')
+			->where('user_number=%s', session(userNum))
+			->order('time desc')
+			->select();
+		for($i=0;$i<count($ProjectInfo);$i++){
+			if($ProjectInfo[$i]['status']==0){
+				$ProjectInfo[$i]['status']='进行中';
+			}else{
+				$ProjectInfo[$i]['status']='已完成';
+			}
+		}
+		$this->assign('ProjectInfo', $ProjectInfo);
+		$this->display();
+	}
+
+	//创建新的协作科研项目页面
+	public function project_create(){
+		//获取项目类别信息
+		$TypeModel=M('Project_type');
+		$TypeInfo=$TypeModel->select();
+		//获取实验室所有人员信息
+		$MemberModel=M('User');
+		$MemberInfo=$MemberModel->select();
+		$this->assign('TypeInfo',$TypeInfo);
+		$this->assign('MemberInfo',$MemberInfo);
+		$this->display();
+	}
+
+	//创建新的协作科研项目数据库操作()
+	public function project_create_db(){
+		$ap="";
+		$members=$_POST['member'];
+		$project_num=$_POST['project_num'];
+		$owner=false;
+		for($i=0;$i<count($members);$i++){
+			$ap=$ap.$members[$i].",";
+			if($members[$i]==session('userNum')){
+				$owner=true;
+			}
+		}
+		//获取项目成员
+		$allMember=substr($ap,0,-1);//去除末尾单引号职位分类
+		if($owner==false){
+			$allMember=session('userNum').','.$allMember;
+			$members[count($members)]=session('userNum');
+		}
+		$projectModel=D('Project');
+		$projectMemberModel=M('ProjectMember');
+		$model=new \Think\Model();
+		//开启事务
+		$model->startTrans();
+		$success1=true;
+		$success2=true;
+		if($projectModel->create()){
+			$projectModel->type=$_POST['type'];
+			$projectModel->owner=session('userNum');
+			$projectModel->time=date("Y-m-d H:i:s");
+			$projectModel->inner_member=$allMember;
+			$result=$projectModel->add();
+			if($result){
+				for($i=0;$i<count($members);$i++){
+					$projectMemberModel->user_number=$members[$i];
+					$projectMemberModel->project_id=$result;
+					$projectMemberModel->project_num=$project_num;
+					$ok=$projectMemberModel->add();
+					if(!$ok){
+						$success2=false;
+						break;
+					}
+				}
+			}else{
+				$success1=false;
+				$this->error("提交数据库错误");
+			}
+		}else{
+			$success1=false;
+			$this->error($projectModel->getError());
+		}
+		if($success1&&$success2){
+			$model->commit();
+			$this->success('创建协作科研项目成功',__ROOT__.'/index.php/Home/Project/project_git');
+		}else{
+			$model->rollback();
+			$this->error("创建协作科研项目失败");
+		}
+	}
+
 	public function my_project($project_type=''){
 		parent::is_login();
 		//获取项目类别信息
@@ -21,7 +113,7 @@ class ProjectController extends Controller {
 					break;
 				}
 			}
-			$SearchAction='project_type/'.$project_type;	
+			$SearchAction='project_type/'.$project_type;
 		}
 		//获取搜索栏内容
 		$Search=I('post.search');
@@ -100,7 +192,7 @@ class ProjectController extends Controller {
         $TypeModel=M('Project_type');
         $TypeInfo=$TypeModel->select();
         $this->assign('TypeInfo',$TypeInfo);
-        $this->assign('achi_id',$achi_id);
+        $this->assign('achi_id',$id);
         //获取项目信息
 		$ProjectModel=M('Project');
 		$Condition['id']=$id;
@@ -137,85 +229,6 @@ class ProjectController extends Controller {
         }
 	}
 
-	//科研项目协作页面
-	public function project_git(){
-		$GitMemModel=M('GitMember');
-		$Condition['user_id']=session('uid');
-		$GitId=$GitMemModel->field('git_id')->where($Condition)->select();
-		$GitIdList='';
-		for($i=0;$i<count($GitId);$i++){
-			if($i==count($GitId)-1){
-				$GitIdList.=$GitId[$i]['git_id'];
-				break;
-			}
-			$GitIdList.=$GitId[$i]['git_id'].',';	
-		}
-		//查询已参与的协作科研项目
-		$GitModel=M('Git');
-		$map['id']=array('in',$GitIdList);
-		$GitInfo=$GitModel->where($map)->select();
-		for($i=0;$i<count($GitInfo);$i++){
-			if($GitInfo[$i]['state']==0){
-				$GitInfo[$i]['state']='进行中';
-			}else{
-				$GitInfo[$i]['state']='已完成';
-			}
-			
-		}
-		$this->assign('GitInfo',$GitInfo);
-		$this->display();
-	}
-
-	//创建新的协作科研项目页面
-	public function project_create(){
-		//获取项目类别信息
-		$TypeModel=M('Project_type');
-		$TypeInfo=$TypeModel->select();
-		//获取该实验室下所有人员信息
-		$MemberModel=M('User');
-		$MemberInfo=$MemberModel->select();
-		$this->assign('TypeInfo',$TypeInfo);
-		$this->assign('MemberInfo',$MemberInfo);
-		$this->display();
-	}
-
-	//创建新的协作科研项目数据库操作()
-	public function project_create_db(){
-		$ap="";
-		$temp_x=$_POST['member'];
-		for($i=0;$i<count($temp_x);$i++){
-			$ap=$ap.$temp_x[$i].",";
-		}
-		//获取项目成员
-		$member=substr($ap,0,-1);//去除末尾单引号职位分类
-		echo $member,$_POST['type'];
-//		//添加协作项目基本信息
-//		$GitModel=M('Git');
-//		$GitMember=M('GitMember');
-//
-//		if($GitModel->create()){
-//			//生成协作科研项目ID
-//			$uniq_id=uniqid();
-//			$MemberID=I('post.member');//获取项目成员ID数组
-//			$GitModel->id=$uniq_id;
-//			$GitModel->owner=session('fullname');
-//			//导入项目成员信息到数据库
-//			for($i=0;$i<count($MemberID);$i++){
-//				$GitMember->user_id=$MemberID[$i];
-//				$GitMember->git_id=$uniq_id;
-//				$GitMember->add();
-//			}
-//
-//			$Result=$GitModel->add();//导入协作科研项目信息到数据库
-//			if($Result){
-//				$this->success('创建协作科研项目成功',__ROOT__.'/index.php/Home/Project/project_git');
-//			}else{
-//				$this->error($GitModel->getError());
-//			}
-//		}else{
-//			$this->error($GitModel->getError());
-//		}
-	}
 
 	//某协作科研项目详情页面
 	public function project_git_show($git_id){
@@ -312,7 +325,7 @@ class ProjectController extends Controller {
 			if($Result){
 				$this->success('提交经费申请，等待审核',__ROOT__.'/index.php/Home/Project/git_apply_cost/git_id/'.$git_id);
 			}else{
-				$this->error($ProjectModel->getError());
+				$this->error($ActivityModel->getError());
 			}
 		}else{
 			$this->error($GitModel->getError());
@@ -380,7 +393,7 @@ class ProjectController extends Controller {
     		$ActivityModel->time=date("Y-m-d H:i:s");
     		$ActivityModel->add();
 		}
-		
+
 		if($Result){
 			$this->success('审核操作成功',__ROOT__.'/index.php/Home/Project/git_cost_check/git_id/'.$git_id);
 		}else{
@@ -477,7 +490,7 @@ class ProjectController extends Controller {
     		$ActivityModel->time=date("Y-m-d H:i:s");
     		$ActivityModel->add();
 			$this->success('发布项目组通知成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
-			
+
 		}else{
 			$this->error($GitModel->getError());
 		}
@@ -571,7 +584,7 @@ class ProjectController extends Controller {
 		}else{
 			$this->error($GitModel->getError());
 		}
-	}	
+	}
 
 	//显示我的事务页面
 	public function git_my_bug($git_id){
@@ -702,5 +715,5 @@ class ProjectController extends Controller {
         $objWriter->save('php://output'); //文件通过浏览器下载
         exit;
 
-	}	
+	}
 }

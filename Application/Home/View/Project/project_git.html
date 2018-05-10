@@ -200,15 +200,15 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<volist name="GitInfo" id="vo">
+																				<volist name="ProjectInfo" id="vo">
 																					<tr>
 																						<td>{$vo.type}</td>
 																						<td>{$vo.project_num}</td>
-																						<td>{$vo.name}</td>
+																						<td>{$vo.project_name}</td>
 																						<td>{$vo.owner}</td>
 																						<td>{$vo.institute}</td>
 																						<td>{$vo.money}</td>
-																						<td>{$vo.state}</td>
+																						<td>{$vo.status}</td>
 																						<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/project_git_show/git_id/{$vo.id}'">进入项目</button></td>
 																					</tr>
 																				</volist>
@@ -216,10 +216,11 @@
 																		</table>
 																	</div>
 																</div>
+																<if condition="$Think.session.position neq '2'">
 																	<div class="form-actions clearfix">
 																		<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_create'">创建新的协作科研项目</button>
 																	</div>
-																
+																</if>
 															</div>
 														</div>
 														
