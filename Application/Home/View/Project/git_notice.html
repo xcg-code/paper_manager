@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | User Profile</title>
+	<title>科研项目</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -17,6 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- UNIFORM -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+	<!-- SELECT2 -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/select2/select2.min.css" />
 	<!-- FONTS -->
 </head>
 <body>
@@ -44,10 +46,7 @@
 				</div>
 				<!-- /SIDEBAR COLLAPSE -->
 			</div>
-			<!-- NAVBAR LEFT -->
-			<!--<include file="./Public/tpl/header.html" />-->
-			<!-- /NAVBAR LEFT -->
-			<!-- BEGIN TOP NAVIGATION MENU -->		
+			<!-- BEGIN TOP NAVIGATION MENU -->
 			<ul class="nav navbar-nav pull-right">				
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<li class="dropdown user" id="header-user">
@@ -65,53 +64,6 @@
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
 
-		<!-- TEAM STATUS -->
-		<div class="container team-status" id="team-status">
-			<div id="scrollbar">
-				<div class="handle">
-				</div>
-			</div>
-			<div id="teamslider">
-				<ul class="team-list">
-					<li class="current">
-						<a href="javascript:void(0);">
-							<span class="image">
-								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
-							</span>
-							<span class="title">
-								You
-							</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-success" style="width: 35%">
-									<span class="sr-only">35% Complete (success)</span>
-								</div>
-								<div class="progress-bar progress-bar-warning" style="width: 20%">
-									<span class="sr-only">20% Complete (warning)</span>
-								</div>
-								<div class="progress-bar progress-bar-danger" style="width: 10%">
-									<span class="sr-only">10% Complete (danger)</span>
-								</div>
-							</div>
-							<span class="status">
-								<div class="field">
-									<span class="badge badge-green">6</span> completed
-									<span class="pull-right fa fa-check"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-orange">3</span> in-progress
-									<span class="pull-right fa fa-adjust"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-red">1</span> pending
-									<span class="pull-right fa fa-list-ul"></span>
-								</div>
-							</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
 
@@ -121,25 +73,6 @@
 		<?php include session(sidebar_path); ?>
 		<!-- /SIDEBAR -->
 		<div id="main-content">
-			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Box Settings</h4>
-						</div>
-						<div class="modal-body">
-							Here goes box setting content.
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
@@ -193,21 +126,22 @@
 																			<div class="col-md-8"><textarea name="content" class="form-control"></textarea></div>
 																		</div>
 																		<div class="form-group">
-																	<label class="col-md-2 control-label">通知成员</label> 
-																		<div class="col-md-8">
-																			<volist name='MemberInfo' id='vo'>
-																				<label class="checkbox-inline"> <input type="checkbox" class="uniform" name="member[]" value="{$vo.id}" checked="checked"> {$vo.fullname} </label>
-																			</volist>	
+																			<label class="col-md-2 control-label" for="e2">通知项目成员</label>
+																			<div class="col-md-10">
+																				<select id="e2" class="col-md-12" name="member[]" multiple>
+																					<option></option>
+																					<volist name="MemberInfo" id="info">
+																							<option value="{$info.user_number}">{$info.user_name}</option>
+																					</volist>
+																				</select>
+																			</div>
 																		</div>
-																	</div>
 																	</div>
 																</div>
 															</div>
 														</div>
-														
-														
-														<div class="form-actions clearfix"> 
-															<input type="submit" value="发布通知" class="btn btn-primary pull-right">
+														<div class="form-actions clearfix">
+															<input type="submit" value="发布通知" class="btn btn-primary pull-right" onclick="return checkselect();">
 														</div>
 													</form>
 													
@@ -242,35 +176,49 @@
 	<!-- BOOTSTRAP -->
 	<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
 
-
 	<!-- DATE RANGE PICKER -->
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
 
 	<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
 	<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- EASY PIE CHART -->
-	<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
-	<!-- SPARKLINES -->
-	<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
+	<!-- TYPEHEAD -->
+	<script type="text/javascript" src="__PUBLIC__/js/typeahead/typeahead.min.js"></script>
+	<!-- AUTOSIZE -->
+	<script type="text/javascript" src="__PUBLIC__/js/autosize/jquery.autosize.min.js"></script>
+	<!-- COUNTABLE -->
+	<script type="text/javascript" src="__PUBLIC__/js/countable/jquery.simplyCountable.min.js"></script>
+	<!-- INPUT MASK -->
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+	<!-- FILE UPLOAD -->
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+	<!-- SELECT2 -->
+	<script type="text/javascript" src="__PUBLIC__/js/select2/select2.min.js"></script>
 	<!-- UNIFORM -->
 	<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+	<!-- The main application script -->
+	<script src="__PUBLIC__/js/jquery-upload/js/main.js"></script>
 	<!-- COOKIE -->
 	<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
 	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
-		var count=0;
-		jQuery(document).ready(function() {		
-		App.setPage("user_profile");  //Set current page
-		App.init(); //Initialise plugins and elements
-	});
-</script>
-<!-- /JAVASCRIPTS -->
+        jQuery(document).ready(function() {
+            App.setPage("forms");  //Set current page
+            App.init(); //Initialise plugins and elements
+        });
+	</script>
+	<script language="JavaScript">
+        function checkselect(){
+            Obj= document.getElementById('e2');
+            if (Obj!= -1) {
+                for (i=0;i<ObjID.length; i++)
+                    Obj.options[i].selected = true;
+            }
+        }
+	</script>
+	<!-- /JAVASCRIPTS -->
 </body>
 </html>

@@ -1,719 +1,526 @@
 <?php
-namespace Home\Controller;
-use Think\Controller;
-use Think\Model;
 
-class ProjectController extends Controller {
-	//科研项目协作页面
-	public function project_git(){
-		$ProjectMemberModel = M('ProjectMember');
-		$ProjectInfo = $ProjectMemberModel->join('INNER JOIN think_project ON think_project_member.project_id=think_project.id')
-			->where('user_number=%s', session(userNum))
-			->order('time desc')
-			->select();
-		for($i=0;$i<count($ProjectInfo);$i++){
-			if($ProjectInfo[$i]['status']==0){
-				$ProjectInfo[$i]['status']='进行中';
-			}else{
-				$ProjectInfo[$i]['status']='已完成';
+	namespace Home\Controller;
+
+	use Think\Controller;
+	use Think\Model;
+
+	class ProjectController extends Controller
+	{
+		//科研项目协作页面
+		public function project_git()
+		{
+			$ProjectMemberModel = M('ProjectMember');
+			$ProjectInfo = $ProjectMemberModel->join('INNER JOIN think_project ON think_project_member.project_id=think_project.id')
+				->where('user_number=%d', session(userNum))
+				->order('time desc')
+				->select();
+			for ($i = 0; $i < count($ProjectInfo); $i++) {
+				if ($ProjectInfo[$i]['status'] == 0) {
+					$ProjectInfo[$i]['status'] = '进行中';
+				} else {
+					$ProjectInfo[$i]['status'] = '已完成';
+				}
+			}
+			$this->assign('ProjectInfo', $ProjectInfo);
+			$this->display();
+		}
+
+		//创建新的协作科研项目页面
+		public function project_create()
+		{
+			//获取项目类别信息
+			$TypeModel = M('Project_type');
+			$TypeInfo = $TypeModel->select();
+			//获取实验室所有人员信息
+			$MemberModel = M('User');
+			$MemberInfo = $MemberModel->select();
+			$this->assign('TypeInfo', $TypeInfo);
+			$this->assign('MemberInfo', $MemberInfo);
+			$this->display();
+		}
+
+		//创建新的协作科研项目数据库操作()
+		public function project_create_db()
+		{
+			$ap = "";
+			$members = $_POST['member'];
+			$project_num = $_POST['project_num'];
+			$owner = false;
+			for ($i = 0; $i < count($members); $i++) {
+				$ap = $ap . $members[$i] . ",";
+				if ($members[$i] == session('userNum')) {
+					$owner = true;
+				}
+			}
+			//获取项目成员
+			$allMember = substr($ap, 0, -1);//去除末尾单引号职位分类
+			if ($owner == false) {
+				$allMember = session('userNum') . ',' . $allMember;
+				$members[count($members)] = session('userNum');
+			}
+			$projectModel = D('Project');
+			$projectMemberModel = M('ProjectMember');
+			$model = new \Think\Model();
+			//开启事务
+			$model->startTrans();
+			$success1 = true;
+			$success2 = true;
+			if ($projectModel->create()) {
+				$projectModel->type = $_POST['type'];
+				$projectModel->owner = session('userNum');
+				$projectModel->time = date("Y-m-d H:i:s");
+				$projectModel->inner_member = $allMember;
+				$result = $projectModel->add();
+				if ($result) {
+					for ($i = 0; $i < count($members); $i++) {
+						$projectMemberModel->user_number = $members[$i];
+						$projectMemberModel->project_id = $result;
+						$projectMemberModel->project_num = $project_num;
+						$ok = $projectMemberModel->add();
+						if (!$ok) {
+							$success2 = false;
+							break;
+						}
+					}
+				} else {
+					$success1 = false;
+					$this->error("提交数据库错误");
+				}
+			} else {
+				$success1 = false;
+				$this->error($projectModel->getError());
+			}
+			if ($success1 && $success2) {
+				$model->commit();
+				$this->success('创建协作科研项目成功', __ROOT__ . '/index.php/Home/Project/project_git');
+			} else {
+				$model->rollback();
+				$this->error("创建协作科研项目失败");
 			}
 		}
-		$this->assign('ProjectInfo', $ProjectInfo);
-		$this->display();
-	}
 
-	//创建新的协作科研项目页面
-	public function project_create(){
-		//获取项目类别信息
-		$TypeModel=M('Project_type');
-		$TypeInfo=$TypeModel->select();
-		//获取实验室所有人员信息
-		$MemberModel=M('User');
-		$MemberInfo=$MemberModel->select();
-		$this->assign('TypeInfo',$TypeInfo);
-		$this->assign('MemberInfo',$MemberInfo);
-		$this->display();
-	}
-
-	//创建新的协作科研项目数据库操作()
-	public function project_create_db(){
-		$ap="";
-		$members=$_POST['member'];
-		$project_num=$_POST['project_num'];
-		$owner=false;
-		for($i=0;$i<count($members);$i++){
-			$ap=$ap.$members[$i].",";
-			if($members[$i]==session('userNum')){
-				$owner=true;
+		//某协作科研项目详情页面
+		public function project_git_show($git_id)
+		{
+			//获取项目信息
+			$ProjectModel = M('Project');
+			$condition['id'] = $git_id;
+			$ProjectInfo = $ProjectModel->where($condition)->find();
+			$CountInfo = array();//各种数量数组
+			//判断当前用户是否为项目负责人
+			if (session('userNum') != $ProjectInfo['owner']) {
+				$IsAdmin = 0;//0表示当前用户不是项目负责人
+			} else {
+				$IsAdmin = 1;//0表示当前用户是项目负责人
+				//获取待审核经费申请数量
 			}
+			//获取项目文档数量
+			$DocModel = M('GitDoc');
+			$CountInfo['Doc'] = $DocModel->where("git_id='%s'", $git_id)->count();
+			//获取未读通知数量
+			$NoticeModel = M('GitNotice');
+			$CountInfo['Notice'] = $NoticeModel->where("project_id='%s' and user_number=%d", $git_id, session('userNum'))->count();
+			//获取项目组活动日志
+			$GitModel = M('GitActivity');
+			$ActivityCount = $GitModel->where("git_id='%s'", $git_id)->order('time desc')->count();
+			//分页数据获取
+			$Page = get_page($ActivityCount, 6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+			$show = $Page->show();// 分页显示输出
+			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+			$ActivityInfo = $GitModel->where("git_id='%s'", $git_id)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$this->assign('ProjectInfo', $ProjectInfo);
+			$this->assign('ActivityInfo', $ActivityInfo);
+			$this->assign('IsAdmin', $IsAdmin);
+			$this->assign('page', $show);
+			$this->assign('CountInfo', $CountInfo);
+			$this->display();
 		}
-		//获取项目成员
-		$allMember=substr($ap,0,-1);//去除末尾单引号职位分类
-		if($owner==false){
-			$allMember=session('userNum').','.$allMember;
-			$members[count($members)]=session('userNum');
-		}
-		$projectModel=D('Project');
-		$projectMemberModel=M('ProjectMember');
-		$model=new \Think\Model();
-		//开启事务
-		$model->startTrans();
-		$success1=true;
-		$success2=true;
-		if($projectModel->create()){
-			$projectModel->type=$_POST['type'];
-			$projectModel->owner=session('userNum');
-			$projectModel->time=date("Y-m-d H:i:s");
-			$projectModel->inner_member=$allMember;
-			$result=$projectModel->add();
-			if($result){
-				for($i=0;$i<count($members);$i++){
-					$projectMemberModel->user_number=$members[$i];
-					$projectMemberModel->project_id=$result;
-					$projectMemberModel->project_num=$project_num;
-					$ok=$projectMemberModel->add();
-					if(!$ok){
-						$success2=false;
+
+		//发布通知数据库操作
+		public function git_notice_db($git_id)
+		{
+			//获取消息成员
+			$members = $_POST['member'];
+			$NoticeModel = M('GitNotice');
+			$model = new \Think\Model();
+			$success = true;
+			//开启事务
+			$model->startTrans();
+			if ($NoticeModel->create()) {
+				for ($i = 0; $i < count($members); $i++) {
+					$NoticeModel->project_id = $git_id;
+					$NoticeModel->user_number = $members[$i];
+					$NoticeModel->time = date("Y-m-d H:i:s");
+					$NoticeModel->state = '未读';
+					$NoticeModel->title = I('post.title');
+					$NoticeModel->content = I('post.content');
+					$result = $NoticeModel->add();
+					if (!$result) {
+						$success = false;
 						break;
 					}
 				}
-			}else{
-				$success1=false;
-				$this->error("提交数据库错误");
-			}
-		}else{
-			$success1=false;
-			$this->error($projectModel->getError());
-		}
-		if($success1&&$success2){
-			$model->commit();
-			$this->success('创建协作科研项目成功',__ROOT__.'/index.php/Home/Project/project_git');
-		}else{
-			$model->rollback();
-			$this->error("创建协作科研项目失败");
-		}
-	}
-
-	public function my_project($project_type=''){
-		parent::is_login();
-		//获取项目类别信息
-		$TypeModel=M('Project_type');
-		$TypeInfo=$TypeModel->select();
-		$TypeInfo=get_project_num($TypeInfo);
-		//获取项目总个数
-		$AllCount=get_all_project_num($TypeInfo);
-		//获取检索条件
-		$ProjectModel=M('Project');
-		$Condition['user_id']=session('uid');
-		$SearchAction='';
-		if($project_type!=''){
-			for($i=0;$i<count($TypeInfo);$i++){
-				if($project_type==$TypeInfo[$i]['id']){
-					$Condition['type_name']=$TypeInfo[$i]['type_name'];
-					break;
+				if ($success) {
+					$model->commit();
+					$this->success('发布项目组通知成功', __ROOT__ . '/index.php/Home/Project/project_git_show/git_id/' . $git_id);
+				} else {
+					$model->rollback();
+					$this->error("服务器错误，发布失败!");
 				}
-			}
-			$SearchAction='project_type/'.$project_type;
-		}
-		//获取搜索栏内容
-		$Search=I('post.search');
-        $Condition['project_name|project_num']=array('like','%'.$Search.'%');
-		//获取记录数
-		$ProjectCount=$ProjectModel->where($Condition)->count();
-		//分页数据获取
-        $Page= get_page($ProjectCount,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-        $show= $Page->show();// 分页显示输出
-        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-        $ProjectInfo=$ProjectModel->where($Condition)->limit($Page->firstRow.','.$Page->listRows)->select();
-
-		$this->assign('TypeInfo',$TypeInfo);
-		$this->assign('AllCount',$AllCount);
-		$this->assign('ProjectInfo',$ProjectInfo);
-		$this->assign('SearchAction',$SearchAction);
-		$this->assign('page',$show);// 赋值分页输出
-		$this->display();
-	}
-
-	//显示项目详情页面
-	public function project_show($id,$achi_type='',$achi_year=''){
-		parent::is_login();
-		//获取项目信息
-		$ProjectModel=M('Project');
-		$ConditionPro['id']=$id;
-		$ProjectInfo=$ProjectModel->where($ConditionPro)->find();
-		//获取项目下的科研成果信息
-		$AchievementModel=M('Achievement');
-		$Condition['user_id']=session('uid');
-		//获取项目信息
-		$Condition['achievement_id']=$ProjectInfo['achievement_id'];
-        $SearchAction='';
-        if($achi_type!=''){
-            $Condition['achievement_type']=$achi_type;
-            $SearchAction='achi_type/'.$achi_type;
-        }
-        if($achi_year!=''){
-            $start_date=$achi_year.'-01-01';
-            $end_date=$achi_year.'-12-31';
-            $Condition['publish_time']=array(array('egt',$start_date),array('elt',$end_date));
-            $SearchAction='achi_year/'.$achi_year;
-        }
-        //获取搜索栏内容
-        $Search=I('post.search');
-        $Condition['title']=array('like','%'.$Search.'%');
-        //获取记录数
-        $AchievementYearCount=$AchievementModel->where($Condition)->count();
-        //获取各种科研成果的数目
-        $AchievementCount=get_achievement_count($ProjectInfo['achievement_id']);
-        //获取不同年份科研成果的数量
-        $AchievementYear=get_achievement_year($ProjectInfo['achievement_id']);
-        //分页数据获取
-        $Page= get_page($AchievementYearCount,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-        $show= $Page->show();// 分页显示输出
-        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-        $AchievementInfo=$AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-		//获取作者姓名字符串和详情链接
-		for($i=0;$i<count($AchievementInfo);$i++){
-			$AchievementInfo[$i]['author']=get_author_list($AchievementInfo[$i]['achievement_id']);
-            $AchievementInfo[$i]['detail_link']=get_detail_link($AchievementInfo[$i]);
-		}
-		$this->assign('AchievementInfo',$AchievementInfo);
-		$this->assign('AchievementCount',$AchievementCount);
-        $this->assign('AchievementYear',$AchievementYear);
-        $this->assign('SearchAction',$SearchAction);
-        $this->assign('page',$show);// 赋值分页输出
-		$this->assign('ProjectInfo',$ProjectInfo);
-		$this->display();
-	}
-
-	//显示科研项目编辑页面
-	public function project_edit($id){
-		parent::is_login();
-		//获取项目类别信息
-        $TypeModel=M('Project_type');
-        $TypeInfo=$TypeModel->select();
-        $this->assign('TypeInfo',$TypeInfo);
-        $this->assign('achi_id',$id);
-        //获取项目信息
-		$ProjectModel=M('Project');
-		$Condition['id']=$id;
-		$ProjectInfo=$ProjectModel->where($Condition)->find();
-		$this->assign('ProjectInfo',$ProjectInfo);
-		$this->display();
-	}
-
-	//科研项目编辑数据库操作
-	public function project_edit_db($project_id){
-		$ProjectModel=D('Project');
-        if($ProjectModel->create()){
-            $Condition['id']=$project_id;
-            $Result=$ProjectModel->where($Condition)->save();
-            if($Result){
-                $this->success('修改所属项目信息成功',__ROOT__.'/index.php/Home/Project/project_show/id/'.$project_id);
-            }else{
-                $this->error($ProjectModel->getError());
-            }
-        }else{
-            $this->error($ProjectModel->getError());
-        }
-	}
-
-	//科研项目删除功能
-	public function project_delete($project_id){
-		$ProjectModel=M('Project');
-        $Condition['id']=$project_id;
-        $Result=$ProjectModel->where($Condition)->delete();
-        if($Result){
-            $this->success('删除所属项目信息成功',__ROOT__.'/index.php/Home/Project/my_project');
-        }else{
-            $this->error('删除所属项目信息失败');
-        }
-	}
-
-
-	//某协作科研项目详情页面
-	public function project_git_show($git_id){
-		$CountInfo=array();//各种数量数组
-		$CostModel=M('GitCost');
-		//获取项目信息
-		$ProjectModel=M('Git');
-		$ProjectInfo=$ProjectModel->where("id='%s'",$git_id)->find();
-		//判断当前用户是否为项目负责人
-		if(session('fullname')!=$ProjectInfo['owner']){
-			$IsAdmin=0;//0表示当前用户不是项目负责人
-		}else{
-			$IsAdmin=1;//0表示当前用户是项目负责人
-			//获取待审核经费申请数量
-			$CountInfo['CostCheck']=$CostModel->where('state=0')->count();
-		}
-		//获取我的经费申请未通过数量
-		$CountInfo['CostApply']=$CostModel->where('state=0')->count();
-		//获取项目文档数量
-		$DocModel=M('GitDoc');
-		$CountInfo['Doc']=$DocModel->where("git_id='%s'",$git_id)->count();
-		//获取未读通知数量
-		$NoticeModel=M('GitNotice');
-		$CountInfo['Notice']=$NoticeModel->where("git_id='%s' and user_id=%d",$git_id,session('uid'))->count();
-		//获取未完成事务数量
-		$BugModel=M('GitBug');
-		$CountInfo['Bug']=$BugModel->where("git_id='%s' and receiver_id=%d and state!='%s'",$git_id,session('uid'),'已解决')->count();
-		//获取项目组活动日志
-		$GitModel=M('GitActivity');
-		$ActivityCount=$GitModel->where("git_id='%s'",$git_id)->order('time desc')->count();
-		//分页数据获取
-        $Page= get_page($ActivityCount,6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-        $show= $Page->show();// 分页显示输出
-        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-        $ActivityInfo=$GitModel->where("git_id='%s'",$git_id)->order('time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-		$this->assign('ProjectInfo',$ProjectInfo);
-		$this->assign('ActivityInfo',$ActivityInfo);
-		$this->assign('IsAdmin',$IsAdmin);
-		$this->assign('page',$show);
-		$this->assign('CountInfo',$CountInfo);
-		$this->display();
-	}
-
-	//完成协作科研项目
-	public function  git_finish($git_id){
-		$ProjectModel=M('Git');
-		$ProjectModel->state=1;
-		$Result=$ProjectModel->where("id='%s'",$git_id)->save();
-		if($Result){
-			$this->success('该协作项目已完成',__ROOT__.'/index.php/Home/Project/project_git');
-		}else{
-			$this->error($ProjectModel->getError());
-		}
-	}
-
-	//申请项目开支页面
-	public function git_apply_cost($git_id){
-		//显示申请信息
-		$GitModel=M('GitCost');
-		$Condition['user_id']=session('uid');
-		$Condition['git_id']=$git_id;
-		$CostInfo=$GitModel->where($Condition)->order('time desc')->select();
-		//审核状态显示
-		for($i=0;$i<count($CostInfo);$i++){
-			if($CostInfo[$i]['state']==0){
-				$CostInfo[$i]['state']='待审核';
-			}else if($CostInfo[$i]['state']==1){
-				$CostInfo[$i]['state']='已通过';
-			}else{
-				$CostInfo[$i]['state']='已驳回';
-			}
-		}
-		$this->assign('git_id',$git_id);
-		$this->assign('CostInfo',$CostInfo);
-		$this->display();
-	}
-
-	//申请项目开支数据库操作
-	public function git_apply_cost_db($git_id){
-		$GitModel=M('GitCost');
-		if($GitModel->create()){
-			$GitModel->git_id=$git_id;
-			$GitModel->user_id=session('uid');
-			$GitModel->time=date("Y-m-d");
-			$Result=$GitModel->add();
-			//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='申请项目经费:'.I('post.title');
-    		$ActivityModel->type='申请经费';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
-			if($Result){
-				$this->success('提交经费申请，等待审核',__ROOT__.'/index.php/Home/Project/git_apply_cost/git_id/'.$git_id);
-			}else{
-				$this->error($ActivityModel->getError());
-			}
-		}else{
-			$this->error($GitModel->getError());
-		}
-	}
-
-	//项目开支审核页面
-	public function git_cost_check($git_id){
-		$UserModel=M('User');
-		//获取开支信息
-		$GitModel=M('GitCost');
-		//待审核开支申请
-		$CostCheckInfo=$GitModel->where("git_id='%s' and state=0",$git_id)->select();
-		//已审核开支申请
-		$CostInfo=$GitModel->where("git_id='%s' and state!=0",$git_id)->select();
-		//获取申请人姓名
-		for($i=0;$i<count($CostCheckInfo);$i++){
-			$UserName=$UserModel->where('id=%d',$CostCheckInfo[$i]['user_id'])->find();
-			$CostCheckInfo[$i]['name']=$UserName['fullname'];
-		}
-		for($i=0;$i<count($CostInfo);$i++){
-			$UserName=$UserModel->where('id=%d',$CostInfo[$i]['user_id'])->find();
-			$CostInfo[$i]['name']=$UserName['fullname'];
-			if($CostInfo[$i]['state']==1){
-				$CostInfo[$i]['state']='已通过';
-			}else{
-				$CostInfo[$i]['state']='已驳回';
+			} else {
+				$this->error($NoticeModel->getError());
 			}
 		}
 
-		$this->assign('CostCheckInfo',$CostCheckInfo);
-		$this->assign('CostInfo',$CostInfo);
-		$this->assign('git_id',$git_id);
-		$this->display();
-	}
-
-	//项目开支审核操作
-	public function git_cost_operation($cost_id,$type,$git_id){
-		//获取申请经费信息
-		$CostModel=M('GitCost');
-		$Condi['id']=$cost_id;
-		$CostInfo=$CostModel->where($Condi)->find();
-		//修改状态
-		$GitModel=M('GitCost');
-		if($type=="yes"){
-			$GitModel->state=1;
-			$Result=$GitModel->where("id='%s'",$cost_id)->save();
-			//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='批准项目经费:'.$CostInfo['title'];
-    		$ActivityModel->type='批准经费';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
-		}else if($type=="no"){
-			$GitModel->state=2;
-			$Result=$GitModel->where("id='%s'",$cost_id)->save();
-			//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='驳回项目经费:'.$CostInfo['title'];
-    		$ActivityModel->type='驳回经费';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
+		//显示发布通知页面
+		public function git_notice($git_id)
+		{
+			//获取实验室ID
+			$MemberModel = M('ProjectMember');
+			$condition['project_id'] = $git_id;
+			$MemberInfo = $MemberModel->join('INNER JOIN think_user ON think_project_member.user_number=think_user.user_number')
+				->where($condition)
+				->field('think_project_member.*,think_user.user_name')
+				->select();
+			$this->assign('git_id', $git_id);
+			$this->assign('MemberInfo', $MemberInfo);
+			$this->display();
 		}
 
-		if($Result){
-			$this->success('审核操作成功',__ROOT__.'/index.php/Home/Project/git_cost_check/git_id/'.$git_id);
-		}else{
-			$this->error($GitModel->getError());
+
+		//显示未读通知
+		public function notice_unread($git_id)
+		{
+			$GitModel = M('GitNotice');
+			$Condition['project_id'] = $git_id;
+			$Condition['user_number'] = session('userNum');
+			$Condition['state'] = '未读';
+			$NoticeCount = $GitModel->where($Condition)->count();
+			//分页数据获取
+			$Page = get_page($NoticeCount, 3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
+			$show = $Page->show();// 分页显示输出
+			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+			$NoticeInfo = $GitModel->where($Condition)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$this->assign('git_id', $git_id);
+			$this->assign('NoticeInfo', $NoticeInfo);
+			$this->assign('page', $show);// 赋值分页输出
+			$this->display();
 		}
-	}
 
-	//显示项目文档管理页面
-	public function git_doc($git_id){
-		//获取当前协作项目文档信息
-		$GitModel=M('GitDoc');
-		$DocInfo=$GitModel->where("git_id='%s'",$git_id)->order('upload_time desc')->select();
-		for($i=0;$i<count($DocInfo);$i++){
-			$DocInfo[$i]['path']="Uploads/GitFile/".$DocInfo[$i]['path'];
+		//显示已读通知
+		public function notice_read($git_id)
+		{
+			$GitModel = M('GitNotice');
+			$Condition['project_id'] = $git_id;
+			$Condition['user_number'] = session('userNum');
+			$Condition['state'] = '未读';
+			$NoticeCount = $GitModel->where($Condition)->count();
+			//分页数据获取
+			$Page = get_page($NoticeCount, 3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
+			$show = $Page->show();// 分页显示输出
+			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+			$NoticeInfo = $GitModel->where($Condition)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$this->assign('git_id', $git_id);
+			$this->assign('NoticeInfo', $NoticeInfo);
+			$this->assign('page', $show);// 赋值分页输出
+			$this->display();
 		}
-		$this->assign('DocInfo',$DocInfo);
-		$this->assign('git_id',$git_id);
-		$this->display();
-	}
 
-	//协作项目文件上传
-	public function git_file_upload($git_id){
-		$upload = new \Think\Upload();// 实例化上传类
-    	$upload->maxSize   =     20971520 ;// 设置附件上传大小 20MB
-    	$upload->exts      =     array('pdf','doc','docx','ppt','pptx','xls','xlsx');// 设置附件上传类型
-    	$upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
-    	$upload->savePath  =     './GitFile/'; // 设置附件上传（子）目录
-    	$upload->saveName = array('uniqid','');
-    	$upload->autoSub  = false;
-    	$info   =   $upload->uploadOne($_FILES['main']);
-    	if(!$info) {// 上传错误提示错误信息
-    		$this->error($upload->getError());
-    	}else{// 上传成功
-    		$FileInfo['title']=$info['name'];
-    		$FileInfo['path']=$info['savename'];
-    		$FileInfo['description']=I('post.description');
-    		$FileInfo['upload_time']=date("Y-m-d H:i:s");
-    		$FileInfo['user_id']=session('uid');
-    		$FileInfo['author']=session('fullname');
-    		$FileInfo['git_id']=$git_id;
-    		$FileModel=M('GitDoc');
-    		$Result=$FileModel->add($FileInfo);
-    		//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='上传了新的文档:'.$info['name'];
-    		$ActivityModel->type='上传文档';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
-    		if($Result){
-    			$this->success('文档上传成功',__ROOT__.'/index.php/Home/Project/git_doc/git_id/'.$git_id);
-    		}else{
-    			$this->error('文档上传失败');
-    		}
-    	}
-	}
+		//将某条通知置为已读
+		public function git_notice_read($notice_id)
+		{
+			$GitModel = M('GitNotice');
+			$GitModel->state = '已读';
+			$Condition['id'] = $notice_id;
+			$GitModel->where($Condition)->save();
+		}
 
-	//显示发布通知页面
-	public function git_notice($git_id){
-		//获取实验室ID
-		$MemberModel=M('User');
-		$MemberCondi['id']=session('uid');
-		$LabId=$MemberModel->where($MemberCondi)->find();
-		$LabId=$LabId['lab_id'];
-		//获取该实验室下所有人员信息
-		$MemberInfo=$MemberModel->where("lab_id='%s'",$LabId)->select();
-		$this->assign('git_id',$git_id);
-		$this->assign('MemberInfo',$MemberInfo);
-		$this->display();
-	}
+		//将所有通知置为已读
+		public function git_all_notice_read($git_id)
+		{
+			$GitModel = M('GitNotice');
+			$Condition['git_id'] = $git_id;
+			$Condition['user_id'] = session('uid');
+			$GitModel->state = '已读';
+			$GitModel->where($Condition)->save();
+			$this->success('置所有通知为已读成功');
+		}
 
-	//发布通知数据库操作
-	public function git_notice_db($git_id){
-		$GitModel=M('GitNotice');
-		if($GitModel->create()){
-			$MemberInfo=I('post.member');
-			for($i=0;$i<count($MemberInfo);$i++){
-				$GitModel->user_id=$MemberInfo[$i];
-				$GitModel->name=session('fullname');
-				$GitModel->git_id=$git_id;
-				$GitModel->time=date("Y-m-d H:i:s");
-				$GitModel->state='未读';
-				$GitModel->title=I('post.title');
-				$GitModel->content=I('post.content');
-				$GitModel->add();
+
+		public function my_project($project_type = '')
+		{
+			parent::is_login();
+			//获取项目类别信息
+			$TypeModel = M('Project_type');
+			$TypeInfo = $TypeModel->select();
+			$TypeInfo = get_project_num($TypeInfo);
+			//获取项目总个数
+			$AllCount = get_all_project_num($TypeInfo);
+			//获取检索条件
+			$ProjectModel = M('Project');
+			$Condition['user_id'] = session('uid');
+			$SearchAction = '';
+			if ($project_type != '') {
+				for ($i = 0; $i < count($TypeInfo); $i++) {
+					if ($project_type == $TypeInfo[$i]['id']) {
+						$Condition['type_name'] = $TypeInfo[$i]['type_name'];
+						break;
+					}
+				}
+				$SearchAction = 'project_type/' . $project_type;
 			}
-			//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='发布了新的项目组通知:'.I('post.title');
-    		$ActivityModel->type='发布通知';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
-			$this->success('发布项目组通知成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
+			//获取搜索栏内容
+			$Search = I('post.search');
+			$Condition['project_name|project_num'] = array('like', '%' . $Search . '%');
+			//获取记录数
+			$ProjectCount = $ProjectModel->where($Condition)->count();
+			//分页数据获取
+			$Page = get_page($ProjectCount, 10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+			$show = $Page->show();// 分页显示输出
+			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+			$ProjectInfo = $ProjectModel->where($Condition)->limit($Page->firstRow . ',' . $Page->listRows)->select();
 
-		}else{
-			$this->error($GitModel->getError());
+			$this->assign('TypeInfo', $TypeInfo);
+			$this->assign('AllCount', $AllCount);
+			$this->assign('ProjectInfo', $ProjectInfo);
+			$this->assign('SearchAction', $SearchAction);
+			$this->assign('page', $show);// 赋值分页输出
+			$this->display();
 		}
-	}
 
-	//显示通知查看页面
-	public function git_my_notice($git_id){
-		$GitModel=M('GitNotice');
-		$Condition['git_id']=$git_id;
-		$Condition['user_id']=session('uid');
-		$Condition['state']='未读';
-		$NoticeCount=$GitModel->where($Condition)->count();
-		//分页数据获取
-        $Page= get_page($NoticeCount,3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
-        $show= $Page->show();// 分页显示输出
-        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-        $NoticeInfo=$GitModel->where($Condition)->order('time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-		$this->assign('git_id',$git_id);
-		$this->assign('NoticeInfo',$NoticeInfo);
-		$this->assign('page',$show);// 赋值分页输出
-		$this->display();
-	}
-
-	//将某条通知置为已读
-	public function git_notice_read($notice_id){
-		$GitModel=M('GitNotice');
-		$GitModel->state='已读';
-		$Condition['id']=$notice_id;
-		$GitModel->where($Condition)->save();
-		$this->success('置该通知为已读成功');
-	}
-
-	//将所有通知置为已读
-	public function git_all_notice_read($git_id){
-		$GitModel=M('GitNotice');
-		$Condition['git_id']=$git_id;
-		$Condition['user_id']=session('uid');
-		$GitModel->state='已读';
-		$GitModel->where($Condition)->save();
-		$this->success('置所有通知为已读成功');
-	}
-
-	//显示分配事务问题
-	public function git_arrange_bug($git_id){
-		//获取实验室ID
-		$MemberModel=M('User');
-		$MemberCondi['id']=session('uid');
-		$LabId=$MemberModel->where($MemberCondi)->find();
-		$LabId=$LabId['lab_id'];
-		//获取该实验室下所有人员信息
-		$MemberInfo=$MemberModel->where("lab_id='%s'",$LabId)->select();
-		$this->assign('git_id',$git_id);
-		$this->assign('MemberInfo',$MemberInfo);
-		$this->display();
-	}
-
-	//分配问题数据操作
-	public function git_arrange_bug_db($git_id){
-		$GitModel=M('GitBug');
-		$UserModel=M('User');
-		if($GitModel->create()){
-			$GitModel->git_id=$git_id;
-			$GitModel->creator=session('fullname');
-			$UserInfo=$UserModel->where("fullname='%s'",session('fullname'))->find();
-			$GitModel->creator_id=$UserInfo['id'];
-			$UserInfo=$UserModel->where("fullname='%s'",I('post.receiver'))->find();
-			$GitModel->receiver_id=$UserInfo['id'];
-			$GitModel->create_time=date("Y-m-d H:i:s");
-			$GitModel->state='未完成';
-			if(I('post.level')=='一般'){
-				$GitModel->level_id=1;
-			}else if(I('post.level')=='严重'){
-				$GitModel->level_id=2;
-			}else {
-				$GitModel->level_id=3;
+		//显示项目详情页面
+		public function project_show($id, $achi_type = '', $achi_year = '')
+		{
+			parent::is_login();
+			//获取项目信息
+			$ProjectModel = M('Project');
+			$ConditionPro['id'] = $id;
+			$ProjectInfo = $ProjectModel->where($ConditionPro)->find();
+			//获取项目下的科研成果信息
+			$AchievementModel = M('Achievement');
+			$Condition['user_id'] = session('uid');
+			//获取项目信息
+			$Condition['achievement_id'] = $ProjectInfo['achievement_id'];
+			$SearchAction = '';
+			if ($achi_type != '') {
+				$Condition['achievement_type'] = $achi_type;
+				$SearchAction = 'achi_type/' . $achi_type;
 			}
-			$Result=$GitModel->add();
-			//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='分配了新的事务:'.I('post.title').'。经办人是:'.I('post.receiver');
-    		$ActivityModel->type='分配事务';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
-			if($Result){
-				$this->success('分配事务成功',__ROOT__.'/index.php/Home/Project/project_git_show/git_id/'.$git_id);
-			}else{
+			if ($achi_year != '') {
+				$start_date = $achi_year . '-01-01';
+				$end_date = $achi_year . '-12-31';
+				$Condition['publish_time'] = array(array('egt', $start_date), array('elt', $end_date));
+				$SearchAction = 'achi_year/' . $achi_year;
+			}
+			//获取搜索栏内容
+			$Search = I('post.search');
+			$Condition['title'] = array('like', '%' . $Search . '%');
+			//获取记录数
+			$AchievementYearCount = $AchievementModel->where($Condition)->count();
+			//获取各种科研成果的数目
+			$AchievementCount = get_achievement_count($ProjectInfo['achievement_id']);
+			//获取不同年份科研成果的数量
+			$AchievementYear = get_achievement_year($ProjectInfo['achievement_id']);
+			//分页数据获取
+			$Page = get_page($AchievementYearCount, 5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+			$show = $Page->show();// 分页显示输出
+			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+			$AchievementInfo = $AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			//获取作者姓名字符串和详情链接
+			for ($i = 0; $i < count($AchievementInfo); $i++) {
+				$AchievementInfo[$i]['author'] = get_author_list($AchievementInfo[$i]['achievement_id']);
+				$AchievementInfo[$i]['detail_link'] = get_detail_link($AchievementInfo[$i]);
+			}
+			$this->assign('AchievementInfo', $AchievementInfo);
+			$this->assign('AchievementCount', $AchievementCount);
+			$this->assign('AchievementYear', $AchievementYear);
+			$this->assign('SearchAction', $SearchAction);
+			$this->assign('page', $show);// 赋值分页输出
+			$this->assign('ProjectInfo', $ProjectInfo);
+			$this->display();
+		}
+
+		//显示科研项目编辑页面
+		public function project_edit($id)
+		{
+			parent::is_login();
+			//获取项目类别信息
+			$TypeModel = M('Project_type');
+			$TypeInfo = $TypeModel->select();
+			$this->assign('TypeInfo', $TypeInfo);
+			$this->assign('achi_id', $id);
+			//获取项目信息
+			$ProjectModel = M('Project');
+			$Condition['id'] = $id;
+			$ProjectInfo = $ProjectModel->where($Condition)->find();
+			$this->assign('ProjectInfo', $ProjectInfo);
+			$this->display();
+		}
+
+		//科研项目编辑数据库操作
+		public function project_edit_db($project_id)
+		{
+			$ProjectModel = D('Project');
+			if ($ProjectModel->create()) {
+				$Condition['id'] = $project_id;
+				$Result = $ProjectModel->where($Condition)->save();
+				if ($Result) {
+					$this->success('修改所属项目信息成功', __ROOT__ . '/index.php/Home/Project/project_show/id/' . $project_id);
+				} else {
+					$this->error($ProjectModel->getError());
+				}
+			} else {
+				$this->error($ProjectModel->getError());
+			}
+		}
+
+		//科研项目删除功能
+		public function project_delete($project_id)
+		{
+			$ProjectModel = M('Project');
+			$Condition['id'] = $project_id;
+			$Result = $ProjectModel->where($Condition)->delete();
+			if ($Result) {
+				$this->success('删除所属项目信息成功', __ROOT__ . '/index.php/Home/Project/my_project');
+			} else {
+				$this->error('删除所属项目信息失败');
+			}
+		}
+
+
+		//完成协作科研项目
+		public function git_finish($git_id)
+		{
+			$ProjectModel = M('Project');
+			$ProjectModel->state = 1;
+			$Result = $ProjectModel->where("id='%s'", $git_id)->save();
+			if ($Result) {
+				$this->success('该协作项目已完成', __ROOT__ . '/index.php/Home/Project/project_git');
+			} else {
+				$this->error($ProjectModel->getError());
+			}
+		}
+
+		//申请项目开支数据库操作
+		public function git_apply_cost_db($git_id)
+		{
+			$GitModel = M('GitCost');
+			if ($GitModel->create()) {
+				$GitModel->git_id = $git_id;
+				$GitModel->user_id = session('uid');
+				$GitModel->time = date("Y-m-d");
+				$Result = $GitModel->add();
+				//保存日志
+				$ActivityModel = M('GitActivity');
+				$ActivityModel->git_id = $git_id;
+				$ActivityModel->person_a_name = session('fullname');
+				$ActivityModel->activity = '申请项目经费:' . I('post.title');
+				$ActivityModel->type = '申请经费';
+				$ActivityModel->time = date("Y-m-d H:i:s");
+				$ActivityModel->add();
+				if ($Result) {
+					$this->success('提交经费申请，等待审核', __ROOT__ . '/index.php/Home/Project/git_apply_cost/git_id/' . $git_id);
+				} else {
+					$this->error($ActivityModel->getError());
+				}
+			} else {
 				$this->error($GitModel->getError());
 			}
-		}else{
-			$this->error($GitModel->getError());
 		}
-	}
 
-	//显示我的事务页面
-	public function git_my_bug($git_id){
-		$GitModel=M('GitBug');
-		$Condition['git_id']=$git_id;
-		$Condition['state']=array(array('eq','未完成'),array('eq','开始解决'), 'or');
-		$Condition['receiver_id']=session('uid');
-		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
-		$this->assign('BugInfo',$BugInfo);
-		$this->assign('git_id',$git_id);
-		$this->display();
-	}
 
-	//显示我的事务详情页面
-	public function git_my_bug_show($bug_id,$git_id){
-		//获取所有问题
-		$GitModel=M('GitBug');
-		$Condition['git_id']=$git_id;
-		$Condition['state']=array(array('eq','未完成'),array('eq','开始解决'), 'or');
-		$Condition['receiver_id']=session('uid');
-		$BugInfo=$GitModel->where($Condition)->order('create_time desc')->select();
-		//获取当前问题详情
-		$Condi['id']=$bug_id;
-		$BugDetail=$GitModel->where($Condi)->find();
-		//获取项目组人员信息
-		$GitMemModel=M('GitMember');
-		$MemberInfo=$GitMemModel->where("git_id='%s'",$git_id)->select();
-		$UserModel=M('User');
-		for($i=0;$i<count($MemberInfo);$i++){
-			$UserInfo=$UserModel->where('id=%d',$MemberInfo[$i]['user_id'])->find();
-			$MemberInfo[$i]['name']=$UserInfo['fullname'];
-		}
-		$this->assign('BugInfo',$BugInfo);
-		$this->assign('BugDetail',$BugDetail);
-		$this->assign('MemberInfo',$MemberInfo);
-		$this->assign('git_id',$git_id);
-		$this->display();
-	}
-
-	//我的事务数据库操作
-	public function git_bug_operation($git_id,$bug_id){
-		$GitModel=M('GitBug');
-		if($GitModel->create()){
-			//获取经办人id
-			$UserModel=M('User');
-			$UserInfo=$UserModel->where("fullname='%s'",I('post.receiver'))->find();
-			$GitModel->receiver_id=$UserInfo['id'];
-			$GitModel->id=$bug_id;
-			if(I('post.level')=='一般'){
-				$GitModel->level_id=1;
-			}elseif(I('post.level')=='严重'){
-				$GitModel->level_id=2;
-			}else{
-				$GitModel->level_id=3;
+		//显示项目文档管理页面
+		public function git_doc($git_id)
+		{
+			//获取当前协作项目文档信息
+			$GitModel = M('GitDoc');
+			$DocInfo = $GitModel->where("git_id='%s'", $git_id)->order('upload_time desc')->select();
+			for ($i = 0; $i < count($DocInfo); $i++) {
+				$DocInfo[$i]['path'] = "Uploads/GitFile/" . $DocInfo[$i]['path'];
 			}
-			$Result=$GitModel->save();
-			//保存日志
-    		$ActivityModel=M('GitActivity');
-    		$ActivityModel->git_id=$git_id;
-    		$ActivityModel->person_a_name=session('fullname');
-    		$ActivityModel->activity='修改了事务:'.I('post.title').'。经办人是:'.I('post.receiver').'。事务状态是:'.I('post.state');
-    		$ActivityModel->type='修改事务';
-    		$ActivityModel->time=date("Y-m-d H:i:s");
-    		$ActivityModel->add();
-			if($Result){
-				$this->success('提交事务操作成功');
-			}else{
-				$this->error('提交事务操作失败');
+			$this->assign('DocInfo', $DocInfo);
+			$this->assign('git_id', $git_id);
+			$this->display();
+		}
+
+		//协作项目文件上传
+		public function git_file_upload($git_id)
+		{
+			$upload = new \Think\Upload();// 实例化上传类
+			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
+			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx', 'xls', 'xlsx');// 设置附件上传类型
+			$upload->rootPath = './Uploads/'; // 设置附件上传根目录
+			$upload->savePath = './GitFile/'; // 设置附件上传（子）目录
+			$upload->saveName = array('uniqid', '');
+			$upload->autoSub = false;
+			$info = $upload->uploadOne($_FILES['main']);
+			if (!$info) {// 上传错误提示错误信息
+				$this->error($upload->getError());
+			} else {// 上传成功
+				$FileInfo['title'] = $info['name'];
+				$FileInfo['path'] = $info['savename'];
+				$FileInfo['description'] = I('post.description');
+				$FileInfo['upload_time'] = date("Y-m-d H:i:s");
+				$FileInfo['user_id'] = session('uid');
+				$FileInfo['author'] = session('fullname');
+				$FileInfo['git_id'] = $git_id;
+				$FileModel = M('GitDoc');
+				$Result = $FileModel->add($FileInfo);
+				//保存日志
+				$ActivityModel = M('GitActivity');
+				$ActivityModel->git_id = $git_id;
+				$ActivityModel->person_a_name = session('fullname');
+				$ActivityModel->activity = '上传了新的文档:' . $info['name'];
+				$ActivityModel->type = '上传文档';
+				$ActivityModel->time = date("Y-m-d H:i:s");
+				$ActivityModel->add();
+				if ($Result) {
+					$this->success('文档上传成功', __ROOT__ . '/index.php/Home/Project/git_doc/git_id/' . $git_id);
+				} else {
+					$this->error('文档上传失败');
+				}
 			}
-		}else{
-			$this->error($GitModel->getError());
+		}
+
+
+		//分配问题数据操作
+		public function git_arrange_bug_db($git_id)
+		{
+			$GitModel = M('GitBug');
+			$UserModel = M('User');
+			if ($GitModel->create()) {
+				$GitModel->git_id = $git_id;
+				$GitModel->creator = session('fullname');
+				$UserInfo = $UserModel->where("fullname='%s'", session('fullname'))->find();
+				$GitModel->creator_id = $UserInfo['id'];
+				$UserInfo = $UserModel->where("fullname='%s'", I('post.receiver'))->find();
+				$GitModel->receiver_id = $UserInfo['id'];
+				$GitModel->create_time = date("Y-m-d H:i:s");
+				$GitModel->state = '未完成';
+				if (I('post.level') == '一般') {
+					$GitModel->level_id = 1;
+				} else if (I('post.level') == '严重') {
+					$GitModel->level_id = 2;
+				} else {
+					$GitModel->level_id = 3;
+				}
+				$Result = $GitModel->add();
+				//保存日志
+				$ActivityModel = M('GitActivity');
+				$ActivityModel->git_id = $git_id;
+				$ActivityModel->person_a_name = session('fullname');
+				$ActivityModel->activity = '分配了新的事务:' . I('post.title') . '。经办人是:' . I('post.receiver');
+				$ActivityModel->type = '分配事务';
+				$ActivityModel->time = date("Y-m-d H:i:s");
+				$ActivityModel->add();
+				if ($Result) {
+					$this->success('分配事务成功', __ROOT__ . '/index.php/Home/Project/project_git_show/git_id/' . $git_id);
+				} else {
+					$this->error($GitModel->getError());
+				}
+			} else {
+				$this->error($GitModel->getError());
+			}
 		}
 	}
-
-	//导出所有事务
-	public function git_bug_export($git_id){
-		//获取所有事务
-		$GitModel=M('GitBug');
-		$BugInfo=$GitModel->field('id,creator,receiver,title,content,create_time,state,level')->where("git_id='%s'",$git_id)->order('create_time desc')->select();
-		//导出到Excel
-		vendor("PHPExcel.PHPExcel");
-
-        $fileName="ImportFile";
-        $headArr=array("事务ID","事务创建者","事务经办人","事务标题","事务内容","事务创建时间","状态","优先级");
-        //对数据进行检验
-        if(empty($BugInfo) || !is_array($BugInfo)){
-            die("data must be a array");
-        }
-        //检查文件名
-        if(empty($fileName)){
-        	exit;
-        }
-
-        $date = date("Y_m_d",time());
-        $fileName .= "_{$date}.xls";
- 		//创建PHPExcel对象，注意，不能少了\
-        $objPHPExcel = new \PHPExcel();
-        $objProps = $objPHPExcel->getProperties();
-
-            //设置表头
-        $key = ord("A");
-        foreach($headArr as $v){
-        	$colum = chr($key);
-        	$objPHPExcel->setActiveSheetIndex(0) ->setCellValue($colum.'1', $v);
-        	$key += 1;
-        }
-        $column = 2;
-        $objActSheet = $objPHPExcel->getActiveSheet();
-        foreach($BugInfo as $key => $rows){ //行写入
-            $span = ord("A");
-            foreach($rows as $keyName=>$value){// 列写入
-                $j = chr($span);
-                $objActSheet->setCellValue($j.$column, $value);
-                $span++;
-            }
-            $column++;
-        }
-
-        $fileName = iconv("utf-8", "gb2312", $fileName);
-        //重命名表
-        // $objPHPExcel->getActiveSheet()->setTitle('test');
-        //设置活动单指数到第一个表,所以Excel打开这是第一个表
-        $objPHPExcel->setActiveSheetIndex(0);
-        header('Content-Type: application/vnd.ms-excel');
-        header("Content-Disposition: attachment;filename=\"$fileName\"");
-        header('Cache-Control: max-age=0');
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
-        $objWriter->save('php://output'); //文件通过浏览器下载
-        exit;
-
-	}
-}
