@@ -4,6 +4,7 @@
 
 	use Think\Controller;
 	use Think\Model;
+	use Think\Upload;
 
 	class ProjectController extends Controller
 	{
@@ -115,20 +116,22 @@
 				$IsAdmin = 1;//0表示当前用户是项目负责人
 				//获取待审核经费申请数量
 			}
-			//获取项目文档数量
-			$DocModel = M('GitDoc');
-			$CountInfo['Doc'] = $DocModel->where("git_id='%s'", $git_id)->count();
 			//获取未读通知数量
 			$NoticeModel = M('GitNotice');
-			$CountInfo['Notice'] = $NoticeModel->where("project_id='%s' and user_number=%d", $git_id, session('userNum'))->count();
+			$CountInfo['Notice'] = $NoticeModel->where("project_id='%s' and user_number=%d and state='%s'", $git_id, session('userNum'), "未读")->count();
 			//获取项目组活动日志
-			$GitModel = M('GitActivity');
-			$ActivityCount = $GitModel->where("git_id='%s'", $git_id)->order('time desc')->count();
+			$ActivityModel = M('GitActivity');
+			$ActivityCount = $ActivityModel->where("project_id='%s'", $git_id)->count();
 			//分页数据获取
 			$Page = get_page($ActivityCount, 6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 			$show = $Page->show();// 分页显示输出
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-			$ActivityInfo = $GitModel->where("git_id='%s'", $git_id)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$ActivityInfo = $ActivityModel->join('INNER JOIN think_user ON think_git_activity.person_number=think_user.user_number')
+				->where("project_id='%s'", $git_id)
+				->field('think_git_activity.*,think_user.user_name')
+				->order('time desc')
+				->limit($Page->firstRow . ',' . $Page->listRows)
+				->select();
 			$this->assign('ProjectInfo', $ProjectInfo);
 			$this->assign('ActivityInfo', $ActivityInfo);
 			$this->assign('IsAdmin', $IsAdmin);
@@ -176,7 +179,7 @@
 		//显示发布通知页面
 		public function git_notice($git_id)
 		{
-			//获取实验室ID
+			//获取项目成员
 			$MemberModel = M('ProjectMember');
 			$condition['project_id'] = $git_id;
 			$MemberInfo = $MemberModel->join('INNER JOIN think_user ON think_project_member.user_number=think_user.user_number')
@@ -202,6 +205,7 @@
 			$show = $Page->show();// 分页显示输出
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 			$NoticeInfo = $GitModel->where($Condition)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$this->assign("NoticeCount", $NoticeCount);
 			$this->assign('git_id', $git_id);
 			$this->assign('NoticeInfo', $NoticeInfo);
 			$this->assign('page', $show);// 赋值分页输出
@@ -212,15 +216,20 @@
 		public function notice_read($git_id)
 		{
 			$GitModel = M('GitNotice');
-			$Condition['project_id'] = $git_id;
-			$Condition['user_number'] = session('userNum');
-			$Condition['state'] = '未读';
-			$NoticeCount = $GitModel->where($Condition)->count();
+			$Condition1['project_id'] = $git_id;
+			$Condition1['user_number'] = session('userNum');
+			$Condition1['state'] = '已读';
+			$NoticeRead = $GitModel->where($Condition1)->count();
+			$Condition2['project_id'] = $git_id;
+			$Condition2['user_number'] = session('userNum');
+			$Condition2['state'] = '未读';
+			$NoticeUnRead = $GitModel->where($Condition2)->count();
 			//分页数据获取
-			$Page = get_page($NoticeCount, 3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
+			$Page = get_page($NoticeRead, 3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
 			$show = $Page->show();// 分页显示输出
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-			$NoticeInfo = $GitModel->where($Condition)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$NoticeInfo = $GitModel->where($Condition1)->order('time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$this->assign("NoticeUnRead", $NoticeUnRead);
 			$this->assign('git_id', $git_id);
 			$this->assign('NoticeInfo', $NoticeInfo);
 			$this->assign('page', $show);// 赋值分页输出
@@ -228,12 +237,15 @@
 		}
 
 		//将某条通知置为已读
-		public function git_notice_read($notice_id)
+		public function git_notice_read($notice_id, $git_id)
 		{
 			$GitModel = M('GitNotice');
 			$GitModel->state = '已读';
 			$Condition['id'] = $notice_id;
-			$GitModel->where($Condition)->save();
+			$result = $GitModel->where($Condition)->save();
+			if ($result) {
+				$this->redirect("/Home/Project/notice_unread/git_id/" . $git_id);
+			}
 		}
 
 		//将所有通知置为已读
@@ -247,6 +259,143 @@
 			$this->success('置所有通知为已读成功');
 		}
 
+		//更新项目状态
+		public function git_update($git_id)
+		{
+			$this->assign("git_id", $git_id);
+			$this->display();
+		}
+
+		//更新项目状态
+		public function project_update($git_id)
+		{
+			if (empty($_POST['activity'])) {
+				$this->error("提交内容不能为空");
+				return;
+			}
+			$ActivityModel = D('GitActivity');
+			if ($ActivityModel->create()) {
+				$ActivityModel->project_id = $git_id;
+				$ActivityModel->person_number = session('userNum');
+				$ActivityModel->type = "更新了项目状态";
+				$ActivityModel->time = date("Y-m-d H:i:s");
+				$result = $ActivityModel->add();
+				if ($result) {
+					$this->redirect("/Home/Project/project_git_show/git_id/" . $git_id);
+				} else {
+					$this->error("上传消息状态出错");
+				}
+			} else {
+				$this->error("数据库出错");
+			}
+		}
+
+		//显示项目文档管理页面
+		public function git_doc($git_id)
+		{
+			//获取当前协作项目文档信息
+			$GitUploadModel = M('GitUpload');
+			$DocInfo = $GitUploadModel->join('INNER JOIN think_user ON think_git_upload.user_number=think_user.user_number')
+				->join('INNER JOIN think_file ON think_git_upload.file_id=think_file.id')
+				->where("project_id='%s'", $git_id)
+				->field('think_git_upload.*,think_user.user_name,think_file.name as file_name')
+				->order('time desc')
+				->select();
+			$this->assign('DocInfo', $DocInfo);
+			$this->assign('git_id', $git_id);
+			$this->assign("user_number",session('userNum'));
+			$this->display();
+		}
+
+		//协作项目文件上传
+		public function git_file_upload($git_id)
+		{
+			$GitUploadModel = D('GitUpload');
+			if ($GitUploadModel->create()) {
+				$GitUploadModel->user_number = session(userNum);
+				$GitUploadModel->project_id = $git_id;
+				$GitUploadModel->time = date("Y-m-d H:i:s");
+				$file_id = $this->uploadFile($git_id);
+				if ($file_id != 0) {
+					$GitUploadModel->file_id = $file_id;
+				}
+				$result = $GitUploadModel->add();
+				if ($result) {
+					$this->redirect('/Home/Project/git_doc/git_id/' . $git_id);
+				} else {
+					$this->error('提交数据库错误');
+				}
+			} else {
+				$this->error("创建数据错误");
+			}
+
+		}
+
+		public function uploadFile($id = '')
+		{
+			$upload = new Upload();// 实例化上传类
+			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
+			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx', 'rar', 'zip', '7z', 'txt');// 设置附件上传类型
+			$upload->rootPath = './Uploads/'; // 设置附件上传根目录,
+			$upload->savePath = 'Projects/'; // 设置附件上传（子）目录
+			$upload->saveName = array('uniqid', '');
+			$upload->autoSub = false;
+			$file_id = "";
+			if ($_FILES['filePath']['name']) {
+				$info = $upload->uploadOne($_FILES['filePath']);
+				// 上传文件
+				if (!$info) {// 上传错误提示错误信息
+					$this->error($upload->getError());
+				} else {// 上传成功,保存文件信息
+					if ($id != '') {
+						$FileInfo['achievement_id'] = $id;
+					}
+					$FileInfo['name'] = $info['name'];
+					$FileInfo['path'] = 'Uploads/' . $info['savepath'] . $info['savename'];
+					$FileInfo['upload_time'] = date("Y-m-d H:i:s");
+					$FileInfo['user_number'] = session('userNum');
+					$FileInfo['type'] = 'Project';
+					$FileModel = M('File');
+					$Result = $FileModel->add($FileInfo);
+					//保存日志
+					$ActivityModel = M('GitActivity');
+					$ActivityModel->project_id = $id;
+					$ActivityModel->person_number = session('userNum');
+					$ActivityModel->activity = $FileInfo['name'];
+					$ActivityModel->type = '上传了新文档';
+					$ActivityModel->time = date("Y-m-d H:i:s");
+					$ActivityModel->add();
+					if (!$Result) {
+						$this->error('文档上传失败');
+					}
+					$file_id = $Result;
+				}
+			}
+			return $file_id;
+		}
+
+		//下载文件
+		public function downloadFile($id)
+		{
+			parent::is_login();
+			if ($id == '') {
+				$this->ajaxReturn('下载失败');
+				return;
+			}
+			$FileModel = M('File');
+			$condition['id'] = $id;
+			$file = $FileModel->where($condition)->find();
+			if ($file == false) {
+				$this->ajaxReturn('文件未找到!');
+			} else {
+				$name = $file['name'];
+				$fileName = urlencode($name);
+				$filePath = './' . $file['path'];
+				import('ORG.Net.Http');
+				$http = new \Org\Net\Http;
+				$http->download($filePath, $fileName);
+			}
+		}
 
 		public function my_project($project_type = '')
 		{
@@ -426,60 +575,6 @@
 				}
 			} else {
 				$this->error($GitModel->getError());
-			}
-		}
-
-
-		//显示项目文档管理页面
-		public function git_doc($git_id)
-		{
-			//获取当前协作项目文档信息
-			$GitModel = M('GitDoc');
-			$DocInfo = $GitModel->where("git_id='%s'", $git_id)->order('upload_time desc')->select();
-			for ($i = 0; $i < count($DocInfo); $i++) {
-				$DocInfo[$i]['path'] = "Uploads/GitFile/" . $DocInfo[$i]['path'];
-			}
-			$this->assign('DocInfo', $DocInfo);
-			$this->assign('git_id', $git_id);
-			$this->display();
-		}
-
-		//协作项目文件上传
-		public function git_file_upload($git_id)
-		{
-			$upload = new \Think\Upload();// 实例化上传类
-			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
-			$upload->exts = array('pdf', 'doc', 'docx', 'ppt', 'pptx', 'xls', 'xlsx');// 设置附件上传类型
-			$upload->rootPath = './Uploads/'; // 设置附件上传根目录
-			$upload->savePath = './GitFile/'; // 设置附件上传（子）目录
-			$upload->saveName = array('uniqid', '');
-			$upload->autoSub = false;
-			$info = $upload->uploadOne($_FILES['main']);
-			if (!$info) {// 上传错误提示错误信息
-				$this->error($upload->getError());
-			} else {// 上传成功
-				$FileInfo['title'] = $info['name'];
-				$FileInfo['path'] = $info['savename'];
-				$FileInfo['description'] = I('post.description');
-				$FileInfo['upload_time'] = date("Y-m-d H:i:s");
-				$FileInfo['user_id'] = session('uid');
-				$FileInfo['author'] = session('fullname');
-				$FileInfo['git_id'] = $git_id;
-				$FileModel = M('GitDoc');
-				$Result = $FileModel->add($FileInfo);
-				//保存日志
-				$ActivityModel = M('GitActivity');
-				$ActivityModel->git_id = $git_id;
-				$ActivityModel->person_a_name = session('fullname');
-				$ActivityModel->activity = '上传了新的文档:' . $info['name'];
-				$ActivityModel->type = '上传文档';
-				$ActivityModel->time = date("Y-m-d H:i:s");
-				$ActivityModel->add();
-				if ($Result) {
-					$this->success('文档上传成功', __ROOT__ . '/index.php/Home/Project/git_doc/git_id/' . $git_id);
-				} else {
-					$this->error('文档上传失败');
-				}
 			}
 		}
 

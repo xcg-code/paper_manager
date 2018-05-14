@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css" >
-    <link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/themes/default.css" id="skin-switcher" >
-    <link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
+    <!-- STYLESHEETS --><!--[if lt IE 9]>
+    <script src="js/flot/excanvas.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/themes/default.css" id="skin-switcher">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/responsive.css">
 
     <link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- DATE RANGE PICKER -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
     <!-- UNIFORM -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css"/>
     <!-- FONTS -->
 </head>
 <body>
@@ -26,7 +29,8 @@
         <div class="navbar-brand">
             <!-- COMPANY LOGO -->
             <a href="index.html">
-                <img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+                <img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30"
+                     width="120">
             </a>
             <!-- /COMPANY LOGO -->
             <!-- TEAM STATUS FOR MOBILE -->
@@ -40,7 +44,7 @@
             <div id="sidebar-collapse" class="sidebar-collapse btn">
                 <i class="fa fa-bars"
                    data-icon1="fa fa-bars"
-                   data-icon2="fa fa-bars" ></i>
+                   data-icon2="fa fa-bars"></i>
             </div>
             <!-- /SIDEBAR COLLAPSE -->
         </div>
@@ -57,7 +61,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="__ROOT__/index.php/Home/Profile/changePwd.html"><i class="fa fa-cog"></i> 修改密码</a></li>
-                    <li><a href="__ROOT__/index.php/Home/Index/logout"><i class="fa fa-power-off"></i>  退出系统</a></li>
+                    <li><a href="__ROOT__/index.php/Home/Index/logout"><i class="fa fa-power-off"></i> 退出系统</a></li>
                 </ul>
             </li>
             <!-- END USER LOGIN DROPDOWN -->
@@ -123,40 +127,99 @@
                                                 <div class="list-group-item profile-details">
                                                     <h4>我的消息</h4>
                                                 </div>
-                                                <a href="__URL__/git_my_notice/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$CountInfo.Doc}</span><i class="fa fa-user fa-fw"></i>未读消息</a>
-                                                <a href="__URL__/git_doc/git_id/{$ProjectInfo.id}" class="list-group-item"><span class="badge badge-red">{$CountInfo.Doc}</span><i class="fa fa-user fa-fw"></i>已读消息</a>
+                                                <a href="__URL__/notice_unread/git_id/{$git_id}"
+                                                   class="list-group-item"><span class="badge badge-red">{$NoticeUnRead}</span><i
+                                                        class="fa fa-user fa-fw"></i>未读消息</a>
+                                                <a href="__URL__/notice_read/git_id/{$git_id}"
+                                                   class="list-group-item"><i
+                                                        class="fa fa-user fa-fw"></i>已读消息</a>
                                             </div>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="box border blue">
                                                 <div class="box-title">
-                                                    <h4><i class="fa fa-table"></i>未读消息</h4>
+                                                    <h4><i class="fa fa-table"></i>已读消息</h4>
                                                 </div>
                                                 <div class="box-body">
-                                                    <volist name="ActivityInfo" id="vo">
-                                                        <div class="feed-activity clearfix">
-                                                            <div>
-                                                                <i class="pull-left roundicon fa fa-check btn btn-info"></i>
-                                                                <a class="user" > {$vo.person_a_name} </a>
-                                                                {$vo.activity}
-                                                                <br>
+                                                    <div class="tabbable header-tabs">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active"><a href="#box_tab1" data-toggle="tab"><i
+                                                                    class="fa fa-calendar-o"></i> <span
+                                                                    class="hidden-inline-mobile">项目组通知</span></a></li>
+                                                        </ul>
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane fade in active" id="box_tab1">
 
-                                                            </div>
-                                                            <div class="time">
-                                                                <i class="fa fa-clock-o"></i>
-                                                                {$vo.time}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="box-body">
+                                                                            <div class="box-body">
+                                                                                <div class="panel-group"
+                                                                                     id="accordion">
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading">
+                                                                                            <h3 class="panel-title">
+                                                                                                <a class="accordion-toggle"
+                                                                                                   data-toggle="collapse"
+                                                                                                   data-parent="#accordion"
+                                                                                                   href="#collapseOne">{$NoticeInfo[0]['title']}</a>
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                        <div id="collapseOne"
+                                                                                             class="panel-collapse collapse in">
+                                                                                            <div class="panel-body">
+                                                                                                {$NoticeInfo[0]['content']}
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading">
+                                                                                            <h3 class="panel-title">
+                                                                                                <a class="accordion-toggle"
+                                                                                                   data-toggle="collapse"
+                                                                                                   data-parent="#accordion"
+                                                                                                   href="#collapseTwo">{$NoticeInfo[1]['title']}</a>
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                        <div id="collapseTwo"
+                                                                                             class="panel-collapse collapse">
+                                                                                            <div class="panel-body">
+                                                                                                {$NoticeInfo[1]['content']}
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading">
+                                                                                            <h3 class="panel-title">
+                                                                                                <a class="accordion-toggle"
+                                                                                                   data-toggle="collapse"
+                                                                                                   data-parent="#accordion"
+                                                                                                   href="#collapseThree">{$NoticeInfo[2]['title']}</a>
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                        <div id="collapseThree"
+                                                                                             class="panel-collapse collapse">
+                                                                                            <div class="panel-body">
+                                                                                                {$NoticeInfo[2]['content']}
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-actions clearfix">
+                                                                    <ul class='pagination'>
+                                                                        {$page}
+                                                                    </ul>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </volist>
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="divide-20"></div>
-
-                                            <div>
-                                                <ul class='pagination'>
-                                                    {$page}
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -164,15 +227,16 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="footer-tools">
+                <div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
 							</span>
-                    </div>
-                </div><!-- /CONTENT-->
-            </div>
+                </div>
+            </div><!-- /CONTENT-->
         </div>
+    </div>
     </div>
 </section>
 <!--/PAGE -->
@@ -193,7 +257,8 @@
 <!-- SLIMSCROLL -->
 <script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
 <!-- SLIMSCROLL -->
-<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 <!-- BLOCK UI -->
 <script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 <!-- EASY PIE CHART -->
@@ -208,7 +273,7 @@
 <!-- CUSTOM SCRIPT -->
 <script src="__PUBLIC__/js/script.js"></script>
 <script>
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         App.setPage("user_profile");  //Set current page
         App.init(); //Initialise plugins and elements
     });

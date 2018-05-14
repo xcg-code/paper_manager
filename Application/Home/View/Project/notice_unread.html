@@ -127,11 +127,11 @@
                                                 <div class="list-group-item profile-details">
                                                     <h4>我的消息</h4>
                                                 </div>
-                                                <a href="__URL__/git_my_notice/git_id/{$ProjectInfo.id}"
-                                                   class="list-group-item"><span class="badge badge-red">{$CountInfo.Doc}</span><i
+                                                <a href="__URL__/notice_unread/git_id/{$git_id}"
+                                                   class="list-group-item"><span class="badge badge-red">{$NoticeCount}</span><i
                                                         class="fa fa-user fa-fw"></i>未读消息</a>
-                                                <a href="__URL__/git_doc/git_id/{$ProjectInfo.id}"
-                                                   class="list-group-item"><span class="badge badge-red">{$CountInfo.Doc}</span><i
+                                                <a href="__URL__/notice_read/git_id/{$git_id}"
+                                                   class="list-group-item"><i
                                                         class="fa fa-user fa-fw"></i>已读消息</a>
                                             </div>
                                         </div>
@@ -153,11 +153,6 @@
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <div class="box-body">
-                                                                            <div class="box border blue">
-                                                                                <div class="box-title">
-                                                                                    <h4><i class="fa fa-table"></i>未读通知
-                                                                                    </h4>
-                                                                                </div>
                                                                                 <div class="box-body">
                                                                                     <div class="panel-group"
                                                                                          id="accordion">
@@ -178,7 +173,7 @@
                                                                                                          value="">
                                                                                                         <button type="button"
                                                                                                                 class="btn-primary"
-                                                                                                                onclick="window.location.href='__URL__/git_notice_read/notice_id/{$NoticeInfo[0]['id']}'">
+                                                                                                                onclick="window.location.href='__URL__/git_notice_read?notice_id={$NoticeInfo[0]['id']}&git_id={$git_id}'">
                                                                                                             置为已读
                                                                                                         </button>
                                                                                                     </neq>
@@ -230,7 +225,6 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
 
                                                                         </div>
                                                                     </div>
