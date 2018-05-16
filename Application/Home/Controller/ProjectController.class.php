@@ -397,6 +397,7 @@
 			}
 		}
 
+		//我的科研项目
 		public function my_project($project_type = '')
 		{
 			parent::is_login();
@@ -408,12 +409,12 @@
 			$AllCount = get_all_project_num($TypeInfo);
 			//获取检索条件
 			$ProjectModel = M('Project');
-			$Condition['user_id'] = session('uid');
+			$Condition['user_number'] = session('userNum');
 			$SearchAction = '';
 			if ($project_type != '') {
 				for ($i = 0; $i < count($TypeInfo); $i++) {
 					if ($project_type == $TypeInfo[$i]['id']) {
-						$Condition['type_name'] = $TypeInfo[$i]['type_name'];
+						$Condition['type'] = $TypeInfo[$i]['type'];
 						break;
 					}
 				}
@@ -421,9 +422,13 @@
 			}
 			//获取搜索栏内容
 			$Search = I('post.search');
-			$Condition['project_name|project_num'] = array('like', '%' . $Search . '%');
+			$Condition['project_name|think_project.project_num'] = array('like', '%' . $Search . '%');
+			$Condition['status']=1;
 			//获取记录数
-			$ProjectCount = $ProjectModel->where($Condition)->count();
+			$ProjectCount=$ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
+				->where($Condition)
+				->field("think_project.*,think_project_member.user_number")
+				->count();
 			//分页数据获取
 			$Page = get_page($ProjectCount, 10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 			$show = $Page->show();// 分页显示输出
@@ -448,7 +453,7 @@
 			$ProjectInfo = $ProjectModel->where($ConditionPro)->find();
 			//获取项目下的科研成果信息
 			$AchievementModel = M('Achievement');
-			$Condition['user_id'] = session('uid');
+			$Condition['user_id'] = session('userNum');
 			//获取项目信息
 			$Condition['achievement_id'] = $ProjectInfo['achievement_id'];
 			$SearchAction = '';
@@ -487,6 +492,15 @@
 			$this->assign('SearchAction', $SearchAction);
 			$this->assign('page', $show);// 赋值分页输出
 			$this->assign('ProjectInfo', $ProjectInfo);
+			//判断当前用户是否为项目负责人
+			if (session('userNum') != $ProjectInfo['owner']) {
+				$IsAdmin = 0;//0表示当前用户不是项目负责人
+			} else {
+				$IsAdmin = 1;//0表示当前用户是项目负责人
+				//获取待审核经费申请数量
+			}
+			$this->assign('IsAdmin', $IsAdmin);
+
 			$this->display();
 		}
 
@@ -542,7 +556,7 @@
 		public function git_finish($git_id)
 		{
 			$ProjectModel = M('Project');
-			$ProjectModel->state = 1;
+			$ProjectModel->status = 1;
 			$Result = $ProjectModel->where("id='%s'", $git_id)->save();
 			if ($Result) {
 				$this->success('该协作项目已完成', __ROOT__ . '/index.php/Home/Project/project_git');
@@ -551,71 +565,10 @@
 			}
 		}
 
-		//申请项目开支数据库操作
-		public function git_apply_cost_db($git_id)
-		{
-			$GitModel = M('GitCost');
-			if ($GitModel->create()) {
-				$GitModel->git_id = $git_id;
-				$GitModel->user_id = session('uid');
-				$GitModel->time = date("Y-m-d");
-				$Result = $GitModel->add();
-				//保存日志
-				$ActivityModel = M('GitActivity');
-				$ActivityModel->git_id = $git_id;
-				$ActivityModel->person_a_name = session('fullname');
-				$ActivityModel->activity = '申请项目经费:' . I('post.title');
-				$ActivityModel->type = '申请经费';
-				$ActivityModel->time = date("Y-m-d H:i:s");
-				$ActivityModel->add();
-				if ($Result) {
-					$this->success('提交经费申请，等待审核', __ROOT__ . '/index.php/Home/Project/git_apply_cost/git_id/' . $git_id);
-				} else {
-					$this->error($ActivityModel->getError());
-				}
-			} else {
-				$this->error($GitModel->getError());
-			}
+		//添加项目相关论文成果
+		public function add_achievement($project_id){
+			$this->assign("project_id",$project_id);
+			$this->display();
 		}
 
-
-		//分配问题数据操作
-		public function git_arrange_bug_db($git_id)
-		{
-			$GitModel = M('GitBug');
-			$UserModel = M('User');
-			if ($GitModel->create()) {
-				$GitModel->git_id = $git_id;
-				$GitModel->creator = session('fullname');
-				$UserInfo = $UserModel->where("fullname='%s'", session('fullname'))->find();
-				$GitModel->creator_id = $UserInfo['id'];
-				$UserInfo = $UserModel->where("fullname='%s'", I('post.receiver'))->find();
-				$GitModel->receiver_id = $UserInfo['id'];
-				$GitModel->create_time = date("Y-m-d H:i:s");
-				$GitModel->state = '未完成';
-				if (I('post.level') == '一般') {
-					$GitModel->level_id = 1;
-				} else if (I('post.level') == '严重') {
-					$GitModel->level_id = 2;
-				} else {
-					$GitModel->level_id = 3;
-				}
-				$Result = $GitModel->add();
-				//保存日志
-				$ActivityModel = M('GitActivity');
-				$ActivityModel->git_id = $git_id;
-				$ActivityModel->person_a_name = session('fullname');
-				$ActivityModel->activity = '分配了新的事务:' . I('post.title') . '。经办人是:' . I('post.receiver');
-				$ActivityModel->type = '分配事务';
-				$ActivityModel->time = date("Y-m-d H:i:s");
-				$ActivityModel->add();
-				if ($Result) {
-					$this->success('分配事务成功', __ROOT__ . '/index.php/Home/Project/project_git_show/git_id/' . $git_id);
-				} else {
-					$this->error($GitModel->getError());
-				}
-			} else {
-				$this->error($GitModel->getError());
-			}
-		}
 	}

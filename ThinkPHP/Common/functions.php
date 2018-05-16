@@ -1841,9 +1841,11 @@ function get_project_num($TypeInfo){
     //获取每个项目类别的项目号汇总
     $ProjectModel=M('Project');
     for($i=0;$i<count($TypeName);$i++){
-        $Condition['type_name']=$TypeName[$i];
-        $Condition['user_id']=session('uid');
-        $Count=$ProjectModel->where($Condition)->count();
+        $Condition['type']=$TypeName[$i];
+        $Condition['user_number']=session('userNum');
+        $Condition['status']=1;
+        $Count=$ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
+		->where($Condition)->count();
         $TypeInfo[$i]['num']=$Count;
     }
     return $TypeInfo;
