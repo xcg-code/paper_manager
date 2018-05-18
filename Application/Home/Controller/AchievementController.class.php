@@ -766,7 +766,7 @@
 				$ResultMonograph = $MonographModel->add();//添加信息到期刊论文数据表
 				//赋值成果汇总模型类
 				$AchievementModel->achievement_id = $ResultMonograph;
-				$AchievementModel->user_id = $user_number;
+				$AchievementModel->user_number = $user_number;
 				$AchievementModel->achievement_type = 3;
 				$AchievementModel->title = $_POST['title_zh'];
 				$AchievementModel->institute_name = $_POST['publisher'];

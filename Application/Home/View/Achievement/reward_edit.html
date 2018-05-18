@@ -13,8 +13,11 @@
 	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
 	
 	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<!--choose data-->
+	<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+	<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jqueryui/style.css">
 	<!-- UNIFORM -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
 	<!-- FONTS -->
@@ -233,7 +236,7 @@
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">授奖日期(*)</label> 
-																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value="{$RewardInfo.publish_date}"></div>
+																		<div class="col-md-2"><input type="text" id="publish_date" name="publish_date" class="form-control" value="{$RewardInfo.publish_date}"></div>
 																		
 																	</div>	
 																	<div class="form-group">
@@ -323,6 +326,15 @@
 				}
 			});
 		});
+	</script>
+	<script>
+        $(function () {
+            $("#publish_date").datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#publish_date").datepicker("option", "dateFormat", "yy-mm-dd");
+        });
 	</script>
 	<!-- /JAVASCRIPTS -->
 </body>

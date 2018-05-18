@@ -13,8 +13,11 @@
 	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/responsive.css" >
 	
 	<link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<!--choose data-->
+	<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+	<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jqueryui/style.css">
 	<!-- UNIFORM -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css" />
 	<!-- FONTS -->
@@ -64,54 +67,6 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
-		<!-- TEAM STATUS -->
-		<div class="container team-status" id="team-status">
-			<div id="scrollbar">
-				<div class="handle">
-				</div>
-			</div>
-			<div id="teamslider">
-				<ul class="team-list">
-					<li class="current">
-						<a href="javascript:void(0);">
-							<span class="image">
-								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
-							</span>
-							<span class="title">
-								You
-							</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-success" style="width: 35%">
-									<span class="sr-only">35% Complete (success)</span>
-								</div>
-								<div class="progress-bar progress-bar-warning" style="width: 20%">
-									<span class="sr-only">20% Complete (warning)</span>
-								</div>
-								<div class="progress-bar progress-bar-danger" style="width: 10%">
-									<span class="sr-only">10% Complete (danger)</span>
-								</div>
-							</div>
-							<span class="status">
-								<div class="field">
-									<span class="badge badge-green">6</span> completed
-									<span class="pull-right fa fa-check"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-orange">3</span> in-progress
-									<span class="pull-right fa fa-adjust"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-red">1</span> pending
-									<span class="pull-right fa fa-list-ul"></span>
-								</div>
-							</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
 	
@@ -121,25 +76,6 @@
 		<?php include session(sidebar_path); ?>
 		<!-- /SIDEBAR -->
 		<div id="main-content">
-			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Box Settings</h4>
-						</div>
-						<div class="modal-body">
-							Here goes box setting content.
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
@@ -210,7 +146,7 @@
 																	</div>									
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">发布时间(*)</label> 
-																		<div class="col-md-3"><input type="date" name="publish_date" class="form-control" value=""></div>
+																		<div class="col-md-3"><input type="text" id="publish_date" name="publish_date" class="form-control" value=""></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">备注</label> 
@@ -313,7 +249,15 @@
 				a.innerHTML="标准公布机构";
 			});
 		});
-
+	</script>
+	<script>
+        $(function () {
+            $("#publish_date").datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#publish_date").datepicker("option", "dateFormat", "yy-mm-dd");
+        });
 	</script>
 	<!-- /JAVASCRIPTS -->
 </body>

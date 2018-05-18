@@ -438,15 +438,10 @@ class ExcelController extends Controller {
 
     //导出某一科研项目下所有科研成果信息
     public function project_achi_export($id,$achi_type='',$achi_year=''){
-        //获取项目信息
-        $ProjectModel=M('Project');
-        $ConditionPro['id']=$id;
-        $ProjectInfo=$ProjectModel->where($ConditionPro)->find();
         //获取项目下的科研成果信息
         $AchievementModel=M('Achievement');
-        $Condition['user_id']=session('uid');
         //获取项目信息
-        $Condition['achievement_id']=$ProjectInfo['achievement_id'];
+        $Condition['project_id']=$id;
         $SearchAction='';
         if($achi_type!=''){
             $Condition['achievement_type']=$achi_type;

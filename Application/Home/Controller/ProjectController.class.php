@@ -303,7 +303,7 @@
 				->select();
 			$this->assign('DocInfo', $DocInfo);
 			$this->assign('git_id', $git_id);
-			$this->assign("user_number",session('userNum'));
+			$this->assign("user_number", session('userNum'));
 			$this->display();
 		}
 
@@ -423,9 +423,9 @@
 			//获取搜索栏内容
 			$Search = I('post.search');
 			$Condition['project_name|think_project.project_num'] = array('like', '%' . $Search . '%');
-			$Condition['status']=1;
+			$Condition['status'] = 1;
 			//获取记录数
-			$ProjectCount=$ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
+			$ProjectCount = $ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
 				->where($Condition)
 				->field("think_project.*,think_project_member.user_number")
 				->count();
@@ -451,39 +451,40 @@
 			$ProjectModel = M('Project');
 			$ConditionPro['id'] = $id;
 			$ProjectInfo = $ProjectModel->where($ConditionPro)->find();
+
+
 			//获取项目下的科研成果信息
 			$AchievementModel = M('Achievement');
-			$Condition['user_id'] = session('userNum');
 			//获取项目信息
-			$Condition['achievement_id'] = $ProjectInfo['achievement_id'];
+			$Condition2['project_id'] = $id;
 			$SearchAction = '';
 			if ($achi_type != '') {
-				$Condition['achievement_type'] = $achi_type;
+				$Condition2['achievement_type'] = $achi_type;
 				$SearchAction = 'achi_type/' . $achi_type;
 			}
 			if ($achi_year != '') {
 				$start_date = $achi_year . '-01-01';
 				$end_date = $achi_year . '-12-31';
-				$Condition['publish_time'] = array(array('egt', $start_date), array('elt', $end_date));
+				$Condition2['publish_time'] = array(array('egt', $start_date), array('elt', $end_date));
 				$SearchAction = 'achi_year/' . $achi_year;
 			}
 			//获取搜索栏内容
 			$Search = I('post.search');
-			$Condition['title'] = array('like', '%' . $Search . '%');
+			$Condition2['title'] = array('like', '%' . $Search . '%');
 			//获取记录数
-			$AchievementYearCount = $AchievementModel->where($Condition)->count();
+			$AchievementYearCount = $AchievementModel->where($Condition2)->count();
 			//获取各种科研成果的数目
-			$AchievementCount = get_achievement_count($ProjectInfo['achievement_id']);
+			$AchievementCount = get_achievement_count($id);
 			//获取不同年份科研成果的数量
-			$AchievementYear = get_achievement_year($ProjectInfo['achievement_id']);
+			$AchievementYear = get_achievement_year($id);
 			//分页数据获取
 			$Page = get_page($AchievementYearCount, 5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 			$show = $Page->show();// 分页显示输出
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-			$AchievementInfo = $AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$AchievementInfo = $AchievementModel->where($Condition2)->order('publish_time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
 			//获取作者姓名字符串和详情链接
 			for ($i = 0; $i < count($AchievementInfo); $i++) {
-				$AchievementInfo[$i]['author'] = get_author_list($AchievementInfo[$i]['achievement_id']);
+				$AchievementInfo[$i]['author'] = get_author_list($AchievementInfo[$i]['id']);
 				$AchievementInfo[$i]['detail_link'] = get_detail_link($AchievementInfo[$i]);
 			}
 			$this->assign('AchievementInfo', $AchievementInfo);
@@ -501,6 +502,11 @@
 			}
 			$this->assign('IsAdmin', $IsAdmin);
 
+			//获取项目负责人信息
+			$userModel=M('User');
+			$ownerName = $userModel->where('think_user.user_number="%d"',$ProjectInfo['owner'])
+				->getField('user_name');
+			$this->assign('ownerName', $ownerName);
 			$this->display();
 		}
 
@@ -566,8 +572,9 @@
 		}
 
 		//添加项目相关论文成果
-		public function add_achievement($project_id){
-			$this->assign("project_id",$project_id);
+		public function add_achievement($project_id)
+		{
+			$this->assign("project_id", $project_id);
 			$this->display();
 		}
 
