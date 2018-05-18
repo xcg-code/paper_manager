@@ -13,7 +13,7 @@
 		{
 			$ProjectMemberModel = M('ProjectMember');
 			$ProjectInfo = $ProjectMemberModel->join('INNER JOIN think_project ON think_project_member.project_id=think_project.id')
-				->where('user_number=%d', session(userNum))
+				->where('user_number=%d and status=%d', session(userNum),0)
 				->order('time desc')
 				->select();
 			for ($i = 0; $i < count($ProjectInfo); $i++) {
@@ -414,7 +414,7 @@
 			if ($project_type != '') {
 				for ($i = 0; $i < count($TypeInfo); $i++) {
 					if ($project_type == $TypeInfo[$i]['id']) {
-						$Condition['type'] = $TypeInfo[$i]['type'];
+						$Condition['type'] = $TypeInfo[$i]['type_name'];
 						break;
 					}
 				}

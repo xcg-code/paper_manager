@@ -235,7 +235,7 @@
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">发表日期(*)</label> 
-																		<div class="col-md-2"><input type="date" name="publish_date" class="form-control" value="{$ConferenceInfo.publish_date}"></div>
+																		<div class="col-md-2"><input type="text" id="publish_date3" name="publish_date" class="form-control" value="{$ConferenceInfo.publish_date}"></div>
 																	</div>
 																	<div class="form-group">
 																		<label class="col-md-2 control-label">起止页码</label>
@@ -377,6 +377,11 @@
                 changeYear: true,
             });
             $("#publish_date2").datepicker("option", "dateFormat", "yy-mm-dd");
+            $("#publish_date3").datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#publish_date3").datepicker("option", "dateFormat", "yy-mm-dd");
         });
 	</script>
 	<!-- /JAVASCRIPTS -->

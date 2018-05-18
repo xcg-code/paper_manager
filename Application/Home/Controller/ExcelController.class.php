@@ -369,17 +369,21 @@ class ExcelController extends Controller {
             $TypeInfo=$TypeModel->select();
         //获取检索条件
             $ProjectModel=M('Project');
-            $Condition['user_id']=session('uid');
+			$Condition['user_number'] = session('userNum');
+			$Condition['status']=1;
             if($project_type!=''){
                 for($i=0;$i<count($TypeInfo);$i++){
                     if($project_type==$TypeInfo[$i]['id']){
-                        $Condition['type_name']=$TypeInfo[$i]['type_name'];
+                        $Condition['type']=$TypeInfo[$i]['type_name'];
                         break;
                     }
                 }  
             }
         //获取待导出科研项目信息
-            $ProjectInfo=$ProjectModel->field('type_name,project_name,project_num,owner,institute,money,content')->where($Condition)->select();
+            $ProjectInfo=$ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
+				->field('type,project_name,think_project.project_num,owner,institute,money,content')
+				->where($Condition)
+				->select();
         //导出数据操作
         //导入PHPExcel类库，因为PHPExcel没有用命名空间，只能inport导入
             vendor("PHPExcel.PHPExcel");
