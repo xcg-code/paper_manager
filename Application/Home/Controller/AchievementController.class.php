@@ -5,6 +5,7 @@
 	use Think\Controller;
 	use Think\Upload;
 
+
 	class AchievementController extends Controller
 	{
 		public function achievement_add($project_id = '')
@@ -27,9 +28,10 @@
 			parent::is_login();
 			$AchievementModel = M('Achievement');
 			if ($user_id == '') {
-				$Condition['user_id'] = session('uid');
+				$user_id=session('userNum');
+				$Condition['user_number'] = session('userNum');
 			} else {
-				$Condition['user_id'] = $user_id;
+				$Condition['user_number'] = $user_id;
 			}
 			$SearchAction = '/';
 			if ($achi_type != '') {
@@ -65,7 +67,7 @@
 			$this->assign('AchievementCount', $AchievementCount);
 			$this->assign('AchievementYear', $AchievementYear);
 			$this->assign('SearchAction', $SearchAction);
-			$this->assign('user_id', $user_id);
+			$this->assign('user_id', session('userNum'));
 			$this->assign('page', $show);// 赋值分页输出
 			$this->display();
 		}
@@ -544,6 +546,11 @@
 			//添加其他详细信息
 			$JournalInfo['achievement_type'] = '期刊论文';
 			$this->assign('JournalInfo', $JournalInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=1;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息
 			$this->assign('id', $JournalInfo['id']);
 			$this->assign('edit', 'journal_paper_edit');
@@ -576,7 +583,7 @@
 			$JournalModel = D('Journalpaper');
 			$AchievementModel = D('Achievement');
 			if ($JournalModel->create()) {
-				$JournalModel->user_id = session('uid');
+				$JournalModel->user_number = session('userNum');
 				$Inclu = '';//收录情况
 				foreach ($JournalModel->inbox_status as $value) {
 					$Inclu = $Inclu . $value . ';';
@@ -584,13 +591,14 @@
 				$JournalModel->inbox_status = $Inclu;
 				//赋值成果汇总表模型类
 				$AchievementModel->achievement_id = $achi_id;
-				$AchievementModel->user_id = session('uid');
-				$AchievementModel->achievement_type = 'JournalPaper';
+				$AchievementModel->user_number = session('userNum');
+				$AchievementModel->achievement_type = 1;
 				$AchievementModel->title = $JournalModel->title_zh;
 				$AchievementModel->institute_name = $JournalModel->journal_name;
 				$AchievementModel->publish_time = $JournalModel->publish_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=1;
 				//SQL操作
 				$ResultJournal = $JournalModel->where($ConditionJ)->save();
 				$ResultAchi = $AchievementModel->where($ConditionA)->save();
@@ -613,7 +621,7 @@
 			$Condition['id'] = $achi_id;
 			$JournalModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,1);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -674,6 +682,11 @@
 			//添加其他详细信息
 			$ConferenceInfo['achievement_type'] = '会议论文';
 			$this->assign('ConferenceInfo', $ConferenceInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=2;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息
 			$this->assign('id', $ConferenceInfo['id']);
 			$this->assign('edit', 'conference_paper_edit');
@@ -706,7 +719,7 @@
 			$ConferenceModel = D('Conferencepaper');
 			$AchievementModel = D('Achievement');
 			if ($ConferenceModel->create()) {
-				$ConferenceModel->user_id = session('uid');
+				$ConferenceModel->user_number = session('userNum');
 				$Inclu = '';//收录情况
 				foreach ($ConferenceModel->inbox_status as $value) {
 					$Inclu = $Inclu . $value . ';';
@@ -719,6 +732,7 @@
 				$AchievementModel->publish_time = $ConferenceModel->publish_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=2;
 				//SQL操作
 				$Result = $ConferenceModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -741,7 +755,7 @@
 			$Condition['id'] = $achi_id;
 			$ConferenceModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,2);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -797,6 +811,11 @@
 			//添加其他详细信息
 			$MonographInfo['achievement_type'] = '学术专著';
 			$this->assign('MonographInfo', $MonographInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=3;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $MonographInfo['id']);
 			$this->assign('edit', 'monograph_edit');
@@ -833,6 +852,7 @@
 				$AchievementModel->publish_time = $MonographModel->publish_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=3;
 				//SQL操作
 				$Result = $MonographModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -855,7 +875,7 @@
 			$Condition['id'] = $achi_id;
 			$MonographModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,3);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -911,6 +931,11 @@
 			//添加其他详细信息
 			$PatentInfo['achievement_type'] = '专利';
 			$this->assign('PatentInfo', $PatentInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=4;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $PatentInfo['id']);
 			$this->assign('edit', 'patent_edit');
@@ -952,6 +977,7 @@
 				$AchievementModel->publish_time = $PatentModel->apply_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=4;
 				//SQL操作
 				$Result = $PatentModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -974,7 +1000,7 @@
 			$Condition['id'] = $achi_id;
 			$PatentModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,4);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -1029,6 +1055,11 @@
 			//添加其他详细信息
 			$ReportInfo['achievement_type'] = '专利';
 			$this->assign('ReportInfo', $ReportInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=5;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $ReportInfo['id']);
 			$this->assign('edit', 'conference_report_edit');
@@ -1065,6 +1096,7 @@
 				$AchievementModel->publish_time = $ConferencereportModel->start_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=5;
 				//SQL操作
 				$Result = $ConferencereportModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -1087,7 +1119,7 @@
 			$Condition['id'] = $achi_id;
 			$ConferencereportModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,5);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -1140,6 +1172,11 @@
 			//添加其他详细信息
 			$StandardInfo['achievement_type'] = '标准';
 			$this->assign('StandardInfo', $StandardInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=6;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $StandardInfo['id']);
 			$this->assign('edit', 'standard_edit');
@@ -1179,6 +1216,7 @@
 				$AchievementModel->publish_time = $StandardModel->publish_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=6;
 				//SQL操作
 				$Result = $StandardModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -1201,7 +1239,7 @@
 			$Condition['id'] = $achi_id;
 			$StandardModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,6);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -1253,6 +1291,11 @@
 			//添加其他详细信息
 			$SoftwareInfo['achievement_type'] = '软件著作权';
 			$this->assign('SoftwareInfo', $SoftwareInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=7;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $SoftwareInfo['id']);
 			$this->assign('edit', 'software_edit');
@@ -1288,6 +1331,7 @@
 				$AchievementModel->publish_time = $SoftwareModel->over_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=7;
 				//SQL操作
 				$Result = $SoftwareModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -1310,7 +1354,7 @@
 			$Condition['id'] = $achi_id;
 			$SoftwareModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,7);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -1363,6 +1407,11 @@
 			//添加其他详细信息
 			$RewardInfo['achievement_type'] = '科研奖励';
 			$this->assign('RewardInfo', $RewardInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=7;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $RewardInfo['id']);
 			$this->assign('edit', 'reward_edit');
@@ -1402,6 +1451,7 @@
 				$AchievementModel->publish_time = $RewardModel->publish_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=8;
 				//SQL操作
 				$Result = $RewardModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -1424,7 +1474,7 @@
 			$Condition['id'] = $achi_id;
 			$RewardModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,8);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}
 
@@ -1477,6 +1527,11 @@
 			//添加其他详细信息
 			$ConInfo['achievement_type'] = '举办或参加学术会议';
 			$this->assign('ConInfo', $ConInfo);
+			$AchievementModel=M('Achievement');
+			$Condition2['achievement_id']=$achi_id;
+			$Condition2['achievement_type']=9;
+			$ach_id=$AchievementModel->where($Condition2)->getField('id');
+			$this->assign('ach_id', $ach_id);
 			//添加相关操作信息参数
 			$this->assign('id', $ConInfo['id']);
 			$this->assign('edit', 'conference_involved_edit');
@@ -1512,6 +1567,7 @@
 				$AchievementModel->publish_time = $ConModel->start_date;
 				$ConditionJ['id'] = $achi_id;
 				$ConditionA['achievement_id'] = $achi_id;
+				$ConditionA['achievement_type']=9;
 				//SQL操作
 				$Result = $ConModel->where($ConditionJ)->save();
 				$AchievementModel->where($ConditionA)->save();
@@ -1534,7 +1590,32 @@
 			$Condition['id'] = $achi_id;
 			$ConModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
-			delete_all_info($achi_id);
+			delete_all_info($achi_id,9);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
+		}
+
+		public function downloadFile($achi_id)
+		{
+			parent::is_login();
+			if ($achi_id == '') {
+				$this->ajaxReturn('下载失败');
+				return;
+			}
+			$AchievementModel = M('Achievement');
+			$condition['id'] = $achi_id;
+			$file_id = $AchievementModel->where($condition)->getField("file_id");
+			$FileModel = M('File');
+			$condition2['id'] = $file_id;
+			$file = $FileModel->where($condition2)->find();
+			if ($file == false) {
+				$this->ajaxReturn('文件未找到!');
+			} else {
+				$name = $file['name'];
+				$fileName = urlencode($name);
+				$filePath = './' . $file['path'];
+				import('ORG.Net.Http');
+				$http = new \Org\Net\Http;
+				$http->download($filePath, $fileName);
+			}
 		}
 	}

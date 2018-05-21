@@ -1598,12 +1598,15 @@
 	}
 
 //获取不同科研成果类型数量函数
-	function get_achievement_count($id = '')
+	function get_achievement_count($id = '',$user_id='')
 	{
 		$AchievementModel = M('Achievement');
 		//添加项目号条件
 		if ($id != '') {
 			$Condition['project_id'] = $id;
+		}
+		if($user_id!=''){
+			$Condition['user_number']=$user_id;
 		}
 		$AchievementInfo = $AchievementModel->where($Condition)->select();
 		$AchievementCount['All'] = count($AchievementInfo);
@@ -1657,12 +1660,15 @@
 	}
 
 //获取不同年份科研成果数量
-	function get_achievement_year($id = '')
+	function get_achievement_year($id = '',$user_id='')
 	{
 		$AModel = M('Achievement');
 		//添加项目号条件
 		if ($id != '') {
 			$Condition['project_id'] = $id;
+		}
+		if($user_id!=''){
+			$Condition['user_number']=$user_id;
 		}
 		$Info = $AModel->distinct(true)->field('publish_time')->order('publish_time desc')->where($Condition)->select();
 		$YearList = array();
@@ -1814,37 +1820,30 @@
 	}
 
 //删除科研成果对应的作者，文件，所属项目，成果汇总信息
-	function delete_all_info($achi_id)
+	function delete_all_info($achi_id,$type)
 	{
-		//删除作者信息
-		$AuthorModel = M('Author');
-		$Condition['achievement_id'] = $achi_id;
-		$AuthorModel->where($Condition)->delete();
-		//删除已上传文件及数据
-		$FileModel = M('File');
-		$FileInfo = $FileModel->where($Condition)->select();
-		for ($i = 0; $i < count($FileInfo); $i++) {
-			$FilePath = $FileInfo[$i]['path'];
-			//拼接物理地址
-			if ($FileInfo[$i]['type'] == 'Main') {
-				$FilePath = substr(THINK_PATH, 0, -9) . 'Uploads/UserMainFile/' . $FilePath;
-			} else {
-				$FilePath = substr(THINK_PATH, 0, -9) . 'Uploads/UserOtherFile/' . $FilePath;
-			}
-			//删除物理文件
-			unlink($FilePath);
-			//删除数据库信息
-			$FileModel->where($Condition)->delete();
-		}
-		//删除所属项目信息
-		$ProjectModel = M('Project');
-		$ProjectModel->where($Condition)->delete();
 		//删除成果汇总表信息
 		$AchievementModel = M('Achievement');
+		$Condition['achievement_id'] = $achi_id;
+		$Condition['achievement_type'] = $type;
+		$achievement_id=$AchievementModel->where($Condition)->getField('id');
+		$file_id=$AchievementModel->where($Condition)->getField('file_id');
 		$AchievementModel->where($Condition)->delete();
+		//删除作者信息
+		$AuthorModel = M('Author');
+		$Condition2['achievement_id'] = $achievement_id;
+		$AuthorModel->where($Condition2)->delete();
+		//删除已上传文件及数据
+		$FileModel = M('File');
+		$path = $FileModel->where('id=%d',$file_id)->getField('path');
+		$FileModel->where($Condition)->delete();
+		//物理地址
+		$FilePath = substr(THINK_PATH, 0, -9) . $path;
+		//删除物理文件
+		unlink($FilePath);
 	}
 
-//分页数据配置
+	//分页数据配置
 	function get_page($count, $pagesize = 10)
 	{
 		$p = new \Think\Page($count, $pagesize);
