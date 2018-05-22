@@ -2,7 +2,6 @@
 
 	namespace Home\Controller;
 
-	use Org\Util\Date;
 	use Think\Controller;
 	use Think\Upload;
 

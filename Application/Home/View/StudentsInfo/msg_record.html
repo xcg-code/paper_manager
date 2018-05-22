@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>学生培养|信息记录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- STYLESHEETS --><!--[if lt IE 9]>
+    <script src="js/flot/excanvas.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cloud-admin.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/themes/default.css" id="skin-switcher">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/responsive.css">
+
+    <link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- DATA TABLES -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/media/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/datatables/media/assets/css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="__PUBLIC__/js/datatables/extras/TableTools/media/css/TableTools.min.css"/>
+    <!-- DATE RANGE PICKER -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
+    <!-- UNIFORM -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uniform/css/uniform.default.min.css"/>
+    <!-- FONTS -->
+</head>
+<body>
+<!-- HEADER -->
+<header class="navbar clearfix" id="header">
+    <div class="container">
+        <div class="navbar-brand">
+            <!-- COMPANY LOGO -->
+            <a href="index.html">
+                <img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30"
+                     width="120">
+            </a>
+            <!-- /COMPANY LOGO -->
+            <!-- SIDEBAR COLLAPSE -->
+            <div id="sidebar-collapse" class="sidebar-collapse btn">
+                <i class="fa fa-bars"
+                   data-icon1="fa fa-bars"
+                   data-icon2="fa fa-bars"></i>
+            </div>
+            <!-- /SIDEBAR COLLAPSE -->
+        </div>
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <ul class="nav navbar-nav pull-right">
+            <!-- BEGIN USER LOGIN DROPDOWN -->
+            <li class="dropdown user" id="header-user">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="username">{$Think.session.name}</span>
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="__ROOT__/index.php/Home/Profile/changePwd.html"><i class="fa fa-cog"></i> 修改密码</a></li>
+                    <li><a href="__ROOT__/index.php/Home/Index/logout"><i class="fa fa-power-off"></i> 退出系统</a></li>
+                </ul>
+            </li>
+            <!-- END USER LOGIN DROPDOWN -->
+        </ul>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+
+</header>
+<!--/HEADER -->
+
+<!-- PAGE -->
+<section id="page">
+    <!-- SIDEBAR -->
+    <?php include session(sidebar_path); ?>
+    <!-- /SIDEBAR -->
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <!-- PAGE HEADER-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-header">
+                                <div class="clearfix">
+                                    <h3 class="content-title pull-left">学生毕设进展记录</h3>
+                                </div>
+                                <div class="description">记录学生毕设过程中的信息，保存相关文件</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /PAGE HEADER -->
+                    <!-- USER PROFILE -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- BOX -->
+                            <div class="box border">
+                                <div class="box-title">
+                                    <h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">事件记录</span></h4>
+                                </div>
+                                <div class="box-body">
+                                    <div class="tabbable header-tabs">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#box_tab1" data-toggle="tab"><i
+                                                    class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">上传记录</span></a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in active" id="box_tab1">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+
+
+                                                        <div class="box-body">
+                                                            <div class="alert alert-info"><strong>上传文件大小不能超过20MB。(允许上传的文件格式包括：*.pdf,*.doc,*.docx,*.ppt,*.pptx,*.xls,*.xlsx,*.rar,
+                                                                *.zip, *.7z,*.txt)</strong></div>
+                                                            <form class="form-horizontal"
+                                                                  action="__URL__/upload_record/id/{$TrainInfo.id}"
+                                                                  method="post" enctype="multipart/form-data">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2 control-label">姓名</label>
+                                                                    <div class="col-md-7">
+                                                                        <label class="col-md-2 control-label">{$TrainInfo.stuname}</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2 control-label">毕设名</label>
+                                                                    <div class="col-md-10">
+                                                                        <label class="control-label">{$TrainInfo.title}</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2 control-label">检查阶段</label>
+                                                                    <div class="col-md-2">
+                                                                        <input name="title" class="form-control"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2 control-label">信息记录</label>
+                                                                    <div class="col-md-8"><textarea name="content"
+                                                                                                    class="form-control"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2 control-label">上传文件</label>
+                                                                    <div class="col-md-8"><input type="file"
+                                                                                                 name="filePath"></div>
+                                                                </div>
+                                                                <div class="form-actions clearfix"><input type="submit"
+                                                                                                          value="上传记录"
+                                                                                                          class="btn btn-primary pull-right">
+                                                                </div>
+                                                            </form>
+                                                            <div class="box border blue">
+                                                                <div class="box-title">
+                                                                    <h4><i class="fa fa-file"></i>已上传信息</h4>
+                                                                </div>
+                                                                <div class="box-body">
+                                                                    <table id="datatable1" cellpadding="0"
+                                                                           cellspacing="0" border="0"
+                                                                           class="datatable table table-striped table-bordered table-hover">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>日期</th>
+                                                                            <th>检查阶段</th>
+                                                                            <th>信息记录</th>
+                                                                            <th>文档</th>
+                                                                            <th>操作</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        <volist name="RecordInfo" id="record">
+                                                                            <tr>
+                                                                                <td>{$record.date}</td>
+                                                                                <td>{$record.title}</td>
+                                                                                <td>{$record.content}</td>
+                                                                                <td>
+                                                                                    <if condition="$record.file_id eq ''">
+                                                                                        -
+                                                                                        <else/>
+                                                                                        {$record.name}
+                                                                                    </if>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <if condition="$record.file_id eq ''">
+                                                                                        <a href="__URL__/record_delete/id/{$record.id}"
+                                                                                           onclick="return confirm('确定要删除该记录吗？')">
+                                                                                            <button type="button"
+                                                                                                    class="btn btn-xs btn-danger">
+                                                                                                删除
+                                                                                            </button>
+                                                                                        </a>
+                                                                                        <else/>
+                                                                                        <button class="btn btn-xs btn-success"
+                                                                                                onclick="window.location.href='__URL__/downloadFile/id/{$record.file_id}'">
+                                                                                            下载
+                                                                                        </button>
+                                                                                        <a href="__URL__/record_delete/id/{$record.id}"
+                                                                                           onclick="return confirm('确定要删除该记录吗？')">
+                                                                                            <button type="button"
+                                                                                                    class="btn btn-xs btn-danger">
+                                                                                                删除
+                                                                                            </button>
+                                                                                        </a>
+                                                                                    </if>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </volist>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-tools">
+								<span class="go-top">
+									<i class="fa fa-chevron-up"></i> Top
+								</span>
+                    </div>
+                </div><!-- /CONTENT-->
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--/PAGE -->
+<!-- JAVASCRIPTS -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- JQUERY -->
+<script src="__PUBLIC__/js/jquery/jquery-2.0.3.min.js"></script>
+<!-- JQUERY UI-->
+<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+<!-- BOOTSTRAP -->
+<script src="__PUBLIC__/bootstrap-dist/js/bootstrap.min.js"></script>
+
+
+<!-- DATE RANGE PICKER -->
+<script src="__PUBLIC__/js/bootstrap-daterangepicker/moment.min.js"></script>
+
+<script src="__PUBLIC__/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+<!-- SLIMSCROLL -->
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+<!-- SLIMSCROLL -->
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+<!-- BLOCK UI -->
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+<!-- EASY PIE CHART -->
+<script src="__PUBLIC__/js/jquery-easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/easypiechart/jquery.easypiechart.min.js"></script>
+<!-- SPARKLINES -->
+<script type="text/javascript" src="__PUBLIC__/js/sparklines/jquery.sparkline.min.js"></script>
+<!-- DATA TABLES -->
+<script type="text/javascript" src="__PUBLIC__/js/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/datatables/media/assets/js/datatables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/datatables/extras/TableTools/media/js/TableTools.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/datatables/extras/TableTools/media/js/ZeroClipboard.min.js"></script>
+<!-- UNIFORM -->
+<script type="text/javascript" src="__PUBLIC__/js/uniform/jquery.uniform.min.js"></script>
+<!-- COOKIE -->
+<script type="text/javascript" src="__PUBLIC__/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+<!-- CUSTOM SCRIPT -->
+<script src="__PUBLIC__/js/script.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        App.setPage("dynamic_table");  //Set current page
+        App.init(); //Initialise plugins and elements
+    });
+</script>
+<!-- /JAVASCRIPTS -->
+<!-- /JAVASCRIPTS -->
+</body>
+</html>

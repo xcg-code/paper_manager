@@ -129,16 +129,23 @@
                                                                 <tbody>
                                                                 <volist name="trainList" id="info">
                                                                     <tr>
-                                                                        <td>{$info.stuNum}</td>
-                                                                        <td>{$info.stuName}</td>
+                                                                        <td>{$info.stunum}</td>
+                                                                        <td>{$info.stuname}</td>
                                                                         <td>{$info.major}</td>
                                                                         <td>{$info.title}</td>
                                                                         <td>
                                                                             <button type="button"
                                                                                     class="btn btn-xs btn-success"
-                                                                                    onclick="window.location.href='__URL__/check_record/id/{$info.id}'">
+                                                                                    onclick="window.location.href='__URL__/msg_record/id/{$info.id}'">
                                                                                 信息记录
                                                                             </button>
+                                                                            <a href="__URL__/student_delete/id/{$info.id}"
+                                                                               onclick="return confirm('确定要删除该记录吗？')">
+                                                                                <button type="button"
+                                                                                        class="btn btn-xs btn-danger">
+                                                                                    删除
+                                                                                </button>
+                                                                            </a>
                                                                         </td>
                                                                     </tr>
                                                                 </volist>
