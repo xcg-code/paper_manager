@@ -266,6 +266,10 @@
 			parent::is_login();
 			$AchievementModel=M('Achievement');
 			$ConditionA['id']=$achi_id;
+			$owner=$AchievementModel->where($ConditionA)->getField('user_number');
+			if($owner!=session('userNum')){
+				$this->error('权限错误，不能修改作者信息!');
+			}
 			$achievement_id=$AchievementModel->where($ConditionA)->getField('achievement_id');
 			$AuthorModel = M('Author');
 			$Condition['achievement_id'] = $achi_id;
@@ -586,6 +590,10 @@
 			parent::is_login();
 			$JournalModel = D('Journalpaper');
 			$Condition['id'] = $achi_id;
+			$owner=$JournalModel->where($Condition)->getField('user_number');
+			if($owner!=session('userNum')){
+				$this->error('权限错误，不能修改该成果!');
+			}
 			$JournalInfo = $JournalModel->where($Condition)->find();
 			$Content = get_sub_content($JournalInfo['inbox_status']);//获取拆分后内容
 			$Content = get_inbox_status($Content);//获取收录情况数组
@@ -636,6 +644,10 @@
 		{
 			$JournalModel = M('Journalpaper');
 			$Condition['id'] = $achi_id;
+			$owner=$JournalModel->where($Condition)->getField('user_number');
+			if($owner!=session('userNum')){
+				$this->error('权限错误，不能删除该成果!');
+			}
 			$JournalModel->where($Condition)->delete();
 			//删除相关作者，文件，所属项目，成果汇总信息
 			delete_all_info($achi_id,1);
