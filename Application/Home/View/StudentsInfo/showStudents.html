@@ -98,8 +98,9 @@
                                 </ul>
                                 <!-- /BREADCRUMBS -->
                                 <div class="clearfix">
-                                    <h3 class="content-title pull-left">我的学生</h3>
+                                    <h3 class="content-title pull-left">学生信息</h3>
                                 </div>
+                                <div class="description">查看学生信息，论文、获奖等</div>
                             </div>
                         </div>
                     </div>
@@ -120,70 +121,24 @@
                                             <th>学号</th>
                                             <th>姓名</th>
                                             <th>专业</th>
+                                            <th>学位</th>
                                             <th class="hidden-xs"></th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 9.0</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/StudentsInfo/studentInfo" method="get">
-                                                    <button type="submit" class="btn btn-primary">详细信息</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 9.2</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/StudentsInfo/studentInfo" method="get">
-                                                    <button type="submit" class="btn btn-primary">详细信息</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 9.5</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/StudentsInfo/studentInfo" method="get">
-                                                    <button type="submit" class="btn btn-primary">详细信息</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera for Wii</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/StudentsInfo/studentInfo" method="get">
-                                                    <button type="submit" class="btn btn-primary">详细信息</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Nokia N800</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/StudentsInfo/studentInfo" method="get">
-                                                    <button type="submit" class="btn btn-primary">详细信息</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Nintendo DS browser</td>
-                                            <td class="center">8.5</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/StudentsInfo/studentInfo" method="get">
-                                                    <button type="submit" class="btn btn-primary">详细信息</button>
-                                                </form>
-                                            </td>
-                                        </tr>
+                                        <volist name="students" id="info">
+                                            <tr>
+                                                <td>{$info.user_number}</td>
+                                                <td>{$info.user_name}</td>
+                                                <td>{$info.major}</td>
+                                                <td>{$info.degree}</td>
+                                                <td class="center hidden-xs">
+                                                    <form action="__URL__/studentInfo/id/{$info.user_number}" method="get">
+                                                        <button type="submit" class="btn btn-primary">详细信息</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </volist>
                                         </tbody>
                                     </table>
                                 </div>

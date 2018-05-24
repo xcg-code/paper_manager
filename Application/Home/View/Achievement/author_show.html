@@ -178,7 +178,7 @@
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane fade in active" id="box_tab1">
-													<form class="form-horizontal" action="__URL__/author_add_db/achi_id/{$achi_id}/type/2" method="post">
+													<form class="form-horizontal" action="__URL__/author_edit_db/achi_id/{$achi_id}" method="post">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="box-body">
@@ -211,7 +211,7 @@
 																					<td>{$vo.is_main}</td>
 																					<td>{$vo.is_company}</td>
 																					<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/author_edit/author_id/{$vo.id}/page_type/{$page_type}'">修改</button>
-																					<a href="__URL__/author_delete/author_id/{$vo.id}/achi_id/{$achi_id}" onclick="return confirm('确定要删除这个作者吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
+																					<a href="__URL__/author_delete/author_id/{$vo.id}" onclick="return confirm('确定要删除这个作者吗？')"><button type="button" class="btn btn-xs btn-danger">删除</button></a></td>
 																					</tr>
 																				</volist>
 																				
@@ -230,7 +230,7 @@
 														<div class="form-actions clearfix"> 
 															<button type="button" id="AddAuthor" class="btn btn-primary">添加作者信息</button>
 															<button type="button" id="DeleteAuthor" class="btn btn-primary">删除作者信息</button>
-															<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/'+'{$page_type}'+'/achi_id/{$achi_id}'">返回科研成果详情页</button>
+															<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/'+'{$page_type}'+'/achi_id/'+'{$achievement_id}'">返回科研成果详情页</button>
 															<input type="submit" value="保存修改" class="btn btn-primary pull-right">
 														</div>
 													</form>

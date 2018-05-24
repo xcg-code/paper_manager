@@ -23,7 +23,7 @@
 		}
 
 		//显示我的科研成果页面
-		public function my_achievement($achi_type = '', $achi_year = '', $user_id = '')
+		public function my_achievement($user_id = '',$achi_type = '', $achi_year = '')
 		{
 			parent::is_login();
 			$AchievementModel = M('Achievement');
@@ -60,14 +60,14 @@
 			$AchievementInfo = $AchievementModel->where($Condition)->order('publish_time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
 			//获取作者姓名字符串和详情链接
 			for ($i = 0; $i < count($AchievementInfo); $i++) {
-				$AchievementInfo[$i]['author'] = get_author_list($AchievementInfo[$i]['achievement_id']);
+				$AchievementInfo[$i]['author'] = get_author_list($AchievementInfo[$i]['id']);
 				$AchievementInfo[$i]['detail_link'] = get_detail_link($AchievementInfo[$i]);
 			}
 			$this->assign('AchievementInfo', $AchievementInfo);
 			$this->assign('AchievementCount', $AchievementCount);
 			$this->assign('AchievementYear', $AchievementYear);
 			$this->assign('SearchAction', $SearchAction);
-			$this->assign('user_id', session('userNum'));
+			$this->assign('user_id', $user_id);
 			$this->assign('page', $show);// 赋值分页输出
 			$this->display();
 		}
@@ -264,6 +264,9 @@
 		public function author_show($achi_id, $page_type)
 		{
 			parent::is_login();
+			$AchievementModel=M('Achievement');
+			$ConditionA['id']=$achi_id;
+			$achievement_id=$AchievementModel->where($ConditionA)->getField('achievement_id');
 			$AuthorModel = M('Author');
 			$Condition['achievement_id'] = $achi_id;
 			$AuthorInfo = $AuthorModel->where($Condition)->select();
@@ -283,6 +286,7 @@
 			}
 			$this->assign('AuthorInfo', $AuthorInfo);
 			$this->assign('achi_id', $achi_id);
+			$this->assign('achievement_id', $achievement_id);
 			$this->assign('page_type', $page_type);
 			$this->display();
 		}
@@ -300,26 +304,39 @@
 		}
 
 		//修改作者信息数据库操作
-		public function author_edit_db($author_id, $achi_id, $page_type)
+		public function author_edit_db($achi_id)
 		{
 			$AuthorModel = D('Author');
-			if ($AuthorModel->create()) {
-				$Condition['id'] = $author_id;
-				$Result = $AuthorModel->where($Condition)->save();
-				if ($Result == 0) {
-					$this->error('您没有修改任何信息');
-				} elseif ($Result > 0) {
-					$this->success('修改作者信息成功', __ROOT__ . '/index.php/Home/Achievement/author_show/achi_id/' . $achi_id . '/page_type/' . $page_type);
-				} else {
-					$this->error($AuthorModel->getError());
+			$Count = I('post.author_num');
+			$Result = false;
+			if ($Count == 0) {
+				$this->error('您没有填写任何作者信息');
+			}
+			for ($i = 0; $i < $Count; $i++) {
+				$Data['author_name'] = I('post.author_name_' . $i);
+				if ($Data['author_name'] == '') {
+					$this->error('作者姓名为必填项');
 				}
+				$Data['author_workplace'] = I('post.author_workplace_' . $i);
+				$Data['author_email'] = I('post.author_email_' . $i);
+				$Data['is_contact'] = I('post.is_contact_' . $i);
+				$Data['is_first'] = I('post.is_first_' . $i);
+				$Data['is_main'] = I('post.is_main_' . $i);
+				$Data['is_company'] = I('post.is_company_' . $i);
+				$Data['achievement_id'] = $achi_id;
+				if ($AuthorModel->add($Data)) {
+					$Result = true;
+				}
+			}
+			if ($Result) {
+				$this->success('添加作者信息成功');
 			} else {
-				$this->error($AuthorModel->getError());
+				$this->success('添加作者信息失败');
 			}
 		}
 
 		//删除作者信息数据库操作
-		public function author_delete($author_id, $achi_id)
+		public function author_delete($author_id)
 		{
 			$AuthorModel = D('Author');
 			$Condition['id'] = $author_id;

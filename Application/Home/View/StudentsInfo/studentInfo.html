@@ -34,13 +34,6 @@
                      width="120">
             </a>
             <!-- /COMPANY LOGO -->
-            <!-- TEAM STATUS FOR MOBILE -->
-            <div class="visible-xs">
-                <a href="#" class="team-status-toggle switcher btn dropdown-toggle">
-                    <i class="fa fa-users"></i>
-                </a>
-            </div>
-            <!-- /TEAM STATUS FOR MOBILE -->
             <!-- SIDEBAR COLLAPSE -->
             <div id="sidebar-collapse" class="sidebar-collapse btn">
                 <i class="fa fa-bars"
@@ -69,7 +62,6 @@
 
 </header>
 <!--/HEADER -->
-
 <!-- PAGE -->
 <section id="page">
     <!-- SIDEBAR -->
@@ -83,12 +75,10 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-header">
-                                <!-- STYLER -->
-
-                                <!-- /STYLER -->
                                 <div class="clearfix">
                                     <h3 class="content-title pull-left">学生信息</h3>
                                 </div>
+                                <div class="description">查看学生信息，论文、获奖等</div>
                             </div>
                         </div>
                     </div>
@@ -121,17 +111,35 @@
                                                                      src="__PUBLIC__/img/profile/avatar.jpg">
                                                             </li>
                                                             <div class="list-group-item profile-details">
-                                                                <h2>Jennifer Doe</h2>
-                                                                <p><i class="fa fa-circle text-green"></i> Online</p>
+                                                                <h2>{$StudentInfo.user_name}</h2>
                                                             </div>
                                                             <a href="#" class="list-group-item"><i
-                                                                    class="fa fa-user fa-fw"></i> 学号</a>
+                                                                    class="fa fa-user fa-fw"></i> 学号 :
+                                                                {$StudentInfo.user_number}</a>
                                                             <a href="#" class="list-group-item">
                                                                 <!--<span class="badge badge-red">9</span>-->
-                                                                <i class="fa fa-calendar fa-fw"></i> 职称
+                                                                <i class="fa fa-calendar fa-fw"></i> 学位 :
+                                                                {$StudentInfo.degree}
+                                                            </a>
+                                                            <a href="#" class="list-group-item">
+                                                                <!--<span class="badge badge-red">9</span>-->
+                                                                <i class="fa fa-calendar fa-fw"></i> 专业 :
+                                                                {$StudentInfo.major}
                                                             </a>
                                                             <a href="#" class="list-group-item"><i
-                                                                    class="fa fa-comment-o fa-fw"></i> 邮箱</a>
+                                                                    class="fa fa-comment-o fa-fw"></i> 邮箱 :
+                                                                {$StudentInfo.email}
+                                                            </a>
+                                                            <a href="__URL__/studentInfo/id/{$StudentInfo.user_number}"
+                                                               class="list-group-item">
+                                                                <span class="badge badge-red">{$prizeCount}</span>
+                                                                <i class="fa fa-thumbs-up"></i> 获奖经历
+                                                            </a>
+                                                            <a href="__MODULE__/Achievement/my_achievement/user_id/{$StudentInfo.user_number}"
+                                                               class="list-group-item">
+                                                                <span class="badge badge-red">{$AchiAll}</span>
+                                                                <i class="fa fa-file-text"></i> 科研成果
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <!-- /PROFILE PIC -->
@@ -163,7 +171,7 @@
                                                                                         <tr>
                                                                                             <th>
                                                                                                 <i class="fa fa-calendar-o"></i>
-                                                                                                日期
+                                                                                                获奖日期
                                                                                             </th>
                                                                                             <th class="hidden-xs">
                                                                                                 <i class="fa  fa-asterisk"></i>
@@ -173,58 +181,35 @@
                                                                                                 <i class="fa  fa-bookmark"></i>
                                                                                                 授奖单位
                                                                                             </th>
+                                                                                            <th>
+                                                                                                <i class="fa fa-download"></i>
+                                                                                                查看证书
+                                                                                            </th>
                                                                                         </tr>
                                                                                         </thead>
                                                                                         <tbody>
-                                                                                        <tr>
-                                                                                            <td><a href="#">Fortune
-                                                                                                500</a></td>
-                                                                                            <td class="hidden-xs">Gold
-                                                                                                Level Virtual Server
-                                                                                            </td>
-                                                                                            <td>$ 2310.23</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td><a href="#">Cisco
-                                                                                                Inc.</a></td>
-                                                                                            <td class="hidden-xs">
-                                                                                                Platinum Level Virtual
-                                                                                                Server
-                                                                                            </td>
-                                                                                            <td>$ 5502.67</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td><a href="#">VMWare
-                                                                                                Ltd.</a></td>
-                                                                                            <td class="hidden-xs">
-                                                                                                Hardware Switch
-                                                                                            </td>
-                                                                                            <td>$ 3472.54</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td><a href="#">Wall-Mart
-                                                                                                Stores</a></td>
-                                                                                            <td class="hidden-xs">
-                                                                                                Branding & Marketing
-                                                                                            </td>
-                                                                                            <td>$ 6653.25</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td><a href="#">Exxon
-                                                                                                Mobil</a></td>
-                                                                                            <td class="hidden-xs">UX and
-                                                                                                UI Services
-                                                                                            </td>
-                                                                                            <td>$ 45645.45</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td><a href="#">General
-                                                                                                Electric</a></td>
-                                                                                            <td class="hidden-xs">Web
-                                                                                                Designing
-                                                                                            </td>
-                                                                                            <td>$ 3432.11</td>
-                                                                                        </tr>
+                                                                                        <volist name="prizes" id="info">
+                                                                                            <tr>
+                                                                                                <td>{$info.date}</td>
+                                                                                                <td>
+                                                                                                    {$info.prize_title}
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    {$info.prize_institute}
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <if condition="$record.file_id eq ''">
+                                                                                                        <button class="btn btn-xs btn-success"
+                                                                                                                onclick="window.location.href='__URL__/downloadFile/id/{$info.file_id}'">
+                                                                                                            下载
+                                                                                                        </button>
+                                                                                                        <else/>
+                                                                                                        -
+                                                                                                    </if>
+                                                                                                </td>
+                                                                                            </tr>
+
+                                                                                        </volist>
                                                                                         </tbody>
                                                                                     </table>
                                                                                 </div>

@@ -11,14 +11,24 @@
 		public function showStudents()
 		{
 			parent::is_login();
-
+			$userModel = M('User');
+			$students = $userModel->where('position=%d', 2)->select();
+			$this->assign("students", $students);
 			$this->display();
 		}
 
-		public function studentInfo()
+		public function studentInfo($id)
 		{
 			parent::is_login();
-
+			$UserModel=M('User');
+			$student=$UserModel->where('user_number=%s',$id)->find();
+			$this->assign("StudentInfo",$student);
+			$AchiNum=get_achievement_count('',$id);
+			$PrizeModel=M('Prize');
+			$prizes=$PrizeModel->where('user_number=%s',$id)->select();
+			$this->assign('prizeCount',count($prizes));
+			$this->assign('prizes',$prizes);
+			$this->assign('AchiAll', $AchiNum['All']);
 			$this->display();
 		}
 
@@ -54,17 +64,19 @@
 			$this->display();
 		}
 
-		public function student_delete($id){
-			$TrainStudentModel=M('TrainStudent');
-			$Condition['id']=$id;
-			$result=$TrainStudentModel->where($Condition)->delete();
-			if($result){
+		public function student_delete($id)
+		{
+			$TrainStudentModel = M('TrainStudent');
+			$Condition['id'] = $id;
+			$result = $TrainStudentModel->where($Condition)->delete();
+			if ($result) {
 				$this->redirect("/Home/StudentsInfo/trainInfo");
-			}else{
+			} else {
 				$this->error($TrainStudentModel->getError());
 			}
 
 		}
+
 		public function msg_record($id)
 		{
 			parent::is_login();
@@ -165,18 +177,20 @@
 		}
 
 		//删除记录
-		public function record_delete($id){
+		public function record_delete($id)
+		{
 			$MsgRecordModel = M('MsgRecord');
 			$Condition['id'] = $id;
 			$file_id = $MsgRecordModel->where($Condition)->getField('file_id');
 			$train_id = $MsgRecordModel->where($Condition)->getField('train_id');
 			$MsgRecordModel->where($Condition)->delete();
-			if(!empty($file_id)){
+			if (!empty($file_id)) {
 				$this->file_delete($file_id);
 			}
 			$this->Redirect('Home/StudentsInfo/msg_record/id/' . $train_id);
 
 		}
+
 		//删除已上传文件操作
 		public function file_delete($file_id)
 		{

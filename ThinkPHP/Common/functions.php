@@ -1598,15 +1598,15 @@
 	}
 
 //获取不同科研成果类型数量函数
-	function get_achievement_count($id = '',$user_id='')
+	function get_achievement_count($id = '', $user_id = '')
 	{
 		$AchievementModel = M('Achievement');
 		//添加项目号条件
 		if ($id != '') {
 			$Condition['project_id'] = $id;
 		}
-		if($user_id!=''){
-			$Condition['user_number']=$user_id;
+		if ($user_id != '') {
+			$Condition['user_number'] = $user_id;
 		}
 		$AchievementInfo = $AchievementModel->where($Condition)->select();
 		$AchievementCount['All'] = count($AchievementInfo);
@@ -1659,16 +1659,53 @@
 		return $AchievementCount;
 	}
 
+	function get_achievement_type($achi_name)
+	{
+		$result = 1;
+		switch ($achi_name) {
+			case 'journal_paper_show':
+				$result = 1;
+				break;
+			case 'conference_paper_show':
+				$result = 2;
+				break;
+			case 'monograph_show':
+				$result = 3;
+				break;
+			case 'patent_show':
+				$result = 4;
+				break;
+			case 'conference_report_show':
+				$result = 1;
+				break;
+			case 'standard_show':
+				$result = 5;
+				break;
+			case 'software_show':
+				$result = 6;
+				break;
+			case 'reward_show':
+				$result = 7;
+				break;
+			case 'conference_involved_show':
+				$result = 8;
+				break;
+			default:
+				break;
+		}
+		return $result;
+	}
+
 //获取不同年份科研成果数量
-	function get_achievement_year($id = '',$user_id='')
+	function get_achievement_year($id = '', $user_id = '')
 	{
 		$AModel = M('Achievement');
 		//添加项目号条件
 		if ($id != '') {
 			$Condition['project_id'] = $id;
 		}
-		if($user_id!=''){
-			$Condition['user_number']=$user_id;
+		if ($user_id != '') {
+			$Condition['user_number'] = $user_id;
 		}
 		$Info = $AModel->distinct(true)->field('publish_time')->order('publish_time desc')->where($Condition)->select();
 		$YearList = array();
@@ -1820,14 +1857,14 @@
 	}
 
 //删除科研成果对应的作者，文件，所属项目，成果汇总信息
-	function delete_all_info($achi_id,$type)
+	function delete_all_info($achi_id, $type)
 	{
 		//删除成果汇总表信息
 		$AchievementModel = M('Achievement');
 		$Condition['achievement_id'] = $achi_id;
 		$Condition['achievement_type'] = $type;
-		$achievement_id=$AchievementModel->where($Condition)->getField('id');
-		$file_id=$AchievementModel->where($Condition)->getField('file_id');
+		$achievement_id = $AchievementModel->where($Condition)->getField('id');
+		$file_id = $AchievementModel->where($Condition)->getField('file_id');
 		$AchievementModel->where($Condition)->delete();
 		//删除作者信息
 		$AuthorModel = M('Author');
@@ -1835,7 +1872,7 @@
 		$AuthorModel->where($Condition2)->delete();
 		//删除已上传文件及数据
 		$FileModel = M('File');
-		$path = $FileModel->where('id=%d',$file_id)->getField('path');
+		$path = $FileModel->where('id=%d', $file_id)->getField('path');
 		$FileModel->where($Condition)->delete();
 		//物理地址
 		$FilePath = substr(THINK_PATH, 0, -9) . $path;
@@ -1857,7 +1894,7 @@
 		return $p;
 	}
 
-//获取不同类别项目个数
+	//获取不同类别项目个数
 	function get_project_num($TypeInfo)
 	{
 		//提取项目类别名

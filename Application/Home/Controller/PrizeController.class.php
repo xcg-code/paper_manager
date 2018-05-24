@@ -3,19 +3,48 @@
 	namespace Home\Controller;
 
 	use Think\Controller;
-	use Org\Net\Http;
+	use Think\Upload;
 
 	class PrizeController extends Controller
 	{
 		public function prize_add()
 		{
 			parent::is_login();
+			$this->display();
+		}
 
+		public function prize_add_db()
+		{
+			$PrizeModel=M('Prize');
+			if($PrizeModel->create()){
+				$PrizeModel->user_number=session('userNum');
+				$PrizeModel->date=date('Y:m:d H:i:s');
+				$file_id=$this->uploadFile();
+				if ($file_id != 0||$file_id!='') {
+					$PrizeModel->file_id = $file_id;
+				}
+				$result=$PrizeModel->add();
+				if($result){
+					$this->redirect('/Home/Prize/my_prize');
+				}else{
+					$this->error($PrizeModel->getError());
+				}
+			}else{
+				$this->error($PrizeModel->getError());
+			}
+		}
+
+		public function my_prize(){
+			parent::is_login();
+			$PrizeModel=M('Prize');
+			$Condition['user_number']=session('userNum');
+			$prizes=$PrizeModel->where($Condition)->select();
+			$this->assign('prizes',$prizes);
 			$this->display();
 		}
 
 		//显示我的科研成果页面
-		public function my_prize($achi_type = '', $achi_year = '', $user_id = '')
+		public function my_prize1($achi_type = '', $achi_year = '', $user_id = '')
 		{
 			parent::is_login();
 			$AchievementModel = M('Achievement');
@@ -63,17 +92,91 @@
 			$this->display();
 		}
 
-		public function downloadFile()
+		//上传文件
+		public function uploadFile($id = '')
+		{
+			$upload = new Upload();// 实例化上传类
+			$upload->maxSize = 20971520;// 设置附件上传大小 20MB
+			$upload->exts = array('pdf', 'jpg', 'jpeg', 'gif', 'png', 'bmp');// 设置附件上传类型
+			$upload->rootPath = './Uploads/'; // 设置附件上传根目录,
+			$upload->savePath = 'Prizes/'; // 设置附件上传（子）目录
+			$upload->saveName = array('uniqid', '');
+			$upload->autoSub = false;
+			$file_id = "";
+			if ($_FILES['filePath']['name']) {
+				$info = $upload->uploadOne($_FILES['filePath']);
+				// 上传文件
+				if (!$info) {// 上传错误提示错误信息
+					$this->error($upload->getError());
+				} else {// 上传成功,保存文件信息
+					if ($id != '') {
+						$FileInfo['achievement_id'] = $id;
+					}
+					$FileInfo['name'] = $info['name'];
+					$FileInfo['path'] = 'Uploads/' . $info['savepath'] . $info['savename'];
+					$FileInfo['upload_time'] = date("Y-m-d H:i:s");
+					$FileInfo['user_number'] = session('userNum');
+					$FileModel = M('File');
+					$Result = $FileModel->add($FileInfo);
+					if (!$Result) {
+						$this->error('文档上传失败');
+					}
+					$file_id = $Result;
+				}
+			}
+			return $file_id;
+		}
+
+
+		//下载文件
+		public function downloadFile($id)
 		{
 			parent::is_login();
-			import('ORG.Net.Http');
-			$http=new \Org\Net\Http;
-			if (IS_GET) {
-				$url = "D:\/222.txt";
-				$http->download($url, "2222.txt");
-			} else {
-				$this->ajaxReturn('非法请求');
+			if ($id == '') {
+				$this->ajaxReturn('下载失败');
+				return;
 			}
+			$FileModel = M('File');
+			$condition['id'] = $id;
+			$file = $FileModel->where($condition)->find();
+			if ($file == false) {
+				$this->ajaxReturn('文件未找到!');
+			} else {
+				$name = $file['name'];
+				$fileName = urlencode($name);
+				$filePath = './' . $file['path'];
+				import('ORG.Net.Http');
+				$http = new \Org\Net\Http;
+				$http->download($filePath, $fileName);
+			}
+		}
+
+		//删除记录
+		public function record_delete($id)
+		{
+			$PrizeModel = M('Prize');
+			$Condition['id'] = $id;
+			$file_id = $PrizeModel->where($Condition)->getField('file_id');
+			$PrizeModel->where($Condition)->delete();
+			if (!empty($file_id)) {
+				$this->file_delete($file_id);
+			}
+			$this->Redirect('Home/Prize/my_prize');
+
+		}
+
+		//删除已上传文件操作
+		public function file_delete($file_id)
+		{
+			$FileModel = M('File');
+			$Condition['id'] = $file_id;
+			//删除数据库信息
+			$path = $FileModel->where($Condition)->getField('path');
+			$FileModel->where($Condition)->delete();
+			//物理地址
+			$FilePath = substr(THINK_PATH, 0, -9) . $path;
+			//删除物理文件
+			unlink($FilePath);
 		}
 
 	}

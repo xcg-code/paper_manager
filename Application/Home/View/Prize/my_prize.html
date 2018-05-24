@@ -100,6 +100,7 @@
                                 <div class="clearfix">
                                     <h3 class="content-title pull-left">我的获奖</h3>
                                 </div>
+                                <div class="description">查看个人获奖信息，下载奖励证书</div>
                             </div>
                         </div>
                     </div>
@@ -108,82 +109,54 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!-- BOX -->
-                            <div class="box border green">
+                            <div class="box border blue">
                                 <div class="box-title">
-                                    <h4><i class="fa fa-table"></i>获奖经历</h4>
+                                    <h4><i class="fa fa-file"></i>已上传信息</h4>
                                 </div>
                                 <div class="box-body">
-                                    <table id="my_prize" cellpadding="0" cellspacing="0" border="0"
+                                    <table id="datatable1" cellpadding="0"
+                                           cellspacing="0" border="0"
                                            class="datatable table table-striped table-bordered table-hover">
                                         <thead>
                                         <tr>
-                                            <th>日期</th>
+                                            <th>获奖日期</th>
                                             <th>奖项名称</th>
                                             <th>授奖单位</th>
-                                            <th class="hidden-xs">证书下载</th>
+                                            <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr class="gradeA">
-                                            <td>2018-01-02</td>
-                                            <td>hong</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/Prize/downloadFile" method="get">
-                                                    <button type="submit" class="btn btn-primary">下载</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-11-02</td>
-                                            <td>honng</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/Prize/downloadFile" method="get">
-                                                    <button type="submit" class="btn btn-primary">下载</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-03-02</td>
-                                            <td>Opera</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/Prize/downloadFile" method="get">
-                                                    <button type="submit" class="btn btn-primary">下载</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01-02</td>
-                                            <td>Wii</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/Prize/downloadFile" method="get">
-                                                    <button type="submit" class="btn btn-primary">下载</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01-20</td>
-                                            <td>Nokia</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/Prize/downloadFile" method="get">
-                                                    <button type="submit" class="btn btn-primary">下载</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-02-02</td>
-                                            <td>Nintendo</td>
-                                            <td class="center">-</td>
-                                            <td class="center hidden-xs">
-                                                <form action="__MODULE__/Prize/downloadFile" method="get">
-                                                    <button type="submit" class="btn btn-primary">下载</button>
-                                                </form>
-                                            </td>
-                                        </tr>
+                                        <volist name="prizes" id="record">
+                                            <tr>
+                                                <td>{$record.date}</td>
+                                                <td>{$record.prize_title}</td>
+                                                <td>{$record.prize_institute}</td>
+                                                <td>
+                                                    <if condition="$record.file_id eq ''">
+                                                        <a href="__URL__/record_delete/id/{$record.id}"
+                                                           onclick="return confirm('确定要删除该记录吗？')">
+                                                            <button type="button"
+                                                                    class="btn btn-xs btn-danger">
+                                                                删除
+                                                            </button>
+                                                        </a>
+                                                        <else/>
+                                                        <button class="btn btn-xs btn-success"
+                                                                onclick="window.location.href='__URL__/downloadFile/id/{$record.file_id}'">
+                                                            下载
+                                                        </button>
+                                                        <a href="__URL__/record_delete/id/{$record.id}"
+                                                           onclick="return confirm('确定要删除该记录吗？')">
+                                                            <button type="button"
+                                                                    class="btn btn-xs btn-danger">
+                                                                删除
+                                                            </button>
+                                                        </a>
+                                                    </if>
+
+                                                </td>
+                                            </tr>
+                                        </volist>
                                         </tbody>
                                     </table>
                                 </div>
