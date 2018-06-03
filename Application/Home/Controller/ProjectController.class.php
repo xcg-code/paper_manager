@@ -398,18 +398,22 @@
 		}
 
 		//我的科研项目
-		public function my_project($project_type = '')
+		public function my_project($project_type = '',$user_number='')
 		{
 			parent::is_login();
+			if($user_number==''){
+				$user_number=session('userNum');
+			}
 			//获取项目类别信息
 			$TypeModel = M('Project_type');
 			$TypeInfo = $TypeModel->select();
-			$TypeInfo = get_project_num($TypeInfo);
+			//获取各类项目个数
+			$TypeInfo = get_project_num($TypeInfo,$user_number);
 			//获取项目总个数
 			$AllCount = get_all_project_num($TypeInfo);
 			//获取检索条件
 			$ProjectModel = M('Project');
-			$Condition['user_number'] = session('userNum');
+			$Condition['user_number'] = $user_number;
 			$SearchAction = '';
 			if ($project_type != '') {
 				for ($i = 0; $i < count($TypeInfo); $i++) {
@@ -433,13 +437,17 @@
 			$Page = get_page($ProjectCount, 10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 			$show = $Page->show();// 分页显示输出
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-			$ProjectInfo = $ProjectModel->where($Condition)->limit($Page->firstRow . ',' . $Page->listRows)->select();
-
+			//$ProjectInfo = $ProjectModel->where($Condition)->limit($Page->firstRow . ',' . $Page->listRows)->select();
+			$ProjectInfo=$ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
+				->where($Condition)
+				->field("think_project.*,think_project_member.user_number")
+				->limit($Page->firstRow . ',' . $Page->listRows)->select();
 			$this->assign('TypeInfo', $TypeInfo);
 			$this->assign('AllCount', $AllCount);
 			$this->assign('ProjectInfo', $ProjectInfo);
 			$this->assign('SearchAction', $SearchAction);
 			$this->assign('page', $show);// 赋值分页输出
+			$this->assign("user_number",$user_number);
 			$this->display();
 		}
 
@@ -563,8 +571,11 @@
 		{
 			$ProjectModel = M('Project');
 			$ProjectModel->status = 1;
-			$Result = $ProjectModel->where("id='%s'", $git_id)->save();
-			if ($Result) {
+			$Result1 = $ProjectModel->where("id='%s'", $git_id)->save();
+			$ProjectMemberModel=M('ProjectMember');
+			$ProjectMemberModel->p_status=1;
+			$Result2 = $ProjectMemberModel->where("project_id='%s'", $git_id)->save();
+			if ($Result1&&$Result2) {
 				$this->success('该协作项目已完成', __ROOT__ . '/index.php/Home/Project/project_git');
 			} else {
 				$this->error($ProjectModel->getError());

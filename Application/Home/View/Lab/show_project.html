@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Cloud Admin | User Profile</title>
+	<title>科研项目</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -29,13 +29,6 @@
 					<img src="__PUBLIC__/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
 				</a>
 				<!-- /COMPANY LOGO -->
-				<!-- TEAM STATUS FOR MOBILE -->
-				<div class="visible-xs">
-					<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
-						<i class="fa fa-users"></i>
-					</a>
-				</div>
-				<!-- /TEAM STATUS FOR MOBILE -->
 				<!-- SIDEBAR COLLAPSE -->
 				<div id="sidebar-collapse" class="sidebar-collapse btn">
 					<i class="fa fa-bars" 
@@ -44,10 +37,7 @@
 				</div>
 				<!-- /SIDEBAR COLLAPSE -->
 			</div>
-			<!-- NAVBAR LEFT -->
-			<!--<include file="./Public/tpl/header.html" />-->
-			<!-- /NAVBAR LEFT -->
-			<!-- BEGIN TOP NAVIGATION MENU -->		
+			<!-- BEGIN TOP NAVIGATION MENU -->
 			<ul class="nav navbar-nav pull-right">				
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<li class="dropdown user" id="header-user">
@@ -65,81 +55,14 @@
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
 		
-		<!-- TEAM STATUS -->
-		<div class="container team-status" id="team-status">
-			<div id="scrollbar">
-				<div class="handle">
-				</div>
-			</div>
-			<div id="teamslider">
-				<ul class="team-list">
-					<li class="current">
-						<a href="javascript:void(0);">
-							<span class="image">
-								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
-							</span>
-							<span class="title">
-								You
-							</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-success" style="width: 35%">
-									<span class="sr-only">35% Complete (success)</span>
-								</div>
-								<div class="progress-bar progress-bar-warning" style="width: 20%">
-									<span class="sr-only">20% Complete (warning)</span>
-								</div>
-								<div class="progress-bar progress-bar-danger" style="width: 10%">
-									<span class="sr-only">10% Complete (danger)</span>
-								</div>
-							</div>
-							<span class="status">
-								<div class="field">
-									<span class="badge badge-green">6</span> completed
-									<span class="pull-right fa fa-check"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-orange">3</span> in-progress
-									<span class="pull-right fa fa-adjust"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-red">1</span> pending
-									<span class="pull-right fa fa-list-ul"></span>
-								</div>
-							</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	
 	<!-- PAGE -->
 	<section id="page">
 		<!-- SIDEBAR -->
 		<?php include session(sidebar_path); ?>
 		<!-- /SIDEBAR -->
 		<div id="main-content">
-			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Box Settings</h4>
-						</div>
-						<div class="modal-body">
-							Here goes box setting content.
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
@@ -156,9 +79,9 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">我的事务管理</h3>
+										<h3 class="content-title pull-left">查看科研项目</h3>
 									</div>
-									<div class="description">查看、修改</div>
+									<div class="description">查看，检索</div>
 								</div>
 							</div>
 						</div>
@@ -166,72 +89,74 @@
 						<!-- USER PROFILE -->
 						<div class="row">
 							<div class="col-md-12">
-								<!-- BOX -->
-								<div class="box border">
+								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">我的事务管理</span></h4>
+										<h4><i class="fa fa-bars"></i>{$user.user_name}的科研项目列表</h4>
+										<div class="tools hidden-xs">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
 									</div>
 									<div class="box-body">
-										<div class="tabbable header-tabs">
-											<ul class="nav nav-tabs">
-												<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">我的事务管理</span></a></li>
-											</ul>
-											<div class="tab-content">
-												<div class="tab-pane fade in active" id="box_tab1">
-													<div class="box-body">
-														<div class="row">
-															<div class="col-md-6">
-
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-table"></i>我的待完成事务列表</h4>
-																	</div>
-																	<div class="box-body">
-																		<table class="table table-striped">
-																			<thead>
-																				<tr>
-																					<th>事务编号</th>
-																					<th>事务标题</th>
-																					<th>创建者</th>
-																					<th>优先级</th>
-																					<th>操作</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<volist name="BugInfo" id="vo">
-																					<tr>
-																					<td>{$vo.id}</td>
-																					<td>{$vo.title}</td>
-																					<td>{$vo.creator}</td>
-																					<td>{$vo.level}</td>
-																					<td><button type="button" class="btn btn-xs btn-success" onclick="window.location.href='__URL__/git_my_bug_show/bug_id/{$vo.id}/git_id/{$git_id}'">处理</button></td>
-																					</tr>
-																				</volist>
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-
-															</div>
-															<div class="col-md-6">
-
-																<div class="box border blue">
-																	<div class="box-title">
-																		<h4><i class="fa fa-bars"></i>事务详情</h4>
-																	</div>
-																	<div class="box-body">
-																		
-																	</div>
-																</div>	
-
-															</div>
-															
-														</div>
-														<div class="form-actions clearfix"> 
-														<button type="button" class="btn btn-primary" onclick="window.location.href='__URL__/project_git_show/git_id/{$git_id}'">返回科研详情页</button>
-															
-														</div>
+										<div class="row">
+											<div class="col-md-3">
+												<div class="list-group">
+													<div class="list-group-item profile-details">
+														<h4>项目操作</h4>
 													</div>
+													<a href="__ROOT__/index.php/Home/Excel/project_export/{$SearchAction}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 导出当前检索科研项目信息
+													</a>
+													<div class="list-group-item profile-details">
+														<h4>项目类别</h4>
+													</div>
+													<a href="__URL__/show_project/user_id/{$user_number}" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
+													</a>
+													<volist name="TypeInfo" id="vo">
+														<if condition="$vo.num eq 0">
+															<a href="__URL__/show_project/user_id/{$user_number}/project_type/{$vo.id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+															</a>
+															<else/>
+															<a href="__URL__/show_project/user_id/{$user_number}/project_type/{$vo.id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+															</a>
+														</if>
+
+													</volist>
+												</div>														
+											</div>
+											<div class="col-md-9">
+												<form action="__URL__/my_project/{$SearchAction}" method="post">
+													<div class="input-group">
+														<input class="form-control" type="text" placeholder="输入项目名称或者项目号查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
+														<span class="input-group-btn">
+														<button class="btn btn-primary" type="submit">查询 <i class="fa fa-search"></i></button>
+														</span>
+													</div>
+												</form>
+												
+												<div class="divide-20"></div>
+
+												<volist name="ProjectInfo" id="vo">
+													<div class="search-results">
+														<h4><a href="__ROOT__/index.php/Home/Project/project_show/id/{$vo.id}">{$vo.project_name}</a></h4>
+														<div class="text-danger">{$vo.type} | {$vo.project_num}</div>
+														<div class="text-success">{$vo.content}</div>
+													</div>
+												</volist>
+
+												<div>
+													<ul class='pagination'>
+														{$page}
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -249,7 +174,6 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
@@ -284,7 +208,6 @@
 	<!-- CUSTOM SCRIPT -->
 	<script src="__PUBLIC__/js/script.js"></script>
 	<script>
-		var count=0;
 		jQuery(document).ready(function() {		
 			App.setPage("user_profile");  //Set current page
 			App.init(); //Initialise plugins and elements

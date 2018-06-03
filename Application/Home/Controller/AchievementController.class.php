@@ -783,7 +783,7 @@
 			$ConferenceModel = M('Conferencepaper');
 			$Condition['id'] = $achi_id;
 			$ConferenceModel->where($Condition)->delete();
-			//删除相关作者，文件，所属项目，成果汇总信息
+			//删除相关作者，文件信息
 			delete_all_info($achi_id,2);
 			$this->success('删除该科研成果成功', __ROOT__ . '/index.php/Home/Achievement/my_achievement');
 		}

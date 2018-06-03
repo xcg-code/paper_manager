@@ -79,7 +79,7 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">我的科研项目</h3>
+										<h3 class="content-title pull-left">查看科研项目</h3>
 									</div>
 									<div class="description">查看，检索</div>
 								</div>
@@ -91,7 +91,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>我的科研项目列表</h4>
+										<h4><i class="fa fa-bars"></i>所有科研项目列表</h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -119,14 +119,14 @@
 													<div class="list-group-item profile-details">
 														<h4>项目类别</h4>
 													</div>
-													<a href="__URL__/my_project" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
+													<a href="__URL__/all_project" class="list-group-item"><span class="badge badge-red">{$AllCount}</span><i class="fa fa-calendar fa-fw"></i> 所有项目
 													</a>
 													<volist name="TypeInfo" id="vo">
 														<if condition="$vo.num eq 0">
-															<a href="__URL__/my_project/project_type/{$vo.id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+															<a href="__URL__/all_project/project_type/{$vo.id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
 															</a>
 															<else/>
-															<a href="__URL__/my_project/project_type/{$vo.id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
+															<a href="__URL__/all_project/project_type/{$vo.id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.type_name}
 															</a>
 														</if>
 
@@ -134,7 +134,7 @@
 												</div>														
 											</div>
 											<div class="col-md-9">
-												<form action="__URL__/my_project/{$SearchAction}" method="post">
+												<form action="__URL__/all_project/{$SearchAction}" method="post">
 													<div class="input-group">
 														<input class="form-control" type="text" placeholder="输入项目名称或者项目号查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
 														<span class="input-group-btn">

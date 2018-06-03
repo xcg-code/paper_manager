@@ -64,54 +64,6 @@
 			</ul>			
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		
-		<!-- TEAM STATUS -->
-		<div class="container team-status" id="team-status">
-			<div id="scrollbar">
-				<div class="handle">
-				</div>
-			</div>
-			<div id="teamslider">
-				<ul class="team-list">
-					<li class="current">
-						<a href="javascript:void(0);">
-							<span class="image">
-								<img src="__PUBLIC__/img/avatars/avatar3.jpg" alt="" />
-							</span>
-							<span class="title">
-								You
-							</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-success" style="width: 35%">
-									<span class="sr-only">35% Complete (success)</span>
-								</div>
-								<div class="progress-bar progress-bar-warning" style="width: 20%">
-									<span class="sr-only">20% Complete (warning)</span>
-								</div>
-								<div class="progress-bar progress-bar-danger" style="width: 10%">
-									<span class="sr-only">10% Complete (danger)</span>
-								</div>
-							</div>
-							<span class="status">
-								<div class="field">
-									<span class="badge badge-green">6</span> completed
-									<span class="pull-right fa fa-check"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-orange">3</span> in-progress
-									<span class="pull-right fa fa-adjust"></span>
-								</div>
-								<div class="field">
-									<span class="badge badge-red">1</span> pending
-									<span class="pull-right fa fa-list-ul"></span>
-								</div>
-							</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
 	
@@ -121,25 +73,6 @@
 		<?php include session(sidebar_path); ?>
 		<!-- /SIDEBAR -->
 		<div id="main-content">
-			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Box Settings</h4>
-						</div>
-						<div class="modal-body">
-							Here goes box setting content.
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
@@ -156,7 +89,7 @@
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">我的科研成果</h3>
+										<h3 class="content-title pull-left">所有科研成果</h3>
 									</div>
 									<div class="description">查看，检索</div>
 								</div>
@@ -168,7 +101,7 @@
 							<div class="col-md-12">
 								<div class="box">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>我的科研成果列表</h4>
+										<h4><i class="fa fa-bars"></i>所有科研成果列表</h4>
 										<div class="tools hidden-xs">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -196,63 +129,63 @@
 														<h4>成果类别</h4>
 													</div>
 
-													<a href="__URL__/my_achievement/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.All}</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
+													<a href="__URL__/all_achievement" class="list-group-item"><span class="badge badge-red">{$AchievementCount.All}</span><i class="fa fa-user fa-fw"></i> 所有成果</a>
 													<if condition="$AchievementCount.JournalPaper eq 0">
-														<a href="__URL__/my_achievement/achi_type/1/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 期刊论文</a>
+														<a href="__URL__/all_achievement/achi_type/1" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 期刊论文</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/1/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文</a>
+														<a href="__URL__/all_achievement/achi_type/1" class="list-group-item"><span class="badge badge-red">{$AchievementCount.JournalPaper}</span><i class="fa fa-calendar fa-fw"></i> 期刊论文</a>
 													</if>
 													<if condition="$AchievementCount.ConferencePaper eq 0">
-														<a href="__URL__/my_achievement/achi_type/2/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 会议论文</a>
+														<a href="__URL__/all_achievement/achi_type/2" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 会议论文</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/2/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文</a>
+														<a href="__URL__/all_achievement/achi_type/2" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferencePaper}</span><i class="fa fa-calendar fa-fw"></i> 会议论文</a>
 													</if>
 													<if condition="$AchievementCount.Monograph eq 0">
-														<a href="__URL__/my_achievement/achi_type/3/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 学术专著</a>
+														<a href="__URL__/all_achievement/achi_type/3" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 学术专著</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/3/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著</a>
+														<a href="__URL__/all_achievement/achi_type/3" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Monograph}</span><i class="fa fa-calendar fa-fw"></i> 学术专著</a>
 													</if>
 													<if condition="$AchievementCount.Patent eq 0">
-														<a href="__URL__/my_achievement/achi_type/4/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 专利</a>
+														<a href="__URL__/all_achievement/achi_type/4" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 专利</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/4/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利</a>
+														<a href="__URL__/all_achievement/achi_type/4" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Patent}</span><i class="fa fa-calendar fa-fw"></i> 专利</a>
 													</if>
 													<if condition="$AchievementCount.ConferenceReport eq 0">
-														<a href="__URL__/my_achievement/achi_type/5/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 会议报告</a>
+														<a href="__URL__/all_achievement/achi_type/5" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 会议报告</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/5/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告</a>
+														<a href="__URL__/all_achievement/achi_type/5" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceReport}</span><i class="fa fa-calendar fa-fw"></i> 会议报告</a>
 													</if>
 													<if condition="$AchievementCount.Standard eq 0">
-														<a href="__URL__/my_achievement/achi_type/6/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 标准</a>
+														<a href="__URL__/all_achievement/achi_type/6" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 标准</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/6/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准</a>
+														<a href="__URL__/all_achievement/achi_type/6" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Standard}</span><i class="fa fa-calendar fa-fw"></i> 标准</a>
 													</if>
 													<if condition="$AchievementCount.Software eq 0">
-														<a href="__URL__/my_achievement/achi_type/7/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 软件著作权</a>
+														<a href="__URL__/all_achievement/achi_type/7" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 软件著作权</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/7/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权</a>
+														<a href="__URL__/all_achievement/achi_type/7" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Software}</span><i class="fa fa-calendar fa-fw"></i> 软件著作权</a>
 													</if>
 													<if condition="$AchievementCount.Reward eq 0">
-														<a href="__URL__/my_achievement/achi_type/8/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 科研奖励</a>
+														<a href="__URL__/all_achievement/achi_type/8" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 科研奖励</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/8/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励</a>
+														<a href="__URL__/all_achievement/achi_type/8" class="list-group-item"><span class="badge badge-red">{$AchievementCount.Reward}</span><i class="fa fa-calendar fa-fw"></i> 科研奖励</a>
 													</if>
 													<if condition="$AchievementCount.ConferenceInvolved eq 0">
-														<a href="__URL__/my_achievement/achi_type/9/user_id/{$user_id}" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议</a>
+														<a href="__URL__/all_achievement/achi_type/9" class="list-group-item"><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议</a>
 														<else/>
-														<a href="__URL__/my_achievement/achi_type/9/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议</a>
+														<a href="__URL__/all_achievement/achi_type/9" class="list-group-item"><span class="badge badge-red">{$AchievementCount.ConferenceInvolved}</span><i class="fa fa-calendar fa-fw"></i> 举办或参加学术会议</a>
 													</if>
 													<div class="list-group-item profile-details">
 														<h4>发表年份</h4>
 													</div>
 													<volist name="AchievementYear" id="vo">
-														<a href="__URL__/my_achievement/achi_year/{$vo.year}/user_id/{$user_id}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.year}
+														<a href="__URL__/all_achievement/achi_year/{$vo.year}" class="list-group-item"><span class="badge badge-red">{$vo.num}</span><i class="fa fa-calendar fa-fw"></i> {$vo.year}
 														</a>
 													</volist>
 												</div>														
 											</div>
 											<div class="col-md-9">
-												<form action="__URL__/my_achievement{$SearchAction}/user_id/{$user_id}" method="post">
+												<form action="__URL__/all_achievement{$SearchAction}" method="post">
 													<div class="input-group">
 														<input class="form-control" type="text" placeholder="输入成果名称查询" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>">
 														<span class="input-group-btn">

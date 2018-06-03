@@ -1895,7 +1895,7 @@
 	}
 
 	//获取不同类别项目个数
-	function get_project_num($TypeInfo)
+	function get_project_num($TypeInfo, $user_number)
 	{
 		//提取项目类别名
 		$TypeName = array();
@@ -1906,7 +1906,7 @@
 		$ProjectModel = M('Project');
 		for ($i = 0; $i < count($TypeName); $i++) {
 			$Condition['type'] = $TypeName[$i];
-			$Condition['user_number'] = session('userNum');
+			$Condition['user_number'] = $user_number;
 			$Condition['status'] = 1;
 			$Count = $ProjectModel->join('INNER JOIN think_project_member ON think_project.id=think_project_member.project_id')
 				->where($Condition)->count();
@@ -1915,7 +1915,26 @@
 		return $TypeInfo;
 	}
 
-//获取项目总数量
+	//获取所有项目
+	function get_all_project($TypeInfo)
+	{
+		//提取项目类别名
+		$TypeName = array();
+		for ($i = 0; $i < count($TypeInfo); $i++) {
+			$TypeName[] = $TypeInfo[$i]['type_name'];
+		}
+		//获取每个项目类别的项目号汇总
+		$ProjectModel = M('Project');
+		for ($i = 0; $i < count($TypeName); $i++) {
+			$Condition['type'] = $TypeName[$i];
+			$Condition['status'] = 1;
+			$Count = $ProjectModel->where($Condition)->count();
+			$TypeInfo[$i]['num'] = $Count;
+		}
+		return $TypeInfo;
+	}
+
+	//获取项目总数量
 	function get_all_project_num($TypeInfo)
 	{
 		$Count = 0;
@@ -1925,20 +1944,20 @@
 		return $Count;
 	}
 
-//获取科研成果分配百分比
+	//获取科研成果分配百分比
 	function get_achi_percent($user_id)
 	{
 		$AchiModel = M('Achievement');
-		$Condition['user_id'] = $user_id;
+		$Condition['user_number'] = $user_id;
 		$TypeInfo = $AchiModel->field('achievement_type')->where($Condition)->select();
 		$TypeNum['All'] = count($TypeInfo);
 		$TypeNum['JournalPaper'] = 0;
 		$TypeNum['ConferencePaper'] = 0;
 		for ($i = 0; $i < count($TypeInfo); $i++) {
-			if ($TypeInfo[$i]['achievement_type'] == 'JournalPaper') {
+			if ($TypeInfo[$i]['achievement_type'] == '1') {
 				$TypeNum['JournalPaper'] += 1;
 			}
-			if ($TypeInfo[$i]['achievement_type'] == 'ConferencePaper') {
+			if ($TypeInfo[$i]['achievement_type'] == '2') {
 				$TypeNum['ConferencePaper'] += 1;
 			}
 		}
@@ -1979,19 +1998,20 @@
 	}
 
 //获取单个用户科研成果数量
-	function get_single_member_achi_num($user_id)
+	function get_single_member_achi_num($user_number)
 	{
 		$AchiModel = M('Achievement');
-		$Condition['user_id'] = $user_id;
+		$Condition['user_number'] = $user_number;
 		$AchiNum = $AchiModel->where($Condition)->count();
 		return $AchiNum;
 	}
 
 //获取单个用户科研项目数量
-	function get_single_member_project_num($user_id)
+	function get_single_member_project_num($user_number)
 	{
-		$ProjectModel = M('Project');
-		$Condition['user_id'] = $user_id;
-		$ProjNum = $ProjectModel->where($Condition)->count();
+		$ProjectMemberModel = M('ProjectMember');
+		$Condition['user_number'] = $user_number;
+		$Condition['p_status'] = 1;
+		$ProjNum = $ProjectMemberModel->where($Condition)->count();
 		return $ProjNum;
 	}
